@@ -353,6 +353,28 @@ window.GraphEngine = (() => {
         }, [shortLine2]));
       }
 
+      // Hover tooltip
+      g.addEventListener('mouseenter', (ev) => {
+        let tooltip = container.querySelector('.graph-tooltip');
+        if (!tooltip) {
+          tooltip = document.createElement('div');
+          tooltip.className = 'graph-tooltip';
+          container.appendChild(tooltip);
+        }
+        tooltip.innerHTML = `<div class="tt-name">${nodeIcon} ${(node.name || node.id).replace(/</g, '&lt;')}</div>
+          <div class="tt-meta">${(node.type || '')} · ${(node.namespace || '')}</div>`;
+        tooltip.classList.add('visible');
+        const cr = container.getBoundingClientRect();
+        const mx = ev.clientX - cr.left + 12;
+        const my = ev.clientY - cr.top - 40;
+        tooltip.style.left = Math.min(mx, cr.width - 260) + 'px';
+        tooltip.style.top = Math.max(my, 4) + 'px';
+      });
+      g.addEventListener('mouseleave', () => {
+        const tooltip = container.querySelector('.graph-tooltip');
+        if (tooltip) tooltip.classList.remove('visible');
+      });
+
       if (onNodeClick) {
         g.addEventListener('click', (ev) => { ev.stopPropagation(); onNodeClick(node); });
       }

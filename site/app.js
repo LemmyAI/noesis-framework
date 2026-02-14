@@ -93,6 +93,7 @@
     }
 
     renderNsPills();
+    buildLegend();
     route();
   }
 
@@ -565,6 +566,76 @@
     }
 
     $('#app').innerHTML = html;
+  }
+
+  // === LEGEND ===
+  function buildLegend() {
+    // Remove old legend if exists
+    const old = document.getElementById('legend-toggle');
+    if (old) old.remove();
+    const oldPanel = document.getElementById('legend-panel');
+    if (oldPanel) oldPanel.remove();
+
+    // Collect all types currently in the data
+    const types = Object.keys(state.colorMap).sort();
+    if (types.length === 0) return;
+
+    // Toggle button
+    const btn = document.createElement('button');
+    btn.id = 'legend-toggle';
+    btn.className = 'legend-toggle';
+    btn.innerHTML = '🎨';
+    btn.title = 'Type Legend';
+    document.body.appendChild(btn);
+
+    // Panel
+    const panel = document.createElement('div');
+    panel.id = 'legend-panel';
+    panel.className = 'legend-panel';
+
+    let html = '<div class="legend-title">Entity Types</div>';
+    html += '<div class="legend-section">';
+    for (const type of types) {
+      const c = state.colorMap[type];
+      html += `<div class="legend-item">
+        <span class="legend-dot" style="background:${c}"></span>
+        <span class="legend-icon">${icon(type)}</span>
+        <span>${esc(type)}</span>
+      </div>`;
+    }
+    html += '</div>';
+
+    // Relation types section
+    const relConfig = state.nsConfigs['default']?.relations;
+    if (relConfig) {
+      html += '<div class="legend-section"><div class="legend-title">Relations</div>';
+      for (const [name, props] of Object.entries(relConfig)) {
+        const flags = [];
+        if (props.transitive) flags.push('transitive');
+        if (props.traversable) flags.push('traversable');
+        html += `<div class="legend-item">
+          <span style="color:var(--text-dim);font-size:0.75rem;width:18px;text-align:center;">→</span>
+          <span>${esc(name)}${flags.length ? ` <span style="color:var(--text-dim);font-size:0.65rem;">(${flags.join(', ')})</span>` : ''}</span>
+        </div>`;
+      }
+      html += '</div>';
+    }
+
+    panel.innerHTML = html;
+    document.body.appendChild(panel);
+
+    btn.addEventListener('click', () => {
+      panel.classList.toggle('open');
+      btn.classList.toggle('active');
+    });
+
+    // Close on outside click
+    document.addEventListener('click', (e) => {
+      if (!panel.contains(e.target) && e.target !== btn) {
+        panel.classList.remove('open');
+        btn.classList.remove('active');
+      }
+    });
   }
 
   // === BOOT ===
