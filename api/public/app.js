@@ -210,6 +210,7 @@
     html += `</div>`;
 
     $('#app').innerHTML = html;
+    updateLegend(sorted, []);
   }
 
   // === VIEW: NAMESPACE ===
@@ -262,6 +263,7 @@
     }
 
     $('#app').innerHTML = html;
+    updateLegend(entities, []);
   }
 
   // === VIEW: ENTITY DETAIL ===
@@ -314,6 +316,9 @@
 
       html += `<div class="graph-container mini" id="entity-graph"></div>`;
       html += `<div class="expand-link" onclick="window.location.hash='#/graph/${id}'">Expand full graph →</div>`;
+
+      // Update legend for this entity's graph
+      updateLegend(graphNodes, relations);
 
       // Render after DOM update
       setTimeout(() => {
@@ -475,6 +480,7 @@
 
       // Render graph
       if (mode === 'graph') {
+        updateLegend(entities, relations);
         setTimeout(() => {
           const container = document.getElementById('narrative-graph');
           if (!container) return;
@@ -485,6 +491,8 @@
             onNodeClick: (node) => { window.location.hash = `#/entity/${node.id}`; },
           });
         }, 50);
+      } else {
+        updateLegend(entities, relations);
       }
     }
 
@@ -525,6 +533,7 @@
     html += `<div style="font-size:0.7rem;color:var(--text-dim);text-align:center;margin-top:6px;">Scroll/pinch to zoom · Drag to pan · Tap nodes to explore</div>`;
 
     $('#app').innerHTML = html;
+    updateLegend(nodes, relations);
 
     setTimeout(() => {
       const container = document.getElementById('full-graph');
@@ -569,34 +578,58 @@
   }
 
   // === LEGEND ===
-  function buildLegend() {
-    // Remove old legend if exists
-    const old = document.getElementById('legend-toggle');
-    if (old) old.remove();
-    const oldPanel = document.getElementById('legend-panel');
-    if (oldPanel) oldPanel.remove();
+  function ensureLegendElements() {
+    let btn = document.getElementById('legend-toggle');
+    let panel = document.getElementById('legend-panel');
+    if (!btn) {
+      btn = document.createElement('button');
+      btn.id = 'legend-toggle';
+      btn.className = 'legend-toggle';
+      btn.innerHTML = '🎨';
+      btn.title = 'Type Legend';
+      document.body.appendChild(btn);
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        panel.classList.toggle('open');
+        btn.classList.toggle('active');
+      });
+      document.addEventListener('click', (e) => {
+        if (!panel.contains(e.target) && e.target !== btn) {
+          panel.classList.remove('open');
+          btn.classList.remove('active');
+        }
+      });
+    }
+    if (!panel) {
+      panel = document.createElement('div');
+      panel.id = 'legend-panel';
+      panel.className = 'legend-panel';
+      document.body.appendChild(panel);
+    }
+    return { btn, panel };
+  }
 
-    // Collect all types currently in the data
-    const types = Object.keys(state.colorMap).sort();
-    if (types.length === 0) return;
+  // Update legend contents for a specific set of entities and relations
+  function updateLegend(entities = [], relations = []) {
+    const { btn, panel } = ensureLegendElements();
 
-    // Toggle button
-    const btn = document.createElement('button');
-    btn.id = 'legend-toggle';
-    btn.className = 'legend-toggle';
-    btn.innerHTML = '🎨';
-    btn.title = 'Type Legend';
-    document.body.appendChild(btn);
+    // Collect types actually present
+    const usedTypes = [...new Set(entities.map(e => e.type))].filter(Boolean).sort();
+    // Collect relation types actually present
+    const usedRelTypes = [...new Set(relations.map(r => r.type))].filter(Boolean).sort();
 
-    // Panel
-    const panel = document.createElement('div');
-    panel.id = 'legend-panel';
-    panel.className = 'legend-panel';
+    if (usedTypes.length === 0 && usedRelTypes.length === 0) {
+      btn.style.display = 'none';
+      return;
+    }
+    btn.style.display = '';
+
+    const relConfig = state.nsConfigs['default']?.relations || {};
 
     let html = '<div class="legend-title">Entity Types</div>';
     html += '<div class="legend-section">';
-    for (const type of types) {
-      const c = state.colorMap[type];
+    for (const type of usedTypes) {
+      const c = state.colorMap[type] || '#666';
       html += `<div class="legend-item">
         <span class="legend-dot" style="background:${c}"></span>
         <span class="legend-icon">${icon(type)}</span>
@@ -605,37 +638,30 @@
     }
     html += '</div>';
 
-    // Relation types section
-    const relConfig = state.nsConfigs['default']?.relations;
-    if (relConfig) {
+    if (usedRelTypes.length > 0) {
       html += '<div class="legend-section"><div class="legend-title">Relations</div>';
-      for (const [name, props] of Object.entries(relConfig)) {
+      for (const name of usedRelTypes) {
+        const props = relConfig[name] || {};
         const flags = [];
-        if (props.transitive) flags.push('transitive');
-        if (props.traversable) flags.push('traversable');
+        if (props.transitive) flags.push('T');
+        if (props.traversable) flags.push('⤳');
         html += `<div class="legend-item">
           <span style="color:var(--text-dim);font-size:0.75rem;width:18px;text-align:center;">→</span>
-          <span>${esc(name)}${flags.length ? ` <span style="color:var(--text-dim);font-size:0.65rem;">(${flags.join(', ')})</span>` : ''}</span>
+          <span>${esc(name)}${flags.length ? ` <span style="color:var(--text-dim);font-size:0.65rem;">(${flags.join(' ')})</span>` : ''}</span>
         </div>`;
       }
       html += '</div>';
     }
 
     panel.innerHTML = html;
-    document.body.appendChild(panel);
+  }
 
-    btn.addEventListener('click', () => {
-      panel.classList.toggle('open');
-      btn.classList.toggle('active');
-    });
-
-    // Close on outside click
-    document.addEventListener('click', (e) => {
-      if (!panel.contains(e.target) && e.target !== btn) {
-        panel.classList.remove('open');
-        btn.classList.remove('active');
-      }
-    });
+  // Build initial legend with all types (for non-graph views)
+  function buildLegend() {
+    ensureLegendElements();
+    // Start with all known types
+    const allEntities = Object.keys(state.colorMap).map(type => ({ type }));
+    updateLegend(allEntities, []);
   }
 
   // === BOOT ===
