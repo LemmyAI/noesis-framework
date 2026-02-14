@@ -3,20 +3,6 @@
  * Supports layered (narrative) and force-directed layouts
  */
 window.GraphEngine = (() => {
-  const DEFAULTS = {
-    nodeRadius: 24,
-    fontSize: 11,
-    labelOffset: 32,
-    arrowSize: 8,
-    padding: 60,
-    springLength: 120,
-    springK: 0.004,
-    repulsion: 800,
-    gravity: 0.02,
-    damping: 0.85,
-    iterations: 200,
-  };
-
   const SVG_NS = 'http://www.w3.org/2000/svg';
 
   function el(tag, attrs = {}, children = []) {
@@ -32,22 +18,19 @@ window.GraphEngine = (() => {
   // === LAYOUTS ===
 
   function layeredLayout(nodes, edges, width, height) {
-    const pad = DEFAULTS.padding;
-    // Assign layers by narrative_sequence
-    const seqs = [...new Set(edges.map(e => e.narrative_sequence || 0))].sort((a, b) => a - b);
-    const seqMap = {};
-    seqs.forEach((s, i) => seqMap[s] = i);
+    const pad = 80;
 
     // Assign entities to their first appearance sequence
     const nodeSeq = {};
+    const seqSet = new Set();
     for (const edge of edges) {
       const seq = edge.narrative_sequence || 0;
+      seqSet.add(seq);
       if (!(edge.from_entity in nodeSeq)) nodeSeq[edge.from_entity] = seq;
       if (!(edge.to_entity in nodeSeq)) nodeSeq[edge.to_entity] = Math.max(seq, (nodeSeq[edge.to_entity] || 0));
     }
-    // Entities not in edges get last layer
     for (const n of nodes) {
-      if (!(n.id in nodeSeq)) nodeSeq[n.id] = seqs.length;
+      if (!(n.id in nodeSeq)) nodeSeq[n.id] = 0;
     }
 
     // Group by layer
@@ -60,61 +43,74 @@ window.GraphEngine = (() => {
 
     const layerKeys = Object.keys(layers).map(Number).sort((a, b) => a - b);
     const numLayers = Math.max(layerKeys.length, 1);
-    const usableW = width - pad * 2;
-    const usableH = height - pad * 2;
-    const positions = {};
 
+    // Scale the canvas to fit — generous spacing
+    const colSpacing = Math.max(160, (width - pad * 2) / Math.max(numLayers - 1, 1));
+    const actualW = pad * 2 + colSpacing * (numLayers - 1);
+    const maxPerLayer = Math.max(...Object.values(layers).map(l => l.length));
+    const rowSpacing = Math.max(100, 80);
+    const actualH = Math.max(height, pad * 2 + rowSpacing * (maxPerLayer - 1));
+
+    const positions = {};
     layerKeys.forEach((lk, li) => {
       const group = layers[lk];
-      const x = numLayers === 1 ? width / 2 : pad + (li / (numLayers - 1)) * usableW;
+      const x = numLayers === 1 ? actualW / 2 : pad + li * colSpacing;
+      const totalH = (group.length - 1) * rowSpacing;
       group.forEach((n, ni) => {
-        const spread = group.length === 1 ? 0 : (ni / (group.length - 1) - 0.5) * usableH * 0.8;
-        positions[n.id] = { x, y: height / 2 + spread };
+        const y = actualH / 2 + (group.length === 1 ? 0 : (ni - (group.length - 1) / 2) * rowSpacing);
+        positions[n.id] = { x, y };
       });
     });
 
-    return positions;
+    return { positions, canvasW: actualW, canvasH: actualH };
   }
 
   function forceLayout(nodes, edges, width, height, fixedCenter = null) {
-    const O = DEFAULTS;
+    // Scale parameters based on node count
+    const n = nodes.length;
+    const springLength = Math.max(150, 80 + n * 8);
+    const repulsion = Math.max(2000, 600 * n);
+    const springK = 0.003;
+    const gravity = 0.015;
+    const damping = 0.82;
+    const iterations = Math.min(400, 150 + n * 10);
+    const pad = 40;
+
+    // Use a larger canvas for more nodes
+    const scale = Math.max(1, n / 10);
+    const W = width * scale;
+    const H = height * scale;
+
     const pos = {};
 
-    // Initialize positions
-    nodes.forEach((n, i) => {
-      if (fixedCenter && n.id === fixedCenter) {
-        pos[n.id] = { x: width / 2, y: height / 2, fx: true };
+    // Initialize in a circle
+    nodes.forEach((node, i) => {
+      if (fixedCenter && node.id === fixedCenter) {
+        pos[node.id] = { x: W / 2, y: H / 2, vx: 0, vy: 0, fx: true };
       } else {
         const angle = (i / nodes.length) * Math.PI * 2;
-        const r = 100 + Math.random() * 60;
-        pos[n.id] = {
-          x: width / 2 + Math.cos(angle) * r,
-          y: height / 2 + Math.sin(angle) * r,
+        const r = springLength * 0.8 + Math.random() * 40;
+        pos[node.id] = {
+          x: W / 2 + Math.cos(angle) * r,
+          y: H / 2 + Math.sin(angle) * r,
           vx: 0, vy: 0, fx: false,
         };
       }
     });
 
-    // Build adjacency
-    const adj = {};
-    for (const n of nodes) adj[n.id] = new Set();
-    for (const e of edges) {
-      if (adj[e.from_entity]) adj[e.from_entity].add(e.to_entity);
-      if (adj[e.to_entity]) adj[e.to_entity].add(e.from_entity);
-    }
-
     // Simulate
-    for (let iter = 0; iter < O.iterations; iter++) {
-      const t = 1 - iter / O.iterations; // cooling
+    for (let iter = 0; iter < iterations; iter++) {
+      const t = 1 - iter / iterations;
+      const ids = Object.keys(pos);
 
       // Repulsion between all pairs
-      const ids = Object.keys(pos);
       for (let i = 0; i < ids.length; i++) {
         for (let j = i + 1; j < ids.length; j++) {
           const a = pos[ids[i]], b = pos[ids[j]];
           let dx = b.x - a.x, dy = b.y - a.y;
-          let dist = Math.sqrt(dx * dx + dy * dy) || 1;
-          const force = O.repulsion / (dist * dist) * t;
+          let dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 1) { dist = 1; dx = Math.random() - 0.5; dy = Math.random() - 0.5; }
+          const force = repulsion / (dist * dist) * t;
           const fx = (dx / dist) * force, fy = (dy / dist) * force;
           if (!a.fx) { a.vx -= fx; a.vy -= fy; }
           if (!b.fx) { b.vx += fx; b.vy += fy; }
@@ -127,7 +123,7 @@ window.GraphEngine = (() => {
         if (!a || !b) continue;
         let dx = b.x - a.x, dy = b.y - a.y;
         let dist = Math.sqrt(dx * dx + dy * dy) || 1;
-        const force = (dist - O.springLength) * O.springK * t;
+        const force = (dist - springLength) * springK * t;
         const fx = (dx / dist) * force, fy = (dy / dist) * force;
         if (!a.fx) { a.vx += fx; a.vy += fy; }
         if (!b.fx) { b.vx -= fx; b.vy -= fy; }
@@ -137,25 +133,42 @@ window.GraphEngine = (() => {
       for (const id of ids) {
         const p = pos[id];
         if (p.fx) continue;
-        p.vx += (width / 2 - p.x) * O.gravity * t;
-        p.vy += (height / 2 - p.y) * O.gravity * t;
+        p.vx += (W / 2 - p.x) * gravity * t;
+        p.vy += (H / 2 - p.y) * gravity * t;
       }
 
       // Update positions
       for (const id of ids) {
         const p = pos[id];
         if (p.fx) continue;
-        p.vx *= O.damping;
-        p.vy *= O.damping;
+        p.vx *= damping;
+        p.vy *= damping;
         p.x += p.vx;
         p.y += p.vy;
-        // Keep in bounds
-        p.x = Math.max(O.padding, Math.min(width - O.padding, p.x));
-        p.y = Math.max(O.padding, Math.min(height - O.padding, p.y));
       }
     }
 
-    return pos;
+    // Compute bounding box and reframe
+    let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+    for (const p of Object.values(pos)) {
+      minX = Math.min(minX, p.x);
+      minY = Math.min(minY, p.y);
+      maxX = Math.max(maxX, p.x);
+      maxY = Math.max(maxY, p.y);
+    }
+
+    const bw = maxX - minX + pad * 2;
+    const bh = maxY - minY + pad * 2;
+    const ox = minX - pad;
+    const oy = minY - pad;
+
+    // Shift positions to start from padding
+    const positions = {};
+    for (const [id, p] of Object.entries(pos)) {
+      positions[id] = { x: p.x - ox, y: p.y - oy };
+    }
+
+    return { positions, canvasW: Math.max(bw, width), canvasH: Math.max(bh, height) };
   }
 
   // === RENDERING ===
@@ -165,15 +178,16 @@ window.GraphEngine = (() => {
       mode = 'force',
       fixedCenter = null,
       onNodeClick = null,
-      onEdgeClick = null,
       colorMap = {},
       iconMap = {},
       selectedId = null,
     } = options;
 
     const rect = container.getBoundingClientRect();
-    const W = rect.width || 600;
-    const H = parseInt(container.style.height) || rect.height || 400;
+    const displayW = rect.width || 600;
+    const displayH = parseInt(container.style.height) || rect.height || 400;
+    const nodeRadius = 22;
+    const labelOffset = 30;
 
     // Deduplicate nodes
     const nodeMap = {};
@@ -181,184 +195,223 @@ window.GraphEngine = (() => {
     const uniqueNodes = Object.values(nodeMap);
 
     // Compute layout
-    const positions = mode === 'layered'
-      ? layeredLayout(uniqueNodes, edges, W, H)
-      : forceLayout(uniqueNodes, edges, W, H, fixedCenter);
+    const layout = mode === 'layered'
+      ? layeredLayout(uniqueNodes, edges, displayW, displayH)
+      : forceLayout(uniqueNodes, edges, displayW, displayH, fixedCenter);
+
+    const { positions, canvasW, canvasH } = layout;
 
     // Create SVG
-    const svg = el('svg', { viewBox: `0 0 ${W} ${H}`, width: W, height: H });
+    const svg = el('svg', {
+      viewBox: `0 0 ${canvasW} ${canvasH}`,
+      width: '100%',
+      height: '100%',
+      preserveAspectRatio: 'xMidYMid meet',
+    });
 
-    // Defs: arrowhead
+    // Defs: arrowhead + glow filter
     const defs = el('defs');
-    const marker = el('marker', {
+    defs.appendChild(el('marker', {
       id: 'arrow', viewBox: '0 0 10 10', refX: '10', refY: '5',
-      markerWidth: '8', markerHeight: '8', orient: 'auto-start-reverse',
-      fill: 'rgba(255,255,255,0.3)',
-    }, [el('path', { d: 'M 0 0 L 10 5 L 0 10 z' })]);
-    defs.appendChild(marker);
+      markerWidth: '7', markerHeight: '7', orient: 'auto-start-reverse',
+      fill: 'rgba(255,255,255,0.35)',
+    }, [el('path', { d: 'M 0 0 L 10 5 L 0 10 z' })]));
+
+    // Glow filter for selected
+    const glow = el('filter', { id: 'glow', x: '-50%', y: '-50%', width: '200%', height: '200%' });
+    const blur = el('feGaussianBlur', { stdDeviation: '4', result: 'blur' });
+    const merge = el('feMerge', {}, [
+      el('feMergeNode', { in: 'blur' }),
+      el('feMergeNode', { in: 'SourceGraphic' }),
+    ]);
+    glow.appendChild(blur);
+    glow.appendChild(merge);
+    defs.appendChild(glow);
     svg.appendChild(defs);
 
-    // Edge group
+    // Background (for pan detection)
+    svg.appendChild(el('rect', {
+      width: canvasW, height: canvasH, fill: 'transparent',
+    }));
+
+    // === EDGES ===
     const edgeGroup = el('g', { class: 'edges' });
     for (const edge of edges) {
       const from = positions[edge.from_entity];
       const to = positions[edge.to_entity];
       if (!from || !to) continue;
 
-      // Calculate offset for arrowhead (stop at node boundary)
       const dx = to.x - from.x, dy = to.y - from.y;
       const dist = Math.sqrt(dx * dx + dy * dy) || 1;
-      const r = DEFAULTS.nodeRadius;
-      const sx = from.x + (dx / dist) * r;
-      const sy = from.y + (dy / dist) * r;
-      const ex = to.x - (dx / dist) * (r + 6);
-      const ey = to.y - (dy / dist) * (r + 6);
+      const r = nodeRadius;
+      const sx = from.x + (dx / dist) * (r + 2);
+      const sy = from.y + (dy / dist) * (r + 2);
+      const ex = to.x - (dx / dist) * (r + 8);
+      const ey = to.y - (dy / dist) * (r + 8);
 
+      // Curved edge for parallel edges
       const isDashed = edge.type === 'contradicts';
       const line = el('line', {
         x1: sx, y1: sy, x2: ex, y2: ey,
-        stroke: 'rgba(255,255,255,0.15)',
+        stroke: isDashed ? 'rgba(217,74,74,0.3)' : 'rgba(255,255,255,0.12)',
         'stroke-width': edge.context ? '2' : '1.5',
         'stroke-dasharray': isDashed ? '6,4' : 'none',
         'marker-end': 'url(#arrow)',
-        'data-edge-id': edge.id || '',
-        style: 'cursor:pointer',
       });
-
-      if (onEdgeClick) {
-        line.addEventListener('click', (ev) => { ev.stopPropagation(); onEdgeClick(edge); });
-      }
       edgeGroup.appendChild(line);
 
-      // Edge label
+      // Edge label at midpoint
       const mx = (sx + ex) / 2, my = (sy + ey) / 2;
-      const label = el('text', {
-        x: mx, y: my - 5,
+      // Offset label perpendicular to edge to avoid overlap
+      const perpX = -dy / dist * 10;
+      const perpY = dx / dist * 10;
+      edgeGroup.appendChild(el('text', {
+        x: mx + perpX, y: my + perpY,
         'text-anchor': 'middle',
         'font-size': '9',
-        fill: 'rgba(255,255,255,0.35)',
-      }, [edge.type || '']);
-      edgeGroup.appendChild(label);
+        fill: 'rgba(255,255,255,0.3)',
+      }, [edge.type || '']));
     }
     svg.appendChild(edgeGroup);
 
-    // Node group
+    // === NODES ===
     const nodeGroup = el('g', { class: 'nodes' });
     for (const node of uniqueNodes) {
       const p = positions[node.id];
       if (!p) continue;
 
-      const color = colorMap[node.type] || '#666';
-      const icon = iconMap[node.type] || '●';
+      const color = colorMap[node.type] || '#555';
+      const nodeIcon = iconMap[node.type] || '●';
       const isSelected = node.id === selectedId;
+
       const g = el('g', {
         transform: `translate(${p.x},${p.y})`,
         style: 'cursor:pointer',
-        'data-node-id': node.id,
       });
 
-      // Glow for selected
+      // Glow ring for selected
       if (isSelected) {
         g.appendChild(el('circle', {
-          r: DEFAULTS.nodeRadius + 6,
-          fill: 'none',
-          stroke: color,
-          'stroke-width': '2',
-          opacity: '0.4',
+          r: nodeRadius + 8,
+          fill: 'none', stroke: color, 'stroke-width': '2', opacity: '0.5',
+          filter: 'url(#glow)',
         }));
       }
 
-      // Node circle
+      // Shadow
       g.appendChild(el('circle', {
-        r: isSelected ? DEFAULTS.nodeRadius + 2 : DEFAULTS.nodeRadius,
+        r: nodeRadius, fill: 'rgba(0,0,0,0.4)',
+        transform: 'translate(2,2)',
+      }));
+
+      // Main circle
+      g.appendChild(el('circle', {
+        r: nodeRadius,
         fill: color,
-        opacity: isSelected ? '1' : '0.85',
-        stroke: 'rgba(255,255,255,0.1)',
-        'stroke-width': '1',
+        opacity: isSelected ? '1' : '0.9',
+        stroke: isSelected ? '#fff' : 'rgba(255,255,255,0.15)',
+        'stroke-width': isSelected ? '2' : '1',
       }));
 
       // Icon
       g.appendChild(el('text', {
         'text-anchor': 'middle',
         'dominant-baseline': 'central',
-        'font-size': '16',
+        'font-size': '14',
         fill: '#fff',
-      }, [icon]));
+      }, [nodeIcon]));
 
-      // Label
+      // Label — wrap long names
       const name = node.name || node.id;
-      const shortName = name.length > 22 ? name.substring(0, 20) + '…' : name;
-      g.appendChild(el('text', {
-        y: DEFAULTS.labelOffset,
-        'text-anchor': 'middle',
-        'font-size': DEFAULTS.fontSize,
-        fill: isSelected ? '#fff' : 'rgba(255,255,255,0.7)',
-        'font-weight': isSelected ? '600' : '400',
-      }, [shortName]));
+      const maxLen = 20;
+      if (name.length <= maxLen) {
+        g.appendChild(el('text', {
+          y: labelOffset,
+          'text-anchor': 'middle',
+          'font-size': '10',
+          fill: isSelected ? '#fff' : 'rgba(255,255,255,0.65)',
+          'font-weight': isSelected ? '600' : '400',
+        }, [name]));
+      } else {
+        // Split into two lines
+        const mid = name.lastIndexOf(' ', maxLen);
+        const line1 = mid > 0 ? name.substring(0, mid) : name.substring(0, maxLen);
+        const line2 = mid > 0 ? name.substring(mid + 1) : name.substring(maxLen);
+        const shortLine2 = line2.length > maxLen ? line2.substring(0, maxLen - 1) + '…' : line2;
+        g.appendChild(el('text', {
+          y: labelOffset,
+          'text-anchor': 'middle',
+          'font-size': '10',
+          fill: isSelected ? '#fff' : 'rgba(255,255,255,0.65)',
+          'font-weight': isSelected ? '600' : '400',
+        }, [line1]));
+        g.appendChild(el('text', {
+          y: labelOffset + 12,
+          'text-anchor': 'middle',
+          'font-size': '10',
+          fill: isSelected ? '#fff' : 'rgba(255,255,255,0.5)',
+        }, [shortLine2]));
+      }
 
       if (onNodeClick) {
         g.addEventListener('click', (ev) => { ev.stopPropagation(); onNodeClick(node); });
       }
-
       nodeGroup.appendChild(g);
     }
     svg.appendChild(nodeGroup);
 
-    // Clear container and add SVG
+    // === MOUNT ===
     container.innerHTML = '';
     container.appendChild(svg);
 
     // === INTERACTIONS: Pan & Zoom ===
-    let viewBox = { x: 0, y: 0, w: W, h: H };
+    let vb = { x: 0, y: 0, w: canvasW, h: canvasH };
     let isPanning = false, panStart = { x: 0, y: 0 };
 
-    function setViewBox() {
-      svg.setAttribute('viewBox', `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`);
-    }
+    function setVB() { svg.setAttribute('viewBox', `${vb.x} ${vb.y} ${vb.w} ${vb.h}`); }
 
-    function toSVG(clientX, clientY) {
+    function toSVG(cx, cy) {
       const r = container.getBoundingClientRect();
       return {
-        x: viewBox.x + (clientX - r.left) / r.width * viewBox.w,
-        y: viewBox.y + (clientY - r.top) / r.height * viewBox.h,
+        x: vb.x + (cx - r.left) / r.width * vb.w,
+        y: vb.y + (cy - r.top) / r.height * vb.h,
       };
     }
 
     // Wheel zoom
     container.addEventListener('wheel', (ev) => {
       ev.preventDefault();
-      const scale = ev.deltaY > 0 ? 1.1 : 0.9;
+      const scale = ev.deltaY > 0 ? 1.12 : 0.89;
       const p = toSVG(ev.clientX, ev.clientY);
-      viewBox.x = p.x - (p.x - viewBox.x) * scale;
-      viewBox.y = p.y - (p.y - viewBox.y) * scale;
-      viewBox.w *= scale;
-      viewBox.h *= scale;
-      setViewBox();
+      vb.x = p.x - (p.x - vb.x) * scale;
+      vb.y = p.y - (p.y - vb.y) * scale;
+      vb.w *= scale;
+      vb.h *= scale;
+      setVB();
     }, { passive: false });
 
     // Mouse pan
     container.addEventListener('mousedown', (ev) => {
-      if (ev.target === svg || ev.target.tagName === 'svg') {
-        isPanning = true;
-        panStart = { x: ev.clientX, y: ev.clientY };
-      }
+      if (ev.target.closest('g[style*="cursor"]')) return; // Don't pan on node click
+      isPanning = true;
+      panStart = { x: ev.clientX, y: ev.clientY };
+      container.style.cursor = 'grabbing';
     });
     window.addEventListener('mousemove', (ev) => {
       if (!isPanning) return;
       const r = container.getBoundingClientRect();
-      const dx = (ev.clientX - panStart.x) / r.width * viewBox.w;
-      const dy = (ev.clientY - panStart.y) / r.height * viewBox.h;
-      viewBox.x -= dx;
-      viewBox.y -= dy;
+      const dx = (ev.clientX - panStart.x) / r.width * vb.w;
+      const dy = (ev.clientY - panStart.y) / r.height * vb.h;
+      vb.x -= dx; vb.y -= dy;
       panStart = { x: ev.clientX, y: ev.clientY };
-      setViewBox();
+      setVB();
     });
-    window.addEventListener('mouseup', () => { isPanning = false; });
+    window.addEventListener('mouseup', () => { isPanning = false; container.style.cursor = ''; });
 
-    // Touch pan & pinch zoom
-    let touches = [];
+    // Touch pan & pinch
+    let lastTouches = [];
     container.addEventListener('touchstart', (ev) => {
-      touches = [...ev.touches];
+      lastTouches = [...ev.touches];
       if (ev.touches.length === 1) {
         isPanning = true;
         panStart = { x: ev.touches[0].clientX, y: ev.touches[0].clientY };
@@ -369,32 +422,32 @@ window.GraphEngine = (() => {
       if (ev.touches.length === 1 && isPanning) {
         const r = container.getBoundingClientRect();
         const t = ev.touches[0];
-        const dx = (t.clientX - panStart.x) / r.width * viewBox.w;
-        const dy = (t.clientY - panStart.y) / r.height * viewBox.h;
-        viewBox.x -= dx;
-        viewBox.y -= dy;
+        const dx = (t.clientX - panStart.x) / r.width * vb.w;
+        const dy = (t.clientY - panStart.y) / r.height * vb.h;
+        vb.x -= dx; vb.y -= dy;
         panStart = { x: t.clientX, y: t.clientY };
-        setViewBox();
-      } else if (ev.touches.length === 2 && touches.length === 2) {
-        const oldDist = Math.hypot(touches[0].clientX - touches[1].clientX, touches[0].clientY - touches[1].clientY);
-        const newDist = Math.hypot(ev.touches[0].clientX - ev.touches[1].clientX, ev.touches[0].clientY - ev.touches[1].clientY);
-        const scale = oldDist / newDist;
-        const cx = (ev.touches[0].clientX + ev.touches[1].clientX) / 2;
-        const cy = (ev.touches[0].clientY + ev.touches[1].clientY) / 2;
-        const p = toSVG(cx, cy);
-        viewBox.x = p.x - (p.x - viewBox.x) * scale;
-        viewBox.y = p.y - (p.y - viewBox.y) * scale;
-        viewBox.w *= scale;
-        viewBox.h *= scale;
-        setViewBox();
-        touches = [...ev.touches];
+        setVB();
+      } else if (ev.touches.length === 2 && lastTouches.length === 2) {
+        const oldD = Math.hypot(lastTouches[0].clientX - lastTouches[1].clientX, lastTouches[0].clientY - lastTouches[1].clientY);
+        const newD = Math.hypot(ev.touches[0].clientX - ev.touches[1].clientX, ev.touches[0].clientY - ev.touches[1].clientY);
+        if (oldD > 0) {
+          const scale = oldD / newD;
+          const cx = (ev.touches[0].clientX + ev.touches[1].clientX) / 2;
+          const cy = (ev.touches[0].clientY + ev.touches[1].clientY) / 2;
+          const p = toSVG(cx, cy);
+          vb.x = p.x - (p.x - vb.x) * scale;
+          vb.y = p.y - (p.y - vb.y) * scale;
+          vb.w *= scale; vb.h *= scale;
+          setVB();
+        }
+        lastTouches = [...ev.touches];
       }
     }, { passive: true });
 
-    container.addEventListener('touchend', () => { isPanning = false; touches = []; });
+    container.addEventListener('touchend', () => { isPanning = false; lastTouches = []; });
 
     return svg;
   }
 
-  return { render, layeredLayout, forceLayout };
+  return { render };
 })();

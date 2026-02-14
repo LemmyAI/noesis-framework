@@ -439,8 +439,8 @@ main {
   position: relative;
   touch-action: none;
 }
-.graph-container.mini { height: 280px; }
-.graph-container.full { height: 500px; }
+.graph-container.mini { height: 320px; }
+.graph-container.full { height: 70vh; min-height: 450px; max-height: 800px; }
 .graph-container svg { width: 100%; height: 100%; display: block; }
 .graph-container svg text { font-family: inherit; pointer-events: none; }
 
@@ -524,12 +524,12 @@ main {
   .header-inner { padding: 12px 24px; }
   .ns-pills { padding: 0 24px 10px; }
   .entity-name { font-size: 1.75rem; }
-  .graph-container.full { height: 550px; }
+  .graph-container.full { height: 70vh; }
 }
 
 @media (min-width: 1024px) {
   .grid-fill { grid-template-columns: repeat(3, 1fr); }
-  .graph-container.full { height: 600px; }
+  .graph-container.full { height: 75vh; }
 }
 
 /* === TRANSITIONS === */
