@@ -47,10 +47,13 @@ su postgres -c "psql -d noesis -c \"GRANT ALL ON SCHEMA public TO noesis;\""
 
 echo "PostgreSQL ready. Seeding database..."
 
+# Set database URL for all subsequent commands
+export DATABASE_URL="postgresql://noesis:noesis@localhost:5432/noesis"
+
 # Initialize and seed database
-DATABASE_URL="postgresql://noesis:noesis@localhost:5432/noesis" node scripts/init-db.js
+node scripts/init-db.js
 
 echo "Starting NOESIS API on port ${PORT:-3000}..."
 
 # Start API (exec replaces shell)
-exec DATABASE_URL="postgresql://noesis:noesis@localhost:5432/noesis" node dist/index.js
+exec node dist/index.js
