@@ -6,6 +6,7 @@ import relationsRouter from './routes/relations';
 import namespacesRouter from './routes/namespaces';
 import categoriesRouter from './routes/categories';
 import narrativesRouter from './routes/narratives';
+import datalayerRouter from './routes/datalayer';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -30,6 +31,7 @@ app.use('/api/relations', relationsRouter);
 app.use('/api/namespaces', namespacesRouter);
 app.use('/api/categories', categoriesRouter);
 app.use('/api/narratives', narrativesRouter);
+app.use('/api/datalayer', datalayerRouter);
 
 // Root endpoint
 app.get('/', (req: Request, res: Response) => {
@@ -47,6 +49,9 @@ app.get('/', (req: Request, res: Response) => {
       'GET /api/categories/:parent/children',
       'GET /api/narratives',
       'GET /api/narratives/:context',
+      'GET /api/datalayer',
+      'GET /api/datalayer/:id',
+      'GET /api/datalayer/by-entity/:entityId',
     ],
   });
 });

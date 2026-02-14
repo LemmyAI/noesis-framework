@@ -9,7 +9,22 @@ router.get('/', async (req: Request, res: Response) => {
     const { entity, type, context, depth, traversable } = req.query;
 
     if (!entity) {
-      const result = await db.query('SELECT * FROM relations ORDER BY context, narrative_sequence');
+      // List all relations with optional type/context filters
+      let sql = 'SELECT * FROM relations WHERE 1=1';
+      const params: any[] = [];
+      let idx = 1;
+
+      if (type) {
+        sql += ` AND type = $${idx++}`;
+        params.push(type);
+      }
+      if (context) {
+        sql += ` AND context = $${idx++}`;
+        params.push(context);
+      }
+
+      sql += ' ORDER BY context, narrative_sequence';
+      const result = await db.query(sql, params);
       return res.json({ count: result.rows.length, relations: result.rows });
     }
 
@@ -19,7 +34,9 @@ router.get('/', async (req: Request, res: Response) => {
     const { relations, cycles } = await traverseRelations(
       entity as string, 
       maxDepth, 
-      traversableOnly
+      traversableOnly,
+      type as string | undefined,
+      context as string | undefined
     );
 
     res.json({ 
@@ -38,7 +55,9 @@ router.get('/', async (req: Request, res: Response) => {
 async function traverseRelations(
   startEntity: string, 
   maxDepth: number,
-  traversableOnly: boolean
+  traversableOnly: boolean,
+  filterType?: string,
+  filterContext?: string
 ) {
   const visited = new Set<string>();
   const relations: any[] = [];
@@ -61,12 +80,24 @@ async function traverseRelations(
   async function traverse(entity: string, path: string[], currentDepth: number) {
     if (currentDepth > maxDepth) return;
 
-    let sql = 'SELECT * FROM relations WHERE from_entity = $1 OR to_entity = $1';
+    let sql = 'SELECT * FROM relations WHERE (from_entity = $1 OR to_entity = $1)';
     const params: any[] = [entity];
+    let pIdx = 2;
 
     if (traversableOnly && traversableTypes.length > 0) {
-      sql += ` AND type IN (${traversableTypes.map((_, i) => `$${i + 2}`).join(',')})`;
+      sql += ` AND type IN (${traversableTypes.map((_, i) => `$${i + pIdx}`).join(',')})`;
       params.push(...traversableTypes);
+      pIdx += traversableTypes.length;
+    }
+
+    if (filterType) {
+      sql += ` AND type = $${pIdx++}`;
+      params.push(filterType);
+    }
+
+    if (filterContext) {
+      sql += ` AND context = $${pIdx++}`;
+      params.push(filterContext);
     }
 
     const result = await db.query(sql, params);

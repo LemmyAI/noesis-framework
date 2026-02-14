@@ -4,11 +4,11 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm ci --only=production
+RUN npm ci
 
 COPY tsconfig.json ./
 COPY src ./src
-RUN npm run build
+RUN npx tsc
 
 # Production stage
 FROM node:20-alpine
@@ -25,29 +25,44 @@ COPY package*.json ./
 COPY scripts ./scripts
 
 # Create startup script
-RUN echo '#!/bin/sh' > /app/start.sh && \
-    echo 'set -e' >> /app/start.sh && \
-    echo '' >> /app/start.sh && \
-    echo '# Start PostgreSQL' >> /app/start.sh && \
-    echo 'mkdir -p /var/lib/postgresql/data' >> /app/start.sh && \
-    echo 'chown -R postgres:postgres /var/lib/postgresql' >> /app/start.sh && \
-    echo 'su postgres -c "initdb -D /var/lib/postgresql/data 2>/dev/null || true"' >> /app/start.sh && \
-    echo 'su postgres -c "pg_ctl -D /var/lib/postgresql/data -l /var/log/postgresql.log start"' >> /app/start.sh && \
-    echo '' >> /app/start.sh && \
-    echo '# Create database and user' >> /app/start.sh && \
-    echo 'su postgres -c "psql -c \"CREATE USER noesis WITH PASSWORD '\''noesis'\'';\" 2>/dev/null || true"' >> /app/start.sh && \
-    echo 'su postgres -c "psql -c \"CREATE DATABASE noesis OWNER noesis;\" 2>/dev/null || true"' >> /app/start.sh && \
-    echo 'su postgres -c "psql -c \"GRANT ALL PRIVILEGES ON DATABASE noesis TO noesis;\""' >> /app/start.sh && \
-    echo '' >> /app/start.sh && \
-    echo '# Wait for PostgreSQL to be ready' >> /app/start.sh && \
-    echo 'sleep 2' >> /app/start.sh && \
-    echo '' >> /app/start.sh && \
-    echo '# Initialize database schema' >> /app/start.sh && \
-    echo 'DATABASE_URL="postgresql://noesis:noesis@localhost:5432/noesis" node scripts/init-db.js' >> /app/start.sh && \
-    echo '' >> /app/start.sh && \
-    echo '# Start API' >> /app/start.sh && \
-    echo 'DATABASE_URL="postgresql://noesis:noesis@localhost:5432/noesis" node dist/index.js' >> /app/start.sh && \
-    chmod +x /app/start.sh
+COPY <<'EOF' /app/start.sh
+#!/bin/sh
+set -e
+
+echo "=== NOESIS API Starting ==="
+
+# Initialize PostgreSQL data directory
+mkdir -p /var/lib/postgresql/data /run/postgresql /var/log
+chown -R postgres:postgres /var/lib/postgresql /run/postgresql
+
+# Init database cluster if needed
+su postgres -c "initdb -D /var/lib/postgresql/data 2>/dev/null || true"
+
+# Configure PostgreSQL for local connections
+echo "local all all trust" > /var/lib/postgresql/data/pg_hba.conf
+echo "host all all 127.0.0.1/32 trust" >> /var/lib/postgresql/data/pg_hba.conf
+
+# Start PostgreSQL
+su postgres -c "pg_ctl -D /var/lib/postgresql/data -l /var/log/postgresql.log start -w -t 30"
+
+# Create database and user
+su postgres -c "psql -c \"CREATE USER noesis WITH PASSWORD 'noesis';\" 2>/dev/null || true"
+su postgres -c "psql -c \"CREATE DATABASE noesis OWNER noesis;\" 2>/dev/null || true"
+su postgres -c "psql -c \"GRANT ALL PRIVILEGES ON DATABASE noesis TO noesis;\""
+su postgres -c "psql -d noesis -c \"GRANT ALL ON SCHEMA public TO noesis;\""
+
+echo "PostgreSQL ready."
+
+# Initialize and seed database
+DATABASE_URL="postgresql://noesis:noesis@localhost:5432/noesis" node scripts/init-db.js
+
+echo "Starting NOESIS API on port ${PORT:-3000}..."
+
+# Start API
+exec DATABASE_URL="postgresql://noesis:noesis@localhost:5432/noesis" node dist/index.js
+EOF
+
+RUN chmod +x /app/start.sh
 
 EXPOSE 3000
 
