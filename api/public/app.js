@@ -17,7 +17,8 @@
     DEX: '🔄', Chain: '⛓️', Sanction: '🚫', Alliance: '🤝',
   };
 
-  const CRED_LABELS = { verified: 'verified', high: 'high', medium: 'medium', low: 'low', disputed: 'disputed' };
+  // Credibility colors — loaded from namespace config at runtime
+  let credColorMap = {};
 
   // === STATE ===
   let state = {
@@ -52,7 +53,8 @@
 
   function credDot(c) {
     const conf = c?.confidence || 'medium';
-    return `<span class="cred-dot ${conf}" title="${conf}"></span>`;
+    const color = credColorMap[conf] || '#888';
+    return `<span class="cred-dot" style="background:${color}" title="${conf}"></span>`;
   }
 
   function typeColor(type) { return state.colorMap[type] || '#666'; }
@@ -80,6 +82,7 @@
     state.namespaces = nsData.namespaces || [];
     state.nsConfigs['default'] = configData;
     state.colorMap = { ...(configData.colors?.types || {}) };
+    credColorMap = { ...(configData.colors?.credibility || {}) };
 
     // Load child namespace colors
     for (const ns of state.namespaces) {
@@ -329,6 +332,7 @@
           fixedCenter: id,
           colorMap: state.colorMap,
           iconMap: TYPE_ICONS,
+          credColorMap: credColorMap,
           selectedId: id,
           onNodeClick: (node) => { if (node.id !== id) window.location.hash = `#/entity/${node.id}`; },
         });
@@ -488,6 +492,7 @@
             mode: 'layered',
             colorMap: state.colorMap,
             iconMap: TYPE_ICONS,
+          credColorMap: credColorMap,
             onNodeClick: (node) => { window.location.hash = `#/entity/${node.id}`; },
           });
         }, 50);
@@ -543,6 +548,7 @@
         fixedCenter: id,
         colorMap: state.colorMap,
         iconMap: TYPE_ICONS,
+          credColorMap: credColorMap,
         selectedId: id,
         onNodeClick: (node) => { window.location.hash = `#/entity/${node.id}`; },
       });
@@ -609,8 +615,7 @@
     return { btn, panel };
   }
 
-  // Confidence color
-  const CRED_COLORS = { verified: '#4AD94A', high: '#4A90D9', medium: '#D9D94A', low: '#D9A54A', disputed: '#D94A4A' };
+  // credColorMap is populated from namespace config at init
 
   // Update legend contents for a specific set of entities and relations
   function updateLegend(entities = [], relations = []) {
@@ -651,7 +656,7 @@
       // Mini confidence bar
       const total = stats.count;
       let credHtml = '<span class="legend-cred-bar">';
-      for (const [level, color] of Object.entries(CRED_COLORS)) {
+      for (const [level, color] of Object.entries(credColorMap)) {
         const n = stats.cred[level] || 0;
         if (n > 0) {
           const pct = Math.round((n / total) * 100);
@@ -686,13 +691,15 @@
       html += '</div>';
     }
 
-    // Confidence key
-    html += '<div class="legend-section"><div class="legend-title">Confidence</div>';
-    html += '<div class="legend-cred-key">';
-    for (const [level, color] of Object.entries(CRED_COLORS)) {
-      html += `<span class="legend-cred-key-item"><span class="legend-dot" style="background:${color};width:7px;height:7px;"></span>${level}</span>`;
+    // Confidence key — from namespace config
+    if (Object.keys(credColorMap).length > 0) {
+      html += '<div class="legend-section"><div class="legend-title">Confidence</div>';
+      html += '<div class="legend-cred-key">';
+      for (const [level, color] of Object.entries(credColorMap)) {
+        html += `<span class="legend-cred-key-item"><span class="legend-dot" style="background:${color};width:7px;height:7px;"></span>${level}</span>`;
+      }
+      html += '</div></div>';
     }
-    html += '</div></div>';
 
     panel.innerHTML = html;
   }

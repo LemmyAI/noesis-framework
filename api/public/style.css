@@ -15,12 +15,7 @@
   --transition: 200ms ease;
   --max-width: 1200px;
   --header-h: 96px;
-  /* credibility */
-  --c-verified: #4AD94A;
-  --c-high: #4A90D9;
-  --c-medium: #D9D94A;
-  --c-low: #D9A54A;
-  --c-disputed: #D94A4A;
+  /* credibility colors loaded from namespace config at runtime */
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -266,11 +261,7 @@ main {
   display: inline-block;
   flex-shrink: 0;
 }
-.cred-dot.verified { background: var(--c-verified); }
-.cred-dot.high { background: var(--c-high); }
-.cred-dot.medium { background: var(--c-medium); }
-.cred-dot.low { background: var(--c-low); }
-.cred-dot.disputed { background: var(--c-disputed); }
+/* credibility colors are set inline from namespace config */
 
 .badge-disputed {
   font-size: 0.65rem;

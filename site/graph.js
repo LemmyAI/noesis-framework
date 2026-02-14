@@ -298,10 +298,10 @@ window.GraphEngine = (() => {
         }));
       }
 
-      // Confidence ring
-      const credColors = { verified: '#4AD94A', high: '#4A90D9', medium: '#D9D94A', low: '#D9A54A', disputed: '#D94A4A' };
+      // Confidence ring — colors from options (namespace config)
+      const credColors = options.credColorMap || {};
       const conf = node.credibility?.confidence || 'medium';
-      const credColor = credColors[conf] || credColors.medium;
+      const credColor = credColors[conf] || '#888';
 
       // Shadow
       g.appendChild(el('circle', {

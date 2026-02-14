@@ -136,6 +136,13 @@ async function initDatabase() {
             "types": {
               "Event": "#4A90D9", "Decision": "#D94A4A", "Fact": "#4AD94A", "Claim": "#D9D94A",
               "System": "#9B4AD9", "Goal": "#D94AD9", "Concept": "#4AD9D9", "Person": "#D9A54A", "Organization": "#5A5AD9"
+            },
+            "credibility": {
+              "verified": "#4AD94A",
+              "high": "#4A90D9",
+              "medium": "#D9D94A",
+              "low": "#D9A54A",
+              "disputed": "#D94A4A"
             }
           }
         }'::jsonb
