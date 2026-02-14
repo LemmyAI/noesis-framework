@@ -3,9 +3,10 @@ set -e
 
 echo "=== NOESIS API Starting ==="
 
-# Initialize PostgreSQL data directory
-mkdir -p /var/lib/postgresql/data /run/postgresql /var/log
-chown -R postgres:postgres /var/lib/postgresql /run/postgresql
+# Initialize directories with proper ownership
+mkdir -p /var/lib/postgresql/data /run/postgresql
+touch /var/log/postgresql.log
+chown -R postgres:postgres /var/lib/postgresql /run/postgresql /var/log/postgresql.log
 
 # Init database cluster if needed
 su postgres -c "initdb -D /var/lib/postgresql/data 2>/dev/null || true"
@@ -13,6 +14,7 @@ su postgres -c "initdb -D /var/lib/postgresql/data 2>/dev/null || true"
 # Configure PostgreSQL for local connections
 echo "local all all trust" > /var/lib/postgresql/data/pg_hba.conf
 echo "host all all 127.0.0.1/32 trust" >> /var/lib/postgresql/data/pg_hba.conf
+chown postgres:postgres /var/lib/postgresql/data/pg_hba.conf
 
 # Start PostgreSQL
 su postgres -c "pg_ctl -D /var/lib/postgresql/data -l /var/log/postgresql.log start -w -t 30"
