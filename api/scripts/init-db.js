@@ -10,6 +10,7 @@ const pool = new Pool({
 const AVAILABLE_SEEDS = {
   'feb2026-rally': './seeds/feb2026-rally.js',
   'noesis-system': './seeds/noesis-system.js',
+  'battle-of-harrisburg': './seeds/battle-of-harrisburg.js',
 };
 
 async function initDatabase() {
