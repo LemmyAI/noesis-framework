@@ -298,10 +298,24 @@ window.GraphEngine = (() => {
         }));
       }
 
+      // Confidence ring
+      const credColors = { verified: '#4AD94A', high: '#4A90D9', medium: '#D9D94A', low: '#D9A54A', disputed: '#D94A4A' };
+      const conf = node.credibility?.confidence || 'medium';
+      const credColor = credColors[conf] || credColors.medium;
+
       // Shadow
       g.appendChild(el('circle', {
         r: nodeRadius, fill: 'rgba(0,0,0,0.4)',
         transform: 'translate(2,2)',
+      }));
+
+      // Confidence outer ring
+      g.appendChild(el('circle', {
+        r: nodeRadius + 3,
+        fill: 'none',
+        stroke: credColor,
+        'stroke-width': '2',
+        opacity: '0.6',
       }));
 
       // Main circle
@@ -361,8 +375,9 @@ window.GraphEngine = (() => {
           tooltip.className = 'graph-tooltip';
           container.appendChild(tooltip);
         }
+        const ttConf = node.credibility?.confidence || 'medium';
         tooltip.innerHTML = `<div class="tt-name">${nodeIcon} ${(node.name || node.id).replace(/</g, '&lt;')}</div>
-          <div class="tt-meta">${(node.type || '')} · ${(node.namespace || '')}</div>`;
+          <div class="tt-meta">${(node.type || '')} · ${(node.namespace || '')} · <span style="color:${credColor}">${ttConf}</span></div>`;
         tooltip.classList.add('visible');
         const cr = container.getBoundingClientRect();
         const mx = ev.clientX - cr.left + 12;

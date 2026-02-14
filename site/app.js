@@ -609,14 +609,31 @@
     return { btn, panel };
   }
 
+  // Confidence color
+  const CRED_COLORS = { verified: '#4AD94A', high: '#4A90D9', medium: '#D9D94A', low: '#D9A54A', disputed: '#D94A4A' };
+
   // Update legend contents for a specific set of entities and relations
   function updateLegend(entities = [], relations = []) {
     const { btn, panel } = ensureLegendElements();
 
-    // Collect types actually present
-    const usedTypes = [...new Set(entities.map(e => e.type))].filter(Boolean).sort();
-    // Collect relation types actually present
-    const usedRelTypes = [...new Set(relations.map(r => r.type))].filter(Boolean).sort();
+    // Collect types with counts and confidence breakdown
+    const typeStats = {};
+    for (const e of entities) {
+      if (!e.type) continue;
+      if (!typeStats[e.type]) typeStats[e.type] = { count: 0, cred: {} };
+      typeStats[e.type].count++;
+      const conf = e.credibility?.confidence || 'medium';
+      typeStats[e.type].cred[conf] = (typeStats[e.type].cred[conf] || 0) + 1;
+    }
+    const usedTypes = Object.keys(typeStats).sort();
+
+    // Collect relation types with counts
+    const relStats = {};
+    for (const r of relations) {
+      if (!r.type) continue;
+      relStats[r.type] = (relStats[r.type] || 0) + 1;
+    }
+    const usedRelTypes = Object.keys(relStats).sort();
 
     if (usedTypes.length === 0 && usedRelTypes.length === 0) {
       btn.style.display = 'none';
@@ -630,10 +647,23 @@
     html += '<div class="legend-section">';
     for (const type of usedTypes) {
       const c = state.colorMap[type] || '#666';
-      html += `<div class="legend-item">
+      const stats = typeStats[type];
+      // Mini confidence bar
+      const total = stats.count;
+      let credHtml = '<span class="legend-cred-bar">';
+      for (const [level, color] of Object.entries(CRED_COLORS)) {
+        const n = stats.cred[level] || 0;
+        if (n > 0) {
+          const pct = Math.round((n / total) * 100);
+          credHtml += `<span class="legend-cred-seg" style="background:${color};width:${Math.max(pct, 8)}%" title="${n} ${level}"></span>`;
+        }
+      }
+      credHtml += '</span>';
+      html += `<div class="legend-item-rich">
         <span class="legend-dot" style="background:${c}"></span>
-        <span class="legend-icon">${icon(type)}</span>
-        <span>${esc(type)}</span>
+        <span class="legend-type-name">${esc(type)}</span>
+        <span class="legend-count">${stats.count}</span>
+        ${credHtml}
       </div>`;
     }
     html += '</div>';
@@ -642,16 +672,27 @@
       html += '<div class="legend-section"><div class="legend-title">Relations</div>';
       for (const name of usedRelTypes) {
         const props = relConfig[name] || {};
-        const flags = [];
-        if (props.transitive) flags.push('T');
-        if (props.traversable) flags.push('⤳');
-        html += `<div class="legend-item">
-          <span style="color:var(--text-dim);font-size:0.75rem;width:18px;text-align:center;">→</span>
-          <span>${esc(name)}${flags.length ? ` <span style="color:var(--text-dim);font-size:0.65rem;">(${flags.join(' ')})</span>` : ''}</span>
+        const count = relStats[name];
+        const tags = [];
+        if (props.transitive) tags.push('transitive');
+        if (props.traversable) tags.push('traversable');
+        html += `<div class="legend-item-rich">
+          <span style="color:var(--text-dim);font-size:0.7rem;width:10px;text-align:center;flex-shrink:0;">→</span>
+          <span class="legend-type-name">${esc(name)}</span>
+          <span class="legend-count">${count}</span>
+          ${tags.length ? `<span class="legend-tags">${tags.map(t => `<span class="legend-tag">${t[0].toUpperCase()}</span>`).join('')}</span>` : ''}
         </div>`;
       }
       html += '</div>';
     }
+
+    // Confidence key
+    html += '<div class="legend-section"><div class="legend-title">Confidence</div>';
+    html += '<div class="legend-cred-key">';
+    for (const [level, color] of Object.entries(CRED_COLORS)) {
+      html += `<span class="legend-cred-key-item"><span class="legend-dot" style="background:${color};width:7px;height:7px;"></span>${level}</span>`;
+    }
+    html += '</div></div>';
 
     panel.innerHTML = html;
   }

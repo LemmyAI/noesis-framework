@@ -587,25 +587,62 @@ main {
   margin-bottom: 8px;
 }
 
-.legend-item {
+.legend-item-rich {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 3px 0;
+  gap: 6px;
+  padding: 4px 0;
   font-size: 0.8rem;
   color: var(--text);
+  flex-wrap: wrap;
 }
-.legend-item .legend-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+.legend-type-name { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.legend-count {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  background: rgba(255,255,255,0.06);
+  padding: 0 5px;
+  border-radius: 3px;
   flex-shrink: 0;
 }
-.legend-item .legend-icon {
-  font-size: 0.85rem;
-  width: 18px;
-  text-align: center;
-  flex-shrink: 0;
+.legend-cred-bar {
+  display: flex;
+  gap: 1px;
+  height: 4px;
+  border-radius: 2px;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 1px;
+}
+.legend-cred-seg {
+  height: 100%;
+  border-radius: 2px;
+  min-width: 3px;
+}
+.legend-tags { display: flex; gap: 2px; flex-shrink: 0; }
+.legend-tag {
+  font-size: 0.55rem;
+  font-weight: 700;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  background: rgba(255,255,255,0.06);
+  color: var(--text-dim);
+}
+.legend-cred-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+}
+.legend-cred-key-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.7rem;
+  color: var(--text-dim);
 }
 
 .legend-section {
