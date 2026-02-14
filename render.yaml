@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: noesis-api
+    env: docker
+    plan: free
+    dockerfilePath: ./api/Dockerfile
+    dockerContext: ./api
+    envVars:
+      - key: DATABASE_URL
+        value: postgresql://noesis:noesis@localhost:5432/noesis
+      - key: PORT
+        value: 3000
+    healthCheckPath: /health
