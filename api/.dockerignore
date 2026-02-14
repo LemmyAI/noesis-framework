@@ -5,5 +5,3 @@ dist
 .env.local
 .git
 .gitignore
-README.md
-tsconfig.json
