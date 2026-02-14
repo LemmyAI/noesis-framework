@@ -25,6 +25,9 @@ COPY package*.json ./
 COPY scripts ./scripts
 COPY start.sh ./start.sh
 
+# Copy site files into public/
+COPY public ./public
+
 RUN chmod +x /app/start.sh
 
 EXPOSE 3000
