@@ -296,19 +296,18 @@
       ${entity.key ? `<div class="entity-key" onclick="window.location.hash='#/key/${encodeURIComponent(entity.key)}'">🔑 ${esc(entity.key)}</div>` : ''}
     </div>`;
 
-    // Mini graph
+    // Load all entities for lookup (needed by graph + relations)
     const relations = relData.relations || [];
+    const allEntData = await api('/entities');
+    const entityLookup = {};
+    (allEntData.entities || []).forEach(e => { entityLookup[e.id] = e; });
+    entityLookup[id] = entity;
+
+    // Mini graph
     if (relations.length > 0) {
       // Collect graph nodes
       const nodeIds = new Set([id]);
       relations.forEach(r => { nodeIds.add(r.from_entity); nodeIds.add(r.to_entity); });
-      const graphNodeEntities = [entity];
-      const idsToFetch = [...nodeIds].filter(nid => nid !== id);
-      // We need entity details for names — fetch them
-      const allEntData = await api('/entities');
-      const entityLookup = {};
-      (allEntData.entities || []).forEach(e => { entityLookup[e.id] = e; });
-      entityLookup[id] = entity;
 
       const graphNodes = [...nodeIds].map(nid => entityLookup[nid] || { id: nid, name: nid, type: 'Concept', namespace: '' });
 
