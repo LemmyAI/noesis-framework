@@ -109,53 +109,53 @@ module.exports = async function seed(client) {
   await client.query(`
     INSERT INTO relations (from_entity, to_entity, type, narrative_sequence, context, metadata) VALUES
     -- Ukraine conflict narrative
-    ('trump-putin-call-2026-02-14', 'ukraine-ceasefire-talks-2026-02-14', 'enables', 1, 'Ukraine Peace Process', '{}'),
-    ('zelenskyy-peace-plan-2026-02-14', 'ukraine-ceasefire-talks-2026-02-14', 'influences', 2, 'Ukraine Peace Process', '{}'),
-    ('eu-sanctions-extension-2026-02-14', 'trump-putin-call-2026-02-14', 'opposes', 3, 'Ukraine Peace Process', '{}'),
-    ('ukraine-eu-membership-2026-02-14', 'ukraine-ceasefire-talks-2026-02-14', 'supports', 4, 'Ukraine Peace Process', '{}'),
-    ('russia-mobilization-2026-02-14', 'ukraine-ceasefire-talks-2026-02-14', 'opposes', 5, 'Ukraine Peace Process', '{}'),
-    ('poland-border-crisis-2026-02-14', 'russia-mobilization-2026-02-14', 'responds_to', 6, 'Ukraine Peace Process', '{}'),
+    ('trump-putin-call-2026-02-14', 'ukraine-ceasefire-talks-2026-02-14', 'enables', 1, 'News Week 7: Ukraine Peace Process', '{}'),
+    ('zelenskyy-peace-plan-2026-02-14', 'ukraine-ceasefire-talks-2026-02-14', 'influences', 2, 'News Week 7: Ukraine Peace Process', '{}'),
+    ('eu-sanctions-extension-2026-02-14', 'trump-putin-call-2026-02-14', 'opposes', 3, 'News Week 7: Ukraine Peace Process', '{}'),
+    ('ukraine-eu-membership-2026-02-14', 'ukraine-ceasefire-talks-2026-02-14', 'supports', 4, 'News Week 7: Ukraine Peace Process', '{}'),
+    ('russia-mobilization-2026-02-14', 'ukraine-ceasefire-talks-2026-02-14', 'opposes', 5, 'News Week 7: Ukraine Peace Process', '{}'),
+    ('poland-border-crisis-2026-02-14', 'russia-mobilization-2026-02-14', 'responds_to', 6, 'News Week 7: Ukraine Peace Process', '{}'),
 
     -- Middle East narrative
-    ('hamas-leader-killed-2026-02-14', 'israel-gaza-ceasefire-2026-02-14', 'threatens', 1, 'Middle East Tensions', '{}'),
-    ('iran-nuclear-progress-2026-02-14', 'israel-gaza-ceasefire-2026-02-14', 'complicates', 2, 'Middle East Tensions', '{}'),
-    ('saudi-yemen-peace-2026-02-14', 'israel-gaza-ceasefire-2026-02-14', 'influences', 3, 'Middle East Tensions', '{}'),
+    ('hamas-leader-killed-2026-02-14', 'israel-gaza-ceasefire-2026-02-14', 'threatens', 1, 'News Week 7: Middle East Tensions', '{}'),
+    ('iran-nuclear-progress-2026-02-14', 'israel-gaza-ceasefire-2026-02-14', 'complicates', 2, 'News Week 7: Middle East Tensions', '{}'),
+    ('saudi-yemen-peace-2026-02-14', 'israel-gaza-ceasefire-2026-02-14', 'influences', 3, 'News Week 7: Middle East Tensions', '{}'),
 
     -- Asia Pacific narrative
-    ('china-taiwan-exercises-2026-02-14', 'asean-south-china-sea-2026-02-14', 'opposes', 1, 'Asia Pacific Tensions', '{}'),
-    ('japan-defense-spending-2026-02-14', 'china-taiwan-exercises-2026-02-14', 'responds_to', 2, 'Asia Pacific Tensions', '{}'),
+    ('china-taiwan-exercises-2026-02-14', 'asean-south-china-sea-2026-02-14', 'opposes', 1, 'News Week 7: Asia Pacific Tensions', '{}'),
+    ('japan-defense-spending-2026-02-14', 'china-taiwan-exercises-2026-02-14', 'responds_to', 2, 'News Week 7: Asia Pacific Tensions', '{}'),
 
     -- Markets narrative
-    ('trump-climate-rollback-2026-02-14', 'oil-prices-surge-2026-02-14', 'influences', 1, 'Market Movements', '{}'),
-    ('fed-powell-testimony-2026-02-14', 'sp500-record-high-2026-02-14', 'influences', 2, 'Market Movements', '{}'),
-    ('boj-rate-hike-2026-02-14', 'bitcoin-95k-2026-02-14', 'correlates_with', 3, 'Market Movements', '{}'),
-    ('nvidia-earnings-record-2026-02-14', 'sp500-record-high-2026-02-14', 'drives', 4, 'Market Movements', '{}'),
-    ('sovereign-debt-crisis-2026-02-14', 'fed-powell-testimony-2026-02-14', 'influences', 5, 'Market Movements', '{}'),
-    ('crypto-etf-europe-2026-02-14', 'bitcoin-95k-2026-02-14', 'drives', 6, 'Market Movements', '{}'),
-    ('copper-shortage-2026-02-14', 'nvidia-earnings-record-2026-02-14', 'enables', 7, 'Market Movements', '{}'),
+    ('trump-climate-rollback-2026-02-14', 'oil-prices-surge-2026-02-14', 'influences', 1, 'News Week 7: Market Movements', '{}'),
+    ('fed-powell-testimony-2026-02-14', 'sp500-record-high-2026-02-14', 'influences', 2, 'News Week 7: Market Movements', '{}'),
+    ('boj-rate-hike-2026-02-14', 'bitcoin-95k-2026-02-14', 'correlates_with', 3, 'News Week 7: Market Movements', '{}'),
+    ('nvidia-earnings-record-2026-02-14', 'sp500-record-high-2026-02-14', 'drives', 4, 'News Week 7: Market Movements', '{}'),
+    ('sovereign-debt-crisis-2026-02-14', 'fed-powell-testimony-2026-02-14', 'influences', 5, 'News Week 7: Market Movements', '{}'),
+    ('crypto-etf-europe-2026-02-14', 'bitcoin-95k-2026-02-14', 'drives', 6, 'News Week 7: Market Movements', '{}'),
+    ('copper-shortage-2026-02-14', 'nvidia-earnings-record-2026-02-14', 'enables', 7, 'News Week 7: Market Movements', '{}'),
 
     -- Tech/AI narrative
-    ('meta-ai-investment-2026-02-14', 'gemini-2-pro-2026-02-14', 'competes_with', 1, 'AI Competition', '{}'),
-    ('openai-o3-release-2026-02-14', 'gemini-2-pro-2026-02-14', 'competes_with', 2, 'AI Competition', '{}'),
-    ('apple-car-cancelled-2026-02-14', 'meta-ai-investment-2026-02-14', 'enables', 3, 'AI Competition', '{}'),
-    ('amazon-q-business-2026-02-14', 'microsoft-copilot-revenue-2026-02-14', 'competes_with', 4, 'AI Competition', '{}'),
-    ('openai-gpt5-rumor-2026-02-14', 'openai-o3-release-2026-02-14', 'follows', 5, 'AI Competition', '{}'),
-    ('adobe-ai-video-2026-02-14', 'openai-o3-release-2026-02-14', 'competes_with', 6, 'AI Competition', '{}'),
+    ('meta-ai-investment-2026-02-14', 'gemini-2-pro-2026-02-14', 'competes_with', 1, 'News Week 7: AI Competition', '{}'),
+    ('openai-o3-release-2026-02-14', 'gemini-2-pro-2026-02-14', 'competes_with', 2, 'News Week 7: AI Competition', '{}'),
+    ('apple-car-cancelled-2026-02-14', 'meta-ai-investment-2026-02-14', 'enables', 3, 'News Week 7: AI Competition', '{}'),
+    ('amazon-q-business-2026-02-14', 'microsoft-copilot-revenue-2026-02-14', 'competes_with', 4, 'News Week 7: AI Competition', '{}'),
+    ('openai-gpt5-rumor-2026-02-14', 'openai-o3-release-2026-02-14', 'follows', 5, 'News Week 7: AI Competition', '{}'),
+    ('adobe-ai-video-2026-02-14', 'openai-o3-release-2026-02-14', 'competes_with', 6, 'News Week 7: AI Competition', '{}'),
 
     -- AI Safety/Regulation
-    ('china-ai-regulation-2026-02-14', 'openai-o3-release-2026-02-14', 'influences', 1, 'AI Regulation', '{}'),
+    ('china-ai-regulation-2026-02-14', 'openai-o3-release-2026-02-14', 'influences', 1, 'News Week 7: AI Regulation', '{}'),
 
     -- AI Applications
-    ('ai-robotics-figure-2026-02-14', 'waymo-expansion-2026-02-14', 'enables', 1, 'AI Applications', '{}'),
+    ('ai-robotics-figure-2026-02-14', 'waymo-expansion-2026-02-14', 'enables', 1, 'News Week 7: AI Applications', '{}'),
 
     -- Africa
-    ('ethiopia-dam-agreement-2026-02-14', 'egypt-currency-float-2026-02-14', 'influences', 1, 'Africa Developments', '{}'),
+    ('ethiopia-dam-agreement-2026-02-14', 'egypt-currency-float-2026-02-14', 'influences', 1, 'News Week 7: Africa Developments', '{}'),
 
     -- South Asia
-    ('india-elections-2026-02-14', 'pakistan-imf-deal-2026-02-14', 'correlates_with', 1, 'South Asia', '{}'),
+    ('india-elections-2026-02-14', 'pakistan-imf-deal-2026-02-14', 'correlates_with', 1, 'News Week 7: South Asia', '{}'),
 
     -- AI Medical
-    ('ai-doctor-diagnosis-2026-02-14', 'ai-weather-prediction-2026-02-14', 'follows', 1, 'AI Research', '{}')
+    ('ai-doctor-diagnosis-2026-02-14', 'ai-weather-prediction-2026-02-14', 'follows', 1, 'News Week 7: AI Research', '{}')
   `);
   console.log('    Relations: 30');
 
