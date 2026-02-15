@@ -1,0 +1,438 @@
+# Battle of Harrisburg (Tupelo) — American Civil War, July 1864
+#
+# A historical military narrative: Union forces under A.J. Smith
+# protect Sherman's supply lines by engaging Forrest's cavalry
+# in north Mississippi.
+#
+# Source of truth for: api/scripts/seeds/battle-of-harrisburg.js
+
+seed:
+  name: battle-of-harrisburg
+  label: "Battle of Harrisburg (Tupelo) — American Civil War, July 1864"
+  namespace: history.civil-war
+  description: "Union victory at Tupelo secures Sherman's supply lines during the Atlanta Campaign"
+
+namespace_chain:
+  - namespace: history
+    extends: default
+    added_types:
+      Battle: { parent: Event, color: "#C62828" }
+      Campaign: { parent: Event, color: "#E65100" }
+      Army: { parent: Organization, color: "#1565C0" }
+      Military Unit: { parent: Organization, color: "#4527A0" }
+
+  - namespace: history.civil-war
+    extends: history
+    added_types:
+      Theater: { parent: Concept, color: "#37474F" }
+
+entities:
+  # === THE BATTLE ===
+  - id: battle-harrisburg
+    type: Battle
+    name: "Battle of Harrisburg (Tupelo)"
+    key: "BATTLE:TUPELO-1864"
+    category: battles.civil-war
+    also_known_as: "Battle of Tupelo"
+    location: "Near Tupelo, Mississippi"
+    coordinates: "34.2557°N, 88.7370°W"
+    result: Union victory
+    union_casualties: 602
+    confederate_casualties: 1340
+    temporal:
+      start: "1864-07-14T00:00:00Z"
+      end: "1864-07-15T23:59:59Z"
+      precision: day
+    confidence: verified
+    sources_count: 4
+
+  # === PEOPLE ===
+  - id: smith-aj
+    type: Person
+    name: "Maj. Gen. Andrew J. Smith"
+    key: "PERSON:AJ-SMITH"
+    category: people.commanders
+    rank: Major General
+    side: Union
+    role: "Commander, Right Wing, 16th Army Corps"
+    temporal: { start: "1815-04-28", precision: day }
+    confidence: verified
+
+  - id: forrest-nb
+    type: Person
+    name: "Maj. Gen. Nathan Bedford Forrest"
+    key: "PERSON:NB-FORREST"
+    category: people.commanders
+    rank: Major General
+    side: Confederate
+    role: "Commander, Forrest's Cavalry Corps"
+    wounded_at_tupelo: true
+    temporal: { start: "1821-07-13", precision: day }
+    confidence: verified
+
+  - id: lee-sd
+    type: Person
+    name: "Lt. Gen. Stephen D. Lee"
+    key: "PERSON:SD-LEE"
+    category: people.commanders
+    rank: Lieutenant General
+    side: Confederate
+    role: "Overall Confederate commander at Tupelo"
+    temporal: { start: "1833-09-22", precision: day }
+    confidence: verified
+
+  - id: sherman-wt
+    type: Person
+    name: "Maj. Gen. William T. Sherman"
+    key: "PERSON:WT-SHERMAN"
+    category: people.commanders
+    rank: Major General
+    side: Union
+    role: "Commander, Military Division of the Mississippi"
+    temporal: { start: "1820-02-08", precision: day }
+    confidence: verified
+
+  - id: chalmers-jr
+    type: Person
+    name: "Brig. Gen. James R. Chalmers"
+    key: "PERSON:JR-CHALMERS"
+    category: people.commanders
+    rank: Brigadier General
+    side: Confederate
+    role: "Division commander under Forrest"
+    temporal: { start: "1831-01-11", precision: day }
+    confidence: verified
+
+  - id: buford-a
+    type: Person
+    name: "Brig. Gen. Abraham Buford"
+    key: "PERSON:A-BUFORD"
+    category: people.commanders
+    rank: Brigadier General
+    side: Confederate
+    role: "Division commander under Forrest"
+    temporal: { start: "1820-01-18", precision: day }
+    confidence: verified
+
+  - id: grierson-bh
+    type: Person
+    name: "Brig. Gen. Benjamin H. Grierson"
+    key: "PERSON:BH-GRIERSON"
+    category: people.commanders
+    rank: Brigadier General
+    side: Union
+    role: "Commander, Cavalry Division"
+    temporal: { start: "1826-07-08", precision: day }
+    confidence: verified
+
+  # === MILITARY UNITS ===
+  - id: unit-16th-corps
+    type: Military Unit
+    name: "Right Wing, 16th Army Corps"
+    key: "UNIT:XVI-CORPS-RW"
+    category: units.union
+    side: Union
+    strength: "13,000 infantry, 3,000 cavalry, 24 guns"
+    unit_type: Army Corps
+    temporal: { start: "1864-07-14", precision: day }
+    confidence: verified
+
+  - id: unit-forrests-cavalry
+    type: Military Unit
+    name: "Forrest's Cavalry Corps"
+    key: "UNIT:FORREST-CAV"
+    category: units.confederate
+    side: Confederate
+    strength: "2,100 infantry, 7,000 cavalry, 20 guns"
+    unit_type: Cavalry Corps
+    temporal: { start: "1864-07-14", precision: day }
+    confidence: verified
+
+  - id: unit-usct
+    type: Military Unit
+    name: "1st Brigade, U.S. Colored Troops"
+    key: "UNIT:USCT-1BDE"
+    category: units.union
+    side: Union
+    commander: "Col. Edward Bouton"
+    unit_type: Infantry Brigade
+    note: "Attached to Grierson's Cavalry Division"
+    temporal: { start: "1864-07-14", precision: day }
+    confidence: verified
+
+  # === CAMPAIGNS & CONTEXT ===
+  - id: campaign-atlanta
+    type: Campaign
+    name: "Atlanta Campaign"
+    key: "CAMPAIGN:ATLANTA-1864"
+    category: campaigns
+    commander: "Maj. Gen. William T. Sherman"
+    dates: "May–September 1864"
+    objective: "Capture Atlanta, Georgia"
+    temporal:
+      start: "1864-05"
+      end: "1864-09-02T00:00:00Z"
+      precision: month
+    confidence: verified
+
+  - id: battle-brices
+    type: Battle
+    name: "Battle of Brice's Crossroads"
+    key: "BATTLE:BRICES-1864"
+    category: battles.civil-war
+    result: Confederate victory
+    date: "June 10, 1864"
+    description: "Forrest's victory forced Union to send a stronger force — leading to Tupelo"
+    temporal: { start: "1864-06-10", precision: day }
+    confidence: verified
+
+  - id: railroad-supply
+    type: Fact
+    name: "Sherman's Single-Track Railroad Supply Line"
+    key: "FACT:SHERMAN-RAILROAD"
+    category: logistics
+    description: "Sherman's entire army in Georgia depended on a single-track railroad running through Tennessee for supplies. Cutting this line would doom the Atlanta Campaign."
+    temporal: { start: "1864-05", precision: month }
+    confidence: verified
+
+  - id: theater-west
+    type: Theater
+    name: "Western Theater"
+    key: "THEATER:WESTERN"
+    category: theaters
+    description: "Military operations between the Appalachians and the Mississippi River"
+    temporal: { start: "1861", precision: year }
+    confidence: verified
+
+  # === KEY EVENTS OF THE BATTLE ===
+  - id: event-advance-july5
+    type: Event
+    name: "Smith Advances from La Grange"
+    category: events.battle
+    description: "Smith's 16,000 troops march south from La Grange, Tennessee, into north Mississippi in two columns"
+    temporal: { start: "1864-07-05", precision: day }
+    confidence: verified
+
+  - id: event-running-fight
+    type: Event
+    name: "Running Fight to Tupelo"
+    category: events.battle
+    description: "10-mile running fight as Smith's columns turn toward Tupelo. Chalmers attacks the wagon train, captures and burns 7 wagons, but is driven back by superior numbers."
+    temporal: { start: "1864-07-12", precision: day }
+    confidence: high
+
+  - id: event-entrenchment
+    type: Event
+    name: "Smith Entrenches at Harrisburg"
+    category: events.battle
+    description: "Morning of July 14: Smith takes a strong defensive position at Harrisburg and entrenches. Lee forms assault lines with dismounted cavalry."
+    temporal: { start: "1864-07-14T06:00:00Z", precision: hour }
+    confidence: verified
+
+  - id: event-confederate-assault
+    type: Event
+    name: "Confederate Frontal Assaults Repulsed"
+    category: events.battle
+    description: "Lee orders frontal assaults: Lyon's Brigade attacks first and is thrown back with heavy losses. Mabry, Bell, then Rucker's Brigade all make futile assaults against entrenched Union positions. Men collapse from heat exhaustion under the July sun."
+    temporal: { start: "1864-07-14T10:00:00Z", precision: hour }
+    confidence: verified
+    sources_count: 3
+
+  - id: event-forrest-wounded
+    type: Event
+    name: "Forrest Wounded at Old Town Creek"
+    category: events.battle
+    description: "July 15: During pursuit of Smith's retreat, Forrest is severely wounded at Old Town Creek. Command devolves to Chalmers. Pursuit continues with only light skirmishing."
+    temporal: { start: "1864-07-15T12:00:00Z", precision: hour }
+    confidence: verified
+
+  - id: event-smith-retreats
+    type: Event
+    name: "Smith Retreats to Memphis"
+    category: events.battle
+    description: "July 15: Smith begins withdrawal. Sherman is irritated that Smith did not press the advantage and destroy Forrest's force entirely."
+    temporal: { start: "1864-07-15T08:00:00Z", precision: hour }
+    confidence: verified
+
+  # === OUTCOMES & CLAIMS ===
+  - id: fact-forrest-broken
+    type: Fact
+    name: "Forrest's Cavalry Combat Effectiveness Broken"
+    category: outcomes
+    description: "Though Forrest would rally for more raids, his cavalry never again had the strength to fight and defeat infantry in open battle."
+    temporal: { start: "1864-07-15", precision: day }
+    confidence: high
+
+  - id: fact-supply-line-safe
+    type: Fact
+    name: "Sherman's Supply Line Secured"
+    category: outcomes
+    description: "The Union victory ensured Forrest could not raid into middle Tennessee and cut the single-track railroad supplying Sherman's army at Atlanta."
+    temporal: { start: "1864-07-15", precision: day }
+    confidence: verified
+
+  - id: claim-lee-command
+    type: Claim
+    name: "Lee's Assumption of Command Undermined Forrest"
+    category: claims.historical
+    description: "Lt. Gen. S.D. Lee assumed overall command despite Forrest's deep resentment. Some historians argue Lee's rigid frontal assault tactics wasted Forrest's cavalry superiority and cost the Confederacy the battle."
+    temporal: { start: "1864-07-14", precision: day }
+    confidence: medium
+    confidence_note: "Debated among historians"
+
+  - id: decision-frontal-assault
+    type: Decision
+    name: "Lee Orders Frontal Assaults"
+    category: decisions.military
+    description: "Lee chose to dismount cavalry and assault entrenched infantry — the opposite of Forrest's preferred mobile tactics. The decision led to 1,340 Confederate casualties vs 602 Union."
+    temporal: { start: "1864-07-14T09:00:00Z", precision: hour }
+    confidence: verified
+
+# Structural (non-narrative) relations
+relations:
+  # Battle context
+  - from: battle-harrisburg
+    to: campaign-atlanta
+    type: part_of
+    description: "The battle was fought specifically to protect Sherman's Atlanta Campaign supply lines"
+  - from: battle-harrisburg
+    to: theater-west
+    type: part_of
+    description: "Fought in the Western Theater, north Mississippi"
+  - from: battle-brices
+    to: theater-west
+    type: part_of
+
+  # Command — Union
+  - from: smith-aj
+    to: unit-16th-corps
+    type: part_of
+    description: "Smith commanded the Right Wing, 16th Army Corps"
+  - from: grierson-bh
+    to: unit-16th-corps
+    type: part_of
+    description: "Grierson's Cavalry Division was part of Smith's force"
+  - from: unit-usct
+    to: unit-16th-corps
+    type: part_of
+    description: "1st Brigade USCT attached to Grierson's cavalry division"
+
+  # Command — Confederate
+  - from: forrest-nb
+    to: unit-forrests-cavalry
+    type: part_of
+    description: "Forrest commanded his cavalry corps"
+  - from: lee-sd
+    to: unit-forrests-cavalry
+    type: part_of
+    description: "Lee assumed overall command above Forrest — to Forrest's resentment"
+  - from: chalmers-jr
+    to: unit-forrests-cavalry
+    type: part_of
+  - from: buford-a
+    to: unit-forrests-cavalry
+    type: part_of
+
+  # Causal / analytical
+  - from: claim-lee-command
+    to: decision-frontal-assault
+    type: supports
+    description: "Lee's assumption of command led directly to the rigid frontal assault decision"
+  - from: decision-frontal-assault
+    to: event-confederate-assault
+    type: causes
+    description: "The decision to assault entrenched positions caused massive Confederate casualties"
+  - from: claim-lee-command
+    to: fact-forrest-broken
+    type: causes
+    description: "Historians argue Lee's command style contributed to Forrest's cavalry being broken"
+  - from: event-confederate-assault
+    to: fact-forrest-broken
+    type: causes
+    description: "1,340 Confederate casualties vs 602 Union — Forrest's corps lost fighting ability"
+
+  # Sherman context
+  - from: sherman-wt
+    to: campaign-atlanta
+    type: part_of
+    description: "Sherman was the overall commander of the Atlanta Campaign"
+  - from: sherman-wt
+    to: event-advance-july5
+    type: causes
+    description: "Sherman ordered Smith's expedition to neutralize Forrest and protect the railroad"
+
+# Named narrative chains
+narratives:
+  - name: "Battle of Harrisburg"
+    steps:
+      - from: railroad-supply
+        to: campaign-atlanta
+        type: enables
+        description: "Sherman's entire army depends on a single-track railroad through Tennessee for supplies"
+      - from: battle-brices
+        to: event-advance-july5
+        type: causes
+        description: "Forrest's victory at Brice's Crossroads forces Sherman to send a larger, stronger force under A.J. Smith"
+      - from: event-advance-july5
+        to: event-running-fight
+        type: causes
+        description: "Smith's two columns advance south and are harassed by Confederate cavalry for 10 miles toward Tupelo"
+      - from: event-running-fight
+        to: event-entrenchment
+        type: causes
+        description: "Both columns converge on Harrisburg where Smith takes a strong defensive position and digs in"
+      - from: decision-frontal-assault
+        to: event-confederate-assault
+        type: causes
+        description: "Lee orders dismounted cavalry to make frontal assaults against entrenched Union infantry — a fatal tactical error"
+      - from: event-confederate-assault
+        to: event-smith-retreats
+        type: causes
+        description: "After repulsing all attacks, Smith begins withdrawal on July 15 rather than pressing the defeated Confederates"
+      - from: event-smith-retreats
+        to: event-forrest-wounded
+        type: causes
+        description: "During pursuit at Old Town Creek, Forrest is severely wounded — ending effective Confederate pursuit"
+      - from: event-forrest-wounded
+        to: fact-forrest-broken
+        type: causes
+        description: "Forrest's wounding and his corps' heavy losses break their ability to fight infantry in open battle"
+      - from: fact-forrest-broken
+        to: fact-supply-line-safe
+        type: causes
+        description: "With Forrest neutralized, Sherman's railroad supply line is safe — the Atlanta Campaign can continue"
+      - from: fact-supply-line-safe
+        to: campaign-atlanta
+        type: enables
+        description: "Secured supply lines enable Sherman to complete the capture of Atlanta in September 1864"
+
+sources:
+  - entity: battle-harrisburg
+    type: encyclopedia
+    title: "Battle of Tupelo — Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Battle_of_Tupelo"
+    excerpt: "The Battle of Tupelo, also known as the Battle of Harrisburg, was fought July 14–15, 1864, near Tupelo, Mississippi. The Union victory ensured the safety of Sherman's supply lines during the Atlanta campaign."
+    source_name: Wikipedia
+
+  - entity: battle-harrisburg
+    type: preservation
+    title: "Tupelo Battlefield"
+    url: "https://www.battlefields.org/visit/battlefields/tupelo-battlefield"
+    excerpt: "The battlefield has been partially preserved and is home to the 1-acre Tupelo National Battlefield, established February 21, 1929. The American Battlefield Trust has preserved 12 acres as of mid-2023."
+    source_name: American Battlefield Trust
+    published: "2023-06-01"
+
+  - entity: battle-harrisburg
+    type: primary_source
+    title: "Confederate Military History, Vol. VII"
+    url: "https://archive.org/details/confederatemilit71evan"
+    excerpt: "Wheeler & Hooker (1899): The men were swept away by the fire of a superior and entrenched force, and many fell from exhaustion in the great heat of a July sun."
+    source_name: Confederate Publishing Company
+    published: "1899-01-01"
+
+  - entity: claim-lee-command
+    type: secondary_source
+    title: "Nathan Bedford Forrest in The Worst Military Leaders in History"
+    excerpt: "Jennings (2022): Lee assumed general command to Forrest's deep resentment. Some argue Lee's rigid tactics wasted the cavalry superiority that had won at Brice's Crossroads."
+    source_name: Reaktion Books
+    published: "2022-01-01"

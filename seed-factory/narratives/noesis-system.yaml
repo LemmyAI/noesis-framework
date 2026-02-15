@@ -1,0 +1,504 @@
+# NOESIS — The Framework Explained
+#
+# NOESIS describing itself as a knowledge graph: architecture,
+# concepts, layers, and design decisions.
+#
+# Source of truth for: api/scripts/seeds/noesis-system.js
+
+seed:
+  name: noesis-system
+  label: "NOESIS — The Framework Explained"
+  namespace: noesis
+  description: "NOESIS describing itself as a knowledge graph"
+
+namespace_chain:
+  - namespace: noesis
+    extends: default
+    added_types:
+      Layer: { parent: System, color: "#7C4DFF" }
+      Component: { parent: System, color: "#00BFA5" }
+      Principle: { parent: Concept, color: "#FF6D00" }
+      Feature: { parent: Concept, color: "#2979FF" }
+
+entities:
+  # === THE FRAMEWORK ===
+  - id: noesis-framework
+    type: System
+    name: "NOESIS Framework"
+    key: "SYSTEM:NOESIS"
+    category: system
+    version: "2.5"
+    full_name: "Narrative Ontology for Evidence-based Systems Inferencing Structure"
+    etymology: "Greek noesis — understanding, intellection"
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  # === THE 5 LAYERS ===
+  - id: layer-1
+    type: Layer
+    name: "Layer 1: Core Ontology"
+    key: "LAYER:CORE"
+    category: architecture.layers
+    layer_number: 1
+    purpose: "Configurable entity types and inference registry"
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: layer-2
+    type: Layer
+    name: "Layer 2: Namespace"
+    key: "LAYER:NAMESPACE"
+    category: architecture.layers
+    layer_number: 2
+    purpose: "Hierarchy, versioning, type extensions, cross-namespace identity"
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: layer-3
+    type: Layer
+    name: "Layer 3: Temporal & Credibility"
+    key: "LAYER:TEMPORAL"
+    category: architecture.layers
+    layer_number: 3
+    purpose: "Fuzzy chronology with variable precision, and confidence scoring"
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: layer-4
+    type: Layer
+    name: "Layer 4: Datalayer"
+    key: "LAYER:DATA"
+    category: architecture.layers
+    layer_number: 4
+    purpose: "Source documents, raw evidence, articles, reports backing entities"
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: layer-5
+    type: Layer
+    name: "Layer 5: Presentation"
+    key: "LAYER:PRESENTATION"
+    category: architecture.layers
+    layer_number: 5
+    purpose: "Logic-driven visuals, narrative sequencing, graph exploration"
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  # === CORE COMPONENTS ===
+  - id: comp-entity
+    type: Component
+    name: "Entity"
+    key: "COMPONENT:ENTITY"
+    category: components.core
+    description: "A typed node in the graph — an event, person, fact, claim, or any configurable type. Has an ID, belongs to a namespace, carries metadata, temporal data, and credibility."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: comp-relation
+    type: Component
+    name: "Relation"
+    key: "COMPONENT:RELATION"
+    category: components.core
+    description: "A directed, typed edge between entities. Carries narrative_sequence for story ordering and context for grouping into narratives. Each type has defined inference properties."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: comp-namespace
+    type: Component
+    name: "Namespace"
+    key: "COMPONENT:NAMESPACE"
+    category: components.core
+    description: "A scoped domain that extends a parent namespace. Adds new entity types, relation types, and colors. The default namespace is pure schema — all data lives in child namespaces."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: comp-key
+    type: Component
+    name: "Key (Soft IDR)"
+    key: "COMPONENT:KEY"
+    category: components.core
+    description: "An optional cross-namespace identity string. Entities sharing the same key represent the same real-world thing seen through different lenses. Example: CRYPTO:BTC links Bitcoin in finance and news."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: comp-temporal
+    type: Component
+    name: "Temporal Data"
+    key: "COMPONENT:TEMPORAL"
+    category: components.core
+    description: "Timestamp with variable precision: second, minute, hour, day, month, or year. Enables fuzzy chronology — Feb 2026 is as valid as a precise millisecond."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: comp-credibility
+    type: Component
+    name: "Credibility"
+    key: "COMPONENT:CREDIBILITY"
+    category: components.core
+    description: "Confidence level for an entity: verified, high, medium, low, or disputed. Plus source count. Enables trust-weighted reasoning."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: comp-datalayer
+    type: Component
+    name: "Datalayer"
+    key: "COMPONENT:DATALAYER"
+    category: components.core
+    description: "Raw source evidence: articles, reports, documents linked to entities. Each source has a URL, excerpt, publication date. The evidence trail behind every claim."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: comp-narrative
+    type: Component
+    name: "Narrative Sequencing"
+    key: "COMPONENT:NARRATIVE"
+    category: components.core
+    description: "Relations carry narrative_sequence and context fields to tell stories. A narrative is a named chain of sequenced relations that can be walked step-by-step or visualized as a graph."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  # === RELATION TYPES ===
+  - id: rel-causes
+    type: Feature
+    name: "causes / caused_by"
+    key: "RELTYPE:CAUSES"
+    category: relation_types
+    transitive: true
+    traversable: true
+    description: "A produces B. If A causes B and B causes C, then A causes C."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: rel-supports
+    type: Feature
+    name: "supports / supported_by"
+    key: "RELTYPE:SUPPORTS"
+    category: relation_types
+    transitive: false
+    traversable: false
+    description: "Evidence rule. A backs up B. Does not chain — support is direct only."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: rel-part-of
+    type: Feature
+    name: "part_of / has_part"
+    key: "RELTYPE:PART_OF"
+    category: relation_types
+    transitive: true
+    traversable: true
+    description: "Hierarchy rule. If X is part of Y, X inherits Y context. Transitive: part of part of = part of."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: rel-contradicts
+    type: Feature
+    name: "contradicts"
+    key: "RELTYPE:CONTRADICTS"
+    category: relation_types
+    transitive: false
+    traversable: false
+    description: "Symmetry rule. If A contradicts B, then B contradicts A. Does not chain."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  # === PRINCIPLES ===
+  - id: prin-narrative-first
+    type: Principle
+    name: "Narrative First"
+    key: "PRINCIPLE:NARRATIVE-FIRST"
+    category: principles
+    description: "NOESIS is built around stories, not just data points. Relations carry sequence and context to form walkable, visualizable narratives."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: prin-data-agnostic
+    type: Principle
+    name: "Data Agnostic"
+    key: "PRINCIPLE:DATA-AGNOSTIC"
+    category: principles
+    description: "The UI never hardcodes types, colors, or names. Everything is read from namespace configs at runtime. Any domain works: finance, medicine, history, engineering."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: prin-evidence-based
+    type: Principle
+    name: "Evidence Based"
+    key: "PRINCIPLE:EVIDENCE-BASED"
+    category: principles
+    description: "Every claim links to source documents via the datalayer. Credibility is explicit. Nothing is asserted without a trail back to evidence."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: prin-fuzzy-time
+    type: Principle
+    name: "Fuzzy Chronology"
+    key: "PRINCIPLE:FUZZY-TIME"
+    category: principles
+    description: "Not everything has a precise timestamp. Temporal precision ranges from second to year. February 2026 is a valid time as much as 2026-02-14T19:00:00Z."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  # === DECISIONS ===
+  - id: dec-read-only
+    type: Decision
+    name: "API is Read-Only"
+    key: "DECISION:READ-ONLY"
+    category: decisions.architecture
+    rationale: "Simpler, safer, no auth needed. Data managed via SQL scripts. Can add write endpoints later."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: dec-jsonb
+    type: Decision
+    name: "PostgreSQL with JSONB"
+    key: "DECISION:JSONB"
+    category: decisions.storage
+    rationale: "JSONB allows flexible querying of nested metadata. GIN indexes for performance. Native temporal types."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: dec-vanilla-js
+    type: Decision
+    name: "Vanilla JS Explorer (Zero Dependencies)"
+    key: "DECISION:VANILLA-JS"
+    category: decisions.frontend
+    rationale: "Read-only explorer needs no framework. 49KB total. Fast, small, no build step, no CDN dependency."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: dec-soft-idr
+    type: Decision
+    name: "Soft IDR via Key Field"
+    key: "DECISION:SOFT-IDR"
+    category: decisions.architecture
+    rationale: "Simple cross-namespace identity without a separate table. Same key = same real-world thing. Optional field. Full IDR layer planned for future."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  # === GOALS ===
+  - id: goal-understanding
+    type: Goal
+    name: "Enable Direct Understanding"
+    key: "GOAL:UNDERSTANDING"
+    category: goals
+    description: "From Aristotle: noesis is the highest form of knowledge — direct understanding. Not data collection, but synthesis of evidence into coherent narrative."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+  - id: goal-interop
+    type: Goal
+    name: "Cross-Domain Interoperability"
+    key: "GOAL:INTEROP"
+    category: goals
+    description: "The same framework works for news, finance, medicine, engineering. Namespaces scope domains, keys bridge them, the ontology is configurable."
+    temporal: { start: "2026-02-14", precision: day }
+    confidence: verified
+
+# Structural relations
+relations:
+  # Layers belong to framework
+  - from: layer-1
+    to: noesis-framework
+    type: part_of
+  - from: layer-2
+    to: noesis-framework
+    type: part_of
+  - from: layer-3
+    to: noesis-framework
+    type: part_of
+  - from: layer-4
+    to: noesis-framework
+    type: part_of
+  - from: layer-5
+    to: noesis-framework
+    type: part_of
+
+  # Layer 1 contains
+  - from: comp-entity
+    to: layer-1
+    type: part_of
+  - from: comp-relation
+    to: layer-1
+    type: part_of
+  - from: rel-causes
+    to: layer-1
+    type: part_of
+  - from: rel-supports
+    to: layer-1
+    type: part_of
+  - from: rel-part-of
+    to: layer-1
+    type: part_of
+  - from: rel-contradicts
+    to: layer-1
+    type: part_of
+
+  # Layer 2 contains
+  - from: comp-namespace
+    to: layer-2
+    type: part_of
+  - from: comp-key
+    to: layer-2
+    type: part_of
+
+  # Layer 3 contains
+  - from: comp-temporal
+    to: layer-3
+    type: part_of
+  - from: comp-credibility
+    to: layer-3
+    type: part_of
+
+  # Layer 4 contains
+  - from: comp-datalayer
+    to: layer-4
+    type: part_of
+
+  # Layer 5 contains
+  - from: comp-narrative
+    to: layer-5
+    type: part_of
+
+  # Principles enable goals
+  - from: prin-narrative-first
+    to: goal-understanding
+    type: enables
+    description: "Stories create understanding — not just data browsing but narrative comprehension"
+  - from: prin-data-agnostic
+    to: goal-interop
+    type: enables
+    description: "Domain-agnostic design means any field can plug in"
+  - from: prin-evidence-based
+    to: goal-understanding
+    type: enables
+    description: "Evidence trails build trust and enable verification"
+  - from: prin-fuzzy-time
+    to: comp-temporal
+    type: enables
+    description: "The fuzzy chronology principle drives the temporal precision feature"
+
+  # Decisions support architecture
+  - from: dec-read-only
+    to: noesis-framework
+    type: supports
+    description: "Read-only API keeps the system simple and safe"
+  - from: dec-jsonb
+    to: comp-entity
+    type: enables
+    description: "JSONB enables flexible metadata without schema migrations"
+  - from: dec-vanilla-js
+    to: layer-5
+    type: supports
+    description: "Zero-dependency frontend keeps the explorer fast and portable"
+  - from: dec-soft-idr
+    to: comp-key
+    type: enables
+    description: "Soft IDR via key field chosen over complex identity resolution layer"
+
+  # Layer dependencies
+  - from: layer-2
+    to: layer-1
+    type: depends_on
+    description: "Namespaces extend and inherit from the core ontology"
+  - from: layer-3
+    to: layer-1
+    type: depends_on
+    description: "Temporal and credibility apply to core entity types"
+  - from: layer-4
+    to: layer-1
+    type: depends_on
+    description: "Sources are linked to entities defined in the core"
+  - from: layer-5
+    to: layer-4
+    type: depends_on
+    description: "Presentation reads from all lower layers"
+  - from: layer-5
+    to: layer-3
+    type: depends_on
+    description: "Timelines use temporal data, UI shows credibility"
+  - from: layer-5
+    to: layer-2
+    type: depends_on
+    description: "UI reads namespace configs for types and colors"
+
+# Narrative: How NOESIS Works
+narratives:
+  - name: "How NOESIS Works"
+    steps:
+      - from: prin-narrative-first
+        to: noesis-framework
+        type: enables
+        description: "The narrative-first principle shapes the entire architecture — stories are first-class citizens"
+      - from: noesis-framework
+        to: layer-1
+        type: enables
+        description: "The framework defines 5 layers, starting with the Core Ontology — configurable types and inference rules"
+      - from: layer-1
+        to: comp-entity
+        type: enables
+        description: "The core ontology defines entity types: Event, Fact, Claim, Person, etc. — extensible per namespace"
+      - from: layer-1
+        to: comp-relation
+        type: enables
+        description: "Relations are typed edges with inference properties: transitive, traversable, with defined inverses"
+      - from: layer-2
+        to: comp-namespace
+        type: enables
+        description: "Namespaces scope domains and inherit from parents. The default namespace is pure schema — no data"
+      - from: comp-namespace
+        to: comp-key
+        type: enables
+        description: "The key field bridges namespaces: same key = same real-world thing seen through different lenses"
+      - from: layer-3
+        to: comp-temporal
+        type: enables
+        description: "Layer 3 adds fuzzy chronology — timestamps with precision from second to year"
+      - from: layer-3
+        to: comp-credibility
+        type: enables
+        description: "Credibility scoring: verified, high, medium, low, disputed — explicit trust in data"
+      - from: layer-4
+        to: comp-datalayer
+        type: enables
+        description: "The datalayer stores raw evidence: articles, reports, documents that back up entities"
+      - from: comp-relation
+        to: comp-narrative
+        type: enables
+        description: "Relations carry narrative_sequence and context — multiple stories can coexist independently"
+      - from: comp-narrative
+        to: layer-5
+        type: enables
+        description: "Layer 5 renders narratives as interactive graphs, step-by-step stories, and explorable knowledge maps"
+
+sources:
+  - entity: noesis-framework
+    type: specification
+    title: "NOESIS Specification v2.5"
+    url: "https://github.com/LemmyAI/noesis-framework/blob/main/docs/SPEC.md"
+    excerpt: "Narrative Ontology for Evidence-based Systems Inferencing Structure. A 5-layer architecture for structured knowledge representation with narrative sequencing, fuzzy chronology, and cross-namespace identity resolution."
+    source_name: NOESIS Docs
+    published: "2026-02-14"
+
+  - entity: noesis-framework
+    type: specification
+    title: "NOESIS UI Specification"
+    url: "https://github.com/LemmyAI/noesis-framework/blob/main/docs/UI-SPEC.md"
+    excerpt: "Mobile-first, data-agnostic SPA with SVG graph visualization, narrative player, and entity explorer. Vanilla JS, zero dependencies, 49KB total."
+    source_name: NOESIS Docs
+    published: "2026-02-14"
+
+  - entity: noesis-framework
+    type: specification
+    title: "NOESIS Implementation Decisions"
+    url: "https://github.com/LemmyAI/noesis-framework/blob/main/docs/DECISIONS.md"
+    excerpt: "Key architectural decisions: read-only API, PostgreSQL with JSONB, soft IDR via key field, namespace inheritance, narrative sequencing on relations."
+    source_name: NOESIS Docs
+    published: "2026-02-14"
+
+  - entity: goal-understanding
+    type: reference
+    title: "Aristotle on Noesis"
+    url: "https://plato.stanford.edu/entries/aristotle-psychology/"
+    excerpt: "In Aristotle's philosophy, noesis refers to the highest form of intellectual activity — direct apprehension of intelligible truths, as opposed to mere sense perception or opinion."
+    source_name: Stanford Encyclopedia of Philosophy

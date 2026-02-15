@@ -6,12 +6,17 @@ const pool = new Pool({
   connectionString: process.env.DATABASE_URL || 'postgresql://noesis:noesis@localhost:5432/noesis'
 });
 
-// Available seeds — add new ones here
-const AVAILABLE_SEEDS = {
-  'noesis-system': './seeds/noesis-system.js',
-  'battle-of-harrisburg': './seeds/battle-of-harrisburg.js',
-  'news-week7': './seeds/news-week7.js',
-};
+// Available seeds — auto-discovered from seeds/ directory
+const seedDir = path.join(__dirname, 'seeds');
+const AVAILABLE_SEEDS = {};
+if (fs.existsSync(seedDir)) {
+  for (const f of fs.readdirSync(seedDir)) {
+    if (f.endsWith('.js')) {
+      AVAILABLE_SEEDS[f.replace('.js', '')] = `./seeds/${f}`;
+    }
+  }
+}
+console.log(`Found seeds: ${Object.keys(AVAILABLE_SEEDS).join(', ') || '(none)'}`);
 
 async function initDatabase() {
   const client = await pool.connect();

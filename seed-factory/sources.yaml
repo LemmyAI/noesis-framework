@@ -1,0 +1,184 @@
+# sources.yaml — RSS/API source registry + narrative clustering rules
+#
+# Add a new source = add a few lines here. No code changes needed.
+
+feeds:
+  # === GENERAL NEWS ===
+  bbc-world:
+    name: BBC News
+    url: https://feeds.bbci.co.uk/news/world/rss.xml
+    category: geopolitics
+    confidence: verified
+
+  bbc-business:
+    name: BBC Business
+    url: https://feeds.bbci.co.uk/news/business/rss.xml
+    category: finance
+    confidence: verified
+
+  guardian-world:
+    name: The Guardian
+    url: https://www.theguardian.com/world/rss
+    category: geopolitics
+    confidence: high
+
+  guardian-business:
+    name: The Guardian
+    url: https://www.theguardian.com/business/rss
+    category: finance
+    confidence: high
+
+  aljazeera:
+    name: Al Jazeera
+    url: https://www.aljazeera.com/xml/rss/all.xml
+    category: geopolitics
+    confidence: high
+
+  # === FINANCE & MARKETS ===
+  coindesk:
+    name: CoinDesk
+    url: https://www.coindesk.com/arc/outboundfeeds/rss/
+    category: finance.crypto
+    confidence: high
+
+  reuters-business:
+    name: Reuters
+    url: https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best
+    category: finance
+    confidence: verified
+
+  yahoo-finance:
+    name: Yahoo Finance
+    url: https://finance.yahoo.com/news/rssindex
+    category: finance
+    confidence: high
+
+  marketwatch:
+    name: MarketWatch
+    url: https://feeds.content.dowjones.io/public/rss/mw_topstories
+    category: finance.markets
+    confidence: high
+
+  kitco-gold:
+    name: Kitco News
+    url: https://www.kitco.com/feed/rss/news/
+    category: finance.metals
+    confidence: high
+
+  mining-com:
+    name: Mining.com
+    url: https://www.mining.com/feed/
+    category: finance.mining
+    confidence: high
+
+  oilprice:
+    name: OilPrice.com
+    url: https://oilprice.com/rss/main
+    category: finance.energy
+    confidence: medium
+
+  # === TECH / AI ===
+  techcrunch-ai:
+    name: TechCrunch
+    url: https://techcrunch.com/category/artificial-intelligence/feed/
+    category: technology.ai
+    confidence: medium
+
+  ars-technica:
+    name: Ars Technica
+    url: https://feeds.arstechnica.com/arstechnica/index
+    category: technology
+    confidence: high
+
+# Narrative clustering rules — used by narrate.js
+# Order matters: more specific rules match first
+narrative_rules:
+  - context: "Crypto Markets"
+    keywords:
+      - bitcoin
+      - btc
+      - crypto
+      - coinbase
+      - defi
+      - ethereum
+      - stablecoin
+      - etf filing
+      - digital asset
+
+  - context: "Precious Metals Rally"
+    keywords:
+      - gold price
+      - gold rally
+      - gold surge
+      - silver rally
+      - precious metal
+      - gold/oz
+      - gold at $
+      - silver settl
+      - kitco
+
+  - context: "Mining & Resources"
+    keywords:
+      - mining
+      - lithium
+      - copper price
+      - rare earth
+      - iron ore
+      - nickel
+      - cobalt
+      - uranium
+
+  - context: "Energy Markets"
+    keywords:
+      - crude oil
+      - brent
+      - wti
+      - opec
+      - natural gas
+      - energy price
+      - oil price
+
+  - context: "Ukraine Peace Process"
+    keywords:
+      - ukraine
+      - zelenskyy
+      - zelensky
+      - kyiv
+      - kremlin
+      - munich security
+
+  - context: "Israel-Palestine Conflict"
+    keywords:
+      - gaza
+      - israeli strike
+      - palestinian
+      - hamas
+      - west bank
+
+  - context: "Sudan Crisis"
+    keywords:
+      - sudan
+      - rsf
+      - darfur
+      - khartoum
+      - rapid support forces
+
+  - context: "US Immigration Policy"
+    keywords:
+      - deportee
+      - deportation
+      - ice agent
+      - alien enemies act
+      - immigration raid
+
+  - context: "AI Race"
+    keywords:
+      - openai
+      - gpt-4
+      - gpt-5
+      - xai safety
+      - ai model
+      - ai features
+      - ai race
+      - computer science exodus
+      - ai video generat
