@@ -1,401 +1,318 @@
 # NOESIS Implementation Plan
 
-**Date:** 2026-02-14  
-**Status:** Ready to Execute  
-**Storage:** PostgreSQL with JSONB  
+**Date:** 2026-02-15 (updated)
+**Status:** API ✅ Complete, Presentation 🔲 Ready to Build
+**Storage:** PostgreSQL with JSONB
 
 ---
 
 ## Project Structure
 
-NOESIS consists of **three separate components**:
-
 | Component | Description | Status |
 |-----------|-------------|--------|
-| **1. Spec/Docs** | Framework documentation (SPEC.md, DECISIONS.md) | ✅ Done (v2.5) |
-| **2. API** | REST API + PostgreSQL (same Docker) | 🔲 Ready to build |
-| **3. Presentation Site** | Frontend for viewing narratives | 🔲 Future work |
-
-**Current focus:** API implementation. Database will be managed manually; API is **read-only** (retrieve data only, no create/update/delete).
+| **1. Spec/Docs** | Framework documentation | ✅ Done (v2.5) |
+| **2. API** | REST API + PostgreSQL (Docker) | ✅ Done & Deployed |
+| **3. Presentation** | Explorer SPA (namespace-driven) | 🔲 Ready to Build |
 
 ---
 
-## Component 1: Spec/Docs (Complete)
+## Component 1: Spec/Docs ✅
 
-The NOESIS framework specification:
-
-- `SPEC.md` - Full specification v2.5
-- `DECISIONS.md` - Key decisions and rationale
-- `IMPLEMENTATION-PLAN.md` - This file
-
-**Status:** ✅ Complete and pushed to GitHub.
+- `SPEC.md` — Framework specification v2.5
+- `DECISIONS.md` — Key decisions and rationale
+- `UI-SPEC.md` — Explorer UI specification v2.0
+- `CREATING-SEEDS.md` — Guide for creating seed data
+- `IMPLEMENTATION-PLAN.md` — This file
 
 ---
 
-## Component 2: API
+## Component 2: API ✅
 
-### Architecture
+**Deployed:** https://noesis-api.onrender.com
+**Service ID:** `srv-d68doot6ubrc73a2o1dg`
 
-```
-┌─────────────────────────────────────────┐
-│  Docker Container                        │
-│  ┌─────────────────────────────────────┐│
-│  │  API (Node.js/Express)              ││
-│  │  - REST endpoints                   ││
-│  │  - Read-only operations             ││
-│  │  - No auth needed (internal tool)   ││
-│  └─────────────────────────────────────┘│
-│  ┌─────────────────────────────────────┐│
-│  │  PostgreSQL                         ││
-│  │  - JSONB for flexible metadata      ││
-│  │  - Managed manually (SQL scripts)   ││
-│  │  - API cannot modify                ││
-│  └─────────────────────────────────────┘│
-└─────────────────────────────────────────┘
-```
+### What's Built
+- All REST endpoints (entities, relations, namespaces, categories, narratives)
+- Read-only API with PostgreSQL JSONB
+- Modular seed system (`SEEDS` env var)
+- Docker deployment on Render (free tier)
+- Database re-seeded on every deploy (no persistent disk)
 
-**Key constraint:** API is **read-only**. All data modifications (inserts, updates, deletes) are done manually via SQL scripts or database tools.
+### Current Seeds
+| Seed | Entities | Relations | Description |
+|------|----------|-----------|-------------|
+| `noesis-system` | 27 | 42 | NOESIS describing itself (meta) |
+| `battle-of-harrisburg` | 25 | 26 | Civil War history demo |
+| `news-feb14` | 56 | 30 | News from Feb 14, 2026 |
 
-### API Endpoints
-
-#### Entities
+### API Endpoints (Complete)
 ```
-GET /api/entities
-  ?type=Article          # Filter by type
-  ?namespace=news        # Filter by namespace
-  ?key=TICKER:AAPL       # Find by cross-namespace key
-  ?category=finance%     # Hierarchical category filter (LIKE)
-  ?is_latest=true        # Latest versions only (default)
-  ?precision=month       # Filter by temporal precision
-  ?from=2026-02-01       # Temporal range start
-  ?to=2026-02-28         # Temporal range end
-
-GET /api/entities/:id    # Returns latest version
-GET /api/entities/:id?version=2  # Specific version
-GET /api/entities/:id?all_versions=true  # All versions
-```
-
-#### Relations
-```
-GET /api/relations
-  ?entity=apple          # All relations involving entity
-  ?type=causes           # Filter by relation type
-  ?context=2026+Crisis   # Filter by narrative context
-  ?depth=3               # Traverse depth (respects traversable)
-  ?traversable=true      # Only include traversable relations
-```
-
-#### Namespaces
-```
-GET /api/namespaces                 # List all namespaces (tree structure)
-GET /api/namespaces/:ns/config      # Get merged config (with inheritance)
-```
-
-#### Categories
-```
-GET /api/categories/tree            # Full category hierarchy
-GET /api/categories/:parent/children  # Drill down
-```
-
-#### Narratives
-```
-GET /api/narratives                 # List all narrative contexts
-GET /api/narratives/:context        # Get full story with sequence
-```
-
-#### IDR (Identity Resolution)
-```
-GET /api/entities/by-key/:key       # Find all entities with this key
+GET /api/entities          (filters: type, namespace, key, category, temporal)
+GET /api/entities/:id
+GET /api/entities/by-key/:key
+GET /api/relations          (filters: entity, type, context, depth, traversable)
+GET /api/namespaces         (tree structure)
+GET /api/namespaces/:ns/config  (merged with inheritance)
+GET /api/categories/tree
+GET /api/categories/:parent/children
+GET /api/narratives
+GET /api/narratives/:context
 ```
 
 ---
 
-### Database Schema
+## Component 3: Presentation (Explorer SPA)
 
-```sql
--- Connect to database
-\c noesis
+**Spec:** See `UI-SPEC.md` v2.0
 
--- Entities
-CREATE TABLE entities (
-    id TEXT NOT NULL,
-    version_number INTEGER DEFAULT 1,
-    is_latest BOOLEAN DEFAULT TRUE,
-    
-    namespace TEXT NOT NULL,
-    key TEXT,                 -- Cross-namespace identity
-    type TEXT NOT NULL,       -- Must exist in namespace/default hierarchy
-    
-    name TEXT NOT NULL,
-    metadata JSONB DEFAULT '{}',
-    temporal JSONB DEFAULT '{"precision": "second"}',
-    credibility JSONB DEFAULT '{"confidence": "medium"}',
-    
-    created_at TIMESTAMPTZ DEFAULT NOW(),
-    updated_at TIMESTAMPTZ DEFAULT NOW(),
-    
-    PRIMARY KEY (id, version_number)
-);
+### Core Architecture
 
-CREATE INDEX idx_entities_key ON entities(key) WHERE key IS NOT NULL;
-CREATE INDEX idx_entities_namespace_type ON entities(namespace, type);
-CREATE INDEX idx_entities_namespace ON entities(namespace);
-CREATE INDEX idx_entities_is_latest ON entities(is_latest);
-CREATE INDEX idx_entities_metadata ON entities USING GIN (metadata);
-CREATE INDEX idx_entities_temporal ON entities USING GIN (temporal);
-CREATE INDEX idx_entities_category ON entities ((metadata->>'category'));
+**One template, every page.** The URL determines the namespace scope. The breadcrumb IS the navigation.
 
--- Relations
-CREATE TABLE relations (
-    id SERIAL PRIMARY KEY,
-    from_entity TEXT NOT NULL,
-    to_entity TEXT NOT NULL,
-    type TEXT NOT NULL,
-    
-    -- Narrative logic
-    narrative_sequence INTEGER DEFAULT 0,
-    context TEXT,
-    
-    bidirectional BOOLEAN DEFAULT FALSE,
-    metadata JSONB DEFAULT '{}',
-    temporal JSONB DEFAULT '{}',
-    created_at TIMESTAMPTZ DEFAULT NOW()
-);
-
-CREATE INDEX idx_relations_from ON relations(from_entity);
-CREATE INDEX idx_relations_to ON relations(to_entity);
-CREATE INDEX idx_relations_type ON relations(type);
-CREATE INDEX idx_relations_narrative ON relations(context, narrative_sequence);
-CREATE INDEX idx_relations_context ON relations(context);
-
--- Namespace configs
-CREATE TABLE namespace_configs (
-    namespace TEXT PRIMARY KEY,
-    extends TEXT DEFAULT 'default',
-    config JSONB DEFAULT '{}',
-    created_at TIMESTAMPTZ DEFAULT NOW(),
-    updated_at TIMESTAMPTZ DEFAULT NOW()
-);
-
--- Datalayer (source evidence)
-CREATE TABLE datalayer (
-    id SERIAL PRIMARY KEY,
-    entity_id TEXT NOT NULL,
-    source_type TEXT NOT NULL,
-    title TEXT,
-    url TEXT,
-    excerpt TEXT,
-    raw JSONB DEFAULT '{}',
-    source_name TEXT,
-    published_at TIMESTAMPTZ,
-    fetched_at TIMESTAMPTZ DEFAULT NOW()
-);
-
-CREATE INDEX idx_datalayer_entity ON datalayer(entity_id);
-CREATE INDEX idx_datalayer_url ON datalayer(url);
 ```
-
-### Seed Default Namespace
-
-```sql
-INSERT INTO namespace_configs (namespace, extends, config) VALUES (
-  'default', 
-  NULL, 
-  '{
-    "core_types": ["Event", "Decision", "Fact", "Claim", "System", "Goal", "Concept", "Person", "Organization"],
-    "type_hierarchy": {},
-    "relations": {
-      "causes": {"inverse": "caused_by", "transitive": true, "traversable": true},
-      "enables": {"inverse": "enabled_by", "transitive": false, "traversable": true},
-      "prevents": {"inverse": "prevented_by", "transitive": false, "traversable": true},
-      "part_of": {"inverse": "has_part", "transitive": true, "traversable": true},
-      "follows": {"inverse": "preceded_by", "transitive": false, "traversable": true},
-      "depends_on": {"inverse": "required_for", "transitive": false, "traversable": true},
-      "contradicts": {"inverse": "contradicts", "transitive": false, "traversable": false},
-      "supports": {"inverse": "supported_by", "transitive": false, "traversable": false}
-    },
-    "interfaces": {
-      "Temporal": {"required_fields": ["timestamp"]},
-      "Actor": {"required_fields": ["name"]},
-      "Evidence": {"required_fields": ["sources"]},
-      "Versioned": {"required_fields": ["version_number", "is_latest"]}
-    },
-    "colors": {
-      "types": {
-        "Event": "#4A90D9",
-        "Decision": "#D94A4A",
-        "Fact": "#4AD94A",
-        "Claim": "#D9D94A",
-        "System": "#9B4AD9",
-        "Goal": "#D94AD9",
-        "Concept": "#4AD9D9",
-        "Person": "#D9A54A",
-        "Organization": "#5A5AD9"
-      }
-    }
-  }'::jsonb
-);
+URL                → Namespace  → Content
+/                  → (root)     → Top narratives bubbled from all children + child ns cards
+/ns/news           → news       → News narratives + entities + child ns cards
+/ns/news.week7     → news.week7 → Week 7 narratives + entities
+/entity/:id        → (derived)  → Entity detail + mini graph + relations + sources
+/narrative/:ctx    → (derived)  → Graph view + Steps view
 ```
-
----
 
 ### Implementation Phases
 
-#### Phase 1: Project Setup (2 hours)
-- [ ] Initialize Node.js project with TypeScript
-- [ ] Set up Express server
-- [ ] Configure Dockerfile and docker-compose.yml
-- [ ] Set up PostgreSQL connection (node-postgres)
-- [ ] Create database schema migration script
+---
 
-#### Phase 2: Core API - Entities (4 hours)
-- [ ] `GET /api/entities` - List with filters
-- [ ] `GET /api/entities/:id` - Get by ID
-- [ ] Version handling (latest, specific, all)
-- [ ] Namespace filter
-- [ ] Key lookup (IDR)
-- [ ] Category hierarchical filter
-- [ ] Temporal range filter
+#### Phase 1: Scaffold & Routing (3 hours)
 
-#### Phase 3: Core API - Relations (3 hours)
-- [ ] `GET /api/relations` - List with filters
-- [ ] Entity relation lookup
-- [ ] Relation type filter
-- [ ] Context filter
-- [ ] Depth traversal (with traversable check)
-- [ ] Cycle detection
+**Goal:** Empty SPA with working hash routing, namespace resolution, and breadcrumbs.
 
-#### Phase 4: Core API - Namespaces (2 hours)
-- [ ] `GET /api/namespaces` - List all (tree)
-- [ ] `GET /api/namespaces/:ns/config` - Get merged config
-- [ ] Config inheritance resolution
+- [ ] Create `site/` directory with `index.html`, `app.js`, `style.css`
+- [ ] Hash-based router (`#/`, `#/ns/:path`, `#/entity/:id`, `#/narrative/:ctx`, `#/key/:key`)
+- [ ] Breadcrumb component — parses namespace path, renders clickable segments
+- [ ] API client module — fetch wrapper with base URL detection
+- [ ] Namespace config cache — fetch once, resolve inheritance chain client-side
+- [ ] Dark theme base CSS — background, card styles, typography, frosted glass
 
-#### Phase 5: Core API - Categories (2 hours)
-- [ ] `GET /api/categories/tree` - Full hierarchy
-- [ ] `GET /api/categories/:parent/children` - Drill down
-
-#### Phase 6: Core API - Narratives (2 hours)
-- [ ] `GET /api/narratives` - List all contexts
-- [ ] `GET /api/narratives/:context` - Get story with sequence
-
-#### Phase 7: Docker & Deployment (2 hours)
-- [ ] Dockerfile for API
-- [ ] docker-compose.yml (API + PostgreSQL)
-- [ ] Environment configuration
-- [ ] Health check endpoint
-- [ ] Basic logging
-
-#### Phase 8: Testing & Documentation (3 hours)
-- [ ] API documentation (OpenAPI/Swagger or README)
-- [ ] Example queries
-- [ ] Seed test data
-- [ ] Manual testing
-
-**Total Estimated Time:** 20 hours
+**Deliverable:** Navigable shell that shows correct breadcrumbs for any namespace URL.
 
 ---
 
-### Data Management
+#### Phase 2: Namespace Page (4 hours)
 
-**API is read-only.** Data modifications are done manually:
+**Goal:** The universal page template that shows narratives, child namespaces, and entities.
 
-#### Adding Data
-```sql
--- Insert namespace
-INSERT INTO namespace_configs (namespace, extends, config) VALUES (...);
+- [ ] **Narrative cards** — fetch from `/api/narratives`, filter by namespace scope
+- [ ] **Narrative bubbling** — if current namespace has no narratives, show top from children (ranked by size × recency)
+- [ ] **Child namespace cards** — grid of sub-namespaces with entity counts
+- [ ] **Entity list** — grouped by type, with type-color left-border accent
+- [ ] **Entity cards** — name, type icon, credibility dot, temporal display
+- [ ] **Collapse/expand** type groups
+- [ ] **Root page** — special case: no entities section, just narratives + children
 
--- Insert entity
-INSERT INTO entities (id, namespace, type, name, key, metadata, temporal) VALUES (...);
-
--- Insert relation
-INSERT INTO relations (from_entity, to_entity, type, context, narrative_sequence) VALUES (...);
-```
-
-#### Updating Data
-```sql
--- Create new version of entity
-UPDATE entities SET is_latest = FALSE WHERE id = 'xyz';
-INSERT INTO entities (id, version_number, ...) VALUES ('xyz', 2, ...);
-```
-
-#### Scripts
-Create reusable SQL scripts in `/scripts/`:
-- `scripts/seed-default-namespace.sql`
-- `scripts/seed-news-namespace.sql`
-- `scripts/seed-finance-namespace.sql`
-- `scripts/example-entities.sql`
+**Deliverable:** Full browsable namespace tree. Tap into `news`, see its narratives and entities. Tap back to root, see bubbled narratives.
 
 ---
 
-## Component 3: Presentation Site
+#### Phase 3: Entity Detail (3 hours)
 
-**Status:** Future work. To be specified later.
+**Goal:** Deep dive into a single entity.
 
-Will include:
-- Visual graph explorer
-- Timeline view with fuzzy precision
-- Narrative player (follow sequence)
-- Category drill-down navigation
-- Search and filter UI
+- [ ] Breadcrumb extends with entity name
+- [ ] Entity header — name, type, namespace, credibility, temporal
+- [ ] Description from metadata
+- [ ] **Relations list** — grouped by semantic direction (uses inverse names from config)
+- [ ] Related entities as tappable cards → navigate to their detail
+- [ ] **Datalayer/Sources** — articles with title, source name, excerpt, external link
+- [ ] Key display — tappable, links to Key Resolution view
+
+**Deliverable:** Tap any entity, see everything about it, follow connections.
 
 ---
 
-## Repository Structure
+#### Phase 4: Graph Engine (5 hours)
+
+**Goal:** Reusable SVG graph renderer with two layout modes.
+
+- [ ] **graph-engine.js** module (~400 lines)
+  - `layout(nodes, edges, mode)` → computed positions
+  - `render(container, nodes, edges, positions)` → SVG
+  - `attachInteractions(svg, callbacks)` → zoom/pan/tap
+- [ ] **Layered layout** — for narratives (sequence → X position, spread Y)
+- [ ] **Force-directed layout** — for entity graphs (repulsion + springs + center gravity)
+- [ ] **Node rendering** — circle with type color, emoji icon, name label
+- [ ] **Edge rendering** — directed arrows with relation type labels
+- [ ] **Zoom** — pinch (mobile) + scroll-wheel (desktop) via CSS transform
+- [ ] **Pan** — pointer drag on SVG background
+- [ ] **Tap interaction** — highlight node + edges, show info; double-tap → navigate
+- [ ] **Auto-fit** — compute viewBox from actual node positions
+- [ ] Scale repulsion/spring with node count (learned from v1.0)
+
+**Deliverable:** Drop-in graph component used by narrative view AND entity detail mini-graph.
+
+---
+
+#### Phase 5: Narrative View (3 hours)
+
+**Goal:** Explore a story as a graph or step-by-step.
+
+- [ ] Breadcrumb: `ν › namespace path › Narrative Name`
+- [ ] **Tab toggle** — Graph / Steps
+- [ ] **Graph mode** — layered layout via graph engine, narrative_sequence determines flow
+- [ ] **Steps mode** — vertical card chain, one relation per step
+- [ ] **Timeline bar** — dots for each entity, tappable to center graph
+- [ ] Relation descriptions from metadata shown in steps
+
+**Deliverable:** Select a narrative, see its story visually and linearly.
+
+---
+
+#### Phase 6: Entity Mini-Graph & Full Graph (2 hours)
+
+**Goal:** Graph views embedded in entity detail and standalone.
+
+- [ ] **Mini-graph** in entity detail — force-directed, depth=1, center node fixed
+- [ ] **"Expand full graph →"** link → standalone graph page
+- [ ] **Full graph page** (`#/graph/:id`) — depth=2, force-directed, full screen
+- [ ] Graph data from `/api/relations?entity=:id&depth=1|2`
+
+**Deliverable:** Visual context for every entity, expandable to explore freely.
+
+---
+
+#### Phase 7: Key Resolution View (1 hour)
+
+**Goal:** Show cross-namespace identity.
+
+- [ ] Route: `#/key/:encodedKey`
+- [ ] Fetch `/api/entities/by-key/:key`
+- [ ] List all entities sharing the key, grouped by namespace
+- [ ] Each entity card tappable → entity detail
+
+**Deliverable:** The "same thing, different lenses" view.
+
+---
+
+#### Phase 8: Polish & Mobile (3 hours)
+
+**Goal:** Production-ready mobile experience.
+
+- [ ] **Responsive breakpoints** — 1-col (<640), 2-col (640-1024), 3-col (>1024)
+- [ ] **Swipe right** → go back
+- [ ] **Pull to refresh**
+- [ ] **Long press** → preview popup
+- [ ] **Loading states** — skeleton cards while fetching
+- [ ] **Error states** — graceful "not found" / "no data" messages
+- [ ] **Empty namespace** — helpful message ("No entities yet")
+- [ ] **Smooth transitions** between views (200-300ms fade/slide)
+- [ ] **Performance audit** — verify < 50KB, lazy loading, cached configs
+
+**Deliverable:** Polished, fast, thumb-friendly explorer.
+
+---
+
+#### Phase 9: Docker Integration & Deploy (2 hours)
+
+**Goal:** Site served from the same Docker container as the API.
+
+- [ ] Build step in Dockerfile: copy `site/` → `public/`
+- [ ] Express static middleware serves `public/`
+- [ ] SPA fallback route (non-API routes → `index.html`)
+- [ ] Test locally with `docker-compose up`
+- [ ] Push to GitHub → Render auto-deploys
+- [ ] Verify live at https://noesis-api.onrender.com
+
+**Deliverable:** Live Explorer at the same URL as the API.
+
+---
+
+### Total Estimated Time
+
+| Phase | Hours |
+|-------|-------|
+| 1. Scaffold & Routing | 3 |
+| 2. Namespace Page | 4 |
+| 3. Entity Detail | 3 |
+| 4. Graph Engine | 5 |
+| 5. Narrative View | 3 |
+| 6. Mini/Full Graph | 2 |
+| 7. Key Resolution | 1 |
+| 8. Polish & Mobile | 3 |
+| 9. Docker & Deploy | 2 |
+| **Total** | **26 hours** |
+
+---
+
+### API Changes Needed
+
+The existing API is mostly sufficient. Minor additions:
+
+| Change | Why |
+|--------|-----|
+| `GET /api/narratives?namespace=:ns` | Scope narratives to a namespace (match context prefix or entity namespace) |
+| Entity count per namespace in `/api/namespaces` | Avoid N+1 queries for child namespace cards |
+| `GET /api/datalayer?entity=:id` | Currently might not exist as its own route |
+
+These are small additions — the schema and data model don't change.
+
+---
+
+### Namespace Structure for News (Example)
+
+Current flat structure:
+```
+default
+├── news          (56 entities, all news)
+├── noesis        (meta)
+└── history       (civil war)
+```
+
+Target hierarchical structure:
+```
+default
+├── news
+│   ├── news.week7       (Feb 10-16 stories)
+│   ├── news.week8       (Feb 17-23 stories)
+│   └── ...
+├── noesis               (meta)
+└── history
+    └── history.civil-war
+```
+
+This is a **data change** (moving entities to child namespaces), not a code change. Can be done by updating seed files.
+
+---
+
+### File Structure
 
 ```
-noesis-news/
-├── SPEC.md                    # Framework specification (v2.5)
-├── DECISIONS.md               # Key decisions
-├── IMPLEMENTATION-PLAN.md     # This file
-├── README.md                  # Project overview
-│
-├── api/                       # Component 2: API
+noesis-framework/
+├── docs/
+│   ├── SPEC.md
+│   ├── UI-SPEC.md           ← v2.0
+│   ├── IMPLEMENTATION-PLAN.md  ← this file
+│   ├── DECISIONS.md
+│   └── CREATING-SEEDS.md
+├── api/                      ← Component 2 (done)
 │   ├── src/
-│   │   ├── index.ts          # Express server entry
-│   │   ├── routes/           # API routes
-│   │   ├── db/               # Database connection
-│   │   └── utils/            # Helpers
-│   ├── package.json
-│   ├── tsconfig.json
-│   └── Dockerfile
-│
-├── scripts/                   # SQL scripts for manual DB management
-│   ├── init-db.sql
-│   ├── seed-default-namespace.sql
-│   └── example-data.sql
-│
-├── docker-compose.yml         # API + PostgreSQL
-│
-└── site/                      # Component 3: Presentation (future)
-    └── (TBD)
-```
-
----
-
-## Quick Start
-
-```bash
-# Initialize database
-docker-compose up -d
-docker-compose exec db psql -U noesis -f /scripts/init-db.sql
-
-# Seed default namespace
-docker-compose exec db psql -U noesis -f /scripts/seed-default-namespace.sql
-
-# API is now available at http://localhost:3000
-curl http://localhost:3000/api/namespaces
+│   ├── scripts/
+│   │   ├── init-db.js
+│   │   └── seeds/
+│   ├── Dockerfile
+│   └── package.json
+└── site/                     ← Component 3 (to build)
+    ├── index.html
+    ├── app.js
+    ├── style.css
+    └── graph-engine.js
 ```
 
 ---
 
 ## Next Steps
 
-1. **Start Phase 1** - Project setup
-2. Create `api/` directory structure
-3. Initialize Express + TypeScript
-4. Set up PostgreSQL in Docker
-5. Implement Phase 2 (Entities API)
-
----
-
-Ready when you are, Captain.
+1. ~~Build API~~ ✅
+2. ~~Deploy to Render~~ ✅
+3. ~~Create seed system~~ ✅
+4. **Build Explorer SPA** ← START HERE (Phase 1)
+5. Deploy Explorer in same container
+6. Iterate on seeds (more news weeks, more domains)

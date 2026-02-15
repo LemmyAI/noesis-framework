@@ -1,8 +1,22 @@
 # NOESIS Explorer — UI Specification
 
-**Version:** 1.0
-**Date:** 2026-02-14
+**Version:** 2.0
+**Date:** 2026-02-15
 **Status:** Ready for Implementation
+**Previous:** v1.0 (2026-02-14) — view-based navigation with flat namespace pills
+
+---
+
+## What Changed in v2.0
+
+**Core insight:** Every page is the same page — a namespace viewer. The URL *is* the namespace path. Narratives live inside namespaces, not floating globally. The frontpage is just the root namespace showing its best children.
+
+| v1.0 | v2.0 |
+|------|------|
+| Flat namespace pills, separate view types | Namespace path = page hierarchy |
+| Narrative names carry context ("News Week 7: ...") | Namespace path provides context, narrative names stay clean |
+| Home, Namespace, Entity, Narrative as distinct pages | One universal page template, scoped by namespace |
+| Narrative contexts are global strings | Narratives are scoped to a namespace |
 
 ---
 
@@ -12,17 +26,19 @@ The NOESIS Explorer is a **mobile-first, data-agnostic** single-page application
 
 **Guiding principle:** The UI is a *lens* on the data, not a dashboard. It should feel like navigating a living knowledge map — tap a node, see its world, follow a thread, go deeper.
 
+**v2.0 principle:** Every page is a namespace. The namespace path is the navigation. Breadcrumbs replace tabs.
+
 ---
 
 ## 2. Architecture
 
 ```
 Docker Container
-├── Express API ──────── /api/*    (existing, moved under /api prefix)
+├── Express API ──────── /api/*    (existing)
 └── Static SPA ──────── /*        (NOESIS Explorer)
     ├── index.html
-    ├── app.js           (vanilla JS or lightweight framework)
-    └── style.css        (mobile-first CSS, no heavy framework)
+    ├── app.js           (vanilla JS, modular)
+    └── style.css        (mobile-first CSS)
 ```
 
 **Tech stack:**
@@ -30,31 +46,102 @@ Docker Container
 - **CSS custom properties** for theming (colors pulled from namespace config)
 - All data fetched from `/api/*` endpoints at runtime
 - Single HTML file with JS modules — no build step needed
-- Works on phones, tablets, desktop (responsive, not adaptive)
-
-**Why vanilla:** The app is a read-only explorer. No forms, no complex state. Vanilla JS keeps it fast, small, and dependency-free.
+- Works on phones, tablets, desktop (responsive)
+- Target: < 50KB total bundle
 
 ---
 
-## 3. Visual Language
+## 3. The Namespace-as-Page Model
 
-### 3.1 Design System
+### 3.1 Core Concept
+
+Every "page" in the Explorer renders the same template. What changes is the **namespace scope**.
+
+```
+URL path        →  Namespace scope  →  What you see
+/               →  (root)           →  Top narratives from ALL children
+/news           →  news             →  News entities + child namespace narratives
+/news/week7     →  news.week7       →  Week 7 stories + its narratives
+/history        →  history           →  History entities + child narratives
+```
+
+The page template always shows:
+1. **Breadcrumb header** — the namespace path, each segment clickable
+2. **Featured narratives** — from this namespace and/or bubbled up from children
+3. **Entities** — belonging to this namespace, grouped by type
+4. **Child namespaces** — clickable cards to go deeper
+
+### 3.2 Namespace Path as Breadcrumbs
+
+The breadcrumb IS the namespace hierarchy. Always visible at the top.
+
+```
+Viewing /news/week7:
+
+  ν NOESIS  ›  news  ›  week7
+  ────────     ────     ─────
+  (root)       (link)   (current, bold)
+```
+
+- Each segment is a clickable link
+- Current namespace is bold/highlighted, not clickable
+- `ν NOESIS` (or just `ν`) is always the root link
+- On mobile: horizontally scrollable if path is long
+
+### 3.3 Narrative Scoping
+
+Narratives are scoped to namespaces via the `context` field on relations. The naming convention:
+
+```
+Old (v1.0):  "News Week 7: Ukraine Peace Process"
+New (v2.0):  "Ukraine Peace Process"  (lives in namespace news.week7)
+```
+
+The namespace path replaces the prefix. When viewing a narrative, the breadcrumb shows:
+
+```
+ν NOESIS  ›  news  ›  week7  ›  Ukraine Peace Process
+```
+
+### 3.4 Narrative Bubbling
+
+When a namespace has no narratives of its own, it shows the **top narratives from child namespaces**, ranked by:
+
+1. **Recency** — most recent temporal timestamps in the narrative's entities
+2. **Size** — number of entities/relations in the narrative
+3. **Depth** — narratives from direct children rank higher than grandchildren
+
+This means:
+- **Root page (`/`)** shows the most interesting narratives across the entire graph
+- **`/news`** shows top narratives from `news.week7`, `news.week8`, etc.
+- **`/news/week7`** shows its own narratives directly
+
+If a namespace has BOTH its own narratives AND child narratives, own narratives appear first under "This Namespace", followed by "From Sub-Namespaces".
+
+---
+
+## 4. Visual Language
+
+### 4.1 Design System
 
 | Element | Treatment |
 |---------|-----------|
 | **Background** | Near-black (`#0D0D0F`) — content glows against it |
 | **Cards** | Frosted glass (`backdrop-filter: blur`) with subtle border |
-| **Type colors** | Pulled from namespace config `colors.types` — used as left-border accent on cards and as node dot colors |
-| **Typography** | System font stack, clean and readable. Entity names bold, metadata subtle |
-| **Spacing** | Generous padding on mobile (thumb-friendly tap targets, min 48px) |
+| **Type colors** | Pulled from namespace config `colors.types` — node dots + card accents |
+| **Breadcrumbs** | Light gray text, current segment white/bold, `›` separator |
+| **Typography** | System font stack, clean and readable |
+| **Spacing** | Generous padding on mobile (thumb-friendly, min 48px tap targets) |
 | **Transitions** | Smooth slide/fade between views (200-300ms) |
-| **Icons** | Unicode/emoji only (no icon font dependency) — types get semantic icons: Event→⚡, Person→👤, Claim→💬, Fact→✓, etc. |
+| **Icons** | Unicode/emoji only — types get semantic icons |
 
-### 3.2 Color Philosophy
+### 4.2 Color Philosophy
 
 Entity type colors come from the API (`/api/namespaces/:ns/config → colors.types`). The UI merges the inheritance chain (default → parent → child namespace) to resolve colors for any type. Unknown types get a neutral gray.
 
-### 3.3 Credibility Indicators
+Namespace category colors (if defined in config `colors.categories`) can tint the page background or breadcrumb area subtly.
+
+### 4.3 Credibility & Temporal
 
 | Confidence | Visual |
 |------------|--------|
@@ -62,9 +149,7 @@ Entity type colors come from the API (`/api/namespaces/:ns/config → colors.typ
 | high | Blue dot ● |
 | medium | Yellow dot ● |
 | low | Orange dot ● |
-| disputed | Red dot ● with "disputed" badge |
-
-### 3.4 Temporal Precision
+| disputed | Red dot ● with badge |
 
 | Precision | Display |
 |-----------|---------|
@@ -77,505 +162,269 @@ Entity type colors come from the API (`/api/namespaces/:ns/config → colors.typ
 
 ---
 
-## 4. Navigation Model
+## 5. Page Template (Universal)
 
-The app has **four levels of depth**, navigable by tapping forward and swiping/tapping back:
+Every URL renders this same template, scoped by the current namespace.
 
 ```
-[Home]  →  [Namespace]  →  [Entity]  →  [Related Entity]
-                                    ↕
-                              [Narrative Player]
+┌─────────────────────────────────────┐
+│  ν NOESIS › news › week7            │  ← BREADCRUMB HEADER
+├─────────────────────────────────────┤
+│                                     │
+│  📖 Narratives                      │  ← SECTION: Narratives
+│  ┌─────────────────────────────┐    │     (own + bubbled from children)
+│  │ ⚡ Ukraine Peace Process     │    │
+│  │ 6 steps · 8 entities        │    │
+│  │ [Explore Story →]           │    │
+│  └─────────────────────────────┘    │
+│  ┌─────────────────────────────┐    │
+│  │ 💰 Market Movements         │    │
+│  │ 7 steps · 12 entities       │    │
+│  │ [Explore Story →]           │    │
+│  └─────────────────────────────┘    │
+│                                     │
+│  🗂 Sub-Namespaces                  │  ← SECTION: Children (if any)
+│  ┌──────────┐ ┌──────────┐         │
+│  │ 📰 week7 │ │ 📰 week8 │         │
+│  │ 56 items │ │ 0 items  │         │
+│  └──────────┘ └──────────┘         │
+│                                     │
+│  ⚡ Entities                        │  ← SECTION: Entities in this ns
+│  ── Event (24) ──────────────       │
+│  ┌─────────────────────────────┐    │
+│  │ ⚡ Ukraine Ceasefire Talks   │    │
+│  │ ● high · Feb 14, 2026       │    │
+│  └─────────────────────────────┘    │
+│  ...                                │
+│                                     │
+│  ── Decision (18) ───────────       │
+│  ...                                │
+│                                     │
+│  ── Claim (2) ───────────────       │
+│  ...                                │
+└─────────────────────────────────────┘
 ```
 
-A persistent **breadcrumb bar** at the top shows the current path and allows jumping back to any level. On mobile, this is a horizontal scrollable row.
+### Section Display Rules
 
-A **namespace pill bar** is always visible below the header, showing all available namespaces as tappable pills. The active one is highlighted. Tapping switches context without losing position where possible.
+| Section | When to show |
+|---------|-------------|
+| **Narratives** | Always (own narratives first, then bubbled from children) |
+| **Sub-Namespaces** | Only if this namespace has children |
+| **Entities** | Only if this namespace directly contains entities |
+
+**Root page special case:** Root has no entities of its own (default namespace is schema-only). So root shows only Narratives (bubbled) + Sub-Namespaces.
 
 ---
 
-## 5. Views
+## 6. Entity Detail View
 
-### 5.1 Home View (`/`)
+Accessed by tapping an entity card. Renders as a **slide-in panel** or a new page (depending on screen width).
 
-**Purpose:** Orient the user. Show what's in this NOESIS instance.
-
-**Layout:**
+Breadcrumb extends:
 ```
-┌─────────────────────────────────┐
-│  ν NOESIS Explorer              │  ← branding, subtle
-├─────────────────────────────────┤
-│  [default] [news] [finance] ... │  ← namespace pills
-├─────────────────────────────────┤
-│                                 │
-│  📖 Narratives                  │  ← section header
-│  ┌───────────────────────────┐  │
-│  │ ⚡ February 2026 Rally    │  │  ← narrative card
-│  │ 9 steps · 8 entities      │  │
-│  │ [Explore Story →]         │  │
-│  └───────────────────────────┘  │
-│                                 │
-│  🗂 Namespaces                  │  ← section header
-│  ┌──────────┐ ┌──────────┐     │
-│  │ 📰 news  │ │ 💰 finance│    │  ← namespace cards (grid)
-│  │ 12 items │ │ 10 items  │    │
-│  └──────────┘ └──────────┘     │
-│  ┌──────────┐ ┌──────────┐     │
-│  │ 🌍 geo   │ │ ₿ crypto │    │
-│  │ 1 item   │ │ 3 items  │    │
-│  └──────────┘ └──────────┘     │
-│                                 │
-│  🔍 Recent Entities             │  ← latest entities across all ns
-│  ┌───────────────────────────┐  │
-│  │ ⚡ Gold Breaks ATH        │  │
-│  │ Event · finance · Feb 10  │  │
-│  └───────────────────────────┘  │
-│  ┌───────────────────────────┐  │
-│  │ 📰 Bitcoin Tumbles...     │  │
-│  │ Article · news · Feb 3    │  │
-│  └───────────────────────────┘  │
-│  ...                            │
-└─────────────────────────────────┘
+ν NOESIS › news › week7 › Gold Hits $2,950/Ounce
 ```
 
-**Data sources:**
-- `GET /api/narratives` → narrative cards
-- `GET /api/namespaces` → namespace grid with entity counts from `GET /api/entities?namespace=X`
-- `GET /api/entities` → recent entities (sorted by temporal timestamp descending)
-
-**Interactions:**
-- Tap namespace card → Namespace View
-- Tap narrative card → Narrative Player
-- Tap entity card → Entity Detail View
+```
+┌─────────────────────────────────────┐
+│ ν › news › week7 › Gold Hits...     │
+├─────────────────────────────────────┤
+│                                     │
+│  ⚡ Gold Hits $2,950/Ounce          │  ← name (large)
+│  Event · news · ● verified          │  ← type + ns + credibility
+│  Feb 14, 2026                        │  ← temporal
+│                                     │
+│  Safe-haven demand drives new record │  ← description (from metadata)
+│                                     │
+│  ┌─ Mini Graph ─────────────────┐   │  ← embedded force-directed
+│  │    [visual of connections]    │   │
+│  │    [Expand full graph →]      │   │
+│  └───────────────────────────────┘   │
+│                                     │
+│  ─── Relations (5) ──────────────   │
+│  INFLUENCED BY                       │
+│  ┌─────────────────────────────┐    │
+│  │ → Trump Climate Rollback    │    │
+│  │   influences · Decision     │    │
+│  └─────────────────────────────┘    │
+│  ...                                │
+│                                     │
+│  ─── Sources (1) ────────────────   │
+│  ┌─────────────────────────────┐    │
+│  │ 📄 Gold Hits Record          │    │
+│  │ Bloomberg · Feb 14            │    │
+│  │ "Safe-haven demand drives..." │    │
+│  │ [Open Source ↗]               │    │
+│  └─────────────────────────────┘    │
+└─────────────────────────────────────┘
+```
 
 ---
 
-### 5.2 Namespace View (`/ns/:namespace`)
+## 7. Narrative View
 
-**Purpose:** Browse everything in a namespace, organized by type.
+Accessed by tapping a narrative card. Two modes: **Graph** and **Steps**.
 
-**Layout:**
+Breadcrumb:
 ```
-┌─────────────────────────────────┐
-│ ← Home / news                   │  ← breadcrumb
-├─────────────────────────────────┤
-│  [default] [news•] [finance]    │  ← active namespace highlighted
-├─────────────────────────────────┤
-│                                 │
-│  About this namespace           │
-│  Extends: default               │
-│  Types: Article, Source, Topic  │
-│                                 │
-│  ── Article (6) ──────────────  │  ← type group header with color
-│  ┌───────────────────────────┐  │
-│  │ 📰 Gold Surges to Record  │  │
-│  │ ● verified · Feb 10       │  │
-│  │ Bloomberg                  │  │
-│  └───────────────────────────┘  │
-│  ┌───────────────────────────┐  │
-│  │ 📰 Bitcoin Tumbles...     │  │
-│  │ ● verified · Feb 3        │  │
-│  │ CoinDesk                   │  │
-│  └───────────────────────────┘  │
-│  ...                            │
-│                                 │
-│  ── Source (3) ───────────────  │
-│  ┌───────────────────────────┐  │
-│  │ 🏢 Bloomberg              │  │
-│  │ ● verified · wire_service  │  │
-│  └───────────────────────────┘  │
-│  ...                            │
-└─────────────────────────────────┘
+ν NOESIS › news › week7 › Ukraine Peace Process
 ```
 
-**Data sources:**
-- `GET /api/namespaces/:ns/config` → merged config (types, colors)
-- `GET /api/entities?namespace=:ns` → entities grouped by type client-side
+### 7.1 Graph Mode (default)
 
-**Interactions:**
-- Tap entity card → Entity Detail View
-- Tap type header → collapse/expand group
-- Namespace pills switch context
+Layered layout — nodes positioned by `narrative_sequence` (left → right = cause → effect).
+
+```
+┌─────────────────────────────────────┐
+│ ν › news › week7 › Ukraine Peace... │
+├─────────────────────────────────────┤
+│  [● Graph]  [≡ Steps]               │
+├─────────────────────────────────────┤
+│                                     │
+│   [Interactive SVG graph]            │
+│                                     │
+│   Trump-Putin ──enables──→ Ceasefire │
+│       ↑                     ↑       │
+│   EU Sanctions ─opposes─┘   │       │
+│                   Zelenskyy─┘       │
+│                                     │
+│  ── Timeline ────────────────────   │
+│  ●──●──●──●──●──●                   │
+│                                     │
+└─────────────────────────────────────┘
+```
+
+### 7.2 Steps Mode
+
+Linear step-by-step walkthrough, one relation per card.
+
+```
+┌─────────────────────────────────────┐
+│  [● Graph]  [≡ Steps•]              │
+├─────────────────────────────────────┤
+│                                     │
+│  Step 1                              │
+│  ┌─────────────────────────────┐    │
+│  │ Trump-Putin Phone Call       │    │
+│  │       enables →              │    │
+│  │ Ukraine Ceasefire Talks      │    │
+│  └─────────────────────────────┘    │
+│                                     │
+│  Step 2                              │
+│  ┌─────────────────────────────┐    │
+│  │ Zelenskyy Peace Plan         │    │
+│  │       influences →           │    │
+│  │ Ukraine Ceasefire Talks      │    │
+│  └─────────────────────────────┘    │
+│  ...                                │
+└─────────────────────────────────────┘
+```
 
 ---
 
-### 5.3 Entity Detail View (`/entity/:id`)
+## 8. Key Resolution View
 
-**Purpose:** Deep dive into a single entity — its metadata, timeline position, credibility, relations, and source evidence.
+Accessed via the `🔑` key link on an entity.
 
-**Layout:**
 ```
-┌─────────────────────────────────┐
-│ ← news / Gold Surges to Record  │  ← breadcrumb
-├─────────────────────────────────┤
-│                                 │
-│  ⚡ Gold Breaks All-Time High   │  ← entity name (large)
-│  Above $2,900                   │
-│  ──────────────────────────     │
-│  Event · finance                │  ← type + namespace
-│  ● verified · Feb 10, 2026     │  ← credibility + date
-│  🔑 EVENT:GOLD-ATH-FEB26       │  ← key (if present)
-│                                 │
-│  ┌─ Metadata ─────────────────┐ │
-│  │ category: events.market     │ │
-│  │ impact: high                │ │
-│  │ price: $2,900+              │ │
-│  └─────────────────────────────┘ │
-│                                 │
-│  ─── Relations (10) ──────────  │
-│                                 │
-│  CAUSED BY                      │  ← relation group
-│  ┌───────────────────────────┐  │
-│  │ → US Announces 25% Tariffs│  │  ← linked entity
-│  │   causes · Policy · geo   │  │
-│  │   "February 2026 Rally"   │  │  ← narrative context
-│  └───────────────────────────┘  │
-│                                 │
-│  ENABLED BY                     │
-│  ┌───────────────────────────┐  │
-│  │ → Fed Holds Rates         │  │
-│  │   enables · Event         │  │
-│  └───────────────────────────┘  │
-│  ┌───────────────────────────┐  │
-│  │ → ECB Cuts Rates          │  │
-│  │   enables · Event         │  │
-│  └───────────────────────────┘  │
-│                                 │
-│  CAUSES                         │
-│  ┌───────────────────────────┐  │
-│  │ → Silver Rallies Past $33 │  │
-│  │   causes · Event          │  │
-│  └───────────────────────────┘  │
-│                                 │
-│  SUPPORTED BY                   │
-│  ┌───────────────────────────┐  │
-│  │ → Central Bank Gold Buying│  │
-│  │ → CPI Hot at 3.0%         │  │
-│  │ → Bloomberg Article        │  │
-│  └───────────────────────────┘  │
-│                                 │
-│  ─── Sources (2) ─────────────  │
-│  ┌───────────────────────────┐  │
-│  │ 📄 Gold Surges to Record  │  │
-│  │ Bloomberg · Feb 10         │  │
-│  │ "Gold prices surged past   │  │
-│  │  $2,900 an ounce..."      │  │
-│  │ [Open Source ↗]            │  │
-│  └───────────────────────────┘  │
-│                                 │
-└─────────────────────────────────┘
+ν NOESIS › 🔑 COMMODITY:GOLD
 ```
 
-**Data sources:**
-- `GET /api/entities/:id` → entity data
-- `GET /api/relations?entity=:id&depth=1` → direct relations
-- `GET /api/datalayer/by-entity/:id` → source evidence
-
-**Relation display logic:**
-Relations are grouped by their **semantic direction** relative to the current entity:
-- If this entity is the `to_entity` → use the **inverse** relation name (from namespace config)
-- If this entity is the `from_entity` → use the forward relation name
-- Group by relation type, show the linked entity as a tappable card
-
-**Interactions:**
-- Tap any related entity → navigate to its Entity Detail View (push onto breadcrumb)
-- Tap source link → open URL in new tab
-- Tap namespace pill on the entity → jump to that namespace view
-- Tap key → show all entities sharing this key (IDR cross-reference)
+Shows all entities sharing the same key across namespaces — the "same thing, different lenses" view.
 
 ---
 
-### 5.4 Narrative View (`/narrative/:context`)
+## 9. URL Routing
 
-**Purpose:** Understand a story — both the big picture and the details.
-
-Two modes, toggled by tabs at the top: **Graph** (default) and **Steps**.
-
-#### 5.4a Graph Mode (default)
-
-A visual node-and-edge diagram showing the entire narrative at once.
+Hash-based routing (no server-side routing needed):
 
 ```
-┌─────────────────────────────────┐
-│ ← Home / February 2026 Rally    │
-├─────────────────────────────────┤
-│  [● Graph]  [≡ Steps]           │  ← mode toggle
-├─────────────────────────────────┤
-│                                 │
-│   ┌──────┐    causes    ┌────┐ │
-│   │Tariff├─────────────→│ BTC│ │
-│   │ ⚔️   ├──┐           │ ⚡ │ │
-│   └──────┘  │  causes   └────┘ │
-│             │                   │
-│             ▼       enables     │
-│        ┌───────┐◄──────┌─────┐ │
-│        │ Gold  │       │ Fed │ │
-│        │  ATH  │◄──────│  ⚡ │ │
-│        │  ⚡   │enables└─────┘ │
-│        └───┬───┘◄──┐          │
-│            │   ┌────┘          │
-│    causes  │   │supports       │
-│            ▼   │               │
-│        ┌──────┐  ┌──────┐      │
-│        │Silver│  │ CPI  │      │
-│        │  ⚡  │  │  ⚡  │      │
-│        └──────┘  └──────┘      │
-│                                 │
-│  ── Timeline ──────────────────  │
-│  Jan29 ●──●──●────●────●──● Feb│
-│  Fed  ECB Tar BTC Gold CPI Slvr│
-│                                 │
-└─────────────────────────────────┘
+#/                              → Root namespace page (bubbled narratives + children)
+#/ns/news                       → news namespace page
+#/ns/news.week7                 → news.week7 namespace page
+#/ns/history.civil-war          → history.civil-war namespace page
+#/entity/:id                    → Entity detail view
+#/narrative/:context            → Narrative view (Graph + Steps)
+#/graph/:id                     → Full entity graph (standalone, depth=2)
+#/key/:encodedKey               → Key resolution view
 ```
 
-**Layout algorithm:** Layered/hierarchical (not force-directed) — positions nodes by `narrative_sequence` horizontally, with vertical spread to avoid overlap. This preserves the story's causal flow direction (left → right = cause → effect). Falls back to force-directed for non-narrative entity graphs.
-
-**Node rendering (SVG):**
-- Circle with type color fill (from namespace config)
-- Type icon (emoji) inside
-- Entity name label below
-- Size: 48px diameter minimum (thumb-friendly)
-- Selected node: glow ring + enlarged
-
-**Edge rendering (SVG):**
-- Directed arrow (line + arrowhead)
-- Labeled with relation type at midpoint
-- Color: subtle gray default, highlighted on tap
-- Dashed line for `contradicts` relations
-- Thicker line for narrative-sequenced relations
-
-**Interactions:**
-- **Tap node** → highlight it + all its edges, show info tooltip
-- **Double-tap / tap highlighted node** → navigate to Entity Detail
-- **Tap edge** → show relation details (type, description, context)
-- **Pinch-zoom** → zoom graph in/out (mobile)
-- **Scroll-wheel** → zoom (desktop)
-- **Drag** → pan the viewport
-- **Drag node** → reposition it (optional, nice-to-have)
-- **Timeline dots** → tap to center graph on that entity
-
-#### 5.4b Steps Mode
-
-The linear step-by-step walkthrough.
-
-```
-┌─────────────────────────────────┐
-│  [● Graph]  [≡ Steps•]          │  ← steps active
-├─────────────────────────────────┤
-│                                 │
-│  ┌─ Step 1 ───────────────────┐ │
-│  │ US Announces 25% Tariffs   │ │
-│  │         │                   │ │
-│  │     causes                  │ │
-│  │         ↓                   │ │
-│  │ Bitcoin Drops to $95K      │ │
-│  │                             │ │
-│  │ "Tariff announcement       │ │
-│  │  triggers risk-off..."     │ │
-│  └─────────────────────────────┘ │
-│                                 │
-│  ┌─ Step 2 ───────────────────┐ │
-│  │ US Announces 25% Tariffs   │ │
-│  │     causes →               │ │
-│  │ Gold Breaks ATH            │ │
-│  │ "Trade war fears drive     │ │
-│  │  safe-haven buying..."     │ │
-│  └─────────────────────────────┘ │
-│  ...                            │
-└─────────────────────────────────┘
-```
-
-**Features:**
-- Steps rendered as vertical chain cards
-- Entities within steps are tappable → Entity Detail
-- Relation description shown from `metadata.description`
-
-**Data source (both modes):** `GET /api/narratives/:context`
+The `#/ns/:path` route handles ALL namespace pages (including root when path is empty).
 
 ---
 
-### 5.5 Entity Graph (embedded in Entity Detail)
+## 10. Graph Rendering Engine
 
-When viewing an entity, a **mini force-directed graph** appears showing the entity at center with its direct relations radiating outward. This is a smaller, simpler version of the narrative graph.
+Same SVG-based engine from v1.0. Two layout modes:
 
-```
-┌─────────────────────────────────┐
-│  ⚡ Gold Breaks ATH              │
-│  Event · finance · Feb 10       │
-├─────────────────────────────────┤
-│                                 │
-│       Fed ⚡─enables─┐          │
-│                      ▼          │
-│  Tariff ⚔️──causes──● GOLD ●   │  ← current entity (larger, glowing)
-│                      │  ATH     │
-│       ECB ⚡─enables─┘  │      │
-│                    causes│      │
-│                         ▼      │
-│                    Silver ⚡    │
-│                                 │
-│  [Expand full graph →]          │  ← opens standalone graph view
-│                                 │
-├─────────────────────────────────┤
-│  ─── Relations (detail list) ── │
-│  ...                            │
-└─────────────────────────────────┘
-```
+### Layered (narratives)
+- Nodes by `narrative_sequence` on X-axis
+- Preserves causal flow (left → right)
 
-**Layout:** Simple force-directed (radial). Center node is fixed, neighbors orbit around it. Spring forces keep edges short, repulsion prevents overlap.
+### Force-Directed (entity graphs)
+- Center node fixed, neighbors orbit
+- Simulation settles after ~100-200 iterations
 
-**Interactions:**
-- Tap neighbor node → navigate to that entity
-- "Expand full graph" → standalone full-screen graph view with depth=2 traversal
-- Pinch/scroll to zoom
+### Shared
+- SVG rendering (not Canvas)
+- Zoom: pinch (mobile) + scroll-wheel (desktop)
+- Pan: pointer drag on background
+- Tap node: highlight + show info; double-tap: navigate
+- Performance target: 60fps up to ~100 nodes
 
 ---
 
-### 5.6 Full Entity Graph (`/graph/:id`)
-
-A standalone full-screen graph view for any entity, showing depth=2 relations. Same rendering engine as the narrative graph but using force-directed layout instead of layered.
-
-**Data source:** `GET /api/relations?entity=:id&depth=2`
-
-This is the "explore freely" mode — no narrative structure, just follow connections wherever they lead.
-
----
-
-### 5.5 Key Resolution View (`/key/:key`)
-
-**Purpose:** Show all entities sharing a cross-namespace key (the IDR lens).
-
-**Layout:**
-```
-┌─────────────────────────────────┐
-│ 🔑 COMMODITY:GOLD               │
-│ Found in 1 namespace             │
-├─────────────────────────────────┤
-│  ┌───────────────────────────┐  │
-│  │ 💰 Gold (XAU/USD)         │  │
-│  │ Asset · finance            │  │
-│  │ "The same entity seen     │  │
-│  │  through the finance lens" │  │
-│  └───────────────────────────┘  │
-└─────────────────────────────────┘
-```
-
-**Data source:** `GET /api/entities/by-key/:key`
-
-Small but important view — demonstrates the cross-namespace identity concept.
-
----
-
-## 6. Mobile-First Specifics
-
-### Gestures
-- **Swipe right** on Entity Detail → go back
-- **Pull down** on any list → refresh data
-- **Long press** entity card → preview popup (name, type, confidence)
+## 11. Mobile-First
 
 ### Breakpoints
 | Width | Layout |
 |-------|--------|
-| < 640px | Single column, full-width cards, stacked namespace pills |
-| 640-1024px | Two-column grid for namespace cards, side padding |
-| > 1024px | Three-column grid, max-width container (1200px), centered |
+| < 640px | Single column, stacked, breadcrumb scrollable |
+| 640-1024px | Two-column grid for namespace/entity cards |
+| > 1024px | Three-column grid, max-width 1200px, centered |
+
+### Gestures
+- Swipe right on detail views → go back
+- Pull down → refresh
+- Long press entity → preview popup
 
 ### Performance
-- No external dependencies (no CDN calls)
-- All CSS inline or single file
-- Lazy-load relation and datalayer data on Entity Detail (don't fetch until viewed)
-- Namespace configs cached client-side after first fetch
-- Total bundle target: < 50KB (HTML + CSS + JS)
+- No external dependencies
+- Lazy-load relations + datalayer on entity detail
+- Namespace configs cached client-side
+- Bundle: < 50KB
 
 ---
 
-## 7. URL Routing (Hash-based)
+## 12. Data-Agnostic Principles
 
-```
-#/                          → Home View
-#/ns/:namespace             → Namespace View
-#/entity/:id                → Entity Detail View (with embedded mini-graph)
-#/narrative/:context        → Narrative View (Graph + Steps tabs)
-#/graph/:id                 → Full Entity Graph (standalone, depth=2)
-#/key/:encodedKey           → Key Resolution View
-```
+The UI **never** hardcodes entity types, relation types, namespace names, or colors. Everything is read from the API at runtime.
 
-Hash-based routing keeps it simple (no server-side routing needed, works with static file serving).
-
----
-
-## 8. Graph Rendering Engine
-
-A single reusable SVG-based graph renderer powers all graph views. It supports two layout modes:
-
-### 8.1 Layered Layout (for narratives)
-- Nodes positioned by `narrative_sequence` on the X-axis
-- Vertical spread within each sequence level to prevent overlap
-- Preserves causal flow direction (left → right)
-- Edges drawn as curved SVG paths with arrowheads
-
-### 8.2 Force-Directed Layout (for entity graphs)
-- Simple physics simulation:
-  - **Repulsion:** All nodes push each other apart (Coulomb's law)
-  - **Springs:** Connected nodes attract (Hooke's law)
-  - **Center gravity:** Gentle pull toward viewport center
-  - **Damping:** Simulation settles after ~100-200 iterations
-- Fixed center node option (for mini entity graphs)
-- Simulation runs on load, then freezes (no continuous animation drain)
-
-### 8.3 Shared Features (both layouts)
-- **SVG rendering** (not Canvas) — better accessibility, easier hit testing
-- **Zoom:** CSS transform on the SVG container (pinch on mobile, scroll-wheel on desktop)
-- **Pan:** Pointer drag on the SVG background
-- **Node interaction:** Pointer events on SVG circles/groups
-- **Responsive:** SVG viewBox scales to container, reflows on resize
-- **Performance target:** Smooth at 60fps for graphs up to ~100 nodes
-
-### 8.4 Implementation Sketch
-```
-graph-engine.js (~300-400 lines)
-├── layout(nodes, edges, mode)     → positions
-├── render(container, nodes, edges, positions) → SVG
-├── attachInteractions(svg, callbacks) → zoom/pan/tap
-└── simulate(nodes, edges) → force-directed positions
-```
-
-The engine receives raw entity/relation data and a `mode` flag. Views call it with their data and get an interactive SVG. Callbacks handle navigation (tap node → route change).
-
----
-
-## 9. Data-Agnostic Principles
-
-
-The UI must **never** hardcode:
-- Entity type names (read from namespace config)
-- Relation type names (read from namespace config)
-- Namespace names (read from `/api/namespaces`)
-- Colors (read from namespace config `colors.types`)
-- Type icons (use a mapping table with sensible defaults, fall back to ● for unknown types)
-
-**Type → Icon mapping (defaults, overridable):**
+**Type → Icon mapping (defaults, fallback to ●):**
 ```
 Event → ⚡   Decision → ⚖️   Fact → ✓   Claim → 💬
 System → ⚙️  Goal → 🎯      Concept → 💡  Person → 👤
 Organization → 🏢  Article → 📰  Source → 📡  Topic → 🏷️
 Asset → 💎   Token → 🪙     Trade → 📊   Policy → 📜
-Sector → 📁  Protocol → 🔗   Conflict → ⚔️  Treaty → 🤝
+Sector → 📁  Layer → 📐     Feature → 🔧  Principle → 📏
+Component → ⚙️  Battle → ⚔️  Campaign → 🗺️  Army → 🏴
 (fallback) → ●
 ```
 
 ---
 
-## 10. Express Integration
+## 13. Express Integration
 
 ```javascript
-// API routes under /api
+// API under /api
 app.use('/api/entities', entitiesRouter);
-app.use('/api/relations', relationsRouter);
 // ... etc
 
-// Serve static site files
+// Serve static site
 app.use(express.static('public'));
 
-// SPA fallback — serve index.html for all non-API routes
+// SPA fallback
 app.get('*', (req, res) => {
   if (!req.path.startsWith('/api')) {
     res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
@@ -583,19 +432,20 @@ app.get('*', (req, res) => {
 });
 ```
 
-The `site/` build output is copied into `api/public/` during Docker build.
-
 ---
 
-## 11. Summary
+## 14. Summary
 
 | Aspect | Choice |
 |--------|--------|
 | Framework | Vanilla JS (zero deps) |
 | Styling | Custom CSS, dark theme, frosted glass |
 | Routing | Hash-based SPA |
+| Page model | One template, scoped by namespace |
+| Navigation | Breadcrumb = namespace path |
+| Narrative scope | Namespaces, not global strings |
+| Narrative bubbling | Children bubble up to parent pages |
 | Data | 100% from API, zero hardcoding |
-| Mobile | First-class, touch gestures, thumb-friendly |
+| Mobile | First-class, touch gestures |
 | Bundle size | < 50KB total |
-| Build step | None (plain HTML/CSS/JS) |
 | Deployment | Same Docker container, served by Express |
