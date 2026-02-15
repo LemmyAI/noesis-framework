@@ -92,9 +92,27 @@
 
   function typeColor(type) { return state.colorMap[type] || '#666'; }
 
+  // Get narratives that an entity belongs to
+  function getEntityNarratives(entityId) {
+    return (state.allNarratives || []).filter(n => 
+      (n.entity_ids || []).includes(entityId)
+    );
+  }
+
+  // Build narrative badges HTML for an entity
+  function narrativeBadges(entityId) {
+    const narratives = getEntityNarratives(entityId);
+    if (narratives.length === 0) return '';
+    const badges = narratives.map(n => 
+      `<a class="nar-badge" href="#/narrative/${encodeURIComponent(n.context)}" onclick="event.stopPropagation()" title="${esc(n.context)}">📖 ${esc(n.context.length > 25 ? n.context.slice(0, 22) + '…' : n.context)}</a>`
+    ).join('');
+    return `<div class="card-narratives">${badges}</div>`;
+  }
+
   function entityCard(entity) {
     const c = typeColor(entity.type);
     const desc = entity.metadata?.description || '';
+    const narHtml = narrativeBadges(entity.id);
     return `<div class="card accent-left" style="--type-color:${c}" onclick="window.location.hash='#/entity/${entity.id}'">
       <div class="card-title">${icon(entity.type)} ${esc(entity.name)}</div>
       <div class="card-meta">
@@ -103,6 +121,7 @@
         ${entity.temporal ? `<span>${formatTemporal(entity.temporal)}</span>` : ''}
       </div>
       ${desc ? `<div class="card-excerpt">${esc(desc)}</div>` : ''}
+      ${narHtml}
     </div>`;
   }
 
@@ -428,6 +447,7 @@
         const entityCardWithBreadcrumb = (e) => {
           const c = typeColor(e.type);
           const desc = e.metadata?.description || '';
+          const narHtml = narrativeBadges(e.id);
           // Build clickable namespace breadcrumb
           const nsParts = e.namespace.split('.');
           const nsLinks = nsParts.map((seg, i) => {
@@ -443,6 +463,7 @@
               ${e.temporal ? `<span>${formatTemporal(e.temporal)}</span>` : ''}
             </div>
             ${desc ? `<div class="card-excerpt">${esc(desc)}</div>` : ''}
+            ${narHtml}
           </div>`;
         };
 

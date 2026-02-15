@@ -332,6 +332,34 @@ main {
   color: var(--accent);
 }
 
+/* Narrative badges in entity cards */
+.card-narratives {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.nar-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(138, 180, 248, 0.15);
+  color: #8ab4f8;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.nar-badge:hover {
+  background: rgba(138, 180, 248, 0.25);
+}
+
 /* Namespace breadcrumb in entity cards */
 .card-ns-breadcrumb {
   font-size: 0.7rem;
