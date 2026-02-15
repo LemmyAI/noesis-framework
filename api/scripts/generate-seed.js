@@ -143,12 +143,22 @@ function generateSeed(stories, relations, options) {
 module.exports = async function seed_${name.replace(/-/g, '_')}(client) {
   console.log('  → Seeding: ${name}');
 
-  // === NAMESPACE ===
+  // === NAMESPACE (ensure full parent chain exists) ===`;
+
+  // Build the namespace chain: e.g. "news.week7" → ["news" extends "default", "news.week7" extends "news"]
+  const nsParts = ns.split('.');
+  for (let i = 1; i <= nsParts.length; i++) {
+    const current = nsParts.slice(0, i).join('.');
+    const parent = i === 1 ? 'default' : nsParts.slice(0, i - 1).join('.');
+    out += `
   await client.query(\`
     INSERT INTO namespace_configs (namespace, extends, config) VALUES
-    ('${ns}', 'news', '{}'::jsonb)
-    ON CONFLICT (namespace) DO UPDATE SET config = EXCLUDED.config
-  \`);
+    ('${current}', '${parent}', '{}'::jsonb)
+    ON CONFLICT (namespace) DO NOTHING
+  \`);`;
+  }
+
+  out += `
 
   // === ENTITIES ===
   await client.query(\`

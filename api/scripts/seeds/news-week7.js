@@ -14,11 +14,16 @@
 module.exports = async function seed_news_week7(client) {
   console.log('  → Seeding: news-week7');
 
-  // === NAMESPACE ===
+  // === NAMESPACE (ensure full parent chain exists) ===
+  await client.query(`
+    INSERT INTO namespace_configs (namespace, extends, config) VALUES
+    ('news', 'default', '{}'::jsonb)
+    ON CONFLICT (namespace) DO NOTHING
+  `);
   await client.query(`
     INSERT INTO namespace_configs (namespace, extends, config) VALUES
     ('news.week7', 'news', '{}'::jsonb)
-    ON CONFLICT (namespace) DO UPDATE SET config = EXCLUDED.config
+    ON CONFLICT (namespace) DO NOTHING
   `);
 
   // === ENTITIES ===
