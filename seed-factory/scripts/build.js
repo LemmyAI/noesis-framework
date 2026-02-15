@@ -73,7 +73,10 @@ function escJsonb(obj) {
   }
   const cleaned = clean(obj);
   const json = JSON.stringify(cleaned);
-  return "'" + json.replace(/'/g, "''") + "'::jsonb";
+  // Double-escape backslashes for PostgreSQL: \" → \\"
+  // Without this, PostgreSQL's JSON parser sees unescaped quotes
+  const pgSafe = json.replace(/\\/g, '\\\\');
+  return "'" + pgSafe.replace(/'/g, "''") + "'::jsonb";
 }
 
 // ============================================================
