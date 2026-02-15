@@ -307,6 +307,41 @@ main {
   overflow: hidden;
 }
 
+/* Entity card meta row */
+.entity-meta {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.entity-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.entity-ns-tag {
+  background: rgba(255,255,255,0.06);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  color: var(--accent);
+}
+
+.entity-type-badge {
+  display: inline-flex;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 6px;
+}
+
 /* === GRIDS === */
 
 .grid-2 {

@@ -354,26 +354,120 @@
       html += `</div>`;
     }
 
-    // SECTION 3: Entities (grouped by type)
-    if (directEntities.length > 0) {
-      const groups = {};
-      directEntities.forEach(e => {
-        if (!groups[e.type]) groups[e.type] = [];
-        groups[e.type].push(e);
+    // SECTION 3: Entities (own + from all descendant namespaces)
+    // Get all entities in this namespace and ALL descendants
+    const allDescendantEntities = isRoot
+      ? state.allEntities // root sees all
+      : state.allEntities.filter(e => isDescendantOrSelf(e.namespace, ns));
+
+    // Separate own vs descendant entities
+    const ownEntities = directEntities;
+    const descendantOnlyEntities = allDescendantEntities.filter(e => e.namespace !== ns);
+
+    // Calculate connection count for each entity
+    const connectionCount = {};
+    state.allRelations.forEach(r => {
+      connectionCount[r.from_entity] = (connectionCount[r.from_entity] || 0) + 1;
+      connectionCount[r.to_entity] = (connectionCount[r.to_entity] || 0) + 1;
+    });
+
+    // Sort entities by date (desc) then connection count (desc)
+    const sortEntities = (entities) => {
+      return entities.sort((a, b) => {
+        const dateA = a.temporal?.timestamp ? new Date(a.temporal.timestamp).getTime() : 0;
+        const dateB = b.temporal?.timestamp ? new Date(b.temporal.timestamp).getTime() : 0;
+        if (dateB !== dateA) return dateB - dateA;
+        const connA = connectionCount[a.id] || 0;
+        const connB = connectionCount[b.id] || 0;
+        return connB - connA;
       });
+    };
 
-      html += `<div class="section-header"><span class="icon">⚡</span> Entities <span style="font-weight:400;text-transform:none;letter-spacing:0">(${directEntities.length})</span></div>`;
+    // Limit for entities display
+    const ENTITY_LIMIT = 10;
 
-      for (const [type, items] of Object.entries(groups).sort((a, b) => b[1].length - a[1].length)) {
-        const c = typeColor(type);
-        html += `<div class="type-group-header">
-          <span class="color-dot" style="background:${c}"></span>
-          ${icon(type)} ${esc(type)}
-          <span class="count">${items.length}</span>
-        </div>`;
-        html += `<div class="stack" style="margin-bottom:16px;">`;
-        for (const e of items) html += entityCard(e);
-        html += `</div>`;
+    // Display entities section
+    if (ownEntities.length > 0 || descendantOnlyEntities.length > 0) {
+      // Own entities
+      if (ownEntities.length > 0) {
+        const sortedOwn = sortEntities([...ownEntities]);
+        const groups = {};
+        sortedOwn.forEach(e => {
+          if (!groups[e.type]) groups[e.type] = [];
+          groups[e.type].push(e);
+        });
+
+        html += `<div class="section-header"><span class="icon">⚡</span> Entities <span style="font-weight:400;text-transform:none;letter-spacing:0">(${ownEntities.length})</span></div>`;
+
+        for (const [type, items] of Object.entries(groups).sort((a, b) => b[1].length - a[1].length)) {
+          const c = typeColor(type);
+          html += `<div class="type-group-header">
+            <span class="color-dot" style="background:${c}"></span>
+            ${icon(type)} ${esc(type)}
+            <span class="count">${items.length}</span>
+          </div>`;
+          html += `<div class="stack" style="margin-bottom:16px;">`;
+          for (const e of items) html += entityCard(e);
+          html += `</div>`;
+        }
+      }
+
+      // Descendant entities (from sub-namespaces)
+      if (descendantOnlyEntities.length > 0) {
+        const sortedDesc = sortEntities([...descendantOnlyEntities]);
+        const groups = {};
+        sortedDesc.forEach(e => {
+          if (!groups[e.type]) groups[e.type] = [];
+          groups[e.type].push(e);
+        });
+
+        html += `<div class="section-header"><span class="icon">📂</span> From Sub-Namespaces <span style="font-weight:400;text-transform:none;letter-spacing:0">(${descendantOnlyEntities.length})</span></div>`;
+
+        // Build entity cards with connection count and date shown
+        const entityCardWithMeta = (e) => {
+          const conn = connectionCount[e.id] || 0;
+          const date = e.temporal?.timestamp ? new Date(e.temporal.timestamp).toLocaleDateString() : '';
+          const ns = e.namespace.replace(ns + '.', '').split('.')[0]; // Show first child segment
+          return `<div class="card entity-card" onclick="window.location.hash='#/entity/${encodeURIComponent(e.id)}'">
+            <div class="entity-type-badge" style="background:${typeColor(e.type)}">${esc(e.type)}</div>
+            <div class="entity-name">${esc(e.name)}</div>
+            <div class="entity-meta">
+              ${date ? `<span>${date}</span>` : ''}
+              ${conn > 0 ? `<span>🔗 ${conn}</span>` : ''}
+              <span class="entity-ns-tag">${esc(ns)}</span>
+            </div>
+          </div>`;
+        };
+
+        let totalShown = 0;
+        const MAX_TOTAL = 20;
+        let hasMoreEntities = false;
+
+        for (const [type, items] of Object.entries(groups).sort((a, b) => b[1].length - a[1].length)) {
+          const c = typeColor(type);
+          const toShow = items.slice(0, Math.min(items.length, MAX_TOTAL - totalShown));
+          if (toShow.length < items.length) hasMoreEntities = true;
+
+          html += `<div class="type-group-header">
+            <span class="color-dot" style="background:${c}"></span>
+            ${icon(type)} ${esc(type)}
+            <span class="count">${items.length}</span>
+          </div>`;
+          html += `<div class="stack" style="margin-bottom:16px;">`;
+          for (const e of toShow) html += entityCardWithMeta(e);
+          html += `</div>`;
+
+          totalShown += toShow.length;
+          if (totalShown >= MAX_TOTAL) {
+            hasMoreEntities = true;
+            break;
+          }
+        }
+
+        if (hasMoreEntities) {
+          const remaining = descendantOnlyEntities.length - totalShown;
+          html += `<div class="show-more" id="show-more-entities" style="cursor:pointer;text-align:center;padding:10px;font-size:0.85rem;color:var(--accent);">Show ${remaining} more…</div>`;
+        }
       }
     }
 
@@ -395,6 +489,66 @@
           stack.innerHTML = allChild.map(narrativeCard).join('');
         }
         showMoreBtn.remove();
+      });
+    }
+
+    // "Show more" handler for descendant entities
+    const showMoreEntBtn = document.getElementById('show-more-entities');
+    if (showMoreEntBtn) {
+      showMoreEntBtn.addEventListener('click', async () => {
+        // Fetch all relations to calculate connection counts
+        const relData = await api('/relations');
+        state.allRelations = relData.relations || [];
+        const connCount = {};
+        state.allRelations.forEach(r => {
+          connCount[r.from_entity] = (connCount[r.from_entity] || 0) + 1;
+          connCount[r.to_entity] = (connCount[r.to_entity] || 0) + 1;
+        });
+
+        const sortedDesc = sortEntities([...descendantOnlyEntities]);
+        const entityCardFull = (e) => {
+          const conn = connCount[e.id] || 0;
+          const date = e.temporal?.timestamp ? new Date(e.temporal.timestamp).toLocaleDateString() : '';
+          return `<div class="card entity-card" onclick="window.location.hash='#/entity/${encodeURIComponent(e.id)}'">
+            <div class="entity-type-badge" style="background:${typeColor(e.type)}">${esc(e.type)}</div>
+            <div class="entity-name">${esc(e.name)}</div>
+            <div class="entity-meta">
+              ${date ? `<span>${date}</span>` : ''}
+              ${conn > 0 ? `<span>🔗 ${conn}</span>` : ''}
+            </div>
+          </div>`;
+        };
+
+        // Find the section and replace content
+        const section = showMoreEntBtn.closest('.section-header')?.nextElementSibling;
+        if (section) {
+          // Build all cards grouped by type
+          const groups = {};
+          sortedDesc.forEach(e => {
+            if (!groups[e.type]) groups[e.type] = [];
+            groups[e.type].push(e);
+          });
+          let newHtml = '';
+          for (const [type, items] of Object.entries(groups).sort((a, b) => b[1].length - a[1].length)) {
+            const c = typeColor(type);
+            newHtml += `<div class="type-group-header">
+              <span class="color-dot" style="background:${c}"></span>
+              ${icon(type)} ${esc(type)}
+              <span class="count">${items.length}</span>
+            </div>`;
+            newHtml += `<div class="stack" style="margin-bottom:16px;">`;
+            for (const e of items) newHtml += entityCardFull(e);
+            newHtml += `</div>`;
+          }
+          // Replace all content in the From Sub-Namespaces section
+          const sectionHeader = showMoreEntBtn.previousElementSibling;
+          while (sectionHeader?.previousElementSibling) {
+            sectionHeader.previousElementSibling.remove();
+          }
+          sectionHeader?.remove();
+          showMoreEntBtn.remove();
+        }
+        showMoreEntBtn.remove();
       });
     }
   }
