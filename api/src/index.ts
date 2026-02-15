@@ -8,6 +8,9 @@ import namespacesRouter from './routes/namespaces';
 import categoriesRouter from './routes/categories';
 import narrativesRouter from './routes/narratives';
 import datalayerRouter from './routes/datalayer';
+import overviewRouter from './routes/overview';
+import searchRouter from './routes/search';
+import pathRouter from './routes/path';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -33,6 +36,9 @@ app.use('/api/namespaces', namespacesRouter);
 app.use('/api/categories', categoriesRouter);
 app.use('/api/narratives', narrativesRouter);
 app.use('/api/datalayer', datalayerRouter);
+app.use('/api/overview', overviewRouter);
+app.use('/api/search', searchRouter);
+app.use('/api/path', pathRouter);
 
 // API root
 app.get('/api', (req: Request, res: Response) => {
@@ -40,16 +46,23 @@ app.get('/api', (req: Request, res: Response) => {
     name: 'NOESIS API',
     version: '2.5.0',
     endpoints: [
+      'GET /api/overview',
+      'GET /api/search?q=...',
+      'GET /api/path?from=...&to=...',
       'GET /api/entities',
       'GET /api/entities/:id',
+      'GET /api/entities/:id?enrich=true',
       'GET /api/entities/by-key/:key',
       'GET /api/relations',
+      'GET /api/relations?entity=...&enrich=true',
       'GET /api/namespaces',
       'GET /api/namespaces/:ns/config',
       'GET /api/categories/tree',
       'GET /api/categories/:parent/children',
       'GET /api/narratives',
+      'GET /api/narratives?namespace=...',
       'GET /api/narratives/:context',
+      'GET /api/narratives/:context?format=summary',
       'GET /api/datalayer',
       'GET /api/datalayer/:id',
       'GET /api/datalayer/by-entity/:entityId',

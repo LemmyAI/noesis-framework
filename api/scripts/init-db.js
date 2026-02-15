@@ -112,6 +112,45 @@ async function initDatabase() {
     `);
     console.log('3. Indexes created.');
 
+    // Full-text search support
+    await client.query(`
+      ALTER TABLE entities ADD COLUMN search_vector tsvector;
+      CREATE INDEX idx_entities_search ON entities USING GIN (search_vector);
+
+      CREATE OR REPLACE FUNCTION entities_search_trigger() RETURNS trigger AS $$
+      BEGIN
+        NEW.search_vector :=
+          setweight(to_tsvector('english', COALESCE(NEW.name, '')), 'A') ||
+          setweight(to_tsvector('english', COALESCE(NEW.metadata->>'description', '')), 'B') ||
+          setweight(to_tsvector('english', COALESCE(NEW.metadata->>'category', '')), 'C') ||
+          setweight(to_tsvector('english', COALESCE(NEW.key, '')), 'C');
+        RETURN NEW;
+      END
+      $$ LANGUAGE plpgsql;
+
+      CREATE TRIGGER trg_entities_search
+        BEFORE INSERT OR UPDATE ON entities
+        FOR EACH ROW EXECUTE FUNCTION entities_search_trigger();
+
+      ALTER TABLE datalayer ADD COLUMN search_vector tsvector;
+      CREATE INDEX idx_datalayer_search ON datalayer USING GIN (search_vector);
+
+      CREATE OR REPLACE FUNCTION datalayer_search_trigger() RETURNS trigger AS $$
+      BEGIN
+        NEW.search_vector :=
+          setweight(to_tsvector('english', COALESCE(NEW.title, '')), 'A') ||
+          setweight(to_tsvector('english', COALESCE(NEW.excerpt, '')), 'B') ||
+          setweight(to_tsvector('english', COALESCE(NEW.source_name, '')), 'C');
+        RETURN NEW;
+      END
+      $$ LANGUAGE plpgsql;
+
+      CREATE TRIGGER trg_datalayer_search
+        BEFORE INSERT OR UPDATE ON datalayer
+        FOR EACH ROW EXECUTE FUNCTION datalayer_search_trigger();
+    `);
+    console.log('3b. Full-text search indexes created.');
+
     // Seed default namespace (always)
     await client.query(`
       INSERT INTO namespace_configs (namespace, extends, config) VALUES (

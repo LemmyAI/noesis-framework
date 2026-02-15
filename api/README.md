@@ -21,23 +21,37 @@ REST API for querying NOESIS knowledge graph data.
 
 ## Endpoints
 
+### Core Endpoints
+
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | GET | `/` | API info + endpoint list |
 | GET | `/health` | Health check (DB connectivity) |
 | GET | `/api/entities` | List entities with filters |
 | GET | `/api/entities/:id` | Get entity by ID (with version support) |
+| GET | `/api/entities/:id?enrich=true` | Entity + relations + sources + narratives in one call |
 | GET | `/api/entities/by-key/:key` | Find by cross-namespace key (IDR) |
 | GET | `/api/relations` | List relations with traversal + cycle detection |
+| GET | `/api/relations?entity=X&enrich=true` | Relations with inline entity data |
 | GET | `/api/namespaces` | List all namespaces (tree structure) |
 | GET | `/api/namespaces/:ns/config` | Get merged config (with inheritance) |
 | GET | `/api/categories/tree` | Full category hierarchy |
 | GET | `/api/categories/:parent/children` | Drill down categories |
 | GET | `/api/narratives` | List all narrative contexts |
+| GET | `/api/narratives?namespace=X` | Namespace-scoped narrative listing |
 | GET | `/api/narratives/:context` | Get full story with sequenced entities |
+| GET | `/api/narratives/:context?format=summary` | Agent-friendly prose digest |
 | GET | `/api/datalayer` | List source evidence |
 | GET | `/api/datalayer/:id` | Get specific source |
 | GET | `/api/datalayer/by-entity/:entityId` | All sources for an entity |
+
+### Agent-First Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/overview` | Instance discovery: stats, namespaces, types, relation properties |
+| GET | `/api/search?q=...` | Full-text search across entities, sources, and narratives |
+| GET | `/api/path?from=X&to=Y` | Find causal/relation paths between two entities |
 
 ### Query Parameters
 
@@ -69,6 +83,35 @@ REST API for querying NOESIS knowledge graph data.
 | `source_type` | Filter by source type (article, report) |
 | `source_name` | Filter by source name |
 | `from` / `to` | Filter by publication date range |
+
+#### `/api/search`
+| Param | Description |
+|-------|-------------|
+| `q` | Search query (required) |
+| `limit` | Max results, 1-100 (default: 20) |
+| `type` | Filter result kind: `entity`, `source`, or `narrative` |
+| `namespace` | Restrict entity results to a namespace (+ descendants) |
+
+#### `/api/path`
+| Param | Description |
+|-------|-------------|
+| `from` | Source entity ID (required) |
+| `to` | Target entity ID (required) |
+| `type` | Only traverse this relation type (e.g. `causes`) |
+| `maxDepth` | Maximum path length, 1-10 (default: 6) |
+| `traversable` | Only use traversable relations (`true`) |
+| `enrich` | Inline entity data in results (`true`) |
+
+#### `/api/narratives` (additional)
+| Param | Description |
+|-------|-------------|
+| `namespace` | Only narratives with entities in this namespace |
+| `descendants` | Include child namespaces (default: `true`) |
+
+#### `/api/narratives/:context` (additional)
+| Param | Description |
+|-------|-------------|
+| `format` | Set to `summary` for agent-friendly prose digest |
 
 ## Seed Data
 

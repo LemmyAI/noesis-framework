@@ -39,6 +39,29 @@ router.get('/', async (req: Request, res: Response) => {
       context as string | undefined
     );
 
+    // Enrich relations with inline entity data if requested
+    if (req.query.enrich === 'true') {
+      const allIds = new Set<string>();
+      for (const rel of relations) {
+        allIds.add(rel.from_entity);
+        allIds.add(rel.to_entity);
+      }
+      if (allIds.size > 0) {
+        const entResult = await db.query(
+          'SELECT id, name, type, namespace FROM entities WHERE id = ANY($1) AND is_latest = TRUE',
+          [Array.from(allIds)]
+        );
+        const lookup: Record<string, any> = {};
+        for (const row of entResult.rows) {
+          lookup[row.id] = { id: row.id, name: row.name, type: row.type, namespace: row.namespace };
+        }
+        for (const rel of relations) {
+          rel.from_entity = lookup[rel.from_entity] || { id: rel.from_entity };
+          rel.to_entity = lookup[rel.to_entity] || { id: rel.to_entity };
+        }
+      }
+    }
+
     res.json({ 
       entity, 
       depth: maxDepth, 

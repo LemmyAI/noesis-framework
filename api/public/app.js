@@ -776,6 +776,49 @@ Layer 1: Core Ontology — universal types, configurable inference rules
       <p>What you're looking at is the NOESIS Explorer — a presentation layer (Layer 5) built to navigate any NOESIS knowledge graph. It reads all structure from the API at runtime. No hardcoded types, no fixed layouts. Feed it a different domain, and it adapts.</p>
       <p>Currently exploring <strong>${entCount} entities</strong> across <strong>${nsCount} namespaces</strong> with <strong>${narCount} narratives</strong>.</p>
 
+      <h2>For AI Agents</h2>
+      <p>NOESIS is designed to be queried by AI agents, not just browsed by humans. Unlike unstructured document retrieval (RAG), NOESIS gives agents <strong>typed relations</strong>, <strong>source provenance</strong>, and <strong>causal reasoning</strong> — the tools to answer "why?" instead of just "what?".</p>
+
+      <h3>Quick Start</h3>
+      <p>An agent's first call should be <code>GET /api/overview</code> — it returns everything needed to orient: instance stats, namespace tree, available entity types, relation types with inference properties, and recent activity. From there:</p>
+      <ul>
+        <li><strong>Find things:</strong> <code>GET /api/search?q=gold+rally</code> — full-text search across entities, sources, and narratives</li>
+        <li><strong>Understand things:</strong> <code>GET /api/entities/:id?enrich=true</code> — returns the entity, all its relations (with resolved names), sources, and narratives in one call</li>
+        <li><strong>Follow stories:</strong> <code>GET /api/narratives/:context?format=summary</code> — returns causal chains, key actors, and timeline as agent-friendly prose</li>
+        <li><strong>Ask "why?":</strong> <code>GET /api/path?from=A&amp;to=B&amp;enrich=true</code> — finds and explains causal paths between any two entities</li>
+      </ul>
+
+      <h3>Why Not Just RAG?</h3>
+      <p>Retrieval-augmented generation pulls relevant text chunks and hopes the model can reason over them. It works for simple questions. It fails for causal reasoning, temporal understanding, and evidence verification — exactly the things that matter when knowledge is complex.</p>
+      <p>NOESIS provides what RAG cannot:</p>
+      <table class="acro-table">
+        <tr><td>🔗</td><td>Typed Relations</td><td>Not just "these things are related" — <em>how</em> they're related (causes, enables, contradicts), with inference properties</td></tr>
+        <tr><td>📖</td><td>Narrative Sequence</td><td>Events are ordered into stories with causality — agents can follow the plot, not just find keywords</td></tr>
+        <tr><td>📄</td><td>Source Provenance</td><td>Every claim links to source documents — agents can verify instead of hallucinate</td></tr>
+        <tr><td>🔀</td><td>Transitive Inference</td><td>If A causes B and B causes C, the path endpoint finds A→B→C automatically</td></tr>
+        <tr><td>🌐</td><td>Namespace Perspectives</td><td>The same entity viewed through different domain lenses — finance sees an asset, news sees a story</td></tr>
+      </table>
+
+      <h3>Example: Three Calls to Answer a Complex Question</h3>
+      <p>Question: <em>"Why did gold reach an all-time high, and what were the downstream effects?"</em></p>
+      <ol>
+        <li><code>GET /api/search?q=gold+all-time+high</code> → finds <code>evt-gold-ath</code></li>
+        <li><code>GET /api/entities/evt-gold-ath?enrich=true</code> → returns the event with all incoming causes and outgoing effects, plus source articles</li>
+        <li><code>GET /api/path?from=evt-tariff-pause&amp;to=evt-gold-ath&amp;enrich=true</code> → traces the full causal chain from trigger to outcome</li>
+      </ol>
+      <p>Three calls. Typed, sourced, causal. No hallucination required.</p>
+
+      <h3>Agent API Reference</h3>
+      <table class="acro-table">
+        <tr><td style="font-family:monospace;font-size:0.8rem;">/api/overview</td><td colspan="2">Instance discovery — stats, namespaces, types, relation properties, recent entities</td></tr>
+        <tr><td style="font-family:monospace;font-size:0.8rem;">/api/search?q=...</td><td colspan="2">Full-text search across entities, sources, and narratives</td></tr>
+        <tr><td style="font-family:monospace;font-size:0.8rem;">/api/path?from=...&amp;to=...</td><td colspan="2">Find causal paths between two entities</td></tr>
+        <tr><td style="font-family:monospace;font-size:0.8rem;">/api/entities/:id?enrich=true</td><td colspan="2">Entity + relations + sources + narratives in one call</td></tr>
+        <tr><td style="font-family:monospace;font-size:0.8rem;">/api/relations?entity=...&amp;enrich=true</td><td colspan="2">Relations with inline entity data (no N+1 queries)</td></tr>
+        <tr><td style="font-family:monospace;font-size:0.8rem;">/api/narratives?namespace=...</td><td colspan="2">Namespace-scoped narrative listing</td></tr>
+        <tr><td style="font-family:monospace;font-size:0.8rem;">/api/narratives/:ctx?format=summary</td><td colspan="2">Agent-friendly narrative digest with causal chains</td></tr>
+      </table>
+
       <a href="#/" class="about-enter">Enter the Explorer →</a>
     </div>`;
   }
