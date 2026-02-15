@@ -82,6 +82,32 @@ URL                → Namespace  → Content
 
 ---
 
+#### Phase 0: Seed Rewrite — Sub-Namespaces (2 hours)
+
+**Goal:** Restructure all seeds to use proper namespace hierarchy (2-3 levels deep). Clean narrative names.
+
+- [ ] **news-feb14:** Move all 56 entities from `news` → `news.week7`. Create `news.week7` namespace config (extends `news`). Strip "News Week 7:" prefix from all narrative contexts.
+- [ ] **feb2026-rally:** Keep finance/geopolitics entities where they are. Verify news entities have proper sub-namespace.
+- [ ] **noesis-system:** Already in `noesis` — no changes needed.
+- [ ] **battle-of-harrisburg:** Already in `history.civil-war` — no changes needed.
+
+**Target namespace tree:**
+```
+default (L0 — schema only)
+├── news (L1 — parent)
+│   └── news.week7 (L2 — Feb 10-16 stories)
+├── finance (L1)
+│   └── finance.crypto (L2)
+├── geopolitics (L1)
+├── noesis (L1 — meta)
+└── history (L1)
+    └── history.civil-war (L2 — battle demo)
+```
+
+**Deliverable:** All seeds use proper hierarchy. Narratives have clean names. Deployed and verified.
+
+---
+
 #### Phase 1: Scaffold & Routing (3 hours)
 
 **Goal:** Empty SPA with working hash routing, namespace resolution, and breadcrumbs.
@@ -229,6 +255,7 @@ URL                → Namespace  → Content
 
 | Phase | Hours |
 |-------|-------|
+| 0. Seed Rewrite | 2 |
 | 1. Scaffold & Routing | 3 |
 | 2. Namespace Page | 4 |
 | 3. Entity Detail | 3 |
@@ -238,7 +265,7 @@ URL                → Namespace  → Content
 | 7. Key Resolution | 1 |
 | 8. Polish & Mobile | 3 |
 | 9. Docker & Deploy | 2 |
-| **Total** | **26 hours** |
+| **Total** | **28 hours** |
 
 ---
 

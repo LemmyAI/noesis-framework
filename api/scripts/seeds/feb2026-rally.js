@@ -1,6 +1,6 @@
 /**
  * Seed: February 2026 Gold & Crypto Rally
- * Namespaces: news, finance, finance.crypto, geopolitics
+ * Namespaces: news.rally, finance, finance.crypto, geopolitics
  * A real-world market narrative with entities, relations, and source evidence
  */
 module.exports = async function seed(client) {
@@ -13,6 +13,10 @@ module.exports = async function seed(client) {
       "added_types": ["Article", "Source", "Topic", "Report"],
       "type_hierarchy": { "Article": {"parent": "Fact"}, "Report": {"parent": "Fact"}, "Source": {"parent": "Organization"}, "Topic": {"parent": "Concept"} },
       "colors": { "types": { "Article": "#E8913A", "Source": "#3AE891", "Topic": "#913AE8", "Report": "#E83A91" } }
+    }'::jsonb),
+    ('news.rally', 'news', '{
+      "description": "February 2026 Gold & Crypto Rally coverage",
+      "colors": {}
     }'::jsonb),
     ('finance', 'default', '{
       "added_types": ["Asset", "Trade", "EarningsReport", "Indicator", "Sector"],
@@ -61,17 +65,17 @@ module.exports = async function seed(client) {
     ('fact-btc-halving', 'finance.crypto', 'Token', 'Bitcoin Post-Halving Cycle (2024)', 'FACT:BTC-HALVING', '{"category": "finance.crypto.cycles", "halving_date": "2024-04-20", "block": 840000}', '{"timestamp": "2024-04-20T00:00:00Z", "precision": "day"}', '{"confidence": "verified"}'),
     ('decision-fed-pause', 'default', 'Decision', 'Fed Signals Extended Rate Pause', 'DECISION:FED-PAUSE-26', '{"category": "decisions.monetary_policy"}', '{"timestamp": "2026-01-29T19:30:00Z", "precision": "day"}', '{"confidence": "high"}'),
     ('goal-inflation-target', 'default', 'Goal', 'Fed 2% Inflation Target', 'GOAL:FED-2PCT', '{"category": "goals.monetary_policy", "target": "2.0%", "current": "3.0%"}', '{"timestamp": "2026-01-01T00:00:00Z", "precision": "year"}', '{"confidence": "verified"}'),
-    ('news-gold-rally', 'news', 'Article', 'Gold Surges to Record High as Investors Flee Risk', 'URL:bloomberg.com/gold-feb26', '{"category": "news.markets.commodities", "source": "Bloomberg"}', '{"timestamp": "2026-02-10T08:30:00Z", "precision": "day"}', '{"confidence": "verified"}'),
-    ('news-btc-tariff', 'news', 'Article', 'Bitcoin Tumbles as Trump Tariff Threats Shake Markets', 'URL:coindesk.com/btc-tariff-feb26', '{"category": "news.markets.crypto", "source": "CoinDesk"}', '{"timestamp": "2026-02-03T10:00:00Z", "precision": "day"}', '{"confidence": "verified"}'),
-    ('news-fed-decision', 'news', 'Article', 'Fed Holds Steady, Powell Warns of Inflation Uncertainty', 'URL:reuters.com/fed-jan26', '{"category": "news.monetary_policy", "source": "Reuters"}', '{"timestamp": "2026-01-29T20:00:00Z", "precision": "day"}', '{"confidence": "verified"}'),
-    ('news-silver-demand', 'news', 'Article', 'Silver Demand Boosted by Solar Panel Manufacturing Boom', 'URL:mining.com/silver-solar-feb26', '{"category": "news.markets.commodities", "source": "Mining.com"}', '{"timestamp": "2026-02-12T14:00:00Z", "precision": "day"}', '{"confidence": "high"}'),
-    ('news-ecb-rate', 'news', 'Article', 'ECB Cuts Rates Again as European Growth Falters', 'URL:ft.com/ecb-jan26', '{"category": "news.monetary_policy", "source": "Financial Times"}', '{"timestamp": "2026-01-30T15:00:00Z", "precision": "day"}', '{"confidence": "verified"}'),
-    ('news-cpi-report', 'news', 'Article', 'US Inflation Ticks Up to 3.0%, Complicating Fed Outlook', 'URL:wsj.com/cpi-feb26', '{"category": "news.economic_data", "source": "Wall Street Journal"}', '{"timestamp": "2026-02-12T14:00:00Z", "precision": "day"}', '{"confidence": "verified"}'),
-    ('src-bloomberg', 'news', 'Source', 'Bloomberg', 'SOURCE:BLOOMBERG', '{"category": "sources.financial", "url": "https://bloomberg.com", "type": "wire_service"}', '{"timestamp": "2020-01-01T00:00:00Z", "precision": "year"}', '{"confidence": "verified"}'),
-    ('src-coindesk', 'news', 'Source', 'CoinDesk', 'SOURCE:COINDESK', '{"category": "sources.crypto", "url": "https://coindesk.com", "type": "trade_publication"}', '{"timestamp": "2020-01-01T00:00:00Z", "precision": "year"}', '{"confidence": "verified"}'),
-    ('src-reuters', 'news', 'Source', 'Reuters', 'SOURCE:REUTERS', '{"category": "sources.financial", "url": "https://reuters.com", "type": "wire_service"}', '{"timestamp": "2020-01-01T00:00:00Z", "precision": "year"}', '{"confidence": "verified"}'),
-    ('topic-safe-haven', 'news', 'Topic', 'Safe Haven Assets', 'TOPIC:SAFE-HAVEN', '{"category": "topics.investment_themes"}', '{"timestamp": "2026-02-01T00:00:00Z", "precision": "month"}', '{"confidence": "verified"}'),
-    ('topic-tariff-war', 'news', 'Topic', 'US Trade War / Tariffs', 'TOPIC:TARIFFS', '{"category": "topics.geopolitics"}', '{"timestamp": "2026-02-01T00:00:00Z", "precision": "month"}', '{"confidence": "verified"}')
+    ('news-gold-rally', 'news.rally', 'Article', 'Gold Surges to Record High as Investors Flee Risk', 'URL:bloomberg.com/gold-feb26', '{"category": "news.markets.commodities", "source": "Bloomberg"}', '{"timestamp": "2026-02-10T08:30:00Z", "precision": "day"}', '{"confidence": "verified"}'),
+    ('news-btc-tariff', 'news.rally', 'Article', 'Bitcoin Tumbles as Trump Tariff Threats Shake Markets', 'URL:coindesk.com/btc-tariff-feb26', '{"category": "news.markets.crypto", "source": "CoinDesk"}', '{"timestamp": "2026-02-03T10:00:00Z", "precision": "day"}', '{"confidence": "verified"}'),
+    ('news-fed-decision', 'news.rally', 'Article', 'Fed Holds Steady, Powell Warns of Inflation Uncertainty', 'URL:reuters.com/fed-jan26', '{"category": "news.monetary_policy", "source": "Reuters"}', '{"timestamp": "2026-01-29T20:00:00Z", "precision": "day"}', '{"confidence": "verified"}'),
+    ('news-silver-demand', 'news.rally', 'Article', 'Silver Demand Boosted by Solar Panel Manufacturing Boom', 'URL:mining.com/silver-solar-feb26', '{"category": "news.markets.commodities", "source": "Mining.com"}', '{"timestamp": "2026-02-12T14:00:00Z", "precision": "day"}', '{"confidence": "high"}'),
+    ('news-ecb-rate', 'news.rally', 'Article', 'ECB Cuts Rates Again as European Growth Falters', 'URL:ft.com/ecb-jan26', '{"category": "news.monetary_policy", "source": "Financial Times"}', '{"timestamp": "2026-01-30T15:00:00Z", "precision": "day"}', '{"confidence": "verified"}'),
+    ('news-cpi-report', 'news.rally', 'Article', 'US Inflation Ticks Up to 3.0%, Complicating Fed Outlook', 'URL:wsj.com/cpi-feb26', '{"category": "news.economic_data", "source": "Wall Street Journal"}', '{"timestamp": "2026-02-12T14:00:00Z", "precision": "day"}', '{"confidence": "verified"}'),
+    ('src-bloomberg', 'news.rally', 'Source', 'Bloomberg', 'SOURCE:BLOOMBERG', '{"category": "sources.financial", "url": "https://bloomberg.com", "type": "wire_service"}', '{"timestamp": "2020-01-01T00:00:00Z", "precision": "year"}', '{"confidence": "verified"}'),
+    ('src-coindesk', 'news.rally', 'Source', 'CoinDesk', 'SOURCE:COINDESK', '{"category": "sources.crypto", "url": "https://coindesk.com", "type": "trade_publication"}', '{"timestamp": "2020-01-01T00:00:00Z", "precision": "year"}', '{"confidence": "verified"}'),
+    ('src-reuters', 'news.rally', 'Source', 'Reuters', 'SOURCE:REUTERS', '{"category": "sources.financial", "url": "https://reuters.com", "type": "wire_service"}', '{"timestamp": "2020-01-01T00:00:00Z", "precision": "year"}', '{"confidence": "verified"}'),
+    ('topic-safe-haven', 'news.rally', 'Topic', 'Safe Haven Assets', 'TOPIC:SAFE-HAVEN', '{"category": "topics.investment_themes"}', '{"timestamp": "2026-02-01T00:00:00Z", "precision": "month"}', '{"confidence": "verified"}'),
+    ('topic-tariff-war', 'news.rally', 'Topic', 'US Trade War / Tariffs', 'TOPIC:TARIFFS', '{"category": "topics.geopolitics"}', '{"timestamp": "2026-02-01T00:00:00Z", "precision": "month"}', '{"confidence": "verified"}')
   `);
 
   // === RELATIONS ===

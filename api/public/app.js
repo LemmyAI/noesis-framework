@@ -1,5 +1,5 @@
 /**
- * NOESIS Explorer — Main Application
+ * NOESIS Explorer v2.0 — Namespace-as-Page Model
  * Hash-based SPA, data-agnostic, mobile-first
  */
 (() => {
@@ -15,9 +15,16 @@
     Trade: '📊', Policy: '📜', Sector: '📁', Protocol: '🔗',
     Conflict: '⚔️', Treaty: '🤝', Report: '📋', Indicator: '📈',
     DEX: '🔄', Chain: '⛓️', Sanction: '🚫', Alliance: '🤝',
+    Layer: '📐', Component: '⚙️', Principle: '📏', Feature: '🔧',
+    Battle: '⚔️', Campaign: '🗺️', Army: '🏴', 'Military Unit': '🎖️',
   };
 
-  // Credibility colors — loaded from namespace config at runtime
+  // Namespace icons based on name heuristics
+  const NS_ICONS = {
+    news: '📰', finance: '💹', geopolitics: '🌍', noesis: '🧠', history: '📜',
+    crypto: '🪙', default: '⚙️',
+  };
+
   let credColorMap = {};
 
   // === STATE ===
@@ -25,7 +32,9 @@
     namespaces: [],
     nsConfigs: {},
     colorMap: {},
-    activeNs: null,
+    allNarratives: [],
+    allEntities: [],
+    entityLookup: {},
   };
 
   // === API HELPERS ===
@@ -35,9 +44,30 @@
     return res.json();
   }
 
+  // Cached fetch
+  const cache = {};
+  async function cachedApi(path, ttl = 60000) {
+    if (cache[path] && Date.now() - cache[path].t < ttl) return cache[path].d;
+    const d = await api(path);
+    cache[path] = { d, t: Date.now() };
+    return d;
+  }
+
   // === HELPERS ===
   function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
   function icon(type) { return TYPE_ICONS[type] || '●'; }
+
+  function nsIcon(ns) {
+    const parts = ns.split('.');
+    for (let i = parts.length; i > 0; i--) {
+      const key = parts.slice(0, i).join('.');
+      if (NS_ICONS[key]) return NS_ICONS[key];
+    }
+    // Check last segment
+    const last = parts[parts.length - 1];
+    if (NS_ICONS[last]) return NS_ICONS[last];
+    return '📂';
+  }
 
   function formatTemporal(t) {
     if (!t || !t.timestamp) return '';
@@ -59,30 +89,119 @@
 
   function typeColor(type) { return state.colorMap[type] || '#666'; }
 
-  function entityCard(entity, opts = {}) {
+  function entityCard(entity) {
     const c = typeColor(entity.type);
+    const desc = entity.metadata?.description || '';
     return `<div class="card accent-left" style="--type-color:${c}" onclick="window.location.hash='#/entity/${entity.id}'">
       <div class="card-title">${icon(entity.type)} ${esc(entity.name)}</div>
       <div class="card-meta">
         <span class="type-badge">${esc(entity.type)}</span>
         ${credDot(entity.credibility)}
-        <span>${esc(entity.namespace)}</span>
-        ${entity.temporal ? `<span>· ${formatTemporal(entity.temporal)}</span>` : ''}
+        ${entity.temporal ? `<span>${formatTemporal(entity.temporal)}</span>` : ''}
       </div>
-      ${opts.excerpt ? `<div class="card-excerpt">${esc(opts.excerpt)}</div>` : ''}
+      ${desc ? `<div class="card-excerpt">${esc(desc)}</div>` : ''}
     </div>`;
   }
 
-  // === INIT: LOAD NAMESPACES & COLORS ===
+  // === NAMESPACE HELPERS ===
+
+  // Get direct children of a namespace
+  function getChildren(parentNs) {
+    const prefix = parentNs === 'default' ? '' : parentNs + '.';
+    const parentDepth = parentNs === 'default' ? 0 : parentNs.split('.').length;
+    return state.namespaces.filter(ns => {
+      if (ns.namespace === 'default') return false;
+      if (parentNs === 'default') {
+        // Root children: namespaces with depth 1 (no dots)
+        return !ns.namespace.includes('.');
+      }
+      return ns.namespace.startsWith(prefix) &&
+             ns.namespace.split('.').length === parentDepth + 1;
+    });
+  }
+
+  // Check if a namespace is a descendant (or equal to) another
+  function isDescendantOrSelf(ns, ancestor) {
+    if (ancestor === 'default') return true;
+    return ns === ancestor || ns.startsWith(ancestor + '.');
+  }
+
+  // Get narratives scoped to a namespace and its descendants
+  function getScopedNarratives(ns) {
+    // Find all entity IDs in this namespace and descendants
+    const scopedEntityIds = new Set();
+    state.allEntities.forEach(e => {
+      if (isDescendantOrSelf(e.namespace, ns === 'default' ? 'default' : ns)) {
+        scopedEntityIds.add(e.id);
+      }
+    });
+
+    // Filter narratives: keep if any of its entities are in scope
+    return state.allNarratives.filter(n => {
+      if (!n.entity_ids || n.entity_ids.length === 0) return false;
+      return n.entity_ids.some(id => scopedEntityIds.has(id));
+    });
+  }
+
+  // === BREADCRUMB ===
+  function setBreadcrumb(items) {
+    const el = $('#breadcrumb');
+    el.innerHTML = items.map((item, i) => {
+      if (i === items.length - 1) return `<span class="current">${esc(item.label)}</span>`;
+      return `<a href="${item.href}">${esc(item.label)}</a><span class="sep">›</span>`;
+    }).join('');
+  }
+
+  function nsBreadcrumb(ns) {
+    const items = [{ label: 'ν NOESIS', href: '#/' }];
+    if (ns && ns !== 'default') {
+      const parts = ns.split('.');
+      for (let i = 0; i < parts.length; i++) {
+        const path = parts.slice(0, i + 1).join('.');
+        items.push({ label: parts[i], href: `#/ns/${encodeURIComponent(path)}` });
+      }
+    }
+    return items;
+  }
+
+  // === LOADING ===
+  function showLoading() {
+    $('#app').innerHTML = '<div class="loading"><div class="spinner"></div> Loading…</div>';
+  }
+
+  // === INIT: LOAD ALL DATA ===
   async function init() {
-    const [nsData, configData] = await Promise.all([
+    const [nsData, configData, narrativesData, allEntData, allRelData] = await Promise.all([
       api('/namespaces'),
       api('/namespaces/default/config'),
+      api('/narratives'),
+      api('/entities'),
+      api('/relations'),
     ]);
+
     state.namespaces = nsData.namespaces || [];
     state.nsConfigs['default'] = configData;
     state.colorMap = { ...(configData.colors?.types || {}) };
     credColorMap = { ...(configData.colors?.credibility || {}) };
+    state.allNarratives = narrativesData.narratives || [];
+    state.allEntities = allEntData.entities || [];
+    state.allEntities.forEach(e => { state.entityLookup[e.id] = e; });
+
+    // Build narrative → entity_ids mapping from relations
+    const allRelations = allRelData.relations || [];
+    const narrativeEntities = {};
+    for (const r of allRelations) {
+      if (!r.context) continue;
+      if (!narrativeEntities[r.context]) narrativeEntities[r.context] = new Set();
+      narrativeEntities[r.context].add(r.from_entity);
+      narrativeEntities[r.context].add(r.to_entity);
+    }
+    // Enrich narratives with entity_ids
+    for (const n of state.allNarratives) {
+      const ids = narrativeEntities[n.context];
+      n.entity_ids = ids ? [...ids] : [];
+      n.entity_count = n.entity_ids.length;
+    }
 
     // Load child namespace colors
     for (const ns of state.namespaces) {
@@ -95,35 +214,8 @@
       }
     }
 
-    renderNsPills();
     buildLegend();
     route();
-  }
-
-  // === NAMESPACE PILLS ===
-  function renderNsPills() {
-    const el = $('#ns-pills');
-    el.innerHTML = state.namespaces.map(ns => {
-      const active = ns.namespace === state.activeNs ? ' active' : '';
-      return `<div class="pill${active}" onclick="window.location.hash='#/ns/${encodeURIComponent(ns.namespace)}'">
-        <span class="dot" style="background:${ns.namespace === 'default' ? '#888' : typeColor(ns.namespace === 'news' ? 'Article' : ns.namespace === 'finance' ? 'Asset' : ns.namespace === 'geopolitics' ? 'Policy' : ns.namespace === 'finance.crypto' ? 'Token' : 'Concept')}"></span>
-        ${esc(ns.namespace)}
-      </div>`;
-    }).join('');
-  }
-
-  // === BREADCRUMB ===
-  function setBreadcrumb(items) {
-    const el = $('#breadcrumb');
-    el.innerHTML = items.map((item, i) => {
-      if (i === items.length - 1) return `<span class="current">${esc(item.label)}</span>`;
-      return `<a href="${item.href}">${esc(item.label)}</a><span class="sep">›</span>`;
-    }).join('');
-  }
-
-  // === LOADING ===
-  function showLoading() {
-    $('#app').innerHTML = '<div class="loading"><div class="spinner"></div> Loading…</div>';
   }
 
   // === ROUTER ===
@@ -134,8 +226,8 @@
 
     showLoading();
 
-    if (view === '' || view === '/') return viewHome();
-    if (view === 'ns') return viewNamespace(decodeURIComponent(parts[1] || 'default'));
+    if (view === '' || view === '/') return viewNamespacePage('default');
+    if (view === 'ns') return viewNamespacePage(decodeURIComponent(parts.slice(1).join('.')));
     if (view === 'entity') return viewEntity(parts[1]);
     if (view === 'narrative') return viewNarrative(decodeURIComponent(parts.slice(1).join('/')));
     if (view === 'graph') return viewGraph(parts[1]);
@@ -146,145 +238,139 @@
 
   window.addEventListener('hashchange', route);
 
-  // === VIEW: HOME ===
-  async function viewHome() {
-    state.activeNs = null;
-    renderNsPills();
-    setBreadcrumb([{ label: 'Home', href: '#/' }]);
+  // === VIEW: UNIVERSAL NAMESPACE PAGE ===
+  async function viewNamespacePage(ns) {
+    const isRoot = ns === 'default';
+    setBreadcrumb(nsBreadcrumb(isRoot ? null : ns));
 
-    const [narrativesData, entitiesData] = await Promise.all([
-      api('/narratives'),
-      api('/entities'),
-    ]);
+    // Get children namespaces
+    const children = getChildren(ns);
 
-    const narratives = narrativesData.narratives || [];
-    const entities = entitiesData.entities || [];
+    // Get entities directly in this namespace
+    const directEntities = isRoot
+      ? [] // default namespace is schema-only
+      : state.allEntities.filter(e => e.namespace === ns);
 
-    // Count per namespace
-    const nsCounts = {};
-    entities.forEach(e => { nsCounts[e.namespace] = (nsCounts[e.namespace] || 0) + 1; });
+    // Get scoped narratives (own + bubbled from children)
+    const scopedNarratives = isRoot
+      ? state.allNarratives // root sees all
+      : getScopedNarratives(ns);
 
-    // Sort entities by temporal desc
-    const sorted = [...entities].sort((a, b) => {
-      const ta = a.temporal?.timestamp || '';
-      const tb = b.temporal?.timestamp || '';
-      return tb.localeCompare(ta);
+    // Sort narratives: by relation_count × recency
+    scopedNarratives.sort((a, b) => {
+      const sa = (a.relation_count || 0);
+      const sb = (b.relation_count || 0);
+      return sb - sa;
     });
+
+    // Separate own vs child narratives
+    const ownEntityIds = new Set(directEntities.map(e => e.id));
+    const ownNarratives = [];
+    const childNarratives = [];
+    for (const n of scopedNarratives) {
+      const ids = n.entity_ids || [];
+      if (ids.some(id => ownEntityIds.has(id))) {
+        ownNarratives.push(n);
+      } else {
+        childNarratives.push(n);
+      }
+    }
 
     let html = '';
 
-    // Narratives
-    if (narratives.length > 0) {
+    // SECTION 1: Narratives
+    const hasOwn = ownNarratives.length > 0;
+    const hasChild = childNarratives.length > 0;
+    if (hasOwn || hasChild) {
       html += `<div class="section-header"><span class="icon">📖</span> Narratives</div>`;
-      html += `<div class="stack">`;
-      for (const n of narratives) {
-        html += `<div class="card narrative-card" onclick="window.location.hash='#/narrative/${encodeURIComponent(n.context)}'">
-          <div class="nar-title">⚡ ${esc(n.context)}</div>
-          <div class="nar-meta">${n.relation_count} steps · ${n.max_sequence - n.min_sequence + 1} sequence points</div>
-          <span class="nar-cta">Explore Story →</span>
-        </div>`;
+
+      if (hasOwn && hasChild) {
+        html += `<div class="subsection-label">This Namespace</div>`;
       }
-      html += `</div>`;
+      if (hasOwn) {
+        html += `<div class="stack">${ownNarratives.map(narrativeCard).join('')}</div>`;
+      }
+      if (hasOwn && hasChild) {
+        html += `<div class="subsection-label">From Sub-Namespaces</div>`;
+      }
+      if (hasChild || (isRoot && scopedNarratives.length > 0 && !hasOwn)) {
+        const toShow = isRoot ? scopedNarratives : childNarratives;
+        html += `<div class="stack">${toShow.map(narrativeCard).join('')}</div>`;
+      }
     }
 
-    // Namespaces grid
-    const childNs = state.namespaces.filter(ns => ns.namespace !== 'default');
-    if (childNs.length > 0) {
-      html += `<div class="section-header"><span class="icon">🗂</span> Namespaces</div>`;
+    // SECTION 2: Sub-Namespaces
+    if (children.length > 0) {
+      html += `<div class="section-header"><span class="icon">🗂</span> Sub-Namespaces</div>`;
       html += `<div class="grid-fill">`;
-      for (const ns of childNs) {
-        const count = nsCounts[ns.namespace] || 0;
-        const nsIcon = icon(ns.namespace === 'news' ? 'Article' : ns.namespace === 'finance' ? 'Asset' : ns.namespace === 'geopolitics' ? 'Policy' : ns.namespace === 'finance.crypto' ? 'Token' : 'Concept');
-        html += `<div class="card ns-card" onclick="window.location.hash='#/ns/${encodeURIComponent(ns.namespace)}'">
-          <div class="ns-icon">${nsIcon}</div>
-          <div class="ns-name">${esc(ns.namespace)}</div>
+
+      for (const child of children) {
+        // Count entities in this child + descendants
+        const count = state.allEntities.filter(e =>
+          isDescendantOrSelf(e.namespace, child.namespace)
+        ).length;
+        const lastSegment = child.namespace.split('.').pop();
+        html += `<div class="card ns-card" onclick="window.location.hash='#/ns/${encodeURIComponent(child.namespace)}'">
+          <div class="ns-icon">${nsIcon(child.namespace)}</div>
+          <div class="ns-name">${esc(lastSegment)}</div>
           <div class="ns-count">${count} entities</div>
         </div>`;
       }
+
       html += `</div>`;
     }
 
-    // Recent entities
-    html += `<div class="section-header"><span class="icon">🕐</span> Recent Entities</div>`;
-    html += `<div class="stack">`;
-    for (const e of sorted.slice(0, 12)) {
-      html += entityCard(e);
+    // SECTION 3: Entities (grouped by type)
+    if (directEntities.length > 0) {
+      const groups = {};
+      directEntities.forEach(e => {
+        if (!groups[e.type]) groups[e.type] = [];
+        groups[e.type].push(e);
+      });
+
+      html += `<div class="section-header"><span class="icon">⚡</span> Entities <span style="font-weight:400;text-transform:none;letter-spacing:0">(${directEntities.length})</span></div>`;
+
+      for (const [type, items] of Object.entries(groups).sort((a, b) => b[1].length - a[1].length)) {
+        const c = typeColor(type);
+        html += `<div class="type-group-header">
+          <span class="color-dot" style="background:${c}"></span>
+          ${icon(type)} ${esc(type)}
+          <span class="count">${items.length}</span>
+        </div>`;
+        html += `<div class="stack" style="margin-bottom:16px;">`;
+        for (const e of items) html += entityCard(e);
+        html += `</div>`;
+      }
     }
-    html += `</div>`;
+
+    if (!html) {
+      html = '<div class="empty-state">This namespace is empty</div>';
+    }
 
     $('#app').innerHTML = html;
-    updateLegend(sorted, []);
+    updateLegend(directEntities.length > 0 ? directEntities : state.allEntities, []);
   }
 
-  // === VIEW: NAMESPACE ===
-  async function viewNamespace(ns) {
-    state.activeNs = ns;
-    renderNsPills();
-    setBreadcrumb([
-      { label: 'Home', href: '#/' },
-      { label: ns, href: `#/ns/${encodeURIComponent(ns)}` },
-    ]);
-
-    const [entData, cfgData] = await Promise.all([
-      api(`/entities?namespace=${encodeURIComponent(ns)}`),
-      api(`/namespaces/${encodeURIComponent(ns)}/config`).catch(() => null),
-    ]);
-
-    const entities = entData.entities || [];
-
-    // Group by type
-    const groups = {};
-    entities.forEach(e => {
-      if (!groups[e.type]) groups[e.type] = [];
-      groups[e.type].push(e);
-    });
-
-    let html = '';
-
-    if (cfgData) {
-      const extendsLabel = cfgData.chain ? cfgData.chain.join(' → ') : '';
-      html += `<div style="font-size:0.85rem;color:var(--text-dim);margin-bottom:16px;">
-        Extends: ${esc(extendsLabel)}<br>
-        ${entities.length} entities across ${Object.keys(groups).length} types
-      </div>`;
-    }
-
-    for (const [type, items] of Object.entries(groups).sort((a, b) => b[1].length - a[1].length)) {
-      const c = typeColor(type);
-      html += `<div class="type-group-header">
-        <span class="color-dot" style="background:${c}"></span>
-        ${icon(type)} ${esc(type)}
-        <span class="count">${items.length}</span>
-      </div>`;
-      html += `<div class="stack" style="margin-bottom:16px;">`;
-      for (const e of items) html += entityCard(e);
-      html += `</div>`;
-    }
-
-    if (entities.length === 0) {
-      html = '<div class="empty-state">No entities in this namespace</div>';
-    }
-
-    $('#app').innerHTML = html;
-    updateLegend(entities, []);
+  function narrativeCard(n) {
+    return `<div class="card narrative-card" onclick="window.location.hash='#/narrative/${encodeURIComponent(n.context)}'">
+      <div class="nar-title">📖 ${esc(n.context)}</div>
+      <div class="nar-meta">${n.relation_count || 0} steps · ${n.entity_count || '?'} entities</div>
+      <span class="nar-cta">Explore Story →</span>
+    </div>`;
   }
 
   // === VIEW: ENTITY DETAIL ===
   async function viewEntity(id) {
-    state.activeNs = null;
-    renderNsPills();
-
     const [entity, relData, dlData] = await Promise.all([
       api(`/entities/${encodeURIComponent(id)}`),
       api(`/relations?entity=${encodeURIComponent(id)}&depth=1`),
       api(`/datalayer/by-entity/${encodeURIComponent(id)}`).catch(() => ({ sources: [] })),
     ]);
 
-    setBreadcrumb([
-      { label: 'Home', href: '#/' },
-      { label: entity.namespace, href: `#/ns/${encodeURIComponent(entity.namespace)}` },
-      { label: entity.name, href: `#/entity/${id}` },
-    ]);
+    // Build breadcrumb from entity namespace
+    const bc = nsBreadcrumb(entity.namespace);
+    bc.push({ label: entity.name, href: `#/entity/${id}` });
+    setBreadcrumb(bc);
 
     const c = typeColor(entity.type);
     let html = '';
@@ -302,28 +388,22 @@
       ${entity.key ? `<div class="entity-key" onclick="window.location.hash='#/key/${encodeURIComponent(entity.key)}'">🔑 ${esc(entity.key)}</div>` : ''}
     </div>`;
 
-    // Load all entities for lookup (needed by graph + relations)
     const relations = relData.relations || [];
-    const allEntData = await api('/entities');
-    const entityLookup = {};
-    (allEntData.entities || []).forEach(e => { entityLookup[e.id] = e; });
-    entityLookup[id] = entity;
+    // Merge lookup
+    const lookup = { ...state.entityLookup };
+    lookup[id] = entity;
 
     // Mini graph
     if (relations.length > 0) {
-      // Collect graph nodes
       const nodeIds = new Set([id]);
       relations.forEach(r => { nodeIds.add(r.from_entity); nodeIds.add(r.to_entity); });
-
-      const graphNodes = [...nodeIds].map(nid => entityLookup[nid] || { id: nid, name: nid, type: 'Concept', namespace: '' });
+      const graphNodes = [...nodeIds].map(nid => lookup[nid] || { id: nid, name: nid, type: 'Concept', namespace: '' });
 
       html += `<div class="graph-container mini" id="entity-graph"></div>`;
       html += `<div class="expand-link" onclick="window.location.hash='#/graph/${id}'">Expand full graph →</div>`;
 
-      // Update legend for this entity's graph
       updateLegend(graphNodes, relations);
 
-      // Render after DOM update
       setTimeout(() => {
         const container = document.getElementById('entity-graph');
         if (!container) return;
@@ -332,7 +412,7 @@
           fixedCenter: id,
           colorMap: state.colorMap,
           iconMap: TYPE_ICONS,
-          credColorMap: credColorMap,
+          credColorMap,
           selectedId: id,
           onNodeClick: (node) => { if (node.id !== id) window.location.hash = `#/entity/${node.id}`; },
         });
@@ -349,27 +429,19 @@
       html += `</div>`;
     }
 
-    // Relations grouped by direction
+    // Relations
     if (relations.length > 0) {
       html += `<div class="section-header"><span class="icon">🔗</span> Relations <span style="font-weight:400;text-transform:none;letter-spacing:0">(${relations.length})</span></div>`;
 
-      // Group: incoming (this entity is to_entity) vs outgoing
+      const relConfig = state.nsConfigs['default']?.relations || {};
       const incoming = [], outgoing = [];
       for (const r of relations) {
         if (r.to_entity === id) incoming.push(r);
-        else if (r.from_entity === id) outgoing.push(r);
-        else {
-          // Related but indirect — show as outgoing
-          outgoing.push(r);
-        }
+        else outgoing.push(r);
       }
-
-      // Get inverse names from config
-      const relConfig = state.nsConfigs['default']?.relations || {};
 
       function renderRelGroup(label, rels, getId) {
         if (rels.length === 0) return '';
-        // Sub-group by type
         const byType = {};
         rels.forEach(r => {
           const key = label === 'incoming' ? (relConfig[r.type]?.inverse || r.type) : r.type;
@@ -382,13 +454,13 @@
           out += `<div class="stack">`;
           for (const r of group) {
             const targetId = getId(r);
-            const targetEntity = entityLookup[targetId] || { name: targetId, type: '', namespace: '' };
-            const targetColor = typeColor(targetEntity.type);
+            const te = lookup[targetId] || { name: targetId, type: '', namespace: '' };
+            const tc = typeColor(te.type);
             out += `<div class="rel-card" onclick="window.location.hash='#/entity/${targetId}'">
-              <span class="arrow" style="color:${targetColor}">→</span>
+              <span class="arrow" style="color:${tc}">→</span>
               <div class="rel-info">
-                <div class="rel-entity">${icon(targetEntity.type)} ${esc(targetEntity.name)}</div>
-                <div class="rel-meta">${esc(targetEntity.type)} · ${esc(targetEntity.namespace)}</div>
+                <div class="rel-entity">${icon(te.type)} ${esc(te.name)}</div>
+                <div class="rel-meta">${esc(te.type)} · ${esc(te.namespace)}</div>
                 ${r.context ? `<div class="rel-context">📖 ${esc(r.context)}</div>` : ''}
               </div>
             </div>`;
@@ -399,7 +471,7 @@
       }
 
       html += renderRelGroup('incoming', incoming, r => r.from_entity);
-      html += renderRelGroup('outgoing', outgoing, r => r.from_entity === id ? r.to_entity : (r.to_entity === id ? r.from_entity : r.to_entity));
+      html += renderRelGroup('outgoing', outgoing, r => r.from_entity === id ? r.to_entity : r.to_entity);
     }
 
     // Sources
@@ -423,17 +495,22 @@
 
   // === VIEW: NARRATIVE ===
   async function viewNarrative(context) {
-    state.activeNs = null;
-    renderNsPills();
-    setBreadcrumb([
-      { label: 'Home', href: '#/' },
-      { label: context, href: `#/narrative/${encodeURIComponent(context)}` },
-    ]);
-
     const data = await api(`/narratives/${encodeURIComponent(context)}`);
     const story = data.story || [];
     const entities = data.entities || [];
     const relations = story.map(s => s.relation);
+
+    // Find the primary namespace for this narrative
+    const nsCount = {};
+    entities.forEach(e => {
+      const ns = e.namespace || 'default';
+      nsCount[ns] = (nsCount[ns] || 0) + 1;
+    });
+    const primaryNs = Object.entries(nsCount).sort((a, b) => b[1] - a[1])[0]?.[0] || 'default';
+
+    const bc = nsBreadcrumb(primaryNs);
+    bc.push({ label: context, href: `#/narrative/${encodeURIComponent(context)}` });
+    setBreadcrumb(bc);
 
     let mode = 'graph';
 
@@ -444,7 +521,6 @@
         <div style="font-size:0.85rem;color:var(--text-dim);margin-top:4px;">${story.length} steps · ${entities.length} entities</div>
       </div>`;
 
-      // Tabs
       html += `<div class="narrative-tabs">
         <button class="narrative-tab ${mode === 'graph' ? 'active' : ''}" id="tab-graph">● Graph</button>
         <button class="narrative-tab ${mode === 'steps' ? 'active' : ''}" id="tab-steps">≡ Steps</button>
@@ -476,13 +552,11 @@
 
       $('#app').innerHTML = html;
 
-      // Attach tab handlers
       const tabGraph = document.getElementById('tab-graph');
       const tabSteps = document.getElementById('tab-steps');
       if (tabGraph) tabGraph.onclick = () => { mode = 'graph'; render(); };
       if (tabSteps) tabSteps.onclick = () => { mode = 'steps'; render(); };
 
-      // Render graph
       if (mode === 'graph') {
         updateLegend(entities, relations);
         setTimeout(() => {
@@ -492,7 +566,7 @@
             mode: 'layered',
             colorMap: state.colorMap,
             iconMap: TYPE_ICONS,
-          credColorMap: credColorMap,
+            credColorMap,
             onNodeClick: (node) => { window.location.hash = `#/entity/${node.id}`; },
           });
         }, 50);
@@ -506,29 +580,23 @@
 
   // === VIEW: FULL GRAPH ===
   async function viewGraph(id) {
-    state.activeNs = null;
-    renderNsPills();
-
-    const [entity, relData, allEntData] = await Promise.all([
+    const [entity, relData] = await Promise.all([
       api(`/entities/${encodeURIComponent(id)}`),
       api(`/relations?entity=${encodeURIComponent(id)}&depth=2`),
-      api('/entities'),
     ]);
 
-    setBreadcrumb([
-      { label: 'Home', href: '#/' },
-      { label: entity.name, href: `#/entity/${id}` },
-      { label: 'Graph', href: `#/graph/${id}` },
-    ]);
+    const bc = nsBreadcrumb(entity.namespace);
+    bc.push({ label: entity.name, href: `#/entity/${id}` });
+    bc.push({ label: 'Graph', href: `#/graph/${id}` });
+    setBreadcrumb(bc);
 
     const relations = relData.relations || [];
-    const entityLookup = {};
-    (allEntData.entities || []).forEach(e => { entityLookup[e.id] = e; });
-    entityLookup[id] = entity;
+    const lookup = { ...state.entityLookup };
+    lookup[id] = entity;
 
     const nodeIds = new Set([id]);
     relations.forEach(r => { nodeIds.add(r.from_entity); nodeIds.add(r.to_entity); });
-    const nodes = [...nodeIds].map(nid => entityLookup[nid] || { id: nid, name: nid, type: 'Concept', namespace: '' });
+    const nodes = [...nodeIds].map(nid => lookup[nid] || { id: nid, name: nid, type: 'Concept', namespace: '' });
 
     let html = `<div style="margin-bottom:12px;">
       <div style="font-size:1.1rem;font-weight:700;color:var(--text-bright);">${icon(entity.type)} ${esc(entity.name)} — Graph</div>
@@ -548,7 +616,7 @@
         fixedCenter: id,
         colorMap: state.colorMap,
         iconMap: TYPE_ICONS,
-          credColorMap: credColorMap,
+        credColorMap,
         selectedId: id,
         onNodeClick: (node) => { window.location.hash = `#/entity/${node.id}`; },
       });
@@ -557,10 +625,8 @@
 
   // === VIEW: KEY RESOLUTION ===
   async function viewKey(key) {
-    state.activeNs = null;
-    renderNsPills();
     setBreadcrumb([
-      { label: 'Home', href: '#/' },
+      { label: 'ν NOESIS', href: '#/' },
       { label: `🔑 ${key}`, href: `#/key/${encodeURIComponent(key)}` },
     ]);
 
@@ -615,13 +681,9 @@
     return { btn, panel };
   }
 
-  // credColorMap is populated from namespace config at init
-
-  // Update legend contents for a specific set of entities and relations
   function updateLegend(entities = [], relations = []) {
     const { btn, panel } = ensureLegendElements();
 
-    // Collect types with counts and confidence breakdown
     const typeStats = {};
     for (const e of entities) {
       if (!e.type) continue;
@@ -632,7 +694,6 @@
     }
     const usedTypes = Object.keys(typeStats).sort();
 
-    // Collect relation types with counts
     const relStats = {};
     for (const r of relations) {
       if (!r.type) continue;
@@ -653,7 +714,6 @@
     for (const type of usedTypes) {
       const c = state.colorMap[type] || '#666';
       const stats = typeStats[type];
-      // Mini confidence bar
       const total = stats.count;
       let credHtml = '<span class="legend-cred-bar">';
       for (const [level, color] of Object.entries(credColorMap)) {
@@ -691,7 +751,6 @@
       html += '</div>';
     }
 
-    // Confidence key — from namespace config
     if (Object.keys(credColorMap).length > 0) {
       html += '<div class="legend-section"><div class="legend-title">Confidence</div>';
       html += '<div class="legend-cred-key">';
@@ -704,10 +763,8 @@
     panel.innerHTML = html;
   }
 
-  // Build initial legend with all types (for non-graph views)
   function buildLegend() {
     ensureLegendElements();
-    // Start with all known types
     const allEntities = Object.keys(state.colorMap).map(type => ({ type }));
     updateLegend(allEntities, []);
   }
