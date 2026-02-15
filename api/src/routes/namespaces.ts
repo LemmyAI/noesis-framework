@@ -49,7 +49,8 @@ function buildNamespaceTree(rows: any[]) {
   const tree: any = {};
   
   for (const row of rows) {
-    const parts = row.namespace.split('/');
+    // Namespaces use dot notation: "news.week7", "history.civil-war"
+    const parts = row.namespace.split('.');
     let current = tree;
     
     for (const part of parts) {
