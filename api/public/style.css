@@ -332,6 +332,31 @@ main {
   color: var(--accent);
 }
 
+/* Namespace breadcrumb in entity cards */
+.card-ns-breadcrumb {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.ns-breadcrumb-link {
+  color: var(--accent);
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.ns-breadcrumb-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.ns-breadcrumb-sep {
+  color: var(--text-dim);
+  margin: 0 4px;
+  opacity: 0.5;
+}
+
 .entity-type-badge {
   display: inline-flex;
   padding: 2px 8px;
