@@ -501,7 +501,7 @@
         const relData = await api('/relations');
         state.allRelations = relData.relations || [];
         const connCount = {};
-        state.allRelations.forEach(r => {
+        (state.allRelations || []).forEach(r => {
           connCount[r.from_entity] = (connCount[r.from_entity] || 0) + 1;
           connCount[r.to_entity] = (connCount[r.to_entity] || 0) + 1;
         });
