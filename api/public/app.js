@@ -192,6 +192,7 @@
 
     // Build narrative → entity_ids mapping from relations
     const allRelations = allRelData.relations || [];
+    state.allRelations = allRelations; // Store in state for later use
     const narrativeEntities = {};
     for (const r of allRelations) {
       if (!r.context) continue;
@@ -366,7 +367,7 @@
 
     // Calculate connection count for each entity
     const connectionCount = {};
-    state.allRelations.forEach(r => {
+    (state.allRelations || []).forEach(r => {
       connectionCount[r.from_entity] = (connectionCount[r.from_entity] || 0) + 1;
       connectionCount[r.to_entity] = (connectionCount[r.to_entity] || 0) + 1;
     });
