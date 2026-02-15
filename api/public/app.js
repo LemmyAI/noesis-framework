@@ -153,13 +153,13 @@
   }
 
   function nsBreadcrumb(ns) {
+    // Root page: no breadcrumb (logo already shows ν NOESIS)
+    if (!ns || ns === 'default') return [];
     const items = [{ label: 'ν NOESIS', href: '#/' }];
-    if (ns && ns !== 'default') {
-      const parts = ns.split('.');
-      for (let i = 0; i < parts.length; i++) {
-        const path = parts.slice(0, i + 1).join('.');
-        items.push({ label: parts[i], href: `#/ns/${encodeURIComponent(path)}` });
-      }
+    const parts = ns.split('.');
+    for (let i = 0; i < parts.length; i++) {
+      const path = parts.slice(0, i + 1).join('.');
+      items.push({ label: parts[i], href: `#/ns/${encodeURIComponent(path)}` });
     }
     return items;
   }
