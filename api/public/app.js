@@ -276,11 +276,33 @@
       }
     }
 
+    // Sort child narratives by entity count (desc) then recency (desc)
+    childNarratives.sort((a, b) => {
+      const ea = (a.entity_ids || []).length;
+      const eb = (b.entity_ids || []).length;
+      if (eb !== ea) return eb - ea;
+      // Recency: find most recent entity timestamp in each narrative
+      const recentA = Math.max(...(a.entity_ids || []).map(id => {
+        const e = state.entityLookup[id];
+        return e?.temporal?.timestamp ? new Date(e.temporal.timestamp).getTime() : 0;
+      }));
+      const recentB = Math.max(...(b.entity_ids || []).map(id => {
+        const e = state.entityLookup[id];
+        return e?.temporal?.timestamp ? new Date(e.temporal.timestamp).getTime() : 0;
+      }));
+      return recentB - recentA;
+    });
+
+    // Cap child narratives — show top 5 (expandable)
+    const CHILD_NAR_LIMIT = 5;
+    const childToShow = childNarratives.slice(0, CHILD_NAR_LIMIT);
+    const childHasMore = childNarratives.length > CHILD_NAR_LIMIT;
+
     let html = '';
 
     // SECTION 1: Narratives
     const hasOwn = ownNarratives.length > 0;
-    const hasChild = childNarratives.length > 0;
+    const hasChild = childToShow.length > 0;
     if (hasOwn || hasChild) {
       html += `<div class="section-header"><span class="icon">📖</span> Narratives</div>`;
 
@@ -291,11 +313,19 @@
         html += `<div class="stack">${ownNarratives.map(narrativeCard).join('')}</div>`;
       }
       if (hasOwn && hasChild) {
-        html += `<div class="subsection-label">From Sub-Namespaces</div>`;
+        html += `<div class="subsection-label">Top from Sub-Namespaces</div>`;
       }
       if (hasChild || (isRoot && scopedNarratives.length > 0 && !hasOwn)) {
-        const toShow = isRoot ? scopedNarratives : childNarratives;
+        const toShow = isRoot
+          ? childNarratives.slice(0, CHILD_NAR_LIMIT)
+          : childToShow;
         html += `<div class="stack">${toShow.map(narrativeCard).join('')}</div>`;
+        const remaining = isRoot
+          ? scopedNarratives.length - CHILD_NAR_LIMIT
+          : childNarratives.length - CHILD_NAR_LIMIT;
+        if (remaining > 0) {
+          html += `<div class="show-more" id="show-more-nar" style="cursor:pointer;text-align:center;padding:10px;font-size:0.85rem;color:var(--accent);">Show ${remaining} more…</div>`;
+        }
       }
     }
 
@@ -349,6 +379,20 @@
 
     $('#app').innerHTML = html;
     updateLegend(directEntities.length > 0 ? directEntities : state.allEntities, []);
+
+    // "Show more" handler for child narratives
+    const showMoreBtn = document.getElementById('show-more-nar');
+    if (showMoreBtn) {
+      showMoreBtn.addEventListener('click', () => {
+        const allChild = isRoot ? scopedNarratives : childNarratives;
+        const parent = showMoreBtn.parentElement;
+        const stack = showMoreBtn.previousElementSibling;
+        if (stack) {
+          stack.innerHTML = allChild.map(narrativeCard).join('');
+        }
+        showMoreBtn.remove();
+      });
+    }
   }
 
   function narrativeCard(n) {
