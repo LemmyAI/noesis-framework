@@ -10,13 +10,19 @@ Pre-deploy tooling for creating, validating, and building NOESIS seed files.
 cd seed-factory
 npm install
 
-# Build all seeds from YAML → JS
-node scripts/build.js --all
+# ===== DAILY NEWS (one command) =====
+node scripts/daily-news.js                     # Today's news
+node scripts/daily-news.js --date 2026-02-15   # Specific date
+node scripts/daily-news.js --dry-run           # Preview only
 
-# Validate a seed before building
+# ===== BUILD existing seeds from YAML =====
+node scripts/build.js --all
+node scripts/build.js narratives/battle-of-harrisburg.yaml
+
+# ===== VALIDATE before building =====
 node scripts/validate.js narratives/battle-of-harrisburg.yaml
 
-# Full news pipeline
+# ===== MANUAL news pipeline (full control) =====
 node scripts/gather.js --out /tmp/raw.json
 node scripts/narrate.js --input /tmp/raw.json --name news-week8 --ns news.week8
 node scripts/build.js narratives/news-week8.yaml
@@ -32,25 +38,91 @@ YAML (source of truth)  →  build.js  →  .js seed (build artifact)
                                     init-db.js (auto-discovers)
 ```
 
-### Three Pipelines
+### Four Pipelines
 
-| Pipeline | Input | AI needed? | Use case |
-|----------|-------|------------|----------|
-| **News** | RSS feeds | No (rule-based clustering) | Weekly news seeds |
-| **Knowledge** | YAML written by human/AI | Optional | Historical, technical seeds |
+| Pipeline | Script | AI needed? | Use case |
+|----------|--------|------------|----------|
+| **Daily News** | `daily-news.js` | **No** | One-command daily news seed |
+| **Manual News** | `gather.js` → `narrate.js` → `build.js` | No | Custom date range / filtering |
+| **Knowledge** | Write YAML → `validate.js` → `build.js` | Optional | Historical, technical seeds |
 | **Hybrid** | Partial YAML + AI enrichment | Yes | Complex narratives |
+
+## Daily News Pipeline
+
+**The simplest way to generate a news seed.** One command, no AI, no manual steps.
+
+```bash
+cd seed-factory
+node scripts/daily-news.js
+```
+
+This will:
+1. Fetch all RSS feeds from `sources.yaml`
+2. Filter to only today's stories
+3. Cluster into narratives (keyword rules)
+4. Validate the YAML
+5. Build the `.js` seed file
+
+### Namespace Hierarchy
+
+Daily seeds nest inside weekly namespaces:
+
+```
+news                              ← parent (shows ALL news)
+├── news.week7                    ← aggregates week 7 dailies
+│   ├── news.week7.day-2026-02-10
+│   ├── news.week7.day-2026-02-11
+│   └── ...
+├── news.week8                    ← aggregates week 8 dailies
+│   ├── news.week8.day-2026-02-17
+│   └── ...
+```
+
+The Explorer UI bubbles narratives up: `news.week8` shows all its daily stories, and `news` shows everything.
+
+### Options
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `--date YYYY-MM-DD` | today | Override target date |
+| `--limit N` | 10 | Max stories per RSS feed |
+| `--dry-run` | off | Preview without writing files |
+| `--keep-tmp` | off | Keep intermediate JSON files |
+
+### After Running
+
+The seed file is generated but **not deployed**. To deploy:
+
+```bash
+cd ~/projects/noesis-framework
+git add api/scripts/seeds/news-week*-day-*.js
+git add seed-factory/narratives/news-week*-day-*.yaml
+git commit -m "seed: daily news YYYY-MM-DD"
+git push origin main
+# Render auto-deploys from main branch
+```
+
+### Troubleshooting
+
+| Problem | Cause | Fix |
+|---------|-------|-----|
+| "No stories found for this date" | RSS feeds haven't published yet or date is old | Try later, or use `--date` for today |
+| 0 stories gathered | Network issue or feeds are down | Check internet, try `--limit 5` |
+| Validation errors | Malformed RSS data | Check the YAML in `narratives/`, fix manually |
 
 ## Directory Structure
 
 ```
 seed-factory/
 ├── sources.yaml              ← RSS feeds + narrative clustering rules
+├── .tmp/                     ← Temp files (auto-created, gitignored)
 ├── schema/
 │   └── narrative.schema.json ← JSON Schema for YAML validation
 ├── narratives/               ← YAML source files (source of truth)
 │   ├── battle-of-harrisburg.yaml
 │   └── noesis-system.yaml
 ├── scripts/
+│   ├── daily-news.js         ← ⭐ ONE-COMMAND daily news pipeline
 │   ├── gather.js             ← Step 1: fetch RSS → raw JSON
 │   ├── narrate.js            ← Step 2: raw JSON → narrative YAML
 │   ├── build.js              ← Step 3: YAML → validated .js seed
