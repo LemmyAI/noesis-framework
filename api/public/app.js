@@ -428,14 +428,14 @@
         const entityCardWithMeta = (e) => {
           const conn = connectionCount[e.id] || 0;
           const date = e.temporal?.timestamp ? new Date(e.temporal.timestamp).toLocaleDateString() : '';
-          const ns = e.namespace.replace(ns + '.', '').split('.')[0]; // Show first child segment
+          const shortNs = e.namespace.split('.').pop(); // Show last namespace segment
           return `<div class="card entity-card" onclick="window.location.hash='#/entity/${encodeURIComponent(e.id)}'">
             <div class="entity-type-badge" style="background:${typeColor(e.type)}">${esc(e.type)}</div>
             <div class="entity-name">${esc(e.name)}</div>
             <div class="entity-meta">
               ${date ? `<span>${date}</span>` : ''}
               ${conn > 0 ? `<span>🔗 ${conn}</span>` : ''}
-              <span class="entity-ns-tag">${esc(ns)}</span>
+              <span class="entity-ns-tag">${esc(shortNs)}</span>
             </div>
           </div>`;
         };
