@@ -232,6 +232,7 @@
     if (view === 'narrative') return viewNarrative(decodeURIComponent(parts.slice(1).join('/')));
     if (view === 'graph') return viewGraph(parts[1]);
     if (view === 'key') return viewKey(decodeURIComponent(parts.slice(1).join('/')));
+    if (view === 'about') return viewAbout();
 
     $('#app').innerHTML = '<div class="empty-state">View not found</div>';
   }
@@ -711,6 +712,72 @@
     }
 
     $('#app').innerHTML = html;
+  }
+
+  // === VIEW: ABOUT ===
+  function viewAbout() {
+    setBreadcrumb([
+      { label: 'ν NOESIS', href: '#/' },
+      { label: 'About', href: '#/about' },
+    ]);
+
+    // Count stats from loaded data
+    const entCount = state.allEntities.length;
+    const nsCount = state.namespaces.length;
+    const narCount = state.allNarratives.length;
+
+    $('#app').innerHTML = `<div class="about-page">
+      <h1>NOESIS</h1>
+      <div class="about-greek">νόησις (noēsis) — understanding, intellection</div>
+      <div class="about-subtitle">Structured knowledge for AI and humans</div>
+
+      <h2>The Problem of Knowing</h2>
+      <p>We drown in data yet starve for understanding. Every day, billions of events, decisions, and claims pour through our systems — disconnected fragments that no mind, human or artificial, can hold together. Search engines retrieve documents. Databases store rows. Knowledge graphs link nodes. But none of them <em>understand</em>.</p>
+      <p>Aristotle distinguished between <em>epistēmē</em> (scientific knowledge), <em>technē</em> (craft knowledge), and <em>noēsis</em> — the highest form: direct intellectual apprehension of truth. Not just knowing <em>that</em> something is, but grasping <em>why</em> it is, how it connects, what it means in the sweep of a story.</p>
+      <p>That is what this system pursues.</p>
+
+      <h2>What NOESIS Is</h2>
+      <p>NOESIS is a universal structured knowledge representation language. It combines <strong>narrative</strong> (stories with actors and causality), <strong>ontology</strong> (formal classification of what things are), and <strong>evidence</strong> (traceable links to source documents) into a single coherent framework.</p>
+      <p>It is designed to be read by humans, queried by machines, and reasoned over by AI agents. The same graph that a journalist navigates to understand a geopolitical crisis is the graph an AI agent traverses to answer a question about cause and effect.</p>
+
+      <table class="acro-table">
+        <tr><td>N</td><td>Narrative</td><td>Stories with actors, events, and causal chains — knowledge as interconnected stories, not isolated facts</td></tr>
+        <tr><td>O</td><td>Ontology</td><td>Formal classification of what things are — configurable per domain</td></tr>
+        <tr><td>E</td><td>Evidence-based</td><td>Every claim links to source documents — traceable, verifiable</td></tr>
+        <tr><td>S</td><td>Systems</td><td>Entities form interconnected graphs — not isolated data points</td></tr>
+        <tr><td>I</td><td>Inferencing</td><td>Relations enable reasoning — if A causes B and B causes C, then A causes C</td></tr>
+        <tr><td>S</td><td>Structure</td><td>Five-layer architecture from core ontology to presentation</td></tr>
+      </table>
+
+      <h2>The Five Layers</h2>
+      <p>Everything in NOESIS passes through five layers — from universal logic down to raw evidence, and up to visual presentation. Each layer has a distinct responsibility. Together, they turn fragments into understanding.</p>
+      <div class="layers">
+Layer 5: Presentation — how knowledge is visualised and navigated<br>
+Layer 4: Datalayer — source documents, raw evidence, articles<br>
+Layer 3: Temporal &amp; Credibility — when things happened, how certain we are<br>
+Layer 2: Namespace — domain-specific extensions, hierarchy, versioning<br>
+Layer 1: Core Ontology — universal types, configurable inference rules
+      </div>
+
+      <h2>Narrative First</h2>
+      <p>Most knowledge systems treat stories as decoration on top of data. NOESIS inverts this. Narrative is the <em>primary organising principle</em>. Relations carry sequence numbers. Contexts group causal chains into named stories. A set of nodes isn't just a graph — it's a plot, with a beginning, escalation, climax, and consequence.</p>
+      <p>This mirrors how humans actually understand the world: through stories. Not through tables, not through triples, but through narrative threads that connect cause to effect across time.</p>
+
+      <h2>Namespaces as Worldviews</h2>
+      <p>A financial analyst sees "Bitcoin" as an asset with a price chart. A journalist sees it as a story about regulation and adoption. A technologist sees it as a protocol. In NOESIS, these are not contradictions — they are <em>namespaces</em>. The same real-world entity, viewed through different lenses, each adding its own types, metadata, and meaning.</p>
+      <p>Namespaces inherit from parents. The root namespace defines universal logic. Children extend it for their domain. This creates a tree of worldviews, unified at the root but richly diverse at the leaves.</p>
+
+      <h2>Goals</h2>
+      <p><strong>For humans:</strong> Navigate complex knowledge visually. Follow narratives. Trace claims to evidence. Understand <em>why</em>, not just <em>what</em>.</p>
+      <p><strong>For AI agents:</strong> A structured, queryable knowledge graph with typed relations, inference properties, and source provenance. Ask "what caused X?" and get a traversable answer, not a hallucination.</p>
+      <p><strong>For the gap between them:</strong> A shared language where human narrative intuition and machine graph traversal meet on the same substrate.</p>
+
+      <h2>This Explorer</h2>
+      <p>What you're looking at is the NOESIS Explorer — a presentation layer (Layer 5) built to navigate any NOESIS knowledge graph. It reads all structure from the API at runtime. No hardcoded types, no fixed layouts. Feed it a different domain, and it adapts.</p>
+      <p>Currently exploring <strong>${entCount} entities</strong> across <strong>${nsCount} namespaces</strong> with <strong>${narCount} narratives</strong>.</p>
+
+      <a href="#/" class="about-enter">Enter the Explorer →</a>
+    </div>`;
   }
 
   // === LEGEND ===

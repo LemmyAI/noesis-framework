@@ -61,9 +61,155 @@ header {
   white-space: nowrap;
   letter-spacing: 0.5px;
   flex-shrink: 0;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
 }
-.logo span { font-weight: 300; opacity: 0.7; }
-.logo:hover { text-decoration: none; opacity: 0.9; }
+.logo-nu { font-weight: 700; }
+.logo-text { font-weight: 300; opacity: 0.7; }
+.logo-sub {
+  font-size: 0.6rem;
+  font-weight: 400;
+  opacity: 0.35;
+  letter-spacing: 0.3px;
+  display: none;
+}
+@media (min-width: 640px) {
+  .logo-sub { display: inline; }
+}
+.logo:hover { text-decoration: none; opacity: 1; }
+.logo:hover .logo-sub { opacity: 0.6; }
+
+/* Logo hover tooltip */
+.logo-tooltip {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background: rgba(20,20,24,0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 16px 20px;
+  width: 320px;
+  white-space: normal;
+  z-index: 200;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+}
+.logo:hover .logo-tooltip { display: block; }
+.tooltip-greek {
+  font-size: 1.2rem;
+  color: var(--text-bright);
+  margin-bottom: 6px;
+}
+.tooltip-greek em {
+  font-size: 0.85rem;
+  font-style: italic;
+  opacity: 0.6;
+}
+.tooltip-meaning {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+.tooltip-acro {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+.tooltip-acro b {
+  color: var(--accent);
+  font-weight: 700;
+  margin-right: 1px;
+}
+
+/* About page */
+.about-page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.about-page h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 4px;
+}
+.about-page .about-greek {
+  font-size: 1.3rem;
+  color: var(--text-dim);
+  font-style: italic;
+  margin-bottom: 24px;
+}
+.about-page .about-subtitle {
+  font-size: 1rem;
+  color: var(--accent);
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+.about-page h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin: 32px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+.about-page p {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+.about-page .acro-table {
+  width: 100%;
+  margin: 16px 0;
+}
+.about-page .acro-table td {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  color: var(--text-mid);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.about-page .acro-table td:first-child {
+  font-weight: 700;
+  color: var(--accent);
+  width: 30px;
+  font-size: 1rem;
+}
+.about-page .acro-table td:nth-child(2) {
+  color: var(--text-bright);
+  font-weight: 600;
+}
+.about-page .layers {
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+  padding: 16px;
+  line-height: 1.8;
+  overflow-x: auto;
+}
+.about-page .about-enter {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 28px;
+  background: var(--accent);
+  color: #000;
+  font-weight: 700;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+.about-page .about-enter:hover { opacity: 0.85; }
 
 #breadcrumb {
   display: flex;
