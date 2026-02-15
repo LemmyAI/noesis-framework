@@ -8,10 +8,9 @@ const pool = new Pool({
 
 // Available seeds — add new ones here
 const AVAILABLE_SEEDS = {
-  'feb2026-rally': './seeds/feb2026-rally.js',
   'noesis-system': './seeds/noesis-system.js',
   'battle-of-harrisburg': './seeds/battle-of-harrisburg.js',
-  'news-feb14': './seeds/news-feb14.js',
+  'news-week7': './seeds/news-week7.js',
 };
 
 async function initDatabase() {
