@@ -352,7 +352,27 @@
   }
 
   function narrativeCard(n) {
+    // Derive primary namespace from the narrative's entities
+    const nsCount = {};
+    (n.entity_ids || []).forEach(id => {
+      const e = state.entityLookup[id];
+      if (e) { nsCount[e.namespace] = (nsCount[e.namespace] || 0) + 1; }
+    });
+    const primaryNs = Object.entries(nsCount).sort((a, b) => b[1] - a[1])[0]?.[0] || '';
+
+    // Build clickable namespace path breadcrumb
+    let pathHtml = '';
+    if (primaryNs && primaryNs !== 'default') {
+      const parts = primaryNs.split('.');
+      const crumbs = parts.map((seg, i) => {
+        const full = parts.slice(0, i + 1).join('.');
+        return `<a class="nar-path-link" href="#/ns/${encodeURIComponent(full)}" onclick="event.stopPropagation()">${esc(seg)}</a>`;
+      });
+      pathHtml = `<div class="nar-path">${crumbs.join('<span class="nar-path-sep">›</span>')}</div>`;
+    }
+
     return `<div class="card narrative-card" onclick="window.location.hash='#/narrative/${encodeURIComponent(n.context)}'">
+      ${pathHtml}
       <div class="nar-title">📖 ${esc(n.context)}</div>
       <div class="nar-meta">${n.relation_count || 0} steps · ${n.entity_count || '?'} entities</div>
       <span class="nar-cta">Explore Story →</span>

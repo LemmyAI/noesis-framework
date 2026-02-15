@@ -462,6 +462,29 @@ main {
 .narrative-card {
   padding: 16px;
 }
+.narrative-card .nar-path {
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+.narrative-card .nar-path-link {
+  color: var(--text-dim);
+  text-decoration: none;
+  padding: 1px 4px;
+  border-radius: 3px;
+  transition: color 0.15s, background 0.15s;
+}
+.narrative-card .nar-path-link:hover {
+  color: var(--text-bright);
+  background: rgba(255,255,255,0.08);
+}
+.narrative-card .nar-path-sep {
+  color: rgba(255,255,255,0.2);
+  font-size: 0.65rem;
+}
 .narrative-card .nar-title { font-size: 1.1rem; font-weight: 700; color: var(--text-bright); }
 .narrative-card .nar-meta { font-size: 0.8rem; color: var(--text-dim); margin-top: 4px; }
 .narrative-card .nar-cta {
