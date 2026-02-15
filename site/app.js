@@ -51,10 +51,13 @@
     return `${months[d.getUTCMonth()]} ${d.getUTCDate()}, ${d.getUTCFullYear()} ${String(d.getUTCHours()).padStart(2,'0')}:${String(d.getUTCMinutes()).padStart(2,'0')}`;
   }
 
-  function credDot(c) {
+  function credDot(c, opts = {}) {
     const conf = c?.confidence || 'medium';
     const color = credColorMap[conf] || '#888';
-    return `<span class="cred-dot" style="background:${color}" title="${conf}"></span>`;
+    if (opts.labeled) {
+      return `<span class="cred-badge" style="--cred-color:${color}"><span class="cred-dot" style="background:${color}"></span>Confidence: ${conf}</span>`;
+    }
+    return `<span class="cred-badge-compact" style="--cred-color:${color}"><span class="cred-dot" style="background:${color}"></span>${conf}</span>`;
   }
 
   function typeColor(type) { return state.colorMap[type] || '#666'; }
@@ -66,7 +69,7 @@
       <div class="card-meta">
         <span class="type-badge">${esc(entity.type)}</span>
         ${credDot(entity.credibility)}
-        <span>${esc(entity.namespace)}</span>
+        <span>· ${esc(entity.namespace)}</span>
         ${entity.temporal ? `<span>· ${formatTemporal(entity.temporal)}</span>` : ''}
       </div>
       ${opts.excerpt ? `<div class="card-excerpt">${esc(opts.excerpt)}</div>` : ''}
@@ -294,8 +297,7 @@
       <div class="entity-name" style="color:${c}">${icon(entity.type)} ${esc(entity.name)}</div>
       <div class="entity-info">
         <span class="type-badge" style="border:1px solid ${c}40">${esc(entity.type)}</span>
-        ${credDot(entity.credibility)}
-        <span>${esc(entity.credibility?.confidence || 'medium')}</span>
+        ${credDot(entity.credibility, { labeled: true })}
         <span>· ${esc(entity.namespace)}</span>
         ${entity.temporal ? `<span>· ${formatTemporal(entity.temporal)}</span>` : ''}
       </div>

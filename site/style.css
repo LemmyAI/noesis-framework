@@ -265,6 +265,36 @@ main {
   display: inline-block;
   flex-shrink: 0;
 }
+
+/* Compact confidence badge (cards, lists) */
+.cred-badge-compact {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.7rem;
+  color: var(--cred-color, #888);
+  background: color-mix(in srgb, var(--cred-color, #888) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--cred-color, #888) 25%, transparent);
+  border-radius: 100px;
+  padding: 1px 8px 1px 5px;
+  white-space: nowrap;
+}
+
+/* Full labeled confidence badge (entity detail) */
+.cred-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.75rem;
+  color: var(--cred-color, #888);
+  background: color-mix(in srgb, var(--cred-color, #888) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--cred-color, #888) 25%, transparent);
+  border-radius: 100px;
+  padding: 2px 10px 2px 7px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
 /* credibility colors are set inline from namespace config */
 
 .badge-disputed {
@@ -668,6 +698,8 @@ main {
 .graph-tooltip.visible { display: block; }
 .graph-tooltip .tt-name { font-weight: 600; color: var(--text-bright); margin-bottom: 2px; }
 .graph-tooltip .tt-meta { color: var(--text-dim); font-size: 0.75rem; }
+.graph-tooltip .tt-cred { font-size: 0.7rem; margin-top: 3px; display: flex; align-items: center; gap: 4px; }
+.graph-tooltip .tt-cred-dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
 
 /* === NARRATIVE LABEL + INFO POPUP === */
 .narrative-label-row {
