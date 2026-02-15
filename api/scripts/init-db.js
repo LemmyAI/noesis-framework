@@ -11,6 +11,7 @@ const AVAILABLE_SEEDS = {
   'feb2026-rally': './seeds/feb2026-rally.js',
   'noesis-system': './seeds/noesis-system.js',
   'battle-of-harrisburg': './seeds/battle-of-harrisburg.js',
+  'news-feb14': './seeds/news-feb14.js',
 };
 
 async function initDatabase() {

@@ -38,8 +38,11 @@ REST API for querying NOESIS data.
 - **Read-only** (no create/update/delete)
 - **PostgreSQL** in same Docker container
 - Database managed manually via SQL scripts
+- **Deployed on Render:** https://noesis-api.onrender.com
 
-**Status:** 🔲 Ready to build
+**Status:** ✅ Built and deployed
+
+**Repo:** [LemmyAI/noesis-framework](https://github.com/LemmyAI/noesis-framework)
 
 ---
 
@@ -61,6 +64,7 @@ Frontend for viewing NOESIS narratives.
 - [Specification (v2.5)](docs/SPEC.md)
 - [Implementation Plan](docs/IMPLEMENTATION-PLAN.md)
 - [Decisions](docs/DECISIONS.md)
+- [API Documentation](api/README.md)
 
 ---
 
