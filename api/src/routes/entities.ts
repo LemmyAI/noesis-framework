@@ -19,53 +19,71 @@ router.get('/', async (req: Request, res: Response) => {
       precision
     } = req.query;
 
-    let sql = 'SELECT * FROM entities WHERE 1=1';
+    // Use CTE to count relations per entity for sorting
+    let sql = `
+      WITH rel_counts AS (
+        SELECT entity_id, COUNT(*) as conn_count
+        FROM (
+          SELECT from_entity as entity_id FROM relations
+          UNION ALL
+          SELECT to_entity FROM relations
+        ) x
+        GROUP BY entity_id
+      )
+      SELECT e.*, COALESCE(r.conn_count, 0) as _connection_count
+      FROM entities e
+      LEFT JOIN rel_counts r ON e.id = r.entity_id
+      WHERE 1=1
+    `;
     const params: any[] = [];
     let idx = 1;
 
     if (type) {
-      sql += ` AND type = $${idx++}`;
+      sql += ` AND e.type = $${idx++}`;
       params.push(type);
     }
 
     if (namespace) {
-      sql += ` AND namespace = $${idx++}`;
+      sql += ` AND e.namespace = $${idx++}`;
       params.push(namespace);
     }
 
     if (key) {
-      sql += ` AND key = $${idx++}`;
+      sql += ` AND e.key = $${idx++}`;
       params.push(key);
     }
 
     if (category) {
-      sql += ` AND metadata->>'category' LIKE $${idx++}`;
+      sql += ` AND e.metadata->>'category' LIKE $${idx++}`;
       params.push(`${category}%`);
     }
 
     if (precision) {
-      sql += ` AND temporal->>'precision' = $${idx++}`;
+      sql += ` AND e.temporal->>'precision' = $${idx++}`;
       params.push(precision);
     }
 
     if (from) {
-      sql += ` AND (temporal->>'timestamp')::timestamptz >= $${idx++}`;
+      sql += ` AND (e.temporal->>'timestamp')::timestamptz >= $${idx++}`;
       params.push(from);
     }
 
     if (to) {
-      sql += ` AND (temporal->>'timestamp')::timestamptz <= $${idx++}`;
+      sql += ` AND (e.temporal->>'timestamp')::timestamptz <= $${idx++}`;
       params.push(to);
     }
 
     // Version handling
     if (all_versions === 'true') {
-      sql += ' ORDER BY id, version_number DESC';
+      sql += ' ORDER BY e.id, e.version_number DESC';
     } else if (version) {
-      sql += ` AND version_number = $${idx++}`;
+      sql += ` AND e.version_number = $${idx++}`;
       params.push(parseInt(version as string));
+      sql += ' ORDER BY COALESCE(r.conn_count, 0) DESC, (e.temporal->>\'timestamp\')::timestamptz DESC NULLS LAST';
     } else {
-      sql += ' AND is_latest = TRUE';
+      sql += ' AND e.is_latest = TRUE';
+      // Sort by connections (most connected first), then by date (newest first)
+      sql += ' ORDER BY COALESCE(r.conn_count, 0) DESC, (e.temporal->>\'timestamp\')::timestamptz DESC NULLS LAST';
     }
 
     const result = await db.query(sql, params);
