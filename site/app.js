@@ -440,8 +440,16 @@
     function render() {
       let html = '';
       html += `<div style="margin-bottom:12px;">
-        <div style="font-size:1.3rem;font-weight:700;color:var(--text-bright);">📖 ${esc(context)}</div>
+        <div class="narrative-label-row">
+          <span class="narrative-badge">Narrative</span>
+          <span class="narrative-info-icon" id="narrative-info-btn" aria-label="What is a narrative?" tabindex="0">ⓘ</span>
+        </div>
+        <div style="font-size:1.3rem;font-weight:700;color:var(--text-bright);margin-top:6px;">📖 ${esc(context)}</div>
         <div style="font-size:0.85rem;color:var(--text-dim);margin-top:4px;">${story.length} steps · ${entities.length} entities</div>
+        <div class="narrative-info-popup" id="narrative-info-popup">
+          <div class="narrative-info-popup-title">What is a Narrative?</div>
+          <div class="narrative-info-popup-body">A narrative is a chain of connected events, decisions, and facts that tell a story. Each step shows how one thing led to, enabled, or influenced another — forming a walkable, explorable path through the knowledge graph.</div>
+        </div>
       </div>`;
 
       // Tabs
@@ -481,6 +489,16 @@
       const tabSteps = document.getElementById('tab-steps');
       if (tabGraph) tabGraph.onclick = () => { mode = 'graph'; render(); };
       if (tabSteps) tabSteps.onclick = () => { mode = 'steps'; render(); };
+
+      // Narrative info popup
+      const infoBtn = document.getElementById('narrative-info-btn');
+      const infoPopup = document.getElementById('narrative-info-popup');
+      if (infoBtn && infoPopup) {
+        infoBtn.onclick = (e) => { e.stopPropagation(); infoPopup.classList.toggle('visible'); };
+        document.addEventListener('click', (e) => {
+          if (!infoPopup.contains(e.target) && e.target !== infoBtn) infoPopup.classList.remove('visible');
+        }, { once: false });
+      }
 
       // Render graph
       if (mode === 'graph') {

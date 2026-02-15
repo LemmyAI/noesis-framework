@@ -664,6 +664,69 @@ main {
 .graph-tooltip .tt-name { font-weight: 600; color: var(--text-bright); margin-bottom: 2px; }
 .graph-tooltip .tt-meta { color: var(--text-dim); font-size: 0.75rem; }
 
+/* === NARRATIVE LABEL + INFO POPUP === */
+.narrative-label-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.narrative-badge {
+  display: inline-block;
+  background: rgba(124, 77, 255, 0.15);
+  color: #B388FF;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 3px 10px;
+  border-radius: 100px;
+  border: 1px solid rgba(124, 77, 255, 0.3);
+}
+.narrative-info-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  cursor: pointer;
+  border-radius: 50%;
+  transition: color 0.15s, background 0.15s;
+  user-select: none;
+}
+.narrative-info-icon:hover,
+.narrative-info-icon:focus {
+  color: var(--text-bright);
+  background: rgba(255,255,255,0.07);
+  outline: none;
+}
+.narrative-info-popup {
+  display: none;
+  margin-top: 10px;
+  background: rgba(18,18,22,0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-hover);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  max-width: 380px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.5);
+  animation: fadeIn 150ms ease;
+}
+.narrative-info-popup.visible { display: block; }
+.narrative-info-popup-title {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--text-bright);
+  margin-bottom: 6px;
+}
+.narrative-info-popup-body {
+  font-size: 0.8rem;
+  color: var(--text-mid);
+  line-height: 1.5;
+}
+
 /* === TRANSITIONS === */
 
 main { animation: fadeIn 200ms ease; }
