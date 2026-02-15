@@ -1,5 +1,5 @@
 /**
- * NOESIS Explorer v2.0 — Namespace-as-Page Model
+ * NOESIS Explorer — Main Application
  * Hash-based SPA, data-agnostic, mobile-first
  */
 (() => {
@@ -15,16 +15,9 @@
     Trade: '📊', Policy: '📜', Sector: '📁', Protocol: '🔗',
     Conflict: '⚔️', Treaty: '🤝', Report: '📋', Indicator: '📈',
     DEX: '🔄', Chain: '⛓️', Sanction: '🚫', Alliance: '🤝',
-    Layer: '📐', Component: '⚙️', Principle: '📏', Feature: '🔧',
-    Battle: '⚔️', Campaign: '🗺️', Army: '🏴', 'Military Unit': '🎖️',
   };
 
-  // Namespace icons based on name heuristics
-  const NS_ICONS = {
-    news: '📰', finance: '💹', geopolitics: '🌍', noesis: '🧠', history: '📜',
-    crypto: '🪙', default: '⚙️',
-  };
-
+  // Credibility colors — loaded from namespace config at runtime
   let credColorMap = {};
 
   // === STATE ===
@@ -32,9 +25,7 @@
     namespaces: [],
     nsConfigs: {},
     colorMap: {},
-    allNarratives: [],
-    allEntities: [],
-    entityLookup: {},
+    activeNs: null,
   };
 
   // === API HELPERS ===
@@ -44,30 +35,9 @@
     return res.json();
   }
 
-  // Cached fetch
-  const cache = {};
-  async function cachedApi(path, ttl = 60000) {
-    if (cache[path] && Date.now() - cache[path].t < ttl) return cache[path].d;
-    const d = await api(path);
-    cache[path] = { d, t: Date.now() };
-    return d;
-  }
-
   // === HELPERS ===
   function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
   function icon(type) { return TYPE_ICONS[type] || '●'; }
-
-  function nsIcon(ns) {
-    const parts = ns.split('.');
-    for (let i = parts.length; i > 0; i--) {
-      const key = parts.slice(0, i).join('.');
-      if (NS_ICONS[key]) return NS_ICONS[key];
-    }
-    // Check last segment
-    const last = parts[parts.length - 1];
-    if (NS_ICONS[last]) return NS_ICONS[last];
-    return '📂';
-  }
 
   function formatTemporal(t) {
     if (!t || !t.timestamp) return '';
@@ -81,127 +51,41 @@
     return `${months[d.getUTCMonth()]} ${d.getUTCDate()}, ${d.getUTCFullYear()} ${String(d.getUTCHours()).padStart(2,'0')}:${String(d.getUTCMinutes()).padStart(2,'0')}`;
   }
 
-  function credDot(c) {
+  function credDot(c, opts = {}) {
     const conf = c?.confidence || 'medium';
     const color = credColorMap[conf] || '#888';
-    return `<span class="cred-dot" style="background:${color}" title="${conf}"></span>`;
+    if (opts.labeled) {
+      return `<span class="cred-badge" style="--cred-color:${color}"><span class="cred-dot" style="background:${color}"></span>Confidence: ${conf}</span>`;
+    }
+    return `<span class="cred-badge-compact" style="--cred-color:${color}"><span class="cred-dot" style="background:${color}"></span>${conf}</span>`;
   }
 
   function typeColor(type) { return state.colorMap[type] || '#666'; }
 
-  function entityCard(entity) {
+  function entityCard(entity, opts = {}) {
     const c = typeColor(entity.type);
-    const desc = entity.metadata?.description || '';
     return `<div class="card accent-left" style="--type-color:${c}" onclick="window.location.hash='#/entity/${entity.id}'">
       <div class="card-title">${icon(entity.type)} ${esc(entity.name)}</div>
       <div class="card-meta">
         <span class="type-badge">${esc(entity.type)}</span>
         ${credDot(entity.credibility)}
-        ${entity.temporal ? `<span>${formatTemporal(entity.temporal)}</span>` : ''}
+        <span>· ${esc(entity.namespace)}</span>
+        ${entity.temporal ? `<span>· ${formatTemporal(entity.temporal)}</span>` : ''}
       </div>
-      ${desc ? `<div class="card-excerpt">${esc(desc)}</div>` : ''}
+      ${opts.excerpt ? `<div class="card-excerpt">${esc(opts.excerpt)}</div>` : ''}
     </div>`;
   }
 
-  // === NAMESPACE HELPERS ===
-
-  // Get direct children of a namespace
-  function getChildren(parentNs) {
-    const prefix = parentNs === 'default' ? '' : parentNs + '.';
-    const parentDepth = parentNs === 'default' ? 0 : parentNs.split('.').length;
-    return state.namespaces.filter(ns => {
-      if (ns.namespace === 'default') return false;
-      if (parentNs === 'default') {
-        // Root children: namespaces with depth 1 (no dots)
-        return !ns.namespace.includes('.');
-      }
-      return ns.namespace.startsWith(prefix) &&
-             ns.namespace.split('.').length === parentDepth + 1;
-    });
-  }
-
-  // Check if a namespace is a descendant (or equal to) another
-  function isDescendantOrSelf(ns, ancestor) {
-    if (ancestor === 'default') return true;
-    return ns === ancestor || ns.startsWith(ancestor + '.');
-  }
-
-  // Get narratives scoped to a namespace and its descendants
-  function getScopedNarratives(ns) {
-    // Find all entity IDs in this namespace and descendants
-    const scopedEntityIds = new Set();
-    state.allEntities.forEach(e => {
-      if (isDescendantOrSelf(e.namespace, ns === 'default' ? 'default' : ns)) {
-        scopedEntityIds.add(e.id);
-      }
-    });
-
-    // Filter narratives: keep if any of its entities are in scope
-    return state.allNarratives.filter(n => {
-      if (!n.entity_ids || n.entity_ids.length === 0) return false;
-      return n.entity_ids.some(id => scopedEntityIds.has(id));
-    });
-  }
-
-  // === BREADCRUMB ===
-  function setBreadcrumb(items) {
-    const el = $('#breadcrumb');
-    el.innerHTML = items.map((item, i) => {
-      if (i === items.length - 1) return `<span class="current">${esc(item.label)}</span>`;
-      return `<a href="${item.href}">${esc(item.label)}</a><span class="sep">›</span>`;
-    }).join('');
-  }
-
-  function nsBreadcrumb(ns) {
-    // Root page: no breadcrumb (logo already shows ν NOESIS)
-    if (!ns || ns === 'default') return [];
-    const items = [{ label: 'ν NOESIS', href: '#/' }];
-    const parts = ns.split('.');
-    for (let i = 0; i < parts.length; i++) {
-      const path = parts.slice(0, i + 1).join('.');
-      items.push({ label: parts[i], href: `#/ns/${encodeURIComponent(path)}` });
-    }
-    return items;
-  }
-
-  // === LOADING ===
-  function showLoading() {
-    $('#app').innerHTML = '<div class="loading"><div class="spinner"></div> Loading…</div>';
-  }
-
-  // === INIT: LOAD ALL DATA ===
+  // === INIT: LOAD NAMESPACES & COLORS ===
   async function init() {
-    const [nsData, configData, narrativesData, allEntData, allRelData] = await Promise.all([
+    const [nsData, configData] = await Promise.all([
       api('/namespaces'),
       api('/namespaces/default/config'),
-      api('/narratives'),
-      api('/entities'),
-      api('/relations'),
     ]);
-
     state.namespaces = nsData.namespaces || [];
     state.nsConfigs['default'] = configData;
     state.colorMap = { ...(configData.colors?.types || {}) };
     credColorMap = { ...(configData.colors?.credibility || {}) };
-    state.allNarratives = narrativesData.narratives || [];
-    state.allEntities = allEntData.entities || [];
-    state.allEntities.forEach(e => { state.entityLookup[e.id] = e; });
-
-    // Build narrative → entity_ids mapping from relations
-    const allRelations = allRelData.relations || [];
-    const narrativeEntities = {};
-    for (const r of allRelations) {
-      if (!r.context) continue;
-      if (!narrativeEntities[r.context]) narrativeEntities[r.context] = new Set();
-      narrativeEntities[r.context].add(r.from_entity);
-      narrativeEntities[r.context].add(r.to_entity);
-    }
-    // Enrich narratives with entity_ids
-    for (const n of state.allNarratives) {
-      const ids = narrativeEntities[n.context];
-      n.entity_ids = ids ? [...ids] : [];
-      n.entity_count = n.entity_ids.length;
-    }
 
     // Load child namespace colors
     for (const ns of state.namespaces) {
@@ -214,8 +98,35 @@
       }
     }
 
+    renderNsPills();
     buildLegend();
     route();
+  }
+
+  // === NAMESPACE PILLS ===
+  function renderNsPills() {
+    const el = $('#ns-pills');
+    el.innerHTML = state.namespaces.map(ns => {
+      const active = ns.namespace === state.activeNs ? ' active' : '';
+      return `<div class="pill${active}" onclick="window.location.hash='#/ns/${encodeURIComponent(ns.namespace)}'">
+        <span class="dot" style="background:${ns.namespace === 'default' ? '#888' : typeColor(ns.namespace === 'news' ? 'Article' : ns.namespace === 'finance' ? 'Asset' : ns.namespace === 'geopolitics' ? 'Policy' : ns.namespace === 'finance.crypto' ? 'Token' : 'Concept')}"></span>
+        ${esc(ns.namespace)}
+      </div>`;
+    }).join('');
+  }
+
+  // === BREADCRUMB ===
+  function setBreadcrumb(items) {
+    const el = $('#breadcrumb');
+    el.innerHTML = items.map((item, i) => {
+      if (i === items.length - 1) return `<span class="current">${esc(item.label)}</span>`;
+      return `<a href="${item.href}">${esc(item.label)}</a><span class="sep">›</span>`;
+    }).join('');
+  }
+
+  // === LOADING ===
+  function showLoading() {
+    $('#app').innerHTML = '<div class="loading"><div class="spinner"></div> Loading…</div>';
   }
 
   // === ROUTER ===
@@ -226,216 +137,157 @@
 
     showLoading();
 
-    if (view === '' || view === '/') return viewNamespacePage('default');
-    if (view === 'ns') return viewNamespacePage(decodeURIComponent(parts.slice(1).join('.')));
+    if (view === '' || view === '/') return viewHome();
+    if (view === 'ns') return viewNamespace(decodeURIComponent(parts[1] || 'default'));
     if (view === 'entity') return viewEntity(parts[1]);
     if (view === 'narrative') return viewNarrative(decodeURIComponent(parts.slice(1).join('/')));
     if (view === 'graph') return viewGraph(parts[1]);
     if (view === 'key') return viewKey(decodeURIComponent(parts.slice(1).join('/')));
-    if (view === 'about') return viewAbout();
 
     $('#app').innerHTML = '<div class="empty-state">View not found</div>';
   }
 
   window.addEventListener('hashchange', route);
 
-  // === VIEW: UNIVERSAL NAMESPACE PAGE ===
-  async function viewNamespacePage(ns) {
-    const isRoot = ns === 'default';
-    setBreadcrumb(nsBreadcrumb(isRoot ? null : ns));
+  // === VIEW: HOME ===
+  async function viewHome() {
+    state.activeNs = null;
+    renderNsPills();
+    setBreadcrumb([{ label: 'Home', href: '#/' }]);
 
-    // Get children namespaces
-    const children = getChildren(ns);
+    const [narrativesData, entitiesData] = await Promise.all([
+      api('/narratives'),
+      api('/entities'),
+    ]);
 
-    // Get entities directly in this namespace
-    const directEntities = isRoot
-      ? [] // default namespace is schema-only
-      : state.allEntities.filter(e => e.namespace === ns);
+    const narratives = narrativesData.narratives || [];
+    const entities = entitiesData.entities || [];
 
-    // Get scoped narratives (own + bubbled from children)
-    const scopedNarratives = isRoot
-      ? state.allNarratives // root sees all
-      : getScopedNarratives(ns);
+    // Count per namespace
+    const nsCounts = {};
+    entities.forEach(e => { nsCounts[e.namespace] = (nsCounts[e.namespace] || 0) + 1; });
 
-    // Sort narratives: by relation_count × recency
-    scopedNarratives.sort((a, b) => {
-      const sa = (a.relation_count || 0);
-      const sb = (b.relation_count || 0);
-      return sb - sa;
+    // Sort entities by temporal desc
+    const sorted = [...entities].sort((a, b) => {
+      const ta = a.temporal?.timestamp || '';
+      const tb = b.temporal?.timestamp || '';
+      return tb.localeCompare(ta);
     });
-
-    // Separate own vs child narratives
-    const ownEntityIds = new Set(directEntities.map(e => e.id));
-    const ownNarratives = [];
-    const childNarratives = [];
-    for (const n of scopedNarratives) {
-      const ids = n.entity_ids || [];
-      if (ids.some(id => ownEntityIds.has(id))) {
-        ownNarratives.push(n);
-      } else {
-        childNarratives.push(n);
-      }
-    }
-
-    // Sort child narratives by entity count (desc) then recency (desc)
-    childNarratives.sort((a, b) => {
-      const ea = (a.entity_ids || []).length;
-      const eb = (b.entity_ids || []).length;
-      if (eb !== ea) return eb - ea;
-      // Recency: find most recent entity timestamp in each narrative
-      const recentA = Math.max(...(a.entity_ids || []).map(id => {
-        const e = state.entityLookup[id];
-        return e?.temporal?.timestamp ? new Date(e.temporal.timestamp).getTime() : 0;
-      }));
-      const recentB = Math.max(...(b.entity_ids || []).map(id => {
-        const e = state.entityLookup[id];
-        return e?.temporal?.timestamp ? new Date(e.temporal.timestamp).getTime() : 0;
-      }));
-      return recentB - recentA;
-    });
-
-    // Cap child narratives — show top 5 (expandable)
-    const CHILD_NAR_LIMIT = 5;
-    const childToShow = childNarratives.slice(0, CHILD_NAR_LIMIT);
-    const childHasMore = childNarratives.length > CHILD_NAR_LIMIT;
 
     let html = '';
 
-    // SECTION 1: Narratives
-    const hasOwn = ownNarratives.length > 0;
-    const hasChild = childToShow.length > 0;
-    if (hasOwn || hasChild) {
+    // Narratives
+    if (narratives.length > 0) {
       html += `<div class="section-header"><span class="icon">📖</span> Narratives</div>`;
-
-      if (hasOwn && hasChild) {
-        html += `<div class="subsection-label">This Namespace</div>`;
-      }
-      if (hasOwn) {
-        html += `<div class="stack">${ownNarratives.map(narrativeCard).join('')}</div>`;
-      }
-      if (hasOwn && hasChild) {
-        html += `<div class="subsection-label">Top from Sub-Namespaces</div>`;
-      }
-      if (hasChild || (isRoot && scopedNarratives.length > 0 && !hasOwn)) {
-        const toShow = isRoot
-          ? childNarratives.slice(0, CHILD_NAR_LIMIT)
-          : childToShow;
-        html += `<div class="stack">${toShow.map(narrativeCard).join('')}</div>`;
-        const remaining = isRoot
-          ? scopedNarratives.length - CHILD_NAR_LIMIT
-          : childNarratives.length - CHILD_NAR_LIMIT;
-        if (remaining > 0) {
-          html += `<div class="show-more" id="show-more-nar" style="cursor:pointer;text-align:center;padding:10px;font-size:0.85rem;color:var(--accent);">Show ${remaining} more…</div>`;
-        }
-      }
-    }
-
-    // SECTION 2: Sub-Namespaces
-    if (children.length > 0) {
-      html += `<div class="section-header"><span class="icon">🗂</span> Sub-Namespaces</div>`;
-      html += `<div class="grid-fill">`;
-
-      for (const child of children) {
-        // Count entities in this child + descendants
-        const count = state.allEntities.filter(e =>
-          isDescendantOrSelf(e.namespace, child.namespace)
-        ).length;
-        const lastSegment = child.namespace.split('.').pop();
-        html += `<div class="card ns-card" onclick="window.location.hash='#/ns/${encodeURIComponent(child.namespace)}'">
-          <div class="ns-icon">${nsIcon(child.namespace)}</div>
-          <div class="ns-name">${esc(lastSegment)}</div>
-          <div class="ns-count">${count} entities</div>
+      html += `<div class="stack">`;
+      for (const n of narratives) {
+        html += `<div class="card narrative-card" onclick="window.location.hash='#/narrative/${encodeURIComponent(n.context)}'">
+          <div class="nar-title">⚡ ${esc(n.context)}</div>
+          <div class="nar-meta">${n.relation_count} steps · ${n.max_sequence - n.min_sequence + 1} sequence points</div>
+          <span class="nar-cta">Explore Story →</span>
         </div>`;
       }
-
       html += `</div>`;
     }
 
-    // SECTION 3: Entities (grouped by type)
-    if (directEntities.length > 0) {
-      const groups = {};
-      directEntities.forEach(e => {
-        if (!groups[e.type]) groups[e.type] = [];
-        groups[e.type].push(e);
-      });
-
-      html += `<div class="section-header"><span class="icon">⚡</span> Entities <span style="font-weight:400;text-transform:none;letter-spacing:0">(${directEntities.length})</span></div>`;
-
-      for (const [type, items] of Object.entries(groups).sort((a, b) => b[1].length - a[1].length)) {
-        const c = typeColor(type);
-        html += `<div class="type-group-header">
-          <span class="color-dot" style="background:${c}"></span>
-          ${icon(type)} ${esc(type)}
-          <span class="count">${items.length}</span>
+    // Namespaces grid
+    const childNs = state.namespaces.filter(ns => ns.namespace !== 'default');
+    if (childNs.length > 0) {
+      html += `<div class="section-header"><span class="icon">🗂</span> Namespaces</div>`;
+      html += `<div class="grid-fill">`;
+      for (const ns of childNs) {
+        const count = nsCounts[ns.namespace] || 0;
+        const nsIcon = icon(ns.namespace === 'news' ? 'Article' : ns.namespace === 'finance' ? 'Asset' : ns.namespace === 'geopolitics' ? 'Policy' : ns.namespace === 'finance.crypto' ? 'Token' : 'Concept');
+        html += `<div class="card ns-card" onclick="window.location.hash='#/ns/${encodeURIComponent(ns.namespace)}'">
+          <div class="ns-icon">${nsIcon}</div>
+          <div class="ns-name">${esc(ns.namespace)}</div>
+          <div class="ns-count">${count} entities</div>
         </div>`;
-        html += `<div class="stack" style="margin-bottom:16px;">`;
-        for (const e of items) html += entityCard(e);
-        html += `</div>`;
       }
+      html += `</div>`;
     }
 
-    if (!html) {
-      html = '<div class="empty-state">This namespace is empty</div>';
+    // Recent entities
+    html += `<div class="section-header"><span class="icon">🕐</span> Recent Entities</div>`;
+    html += `<div class="stack">`;
+    for (const e of sorted.slice(0, 12)) {
+      html += entityCard(e);
+    }
+    html += `</div>`;
+
+    $('#app').innerHTML = html;
+    updateLegend(sorted, []);
+  }
+
+  // === VIEW: NAMESPACE ===
+  async function viewNamespace(ns) {
+    state.activeNs = ns;
+    renderNsPills();
+    setBreadcrumb([
+      { label: 'Home', href: '#/' },
+      { label: ns, href: `#/ns/${encodeURIComponent(ns)}` },
+    ]);
+
+    const [entData, cfgData] = await Promise.all([
+      api(`/entities?namespace=${encodeURIComponent(ns)}`),
+      api(`/namespaces/${encodeURIComponent(ns)}/config`).catch(() => null),
+    ]);
+
+    const entities = entData.entities || [];
+
+    // Group by type
+    const groups = {};
+    entities.forEach(e => {
+      if (!groups[e.type]) groups[e.type] = [];
+      groups[e.type].push(e);
+    });
+
+    let html = '';
+
+    if (cfgData) {
+      const extendsLabel = cfgData.chain ? cfgData.chain.join(' → ') : '';
+      html += `<div style="font-size:0.85rem;color:var(--text-dim);margin-bottom:16px;">
+        Extends: ${esc(extendsLabel)}<br>
+        ${entities.length} entities across ${Object.keys(groups).length} types
+      </div>`;
+    }
+
+    for (const [type, items] of Object.entries(groups).sort((a, b) => b[1].length - a[1].length)) {
+      const c = typeColor(type);
+      html += `<div class="type-group-header">
+        <span class="color-dot" style="background:${c}"></span>
+        ${icon(type)} ${esc(type)}
+        <span class="count">${items.length}</span>
+      </div>`;
+      html += `<div class="stack" style="margin-bottom:16px;">`;
+      for (const e of items) html += entityCard(e);
+      html += `</div>`;
+    }
+
+    if (entities.length === 0) {
+      html = '<div class="empty-state">No entities in this namespace</div>';
     }
 
     $('#app').innerHTML = html;
-    updateLegend(directEntities.length > 0 ? directEntities : state.allEntities, []);
-
-    // "Show more" handler for child narratives
-    const showMoreBtn = document.getElementById('show-more-nar');
-    if (showMoreBtn) {
-      showMoreBtn.addEventListener('click', () => {
-        const allChild = isRoot ? scopedNarratives : childNarratives;
-        const parent = showMoreBtn.parentElement;
-        const stack = showMoreBtn.previousElementSibling;
-        if (stack) {
-          stack.innerHTML = allChild.map(narrativeCard).join('');
-        }
-        showMoreBtn.remove();
-      });
-    }
-  }
-
-  function narrativeCard(n) {
-    // Derive primary namespace from the narrative's entities
-    const nsCount = {};
-    (n.entity_ids || []).forEach(id => {
-      const e = state.entityLookup[id];
-      if (e) { nsCount[e.namespace] = (nsCount[e.namespace] || 0) + 1; }
-    });
-    const primaryNs = Object.entries(nsCount).sort((a, b) => b[1] - a[1])[0]?.[0] || '';
-
-    // Build clickable namespace path breadcrumb
-    let pathHtml = '';
-    if (primaryNs && primaryNs !== 'default') {
-      const parts = primaryNs.split('.');
-      const crumbs = parts.map((seg, i) => {
-        const full = parts.slice(0, i + 1).join('.');
-        return `<a class="nar-path-link" href="#/ns/${encodeURIComponent(full)}" onclick="event.stopPropagation()">${esc(seg)}</a>`;
-      });
-      pathHtml = `<div class="nar-path">${crumbs.join('<span class="nar-path-sep">›</span>')}</div>`;
-    }
-
-    return `<div class="card narrative-card" onclick="window.location.hash='#/narrative/${encodeURIComponent(n.context)}'">
-      ${pathHtml}
-      <div class="nar-title">📖 ${esc(n.context)}</div>
-      <div class="nar-meta">${n.relation_count || 0} steps · ${n.entity_count || '?'} entities</div>
-      <span class="nar-cta">Explore Story →</span>
-    </div>`;
+    updateLegend(entities, []);
   }
 
   // === VIEW: ENTITY DETAIL ===
   async function viewEntity(id) {
+    state.activeNs = null;
+    renderNsPills();
+
     const [entity, relData, dlData] = await Promise.all([
       api(`/entities/${encodeURIComponent(id)}`),
       api(`/relations?entity=${encodeURIComponent(id)}&depth=1`),
       api(`/datalayer/by-entity/${encodeURIComponent(id)}`).catch(() => ({ sources: [] })),
     ]);
 
-    // Build breadcrumb from entity namespace
-    const bc = nsBreadcrumb(entity.namespace);
-    bc.push({ label: entity.name, href: `#/entity/${id}` });
-    setBreadcrumb(bc);
+    setBreadcrumb([
+      { label: 'Home', href: '#/' },
+      { label: entity.namespace, href: `#/ns/${encodeURIComponent(entity.namespace)}` },
+      { label: entity.name, href: `#/entity/${id}` },
+    ]);
 
     const c = typeColor(entity.type);
     let html = '';
@@ -445,30 +297,35 @@
       <div class="entity-name" style="color:${c}">${icon(entity.type)} ${esc(entity.name)}</div>
       <div class="entity-info">
         <span class="type-badge" style="border:1px solid ${c}40">${esc(entity.type)}</span>
-        ${credDot(entity.credibility)}
-        <span>${esc(entity.credibility?.confidence || 'medium')}</span>
+        ${credDot(entity.credibility, { labeled: true })}
         <span>· ${esc(entity.namespace)}</span>
         ${entity.temporal ? `<span>· ${formatTemporal(entity.temporal)}</span>` : ''}
       </div>
       ${entity.key ? `<div class="entity-key" onclick="window.location.hash='#/key/${encodeURIComponent(entity.key)}'">🔑 ${esc(entity.key)}</div>` : ''}
     </div>`;
 
+    // Load all entities for lookup (needed by graph + relations)
     const relations = relData.relations || [];
-    // Merge lookup
-    const lookup = { ...state.entityLookup };
-    lookup[id] = entity;
+    const allEntData = await api('/entities');
+    const entityLookup = {};
+    (allEntData.entities || []).forEach(e => { entityLookup[e.id] = e; });
+    entityLookup[id] = entity;
 
     // Mini graph
     if (relations.length > 0) {
+      // Collect graph nodes
       const nodeIds = new Set([id]);
       relations.forEach(r => { nodeIds.add(r.from_entity); nodeIds.add(r.to_entity); });
-      const graphNodes = [...nodeIds].map(nid => lookup[nid] || { id: nid, name: nid, type: 'Concept', namespace: '' });
+
+      const graphNodes = [...nodeIds].map(nid => entityLookup[nid] || { id: nid, name: nid, type: 'Concept', namespace: '' });
 
       html += `<div class="graph-container mini" id="entity-graph"></div>`;
       html += `<div class="expand-link" onclick="window.location.hash='#/graph/${id}'">Expand full graph →</div>`;
 
+      // Update legend for this entity's graph
       updateLegend(graphNodes, relations);
 
+      // Render after DOM update
       setTimeout(() => {
         const container = document.getElementById('entity-graph');
         if (!container) return;
@@ -477,7 +334,7 @@
           fixedCenter: id,
           colorMap: state.colorMap,
           iconMap: TYPE_ICONS,
-          credColorMap,
+          credColorMap: credColorMap,
           selectedId: id,
           onNodeClick: (node) => { if (node.id !== id) window.location.hash = `#/entity/${node.id}`; },
         });
@@ -494,19 +351,27 @@
       html += `</div>`;
     }
 
-    // Relations
+    // Relations grouped by direction
     if (relations.length > 0) {
       html += `<div class="section-header"><span class="icon">🔗</span> Relations <span style="font-weight:400;text-transform:none;letter-spacing:0">(${relations.length})</span></div>`;
 
-      const relConfig = state.nsConfigs['default']?.relations || {};
+      // Group: incoming (this entity is to_entity) vs outgoing
       const incoming = [], outgoing = [];
       for (const r of relations) {
         if (r.to_entity === id) incoming.push(r);
-        else outgoing.push(r);
+        else if (r.from_entity === id) outgoing.push(r);
+        else {
+          // Related but indirect — show as outgoing
+          outgoing.push(r);
+        }
       }
+
+      // Get inverse names from config
+      const relConfig = state.nsConfigs['default']?.relations || {};
 
       function renderRelGroup(label, rels, getId) {
         if (rels.length === 0) return '';
+        // Sub-group by type
         const byType = {};
         rels.forEach(r => {
           const key = label === 'incoming' ? (relConfig[r.type]?.inverse || r.type) : r.type;
@@ -519,13 +384,13 @@
           out += `<div class="stack">`;
           for (const r of group) {
             const targetId = getId(r);
-            const te = lookup[targetId] || { name: targetId, type: '', namespace: '' };
-            const tc = typeColor(te.type);
+            const targetEntity = entityLookup[targetId] || { name: targetId, type: '', namespace: '' };
+            const targetColor = typeColor(targetEntity.type);
             out += `<div class="rel-card" onclick="window.location.hash='#/entity/${targetId}'">
-              <span class="arrow" style="color:${tc}">→</span>
+              <span class="arrow" style="color:${targetColor}">→</span>
               <div class="rel-info">
-                <div class="rel-entity">${icon(te.type)} ${esc(te.name)}</div>
-                <div class="rel-meta">${esc(te.type)} · ${esc(te.namespace)}</div>
+                <div class="rel-entity">${icon(targetEntity.type)} ${esc(targetEntity.name)}</div>
+                <div class="rel-meta">${esc(targetEntity.type)} · ${esc(targetEntity.namespace)}</div>
                 ${r.context ? `<div class="rel-context">📖 ${esc(r.context)}</div>` : ''}
               </div>
             </div>`;
@@ -536,7 +401,7 @@
       }
 
       html += renderRelGroup('incoming', incoming, r => r.from_entity);
-      html += renderRelGroup('outgoing', outgoing, r => r.from_entity === id ? r.to_entity : r.to_entity);
+      html += renderRelGroup('outgoing', outgoing, r => r.from_entity === id ? r.to_entity : (r.to_entity === id ? r.from_entity : r.to_entity));
     }
 
     // Sources
@@ -560,32 +425,36 @@
 
   // === VIEW: NARRATIVE ===
   async function viewNarrative(context) {
+    state.activeNs = null;
+    renderNsPills();
+    setBreadcrumb([
+      { label: 'Home', href: '#/' },
+      { label: context, href: `#/narrative/${encodeURIComponent(context)}` },
+    ]);
+
     const data = await api(`/narratives/${encodeURIComponent(context)}`);
     const story = data.story || [];
     const entities = data.entities || [];
     const relations = story.map(s => s.relation);
-
-    // Find the primary namespace for this narrative
-    const nsCount = {};
-    entities.forEach(e => {
-      const ns = e.namespace || 'default';
-      nsCount[ns] = (nsCount[ns] || 0) + 1;
-    });
-    const primaryNs = Object.entries(nsCount).sort((a, b) => b[1] - a[1])[0]?.[0] || 'default';
-
-    const bc = nsBreadcrumb(primaryNs);
-    bc.push({ label: context, href: `#/narrative/${encodeURIComponent(context)}` });
-    setBreadcrumb(bc);
 
     let mode = 'graph';
 
     function render() {
       let html = '';
       html += `<div style="margin-bottom:12px;">
-        <div style="font-size:1.3rem;font-weight:700;color:var(--text-bright);">📖 ${esc(context)}</div>
+        <div class="narrative-label-row">
+          <span class="narrative-badge">Narrative</span>
+          <span class="narrative-info-icon" id="narrative-info-btn" aria-label="What is a narrative?" tabindex="0">ⓘ</span>
+        </div>
+        <div style="font-size:1.3rem;font-weight:700;color:var(--text-bright);margin-top:6px;">📖 ${esc(context)}</div>
         <div style="font-size:0.85rem;color:var(--text-dim);margin-top:4px;">${story.length} steps · ${entities.length} entities</div>
+        <div class="narrative-info-popup" id="narrative-info-popup">
+          <div class="narrative-info-popup-title">What is a Narrative?</div>
+          <div class="narrative-info-popup-body">A narrative is a chain of connected events, decisions, and facts that tell a story. Each step shows how one thing led to, enabled, or influenced another — forming a walkable, explorable path through the knowledge graph.</div>
+        </div>
       </div>`;
 
+      // Tabs
       html += `<div class="narrative-tabs">
         <button class="narrative-tab ${mode === 'graph' ? 'active' : ''}" id="tab-graph">● Graph</button>
         <button class="narrative-tab ${mode === 'steps' ? 'active' : ''}" id="tab-steps">≡ Steps</button>
@@ -617,11 +486,23 @@
 
       $('#app').innerHTML = html;
 
+      // Attach tab handlers
       const tabGraph = document.getElementById('tab-graph');
       const tabSteps = document.getElementById('tab-steps');
       if (tabGraph) tabGraph.onclick = () => { mode = 'graph'; render(); };
       if (tabSteps) tabSteps.onclick = () => { mode = 'steps'; render(); };
 
+      // Narrative info popup
+      const infoBtn = document.getElementById('narrative-info-btn');
+      const infoPopup = document.getElementById('narrative-info-popup');
+      if (infoBtn && infoPopup) {
+        infoBtn.onclick = (e) => { e.stopPropagation(); infoPopup.classList.toggle('visible'); };
+        document.addEventListener('click', (e) => {
+          if (!infoPopup.contains(e.target) && e.target !== infoBtn) infoPopup.classList.remove('visible');
+        }, { once: false });
+      }
+
+      // Render graph
       if (mode === 'graph') {
         updateLegend(entities, relations);
         setTimeout(() => {
@@ -631,7 +512,7 @@
             mode: 'layered',
             colorMap: state.colorMap,
             iconMap: TYPE_ICONS,
-            credColorMap,
+          credColorMap: credColorMap,
             onNodeClick: (node) => { window.location.hash = `#/entity/${node.id}`; },
           });
         }, 50);
@@ -645,23 +526,29 @@
 
   // === VIEW: FULL GRAPH ===
   async function viewGraph(id) {
-    const [entity, relData] = await Promise.all([
+    state.activeNs = null;
+    renderNsPills();
+
+    const [entity, relData, allEntData] = await Promise.all([
       api(`/entities/${encodeURIComponent(id)}`),
       api(`/relations?entity=${encodeURIComponent(id)}&depth=2`),
+      api('/entities'),
     ]);
 
-    const bc = nsBreadcrumb(entity.namespace);
-    bc.push({ label: entity.name, href: `#/entity/${id}` });
-    bc.push({ label: 'Graph', href: `#/graph/${id}` });
-    setBreadcrumb(bc);
+    setBreadcrumb([
+      { label: 'Home', href: '#/' },
+      { label: entity.name, href: `#/entity/${id}` },
+      { label: 'Graph', href: `#/graph/${id}` },
+    ]);
 
     const relations = relData.relations || [];
-    const lookup = { ...state.entityLookup };
-    lookup[id] = entity;
+    const entityLookup = {};
+    (allEntData.entities || []).forEach(e => { entityLookup[e.id] = e; });
+    entityLookup[id] = entity;
 
     const nodeIds = new Set([id]);
     relations.forEach(r => { nodeIds.add(r.from_entity); nodeIds.add(r.to_entity); });
-    const nodes = [...nodeIds].map(nid => lookup[nid] || { id: nid, name: nid, type: 'Concept', namespace: '' });
+    const nodes = [...nodeIds].map(nid => entityLookup[nid] || { id: nid, name: nid, type: 'Concept', namespace: '' });
 
     let html = `<div style="margin-bottom:12px;">
       <div style="font-size:1.1rem;font-weight:700;color:var(--text-bright);">${icon(entity.type)} ${esc(entity.name)} — Graph</div>
@@ -681,7 +568,7 @@
         fixedCenter: id,
         colorMap: state.colorMap,
         iconMap: TYPE_ICONS,
-        credColorMap,
+          credColorMap: credColorMap,
         selectedId: id,
         onNodeClick: (node) => { window.location.hash = `#/entity/${node.id}`; },
       });
@@ -690,8 +577,10 @@
 
   // === VIEW: KEY RESOLUTION ===
   async function viewKey(key) {
+    state.activeNs = null;
+    renderNsPills();
     setBreadcrumb([
-      { label: 'ν NOESIS', href: '#/' },
+      { label: 'Home', href: '#/' },
       { label: `🔑 ${key}`, href: `#/key/${encodeURIComponent(key)}` },
     ]);
 
@@ -712,115 +601,6 @@
     }
 
     $('#app').innerHTML = html;
-  }
-
-  // === VIEW: ABOUT ===
-  function viewAbout() {
-    setBreadcrumb([
-      { label: 'ν NOESIS', href: '#/' },
-      { label: 'About', href: '#/about' },
-    ]);
-
-    // Count stats from loaded data
-    const entCount = state.allEntities.length;
-    const nsCount = state.namespaces.length;
-    const narCount = state.allNarratives.length;
-
-    $('#app').innerHTML = `<div class="about-page">
-      <h1>NOESIS</h1>
-      <div class="about-greek">νόησις (noēsis) — understanding, intellection</div>
-      <div class="about-subtitle">Structured knowledge for AI and humans</div>
-
-      <h2>The Problem of Knowing</h2>
-      <p>We drown in data yet starve for understanding. Every day, billions of events, decisions, and claims pour through our systems — disconnected fragments that no mind, human or artificial, can hold together. Search engines retrieve documents. Databases store rows. Knowledge graphs link nodes. But none of them <em>understand</em>.</p>
-      <p>Aristotle distinguished between <em>epistēmē</em> (scientific knowledge), <em>technē</em> (craft knowledge), and <em>noēsis</em> — the highest form: direct intellectual apprehension of truth. Not just knowing <em>that</em> something is, but grasping <em>why</em> it is, how it connects, what it means in the sweep of a story.</p>
-      <p>That is what this system pursues.</p>
-
-      <h2>What NOESIS Is</h2>
-      <p>NOESIS is a universal structured knowledge representation language. It combines <strong>narrative</strong> (stories with actors and causality), <strong>ontology</strong> (formal classification of what things are), and <strong>evidence</strong> (traceable links to source documents) into a single coherent framework.</p>
-      <p>It is designed to be read by humans, queried by machines, and reasoned over by AI agents. The same graph that a journalist navigates to understand a geopolitical crisis is the graph an AI agent traverses to answer a question about cause and effect.</p>
-
-      <table class="acro-table">
-        <tr><td>N</td><td>Narrative</td><td>Stories with actors, events, and causal chains — knowledge as interconnected stories, not isolated facts</td></tr>
-        <tr><td>O</td><td>Ontology</td><td>Formal classification of what things are — configurable per domain</td></tr>
-        <tr><td>E</td><td>Evidence-based</td><td>Every claim links to source documents — traceable, verifiable</td></tr>
-        <tr><td>S</td><td>Systems</td><td>Entities form interconnected graphs — not isolated data points</td></tr>
-        <tr><td>I</td><td>Inferencing</td><td>Relations enable reasoning — if A causes B and B causes C, then A causes C</td></tr>
-        <tr><td>S</td><td>Structure</td><td>Five-layer architecture from core ontology to presentation</td></tr>
-      </table>
-
-      <h2>The Five Layers</h2>
-      <p>Everything in NOESIS passes through five layers — from universal logic down to raw evidence, and up to visual presentation. Each layer has a distinct responsibility. Together, they turn fragments into understanding.</p>
-      <div class="layers">
-Layer 5: Presentation — how knowledge is visualised and navigated<br>
-Layer 4: Datalayer — source documents, raw evidence, articles<br>
-Layer 3: Temporal &amp; Credibility — when things happened, how certain we are<br>
-Layer 2: Namespace — domain-specific extensions, hierarchy, versioning<br>
-Layer 1: Core Ontology — universal types, configurable inference rules
-      </div>
-
-      <h2>Narrative First</h2>
-      <p>Most knowledge systems treat stories as decoration on top of data. NOESIS inverts this. Narrative is the <em>primary organising principle</em>. Relations carry sequence numbers. Contexts group causal chains into named stories. A set of nodes isn't just a graph — it's a plot, with a beginning, escalation, climax, and consequence.</p>
-      <p>This mirrors how humans actually understand the world: through stories. Not through tables, not through triples, but through narrative threads that connect cause to effect across time.</p>
-
-      <h2>Namespaces as Worldviews</h2>
-      <p>A financial analyst sees "Bitcoin" as an asset with a price chart. A journalist sees it as a story about regulation and adoption. A technologist sees it as a protocol. In NOESIS, these are not contradictions — they are <em>namespaces</em>. The same real-world entity, viewed through different lenses, each adding its own types, metadata, and meaning.</p>
-      <p>Namespaces inherit from parents. The root namespace defines universal logic. Children extend it for their domain. This creates a tree of worldviews, unified at the root but richly diverse at the leaves.</p>
-
-      <h2>Goals</h2>
-      <p><strong>For humans:</strong> Navigate complex knowledge visually. Follow narratives. Trace claims to evidence. Understand <em>why</em>, not just <em>what</em>.</p>
-      <p><strong>For AI agents:</strong> A structured, queryable knowledge graph with typed relations, inference properties, and source provenance. Ask "what caused X?" and get a traversable answer, not a hallucination.</p>
-      <p><strong>For the gap between them:</strong> A shared language where human narrative intuition and machine graph traversal meet on the same substrate.</p>
-
-      <h2>This Explorer</h2>
-      <p>What you're looking at is the NOESIS Explorer — a presentation layer (Layer 5) built to navigate any NOESIS knowledge graph. It reads all structure from the API at runtime. No hardcoded types, no fixed layouts. Feed it a different domain, and it adapts.</p>
-      <p>Currently exploring <strong>${entCount} entities</strong> across <strong>${nsCount} namespaces</strong> with <strong>${narCount} narratives</strong>.</p>
-
-      <h2>For AI Agents</h2>
-      <p>NOESIS is designed to be queried by AI agents, not just browsed by humans. Unlike unstructured document retrieval (RAG), NOESIS gives agents <strong>typed relations</strong>, <strong>source provenance</strong>, and <strong>causal reasoning</strong> — the tools to answer "why?" instead of just "what?".</p>
-
-      <h3>Quick Start</h3>
-      <p>An agent's first call should be <code>GET /api/overview</code> — it returns everything needed to orient: instance stats, namespace tree, available entity types, relation types with inference properties, and recent activity. From there:</p>
-      <ul>
-        <li><strong>Find things:</strong> <code>GET /api/search?q=gold+rally</code> — full-text search across entities, sources, and narratives</li>
-        <li><strong>Understand things:</strong> <code>GET /api/entities/:id?enrich=true</code> — returns the entity, all its relations (with resolved names), sources, and narratives in one call</li>
-        <li><strong>Follow stories:</strong> <code>GET /api/narratives/:context?format=summary</code> — returns causal chains, key actors, and timeline as agent-friendly prose</li>
-        <li><strong>Ask "why?":</strong> <code>GET /api/path?from=A&amp;to=B&amp;enrich=true</code> — finds and explains causal paths between any two entities</li>
-      </ul>
-
-      <h3>Why Not Just RAG?</h3>
-      <p>Retrieval-augmented generation pulls relevant text chunks and hopes the model can reason over them. It works for simple questions. It fails for causal reasoning, temporal understanding, and evidence verification — exactly the things that matter when knowledge is complex.</p>
-      <p>NOESIS provides what RAG cannot:</p>
-      <table class="acro-table">
-        <tr><td>🔗</td><td>Typed Relations</td><td>Not just "these things are related" — <em>how</em> they're related (causes, enables, contradicts), with inference properties</td></tr>
-        <tr><td>📖</td><td>Narrative Sequence</td><td>Events are ordered into stories with causality — agents can follow the plot, not just find keywords</td></tr>
-        <tr><td>📄</td><td>Source Provenance</td><td>Every claim links to source documents — agents can verify instead of hallucinate</td></tr>
-        <tr><td>🔀</td><td>Transitive Inference</td><td>If A causes B and B causes C, the path endpoint finds A→B→C automatically</td></tr>
-        <tr><td>🌐</td><td>Namespace Perspectives</td><td>The same entity viewed through different domain lenses — finance sees an asset, news sees a story</td></tr>
-      </table>
-
-      <h3>Example: Three Calls to Answer a Complex Question</h3>
-      <p>Question: <em>"Why did gold reach an all-time high, and what were the downstream effects?"</em></p>
-      <ol>
-        <li><code>GET /api/search?q=gold+all-time+high</code> → finds <code>evt-gold-ath</code></li>
-        <li><code>GET /api/entities/evt-gold-ath?enrich=true</code> → returns the event with all incoming causes and outgoing effects, plus source articles</li>
-        <li><code>GET /api/path?from=evt-tariff-pause&amp;to=evt-gold-ath&amp;enrich=true</code> → traces the full causal chain from trigger to outcome</li>
-      </ol>
-      <p>Three calls. Typed, sourced, causal. No hallucination required.</p>
-
-      <h3>Agent API Reference</h3>
-      <table class="acro-table">
-        <tr><td style="font-family:monospace;font-size:0.8rem;">/api/overview</td><td colspan="2">Instance discovery — stats, namespaces, types, relation properties, recent entities</td></tr>
-        <tr><td style="font-family:monospace;font-size:0.8rem;">/api/search?q=...</td><td colspan="2">Full-text search across entities, sources, and narratives</td></tr>
-        <tr><td style="font-family:monospace;font-size:0.8rem;">/api/path?from=...&amp;to=...</td><td colspan="2">Find causal paths between two entities</td></tr>
-        <tr><td style="font-family:monospace;font-size:0.8rem;">/api/entities/:id?enrich=true</td><td colspan="2">Entity + relations + sources + narratives in one call</td></tr>
-        <tr><td style="font-family:monospace;font-size:0.8rem;">/api/relations?entity=...&amp;enrich=true</td><td colspan="2">Relations with inline entity data (no N+1 queries)</td></tr>
-        <tr><td style="font-family:monospace;font-size:0.8rem;">/api/narratives?namespace=...</td><td colspan="2">Namespace-scoped narrative listing</td></tr>
-        <tr><td style="font-family:monospace;font-size:0.8rem;">/api/narratives/:ctx?format=summary</td><td colspan="2">Agent-friendly narrative digest with causal chains</td></tr>
-      </table>
-
-      <a href="#/" class="about-enter">Enter the Explorer →</a>
-    </div>`;
   }
 
   // === LEGEND ===
@@ -855,9 +635,13 @@ Layer 1: Core Ontology — universal types, configurable inference rules
     return { btn, panel };
   }
 
+  // credColorMap is populated from namespace config at init
+
+  // Update legend contents for a specific set of entities and relations
   function updateLegend(entities = [], relations = []) {
     const { btn, panel } = ensureLegendElements();
 
+    // Collect types with counts and confidence breakdown
     const typeStats = {};
     for (const e of entities) {
       if (!e.type) continue;
@@ -868,6 +652,7 @@ Layer 1: Core Ontology — universal types, configurable inference rules
     }
     const usedTypes = Object.keys(typeStats).sort();
 
+    // Collect relation types with counts
     const relStats = {};
     for (const r of relations) {
       if (!r.type) continue;
@@ -888,6 +673,7 @@ Layer 1: Core Ontology — universal types, configurable inference rules
     for (const type of usedTypes) {
       const c = state.colorMap[type] || '#666';
       const stats = typeStats[type];
+      // Mini confidence bar
       const total = stats.count;
       let credHtml = '<span class="legend-cred-bar">';
       for (const [level, color] of Object.entries(credColorMap)) {
@@ -925,6 +711,7 @@ Layer 1: Core Ontology — universal types, configurable inference rules
       html += '</div>';
     }
 
+    // Confidence key — from namespace config
     if (Object.keys(credColorMap).length > 0) {
       html += '<div class="legend-section"><div class="legend-title">Confidence</div>';
       html += '<div class="legend-cred-key">';
@@ -937,8 +724,10 @@ Layer 1: Core Ontology — universal types, configurable inference rules
     panel.innerHTML = html;
   }
 
+  // Build initial legend with all types (for non-graph views)
   function buildLegend() {
     ensureLegendElements();
+    // Start with all known types
     const allEntities = Object.keys(state.colorMap).map(type => ({ type }));
     updateLegend(allEntities, []);
   }

@@ -377,7 +377,8 @@ window.GraphEngine = (() => {
         }
         const ttConf = node.credibility?.confidence || 'medium';
         tooltip.innerHTML = `<div class="tt-name">${nodeIcon} ${(node.name || node.id).replace(/</g, '&lt;')}</div>
-          <div class="tt-meta">${(node.type || '')} · ${(node.namespace || '')} · <span style="color:${credColor}">${ttConf}</span></div>`;
+          <div class="tt-meta">${(node.type || '')} · ${(node.namespace || '')}</div>
+          <div class="tt-cred"><span class="tt-cred-dot" style="background:${credColor}"></span>Confidence: ${ttConf}</div>`;
         tooltip.classList.add('visible');
         const cr = container.getBoundingClientRect();
         const mx = ev.clientX - cr.left + 12;
