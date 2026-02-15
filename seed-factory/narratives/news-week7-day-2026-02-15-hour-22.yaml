@@ -1,0 +1,1437 @@
+seed:
+  name: news-week7-day-2026-02-15-hour-22
+  label: Daily News — 2026-02-15 22:00 (Week 7, 2026)
+  namespace: news.week7.day-2026-02-15
+  description: "Auto-gathered news: 69 stories, 2026-02-15 to 2026-02-15"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week7
+    extends: news
+  - namespace: news.week7.day-2026-02-15
+    extends: news.week7
+entities:
+  - id: ukraines-ex-energy-minister-detained-wh-2026-02-15
+    type: Event
+    name: Ukraine's ex-energy minister detained while attempting to leave country
+    category: geopolitics
+    description: His detention comes as he faces legal proceedings after being dismissed in a corruption scandal.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T17:11:49.000Z"
+      precision: day
+  - id: dna-found-on-glove-appearing-to-match-th-2026-02-15
+    type: Fact
+    name: DNA found on glove appearing to match those in Nancy Guthrie suspect video
+    category: geopolitics
+    description: The FBI says it recovered the sample from the glove, which was found in a field a few miles from Guthrie's home.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T20:39:35.000Z"
+      precision: day
+  - id: iran-ready-to-discuss-compromises-to-rea-2026-02-15
+    type: Claim
+    name: Iran ready to discuss compromises to reach nuclear deal, minister tells BBC in Tehran
+    category: geopolitics
+    description: >-
+      Majid Takht-Ravanchi, Iran's deputy foreign minister, tells the BBC's Lyse Doucet that the ball was "in America's
+      court to prove that they want to do a deal".
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T15:07:40.000Z"
+      precision: day
+  - id: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    type: Fact
+    name: Eleven killed in Israeli strikes on Gaza, rescuers say
+    category: geopolitics
+    description: The Palestinian Red Crescent say a strike on a tent encampment in northern Gaza killed at least six people.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T18:42:42.000Z"
+      precision: day
+  - id: russia-killed-opposition-leader-alexei-n-2026-02-15
+    type: Fact
+    name: Russia killed opposition leader Alexei Navalny using dart frog toxin, UK says
+    category: geopolitics
+    description: >-
+      There is no innocent explanation for the toxin being found in samples taken from Navalny's body, Foreign Office
+      says.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T02:04:02.000Z"
+      precision: day
+  - id: russian-pick-up-artist-accused-of-secr-2026-02-15
+    type: Event
+    name: Russian 'pick-up artist' accused of secretly filming women in Ghana
+    category: geopolitics
+    description: Ghana has called on Russia to extradite the man, who is accused of recording sexual encounters without consent.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T15:25:21.000Z"
+      precision: day
+  - id: us-boards-second-tanker-in-indian-ocean-2026-02-15
+    type: Event
+    name: US boards second tanker in Indian Ocean after tracking it from Caribbean
+    category: geopolitics
+    description: The US accuses the Veronica III of violating a "quarantine" on oil shipments from Venezuela.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T19:34:13.000Z"
+      precision: day
+  - id: motorbike-raids-on-villages-kill-dozens-2026-02-15
+    type: Event
+    name: Motorbike raids on villages kill dozens in Nigeria
+    category: geopolitics
+    description: Armed men shot locals dead, set homes alight and abducted an "undetermined" number of people in Niger State.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T15:29:26.000Z"
+      precision: day
+  - id: hundreds-of-thousands-join-iran-protests-2026-02-15
+    type: Event
+    name: Hundreds of thousands join Iran protests around the world
+    category: geopolitics
+    description: >-
+      Munich, Los Angeles, and Toronto saw the largest crowds, with smaller rallies also taking place in Tel Aviv and
+      Libson.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T13:35:26.000Z"
+      precision: day
+  - id: andrews-time-as-trade-envoy-should-be-i-2026-02-15
+    type: Claim
+    name: Andrew's time as trade envoy should be investigated, says Vince Cable
+    category: finance
+    description: The former prince's alleged actions were "totally unacceptable", the ex-business secretary says.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T18:33:57.000Z"
+      precision: day
+  - id: could-manchester-be-a-model-for-the-uk-t-2026-02-15
+    type: Claim
+    name: Could Manchester be a model for the UK to kickstart growth?
+    category: finance
+    description: With an annual growth rate of 3.1%, Manchester's economy has performed twice as well as that of the UK as a whole.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T00:01:21.000Z"
+      precision: day
+  - id: gender-pay-gap-wont-close-for-another-3-2026-02-15
+    type: Claim
+    name: Gender pay gap won't close for another 30 years, warns trade unions group
+    category: finance
+    description: >-
+      The average woman employee "effectively works for 47 days of the year for free," according to the Trades Union
+      Congress.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T15:32:19.000Z"
+      precision: day
+  - id: assailants-kill-at-least-32-in-north-wes-2026-02-15
+    type: Event
+    name: Assailants kill at least 32 in north-west Nigerian villages, residents say
+    category: geopolitics
+    description: >-
+      <p>Residents who escaped violence tell of bandits riding in on motorbikes and shooting
+      indiscriminately</p><p>Armed assailants on motorbikes killed at least 32 people and burned houses and shops during
+      raids on three villages in north-west Nigeria’s Niger state early on Saturday, local officials and
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T03:14:42.000Z"
+      precision: day
+  - id: people-want-to-help-canadians-rally-r-2026-02-15
+    type: Event
+    name: "‘People want to help’: Canadians rally round Tumbler Ridge after school shooting"
+    category: geopolitics
+    description: >-
+      <p>Tragedy has prompted a wave of support for town from neighbouring communities and across country</p><p>When Jim
+      Caruso heard the news of the school shooting in Tumbler Ridge, he knew immediately he needed to be there. He
+      packed his bags and boarded a plane for the community 700 miles away. “I wan
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T17:34:43.000Z"
+      precision: day
+  - id: us-forces-board-second-venezuela-linked-2026-02-15
+    type: Event
+    name: US forces board second Venezuela‑linked oil tanker in Indian Ocean
+    category: geopolitics
+    description: >-
+      <p>Pentagon tracked sanctioned Veronica III from Caribbean Sea after it left Venezuela on day Maduro was
+      captured</p><p>US military forces boarded another sanctioned tanker in the Indian Ocean after tracking the vessel
+      from the Caribbean Sea in an effort to target illicit oil connected to Venezuela,
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T16:30:20.000Z"
+      precision: day
+  - id: no-fuel-no-tourists-no-cash-this-was-2026-02-15
+    type: Event
+    name: No fuel, no tourists, no cash – this was the week the Cuban crisis got real
+    category: geopolitics
+    description: >-
+      <p>Diplomats in Havana are preparing for an alternative Trump tactic: the country being starved until people take
+      to the streets and the US can step in</p><p>Among the verdant gardens of Havana’s diplomatic quarter, Siboney,
+      ambassadors from countries traditionally allied to the United States are ex
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T06:00:15.000Z"
+      precision: day
+  - id: welsh-munitions-factory-seen-as-crucial-2026-02-15
+    type: Event
+    name: Welsh munitions factory seen as crucial to boosting UK stockpiles and aiding Ukraine is yet to open
+    category: finance
+    description: >-
+      <p><strong>Exclusive:</strong> Delay at Glascoed is latest setback for armed forces and for UK’s capacity to
+      supply shells to Ukraine</p><p>A new factory in Wales seen as crucial to boosting UK munitions production remains
+      unopened more than six months after its planned launch, adding to a string of
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T15:16:49.000Z"
+      precision: day
+  - id: uk-s-gender-pay-gap-won-t-close-for-30-2026-02-15
+    type: Event
+    name: UK’s gender pay gap ‘won’t close for 30 years’ at current rates
+    category: finance
+    description: >-
+      <p>Trades Union Congress says women have worked a month and a half for nothing this year and legislation is
+      needed</p><p>Women in the UK will not be paid the same as men until 2056 at the current rate of progress,
+      according to a Trades Union Congress report.</p><p>The <a href="https://www.theguardia
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T11:42:43.000Z"
+      precision: day
+  - id: firm-that-went-bust-owing-650k-to-hmrc-2026-02-15
+    type: Event
+    name: Firm that went bust owing £650k to HMRC offers staff Las Vegas trip after being bought by ex-owner
+    category: finance
+    description: >-
+      <p>Acquisition by Premier Group Recruitment boss Andrew Woosnam appears to be example of ‘phoenixism’</p><p>A
+      recruitment business that went bust owing the tax authorities and other creditors almost £3m has promised to send
+      its staff on an all-expenses paid trip to Las Vegas after being repurchased 
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T08:00:16.000Z"
+      precision: day
+  - id: weight-loss-race-how-switch-from-inject-2026-02-15
+    type: Event
+    name: "Weight-loss race: how switch from injections to pills is expanding big pharma’s hopes"
+    category: finance
+    description: >-
+      <p>Tablets could make treatment more mainstream, with sector predicted to be worth $200bn by end of the
+      decade</p><p>“I just felt slow: I want to be able to do anything my kids want to do and not have weight be a
+      factor. Even a ride or a water park – things have weight limits,” says Melody Ewert, 44
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T12:00:22.000Z"
+      precision: day
+  - id: it-makes-no-sense-the-battle-over-pla-2026-02-15
+    type: Event
+    name: "‘It makes no sense’: the battle over plans for a windfarm by the Yorkshire Dales"
+    category: finance
+    description: >-
+      <p>The fight for Hope Moor is set to be repeated across the UK as the government aims to hit its renewable energy
+      targets</p><p>Instead of a slingshot, the Davids are brandishing a sculpture and a coffee table book. Their
+      Goliaths are a Norwegian energy company and a UK energy secretary with renewab
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T07:00:16.000Z"
+      precision: day
+  - id: brushing-fraud-britons-told-to-beware-o-2026-02-15
+    type: Event
+    name: "Brushing fraud: Britons told to beware of mystery parcels as new scam soars"
+    category: finance
+    description: >-
+      <p>Fraudsters use stolen personal details to send out products, then post a fake verified and positive online
+      review</p><p>A package arrives but you can’t remember ordering anything.</p><p>When you open it, you find some
+      cheap, flimsy jewellery.</p> <a href="https://www.theguardian.com/money/2026/fe
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T07:00:17.000Z"
+      precision: day
+  - id: starmer-has-chance-to-put-overseas-aid-a-2026-02-15
+    type: Event
+    name: Starmer has chance to put overseas aid and debt relief on G20 agenda | Heather Stewart
+    category: finance
+    description: >-
+      <p>Reclaiming Labour’s internationalist heart could also stop disillusioned voters drifting towards Lib Dems and
+      Greens</p><p>If Keir Starmer wants to win back disillusioned voters deserting his party for the Liberal Democrats
+      or the Greens, he could do worse than rediscover Labour’s longstanding mo
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T13:16:46.000Z"
+      precision: day
+  - id: at-least-11-palestinians-killed-in-israe-2026-02-15
+    type: Fact
+    name: At least 11 Palestinians killed in Israeli attacks across Gaza
+    category: geopolitics
+    description: >-
+      US President Donald Trump says that the first meeting of his newly created &#039;Board of Peace&#039; will take
+      place on Thursday.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T20:44:10.000Z"
+      precision: day
+  - id: gaza-mother-s-grim-ordeal-a-search-for-2026-02-15
+    type: Event
+    name: "Gaza mother’s grim ordeal: A search for missing son among mutilated bodies"
+    category: geopolitics
+    description: >-
+      Gaza families seek closure as they search for loved ones among bodies returned by Israel under
+      &#039;ceasefire&#039; deal.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T20:16:49.000Z"
+      precision: day
+  - id: is-trumpism-losing-steam-2026-02-15
+    type: Event
+    name: Is Trumpism losing steam?
+    category: geopolitics
+    description: >-
+      As Trumpism forces both major US parties to wonder what they stand for, experts weigh in on November election
+      prospects.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T20:02:17.000Z"
+      precision: day
+  - id: ukraine-s-ex-energy-minister-arrested-wh-2026-02-15
+    type: Event
+    name: Ukraine’s ex-energy minister arrested while trying to cross border
+    category: geopolitics
+    description: German Galushchenko was detained by Ukraine&#039;s anti-corruption bureau while trying to leave the country.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T19:35:22.000Z"
+      precision: day
+  - id: india-rout-bitter-rivals-pakistan-at-t20-2026-02-15
+    type: Event
+    name: India rout bitter rivals Pakistan at T20 World Cup
+    category: geopolitics
+    description: >-
+      India&#039;s win against Pakistan takes the defending champions through to the next round of cricket&#039;s T20
+      World Cup.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T19:34:23.000Z"
+      precision: day
+  - id: syrian-army-takes-over-al-shaddadi-base-2026-02-15
+    type: Event
+    name: Syrian army takes over al-Shaddadi base after US withdrawal
+    category: geopolitics
+    description: >-
+      The move, in coordination with the US, is the latest implementation of the ceasefire agreement with Kurdish-led
+      forces.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T17:54:05.000Z"
+      precision: day
+  - id: india-hammer-pakistan-to-qualify-for-t20-2026-02-15
+    type: Event
+    name: India hammer Pakistan to qualify for T20 World Cup Super Eights
+    category: geopolitics
+    description: >-
+      Ishan Kishan defies a tricky Colombo pitch with 77 as India beat Pakistan by 61 runs in Group A of the T20 World
+      Cup.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T17:25:13.000Z"
+      precision: day
+  - id: us-not-disputing-european-assessment-o-2026-02-15
+    type: Claim
+    name: US ‘not disputing’ European assessment of Navalny poisoning, Rubio says
+    category: geopolitics
+    description: >-
+      Secretary of state says Washington will &#039;not fight&#039; European partners on their findings as UK considers
+      new sanctions.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T16:59:24.000Z"
+      precision: day
+  - id: thousands-of-western-nationals-fought-is-2026-02-15
+    type: Event
+    name: "Thousands of Western nationals fought Israel’s war on Gaza: What to know"
+    category: geopolitics
+    description: Thousands of Western citizens joined the Israeli military in its war on Gaza that killed over 72,000 Palestinians.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T15:36:56.000Z"
+      precision: day
+  - id: as-sudanese-city-returns-to-life-after-t-2026-02-15
+    type: Event
+    name: As Sudanese city returns to life after two-year siege, drone threat lingers
+    category: geopolitics
+    description: Markets reopen in Dilling, South Kordofan’s second largest city. Yet residents face persistent aerial attacks.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T14:34:23.000Z"
+      precision: day
+  - id: wall-street-giant-apollo-deepens-crypto-2026-02-15
+    type: Event
+    name: Wall Street giant Apollo deepens crypto push with Morpho token deal
+    category: finance.crypto
+    description: >-
+      The asset manager overseeing more than $900 billion assets may buy up to 90 million MORPHO tokens as part of a
+      partnership to support DeFi credit market, it said.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T20:59:12.000Z"
+      precision: day
+  - id: hong-kong-is-trying-to-build-up-its-cryp-2026-02-15
+    type: Event
+    name: "Hong Kong is trying to build up its crypto regulations: State of Crypto"
+    category: finance.crypto
+    description: Several leaders in Hong Kong announced efforts to advance the region's regulatory environment.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T19:00:00.000Z"
+      precision: day
+  - id: prediction-markets-vs-insider-trading-2026-02-15
+    type: Fact
+    name: "Prediction markets vs. insider trading: Founders admit blockchain transparency is the only defense"
+    category: finance.crypto
+    description: >-
+      Prediction markets are increasingly being framed not as gambling platforms but as vehicles for monetizing
+      information, though founders acknowledged the line can blur.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T18:00:00.000Z"
+      precision: day
+  - id: blackrocks-digital-assets-head-leverag-2026-02-15
+    type: Event
+    name: "BlackRock's digital assets head: Leverage-driven volatility threatens bitcoin’s narrative"
+    category: finance.crypto
+    description: >-
+      Rampant speculation on crypto derivatives platforms is fueling volatility and risking bitcoin’s image as a stable
+      hedge, says BlackRock’s digital assets chief.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T14:00:00.000Z"
+      precision: day
+  - id: xrp-outruns-bitcoin-ether-after-investo-2026-02-15
+    type: Event
+    name: XRP outruns bitcoin, ether after investors piled into the recent crash
+    category: finance.crypto
+    description: XRP is outperforming bitcoin and ether following signs of dip buying during recent crash.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T13:39:18.000Z"
+      precision: day
+  - id: wall-street-remains-bullish-on-bitcoin-w-2026-02-15
+    type: Event
+    name: Wall Street remains bullish on bitcoin while offshore traders retreat
+    category: finance.crypto
+    description: The difference in futures basis between CME and Deribit reflects varying risk appetite across regions.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T12:00:00.000Z"
+      precision: day
+  - id: reddit-insider-sends-major-vote-of-confi-2026-02-15
+    type: Event
+    name: Reddit INSIDER sends major vote of confidence after earnings
+    category: finance
+    description: Reddit INSIDER sends major vote of confidence after earnings
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T21:20:26.000Z"
+      precision: day
+  - id: don-t-look-but-we-might-be-on-the-brin-2026-02-15
+    type: Event
+    name: Don’t Look – But We Might Be on the Brink of a Market Breakout
+    category: finance
+    description: Don’t Look – But We Might Be on the Brink of a Market Breakout
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T20:05:21.000Z"
+      precision: day
+  - id: warner-bros-weighs-reopening-sale-talks-2026-02-15
+    type: Event
+    name: Warner Bros weighs reopening sale talks with Paramount, Bloomberg News reports
+    category: finance
+    description: Warner Bros weighs reopening sale talks with Paramount, Bloomberg News reports
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T19:50:58.000Z"
+      precision: day
+  - id: walmart-earnings-spending-data-and-mor-2026-02-15
+    type: Event
+    name: "Walmart earnings, spending data, and more AI disruptions: What to watch this week"
+    category: finance
+    description: "Walmart earnings, spending data, and more AI disruptions: What to watch this week"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T12:57:12.000Z"
+      precision: day
+  - id: the-1-stock-id-buy-before-spdr-gold-sha-2026-02-15
+    type: Event
+    name: The 1 Stock I'd Buy Before SPDR Gold Shares Right Now
+    category: finance
+    description: The 1 Stock I'd Buy Before SPDR Gold Shares Right Now
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T21:20:00.000Z"
+      precision: day
+  - id: the-dark-side-of-ai-wall-street-weigh-2026-02-15
+    type: Event
+    name: "'The dark side of AI': Wall Street weighs recent stock sell-off over disruption fears"
+    category: finance
+    description: "'The dark side of AI': Wall Street weighs recent stock sell-off over disruption fears"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T16:00:54.000Z"
+      precision: day
+  - id: how-much-of-families-paychecks-go-towar-2026-02-15
+    type: Event
+    name: How much of families' paychecks go toward healthcare costs? It depends on the state.
+    category: finance
+    description: How much of families' paychecks go toward healthcare costs? It depends on the state.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T15:05:33.000Z"
+      precision: day
+  - id: ai-disruption-fear-foms-and-other-key-t-2026-02-15
+    type: Event
+    name: AI Disruption Fear, FOMS and Other Key Things to Watch this Week
+    category: finance
+    description: AI Disruption Fear, FOMS and Other Key Things to Watch this Week
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T18:00:02.000Z"
+      precision: day
+  - id: warren-buffett-says-only-buy-stocks-you-2026-02-15
+    type: Claim
+    name: >-
+      Warren Buffett Says Only Buy Stocks You’re Comfortable Holding For Ten Years, Otherwise Don’t Bother Even ‘Owning
+      it for Ten Minutes’
+    category: finance
+    description: >-
+      Warren Buffett Says Only Buy Stocks You’re Comfortable Holding For Ten Years, Otherwise Don’t Bother Even ‘Owning
+      it for Ten Minutes’
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T17:48:36.000Z"
+      precision: day
+  - id: rents-are-finally-falling-in-some-parts-2026-02-15
+    type: Event
+    name: Rents are finally falling in some parts of the country. Here&#x2019;s who is actually feeling the relief.
+    category: finance.markets
+    description: >-
+      Rents fell nationally in January, but they&#x2019;re still at a high level due to a sharp run-up over the last few
+      years.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T20:22:00.000Z"
+      precision: day
+  - id: x2018-am-i-crazy-x2019-my-boyfriend-2026-02-15
+    type: Event
+    name: >-
+      &#x2018;Am I crazy?&#x2019; My boyfriend&#x2019;s parents say he doesn&#x2019;t earn enough to marry me. Who is to
+      blame here?
+    category: finance.markets
+    description: >-
+      The Moneyist: &#x201c;I have a Valentine&#x2019;s message for you, but you won&#x2019;t read it in a Hallmark
+      card.&#x201d;
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T19:31:00.000Z"
+      precision: day
+  - id: is-the-stock-market-open-tomorrow-for-pr-2026-02-15
+    type: Event
+    name: Is the stock market open tomorrow for Presidents Day? Will USPS, FedEx and UPS make deliveries?
+    category: finance.markets
+    description: >-
+      Here&#x2019;s how trading hours and other services will be affected on the federal holiday, which falls on Monday,
+      Feb. 16, this year.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T17:25:00.000Z"
+      precision: day
+  - id: here-are-7-charts-guaranteed-to-stress-y-2026-02-15
+    type: Event
+    name: Here are 7 charts guaranteed to stress you out about the stock market
+    category: finance.markets
+    description: >-
+      The &#x201c;Magnificent Seven&#x201d; are breaking down, defensive consumer staples are on a tear &#x2014; and
+      then there&#x2019;s the midterm curse.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T17:00:00.000Z"
+      precision: day
+  - id: my-elderly-mother-has-dementia-my-siste-2026-02-15
+    type: Event
+    name: My elderly mother has dementia. My sister sold her house and has hidden the proceeds. What can we do?
+    category: finance.markets
+    description: "&#x201c;My sister is planning to move out of state and feels it is her right to control the money.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T13:30:00.000Z"
+      precision: day
+  - id: x2018-i-x2019-m-a-loner-x2019-i-x-2026-02-15
+    type: Event
+    name: >-
+      &#x2018;I&#x2019;m a loner&#x2019;: I&#x2019;m 62 with a multimillion-dollar portfolio and no heirs. Should I find
+      a wife for my twilight years?
+    category: finance.markets
+    description: "&#x201c;I have never been married, have no siblings, and both my parents have passed away.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T13:17:00.000Z"
+      precision: day
+  - id: x2018-i-x2019-m-close-to-retiring-x2-2026-02-15
+    type: Event
+    name: >-
+      &#x2018;I&#x2019;m close to retiring&#x2019;: I&#x2019;m behind on my property tax. Is this a really bad time to
+      sell my house?
+    category: finance.markets
+    description: "&#x201c;I&#x2019;ve never been late on a mortgage, so this makes me nervous.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T13:10:00.000Z"
+      precision: day
+  - id: x2018-we-have-no-prenup-x2019-i-wan-2026-02-15
+    type: Event
+    name: >-
+      &#x2018;We have no prenup&#x2019;: I want rights of survivorship in our marital home. My wife prefers tenants in
+      common. Now what?
+    category: finance.markets
+    description: >-
+      &#x201c;She is an old-school farm girl who inherited all her money and wants to pass it down to her
+      children.&#x201d;
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T00:30:00.000Z"
+      precision: day
+  - id: x2018-i-x2019-m-part-of-a-blended-fam-2026-02-15
+    type: Event
+    name: >-
+      &#x2018;I&#x2019;m part of a blended family that didn&#x2019;t blend well&#x2019;: My stepsister added her mailing
+      address to our mother&#x2019;s bank
+    category: finance.markets
+    description: "&#x201c;It&#x2019;s things like this that make me wonder what else she might be doing.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T00:00:00.000Z"
+      precision: day
+  - id: venezuela-s-oil-revival-could-reward-the-2026-02-15
+    type: Claim
+    name: Venezuela’s Oil Revival Could Reward the Company That Never Left
+    category: finance.energy
+    description: >-
+      Canada-based Ensign Energy Services has been working in Venezuela for 25 years and has never left the country,
+      where rig counts have plummeted, and the political and regulatory landscape has been a minefield to navigate.
+      “We’re the only Canadian company — the only oilfield service drilling company —
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T20:00:00.000Z"
+      precision: day
+  - id: sam-altman-and-bill-gates-bet-big-on-lim-2026-02-15
+    type: Event
+    name: Sam Altman and Bill Gates Bet Big on Limitless Clean Energy
+    category: finance.energy
+    description: >-
+      The runaway energy demands of the artificial intelligence boom are pushing a new wave of innovative next-gen
+      energy ambitions. Big Tech is pouring money into fast-tracking the development of futuristic energy alternatives
+      like enhanced geothermal and nuclear fusion in an attempt to stay one step ahe
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T18:00:00.000Z"
+      precision: day
+  - id: rolls-royce-is-leading-europe-039-s-sma-2026-02-15
+    type: Event
+    name: Rolls-Royce Is Leading Europe&#039;s Small Nuclear Reactor Race
+    category: finance.energy
+    description: >-
+      British aviation company Rolls-Royce has big plans for nuclear power, as well as other major energy projects,
+      having been selected as the United Kingdom’s preferred bidder to build the country’s first small modular reactors
+      (SMRs) last year. The company is expected to fast-track the development of t
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T16:00:00.000Z"
+      precision: day
+  - id: argentina-s-shale-boom-is-rewriting-sout-2026-02-15
+    type: Event
+    name: Argentina’s Shale Boom Is Rewriting South America’s Energy Map
+    category: finance.energy
+    description: >-
+      The massive unconventional oil boom underway in Argentina continues to gain momentum. During late 2024, Argentina,
+      which is South America’s second largest economy after Brazil, overtook Colombia to become the continent’s fourth
+      largest oil producer. The surge in petroleum revenues, coupled with Pres
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T00:00:00.000Z"
+      precision: day
+  - id: anthropic-and-the-pentagon-are-reportedl-2026-02-15
+    type: Event
+    name: Anthropic and the Pentagon are reportedly arguing over Claude usage
+    category: technology.ai
+    description: "The apparent issue: whether Claude can be used for mass domestic surveillance and autonomous weapons."
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T21:11:28.000Z"
+      precision: day
+  - id: india-has-100m-weekly-active-chatgpt-use-2026-02-15
+    type: Claim
+    name: India has 100M weekly active ChatGPT users, Sam Altman says
+    category: technology.ai
+    description: OpenAI CEO Sam Altman says India has the largest number of student users of ChatGPT worldwide.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T18:00:00.000Z"
+      precision: day
+  - id: the-enterprise-ai-land-grab-is-on-glean-2026-02-15
+    type: Event
+    name: The enterprise AI land grab is on. Glean is building the layer beneath the interface.
+    category: technology.ai
+    description: >-
+      In this week's episode of the Equity podcast, Glean CEO Arvind Jain explains the company's shift from enterprise
+      search tool to middleware layer for enterprise AI.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T17:30:00.000Z"
+      precision: day
+  - id: hollywood-isn-8217-t-happy-about-the-ne-2026-02-15
+    type: Event
+    name: Hollywood isn&#8217;t happy about the new Seedance 2.0 video generator
+    category: technology.ai
+    description: >-
+      Hollywood organizations are pushing back against a new AI video model called Seedance 2.0, which they say has
+      quickly become a tool for “blatant” copyright infringement.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T15:41:16.000Z"
+      precision: day
+  - id: the-great-computer-science-exodus-and-w-2026-02-15
+    type: Event
+    name: The great computer science exodus (and where students are going instead)
+    category: technology.ai
+    description: >-
+      Students are losing some interest in computer science broadly but gaining interest in AI-specific majors and
+      courses.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T08:40:27.000Z"
+      precision: day
+  - id: ancient-mars-was-warm-and-wet-not-cold-2026-02-15
+    type: Event
+    name: Ancient Mars was warm and wet, not cold and icy
+    category: technology
+    description: Ancient Mars was warm and wet, not cold and icy
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T20:14:16.000Z"
+      precision: day
+  - id: editor-s-note-retraction-of-article-con-2026-02-15
+    type: Event
+    name: "Editor’s Note: Retraction of article containing fabricated quotations"
+    category: technology
+    description: "Editor’s Note: Retraction of article containing fabricated quotations"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T18:09:09.000Z"
+      precision: day
+  - id: it-aint-no-unicorn-these-researchers-2026-02-15
+    type: Event
+    name: "\"It ain't no unicorn\": These researchers have interviewed 130 Bigfoot hunters"
+    category: technology
+    description: "\"It ain't no unicorn\": These researchers have interviewed 130 Bigfoot hunters"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-15T17:20:12.000Z"
+      precision: day
+narratives:
+  - name: Ukraine Peace Process
+    steps:
+      - from: welsh-munitions-factory-seen-as-crucial-2026-02-15
+        to: ukraines-ex-energy-minister-detained-wh-2026-02-15
+        type: causes
+      - from: ukraines-ex-energy-minister-detained-wh-2026-02-15
+        to: ukraine-s-ex-energy-minister-arrested-wh-2026-02-15
+        type: causes
+  - name: Israel-Palestine Conflict
+    steps:
+      - from: thousands-of-western-nationals-fought-is-2026-02-15
+        to: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+        type: follows
+      - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+        to: gaza-mother-s-grim-ordeal-a-search-for-2026-02-15
+        type: causes
+      - from: gaza-mother-s-grim-ordeal-a-search-for-2026-02-15
+        to: at-least-11-palestinians-killed-in-israe-2026-02-15
+        type: follows
+  - name: Crypto Markets
+    steps:
+      - from: wall-street-remains-bullish-on-bitcoin-w-2026-02-15
+        to: xrp-outruns-bitcoin-ether-after-investo-2026-02-15
+        type: causes
+      - from: xrp-outruns-bitcoin-ether-after-investo-2026-02-15
+        to: blackrocks-digital-assets-head-leverag-2026-02-15
+        type: causes
+      - from: blackrocks-digital-assets-head-leverag-2026-02-15
+        to: hong-kong-is-trying-to-build-up-its-cryp-2026-02-15
+        type: causes
+      - from: hong-kong-is-trying-to-build-up-its-cryp-2026-02-15
+        to: wall-street-giant-apollo-deepens-crypto-2026-02-15
+        type: causes
+  - name: AI Race
+    steps:
+      - from: the-great-computer-science-exodus-and-w-2026-02-15
+        to: india-has-100m-weekly-active-chatgpt-use-2026-02-15
+        type: supports
+sources:
+  - entity: ukraines-ex-energy-minister-detained-wh-2026-02-15
+    type: article
+    title: Ukraine's ex-energy minister detained while attempting to leave country
+    url: https://www.bbc.com/news/articles/c4g5380xwqjo
+    excerpt: His detention comes as he faces legal proceedings after being dismissed in a corruption scandal.
+    source_name: BBC News
+    published: "2026-02-15T17:11:49.000Z"
+  - entity: dna-found-on-glove-appearing-to-match-th-2026-02-15
+    type: article
+    title: DNA found on glove appearing to match those in Nancy Guthrie suspect video
+    url: https://www.bbc.com/news/articles/c5yrv2g16e2o
+    excerpt: The FBI says it recovered the sample from the glove, which was found in a field a few miles from Guthrie's home.
+    source_name: BBC News
+    published: "2026-02-15T20:39:35.000Z"
+  - entity: iran-ready-to-discuss-compromises-to-rea-2026-02-15
+    type: article
+    title: Iran ready to discuss compromises to reach nuclear deal, minister tells BBC in Tehran
+    url: https://www.bbc.com/news/articles/clyz4y3zwz5o
+    excerpt: >-
+      Majid Takht-Ravanchi, Iran's deputy foreign minister, tells the BBC's Lyse Doucet that the ball was "in America's
+      court to prove that they want to do a deal".
+    source_name: BBC News
+    published: "2026-02-15T15:07:40.000Z"
+  - entity: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    type: article
+    title: Eleven killed in Israeli strikes on Gaza, rescuers say
+    url: https://www.bbc.com/news/articles/c8r15eyvk2do
+    excerpt: The Palestinian Red Crescent say a strike on a tent encampment in northern Gaza killed at least six people.
+    source_name: BBC News
+    published: "2026-02-15T18:42:42.000Z"
+  - entity: russia-killed-opposition-leader-alexei-n-2026-02-15
+    type: article
+    title: Russia killed opposition leader Alexei Navalny using dart frog toxin, UK says
+    url: https://www.bbc.com/news/articles/cwyk4lz4e3eo
+    excerpt: >-
+      There is no innocent explanation for the toxin being found in samples taken from Navalny's body, Foreign Office
+      says.
+    source_name: BBC News
+    published: "2026-02-15T02:04:02.000Z"
+  - entity: russian-pick-up-artist-accused-of-secr-2026-02-15
+    type: article
+    title: Russian 'pick-up artist' accused of secretly filming women in Ghana
+    url: https://www.bbc.com/news/articles/c9wn5p299eko
+    excerpt: Ghana has called on Russia to extradite the man, who is accused of recording sexual encounters without consent.
+    source_name: BBC News
+    published: "2026-02-15T15:25:21.000Z"
+  - entity: us-boards-second-tanker-in-indian-ocean-2026-02-15
+    type: article
+    title: US boards second tanker in Indian Ocean after tracking it from Caribbean
+    url: https://www.bbc.com/news/articles/c4ge763d7j6o
+    excerpt: The US accuses the Veronica III of violating a "quarantine" on oil shipments from Venezuela.
+    source_name: BBC News
+    published: "2026-02-15T19:34:13.000Z"
+  - entity: motorbike-raids-on-villages-kill-dozens-2026-02-15
+    type: article
+    title: Motorbike raids on villages kill dozens in Nigeria
+    url: https://www.bbc.com/news/articles/ckg1y0nk641o
+    excerpt: Armed men shot locals dead, set homes alight and abducted an "undetermined" number of people in Niger State.
+    source_name: BBC News
+    published: "2026-02-15T15:29:26.000Z"
+  - entity: hundreds-of-thousands-join-iran-protests-2026-02-15
+    type: article
+    title: Hundreds of thousands join Iran protests around the world
+    url: https://www.bbc.com/news/articles/czr0lykl4g4o
+    excerpt: >-
+      Munich, Los Angeles, and Toronto saw the largest crowds, with smaller rallies also taking place in Tel Aviv and
+      Libson.
+    source_name: BBC News
+    published: "2026-02-15T13:35:26.000Z"
+  - entity: andrews-time-as-trade-envoy-should-be-i-2026-02-15
+    type: article
+    title: Andrew's time as trade envoy should be investigated, says Vince Cable
+    url: https://www.bbc.com/news/articles/cp32j7v2dy5o
+    excerpt: The former prince's alleged actions were "totally unacceptable", the ex-business secretary says.
+    source_name: BBC Business
+    published: "2026-02-15T18:33:57.000Z"
+  - entity: could-manchester-be-a-model-for-the-uk-t-2026-02-15
+    type: article
+    title: Could Manchester be a model for the UK to kickstart growth?
+    url: https://www.bbc.com/news/articles/c0ljgzjwjx3o
+    excerpt: With an annual growth rate of 3.1%, Manchester's economy has performed twice as well as that of the UK as a whole.
+    source_name: BBC Business
+    published: "2026-02-15T00:01:21.000Z"
+  - entity: gender-pay-gap-wont-close-for-another-3-2026-02-15
+    type: article
+    title: Gender pay gap won't close for another 30 years, warns trade unions group
+    url: https://www.bbc.com/news/articles/cvg5l75yx6vo
+    excerpt: >-
+      The average woman employee "effectively works for 47 days of the year for free," according to the Trades Union
+      Congress.
+    source_name: BBC Business
+    published: "2026-02-15T15:32:19.000Z"
+  - entity: assailants-kill-at-least-32-in-north-wes-2026-02-15
+    type: article
+    title: Assailants kill at least 32 in north-west Nigerian villages, residents say
+    url: https://www.theguardian.com/world/2026/feb/14/assailants-kill-raids-northwest-nigeria-villages-residents-say
+    excerpt: >-
+      <p>Residents who escaped violence tell of bandits riding in on motorbikes and shooting
+      indiscriminately</p><p>Armed assailants on motorbikes killed at least 32 people and burned houses and shops durin
+    source_name: The Guardian
+    published: "2026-02-15T03:14:42.000Z"
+  - entity: people-want-to-help-canadians-rally-r-2026-02-15
+    type: article
+    title: "‘People want to help’: Canadians rally round Tumbler Ridge after school shooting"
+    url: https://www.theguardian.com/world/2026/feb/15/canada-support-tumbler-ridge-school-shooting
+    excerpt: >-
+      <p>Tragedy has prompted a wave of support for town from neighbouring communities and across country</p><p>When Jim
+      Caruso heard the news of the school shooting in Tumbler Ridge, he knew immediately he
+    source_name: The Guardian
+    published: "2026-02-15T17:34:43.000Z"
+  - entity: us-forces-board-second-venezuela-linked-2026-02-15
+    type: article
+    title: US forces board second Venezuela‑linked oil tanker in Indian Ocean
+    url: https://www.theguardian.com/world/2026/feb/15/us-forces-board-second-venezuelalinked-oil-tanker-in-indian-ocean
+    excerpt: >-
+      <p>Pentagon tracked sanctioned Veronica III from Caribbean Sea after it left Venezuela on day Maduro was
+      captured</p><p>US military forces boarded another sanctioned tanker in the Indian Ocean after t
+    source_name: The Guardian
+    published: "2026-02-15T16:30:20.000Z"
+  - entity: no-fuel-no-tourists-no-cash-this-was-2026-02-15
+    type: article
+    title: No fuel, no tourists, no cash – this was the week the Cuban crisis got real
+    url: https://www.theguardian.com/news/ng-interactive/2026/feb/15/cuba-crisis-oil-shortage-venezuela-donald-trump-havana
+    excerpt: >-
+      <p>Diplomats in Havana are preparing for an alternative Trump tactic: the country being starved until people take
+      to the streets and the US can step in</p><p>Among the verdant gardens of Havana’s dipl
+    source_name: The Guardian
+    published: "2026-02-15T06:00:15.000Z"
+  - entity: welsh-munitions-factory-seen-as-crucial-2026-02-15
+    type: article
+    title: Welsh munitions factory seen as crucial to boosting UK stockpiles and aiding Ukraine is yet to open
+    url: >-
+      https://www.theguardian.com/uk-news/2026/feb/15/welsh-munitions-factory-delay-bae-systems-glascoed-delay-shells-ukraine
+    excerpt: >-
+      <p><strong>Exclusive:</strong> Delay at Glascoed is latest setback for armed forces and for UK’s capacity to
+      supply shells to Ukraine</p><p>A new factory in Wales seen as crucial to boosting UK muniti
+    source_name: The Guardian
+    published: "2026-02-15T15:16:49.000Z"
+  - entity: uk-s-gender-pay-gap-won-t-close-for-30-2026-02-15
+    type: article
+    title: UK’s gender pay gap ‘won’t close for 30 years’ at current rates
+    url: https://www.theguardian.com/world/2026/feb/15/gender-pay-gap-persist-30-years-uk-tuc
+    excerpt: >-
+      <p>Trades Union Congress says women have worked a month and a half for nothing this year and legislation is
+      needed</p><p>Women in the UK will not be paid the same as men until 2056 at the current rate
+    source_name: The Guardian
+    published: "2026-02-15T11:42:43.000Z"
+  - entity: firm-that-went-bust-owing-650k-to-hmrc-2026-02-15
+    type: article
+    title: Firm that went bust owing £650k to HMRC offers staff Las Vegas trip after being bought by ex-owner
+    url: >-
+      https://www.theguardian.com/business/2026/feb/15/bust-premier-group-recruitment-hmrc-las-vegas-staff-trip-andrew-woosnam
+    excerpt: >-
+      <p>Acquisition by Premier Group Recruitment boss Andrew Woosnam appears to be example of ‘phoenixism’</p><p>A
+      recruitment business that went bust owing the tax authorities and other creditors almost £
+    source_name: The Guardian
+    published: "2026-02-15T08:00:16.000Z"
+  - entity: weight-loss-race-how-switch-from-inject-2026-02-15
+    type: article
+    title: "Weight-loss race: how switch from injections to pills is expanding big pharma’s hopes"
+    url: https://www.theguardian.com/science/2026/feb/15/weight-loss-race-injections-pills-big-pharma
+    excerpt: >-
+      <p>Tablets could make treatment more mainstream, with sector predicted to be worth $200bn by end of the
+      decade</p><p>“I just felt slow: I want to be able to do anything my kids want to do and not have
+    source_name: The Guardian
+    published: "2026-02-15T12:00:22.000Z"
+  - entity: it-makes-no-sense-the-battle-over-pla-2026-02-15
+    type: article
+    title: "‘It makes no sense’: the battle over plans for a windfarm by the Yorkshire Dales"
+    url: https://www.theguardian.com/environment/2026/feb/15/battle-plans-windfarm-yorkshire-dales
+    excerpt: >-
+      <p>The fight for Hope Moor is set to be repeated across the UK as the government aims to hit its renewable energy
+      targets</p><p>Instead of a slingshot, the Davids are brandishing a sculpture and a cof
+    source_name: The Guardian
+    published: "2026-02-15T07:00:16.000Z"
+  - entity: brushing-fraud-britons-told-to-beware-o-2026-02-15
+    type: article
+    title: "Brushing fraud: Britons told to beware of mystery parcels as new scam soars"
+    url: https://www.theguardian.com/money/2026/feb/15/brushing-fraud-britons-mystery-parcels-scam-review
+    excerpt: >-
+      <p>Fraudsters use stolen personal details to send out products, then post a fake verified and positive online
+      review</p><p>A package arrives but you can’t remember ordering anything.</p><p>When you op
+    source_name: The Guardian
+    published: "2026-02-15T07:00:17.000Z"
+  - entity: starmer-has-chance-to-put-overseas-aid-a-2026-02-15
+    type: article
+    title: Starmer has chance to put overseas aid and debt relief on G20 agenda | Heather Stewart
+    url: https://www.theguardian.com/politics/2026/feb/15/starmer-20-baton-chance-aid-debt-relief
+    excerpt: >-
+      <p>Reclaiming Labour’s internationalist heart could also stop disillusioned voters drifting towards Lib Dems and
+      Greens</p><p>If Keir Starmer wants to win back disillusioned voters deserting his party
+    source_name: The Guardian
+    published: "2026-02-15T13:16:46.000Z"
+  - entity: at-least-11-palestinians-killed-in-israe-2026-02-15
+    type: article
+    title: At least 11 Palestinians killed in Israeli attacks across Gaza
+    url: https://www.aljazeera.com/news/2026/2/15/at-least-11-palestinians-killed-in-israeli-attacks-across-gaza
+    excerpt: >-
+      US President Donald Trump says that the first meeting of his newly created &#039;Board of Peace&#039; will take
+      place on Thursday.
+    source_name: Al Jazeera
+    published: "2026-02-15T20:44:10.000Z"
+  - entity: gaza-mother-s-grim-ordeal-a-search-for-2026-02-15
+    type: article
+    title: "Gaza mother’s grim ordeal: A search for missing son among mutilated bodies"
+    url: >-
+      https://www.aljazeera.com/features/2026/2/15/gaza-mothers-grim-ordeal-a-search-for-missing-son-among-mutilated-bodies
+    excerpt: >-
+      Gaza families seek closure as they search for loved ones among bodies returned by Israel under
+      &#039;ceasefire&#039; deal.
+    source_name: Al Jazeera
+    published: "2026-02-15T20:16:49.000Z"
+  - entity: is-trumpism-losing-steam-2026-02-15
+    type: article
+    title: Is Trumpism losing steam?
+    url: https://www.aljazeera.com/video/the-bottom-line/2026/2/15/is-trumpism-losing-steam
+    excerpt: >-
+      As Trumpism forces both major US parties to wonder what they stand for, experts weigh in on November election
+      prospects.
+    source_name: Al Jazeera
+    published: "2026-02-15T20:02:17.000Z"
+  - entity: ukraine-s-ex-energy-minister-arrested-wh-2026-02-15
+    type: article
+    title: Ukraine’s ex-energy minister arrested while trying to cross border
+    url: https://www.aljazeera.com/news/2026/2/15/ukraines-ex-energy-minister-arrested-while-trying-to-cross-border
+    excerpt: German Galushchenko was detained by Ukraine&#039;s anti-corruption bureau while trying to leave the country.
+    source_name: Al Jazeera
+    published: "2026-02-15T19:35:22.000Z"
+  - entity: india-rout-bitter-rivals-pakistan-at-t20-2026-02-15
+    type: article
+    title: India rout bitter rivals Pakistan at T20 World Cup
+    url: https://www.aljazeera.com/gallery/2026/2/15/india-rout-bitter-rivals-pakistan-at-t20-world-cup
+    excerpt: >-
+      India&#039;s win against Pakistan takes the defending champions through to the next round of cricket&#039;s T20
+      World Cup.
+    source_name: Al Jazeera
+    published: "2026-02-15T19:34:23.000Z"
+  - entity: syrian-army-takes-over-al-shaddadi-base-2026-02-15
+    type: article
+    title: Syrian army takes over al-Shaddadi base after US withdrawal
+    url: https://www.aljazeera.com/news/2026/2/15/syrian-army-takes-over-al-shaddadi-base-after-us-withdrawal
+    excerpt: >-
+      The move, in coordination with the US, is the latest implementation of the ceasefire agreement with Kurdish-led
+      forces.
+    source_name: Al Jazeera
+    published: "2026-02-15T17:54:05.000Z"
+  - entity: india-hammer-pakistan-to-qualify-for-t20-2026-02-15
+    type: article
+    title: India hammer Pakistan to qualify for T20 World Cup Super Eights
+    url: https://www.aljazeera.com/sports/2026/2/15/india-hammer-pakistan-to-qualify-for-t20-world-cup-super-eights
+    excerpt: >-
+      Ishan Kishan defies a tricky Colombo pitch with 77 as India beat Pakistan by 61 runs in Group A of the T20 World
+      Cup.
+    source_name: Al Jazeera
+    published: "2026-02-15T17:25:13.000Z"
+  - entity: us-not-disputing-european-assessment-o-2026-02-15
+    type: article
+    title: US ‘not disputing’ European assessment of Navalny poisoning, Rubio says
+    url: https://www.aljazeera.com/news/2026/2/15/us-not-disputing-european-assessment-of-navalny-poisoning-rubio-says
+    excerpt: >-
+      Secretary of state says Washington will &#039;not fight&#039; European partners on their findings as UK considers
+      new sanctions.
+    source_name: Al Jazeera
+    published: "2026-02-15T16:59:24.000Z"
+  - entity: thousands-of-western-nationals-fought-is-2026-02-15
+    type: article
+    title: "Thousands of Western nationals fought Israel’s war on Gaza: What to know"
+    url: https://www.aljazeera.com/news/2026/2/15/thousands-of-western-nationals-fought-israels-war-on-gaza-what-to-know
+    excerpt: Thousands of Western citizens joined the Israeli military in its war on Gaza that killed over 72,000 Palestinians.
+    source_name: Al Jazeera
+    published: "2026-02-15T15:36:56.000Z"
+  - entity: as-sudanese-city-returns-to-life-after-t-2026-02-15
+    type: article
+    title: As Sudanese city returns to life after two-year siege, drone threat lingers
+    url: >-
+      https://www.aljazeera.com/features/2026/2/15/as-sudanese-city-returns-to-life-after-two-year-siege-drone-threat-lingers
+    excerpt: Markets reopen in Dilling, South Kordofan’s second largest city. Yet residents face persistent aerial attacks.
+    source_name: Al Jazeera
+    published: "2026-02-15T14:34:23.000Z"
+  - entity: wall-street-giant-apollo-deepens-crypto-2026-02-15
+    type: article
+    title: Wall Street giant Apollo deepens crypto push with Morpho token deal
+    url: https://www.coindesk.com/business/2026/02/15/wall-street-giant-apollo-deepens-crypto-push-with-morpho-token-deal
+    excerpt: >-
+      The asset manager overseeing more than $900 billion assets may buy up to 90 million MORPHO tokens as part of a
+      partnership to support DeFi credit market, it said.
+    source_name: CoinDesk
+    published: "2026-02-15T20:59:12.000Z"
+  - entity: hong-kong-is-trying-to-build-up-its-cryp-2026-02-15
+    type: article
+    title: "Hong Kong is trying to build up its crypto regulations: State of Crypto"
+    url: https://www.coindesk.com/policy/2026/02/16/hong-kong-is-trying-to-build-up-its-crypto-regulations-state-of-crypto
+    excerpt: Several leaders in Hong Kong announced efforts to advance the region's regulatory environment.
+    source_name: CoinDesk
+    published: "2026-02-15T19:00:00.000Z"
+  - entity: prediction-markets-vs-insider-trading-2026-02-15
+    type: article
+    title: "Prediction markets vs. insider trading: Founders admit blockchain transparency is the only defense"
+    url: >-
+      https://www.coindesk.com/business/2026/02/13/prediction-markets-vs-insider-trading-founders-admit-blockchain-transparency-is-the-only-defense
+    excerpt: >-
+      Prediction markets are increasingly being framed not as gambling platforms but as vehicles for monetizing
+      information, though founders acknowledged the line can blur.
+    source_name: CoinDesk
+    published: "2026-02-15T18:00:00.000Z"
+  - entity: blackrocks-digital-assets-head-leverag-2026-02-15
+    type: article
+    title: "BlackRock's digital assets head: Leverage-driven volatility threatens bitcoin’s narrative"
+    url: >-
+      https://www.coindesk.com/markets/2026/02/13/blackrock-s-head-of-digital-assets-warns-leverage-driven-volatility-risks-undermine-bitcoin-s-institutional-narrative
+    excerpt: >-
+      Rampant speculation on crypto derivatives platforms is fueling volatility and risking bitcoin’s image as a stable
+      hedge, says BlackRock’s digital assets chief.
+    source_name: CoinDesk
+    published: "2026-02-15T14:00:00.000Z"
+  - entity: xrp-outruns-bitcoin-ether-after-investo-2026-02-15
+    type: article
+    title: XRP outruns bitcoin, ether after investors piled into the recent crash
+    url: >-
+      https://www.coindesk.com/markets/2026/02/15/xrp-is-outrunning-bitcoin-and-ether-after-investors-piled-into-the-recent-crash
+    excerpt: XRP is outperforming bitcoin and ether following signs of dip buying during recent crash.
+    source_name: CoinDesk
+    published: "2026-02-15T13:39:18.000Z"
+  - entity: wall-street-remains-bullish-on-bitcoin-w-2026-02-15
+    type: article
+    title: Wall Street remains bullish on bitcoin while offshore traders retreat
+    url: https://www.coindesk.com/markets/2026/02/15/wall-street-remains-bullish-on-bitcoin-while-offshore-traders-retreat
+    excerpt: The difference in futures basis between CME and Deribit reflects varying risk appetite across regions.
+    source_name: CoinDesk
+    published: "2026-02-15T12:00:00.000Z"
+  - entity: reddit-insider-sends-major-vote-of-confi-2026-02-15
+    type: article
+    title: Reddit INSIDER sends major vote of confidence after earnings
+    url: https://finance.yahoo.com/news/reddit-insider-sends-major-vote-212026058.html
+    excerpt: ""
+    source_name: TheStreet
+    published: "2026-02-15T21:20:26.000Z"
+  - entity: don-t-look-but-we-might-be-on-the-brin-2026-02-15
+    type: article
+    title: Don’t Look – But We Might Be on the Brink of a Market Breakout
+    url: https://finance.yahoo.com/news/don-t-look-might-brink-200521050.html
+    excerpt: ""
+    source_name: FreightWaves
+    published: "2026-02-15T20:05:21.000Z"
+  - entity: warner-bros-weighs-reopening-sale-talks-2026-02-15
+    type: article
+    title: Warner Bros weighs reopening sale talks with Paramount, Bloomberg News reports
+    url: https://finance.yahoo.com/news/warner-bros-weighs-reopening-sale-195058251.html
+    excerpt: ""
+    source_name: Reuters
+    published: "2026-02-15T19:50:58.000Z"
+  - entity: walmart-earnings-spending-data-and-mor-2026-02-15
+    type: article
+    title: "Walmart earnings, spending data, and more AI disruptions: What to watch this week"
+    url: >-
+      https://finance.yahoo.com/news/walmart-earnings-spending-data-and-more-ai-disruptions-what-to-watch-this-week-125712762.html
+    excerpt: ""
+    source_name: Yahoo Finance
+    published: "2026-02-15T12:57:12.000Z"
+  - entity: the-1-stock-id-buy-before-spdr-gold-sha-2026-02-15
+    type: article
+    title: The 1 Stock I'd Buy Before SPDR Gold Shares Right Now
+    url: https://finance.yahoo.com/news/1-stock-id-buy-spdr-212000475.html
+    excerpt: ""
+    source_name: Motley Fool
+    published: "2026-02-15T21:20:00.000Z"
+  - entity: the-dark-side-of-ai-wall-street-weigh-2026-02-15
+    type: article
+    title: "'The dark side of AI': Wall Street weighs recent stock sell-off over disruption fears"
+    url: >-
+      https://finance.yahoo.com/news/the-dark-side-of-ai-wall-street-weighs-recent-stock-sell-off-over-disruption-fears-160054016.html
+    excerpt: ""
+    source_name: Yahoo Finance
+    published: "2026-02-15T16:00:54.000Z"
+  - entity: how-much-of-families-paychecks-go-towar-2026-02-15
+    type: article
+    title: How much of families' paychecks go toward healthcare costs? It depends on the state.
+    url: >-
+      https://finance.yahoo.com/news/how-much-of-families-paychecks-go-toward-healthcare-costs-it-depends-on-the-state-150004908.html
+    excerpt: ""
+    source_name: Yahoo Finance
+    published: "2026-02-15T15:05:33.000Z"
+  - entity: ai-disruption-fear-foms-and-other-key-t-2026-02-15
+    type: article
+    title: AI Disruption Fear, FOMS and Other Key Things to Watch this Week
+    url: https://finance.yahoo.com/news/ai-disruption-fear-foms-other-180002318.html
+    excerpt: ""
+    source_name: Barchart
+    published: "2026-02-15T18:00:02.000Z"
+  - entity: warren-buffett-says-only-buy-stocks-you-2026-02-15
+    type: article
+    title: >-
+      Warren Buffett Says Only Buy Stocks You’re Comfortable Holding For Ten Years, Otherwise Don’t Bother Even ‘Owning
+      it for Ten Minutes’
+    url: https://finance.yahoo.com/news/warren-buffett-says-only-buy-174836431.html
+    excerpt: ""
+    source_name: Barchart
+    published: "2026-02-15T17:48:36.000Z"
+  - entity: rents-are-finally-falling-in-some-parts-2026-02-15
+    type: article
+    title: Rents are finally falling in some parts of the country. Here&#x2019;s who is actually feeling the relief.
+    url: >-
+      https://www.marketwatch.com/story/rents-are-finally-falling-in-some-parts-of-the-country-heres-who-is-actually-feeling-the-relief-08d1a6dd?mod=mw_rss_topstories
+    excerpt: >-
+      Rents fell nationally in January, but they&#x2019;re still at a high level due to a sharp run-up over the last few
+      years.
+    source_name: MarketWatch
+    published: "2026-02-15T20:22:00.000Z"
+  - entity: x2018-am-i-crazy-x2019-my-boyfriend-2026-02-15
+    type: article
+    title: >-
+      &#x2018;Am I crazy?&#x2019; My boyfriend&#x2019;s parents say he doesn&#x2019;t earn enough to marry me. Who is to
+      blame here?
+    url: >-
+      https://www.marketwatch.com/story/weve-been-dating-for-5-years-my-boyfriends-parents-say-he-doesnt-earn-enough-to-marry-should-i-speak-to-his-father-44b48700?mod=mw_rss_topstories
+    excerpt: >-
+      The Moneyist: &#x201c;I have a Valentine&#x2019;s message for you, but you won&#x2019;t read it in a Hallmark
+      card.&#x201d;
+    source_name: MarketWatch
+    published: "2026-02-15T19:31:00.000Z"
+  - entity: is-the-stock-market-open-tomorrow-for-pr-2026-02-15
+    type: article
+    title: Is the stock market open tomorrow for Presidents Day? Will USPS, FedEx and UPS make deliveries?
+    url: >-
+      https://www.marketwatch.com/story/is-the-stock-market-open-on-presidents-day-will-usps-fedex-and-ups-make-deliveries-31d15912?mod=mw_rss_topstories
+    excerpt: >-
+      Here&#x2019;s how trading hours and other services will be affected on the federal holiday, which falls on Monday,
+      Feb. 16, this year.
+    source_name: MarketWatch
+    published: "2026-02-15T17:25:00.000Z"
+  - entity: here-are-7-charts-guaranteed-to-stress-y-2026-02-15
+    type: article
+    title: Here are 7 charts guaranteed to stress you out about the stock market
+    url: >-
+      https://www.marketwatch.com/story/here-are-7-charts-guaranteed-to-stress-you-out-about-the-stock-market-085b23c1?mod=mw_rss_topstories
+    excerpt: >-
+      The &#x201c;Magnificent Seven&#x201d; are breaking down, defensive consumer staples are on a tear &#x2014; and
+      then there&#x2019;s the midterm curse.
+    source_name: MarketWatch
+    published: "2026-02-15T17:00:00.000Z"
+  - entity: my-elderly-mother-has-dementia-my-siste-2026-02-15
+    type: article
+    title: My elderly mother has dementia. My sister sold her house and has hidden the proceeds. What can we do?
+    url: >-
+      https://www.marketwatch.com/story/she-is-planning-to-move-out-of-state-my-sister-secretly-sold-our-elderly-mothers-house-what-can-i-do-e9a9f486?mod=mw_rss_topstories
+    excerpt: "&#x201c;My sister is planning to move out of state and feels it is her right to control the money.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-15T13:30:00.000Z"
+  - entity: x2018-i-x2019-m-a-loner-x2019-i-x-2026-02-15
+    type: article
+    title: >-
+      &#x2018;I&#x2019;m a loner&#x2019;: I&#x2019;m 62 with a multimillion-dollar portfolio and no heirs. Should I find
+      a wife for my twilight years?
+    url: >-
+      https://www.marketwatch.com/story/im-a-loner-im-62-with-a-multimillion-dollar-portfolio-and-no-heirs-should-i-find-a-wife-for-my-twilight-years-4f4f4408?mod=mw_rss_topstories
+    excerpt: "&#x201c;I have never been married, have no siblings, and both my parents have passed away.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-15T13:17:00.000Z"
+  - entity: x2018-i-x2019-m-close-to-retiring-x2-2026-02-15
+    type: article
+    title: >-
+      &#x2018;I&#x2019;m close to retiring&#x2019;: I&#x2019;m behind on my property tax. Is this a really bad time to
+      sell my house?
+    url: >-
+      https://www.marketwatch.com/story/im-close-to-retiring-im-behind-on-my-property-taxes-is-this-a-bad-time-to-sell-my-house-40954efd?mod=mw_rss_topstories
+    excerpt: "&#x201c;I&#x2019;ve never been late on a mortgage, so this makes me nervous.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-15T13:10:00.000Z"
+  - entity: x2018-we-have-no-prenup-x2019-i-wan-2026-02-15
+    type: article
+    title: >-
+      &#x2018;We have no prenup&#x2019;: I want rights of survivorship in our marital home. My wife prefers tenants in
+      common. Now what?
+    url: >-
+      https://www.marketwatch.com/story/we-have-no-prenup-i-want-rights-of-survivorship-in-our-marital-home-my-wife-prefers-tenants-in-common-now-what-996cf652?mod=mw_rss_topstories
+    excerpt: >-
+      &#x201c;She is an old-school farm girl who inherited all her money and wants to pass it down to her
+      children.&#x201d;
+    source_name: MarketWatch
+    published: "2026-02-15T00:30:00.000Z"
+  - entity: x2018-i-x2019-m-part-of-a-blended-fam-2026-02-15
+    type: article
+    title: >-
+      &#x2018;I&#x2019;m part of a blended family that didn&#x2019;t blend well&#x2019;: My stepsister added her mailing
+      address to our mother&#x2019;s bank account. Can she be trusted?
+    url: >-
+      https://www.marketwatch.com/story/my-mom-was-very-upset-my-stepsister-changed-the-address-on-our-mothers-bank-account-can-she-be-trusted-as-executor-dab23670?mod=mw_rss_topstories
+    excerpt: "&#x201c;It&#x2019;s things like this that make me wonder what else she might be doing.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-15T00:00:00.000Z"
+  - entity: venezuela-s-oil-revival-could-reward-the-2026-02-15
+    type: article
+    title: Venezuela’s Oil Revival Could Reward the Company That Never Left
+    url: https://oilprice.com/Energy/Energy-General/Venezuelas-Oil-Revival-Could-Reward-the-Company-That-Never-Left.html
+    excerpt: >-
+      Canada-based Ensign Energy Services has been working in Venezuela for 25 years and has never left the country,
+      where rig counts have plummeted, and the political and regulatory landscape has been a mi
+    source_name: OilPrice.com
+    published: "2026-02-15T20:00:00.000Z"
+  - entity: sam-altman-and-bill-gates-bet-big-on-lim-2026-02-15
+    type: article
+    title: Sam Altman and Bill Gates Bet Big on Limitless Clean Energy
+    url: >-
+      https://oilprice.com/Alternative-Energy/Nuclear-Power/Sam-Altman-and-Bill-Gates-Bet-Big-on-Limitless-Clean-Energy.html
+    excerpt: >-
+      The runaway energy demands of the artificial intelligence boom are pushing a new wave of innovative next-gen
+      energy ambitions. Big Tech is pouring money into fast-tracking the development of futuristi
+    source_name: OilPrice.com
+    published: "2026-02-15T18:00:00.000Z"
+  - entity: rolls-royce-is-leading-europe-039-s-sma-2026-02-15
+    type: article
+    title: Rolls-Royce Is Leading Europe&#039;s Small Nuclear Reactor Race
+    url: >-
+      https://oilprice.com/Alternative-Energy/Nuclear-Power/Rolls-Royce-Is-Leading-Europes-Small-Nuclear-Reactor-Race.html
+    excerpt: >-
+      British aviation company Rolls-Royce has big plans for nuclear power, as well as other major energy projects,
+      having been selected as the United Kingdom’s preferred bidder to build the country’s first
+    source_name: OilPrice.com
+    published: "2026-02-15T16:00:00.000Z"
+  - entity: argentina-s-shale-boom-is-rewriting-sout-2026-02-15
+    type: article
+    title: Argentina’s Shale Boom Is Rewriting South America’s Energy Map
+    url: https://oilprice.com/Energy/Energy-General/Argentinas-Shale-Boom-Is-Rewriting-South-Americas-Energy-Map.html
+    excerpt: >-
+      The massive unconventional oil boom underway in Argentina continues to gain momentum. During late 2024, Argentina,
+      which is South America’s second largest economy after Brazil, overtook Colombia to be
+    source_name: OilPrice.com
+    published: "2026-02-15T00:00:00.000Z"
+  - entity: anthropic-and-the-pentagon-are-reportedl-2026-02-15
+    type: article
+    title: Anthropic and the Pentagon are reportedly arguing over Claude usage
+    url: https://techcrunch.com/2026/02/15/anthropic-and-the-pentagon-are-reportedly-arguing-over-claude-usage/
+    excerpt: "The apparent issue: whether Claude can be used for mass domestic surveillance and autonomous weapons."
+    source_name: TechCrunch
+    published: "2026-02-15T21:11:28.000Z"
+  - entity: india-has-100m-weekly-active-chatgpt-use-2026-02-15
+    type: article
+    title: India has 100M weekly active ChatGPT users, Sam Altman says
+    url: https://techcrunch.com/2026/02/15/india-has-100m-weekly-active-chatgpt-users-sam-altman-says/
+    excerpt: OpenAI CEO Sam Altman says India has the largest number of student users of ChatGPT worldwide.
+    source_name: TechCrunch
+    published: "2026-02-15T18:00:00.000Z"
+  - entity: the-enterprise-ai-land-grab-is-on-glean-2026-02-15
+    type: article
+    title: The enterprise AI land grab is on. Glean is building the layer beneath the interface.
+    url: >-
+      https://techcrunch.com/2026/02/15/the-enterprise-ai-land-grab-is-on-glean-is-building-the-layer-beneath-the-interface/
+    excerpt: >-
+      In this week's episode of the Equity podcast, Glean CEO Arvind Jain explains the company's shift from enterprise
+      search tool to middleware layer for enterprise AI.
+    source_name: TechCrunch
+    published: "2026-02-15T17:30:00.000Z"
+  - entity: hollywood-isn-8217-t-happy-about-the-ne-2026-02-15
+    type: article
+    title: Hollywood isn&#8217;t happy about the new Seedance 2.0 video generator
+    url: https://techcrunch.com/2026/02/15/hollywood-isnt-happy-about-the-new-seedance-2-0-video-generator/
+    excerpt: >-
+      Hollywood organizations are pushing back against a new AI video model called Seedance 2.0, which they say has
+      quickly become a tool for “blatant” copyright infringement.
+    source_name: TechCrunch
+    published: "2026-02-15T15:41:16.000Z"
+  - entity: the-great-computer-science-exodus-and-w-2026-02-15
+    type: article
+    title: The great computer science exodus (and where students are going instead)
+    url: https://techcrunch.com/2026/02/15/the-great-computer-science-exodus-and-where-students-are-going-instead/
+    excerpt: >-
+      Students are losing some interest in computer science broadly but gaining interest in AI-specific majors and
+      courses.
+    source_name: TechCrunch
+    published: "2026-02-15T08:40:27.000Z"
+  - entity: ancient-mars-was-warm-and-wet-not-cold-2026-02-15
+    type: article
+    title: Ancient Mars was warm and wet, not cold and icy
+    url: https://arstechnica.com/science/2026/02/ancient-mars-was-warm-and-wet-not-cold-and-icy/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-02-15T20:14:16.000Z"
+  - entity: editor-s-note-retraction-of-article-con-2026-02-15
+    type: article
+    title: "Editor’s Note: Retraction of article containing fabricated quotations"
+    url: https://arstechnica.com/staff/2026/02/editors-note-retraction-of-article-containing-fabricated-quotations/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-02-15T18:09:09.000Z"
+  - entity: it-aint-no-unicorn-these-researchers-2026-02-15
+    type: article
+    title: "\"It ain't no unicorn\": These researchers have interviewed 130 Bigfoot hunters"
+    url: https://arstechnica.com/science/2026/02/it-aint-no-unicorn-these-researchers-have-interviewed-130-bigfoot-hunters/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-02-15T17:20:12.000Z"
