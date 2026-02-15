@@ -128,14 +128,17 @@ function main() {
   const dateStr = opts.date || getDateString(targetDate);
   const weekNum = getISOWeek(targetDate);
   const year = targetDate.getFullYear();
+  const hour = String(targetDate.getHours()).padStart(2, '0');
 
   // Build identifiers
+  // - Namespace is daily (no hour) so all hours accumulate into same day
+  // - Seed filename has hour suffix to prevent overwrites
   const weekLabel = `week${weekNum}`;
   const dayLabel = `day-${dateStr}`;
-  const seedName = `news-${weekLabel}-${dayLabel}`;
-  const nsDay = `news.${weekLabel}.${dayLabel}`;
+  const seedName = `news-${weekLabel}-${dayLabel}-hour-${hour}`;  // Hour suffix in filename
+  const nsDay = `news.${weekLabel}.${dayLabel}`;  // No hour in namespace
   const nsWeek = `news.${weekLabel}`;
-  const humanLabel = `Daily News — ${dateStr} (Week ${weekNum}, ${year})`;
+  const humanLabel = `Daily News — ${dateStr} ${hour}:00 (Week ${weekNum}, ${year})`;
 
   console.log('');
   console.log('╔══════════════════════════════════════════╗');
