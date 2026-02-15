@@ -424,19 +424,25 @@
 
         html += `<div class="section-header"><span class="icon">📂</span> From Sub-Namespaces <span style="font-weight:400;text-transform:none;letter-spacing:0">(${descendantOnlyEntities.length})</span></div>`;
 
-        // Build entity cards with connection count and date shown
-        const entityCardWithMeta = (e) => {
-          const conn = connectionCount[e.id] || 0;
-          const date = e.temporal?.timestamp ? new Date(e.temporal.timestamp).toLocaleDateString() : '';
-          const shortNs = e.namespace.split('.').pop(); // Show last namespace segment
-          return `<div class="card entity-card" onclick="window.location.hash='#/entity/${encodeURIComponent(e.id)}'">
-            <div class="entity-type-badge" style="background:${typeColor(e.type)}">${esc(e.type)}</div>
-            <div class="entity-name">${esc(e.name)}</div>
-            <div class="entity-meta">
-              ${date ? `<span>${date}</span>` : ''}
-              ${conn > 0 ? `<span>🔗 ${conn}</span>` : ''}
-              <span class="entity-ns-tag">${esc(shortNs)}</span>
+        // Entity card with breadcrumb - same design as entityCard but with namespace path
+        const entityCardWithBreadcrumb = (e) => {
+          const c = typeColor(e.type);
+          const desc = e.metadata?.description || '';
+          // Build clickable namespace breadcrumb
+          const nsParts = e.namespace.split('.');
+          const nsLinks = nsParts.map((seg, i) => {
+            const full = nsParts.slice(0, i + 1).join('.');
+            return `<a class="ns-breadcrumb-link" href="#/ns/${encodeURIComponent(full)}" onclick="event.stopPropagation()">${esc(seg)}</a>`;
+          }).join('<span class="ns-breadcrumb-sep">›</span>');
+          return `<div class="card accent-left" style="--type-color:${c}" onclick="window.location.hash='#/entity/${encodeURIComponent(e.id)}'">
+            <div class="card-ns-breadcrumb">${nsLinks}</div>
+            <div class="card-title">${icon(e.type)} ${esc(e.name)}</div>
+            <div class="card-meta">
+              <span class="type-badge">${esc(e.type)}</span>
+              ${credDot(e.credibility)}
+              ${e.temporal ? `<span>${formatTemporal(e.temporal)}</span>` : ''}
             </div>
+            ${desc ? `<div class="card-excerpt">${esc(desc)}</div>` : ''}
           </div>`;
         };
 
@@ -455,7 +461,7 @@
             <span class="count">${items.length}</span>
           </div>`;
           html += `<div class="stack" style="margin-bottom:16px;">`;
-          for (const e of toShow) html += entityCardWithMeta(e);
+          for (const e of toShow) html += entityCardWithBreadcrumb(e);
           html += `</div>`;
 
           totalShown += toShow.length;
