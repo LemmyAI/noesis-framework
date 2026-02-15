@@ -97,7 +97,26 @@ function esc(str) {
 }
 
 function escJson(obj) {
-  return "'" + JSON.stringify(obj).replace(/'/g, "''") + "'::jsonb";
+  // Clean strings: remove chars that break SQL/JSON nesting
+  function clean(o) {
+    if (typeof o === 'string') {
+      return o
+        .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, '') // control chars
+        .replace(/\\/g, '')       // remove backslashes (avoid escaping hell)
+        .replace(/"/g, "");        // strip double quotes (they conflict with JSON structure)
+    }
+    if (Array.isArray(o)) return o.map(clean);
+    if (o && typeof o === 'object') {
+      const out = {};
+      for (const [k, v] of Object.entries(o)) out[k] = clean(v);
+      return out;
+    }
+    return o;
+  }
+  const cleaned = clean(obj);
+  // JSON.stringify produces valid JSON; then escape single quotes for SQL string
+  const jsonStr = JSON.stringify(cleaned).replace(/'/g, "''");
+  return "'" + jsonStr + "'::jsonb";
 }
 
 // ======= SEED FILE GENERATION =======
