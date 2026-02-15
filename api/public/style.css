@@ -1,4 +1,4 @@
-/* === NOESIS Explorer — Mobile-First Dark Theme === */
+/* === NOESIS Explorer v2.0 — Mobile-First Dark Theme === */
 
 :root {
   --bg: #0D0D0F;
@@ -14,8 +14,7 @@
   --radius-sm: 8px;
   --transition: 200ms ease;
   --max-width: 1200px;
-  --header-h: 96px;
-  /* credibility colors loaded from namespace config at runtime */
+  --header-h: 56px;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -46,14 +45,11 @@ header {
   border-bottom: 1px solid var(--border);
 }
 
-.header-top {
-  padding: 12px 16px 0;
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-
-.header-breadcrumb {
-  padding: 4px 16px 8px;
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
   max-width: var(--max-width);
   margin: 0 auto;
 }
@@ -64,60 +60,173 @@ header {
   color: var(--text-bright);
   white-space: nowrap;
   letter-spacing: 0.5px;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
 }
-.logo span { font-weight: 300; opacity: 0.7; }
-.logo:hover { text-decoration: none; opacity: 0.9; }
+.logo-nu { font-weight: 700; }
+.logo-text { font-weight: 300; opacity: 0.7; }
+.logo-sub {
+  font-size: 0.6rem;
+  font-weight: 400;
+  opacity: 0.35;
+  letter-spacing: 0.3px;
+  display: none;
+}
+@media (min-width: 640px) {
+  .logo-sub { display: inline; }
+}
+.logo:hover { text-decoration: none; opacity: 1; }
+.logo:hover .logo-sub { opacity: 0.6; }
+
+/* Logo hover tooltip */
+.logo-tooltip {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background: rgba(20,20,24,0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 16px 20px;
+  width: 320px;
+  white-space: normal;
+  z-index: 200;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+}
+.logo:hover .logo-tooltip { display: block; }
+.tooltip-greek {
+  font-size: 1.2rem;
+  color: var(--text-bright);
+  margin-bottom: 6px;
+}
+.tooltip-greek em {
+  font-size: 0.85rem;
+  font-style: italic;
+  opacity: 0.6;
+}
+.tooltip-meaning {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+.tooltip-acro {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+.tooltip-acro b {
+  color: var(--accent);
+  font-weight: 700;
+  margin-right: 1px;
+}
+
+/* About page */
+.about-page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.about-page h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 4px;
+}
+.about-page .about-greek {
+  font-size: 1.3rem;
+  color: var(--text-dim);
+  font-style: italic;
+  margin-bottom: 24px;
+}
+.about-page .about-subtitle {
+  font-size: 1rem;
+  color: var(--accent);
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+.about-page h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin: 32px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+.about-page p {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+.about-page .acro-table {
+  width: 100%;
+  margin: 16px 0;
+}
+.about-page .acro-table td {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  color: var(--text-mid);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.about-page .acro-table td:first-child {
+  font-weight: 700;
+  color: var(--accent);
+  width: 30px;
+  font-size: 1rem;
+}
+.about-page .acro-table td:nth-child(2) {
+  color: var(--text-bright);
+  font-weight: 600;
+}
+.about-page .layers {
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+  padding: 16px;
+  line-height: 1.8;
+  overflow-x: auto;
+}
+.about-page .about-enter {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 28px;
+  background: var(--accent);
+  color: #000;
+  font-weight: 700;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+.about-page .about-enter:hover { opacity: 0.85; }
 
 #breadcrumb {
   display: flex;
   align-items: center;
   gap: 4px;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: var(--text-dim);
   overflow-x: auto;
   white-space: nowrap;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-#breadcrumb:empty { display: none; }
 #breadcrumb::-webkit-scrollbar { display: none; }
 #breadcrumb a { color: var(--text-dim); }
 #breadcrumb a:hover { color: var(--text); text-decoration: none; }
 #breadcrumb .sep { opacity: 0.4; margin: 0 2px; }
 #breadcrumb .current { color: var(--text); font-weight: 500; }
-
-/* === NAMESPACE PILLS === */
-
-.ns-pills {
-  display: flex;
-  gap: 8px;
-  padding: 0 16px 10px;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-.ns-pills::-webkit-scrollbar { display: none; }
-.ns-pills:empty { display: none; }
-
-.pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  color: var(--text-dim);
-  cursor: pointer;
-  white-space: nowrap;
-  transition: all var(--transition);
-}
-.pill:hover { border-color: var(--border-hover); color: var(--text); }
-.pill.active { background: rgba(107,163,214,0.15); border-color: var(--accent); color: var(--accent); }
-.pill .dot { width: 6px; height: 6px; border-radius: 50%; }
 
 /* === MAIN CONTENT === */
 
@@ -229,6 +338,16 @@ main {
   background: var(--border);
 }
 
+.subsection-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 16px 0 8px;
+  opacity: 0.7;
+}
+
 /* === TYPE GROUP === */
 
 .type-group-header {
@@ -265,8 +384,6 @@ main {
   display: inline-block;
   flex-shrink: 0;
 }
-
-/* Compact confidence badge (cards, lists) */
 .cred-badge-compact {
   display: inline-flex;
   align-items: center;
@@ -279,8 +396,6 @@ main {
   padding: 1px 8px 1px 5px;
   white-space: nowrap;
 }
-
-/* Full labeled confidence badge (entity detail) */
 .cred-badge {
   display: inline-flex;
   align-items: center;
@@ -295,14 +410,12 @@ main {
   font-weight: 500;
 }
 
-/* credibility colors are set inline from namespace config */
-
 .badge-disputed {
   font-size: 0.65rem;
   padding: 1px 5px;
   border-radius: 3px;
   background: rgba(217,74,74,0.2);
-  color: var(--c-disputed);
+  color: #D94A4A;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -505,7 +618,7 @@ main {
   font-size: 0.9rem;
 }
 
-/* === NAMESPACE CARD (home) === */
+/* === NAMESPACE CARD === */
 
 .ns-card {
   text-align: center;
@@ -515,10 +628,33 @@ main {
 .ns-card .ns-name { font-weight: 600; font-size: 0.95rem; color: var(--text-bright); }
 .ns-card .ns-count { font-size: 0.8rem; color: var(--text-dim); margin-top: 2px; }
 
-/* === NARRATIVE CARD (home) === */
+/* === NARRATIVE CARD === */
 
 .narrative-card {
   padding: 16px;
+}
+.narrative-card .nar-path {
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+.narrative-card .nar-path-link {
+  color: var(--text-dim);
+  text-decoration: none;
+  padding: 1px 4px;
+  border-radius: 3px;
+  transition: color 0.15s, background 0.15s;
+}
+.narrative-card .nar-path-link:hover {
+  color: var(--text-bright);
+  background: rgba(255,255,255,0.08);
+}
+.narrative-card .nar-path-sep {
+  color: rgba(255,255,255,0.2);
+  font-size: 0.65rem;
 }
 .narrative-card .nar-title { font-size: 1.1rem; font-weight: 700; color: var(--text-bright); }
 .narrative-card .nar-meta { font-size: 0.8rem; color: var(--text-dim); margin-top: 4px; }
@@ -546,9 +682,7 @@ main {
 
 @media (min-width: 640px) {
   main { padding: 24px 24px 60px; }
-  .header-top { padding: 12px 24px 0; }
-  .header-breadcrumb { padding: 4px 24px 8px; }
-  .ns-pills { padding: 0 24px 10px; }
+  .header-inner { padding: 12px 24px; }
   .entity-name { font-size: 1.75rem; }
   .graph-container.full { height: 70vh; }
 }
@@ -621,6 +755,12 @@ main {
   font-size: 0.8rem;
   color: var(--text);
   flex-wrap: wrap;
+}
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 .legend-type-name { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .legend-count {
