@@ -1,10 +1,21 @@
 # Creating NOESIS Seed Files
 
+> **Recommended:** Use the **Seed Factory** (`seed-factory/`) to create seeds from YAML.
+> It handles SQL escaping, validation, and generates the `.js` files for you.
+> See [`seed-factory/README.md`](../seed-factory/README.md) for the YAML-driven workflow.
+>
+> The manual approach below still works but is more error-prone.
+
+---
+
 A seed file populates the database with a knowledge graph about a topic. This guide tells you exactly how to make one.
 
 ## Overview
 
-A seed is a single JavaScript file in `api/scripts/seeds/` that exports a function. The function receives a PostgreSQL client and inserts data into 4 tables:
+A seed is a single JavaScript file in `api/scripts/seeds/` that exports a function.
+Seeds are **auto-discovered** — any `.js` file in `api/scripts/seeds/` is picked up by `init-db.js` automatically (no registration needed).
+
+The function receives a PostgreSQL client and inserts data into 4 tables:
 
 1. **namespace_configs** — Define your domain (custom types, colors)
 2. **entities** — The nodes in your graph (people, events, facts, etc.)
@@ -89,18 +100,9 @@ module.exports = async function seed(client) {
 
 ## Registering Your Seed
 
-Open `api/scripts/init-db.js` and add your seed to the `AVAILABLE_SEEDS` map:
+Seeds are **auto-discovered** from `api/scripts/seeds/`. Just drop your `.js` file there — no registration needed.
 
-```javascript
-const AVAILABLE_SEEDS = {
-  'feb2026-rally': './seeds/feb2026-rally.js',
-  'noesis-system': './seeds/noesis-system.js',
-  'battle-of-harrisburg': './seeds/battle-of-harrisburg.js',
-  'my-seed-name': './seeds/my-seed-name.js',  // ← add this
-};
-```
-
-Then set the `SEEDS` environment variable to control which seeds load:
+Use the `SEEDS` environment variable to control which seeds load:
 
 ```bash
 SEEDS=all                              # everything (default)
