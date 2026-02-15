@@ -156,9 +156,9 @@
   }
 
   function nsBreadcrumb(ns) {
-    // Root page: no breadcrumb (logo already shows ν NOESIS)
-    if (!ns || ns === 'default') return [];
-    const items = [{ label: 'ν NOESIS', href: '#/' }];
+    // Root page: just "Home"
+    if (!ns || ns === 'default') return [{ label: 'Home', href: '#/' }];
+    const items = [{ label: 'Home', href: '#/' }];
     const parts = ns.split('.');
     for (let i = 0; i < parts.length; i++) {
       const path = parts.slice(0, i + 1).join('.');
@@ -711,7 +711,7 @@
   // === VIEW: KEY RESOLUTION ===
   async function viewKey(key) {
     setBreadcrumb([
-      { label: 'ν NOESIS', href: '#/' },
+      { label: 'Home', href: '#/' },
       { label: `🔑 ${key}`, href: `#/key/${encodeURIComponent(key)}` },
     ]);
 
@@ -737,7 +737,7 @@
   // === VIEW: ABOUT ===
   function viewAbout() {
     setBreadcrumb([
-      { label: 'ν NOESIS', href: '#/' },
+      { label: 'Home', href: '#/' },
       { label: 'About', href: '#/about' },
     ]);
 
