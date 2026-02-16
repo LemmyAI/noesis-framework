@@ -1,0 +1,282 @@
+seed:
+  name: news-week8-day-2026-02-16-hour-06
+  label: Daily News — 2026-02-16 06:00 (Week 8, 2026)
+  namespace: news.week8.day-2026-02-16
+  description: "Auto-gathered news: 14 stories, 2026-02-16 to 2026-02-16"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week8
+    extends: news
+  - namespace: news.week8.day-2026-02-16
+    extends: news.week8
+entities:
+  - id: its-never-too-late-savannah-guthrie-2026-02-16
+    type: Event
+    name: "'It's never too late': Savannah Guthrie's new plea for mother's release as FBI analyses glove"
+    category: geopolitics
+    description: The FBI says it recovered a DNA sample from the glove, which was found in a field a few miles from Guthrie's home.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-16T04:53:41.000Z"
+      precision: day
+  - id: iran-must-abandon-enriched-uranium-and-n-2026-02-16
+    type: Claim
+    name: Iran must abandon enriched uranium and not produce more, Netanyahu says
+    category: geopolitics
+    description: The Israeli PM's comments come ahead of Iran-US talks in Geneva on Tuesday to discuss a nuclear deal.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-16T04:26:53.000Z"
+      precision: day
+  - id: bytedance-to-curb-ai-video-app-after-dis-2026-02-16
+    type: Event
+    name: ByteDance to curb AI video app after Disney legal threat
+    category: geopolitics
+    description: >-
+      Videos featuring Spider-Man and other characters which are Disney's intellectual property have gone viral since
+      Seedance's update.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-16T03:47:49.000Z"
+      precision: day
+  - id: trump-has-big-plans-for-venezuelas-oil-2026-02-16
+    type: Event
+    name: Trump has big plans for Venezuela's oil but are they feasible?
+    category: finance
+    description: The US president wants American energy firms to start extracting the crude but they are reluctant.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-16T00:29:21.000Z"
+      precision: day
+  - id: bedding-firm-backs-down-on-swift-home-2026-02-16
+    type: Event
+    name: Bedding firm backs down on 'Swift Home' trademark after Taylor Swift appeal
+    category: finance
+    description: Swift’s team had flagged similarities between her trademark and the company’s contested design.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-16T01:44:55.000Z"
+      precision: day
+  - id: how-an-undercover-cop-foiled-an-is-plot-2026-02-16
+    type: Event
+    name: How an undercover cop foiled an IS plot to massacre Britain’s Jews – podcast
+    category: geopolitics
+    description: >-
+      <p>The Guardian’s community affairs correspondent, <strong>Chris Osuh</strong>,<strong> </strong>reports on the
+      plot by two IS terrorists to massacre Jews in Manchester, and how it was thwarted by an undercover
+      sting</p><p>Walid Saadaoui had once worked as a holiday entertainer, organising dance sho
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-16T03:00:39.000Z"
+      precision: day
+  - id: us-forces-board-tanker-in-indian-ocean-t-2026-02-16
+    type: Event
+    name: US forces board tanker in Indian Ocean that fled blockade on Venezuela
+    category: geopolitics
+    description: >-
+      Panamanian-flagged Veronica III left Venezuela on the same day as the US capture of President Nicolas Maduro in
+      January.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-16T05:12:27.000Z"
+      precision: day
+  - id: netanyahu-calls-for-dismantling-iran-s-n-2026-02-16
+    type: Event
+    name: Netanyahu calls for dismantling Iran’s nuclear programme in any US deal
+    category: geopolitics
+    description: Israeli prime minister details demands on Iran as US prepares to hold second round of nuclear talks in Geneva.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-16T04:22:53.000Z"
+      precision: day
+  - id: israel-s-move-to-register-land-systemat-2026-02-16
+    type: Event
+    name: Israel’s move to register land ‘systematises dispossession’ of Palestinians
+    category: geopolitics
+    description: >-
+      Israeli rights groups say land registration in West Bank will further Israel&#039;s aim of annexing Palestinian
+      territory.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-16T04:00:05.000Z"
+      precision: day
+  - id: russia-ukraine-war-list-of-key-events-2026-02-16
+    type: Event
+    name: "Russia-Ukraine war: List of key events, day 1,453"
+    category: geopolitics
+    description: These are the key developments from day 1,453 of Russia’s war on Ukraine.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-16T01:35:27.000Z"
+      precision: day
+  - id: is-the-stock-market-open-monday-for-pres-2026-02-16
+    type: Event
+    name: Is the stock market open Monday for Presidents Day? Will USPS, FedEx and UPS make deliveries?
+    category: finance.markets
+    description: >-
+      Here&#x2019;s how trading hours and other services will be affected on the federal holiday, which falls on Monday,
+      Feb. 16, this year.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-16T05:01:00.000Z"
+      precision: day
+  - id: can-the-u-k-still-save-its-oil-and-gas-2026-02-16
+    type: Event
+    name: Can the U.K. Still Save Its Oil and Gas Industry?
+    category: finance.energy
+    description: >-
+      When the UK’s government slapped a 25% windfall tax on oil and gas producers in 2022, the industry warned this
+      could be the death knell for local oil and gas production. Four years later, the UK’s oil and gas industry is
+      being described as “irrelevant”. The UK’s oil and gas production has slumped fr
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-16T00:00:00.000Z"
+      precision: day
+  - id: as-ai-data-centers-hit-power-limits-pea-2026-02-16
+    type: Event
+    name: As AI data centers hit power limits, Peak XV backs Indian startup C2i to fix the bottleneck
+    category: technology.ai
+    description: C2i has raised $15 million as it tests a grid-to-GPU approach to reducing power losses in AI data centers.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-16T01:00:00.000Z"
+      precision: day
+  - id: blackstone-backs-neysa-in-up-to-1-2b-fi-2026-02-16
+    type: Event
+    name: Blackstone backs Neysa in up to $1.2B financing as India pushes to build domestic AI infrastructure
+    category: technology.ai
+    description: Neysa is targeting deployments of more than 20,000 GPUs over time as demand for local AI compute accelerates.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-16T00:30:00.000Z"
+      precision: day
+sources:
+  - entity: its-never-too-late-savannah-guthrie-2026-02-16
+    type: article
+    title: "'It's never too late': Savannah Guthrie's new plea for mother's release as FBI analyses glove"
+    url: https://www.bbc.com/news/articles/c5yrv2g16e2o
+    excerpt: The FBI says it recovered a DNA sample from the glove, which was found in a field a few miles from Guthrie's home.
+    source_name: BBC News
+    published: "2026-02-16T04:53:41.000Z"
+  - entity: iran-must-abandon-enriched-uranium-and-n-2026-02-16
+    type: article
+    title: Iran must abandon enriched uranium and not produce more, Netanyahu says
+    url: https://www.bbc.com/news/articles/cly191kz1lpo
+    excerpt: The Israeli PM's comments come ahead of Iran-US talks in Geneva on Tuesday to discuss a nuclear deal.
+    source_name: BBC News
+    published: "2026-02-16T04:26:53.000Z"
+  - entity: bytedance-to-curb-ai-video-app-after-dis-2026-02-16
+    type: article
+    title: ByteDance to curb AI video app after Disney legal threat
+    url: https://www.bbc.com/news/articles/c93wq6xqgy1o
+    excerpt: >-
+      Videos featuring Spider-Man and other characters which are Disney's intellectual property have gone viral since
+      Seedance's update.
+    source_name: BBC News
+    published: "2026-02-16T03:47:49.000Z"
+  - entity: trump-has-big-plans-for-venezuelas-oil-2026-02-16
+    type: article
+    title: Trump has big plans for Venezuela's oil but are they feasible?
+    url: https://www.bbc.com/news/articles/c4gjx1j1nkjo
+    excerpt: The US president wants American energy firms to start extracting the crude but they are reluctant.
+    source_name: BBC Business
+    published: "2026-02-16T00:29:21.000Z"
+  - entity: bedding-firm-backs-down-on-swift-home-2026-02-16
+    type: article
+    title: Bedding firm backs down on 'Swift Home' trademark after Taylor Swift appeal
+    url: https://www.bbc.com/news/articles/crm87109l3wo
+    excerpt: Swift’s team had flagged similarities between her trademark and the company’s contested design.
+    source_name: BBC Business
+    published: "2026-02-16T01:44:55.000Z"
+  - entity: how-an-undercover-cop-foiled-an-is-plot-2026-02-16
+    type: article
+    title: How an undercover cop foiled an IS plot to massacre Britain’s Jews – podcast
+    url: >-
+      https://www.theguardian.com/news/audio/2026/feb/16/how-an-undercover-cop-foiled-an-is-plot-to-massacre-britains-jews-podcast
+    excerpt: >-
+      <p>The Guardian’s community affairs correspondent, <strong>Chris Osuh</strong>,<strong> </strong>reports on the
+      plot by two IS terrorists to massacre Jews in Manchester, and how it was thwarted by an 
+    source_name: The Guardian
+    published: "2026-02-16T03:00:39.000Z"
+  - entity: us-forces-board-tanker-in-indian-ocean-t-2026-02-16
+    type: article
+    title: US forces board tanker in Indian Ocean that fled blockade on Venezuela
+    url: https://www.aljazeera.com/news/2026/2/16/us-forces-board-tanker-in-indian-ocean-that-fled-blockade-on-venezuela
+    excerpt: >-
+      Panamanian-flagged Veronica III left Venezuela on the same day as the US capture of President Nicolas Maduro in
+      January.
+    source_name: Al Jazeera
+    published: "2026-02-16T05:12:27.000Z"
+  - entity: netanyahu-calls-for-dismantling-iran-s-n-2026-02-16
+    type: article
+    title: Netanyahu calls for dismantling Iran’s nuclear programme in any US deal
+    url: https://www.aljazeera.com/news/2026/2/16/netanyahu-calls-for-dismantling-irans-nuclear-programme-in-any-us-deal
+    excerpt: Israeli prime minister details demands on Iran as US prepares to hold second round of nuclear talks in Geneva.
+    source_name: Al Jazeera
+    published: "2026-02-16T04:22:53.000Z"
+  - entity: israel-s-move-to-register-land-systemat-2026-02-16
+    type: article
+    title: Israel’s move to register land ‘systematises dispossession’ of Palestinians
+    url: https://www.aljazeera.com/news/2026/2/16/israels-move-to-register-land-systematises-dispossession-of-palestinians
+    excerpt: >-
+      Israeli rights groups say land registration in West Bank will further Israel&#039;s aim of annexing Palestinian
+      territory.
+    source_name: Al Jazeera
+    published: "2026-02-16T04:00:05.000Z"
+  - entity: russia-ukraine-war-list-of-key-events-2026-02-16
+    type: article
+    title: "Russia-Ukraine war: List of key events, day 1,453"
+    url: https://www.aljazeera.com/news/2026/2/16/russia-ukraine-war-list-of-key-events-day-1453
+    excerpt: These are the key developments from day 1,453 of Russia’s war on Ukraine.
+    source_name: Al Jazeera
+    published: "2026-02-16T01:35:27.000Z"
+  - entity: is-the-stock-market-open-monday-for-pres-2026-02-16
+    type: article
+    title: Is the stock market open Monday for Presidents Day? Will USPS, FedEx and UPS make deliveries?
+    url: >-
+      https://www.marketwatch.com/story/is-the-stock-market-open-on-presidents-day-will-usps-fedex-and-ups-make-deliveries-31d15912?mod=mw_rss_topstories
+    excerpt: >-
+      Here&#x2019;s how trading hours and other services will be affected on the federal holiday, which falls on Monday,
+      Feb. 16, this year.
+    source_name: MarketWatch
+    published: "2026-02-16T05:01:00.000Z"
+  - entity: can-the-u-k-still-save-its-oil-and-gas-2026-02-16
+    type: article
+    title: Can the U.K. Still Save Its Oil and Gas Industry?
+    url: https://oilprice.com/Energy/Energy-General/Can-the-UK-Still-Save-Its-Oil-and-Gas-Industry.html
+    excerpt: >-
+      When the UK’s government slapped a 25% windfall tax on oil and gas producers in 2022, the industry warned this
+      could be the death knell for local oil and gas production. Four years later, the UK’s oil
+    source_name: OilPrice.com
+    published: "2026-02-16T00:00:00.000Z"
+  - entity: as-ai-data-centers-hit-power-limits-pea-2026-02-16
+    type: article
+    title: As AI data centers hit power limits, Peak XV backs Indian startup C2i to fix the bottleneck
+    url: >-
+      https://techcrunch.com/2026/02/15/as-ai-data-centers-hit-power-limits-peak-xv-backs-indian-startup-c2i-to-fix-the-bottleneck/
+    excerpt: C2i has raised $15 million as it tests a grid-to-GPU approach to reducing power losses in AI data centers.
+    source_name: TechCrunch
+    published: "2026-02-16T01:00:00.000Z"
+  - entity: blackstone-backs-neysa-in-up-to-1-2b-fi-2026-02-16
+    type: article
+    title: Blackstone backs Neysa in up to $1.2B financing as India pushes to build domestic AI infrastructure
+    url: >-
+      https://techcrunch.com/2026/02/15/blackstone-backs-neysa-in-up-to-1-2b-financing-as-india-pushes-to-build-domestic-ai-compute/
+    excerpt: Neysa is targeting deployments of more than 20,000 GPUs over time as demand for local AI compute accelerates.
+    source_name: TechCrunch
+    published: "2026-02-16T00:30:00.000Z"
