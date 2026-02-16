@@ -1,0 +1,939 @@
+seed:
+  name: relations-2026-02-16-hour-18
+  label: Auto-generated Relations (2026-02-16 18:00)
+  namespace: relations
+  description: 100 relations inferred by connect job
+namespace_chain:
+  - namespace: relations
+    extends: default
+relations:
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: blackrocks-digital-assets-head-leverag-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: russias-daily-crypto-turnover-is-over-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: metaplanet-operating-profit-to-rise-81-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: binances-cz-echoes-consensus-panelists-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: ether-steadies-after-540-million-sell-w-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: hive-riot-earnings-reports-fed-rate-de-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: hong-kong-is-trying-to-build-up-its-cryp-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: crypto-market-drowns-in-red-as-bitcoin-f-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: u-s-natural-gas-prices-continue-to-slid-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: march'
+    metadata:
+      shared_entities:
+        - march
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: wall-street-giant-apollo-deepens-crypto-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: european-gas-prices-slide-as-mild-weathe-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu'
+    metadata:
+      shared_entities:
+        - eu
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: comp-key
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: trump-linked-truth-social-seeks-sec-appr-2026-02-13
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: galaxy-s-steve-kurz-sees-great-converge-2026-02-14
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: crypto-group-counters-wall-street-banker-2026-02-13
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: crypto-investors-who-don-x2019-t-fill-o-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: u-s-based-defi-group-urges-uk-fca-to-an-2026-02-13
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: elon-musks-x-to-launch-crypto-and-stock-2026-02-14
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: from-wall-street-to-web3-this-is-crypto-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: russia-rejects-claims-of-poisoning-naval-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu'
+    metadata:
+      shared_entities:
+        - eu
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: 2-predictions-for-crypto-treasury-firms-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: rubio-says-us-and-europe-belong-togethe-2026-02-14
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu'
+    metadata:
+      shared_entities:
+        - eu
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: un-staffers-back-francesca-albanese-con-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu, european'
+    metadata:
+      shared_entities:
+        - eu
+        - european
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: europe-s-growing-fight-over-israeli-good-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu'
+    metadata:
+      shared_entities:
+        - eu
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: crypto-mining-can-help-energy-volatility-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: the-seeds-of-the-dramatic-sell-off-in-ai-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu'
+    metadata:
+      shared_entities:
+        - eu
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: truist-lifts-price-target-on-weyerhaeuse-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu'
+    metadata:
+      shared_entities:
+        - eu
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: saudi-oil-exports-to-china-set-to-soar-a-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: march'
+    metadata:
+      shared_entities:
+        - march
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: marco-rubio-wants-to-build-a-new-wester-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu'
+    metadata:
+      shared_entities:
+        - eu
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: optima-health-helium-one-buccaneer-ene-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu'
+    metadata:
+      shared_entities:
+        - eu
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: the-great-rotation-why-this-fund-manage-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu'
+    metadata:
+      shared_entities:
+        - eu
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: trumps-new-world-order-has-become-real-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu, european'
+    metadata:
+      shared_entities:
+        - eu
+        - european
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: graphic-europes-earnings-gain-pace-whi-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu'
+    metadata:
+      shared_entities:
+        - eu
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: us-not-disputing-european-assessment-o-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu, european'
+    metadata:
+      shared_entities:
+        - eu
+        - european
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: rolls-royce-is-leading-europe-039-s-sma-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu'
+    metadata:
+      shared_entities:
+        - eu
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: iran-s-araghchi-slams-european-powers-fo-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu, european'
+    metadata:
+      shared_entities:
+        - eu
+        - european
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: filmmaker-explains-why-he-backs-francesc-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu'
+    metadata:
+      shared_entities:
+        - eu
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: europeans-say-russia-poisoned-dissident-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu'
+    metadata:
+      shared_entities:
+        - eu
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: argentina-s-shale-boom-is-rewriting-sout-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu'
+    metadata:
+      shared_entities:
+        - eu
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: nothing-says-love-like-chemicals-vale-2026-02-14
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu'
+    metadata:
+      shared_entities:
+        - eu
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: heathrow-not-crowded-but-people-walk-in-2026-02-13
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu'
+    metadata:
+      shared_entities:
+        - eu
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: europe-s-israel-policy-faces-a-democrati-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu'
+    metadata:
+      shared_entities:
+        - eu
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: chevron-led-joint-venture-signs-major-ga-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu, european'
+    metadata:
+      shared_entities:
+        - eu
+        - european
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: real-madrid-play-benfica-in-champions-le-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu'
+    metadata:
+      shared_entities:
+        - eu
+      source: connect_job
+  - from: okx-snags-european-payments-license-for-2026-02-16
+    to: the-seeds-of-the-dramatic-selloff-in-ai-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: eu'
+    metadata:
+      shared_entities:
+        - eu
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: okx-snags-european-payments-license-for-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: xrp-outruns-bitcoin-ether-after-investo-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: bitcoin'
+    metadata:
+      shared_entities:
+        - bitcoin
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: russias-daily-crypto-turnover-is-over-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: metaplanet-operating-profit-to-rise-81-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: bitcoin, crypto'
+    metadata:
+      shared_entities:
+        - bitcoin
+        - crypto
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: strategy-says-it-can-survive-even-if-bit-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: bitcoin'
+    metadata:
+      shared_entities:
+        - bitcoin
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: binances-cz-echoes-consensus-panelists-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: ether-steadies-after-540-million-sell-w-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: hive-riot-earnings-reports-fed-rate-de-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: hong-kong-is-trying-to-build-up-its-cryp-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: crypto-market-drowns-in-red-as-bitcoin-f-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: bitcoin, crypto'
+    metadata:
+      shared_entities:
+        - bitcoin
+        - crypto
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: wall-street-remains-bullish-on-bitcoin-w-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: bitcoin'
+    metadata:
+      shared_entities:
+        - bitcoin
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: wall-street-giant-apollo-deepens-crypto-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: comp-key
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: bitcoin, crypto'
+    metadata:
+      shared_entities:
+        - bitcoin
+        - crypto
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: bitcoin-claws-back-to-70-000-on-cooling-2026-02-14
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: bitcoin'
+    metadata:
+      shared_entities:
+        - bitcoin
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: trump-linked-truth-social-seeks-sec-appr-2026-02-13
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: galaxy-s-steve-kurz-sees-great-converge-2026-02-14
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: bitcoin-could-fall-to-10-000-as-u-s-re-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: bitcoin'
+    metadata:
+      shared_entities:
+        - bitcoin
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: crypto-group-counters-wall-street-banker-2026-02-13
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: harvard-cuts-bitcoin-exposure-by-20-ad-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: bitcoin'
+    metadata:
+      shared_entities:
+        - bitcoin
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: crypto-investors-who-don-x2019-t-fill-o-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: u-s-based-defi-group-urges-uk-fca-to-an-2026-02-13
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: elon-musks-x-to-launch-crypto-and-stock-2026-02-14
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: from-wall-street-to-web3-this-is-crypto-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: 2-predictions-for-crypto-treasury-firms-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: blackrocks-digital-assets-head-leverag-2026-02-15
+    to: crypto-mining-can-help-energy-volatility-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: crypto'
+    metadata:
+      shared_entities:
+        - crypto
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: thousands-of-western-nationals-fought-is-2026-02-15
+    type: co_occurrence
+    confidence: high
+    context: 'Shared: israel, gaza, palestinian'
+    metadata:
+      shared_entities:
+        - israel
+        - gaza
+        - palestinian
+        - israeli
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: rights-groups-condemn-israeli-plan-for-2026-02-16
+    type: co_occurrence
+    confidence: high
+    context: 'Shared: israel, palestinian, israeli'
+    metadata:
+      shared_entities:
+        - israel
+        - palestinian
+        - israeli
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: rats-run-over-our-faces-gaza-s-displa-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: gaza, palestinian'
+    metadata:
+      shared_entities:
+        - gaza
+        - palestinian
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: gaza-mother-s-grim-ordeal-a-search-for-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: israel, gaza'
+    metadata:
+      shared_entities:
+        - israel
+        - gaza
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: 15-day-old-baby-loses-father-in-israeli-2026-02-16
+    type: co_occurrence
+    confidence: high
+    context: 'Shared: israel, gaza, israeli'
+    metadata:
+      shared_entities:
+        - israel
+        - gaza
+        - israeli
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: iran-must-abandon-enriched-uranium-and-n-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: israel'
+    metadata:
+      shared_entities:
+        - israel
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: gaza-author-and-analyst-jehad-abusalim-o-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: gaza'
+    metadata:
+      shared_entities:
+        - gaza
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: israel-approves-proposal-to-register-wes-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: israel'
+    metadata:
+      shared_entities:
+        - israel
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: israel-to-restart-land-registration-in-w-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: israel, israeli'
+    metadata:
+      shared_entities:
+        - israel
+        - israeli
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: at-least-11-palestinians-killed-in-israe-2026-02-15
+    type: co_occurrence
+    confidence: high
+    context: 'Shared: israel, gaza, palestinian'
+    metadata:
+      shared_entities:
+        - israel
+        - gaza
+        - palestinian
+        - israeli
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: dangerous-escalation-nations-condemn-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: israel'
+    metadata:
+      shared_entities:
+        - israel
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: indonesia-s-gaza-gamble-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: gaza'
+    metadata:
+      shared_entities:
+        - gaza
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: gaza-s-nasser-hospital-slams-msf-s-unsu-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: gaza'
+    metadata:
+      shared_entities:
+        - gaza
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: un-staffers-back-francesca-albanese-con-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: israel, gaza'
+    metadata:
+      shared_entities:
+        - israel
+        - gaza
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: kyrie-irving-wears-press-shirt-for-gaza-2026-02-16
+    type: co_occurrence
+    confidence: high
+    context: 'Shared: israel, gaza, israeli'
+    metadata:
+      shared_entities:
+        - israel
+        - gaza
+        - israeli
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: europe-s-growing-fight-over-israeli-good-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: israel, israeli'
+    metadata:
+      shared_entities:
+        - israel
+        - israeli
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: israel-s-move-to-register-land-systemat-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: israel, palestinian'
+    metadata:
+      shared_entities:
+        - israel
+        - palestinian
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: the-palestinian-cause-cannot-speak-only-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: palestinian'
+    metadata:
+      shared_entities:
+        - palestinian
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: israeli-police-clash-with-ultra-orthodox-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: israel, israeli'
+    metadata:
+      shared_entities:
+        - israel
+        - israeli
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: female-israeli-soldiers-rescued-after-be-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: israel'
+    metadata:
+      shared_entities:
+        - israel
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: netanyahu-calls-for-dismantling-iran-s-n-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: israel, israeli'
+    metadata:
+      shared_entities:
+        - israel
+        - israeli
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: europe-s-israel-policy-faces-a-democrati-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: israel'
+    metadata:
+      shared_entities:
+        - israel
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: shipping-industry-set-to-consolidate-as-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: israel, israeli'
+    metadata:
+      shared_entities:
+        - israel
+        - israeli
+      source: connect_job
+  - from: eleven-killed-in-israeli-strikes-on-gaza-2026-02-15
+    to: how-shipping-company-msc-facilitates-tra-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: israel, israeli'
+    metadata:
+      shared_entities:
+        - israel
+        - israeli
+      source: connect_job
+  - from: xrp-outruns-bitcoin-ether-after-investo-2026-02-15
+    to: blackrocks-digital-assets-head-leverag-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: bitcoin'
+    metadata:
+      shared_entities:
+        - bitcoin
+      source: connect_job
+  - from: xrp-outruns-bitcoin-ether-after-investo-2026-02-15
+    to: metaplanet-operating-profit-to-rise-81-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: bitcoin'
+    metadata:
+      shared_entities:
+        - bitcoin
+      source: connect_job
+  - from: xrp-outruns-bitcoin-ether-after-investo-2026-02-15
+    to: strategy-says-it-can-survive-even-if-bit-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: bitcoin'
+    metadata:
+      shared_entities:
+        - bitcoin
+      source: connect_job
+  - from: xrp-outruns-bitcoin-ether-after-investo-2026-02-15
+    to: crypto-market-drowns-in-red-as-bitcoin-f-2026-02-16
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: bitcoin'
+    metadata:
+      shared_entities:
+        - bitcoin
+      source: connect_job
+  - from: xrp-outruns-bitcoin-ether-after-investo-2026-02-15
+    to: wall-street-remains-bullish-on-bitcoin-w-2026-02-15
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: bitcoin'
+    metadata:
+      shared_entities:
+        - bitcoin
+      source: connect_job
+  - from: xrp-outruns-bitcoin-ether-after-investo-2026-02-15
+    to: comp-key
+    type: co_occurrence
+    confidence: medium
+    context: 'Shared: bitcoin'
+    metadata:
+      shared_entities:
+        - bitcoin
+      source: connect_job
