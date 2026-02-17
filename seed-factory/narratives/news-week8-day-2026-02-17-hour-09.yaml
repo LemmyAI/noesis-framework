@@ -1,0 +1,587 @@
+seed:
+  name: news-week8-day-2026-02-17-hour-09
+  label: Daily News — 2026-02-17 09:00 (Week 8, 2026)
+  namespace: news.week8.day-2026-02-17
+  description: "Auto-gathered news: 29 stories, 2026-02-17 to 2026-02-17"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week8
+    extends: news
+  - namespace: news.week8.day-2026-02-17
+    extends: news.week8
+entities:
+  - id: hillary-clinton-accuses-trump-administra-2026-02-17
+    type: Event
+    name: Hillary Clinton accuses Trump administration of Epstein files 'cover-up' in BBC interview
+    category: geopolitics
+    description: >-
+      "Get the files out. They are slow-walking it," the former US secretary of state says. The White House says it has
+      done "more for the victims than Democrats ever did".
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T07:59:55.000Z"
+      precision: day
+  - id: trump-says-he-will-be-indirectly-invol-2026-02-17
+    type: Claim
+    name: Trump says he will be 'indirectly' involved in Iran nuclear talks
+    category: geopolitics
+    description: Speaking ahead of negotiations on Tuesday, the US president says he believes Iran wants to make a deal.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T05:14:21.000Z"
+      precision: day
+  - id: facing-a-demographic-catastrophe-ukrain-2026-02-17
+    type: Event
+    name: Facing a demographic catastrophe, Ukraine is paying for troops to freeze their sperm
+    category: geopolitics
+    description: The law funds troops who want to freeze their eggs or their sperm, as Ukraine's population plummets.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T01:10:57.000Z"
+      precision: day
+  - id: calculator-how-will-freeze-on-tax-thres-2026-02-17
+    type: Event
+    name: "Calculator: How will freeze on tax thresholds hit your take-home pay?"
+    category: finance
+    description: Wages have been rising faster than prices but you could pay more tax because of frozen thresholds.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T07:10:15.000Z"
+      precision: day
+  - id: royal-mail-given-deadline-to-respond-to-2026-02-17
+    type: Fact
+    name: Royal Mail given deadline to respond to parcel priority claims
+    category: finance
+    description: The company has been given two weeks to respond to allegations it is prioritising parcels
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T08:29:48.000Z"
+      precision: day
+  - id: hyatt-hotels-chairman-steps-down-over-je-2026-02-17
+    type: Event
+    name: Hyatt Hotels chairman steps down over Jeffrey Epstein ties
+    category: finance
+    description: Billionaire Thomas Pritzker said he had exercised "terrible judgement" in keeping contact with Epstein.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T04:16:40.000Z"
+      precision: day
+  - id: reddits-human-content-wins-amid-the-ai-2026-02-17
+    type: Event
+    name: Reddit's human content wins amid the AI flood
+    category: finance
+    description: Reddit says its human contributors are valued amid an internet awash with AI-generated content.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T00:03:10.000Z"
+      precision: day
+  - id: uk-unemployment-hits-highest-rate-for-ne-2026-02-17
+    type: Event
+    name: UK unemployment hits highest rate for nearly five years
+    category: finance
+    description: It marks the highest rate since the Covid pandemic, official figures show.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T08:18:09.000Z"
+      precision: day
+  - id: the-tech-bros-might-show-more-humility-i-2026-02-17
+    type: Event
+    name: The tech bros might show more humility in Delhi – but will they make AI any safer?
+    category: finance
+    description: As global tech leaders meet Delhi, India hopes to level the playing field for countries outside the US and China.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T00:12:58.000Z"
+      precision: day
+  - id: uk-unemployment-rate-hits-five-year-high-2026-02-17
+    type: Event
+    name: UK unemployment rate hits five-year high of 5.2% as wage growth slows – business live
+    category: finance
+    description: >-
+      <p>Rolling coverage of the latest economic and financial news, including the UK jobs report for October-December
+      2025</p><p><strong>The pound is weakening, as traders anticipate the Bank of England could cut interest rates next
+      month.</strong></p><p>Sterling has fallen by two-thirds of a cent agains
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T08:25:09.000Z"
+      precision: day
+  - id: claims-that-ai-can-help-fix-climate-dism-2026-02-17
+    type: Claim
+    name: Claims that AI can help fix climate dismissed as greenwashing
+    category: finance
+    description: >-
+      <p>Industry using ‘diversionary’ tactics, says analyst, as energy-hungry complex functions such as video
+      generation and deep research proliferate</p><p>Tech companies are conflating traditional artificial intelligence
+      with generative AI when claiming the energy-hungry technology could help avert cli
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T05:00:47.000Z"
+      precision: day
+  - id: imran-khan-s-sister-rejects-pakistan-gov-2026-02-17
+    type: Event
+    name: Imran Khan’s sister rejects Pakistan gov’t claim jailed ex-PM’s vision fine
+    category: geopolitics
+    description: >-
+      Government board says jailed ex-leader&#039;s sight improved since he lost most vision in eye. But his family
+      rejects claim.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T07:36:46.000Z"
+      precision: day
+  - id: russia-ukraine-talks-live-attacks-conti-2026-02-17
+    type: Event
+    name: "Russia-Ukraine talks live: Attacks continue before US-led negotiations"
+    category: geopolitics
+    description: The negotiations follow two rounds of talks held in the United Arab Emirates.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T07:30:00.000Z"
+      precision: day
+  - id: trump-urges-iran-to-make-nuclear-deal-sa-2026-02-17
+    type: Claim
+    name: Trump urges Iran to make nuclear deal saying he’ll be ‘indirectly’ involved
+    category: geopolitics
+    description: US President Donald Trump said he will take part in Tuesday’s talks with Iran from Washington.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T07:29:29.000Z"
+      precision: day
+  - id: philippines-rebukes-china-embassy-over-2026-02-17
+    type: Event
+    name: Philippines rebukes China embassy over ‘coercive’ warning of job losses
+    category: geopolitics
+    description: Diplomatic dispute escalates as Beijing and Manila present competing narratives over the South China Sea.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T07:23:52.000Z"
+      precision: day
+  - id: casualties-reported-in-bomb-blasts-gunf-2026-02-17
+    type: Event
+    name: Casualties reported in bomb blasts, gunfire in Pakistan’s northwest
+    category: geopolitics
+    description: >-
+      Two killed as motorcycle explodes outside police station in Bannu district; several reported killed in blast in
+      Bajaur.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T07:20:49.000Z"
+      precision: day
+  - id: exodus-of-isil-linked-detainees-from-syr-2026-02-17
+    type: Event
+    name: Exodus of ISIL-linked detainees from Syria camp sparks security concerns
+    category: geopolitics
+    description: >-
+      The al-Hol camp population is reported to have dropped by thousands after SDF&#039;s chaotic handover to Syrian
+      government.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T07:10:23.000Z"
+      precision: day
+  - id: barcelona-lose-to-girona-2-1-after-lamin-2026-02-17
+    type: Event
+    name: Barcelona lose to Girona 2-1 after Lamine Yamal’s penalty miss
+    category: geopolitics
+    description: Barca miss a chance to move above Real Madrid in the Spanish league as Catalan neighbours Girona climb to 12th.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T06:45:23.000Z"
+      precision: day
+  - id: incoming-bangladesh-pm-tarique-rahman-l-2026-02-17
+    type: Event
+    name: Incoming Bangladesh PM Tarique Rahman, lawmakers sworn into parliament
+    category: geopolitics
+    description: Lawmakers pledged allegiance to Bangladesh as hundreds of people gathered outside Dhaka&#039;s parliament grounds.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T06:32:31.000Z"
+      precision: day
+  - id: trump-ups-pressure-on-kyiv-as-russia-uk-2026-02-17
+    type: Event
+    name: Trump ups pressure on Kyiv as Russia, Ukraine hold peace talks in Geneva
+    category: geopolitics
+    description: Kremlin says the talks are likely to focus on the issue of Ukrainian territory that Russian wants Kyiv to cede.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T05:35:24.000Z"
+      precision: day
+  - id: waste-piles-up-in-cuba-as-us-imposed-fue-2026-02-17
+    type: Event
+    name: Waste piles up in Cuba as US-imposed fuel blockade halts collection trucks
+    category: geopolitics
+    description: >-
+      Cubans suffer under a fuel blockade as US President Donald Trump calls the Caribbean country a &#039;failed
+      nation&#039;.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T05:18:03.000Z"
+      precision: day
+  - id: defi-protocol-zerolend-shuts-down-after-2026-02-17
+    type: Event
+    name: DeFi protocol ZeroLend shuts down after three years, citing inactive chains and hacks
+    category: finance.crypto
+    description: >-
+      The protocol is shutting down after three years, citing unsustainable economics, thin margins and rising security
+      threats.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T07:19:53.000Z"
+      precision: day
+  - id: bofa-survey-flags-dollar-bearish-bets-at-2026-02-17
+    type: Event
+    name: BofA survey flags dollar bearish bets at over a decade high. Here's what it means for bitcoin
+    category: finance.crypto
+    description: >-
+      BofA's February survey shows investor positioning in the U.S. dollar has fallen to its most negative level since
+      at least early 2012.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T05:43:15.000Z"
+      precision: day
+  - id: gold-prices-tumble-below-5-000-as-chin-2026-02-17
+    type: Event
+    name: Gold prices tumble below $5,000  as China holidays dent support
+    category: finance.markets
+    description: Gold&#x2019;s fragile hold on $5,000 an ounce gave way to selling on Tuesday.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T07:58:00.000Z"
+      precision: day
+  - id: u-s-stock-futures-slump-as-investors-di-2026-02-17
+    type: Event
+    name: U.S. stock futures slump as investors digest ongoing tech selloff
+    category: finance.markets
+    description: U.S. stock futures turned lower Monday night, following another brutal week for tech stocks.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T04:01:00.000Z"
+      precision: day
+  - id: citi-sees-oil-prices-falling-to-60-if-t-2026-02-17
+    type: Event
+    name: Citi Sees Oil Prices Falling to $60 if Trump Secures Iran and Russia Deals
+    category: finance.energy
+    description: "According to Citi analysts, geopolitics will continue to provide support for oil prices in the immediate term, but they may later come under pressure if President Trump’s attempts to clinch a peace deal with Russia and a nuclear deal with Iran succeed.\_ “It is our base case that both Iran and Russia"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T07:37:00.000Z"
+      precision: day
+  - id: australian-energy-major-wins-greenwashin-2026-02-17
+    type: Event
+    name: Australian Energy Major Wins Greenwashing Court Case
+    category: finance.energy
+    description: >-
+      Australia’s Santos has won a court case that was brought against it five years ago by environmentalists, alleging
+      that the company misled its shareholders about its net-zero intentions. A federal judge in Sydney dismissed the
+      case this week, with details about the motives for her decision to be publ
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T06:37:58.000Z"
+      precision: day
+  - id: oil-bears-are-dangerously-underestimatin-2026-02-17
+    type: Event
+    name: Oil Bears Are Dangerously Underestimating Geopolitical Risk
+    category: finance.energy
+    description: >-
+      For decades, oil prices could swing wildly on even the distant prospect of war in the Middle East. With U.S.
+      shale, that changed, leading many to assume that anything short of an oil blockade in the Strait of Hormuz will
+      leave oil markets cold—and such a blockade is highly unlikely. This, however, i
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T01:00:00.000Z"
+      precision: day
+  - id: china-hits-renewable-milestone-but-coal-2026-02-17
+    type: Event
+    name: China Hits Renewable Milestone, But Coal Isn’t Going Anywhere
+    category: finance.energy
+    description: "For the first time ever, China now has more operating power capacity from clean energy sources than capacity running on fossil fuels, thanks to a decade of booming solar and wind installations.\_\_\_\_ China, the undisputed global leader in clean energy investment, has 52% of operating power capacity co"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T00:00:00.000Z"
+      precision: day
+narratives:
+  - name: Ukraine Peace Process
+    steps:
+      - from: facing-a-demographic-catastrophe-ukrain-2026-02-17
+        to: trump-ups-pressure-on-kyiv-as-russia-uk-2026-02-17
+        type: causes
+      - from: trump-ups-pressure-on-kyiv-as-russia-uk-2026-02-17
+        to: russia-ukraine-talks-live-attacks-conti-2026-02-17
+        type: causes
+  - name: Crypto Markets
+    steps:
+      - from: bofa-survey-flags-dollar-bearish-bets-at-2026-02-17
+        to: defi-protocol-zerolend-shuts-down-after-2026-02-17
+        type: causes
+  - name: Energy Markets
+    steps:
+      - from: oil-bears-are-dangerously-underestimatin-2026-02-17
+        to: citi-sees-oil-prices-falling-to-60-if-t-2026-02-17
+        type: causes
+sources:
+  - entity: hillary-clinton-accuses-trump-administra-2026-02-17
+    type: article
+    title: Hillary Clinton accuses Trump administration of Epstein files 'cover-up' in BBC interview
+    url: https://www.bbc.com/news/articles/czx47k34yqxo
+    excerpt: >-
+      "Get the files out. They are slow-walking it," the former US secretary of state says. The White House says it has
+      done "more for the victims than Democrats ever did".
+    source_name: BBC News
+    published: "2026-02-17T07:59:55.000Z"
+  - entity: trump-says-he-will-be-indirectly-invol-2026-02-17
+    type: article
+    title: Trump says he will be 'indirectly' involved in Iran nuclear talks
+    url: https://www.bbc.com/news/articles/cwyknjnd706o
+    excerpt: Speaking ahead of negotiations on Tuesday, the US president says he believes Iran wants to make a deal.
+    source_name: BBC News
+    published: "2026-02-17T05:14:21.000Z"
+  - entity: facing-a-demographic-catastrophe-ukrain-2026-02-17
+    type: article
+    title: Facing a demographic catastrophe, Ukraine is paying for troops to freeze their sperm
+    url: https://www.bbc.com/news/articles/cqxd9549y4xo
+    excerpt: The law funds troops who want to freeze their eggs or their sperm, as Ukraine's population plummets.
+    source_name: BBC News
+    published: "2026-02-17T01:10:57.000Z"
+  - entity: calculator-how-will-freeze-on-tax-thres-2026-02-17
+    type: article
+    title: "Calculator: How will freeze on tax thresholds hit your take-home pay?"
+    url: https://www.bbc.com/news/articles/c99k7djlklyo
+    excerpt: Wages have been rising faster than prices but you could pay more tax because of frozen thresholds.
+    source_name: BBC Business
+    published: "2026-02-17T07:10:15.000Z"
+  - entity: royal-mail-given-deadline-to-respond-to-2026-02-17
+    type: article
+    title: Royal Mail given deadline to respond to parcel priority claims
+    url: https://www.bbc.com/news/articles/cm2xy9x27mvo
+    excerpt: The company has been given two weeks to respond to allegations it is prioritising parcels
+    source_name: BBC Business
+    published: "2026-02-17T08:29:48.000Z"
+  - entity: hyatt-hotels-chairman-steps-down-over-je-2026-02-17
+    type: article
+    title: Hyatt Hotels chairman steps down over Jeffrey Epstein ties
+    url: https://www.bbc.com/news/articles/c93wk4d7x19o
+    excerpt: Billionaire Thomas Pritzker said he had exercised "terrible judgement" in keeping contact with Epstein.
+    source_name: BBC Business
+    published: "2026-02-17T04:16:40.000Z"
+  - entity: reddits-human-content-wins-amid-the-ai-2026-02-17
+    type: article
+    title: Reddit's human content wins amid the AI flood
+    url: https://www.bbc.com/news/articles/c5y4zl0w062o
+    excerpt: Reddit says its human contributors are valued amid an internet awash with AI-generated content.
+    source_name: BBC Business
+    published: "2026-02-17T00:03:10.000Z"
+  - entity: uk-unemployment-hits-highest-rate-for-ne-2026-02-17
+    type: article
+    title: UK unemployment hits highest rate for nearly five years
+    url: https://www.bbc.com/news/articles/c1l7pedyzjeo
+    excerpt: It marks the highest rate since the Covid pandemic, official figures show.
+    source_name: BBC Business
+    published: "2026-02-17T08:18:09.000Z"
+  - entity: the-tech-bros-might-show-more-humility-i-2026-02-17
+    type: article
+    title: The tech bros might show more humility in Delhi – but will they make AI any safer?
+    url: https://www.bbc.com/news/articles/cr5l6gnen72o
+    excerpt: As global tech leaders meet Delhi, India hopes to level the playing field for countries outside the US and China.
+    source_name: BBC Business
+    published: "2026-02-17T00:12:58.000Z"
+  - entity: uk-unemployment-rate-hits-five-year-high-2026-02-17
+    type: article
+    title: UK unemployment rate hits five-year high of 5.2% as wage growth slows – business live
+    url: >-
+      https://www.theguardian.com/business/live/2026/feb/17/uk-unemployment-rate-hits-five-year-high-wage-growth-slows-rachel-reeves-bonds-borrowing-costs-news-updates
+    excerpt: >-
+      <p>Rolling coverage of the latest economic and financial news, including the UK jobs report for October-December
+      2025</p><p><strong>The pound is weakening, as traders anticipate the Bank of England co
+    source_name: The Guardian
+    published: "2026-02-17T08:25:09.000Z"
+  - entity: claims-that-ai-can-help-fix-climate-dism-2026-02-17
+    type: article
+    title: Claims that AI can help fix climate dismissed as greenwashing
+    url: >-
+      https://www.theguardian.com/technology/2026/feb/17/tech-companies-traditional-ai-generative-climate-breakdown-report
+    excerpt: >-
+      <p>Industry using ‘diversionary’ tactics, says analyst, as energy-hungry complex functions such as video
+      generation and deep research proliferate</p><p>Tech companies are conflating traditional artifi
+    source_name: The Guardian
+    published: "2026-02-17T05:00:47.000Z"
+  - entity: imran-khan-s-sister-rejects-pakistan-gov-2026-02-17
+    type: article
+    title: Imran Khan’s sister rejects Pakistan gov’t claim jailed ex-PM’s vision fine
+    url: https://www.aljazeera.com/news/2026/2/17/imran-khans-sister-rejects-pakistan-govt-claim-jailed-ex-pms-vision-fine
+    excerpt: >-
+      Government board says jailed ex-leader&#039;s sight improved since he lost most vision in eye. But his family
+      rejects claim.
+    source_name: Al Jazeera
+    published: "2026-02-17T07:36:46.000Z"
+  - entity: russia-ukraine-talks-live-attacks-conti-2026-02-17
+    type: article
+    title: "Russia-Ukraine talks live: Attacks continue before US-led negotiations"
+    url: >-
+      https://www.aljazeera.com/news/liveblog/2026/2/17/russia-ukraine-talks-live-attacks-continue-before-us-led-negotiations
+    excerpt: The negotiations follow two rounds of talks held in the United Arab Emirates.
+    source_name: Al Jazeera
+    published: "2026-02-17T07:30:00.000Z"
+  - entity: trump-urges-iran-to-make-nuclear-deal-sa-2026-02-17
+    type: article
+    title: Trump urges Iran to make nuclear deal saying he’ll be ‘indirectly’ involved
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/2/17/trump-urges-iran-to-make-nuclear-deal-saying-hell-be-indirectly-involved
+    excerpt: US President Donald Trump said he will take part in Tuesday’s talks with Iran from Washington.
+    source_name: Al Jazeera
+    published: "2026-02-17T07:29:29.000Z"
+  - entity: philippines-rebukes-china-embassy-over-2026-02-17
+    type: article
+    title: Philippines rebukes China embassy over ‘coercive’ warning of job losses
+    url: https://www.aljazeera.com/news/2026/2/17/philippines-rebukes-china-embassy-over-coercive-warning-of-job
+    excerpt: Diplomatic dispute escalates as Beijing and Manila present competing narratives over the South China Sea.
+    source_name: Al Jazeera
+    published: "2026-02-17T07:23:52.000Z"
+  - entity: casualties-reported-in-bomb-blasts-gunf-2026-02-17
+    type: article
+    title: Casualties reported in bomb blasts, gunfire in Pakistan’s northwest
+    url: >-
+      https://www.aljazeera.com/news/2026/2/17/motorcycle-bomb-at-pakistan-police-station-kills-two-wounds-several-report
+    excerpt: >-
+      Two killed as motorcycle explodes outside police station in Bannu district; several reported killed in blast in
+      Bajaur.
+    source_name: Al Jazeera
+    published: "2026-02-17T07:20:49.000Z"
+  - entity: exodus-of-isil-linked-detainees-from-syr-2026-02-17
+    type: article
+    title: Exodus of ISIL-linked detainees from Syria camp sparks security concerns
+    url: https://www.aljazeera.com/news/2026/2/17/exodus-of-isil-linked-detainees-from-syria-camp-sparks-security-concerns
+    excerpt: >-
+      The al-Hol camp population is reported to have dropped by thousands after SDF&#039;s chaotic handover to Syrian
+      government.
+    source_name: Al Jazeera
+    published: "2026-02-17T07:10:23.000Z"
+  - entity: barcelona-lose-to-girona-2-1-after-lamin-2026-02-17
+    type: article
+    title: Barcelona lose to Girona 2-1 after Lamine Yamal’s penalty miss
+    url: https://www.aljazeera.com/sports/2026/2/17/barcelona-lose-to-girona-2-1-after-lamine-yamals-penalty-miss
+    excerpt: Barca miss a chance to move above Real Madrid in the Spanish league as Catalan neighbours Girona climb to 12th.
+    source_name: Al Jazeera
+    published: "2026-02-17T06:45:23.000Z"
+  - entity: incoming-bangladesh-pm-tarique-rahman-l-2026-02-17
+    type: article
+    title: Incoming Bangladesh PM Tarique Rahman, lawmakers sworn into parliament
+    url: https://www.aljazeera.com/news/2026/2/17/incoming-bangladesh-pm-tarique-rahman-lawmakers-sworn-into-parliament
+    excerpt: Lawmakers pledged allegiance to Bangladesh as hundreds of people gathered outside Dhaka&#039;s parliament grounds.
+    source_name: Al Jazeera
+    published: "2026-02-17T06:32:31.000Z"
+  - entity: trump-ups-pressure-on-kyiv-as-russia-uk-2026-02-17
+    type: article
+    title: Trump ups pressure on Kyiv as Russia, Ukraine hold peace talks in Geneva
+    url: https://www.aljazeera.com/news/2026/2/17/trump-ups-pressure-on-kyiv-as-russia-ukraine-hold-peace-talks-in-geneva
+    excerpt: Kremlin says the talks are likely to focus on the issue of Ukrainian territory that Russian wants Kyiv to cede.
+    source_name: Al Jazeera
+    published: "2026-02-17T05:35:24.000Z"
+  - entity: waste-piles-up-in-cuba-as-us-imposed-fue-2026-02-17
+    type: article
+    title: Waste piles up in Cuba as US-imposed fuel blockade halts collection trucks
+    url: >-
+      https://www.aljazeera.com/news/2026/2/17/waste-piles-up-in-cuba-as-us-imposed-fuel-blockade-halts-collection-trucks
+    excerpt: >-
+      Cubans suffer under a fuel blockade as US President Donald Trump calls the Caribbean country a &#039;failed
+      nation&#039;.
+    source_name: Al Jazeera
+    published: "2026-02-17T05:18:03.000Z"
+  - entity: defi-protocol-zerolend-shuts-down-after-2026-02-17
+    type: article
+    title: DeFi protocol ZeroLend shuts down after three years, citing inactive chains and hacks
+    url: >-
+      https://www.coindesk.com/markets/2026/02/17/defi-protocol-zerolend-shuts-down-after-3-years-citing-inactive-chains-and-hacks
+    excerpt: >-
+      The protocol is shutting down after three years, citing unsustainable economics, thin margins and rising security
+      threats.
+    source_name: CoinDesk
+    published: "2026-02-17T07:19:53.000Z"
+  - entity: bofa-survey-flags-dollar-bearish-bets-at-2026-02-17
+    type: article
+    title: BofA survey flags dollar bearish bets at over a decade high. Here's what it means for bitcoin
+    url: >-
+      https://www.coindesk.com/markets/2026/02/17/bofa-survey-shows-record-bearish-dollar-bets-here-s-what-it-means-for-bitcoin
+    excerpt: >-
+      BofA's February survey shows investor positioning in the U.S. dollar has fallen to its most negative level since
+      at least early 2012.
+    source_name: CoinDesk
+    published: "2026-02-17T05:43:15.000Z"
+  - entity: gold-prices-tumble-below-5-000-as-chin-2026-02-17
+    type: article
+    title: Gold prices tumble below $5,000  as China holidays dent support
+    url: >-
+      https://www.marketwatch.com/story/gold-prices-tumble-below-5-000-as-china-holidays-dent-support-d093e677?mod=mw_rss_topstories
+    excerpt: Gold&#x2019;s fragile hold on $5,000 an ounce gave way to selling on Tuesday.
+    source_name: MarketWatch
+    published: "2026-02-17T07:58:00.000Z"
+  - entity: u-s-stock-futures-slump-as-investors-di-2026-02-17
+    type: article
+    title: U.S. stock futures slump as investors digest ongoing tech selloff
+    url: >-
+      https://www.marketwatch.com/story/u-s-stock-futures-flat-as-investors-digest-ongoing-tech-selloff-over-holiday-weekend-765f3c5c?mod=mw_rss_topstories
+    excerpt: U.S. stock futures turned lower Monday night, following another brutal week for tech stocks.
+    source_name: MarketWatch
+    published: "2026-02-17T04:01:00.000Z"
+  - entity: citi-sees-oil-prices-falling-to-60-if-t-2026-02-17
+    type: article
+    title: Citi Sees Oil Prices Falling to $60 if Trump Secures Iran and Russia Deals
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/Citi-Sees-Oil-Prices-Falling-to-60-if-Trump-Secures-Iran-and-Russia-Deals.html
+    excerpt: >-
+      According to Citi analysts, geopolitics will continue to provide support for oil prices in the immediate term, but
+      they may later come under pressure if President Trump’s attempts to clinch a peace de
+    source_name: OilPrice.com
+    published: "2026-02-17T07:37:00.000Z"
+  - entity: australian-energy-major-wins-greenwashin-2026-02-17
+    type: article
+    title: Australian Energy Major Wins Greenwashing Court Case
+    url: https://oilprice.com/Latest-Energy-News/World-News/Australian-Energy-Major-Wins-Greenwashing-Court-Case.html
+    excerpt: >-
+      Australia’s Santos has won a court case that was brought against it five years ago by environmentalists, alleging
+      that the company misled its shareholders about its net-zero intentions. A federal judg
+    source_name: OilPrice.com
+    published: "2026-02-17T06:37:58.000Z"
+  - entity: oil-bears-are-dangerously-underestimatin-2026-02-17
+    type: article
+    title: Oil Bears Are Dangerously Underestimating Geopolitical Risk
+    url: https://oilprice.com/Energy/Energy-General/Oil-Bears-Are-Dangerously-Underestimating-Geopolitical-Risk.html
+    excerpt: >-
+      For decades, oil prices could swing wildly on even the distant prospect of war in the Middle East. With U.S.
+      shale, that changed, leading many to assume that anything short of an oil blockade in the S
+    source_name: OilPrice.com
+    published: "2026-02-17T01:00:00.000Z"
+  - entity: china-hits-renewable-milestone-but-coal-2026-02-17
+    type: article
+    title: China Hits Renewable Milestone, But Coal Isn’t Going Anywhere
+    url: https://oilprice.com/Energy/Coal/China-Hits-Renewable-Milestone-But-Coal-Isnt-Going-Anywhere.html
+    excerpt: "For the first time ever, China now has more operating power capacity from clean energy sources than capacity running on fossil fuels, thanks to a decade of booming solar and wind installations.\_\_\_\_ Ch"
+    source_name: OilPrice.com
+    published: "2026-02-17T00:00:00.000Z"
