@@ -1,0 +1,59 @@
+/**
+ * NOESIS Seed: Daily News — 2026-02-17 03:00 (Week 8, 2026)
+ * Namespace: news.week8.day-2026-02-17
+ * Built by seed-factory on 2026-02-17
+ * Auto-gathered news: 8 stories, 2026-02-17 to 2026-02-17
+ * Entities: 8 | Relations: 0 | Sources: 8
+ */
+module.exports = async function seed_news_week8_day_2026_02_17_hour_03(client) {
+  console.log('  \u2192 Seeding: news-week8-day-2026-02-17-hour-03');
+
+  // === NAMESPACE ===
+  await client.query(`
+    INSERT INTO namespace_configs (namespace, extends, config) VALUES
+    ('news', 'default', '{}'::jsonb)
+    ON CONFLICT (namespace) DO NOTHING
+  `);
+  await client.query(`
+    INSERT INTO namespace_configs (namespace, extends, config) VALUES
+    ('news.week8', 'news', '{}'::jsonb)
+    ON CONFLICT (namespace) DO NOTHING
+  `);
+  await client.query(`
+    INSERT INTO namespace_configs (namespace, extends, config) VALUES
+    ('news.week8.day-2026-02-17', 'news.week8', '{}'::jsonb)
+    ON CONFLICT (namespace) DO NOTHING
+  `);
+
+  // === ENTITIES ===
+  await client.query(`
+    INSERT INTO entities (id, namespace, type, name, key, metadata, temporal, credibility) VALUES
+    ('the-tech-bros-might-show-more-humility-i-2026-02-17', 'news.week8.day-2026-02-17', 'Event', 'The tech bros might show more humility in Delhi – but will they make AI any safer?', NULL, '{"category":"finance","description":"As global tech leaders meet Delhi, India hopes to level the playing field for countries outside the US and China."}'::jsonb, '{"timestamp":"2026-02-17T00:12:58.000Z","precision":"day"}'::jsonb, '{"confidence":"verified","sources_count":1}'::jsonb),
+    ('reddits-human-content-wins-amid-the-ai-2026-02-17', 'news.week8.day-2026-02-17', 'Event', 'Reddit''s human content wins amid the AI flood', NULL, '{"category":"finance","description":"Reddit says its human contributors are valued amid an internet awash with AI-generated content."}'::jsonb, '{"timestamp":"2026-02-17T00:03:10.000Z","precision":"day"}'::jsonb, '{"confidence":"verified","sources_count":1}'::jsonb),
+    ('lebanon-says-four-months-needed-for-seco-2026-02-17', 'news.week8.day-2026-02-17', 'Claim', 'Lebanon says four months needed for second phase of Hezbollah disarmament', NULL, '{"category":"geopolitics","description":"Hezbollah rejects calls to dismantle its arsenals north of Litani River, describing pressure to do so as a ''grave sin''."}'::jsonb, '{"timestamp":"2026-02-17T01:53:05.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('rhode-island-shooting-2-killed-3-criti-2026-02-17', 'news.week8.day-2026-02-17', 'Fact', 'Rhode Island shooting: 2 killed, 3 critically injured at Pawtucket ice rink', NULL, '{"category":"geopolitics","description":"The attacker has also died from a self-inflicted gunshot wound after opening fire at an ice hockey rink in the US."}'::jsonb, '{"timestamp":"2026-02-17T01:41:32.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('russia-ukraine-war-list-of-key-events-2026-02-17', 'news.week8.day-2026-02-17', 'Event', 'Russia-Ukraine war: List of key events, day 1,454', NULL, '{"category":"geopolitics","description":"These are the key developments from day 1,454 of Russia’s war on Ukraine."}'::jsonb, '{"timestamp":"2026-02-17T01:26:50.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('u-s-stock-futures-flat-as-investors-dig-2026-02-17', 'news.week8.day-2026-02-17', 'Event', 'U.S. stock futures flat as investors digest ongoing tech selloff', NULL, '{"category":"finance.markets","description":"U.S. stock futures were little changed late Monday, following another brutal week for tech stocks."}'::jsonb, '{"timestamp":"2026-02-17T01:12:00.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('oil-bears-are-dangerously-underestimatin-2026-02-17', 'news.week8.day-2026-02-17', 'Event', 'Oil Bears Are Dangerously Underestimating Geopolitical Risk', NULL, '{"category":"finance.energy","description":"For decades, oil prices could swing wildly on even the distant prospect of war in the Middle East. With U.S. shale, that changed, leading many to assume that anything short of an oil blockade in the Strait of Hormuz will leave oil markets cold—and such a blockade is highly unlikely. This, however, i"}'::jsonb, '{"timestamp":"2026-02-17T01:00:00.000Z","precision":"day"}'::jsonb, '{"confidence":"medium","sources_count":1}'::jsonb),
+    ('china-hits-renewable-milestone-but-coal-2026-02-17', 'news.week8.day-2026-02-17', 'Event', 'China Hits Renewable Milestone, But Coal Isn’t Going Anywhere', NULL, '{"category":"finance.energy","description":"For the first time ever, China now has more operating power capacity from clean energy sources than capacity running on fossil fuels, thanks to a decade of booming solar and wind installations.     China, the undisputed global leader in clean energy investment, has 52% of operating power capacity co"}'::jsonb, '{"timestamp":"2026-02-17T00:00:00.000Z","precision":"day"}'::jsonb, '{"confidence":"medium","sources_count":1}'::jsonb)
+    ON CONFLICT (id, version_number) DO NOTHING
+  `);
+  console.log('    Entities: 8');
+
+  // === DATALAYER ===
+  await client.query(`
+    INSERT INTO datalayer (entity_id, source_type, title, url, excerpt, source_name, published_at) VALUES
+    ('the-tech-bros-might-show-more-humility-i-2026-02-17', 'article', 'The tech bros might show more humility in Delhi – but will they make AI any safer?', 'https://www.bbc.com/news/articles/cr5l6gnen72o', 'As global tech leaders meet Delhi, India hopes to level the playing field for countries outside the US and China.', 'BBC Business', '2026-02-17T00:12:58.000Z'),
+    ('reddits-human-content-wins-amid-the-ai-2026-02-17', 'article', 'Reddit''s human content wins amid the AI flood', 'https://www.bbc.com/news/articles/c5y4zl0w062o', 'Reddit says its human contributors are valued amid an internet awash with AI-generated content.', 'BBC Business', '2026-02-17T00:03:10.000Z'),
+    ('lebanon-says-four-months-needed-for-seco-2026-02-17', 'article', 'Lebanon says four months needed for second phase of Hezbollah disarmament', 'https://www.aljazeera.com/news/2026/2/17/lebanon-says-four-months-needed-for-second-phase-of-hezbollah-disarmament', 'Hezbollah rejects calls to dismantle its arsenals north of Litani River, describing pressure to do so as a ''grave sin''.', 'Al Jazeera', '2026-02-17T01:53:05.000Z'),
+    ('rhode-island-shooting-2-killed-3-criti-2026-02-17', 'article', 'Rhode Island shooting: 2 killed, 3 critically injured at Pawtucket ice rink', 'https://www.aljazeera.com/news/2026/2/17/rhode-island-shooting-2-killed-3-critically-injured-at-pawtucket-ice-rink', 'The attacker has also died from a self-inflicted gunshot wound after opening fire at an ice hockey rink in the US.', 'Al Jazeera', '2026-02-17T01:41:32.000Z'),
+    ('russia-ukraine-war-list-of-key-events-2026-02-17', 'article', 'Russia-Ukraine war: List of key events, day 1,454', 'https://www.aljazeera.com/news/2026/2/17/russia-ukraine-war-list-of-key-events-day-1454', 'These are the key developments from day 1,454 of Russia’s war on Ukraine.', 'Al Jazeera', '2026-02-17T01:26:50.000Z'),
+    ('u-s-stock-futures-flat-as-investors-dig-2026-02-17', 'article', 'U.S. stock futures flat as investors digest ongoing tech selloff', 'https://www.marketwatch.com/story/u-s-stock-futures-flat-as-investors-digest-ongoing-tech-selloff-over-holiday-weekend-765f3c5c?mod=mw_rss_topstories', 'U.S. stock futures were little changed late Monday, following another brutal week for tech stocks.', 'MarketWatch', '2026-02-17T01:12:00.000Z'),
+    ('oil-bears-are-dangerously-underestimatin-2026-02-17', 'article', 'Oil Bears Are Dangerously Underestimating Geopolitical Risk', 'https://oilprice.com/Energy/Energy-General/Oil-Bears-Are-Dangerously-Underestimating-Geopolitical-Risk.html', 'For decades, oil prices could swing wildly on even the distant prospect of war in the Middle East. With U.S. shale, that changed, leading many to assume that anything short of an oil blockade in the S', 'OilPrice.com', '2026-02-17T01:00:00.000Z'),
+    ('china-hits-renewable-milestone-but-coal-2026-02-17', 'article', 'China Hits Renewable Milestone, But Coal Isn’t Going Anywhere', 'https://oilprice.com/Energy/Coal/China-Hits-Renewable-Milestone-But-Coal-Isnt-Going-Anywhere.html', 'For the first time ever, China now has more operating power capacity from clean energy sources than capacity running on fossil fuels, thanks to a decade of booming solar and wind installations.     Ch', 'OilPrice.com', '2026-02-17T00:00:00.000Z')
+    ON CONFLICT DO NOTHING
+  `);
+  console.log('    Sources: 8');
+
+  console.log('  \u2713 news-week8-day-2026-02-17-hour-03: 8 entities, 0 relations, 8 sources');
+};
