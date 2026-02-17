@@ -1,0 +1,1334 @@
+seed:
+  name: news-week8-day-2026-02-17-hour-13
+  label: Daily News — 2026-02-17 13:00 (Week 8, 2026)
+  namespace: news.week8.day-2026-02-17
+  description: "Auto-gathered news: 65 stories, 2026-02-17 to 2026-02-17"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week8
+    extends: news
+  - namespace: news.week8.day-2026-02-17
+    extends: news.week8
+entities:
+  - id: hillary-clinton-accuses-trump-administra-2026-02-17
+    type: Event
+    name: Hillary Clinton accuses Trump administration of Epstein files 'cover-up' in BBC interview
+    category: geopolitics
+    description: >-
+      "Get the files out. They are slow-walking it," the former US secretary of state says. The White House says it has
+      done "more for the victims than Democrats ever did".
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T07:59:55.000Z"
+      precision: day
+  - id: third-round-of-russia-ukraine-talks-to-t-2026-02-17
+    type: Event
+    name: Third round of Russia-Ukraine talks to take place as strikes continue
+    category: geopolitics
+    description: >-
+      Expectations for a breakthrough are low as delegations meet for a third time to try and negotiate an end to the
+      war.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T11:48:18.000Z"
+      precision: day
+  - id: us-senator-mark-kelly-tells-bbc-he-will-2026-02-17
+    type: Claim
+    name: US Senator Mark Kelly tells BBC he will 'seriously consider' White House run
+    category: geopolitics
+    description: The former Navy captain and astronaut says "we're in some seriously challenging times".
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T02:28:08.000Z"
+      precision: day
+  - id: new-nuclear-talks-between-us-and-iran-be-2026-02-17
+    type: Event
+    name: New nuclear talks between US and Iran begin in Geneva
+    category: geopolitics
+    description: >-
+      The US president says he thinks Iran wants to make a deal, while Tehran believes Washington is moving to a more
+      realistic position.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T11:29:26.000Z"
+      precision: day
+  - id: lunar-new-year-2026-celebrations-around-2026-02-17
+    type: Event
+    name: "Lunar New Year 2026: Celebrations around the world"
+    category: geopolitics
+    description: >-
+      Millions of people around the world are celebrating the start of the Lunar New Year, with festivities taking place
+      from Hong Kong to Buenos Aires.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T08:02:39.000Z"
+      precision: day
+  - id: five-young-people-die-in-spain-apartment-2026-02-17
+    type: Event
+    name: Five young people die in Spain apartment block fire
+    category: geopolitics
+    description: Firefighters say they do not know why the victims could not escape the blaze in the building's upper floor.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T10:06:36.000Z"
+      precision: day
+  - id: hyatt-hotels-chairman-steps-down-over-je-2026-02-17
+    type: Event
+    name: Hyatt Hotels chairman steps down over Jeffrey Epstein ties
+    category: geopolitics
+    description: Billionaire Thomas Pritzker said he had exercised "terrible judgement" in keeping contact with Epstein.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T04:16:40.000Z"
+      precision: day
+  - id: fbi-wont-co-operate-on-alex-pretti-inve-2026-02-17
+    type: Event
+    name: FBI won't co-operate on Alex Pretti investigation, state officials say
+    category: geopolitics
+    description: Minnesota's Bureau of Criminal Apprehension says the FBI will not hand over any evidence it has gathered.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T03:43:19.000Z"
+      precision: day
+  - id: uk-unemployment-hits-highest-rate-for-ne-2026-02-17
+    type: Event
+    name: UK unemployment hits highest rate for nearly five years
+    category: finance
+    description: It marks the highest rate since the Covid pandemic, official figures show.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T11:37:50.000Z"
+      precision: day
+  - id: calculator-how-will-freeze-on-tax-thres-2026-02-17
+    type: Event
+    name: "Calculator: How will freeze on tax thresholds hit your take-home pay?"
+    category: finance
+    description: Wages have been rising faster than prices but you could pay more tax because of frozen thresholds.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T07:10:15.000Z"
+      precision: day
+  - id: royal-mail-given-two-weeks-to-respond-to-2026-02-17
+    type: Claim
+    name: Royal Mail given two weeks to respond to claims it is prioritising parcels
+    category: finance
+    description: MPs have raised "significant concerns" about reports of "failures in service" at the company.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T08:48:47.000Z"
+      precision: day
+  - id: reddits-human-content-wins-amid-the-ai-2026-02-17
+    type: Event
+    name: Reddit's human content wins amid the AI flood
+    category: finance
+    description: Reddit says its human contributors are valued amid an internet awash with AI-generated content.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T00:03:10.000Z"
+      precision: day
+  - id: could-bill-gates-and-political-tussles-o-2026-02-17
+    type: Claim
+    name: Could Bill Gates and political tussles overshadow AI safety debate in Delhi?
+    category: finance
+    description: As global tech leaders meet Delhi, India hopes to level the playing field for countries outside the US and China.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T11:35:09.000Z"
+      precision: day
+  - id: kenyan-authorities-used-israeli-tech-to-2026-02-17
+    type: Claim
+    name: Kenyan authorities used Israeli tech to crack activist’s phone, report claims
+    category: geopolitics
+    description: >-
+      <p>Citizen Lab report suggests Cellebrite software was used to break into Boniface Mwangi’s phone while he was
+      under arrest</p><p>When Boniface Mwangi, the prominent Kenyan pro-democracy activist who plans to run <a
+      href="https://www.reuters.com/world/africa/kenyan-rights-activist-plans-run-presiden
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T11:01:02.000Z"
+      precision: day
+  - id: uk-interest-rate-cut-in-march-more-likel-2026-02-17
+    type: Event
+    name: UK interest rate cut in March more likely after unemployment rate hits five-year high – business live
+    category: finance
+    description: >-
+      <p>City traders expect cut to UK interest rates next month after jobless rate rises to 5.2%</p><ul><li><p><a
+      href="https://www.theguardian.com/business/2026/feb/17/uk-unemployment-rate-ons-interest-rates">UK unemployment
+      rate hits five-year high of 5.2% as wage growth cools</a></p></li></ul><p></p><
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T11:55:57.000Z"
+      precision: day
+  - id: eu-to-investigate-shein-over-sale-of-chi-2026-02-17
+    type: Event
+    name: EU to investigate Shein over sale of childlike sex dolls and weapons
+    category: finance
+    description: >-
+      <p>Bloc also examines ‘addictive design’ of shopping site, including rewards, and its recommender
+      systems</p><ul><li><p><a
+      href="https://www.theguardian.com/business/live/2026/feb/17/uk-unemployment-rate-hits-five-year-high-wage-growth-slows-rachel-reeves-bonds-borrowing-costs-news-updates">Business
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T11:00:51.000Z"
+      precision: day
+  - id: claims-that-ai-can-help-fix-climate-dism-2026-02-17
+    type: Claim
+    name: Claims that AI can help fix climate dismissed as greenwashing
+    category: finance
+    description: >-
+      <p>Industry using ‘diversionary’ tactics, says analyst, as energy-hungry complex functions such as video
+      generation and deep research proliferate</p><p>Tech companies are conflating traditional artificial intelligence
+      with generative AI when claiming the energy-hungry technology could help avert cli
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T05:00:47.000Z"
+      precision: day
+  - id: boohoo-and-debenhams-owner-raises-35m-2026-02-17
+    type: Event
+    name: Boohoo and Debenhams owner raises £35m, risking Mike Ashley clash
+    category: finance
+    description: >-
+      <p>Company, which also owns Oasis, Warehouse and Karen Millen, to use cash to cut debts and fund
+      turnaround</p><ul><li><p><a
+      href="https://www.theguardian.com/business/live/2026/feb/17/uk-unemployment-rate-hits-five-year-high-wage-growth-slows-rachel-reeves-bonds-borrowing-costs-news-updates">Busine
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T11:29:52.000Z"
+      precision: day
+  - id: uk-shelves-110m-frictionless-post-brexi-2026-02-17
+    type: Event
+    name: UK shelves £110m frictionless post-Brexit trade border project
+    category: finance
+    description: >-
+      <p>Programme launched by last Tory government was worked on by Deloitte and IBM but was paused in
+      2024</p><ul><li><p><a
+      href="https://www.theguardian.com/business/live/2026/feb/17/uk-unemployment-rate-hits-five-year-high-wage-growth-slows-rachel-reeves-bonds-borrowing-costs-news-updates">Business
+      li
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T11:04:05.000Z"
+      precision: day
+  - id: hyatt-chair-thomas-pritzker-steps-down-o-2026-02-17
+    type: Event
+    name: Hyatt chair Thomas Pritzker steps down over Epstein links
+    category: finance
+    description: >-
+      <p>Billionaire says he exercised ‘terrible judgment’ in maintaining contact with sex offender and Ghislaine
+      Maxwell</p><p>The billionaire Thomas Pritzker has stepped down as executive chair of the hotel chain Hyatt, after
+      revelations over his ties with the late child sex offender Jeffrey Epstein.</p
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T11:02:10.000Z"
+      precision: day
+  - id: surging-prediction-markets-face-legal-ba-2026-02-17
+    type: Event
+    name: "Surging prediction markets face legal backlash in US: ‘Lines have been blurred’"
+    category: finance
+    description: >-
+      <p>At least 20 federal suits filed against companies like Kalshi and Polymarket as lawmakers call it ‘loophole’
+      for gambling</p><p>State lawmakers and gaming regulators across the US are escalating their fight against
+      prediction markets, arguing that the fast-growing platforms are “basically <a href
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T12:00:36.000Z"
+      precision: day
+  - id: gloom-for-uk-workers-as-incomes-flatline-2026-02-17
+    type: Event
+    name: Gloom for UK workers as incomes flatline and jobs market falters
+    category: finance
+    description: >-
+      <p>Falls in inflation and interest rates could leave Britain better off this year, but at the cost of high
+      unemployment</p><ul><li><p><a
+      href="https://www.theguardian.com/business/2026/feb/17/uk-unemployment-rate-ons-interest-rates">UK unemployment
+      rate hits five-year high</a></p></li></ul><p>Privat
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T09:06:25.000Z"
+      precision: day
+  - id: iran-s-khamenei-says-us-will-not-be-able-2026-02-17
+    type: Claim
+    name: Iran’s Khamenei says US will not be able to destroy government
+    category: geopolitics
+    description: Iran’s Supreme Leader Ali Khamenei has taken aim at Donald Trump.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T12:06:03.000Z"
+      precision: day
+  - id: imran-khan-must-be-given-immediate-medic-2026-02-17
+    type: Event
+    name: Imran Khan must be given immediate medical attention, cricket legends say
+    category: geopolitics
+    description: A group of former captains has written to Pakistan&#039;s government, requesting immediate medical attention.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T11:49:21.000Z"
+      precision: day
+  - id: australia-refuses-to-repatriate-isil-rel-2026-02-17
+    type: Event
+    name: Australia refuses to repatriate ISIL relatives from Syrian camp
+    category: geopolitics
+    description: Australia is refusing to repatriate 34 women and children held in a camp in northern Syria.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T11:24:38.000Z"
+      precision: day
+  - id: gaza-aid-figures-2026-02-17
+    type: Event
+    name: Gaza aid figures
+    category: geopolitics
+    description: >-
+      We compare and contrast the US ambassador to the UN’s claim that 4,000 trucks enter Gaza weekly with the actual
+      numbers.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T11:13:03.000Z"
+      precision: day
+  - id: jordan-is-next-west-bank-annexation-s-2026-02-17
+    type: Event
+    name: "‘Jordan is next’: West Bank annexation signals ‘silent transfer’"
+    category: geopolitics
+    description: >-
+      Jordan warns of war as Israel&#039;s &#039;silent transfer&#039; in the occupied West Bank becomes an operational
+      reality.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T10:58:19.000Z"
+      precision: day
+  - id: mapping-forced-displacements-and-settler-2026-02-17
+    type: Event
+    name: Mapping forced displacements and settler attacks by Israel in the West Bank
+    category: geopolitics
+    description: Israeli military incursions and settler attacks forced more than 37,000 Palestinians to leave their homes in 2025.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T10:51:11.000Z"
+      precision: day
+  - id: video-millions-celebrate-lunar-new-year-2026-02-17
+    type: Event
+    name: "Video: Millions celebrate Lunar New Year ushering in the Year of the Horse"
+    category: geopolitics
+    description: Hundreds of millions of people around the world are celebrating the Lunar New Year.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T10:35:00.000Z"
+      precision: day
+  - id: spain-to-probe-social-media-giants-over-2026-02-17
+    type: Event
+    name: Spain to probe social media giants over AI-generated child abuse material
+    category: geopolitics
+    description: >-
+      Prime Minister ‌Pedro ​Sanchez pledges to end &#039;impunity&#039; of platforms X, Meta and TikTok in promoting
+      harmful content.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T10:22:51.000Z"
+      precision: day
+  - id: iran-and-us-open-second-round-of-nuclear-2026-02-17
+    type: Event
+    name: Iran and US open second round of nuclear talks in Switzerland
+    category: geopolitics
+    description: >-
+      A second round of nuclear talks between the US and Iran is underway in Geneva. Al Jazeera’s Osama Bin Javaid
+      explains.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T10:09:03.000Z"
+      precision: day
+  - id: lunar-new-year-global-celebrations-welc-2026-02-17
+    type: Event
+    name: "Lunar New Year: Global celebrations welcome Year of the Fire Horse"
+    category: geopolitics
+    description: From Beijing to Hong Kong to Moscow, people celebrate Lunar New Year with cultural events and vibrant displays.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T10:07:58.000Z"
+      precision: day
+  - id: bitcoin-improvement-proposal-to-block-sp-2026-02-17
+    type: Event
+    name: Bitcoin improvement proposal to block spam draws heat from heavyweights
+    category: finance.crypto
+    description: Your day-ahead look for Feb. 17, 2026
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T12:15:00.000Z"
+      precision: day
+  - id: crypto-slides-as-tech-stocks-and-gold-re-2026-02-17
+    type: Event
+    name: Crypto slides as tech stocks and gold retreat; bitcoin-Nasdaq correlation turns positive
+    category: finance.crypto
+    description: >-
+      Bitcoin falls to $68,000 as tech-led risk-off move deepens, gold extends correction and memecoins lead altcoin
+      losses amid BTC dominance range.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T11:31:16.000Z"
+      precision: day
+  - id: bitcoin-remains-under-pressure-near-68-2026-02-17
+    type: Event
+    name: Bitcoin remains under pressure near $68,000 even as panic ebbs
+    category: finance.crypto
+    description: Key derivatives metrics and ETF flows suggest lack of demand, but macro forces offer hope.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T09:43:10.000Z"
+      precision: day
+  - id: popular-burger-joint-steak-n-shake-says-2026-02-17
+    type: Claim
+    name: Popular burger joint Steak ’n Shake says bitcoin adoption boosted sales ‘dramatically’
+    category: finance.crypto
+    description: >-
+      Bitcoin payments are directed to a Strategic Bitcoin Reserve, used to fund employee bonuses according to the
+      company.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T09:18:25.000Z"
+      precision: day
+  - id: uk-crypto-rules-too-slow-to-support-glob-2026-02-17
+    type: Decision
+    name: UK crypto rules too slow to support global hub ambitions, says Agant CEO
+    category: finance.crypto
+    description: >-
+      Regulatory delays risk blunting Britain’s digital asset push, said Andrew MacKenzie, head of the pound-pegged
+      stablecoin developer.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T08:30:00.000Z"
+      precision: day
+  - id: defi-protocol-zerolend-shuts-down-after-2026-02-17
+    type: Event
+    name: DeFi protocol ZeroLend shuts down after three years, citing inactive chains and hacks
+    category: finance.crypto
+    description: >-
+      The protocol is shutting down after three years, citing unsustainable economics, thin margins and rising security
+      threats.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T07:19:53.000Z"
+      precision: day
+  - id: bofa-survey-flags-dollar-bearish-bets-at-2026-02-17
+    type: Event
+    name: BofA survey flags dollar bearish bets at over a decade high. Here's what it means for bitcoin
+    category: finance.crypto
+    description: >-
+      BofA's February survey shows investor positioning in the U.S. dollar has fallen to its most negative level since
+      at least early 2012.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T05:43:15.000Z"
+      precision: day
+  - id: efg-teams-up-with-capital-group-to-expan-2026-02-17
+    type: Event
+    name: EFG teams up with Capital Group to expand investment solutions
+    category: finance
+    description: EFG teams up with Capital Group to expand investment solutions
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T12:12:30.000Z"
+      precision: day
+  - id: btig-stays-positive-on-palo-alto-network-2026-02-17
+    type: Event
+    name: BTIG Stays Positive on Palo Alto Networks (PANW) as Channel Checks Improve
+    category: finance
+    description: BTIG Stays Positive on Palo Alto Networks (PANW) as Channel Checks Improve
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T12:08:46.000Z"
+      precision: day
+  - id: rivian-rivn-gains-momentum-as-r2-launc-2026-02-17
+    type: Event
+    name: Rivian (RIVN) Gains Momentum as R2 Launch Stays on Track
+    category: finance
+    description: Rivian (RIVN) Gains Momentum as R2 Launch Stays on Track
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T12:07:56.000Z"
+      precision: day
+  - id: twilio-twlo-gains-momentum-as-ai-and-v-2026-02-17
+    type: Event
+    name: Twilio (TWLO) Gains Momentum as AI and Voice Demand Accelerate
+    category: finance
+    description: Twilio (TWLO) Gains Momentum as AI and Voice Demand Accelerate
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T12:07:01.000Z"
+      precision: day
+  - id: nordvpn-partners-with-crowdstrike-crwd-2026-02-17
+    type: Event
+    name: NordVPN Partners With CrowdStrike (CRWD) to Boost Consumer Threat Protection
+    category: finance
+    description: NordVPN Partners With CrowdStrike (CRWD) to Boost Consumer Threat Protection
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T12:06:22.000Z"
+      precision: day
+  - id: intel-intc-faces-show-me-reset-as-da-2026-02-17
+    type: Event
+    name: Intel (INTC) Faces ‘Show-Me’ Reset as DA Davidson Initiates Neutral Rating
+    category: finance
+    description: Intel (INTC) Faces ‘Show-Me’ Reset as DA Davidson Initiates Neutral Rating
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T12:05:48.000Z"
+      precision: day
+  - id: 3-risks-duolingo-investors-should-watch-2026-02-17
+    type: Event
+    name: 3 Risks Duolingo Investors Should Watch in 2026
+    category: finance
+    description: 3 Risks Duolingo Investors Should Watch in 2026
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T12:05:00.000Z"
+      precision: day
+  - id: warner-bros-rejects-paramounts-revised-2026-02-17
+    type: Event
+    name: Warner Bros rejects Paramount's revised offer, but gives studio a week to negotiate better deal
+    category: finance
+    description: Warner Bros rejects Paramount's revised offer, but gives studio a week to negotiate better deal
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T12:02:35.000Z"
+      precision: day
+  - id: applied-materials-amat-seen-winning-wh-2026-02-17
+    type: Event
+    name: Applied Materials (AMAT) Seen Winning Whether WFE Growth Is Market- or Share-Driven
+    category: finance
+    description: Applied Materials (AMAT) Seen Winning Whether WFE Growth Is Market- or Share-Driven
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T12:01:35.000Z"
+      precision: day
+  - id: here-are-the-executives-who-have-departe-2026-02-17
+    type: Event
+    name: Here are the executives who have departed in wake of the Epstein files. Hyatt&#x2019;s Pritzker is the latest.
+    category: finance.markets
+    description: >-
+      Thomas Pritzker, the 75-year old executive chairman of Hyatt Hotels, expressed deep &#x201c;regret&#x201d; over
+      his contacts with the late Epstein
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T12:16:00.000Z"
+      precision: day
+  - id: fund-managers-alarmed-over-corporate-spe-2026-02-17
+    type: Event
+    name: Fund managers alarmed over corporate spending even as optimism at five-year high
+    category: finance.markets
+    description: >-
+      Fund managers are &#x201c;uber-bullish&#x201d; but behind the confident outlook, the crowded long position in gold
+      and an uptick in cash levels betray some doubts.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T12:05:00.000Z"
+      precision: day
+  - id: why-the-x2018-halo-x2019-trade-boost-2026-02-17
+    type: Fact
+    name: Why the &#x2018;HALO&#x2019; trade boosting hard assets is no fluke, according to Morgan Stanley
+    category: finance.markets
+    description: The boost for non-digital sectors should last through the year, says Morgan Stanley&#x2019;s Wilson
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T11:49:00.000Z"
+      precision: day
+  - id: norwegian-cruise-line-stock-is-rising-a-2026-02-17
+    type: Event
+    name: Norwegian Cruise Line stock is rising. A big activist reportedly has taken a stake.
+    category: finance.markets
+    description: >-
+      Norwegian Cruise Line shares rose on Tuesday after a report an activist investor has taken a stake and plans to
+      shake up the struggling company.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T10:16:00.000Z"
+      precision: day
+  - id: the-math-is-getting-challenging-economi-2026-02-17
+    type: Event
+    name: "The math is getting challenging: economic realities start to bite as UBS downgrades U.S. tech stocks"
+    category: finance.markets
+    description: >-
+      UBS global head of equities  thinks the question of how to turn capex into profits is becoming more challenging 
+      for AI developers to answer as funding commitments boom and funding gets more difficult.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T10:12:00.000Z"
+      precision: day
+  - id: why-has-kris-jenner-x2019-s-13-5-milli-2026-02-17
+    type: Event
+    name: >-
+      Why has Kris Jenner&#x2019;s $13.5 million &#x2018;Keeping Up With the Kardashians&#x2019; house sat on the market
+      for over a year?
+    category: finance.markets
+    description: >-
+      Kris Jenner listed the Hidden Hills home with much fanfare, but none of the hoopla appears to have moved the
+      needle on the sale of the property.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T10:02:00.000Z"
+      precision: day
+  - id: mark-zuckerberg-may-be-the-latest-califo-2026-02-17
+    type: Claim
+    name: Mark Zuckerberg may be the latest California tycoon to buy in Miami&#x2019;s &#x2018;Billionaire Bunker&#x2019;
+    category: finance.markets
+    description: >-
+      Facebook&#xa0;billionaire&#xa0;Mark Zuckerberg has reportedly snapped up an extraordinary waterfront mansion
+      on&#xa0;Miami&#x2019;s infamous Billionaire Bunker.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T09:58:00.000Z"
+      precision: day
+  - id: gold-prices-tumble-below-5-000-as-chin-2026-02-17
+    type: Event
+    name: Gold prices tumble below $5,000  as China holidays dent support
+    category: finance.markets
+    description: Gold&#x2019;s fragile hold on $5,000 an ounce gave way to selling on Tuesday.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T07:58:00.000Z"
+      precision: day
+  - id: u-s-stock-futures-slump-as-investors-di-2026-02-17
+    type: Event
+    name: U.S. stock futures slump as investors digest ongoing tech selloff
+    category: finance.markets
+    description: U.S. stock futures turned lower Monday night, following another brutal week for tech stocks.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T04:01:00.000Z"
+      precision: day
+  - id: kazakhstan-looks-to-start-up-new-refiner-2026-02-17
+    type: Event
+    name: Kazakhstan Looks to Start Up New Refinery by 2033
+    category: finance.energy
+    description: >-
+      Major oil producer Kazakhstan plans to commission a new refinery by 2033 to eliminate domestic fuel shortages and
+      become a net fuel exporter, The Caspian Post reports, citing Vice Minister of Energy, Kaiyrkhan Tutkyshbayev. The
+      new refinery, which will be Kazakhstan’s fourth, will have a processing 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T12:30:00.000Z"
+      precision: day
+  - id: spain-leans-on-gas-to-stabilize-grid-aft-2026-02-17
+    type: Event
+    name: Spain Leans on Gas to Stabilize Grid After Historic Blackout
+    category: finance.energy
+    description: >-
+      Gas demand for power generation spiked last year as utilities boosted gas-powered output following the worst
+      blackout in Europe’s modern history. Spain’s demand for transported natural gas – domestic demand plus exports –
+      rose by 7.4% to reach 372 terawatt-hours (TWh) last year, up from 346 TWh in 2
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T11:10:02.000Z"
+      precision: day
+  - id: the-eu-must-spend-more-to-counter-climat-2026-02-17
+    type: Event
+    name: The EU Must Spend More to Counter Climate Change
+    category: finance.energy
+    description: >-
+      The European Union needs to spend more to move away from hydrocarbons because Europe is the fastest-warming
+      continent, the bloc’s climate advisory body has warned. The increased frequency of extreme weather events such as
+      floods and droughts is among the signs of climate change that should prompt be
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T10:00:00.000Z"
+      precision: day
+  - id: citi-sees-oil-prices-falling-to-60-if-t-2026-02-17
+    type: Event
+    name: Citi Sees Oil Prices Falling to $60 if Trump Secures Iran and Russia Deals
+    category: finance.energy
+    description: "According to Citi analysts, geopolitics will continue to provide support for oil prices in the immediate term, but they may later come under pressure if President Trump’s attempts to clinch a peace deal with Russia and a nuclear deal with Iran succeed.\_ “It is our base case that both Iran and Russia"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T07:37:00.000Z"
+      precision: day
+  - id: australian-energy-major-wins-greenwashin-2026-02-17
+    type: Event
+    name: Australian Energy Major Wins Greenwashing Court Case
+    category: finance.energy
+    description: >-
+      Australia’s Santos has won a court case that was brought against it five years ago by environmentalists, alleging
+      that the company misled its shareholders about its net-zero intentions. A federal judge in Sydney dismissed the
+      case this week, with details about the motives for her decision to be publ
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T06:37:58.000Z"
+      precision: day
+  - id: oil-bears-are-dangerously-underestimatin-2026-02-17
+    type: Event
+    name: Oil Bears Are Dangerously Underestimating Geopolitical Risk
+    category: finance.energy
+    description: >-
+      For decades, oil prices could swing wildly on even the distant prospect of war in the Middle East. With U.S.
+      shale, that changed, leading many to assume that anything short of an oil blockade in the Strait of Hormuz will
+      leave oil markets cold—and such a blockade is highly unlikely. This, however, i
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T01:00:00.000Z"
+      precision: day
+  - id: china-hits-renewable-milestone-but-coal-2026-02-17
+    type: Event
+    name: China Hits Renewable Milestone, But Coal Isn’t Going Anywhere
+    category: finance.energy
+    description: "For the first time ever, China now has more operating power capacity from clean energy sources than capacity running on fossil fuels, thanks to a decade of booming solar and wind installations.\_\_\_\_ China, the undisputed global leader in clean energy investment, has 52% of operating power capacity co"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T00:00:00.000Z"
+      precision: day
+  - id: cohere-launches-a-family-of-open-multili-2026-02-17
+    type: Decision
+    name: Cohere launches a family of open multilingual models
+    category: technology.ai
+    description: Cohere's Tiny Aya models support over 70 langauges
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T09:00:00.000Z"
+      precision: day
+narratives:
+  - name: Israel-Palestine Conflict
+    steps:
+      - from: mapping-forced-displacements-and-settler-2026-02-17
+        to: jordan-is-next-west-bank-annexation-s-2026-02-17
+        type: causes
+      - from: jordan-is-next-west-bank-annexation-s-2026-02-17
+        to: gaza-aid-figures-2026-02-17
+        type: causes
+  - name: Crypto Markets
+    steps:
+      - from: bofa-survey-flags-dollar-bearish-bets-at-2026-02-17
+        to: defi-protocol-zerolend-shuts-down-after-2026-02-17
+        type: causes
+      - from: defi-protocol-zerolend-shuts-down-after-2026-02-17
+        to: uk-crypto-rules-too-slow-to-support-glob-2026-02-17
+        type: follows
+      - from: uk-crypto-rules-too-slow-to-support-glob-2026-02-17
+        to: popular-burger-joint-steak-n-shake-says-2026-02-17
+        type: supports
+      - from: popular-burger-joint-steak-n-shake-says-2026-02-17
+        to: bitcoin-remains-under-pressure-near-68-2026-02-17
+        type: follows
+      - from: bitcoin-remains-under-pressure-near-68-2026-02-17
+        to: crypto-slides-as-tech-stocks-and-gold-re-2026-02-17
+        type: causes
+      - from: crypto-slides-as-tech-stocks-and-gold-re-2026-02-17
+        to: bitcoin-improvement-proposal-to-block-sp-2026-02-17
+        type: causes
+  - name: Energy Markets
+    steps:
+      - from: oil-bears-are-dangerously-underestimatin-2026-02-17
+        to: citi-sees-oil-prices-falling-to-60-if-t-2026-02-17
+        type: causes
+      - from: citi-sees-oil-prices-falling-to-60-if-t-2026-02-17
+        to: spain-leans-on-gas-to-stabilize-grid-aft-2026-02-17
+        type: causes
+sources:
+  - entity: hillary-clinton-accuses-trump-administra-2026-02-17
+    type: article
+    title: Hillary Clinton accuses Trump administration of Epstein files 'cover-up' in BBC interview
+    url: https://www.bbc.com/news/articles/czx47k34yqxo
+    excerpt: >-
+      "Get the files out. They are slow-walking it," the former US secretary of state says. The White House says it has
+      done "more for the victims than Democrats ever did".
+    source_name: BBC News
+    published: "2026-02-17T07:59:55.000Z"
+  - entity: third-round-of-russia-ukraine-talks-to-t-2026-02-17
+    type: article
+    title: Third round of Russia-Ukraine talks to take place as strikes continue
+    url: https://www.bbc.com/news/articles/cge812y2549o
+    excerpt: >-
+      Expectations for a breakthrough are low as delegations meet for a third time to try and negotiate an end to the
+      war.
+    source_name: BBC News
+    published: "2026-02-17T11:48:18.000Z"
+  - entity: us-senator-mark-kelly-tells-bbc-he-will-2026-02-17
+    type: article
+    title: US Senator Mark Kelly tells BBC he will 'seriously consider' White House run
+    url: https://www.bbc.com/news/articles/cy9gdvl4zv4o
+    excerpt: The former Navy captain and astronaut says "we're in some seriously challenging times".
+    source_name: BBC News
+    published: "2026-02-17T02:28:08.000Z"
+  - entity: new-nuclear-talks-between-us-and-iran-be-2026-02-17
+    type: article
+    title: New nuclear talks between US and Iran begin in Geneva
+    url: https://www.bbc.com/news/articles/cwyknjnd706o
+    excerpt: >-
+      The US president says he thinks Iran wants to make a deal, while Tehran believes Washington is moving to a more
+      realistic position.
+    source_name: BBC News
+    published: "2026-02-17T11:29:26.000Z"
+  - entity: lunar-new-year-2026-celebrations-around-2026-02-17
+    type: article
+    title: "Lunar New Year 2026: Celebrations around the world"
+    url: https://www.bbc.com/news/videos/c39wvr1nv2no
+    excerpt: >-
+      Millions of people around the world are celebrating the start of the Lunar New Year, with festivities taking place
+      from Hong Kong to Buenos Aires.
+    source_name: BBC News
+    published: "2026-02-17T08:02:39.000Z"
+  - entity: five-young-people-die-in-spain-apartment-2026-02-17
+    type: article
+    title: Five young people die in Spain apartment block fire
+    url: https://www.bbc.com/news/articles/c99jngpymyjo
+    excerpt: Firefighters say they do not know why the victims could not escape the blaze in the building's upper floor.
+    source_name: BBC News
+    published: "2026-02-17T10:06:36.000Z"
+  - entity: hyatt-hotels-chairman-steps-down-over-je-2026-02-17
+    type: article
+    title: Hyatt Hotels chairman steps down over Jeffrey Epstein ties
+    url: https://www.bbc.com/news/articles/c93wk4d7x19o
+    excerpt: Billionaire Thomas Pritzker said he had exercised "terrible judgement" in keeping contact with Epstein.
+    source_name: BBC News
+    published: "2026-02-17T04:16:40.000Z"
+  - entity: fbi-wont-co-operate-on-alex-pretti-inve-2026-02-17
+    type: article
+    title: FBI won't co-operate on Alex Pretti investigation, state officials say
+    url: https://www.bbc.com/news/articles/crk8nxg1p4xo
+    excerpt: Minnesota's Bureau of Criminal Apprehension says the FBI will not hand over any evidence it has gathered.
+    source_name: BBC News
+    published: "2026-02-17T03:43:19.000Z"
+  - entity: uk-unemployment-hits-highest-rate-for-ne-2026-02-17
+    type: article
+    title: UK unemployment hits highest rate for nearly five years
+    url: https://www.bbc.com/news/articles/c1l7pedyzjeo
+    excerpt: It marks the highest rate since the Covid pandemic, official figures show.
+    source_name: BBC Business
+    published: "2026-02-17T11:37:50.000Z"
+  - entity: calculator-how-will-freeze-on-tax-thres-2026-02-17
+    type: article
+    title: "Calculator: How will freeze on tax thresholds hit your take-home pay?"
+    url: https://www.bbc.com/news/articles/c99k7djlklyo
+    excerpt: Wages have been rising faster than prices but you could pay more tax because of frozen thresholds.
+    source_name: BBC Business
+    published: "2026-02-17T07:10:15.000Z"
+  - entity: royal-mail-given-two-weeks-to-respond-to-2026-02-17
+    type: article
+    title: Royal Mail given two weeks to respond to claims it is prioritising parcels
+    url: https://www.bbc.com/news/articles/cm2xy9x27mvo
+    excerpt: MPs have raised "significant concerns" about reports of "failures in service" at the company.
+    source_name: BBC Business
+    published: "2026-02-17T08:48:47.000Z"
+  - entity: reddits-human-content-wins-amid-the-ai-2026-02-17
+    type: article
+    title: Reddit's human content wins amid the AI flood
+    url: https://www.bbc.com/news/articles/c5y4zl0w062o
+    excerpt: Reddit says its human contributors are valued amid an internet awash with AI-generated content.
+    source_name: BBC Business
+    published: "2026-02-17T00:03:10.000Z"
+  - entity: could-bill-gates-and-political-tussles-o-2026-02-17
+    type: article
+    title: Could Bill Gates and political tussles overshadow AI safety debate in Delhi?
+    url: https://www.bbc.com/news/articles/cr5l6gnen72o
+    excerpt: As global tech leaders meet Delhi, India hopes to level the playing field for countries outside the US and China.
+    source_name: BBC Business
+    published: "2026-02-17T11:35:09.000Z"
+  - entity: kenyan-authorities-used-israeli-tech-to-2026-02-17
+    type: article
+    title: Kenyan authorities used Israeli tech to crack activist’s phone, report claims
+    url: >-
+      https://www.theguardian.com/world/2026/feb/17/trim-slugs-to-kenya-authorities-israel-tech-crack-activists-phone-report
+    excerpt: >-
+      <p>Citizen Lab report suggests Cellebrite software was used to break into Boniface Mwangi’s phone while he was
+      under arrest</p><p>When Boniface Mwangi, the prominent Kenyan pro-democracy activist who 
+    source_name: The Guardian
+    published: "2026-02-17T11:01:02.000Z"
+  - entity: uk-interest-rate-cut-in-march-more-likel-2026-02-17
+    type: article
+    title: UK interest rate cut in March more likely after unemployment rate hits five-year high – business live
+    url: >-
+      https://www.theguardian.com/business/live/2026/feb/17/uk-unemployment-rate-hits-five-year-high-wage-growth-slows-rachel-reeves-bonds-borrowing-costs-news-updates
+    excerpt: >-
+      <p>City traders expect cut to UK interest rates next month after jobless rate rises to 5.2%</p><ul><li><p><a
+      href="https://www.theguardian.com/business/2026/feb/17/uk-unemployment-rate-ons-interest-ra
+    source_name: The Guardian
+    published: "2026-02-17T11:55:57.000Z"
+  - entity: eu-to-investigate-shein-over-sale-of-chi-2026-02-17
+    type: article
+    title: EU to investigate Shein over sale of childlike sex dolls and weapons
+    url: https://www.theguardian.com/business/2026/feb/17/eu-investigate-shein-sale-of-sex-dolls-recommender
+    excerpt: >-
+      <p>Bloc also examines ‘addictive design’ of shopping site, including rewards, and its recommender
+      systems</p><ul><li><p><a href="https://www.theguardian.com/business/live/2026/feb/17/uk-unemployment-r
+    source_name: The Guardian
+    published: "2026-02-17T11:00:51.000Z"
+  - entity: claims-that-ai-can-help-fix-climate-dism-2026-02-17
+    type: article
+    title: Claims that AI can help fix climate dismissed as greenwashing
+    url: >-
+      https://www.theguardian.com/technology/2026/feb/17/tech-companies-traditional-ai-generative-climate-breakdown-report
+    excerpt: >-
+      <p>Industry using ‘diversionary’ tactics, says analyst, as energy-hungry complex functions such as video
+      generation and deep research proliferate</p><p>Tech companies are conflating traditional artifi
+    source_name: The Guardian
+    published: "2026-02-17T05:00:47.000Z"
+  - entity: boohoo-and-debenhams-owner-raises-35m-2026-02-17
+    type: article
+    title: Boohoo and Debenhams owner raises £35m, risking Mike Ashley clash
+    url: https://www.theguardian.com/business/2026/feb/17/boohoo-debenhams-mike-ashley-sports-direct
+    excerpt: >-
+      <p>Company, which also owns Oasis, Warehouse and Karen Millen, to use cash to cut debts and fund
+      turnaround</p><ul><li><p><a href="https://www.theguardian.com/business/live/2026/feb/17/uk-unemployment
+    source_name: The Guardian
+    published: "2026-02-17T11:29:52.000Z"
+  - entity: uk-shelves-110m-frictionless-post-brexi-2026-02-17
+    type: article
+    title: UK shelves £110m frictionless post-Brexit trade border project
+    url: https://www.theguardian.com/business/2026/feb/17/uk-frictionless-post-brexit-trade-border-project
+    excerpt: >-
+      <p>Programme launched by last Tory government was worked on by Deloitte and IBM but was paused in
+      2024</p><ul><li><p><a href="https://www.theguardian.com/business/live/2026/feb/17/uk-unemployment-rate
+    source_name: The Guardian
+    published: "2026-02-17T11:04:05.000Z"
+  - entity: hyatt-chair-thomas-pritzker-steps-down-o-2026-02-17
+    type: article
+    title: Hyatt chair Thomas Pritzker steps down over Epstein links
+    url: https://www.theguardian.com/business/2026/feb/17/hyatt-chair-thomas-pritzker-jeffrey-epstein-ghislane-maxwell
+    excerpt: >-
+      <p>Billionaire says he exercised ‘terrible judgment’ in maintaining contact with sex offender and Ghislaine
+      Maxwell</p><p>The billionaire Thomas Pritzker has stepped down as executive chair of the hot
+    source_name: The Guardian
+    published: "2026-02-17T11:02:10.000Z"
+  - entity: surging-prediction-markets-face-legal-ba-2026-02-17
+    type: article
+    title: "Surging prediction markets face legal backlash in US: ‘Lines have been blurred’"
+    url: https://www.theguardian.com/business/2026/feb/17/us-prediction-markets-lawsuits-kalshi-polymarket
+    excerpt: >-
+      <p>At least 20 federal suits filed against companies like Kalshi and Polymarket as lawmakers call it ‘loophole’
+      for gambling</p><p>State lawmakers and gaming regulators across the US are escalating th
+    source_name: The Guardian
+    published: "2026-02-17T12:00:36.000Z"
+  - entity: gloom-for-uk-workers-as-incomes-flatline-2026-02-17
+    type: article
+    title: Gloom for UK workers as incomes flatline and jobs market falters
+    url: >-
+      https://www.theguardian.com/business/2026/feb/17/uk-workers-incomes-jobs-market-inflation-interest-rates-unemployment
+    excerpt: >-
+      <p>Falls in inflation and interest rates could leave Britain better off this year, but at the cost of high
+      unemployment</p><ul><li><p><a href="https://www.theguardian.com/business/2026/feb/17/uk-unemp
+    source_name: The Guardian
+    published: "2026-02-17T09:06:25.000Z"
+  - entity: iran-s-khamenei-says-us-will-not-be-able-2026-02-17
+    type: article
+    title: Iran’s Khamenei says US will not be able to destroy government
+    url: https://www.aljazeera.com/video/newsfeed/2026/2/17/irans-khamenei-says-us-will-not-be-able-to-destroy-government
+    excerpt: Iran’s Supreme Leader Ali Khamenei has taken aim at Donald Trump.
+    source_name: Al Jazeera
+    published: "2026-02-17T12:06:03.000Z"
+  - entity: imran-khan-must-be-given-immediate-medic-2026-02-17
+    type: article
+    title: Imran Khan must be given immediate medical attention, cricket legends say
+    url: >-
+      https://www.aljazeera.com/sports/2026/2/17/imran-khan-must-be-given-immediate-medical-attention-cricket-legends-say
+    excerpt: A group of former captains has written to Pakistan&#039;s government, requesting immediate medical attention.
+    source_name: Al Jazeera
+    published: "2026-02-17T11:49:21.000Z"
+  - entity: australia-refuses-to-repatriate-isil-rel-2026-02-17
+    type: article
+    title: Australia refuses to repatriate ISIL relatives from Syrian camp
+    url: https://www.aljazeera.com/video/newsfeed/2026/2/17/australia-refuses-to-repatriate-isil-relatives-from-syrian-camp
+    excerpt: Australia is refusing to repatriate 34 women and children held in a camp in northern Syria.
+    source_name: Al Jazeera
+    published: "2026-02-17T11:24:38.000Z"
+  - entity: gaza-aid-figures-2026-02-17
+    type: article
+    title: Gaza aid figures
+    url: https://www.aljazeera.com/video/compare-contrast/2026/2/17/gaza-aid-figures
+    excerpt: >-
+      We compare and contrast the US ambassador to the UN’s claim that 4,000 trucks enter Gaza weekly with the actual
+      numbers.
+    source_name: Al Jazeera
+    published: "2026-02-17T11:13:03.000Z"
+  - entity: jordan-is-next-west-bank-annexation-s-2026-02-17
+    type: article
+    title: "‘Jordan is next’: West Bank annexation signals ‘silent transfer’"
+    url: https://www.aljazeera.com/features/2026/2/17/jordan-is-next-west-bank-annexation-signals-silent
+    excerpt: >-
+      Jordan warns of war as Israel&#039;s &#039;silent transfer&#039; in the occupied West Bank becomes an operational
+      reality.
+    source_name: Al Jazeera
+    published: "2026-02-17T10:58:19.000Z"
+  - entity: mapping-forced-displacements-and-settler-2026-02-17
+    type: article
+    title: Mapping forced displacements and settler attacks by Israel in the West Bank
+    url: >-
+      https://www.aljazeera.com/news/2026/2/17/mapping-forced-displacements-and-settler-attacks-by-israel-in-the-west-bank
+    excerpt: Israeli military incursions and settler attacks forced more than 37,000 Palestinians to leave their homes in 2025.
+    source_name: Al Jazeera
+    published: "2026-02-17T10:51:11.000Z"
+  - entity: video-millions-celebrate-lunar-new-year-2026-02-17
+    type: article
+    title: "Video: Millions celebrate Lunar New Year ushering in the Year of the Horse"
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/2/17/video-millions-celebrate-lunar-new-year-ushering-in-the-year-of-the-horse
+    excerpt: Hundreds of millions of people around the world are celebrating the Lunar New Year.
+    source_name: Al Jazeera
+    published: "2026-02-17T10:35:00.000Z"
+  - entity: spain-to-probe-social-media-giants-over-2026-02-17
+    type: article
+    title: Spain to probe social media giants over AI-generated child abuse material
+    url: https://www.aljazeera.com/news/2026/2/17/spain-to-probe-social-media-giants-over-ai-generated-child-abuse-material
+    excerpt: >-
+      Prime Minister ‌Pedro ​Sanchez pledges to end &#039;impunity&#039; of platforms X, Meta and TikTok in promoting
+      harmful content.
+    source_name: Al Jazeera
+    published: "2026-02-17T10:22:51.000Z"
+  - entity: iran-and-us-open-second-round-of-nuclear-2026-02-17
+    type: article
+    title: Iran and US open second round of nuclear talks in Switzerland
+    url: https://www.aljazeera.com/video/newsfeed/2026/2/17/iran-and-us-open-second-round-of-nuclear-talks-in-switzerland
+    excerpt: >-
+      A second round of nuclear talks between the US and Iran is underway in Geneva. Al Jazeera’s Osama Bin Javaid
+      explains.
+    source_name: Al Jazeera
+    published: "2026-02-17T10:09:03.000Z"
+  - entity: lunar-new-year-global-celebrations-welc-2026-02-17
+    type: article
+    title: "Lunar New Year: Global celebrations welcome Year of the Fire Horse"
+    url: https://www.aljazeera.com/gallery/2026/2/17/global-celebrations-welcome-the-year-of-the-horse-with-fireworks
+    excerpt: From Beijing to Hong Kong to Moscow, people celebrate Lunar New Year with cultural events and vibrant displays.
+    source_name: Al Jazeera
+    published: "2026-02-17T10:07:58.000Z"
+  - entity: bitcoin-improvement-proposal-to-block-sp-2026-02-17
+    type: article
+    title: Bitcoin improvement proposal to block spam draws heat from heavyweights
+    url: >-
+      https://www.coindesk.com/daybook-us/2026/02/17/bitcoin-improvement-proposal-to-block-spam-draws-heat-from-heavyweights
+    excerpt: Your day-ahead look for Feb. 17, 2026
+    source_name: CoinDesk
+    published: "2026-02-17T12:15:00.000Z"
+  - entity: crypto-slides-as-tech-stocks-and-gold-re-2026-02-17
+    type: article
+    title: Crypto slides as tech stocks and gold retreat; bitcoin-Nasdaq correlation turns positive
+    url: >-
+      https://www.coindesk.com/markets/2026/02/17/crypto-slides-as-tech-stocks-and-gold-retreat-bitcoin-nasdaq-correlation-turns-positive
+    excerpt: >-
+      Bitcoin falls to $68,000 as tech-led risk-off move deepens, gold extends correction and memecoins lead altcoin
+      losses amid BTC dominance range.
+    source_name: CoinDesk
+    published: "2026-02-17T11:31:16.000Z"
+  - entity: bitcoin-remains-under-pressure-near-68-2026-02-17
+    type: article
+    title: Bitcoin remains under pressure near $68,000 even as panic ebbs
+    url: https://www.coindesk.com/markets/2026/02/17/bitcoin-remains-under-pressure-near-usd68-000-even-as-panic-ebbs
+    excerpt: Key derivatives metrics and ETF flows suggest lack of demand, but macro forces offer hope.
+    source_name: CoinDesk
+    published: "2026-02-17T09:43:10.000Z"
+  - entity: popular-burger-joint-steak-n-shake-says-2026-02-17
+    type: article
+    title: Popular burger joint Steak ’n Shake says bitcoin adoption boosted sales ‘dramatically’
+    url: >-
+      https://www.coindesk.com/business/2026/02/17/popular-burger-joint-steak-n-shake-says-bitcoin-adoption-boosted-sales-dramatically
+    excerpt: >-
+      Bitcoin payments are directed to a Strategic Bitcoin Reserve, used to fund employee bonuses according to the
+      company.
+    source_name: CoinDesk
+    published: "2026-02-17T09:18:25.000Z"
+  - entity: uk-crypto-rules-too-slow-to-support-glob-2026-02-17
+    type: article
+    title: UK crypto rules too slow to support global hub ambitions, says Agant CEO
+    url: >-
+      https://www.coindesk.com/business/2026/02/17/uk-crypto-rules-too-slow-to-support-global-hub-ambitions-says-agant-ceo
+    excerpt: >-
+      Regulatory delays risk blunting Britain’s digital asset push, said Andrew MacKenzie, head of the pound-pegged
+      stablecoin developer.
+    source_name: CoinDesk
+    published: "2026-02-17T08:30:00.000Z"
+  - entity: defi-protocol-zerolend-shuts-down-after-2026-02-17
+    type: article
+    title: DeFi protocol ZeroLend shuts down after three years, citing inactive chains and hacks
+    url: >-
+      https://www.coindesk.com/markets/2026/02/17/defi-protocol-zerolend-shuts-down-after-3-years-citing-inactive-chains-and-hacks
+    excerpt: >-
+      The protocol is shutting down after three years, citing unsustainable economics, thin margins and rising security
+      threats.
+    source_name: CoinDesk
+    published: "2026-02-17T07:19:53.000Z"
+  - entity: bofa-survey-flags-dollar-bearish-bets-at-2026-02-17
+    type: article
+    title: BofA survey flags dollar bearish bets at over a decade high. Here's what it means for bitcoin
+    url: >-
+      https://www.coindesk.com/markets/2026/02/17/bofa-survey-shows-record-bearish-dollar-bets-here-s-what-it-means-for-bitcoin
+    excerpt: >-
+      BofA's February survey shows investor positioning in the U.S. dollar has fallen to its most negative level since
+      at least early 2012.
+    source_name: CoinDesk
+    published: "2026-02-17T05:43:15.000Z"
+  - entity: efg-teams-up-with-capital-group-to-expan-2026-02-17
+    type: article
+    title: EFG teams up with Capital Group to expand investment solutions
+    url: https://finance.yahoo.com/news/efg-teams-capital-group-expand-121230298.html
+    excerpt: ""
+    source_name: Private Banker International
+    published: "2026-02-17T12:12:30.000Z"
+  - entity: btig-stays-positive-on-palo-alto-network-2026-02-17
+    type: article
+    title: BTIG Stays Positive on Palo Alto Networks (PANW) as Channel Checks Improve
+    url: https://finance.yahoo.com/news/btig-stays-positive-palo-alto-120846258.html
+    excerpt: ""
+    source_name: Insider Monkey
+    published: "2026-02-17T12:08:46.000Z"
+  - entity: rivian-rivn-gains-momentum-as-r2-launc-2026-02-17
+    type: article
+    title: Rivian (RIVN) Gains Momentum as R2 Launch Stays on Track
+    url: https://finance.yahoo.com/news/rivian-rivn-gains-momentum-r2-120756430.html
+    excerpt: ""
+    source_name: Insider Monkey
+    published: "2026-02-17T12:07:56.000Z"
+  - entity: twilio-twlo-gains-momentum-as-ai-and-v-2026-02-17
+    type: article
+    title: Twilio (TWLO) Gains Momentum as AI and Voice Demand Accelerate
+    url: https://finance.yahoo.com/news/twilio-twlo-gains-momentum-ai-120701049.html
+    excerpt: ""
+    source_name: Insider Monkey
+    published: "2026-02-17T12:07:01.000Z"
+  - entity: nordvpn-partners-with-crowdstrike-crwd-2026-02-17
+    type: article
+    title: NordVPN Partners With CrowdStrike (CRWD) to Boost Consumer Threat Protection
+    url: https://finance.yahoo.com/news/nordvpn-partners-crowdstrike-crwd-boost-120622264.html
+    excerpt: ""
+    source_name: Insider Monkey
+    published: "2026-02-17T12:06:22.000Z"
+  - entity: intel-intc-faces-show-me-reset-as-da-2026-02-17
+    type: article
+    title: Intel (INTC) Faces ‘Show-Me’ Reset as DA Davidson Initiates Neutral Rating
+    url: https://finance.yahoo.com/news/intel-intc-faces-show-reset-120548783.html
+    excerpt: ""
+    source_name: Insider Monkey
+    published: "2026-02-17T12:05:48.000Z"
+  - entity: 3-risks-duolingo-investors-should-watch-2026-02-17
+    type: article
+    title: 3 Risks Duolingo Investors Should Watch in 2026
+    url: https://finance.yahoo.com/news/3-risks-duolingo-investors-watch-120500751.html
+    excerpt: ""
+    source_name: Motley Fool
+    published: "2026-02-17T12:05:00.000Z"
+  - entity: warner-bros-rejects-paramounts-revised-2026-02-17
+    type: article
+    title: Warner Bros rejects Paramount's revised offer, but gives studio a week to negotiate better deal
+    url: https://finance.yahoo.com/news/warner-bros-rejects-paramounts-revised-120235731.html
+    excerpt: ""
+    source_name: Reuters
+    published: "2026-02-17T12:02:35.000Z"
+  - entity: applied-materials-amat-seen-winning-wh-2026-02-17
+    type: article
+    title: Applied Materials (AMAT) Seen Winning Whether WFE Growth Is Market- or Share-Driven
+    url: https://finance.yahoo.com/news/applied-materials-amat-seen-winning-120135930.html
+    excerpt: ""
+    source_name: Insider Monkey
+    published: "2026-02-17T12:01:35.000Z"
+  - entity: here-are-the-executives-who-have-departe-2026-02-17
+    type: article
+    title: Here are the executives who have departed in wake of the Epstein files. Hyatt&#x2019;s Pritzker is the latest.
+    url: >-
+      https://www.marketwatch.com/story/here-are-the-executives-who-have-departed-in-wake-of-the-epstein-files-hyatts-pritzker-is-the-latest-3242eda6?mod=mw_rss_topstories
+    excerpt: >-
+      Thomas Pritzker, the 75-year old executive chairman of Hyatt Hotels, expressed deep &#x201c;regret&#x201d; over
+      his contacts with the late Epstein
+    source_name: MarketWatch
+    published: "2026-02-17T12:16:00.000Z"
+  - entity: fund-managers-alarmed-over-corporate-spe-2026-02-17
+    type: article
+    title: Fund managers alarmed over corporate spending even as optimism at five-year high
+    url: >-
+      https://www.marketwatch.com/story/fund-managers-alarmed-over-corporate-spending-even-as-optimism-at-five-year-high-053dd1b7?mod=mw_rss_topstories
+    excerpt: >-
+      Fund managers are &#x201c;uber-bullish&#x201d; but behind the confident outlook, the crowded long position in gold
+      and an uptick in cash levels betray some doubts.
+    source_name: MarketWatch
+    published: "2026-02-17T12:05:00.000Z"
+  - entity: why-the-x2018-halo-x2019-trade-boost-2026-02-17
+    type: article
+    title: Why the &#x2018;HALO&#x2019; trade boosting hard assets is no fluke, according to Morgan Stanley
+    url: >-
+      https://www.marketwatch.com/story/why-the-halo-trade-boosting-hard-assets-is-no-fluke-according-to-morgan-stanley-068a35de?mod=mw_rss_topstories
+    excerpt: The boost for non-digital sectors should last through the year, says Morgan Stanley&#x2019;s Wilson
+    source_name: MarketWatch
+    published: "2026-02-17T11:49:00.000Z"
+  - entity: norwegian-cruise-line-stock-is-rising-a-2026-02-17
+    type: article
+    title: Norwegian Cruise Line stock is rising. A big activist reportedly has taken a stake.
+    url: >-
+      https://www.marketwatch.com/story/norwegian-cruise-line-stock-is-rising-a-big-activist-reportedly-has-taken-a-stake-2b59dce7?mod=mw_rss_topstories
+    excerpt: >-
+      Norwegian Cruise Line shares rose on Tuesday after a report an activist investor has taken a stake and plans to
+      shake up the struggling company.
+    source_name: MarketWatch
+    published: "2026-02-17T10:16:00.000Z"
+  - entity: the-math-is-getting-challenging-economi-2026-02-17
+    type: article
+    title: "The math is getting challenging: economic realities start to bite as UBS downgrades U.S. tech stocks"
+    url: >-
+      https://www.marketwatch.com/story/the-math-is-getting-challenging-economic-realities-start-to-bite-as-ubs-downgrades-u-s-tech-stocks-e40a2adb?mod=mw_rss_topstories
+    excerpt: >-
+      UBS global head of equities  thinks the question of how to turn capex into profits is becoming more challenging 
+      for AI developers to answer as funding commitments boom and funding gets more difficult
+    source_name: MarketWatch
+    published: "2026-02-17T10:12:00.000Z"
+  - entity: why-has-kris-jenner-x2019-s-13-5-milli-2026-02-17
+    type: article
+    title: >-
+      Why has Kris Jenner&#x2019;s $13.5 million &#x2018;Keeping Up With the Kardashians&#x2019; house sat on the market
+      for over a year?
+    url: >-
+      https://www.marketwatch.com/story/why-has-kris-jenners-13-5-million-keeping-up-with-the-kardashians-house-sat-on-the-market-for-over-a-year-de80b7cf?mod=mw_rss_topstories
+    excerpt: >-
+      Kris Jenner listed the Hidden Hills home with much fanfare, but none of the hoopla appears to have moved the
+      needle on the sale of the property.
+    source_name: MarketWatch
+    published: "2026-02-17T10:02:00.000Z"
+  - entity: mark-zuckerberg-may-be-the-latest-califo-2026-02-17
+    type: article
+    title: Mark Zuckerberg may be the latest California tycoon to buy in Miami&#x2019;s &#x2018;Billionaire Bunker&#x2019;
+    url: >-
+      https://www.marketwatch.com/story/mark-zuckerberg-may-be-the-latest-california-tycoon-to-buy-in-miamis-billionaire-bunker-d39db705?mod=mw_rss_topstories
+    excerpt: >-
+      Facebook&#xa0;billionaire&#xa0;Mark Zuckerberg has reportedly snapped up an extraordinary waterfront mansion
+      on&#xa0;Miami&#x2019;s infamous Billionaire Bunker.
+    source_name: MarketWatch
+    published: "2026-02-17T09:58:00.000Z"
+  - entity: gold-prices-tumble-below-5-000-as-chin-2026-02-17
+    type: article
+    title: Gold prices tumble below $5,000  as China holidays dent support
+    url: >-
+      https://www.marketwatch.com/story/gold-prices-tumble-below-5-000-as-china-holidays-dent-support-d093e677?mod=mw_rss_topstories
+    excerpt: Gold&#x2019;s fragile hold on $5,000 an ounce gave way to selling on Tuesday.
+    source_name: MarketWatch
+    published: "2026-02-17T07:58:00.000Z"
+  - entity: u-s-stock-futures-slump-as-investors-di-2026-02-17
+    type: article
+    title: U.S. stock futures slump as investors digest ongoing tech selloff
+    url: >-
+      https://www.marketwatch.com/story/u-s-stock-futures-flat-as-investors-digest-ongoing-tech-selloff-over-holiday-weekend-765f3c5c?mod=mw_rss_topstories
+    excerpt: U.S. stock futures turned lower Monday night, following another brutal week for tech stocks.
+    source_name: MarketWatch
+    published: "2026-02-17T04:01:00.000Z"
+  - entity: kazakhstan-looks-to-start-up-new-refiner-2026-02-17
+    type: article
+    title: Kazakhstan Looks to Start Up New Refinery by 2033
+    url: https://oilprice.com/Latest-Energy-News/World-News/Kazakhstan-Looks-to-Start-Up-New-Refinery-by-2033.html
+    excerpt: >-
+      Major oil producer Kazakhstan plans to commission a new refinery by 2033 to eliminate domestic fuel shortages and
+      become a net fuel exporter, The Caspian Post reports, citing Vice Minister of Energy, 
+    source_name: OilPrice.com
+    published: "2026-02-17T12:30:00.000Z"
+  - entity: spain-leans-on-gas-to-stabilize-grid-aft-2026-02-17
+    type: article
+    title: Spain Leans on Gas to Stabilize Grid After Historic Blackout
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/Spain-Leans-on-Gas-to-Stabilize-Grid-After-Historic-Blackout.html
+    excerpt: >-
+      Gas demand for power generation spiked last year as utilities boosted gas-powered output following the worst
+      blackout in Europe’s modern history. Spain’s demand for transported natural gas – domestic 
+    source_name: OilPrice.com
+    published: "2026-02-17T11:10:02.000Z"
+  - entity: the-eu-must-spend-more-to-counter-climat-2026-02-17
+    type: article
+    title: The EU Must Spend More to Counter Climate Change
+    url: https://oilprice.com/Latest-Energy-News/World-News/The-EU-Must-Spend-More-to-Counter-Climate-Change.html
+    excerpt: >-
+      The European Union needs to spend more to move away from hydrocarbons because Europe is the fastest-warming
+      continent, the bloc’s climate advisory body has warned. The increased frequency of extreme w
+    source_name: OilPrice.com
+    published: "2026-02-17T10:00:00.000Z"
+  - entity: citi-sees-oil-prices-falling-to-60-if-t-2026-02-17
+    type: article
+    title: Citi Sees Oil Prices Falling to $60 if Trump Secures Iran and Russia Deals
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/Citi-Sees-Oil-Prices-Falling-to-60-if-Trump-Secures-Iran-and-Russia-Deals.html
+    excerpt: >-
+      According to Citi analysts, geopolitics will continue to provide support for oil prices in the immediate term, but
+      they may later come under pressure if President Trump’s attempts to clinch a peace de
+    source_name: OilPrice.com
+    published: "2026-02-17T07:37:00.000Z"
+  - entity: australian-energy-major-wins-greenwashin-2026-02-17
+    type: article
+    title: Australian Energy Major Wins Greenwashing Court Case
+    url: https://oilprice.com/Latest-Energy-News/World-News/Australian-Energy-Major-Wins-Greenwashing-Court-Case.html
+    excerpt: >-
+      Australia’s Santos has won a court case that was brought against it five years ago by environmentalists, alleging
+      that the company misled its shareholders about its net-zero intentions. A federal judg
+    source_name: OilPrice.com
+    published: "2026-02-17T06:37:58.000Z"
+  - entity: oil-bears-are-dangerously-underestimatin-2026-02-17
+    type: article
+    title: Oil Bears Are Dangerously Underestimating Geopolitical Risk
+    url: https://oilprice.com/Energy/Energy-General/Oil-Bears-Are-Dangerously-Underestimating-Geopolitical-Risk.html
+    excerpt: >-
+      For decades, oil prices could swing wildly on even the distant prospect of war in the Middle East. With U.S.
+      shale, that changed, leading many to assume that anything short of an oil blockade in the S
+    source_name: OilPrice.com
+    published: "2026-02-17T01:00:00.000Z"
+  - entity: china-hits-renewable-milestone-but-coal-2026-02-17
+    type: article
+    title: China Hits Renewable Milestone, But Coal Isn’t Going Anywhere
+    url: https://oilprice.com/Energy/Coal/China-Hits-Renewable-Milestone-But-Coal-Isnt-Going-Anywhere.html
+    excerpt: "For the first time ever, China now has more operating power capacity from clean energy sources than capacity running on fossil fuels, thanks to a decade of booming solar and wind installations.\_\_\_\_ Ch"
+    source_name: OilPrice.com
+    published: "2026-02-17T00:00:00.000Z"
+  - entity: cohere-launches-a-family-of-open-multili-2026-02-17
+    type: article
+    title: Cohere launches a family of open multilingual models
+    url: https://techcrunch.com/2026/02/17/cohere-launches-a-family-of-open-multilingual-models/
+    excerpt: Cohere's Tiny Aya models support over 70 langauges
+    source_name: TechCrunch
+    published: "2026-02-17T09:00:00.000Z"
