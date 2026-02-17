@@ -1,0 +1,356 @@
+seed:
+  name: news-week8-day-2026-02-17-hour-07
+  label: Daily News — 2026-02-17 07:00 (Week 8, 2026)
+  namespace: news.week8.day-2026-02-17
+  description: "Auto-gathered news: 18 stories, 2026-02-17 to 2026-02-17"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week8
+    extends: news
+  - namespace: news.week8.day-2026-02-17
+    extends: news.week8
+entities:
+  - id: trump-says-he-will-be-indirectly-invol-2026-02-17
+    type: Claim
+    name: Trump says he will be 'indirectly' involved in Iran nuclear talks
+    category: geopolitics
+    description: Speaking ahead of negotiations on Tuesday, the US president says he believes Iran wants to make a deal.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T05:14:21.000Z"
+      precision: day
+  - id: hyatt-hotels-chairman-steps-down-over-je-2026-02-17
+    type: Event
+    name: Hyatt Hotels chairman steps down over Jeffrey Epstein ties
+    category: finance
+    description: Billionaire Thomas Pritzker said he had exercised "terrible judgement" in keeping contact with Epstein.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T04:16:40.000Z"
+      precision: day
+  - id: the-tech-bros-might-show-more-humility-i-2026-02-17
+    type: Event
+    name: The tech bros might show more humility in Delhi – but will they make AI any safer?
+    category: finance
+    description: As global tech leaders meet Delhi, India hopes to level the playing field for countries outside the US and China.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T00:12:58.000Z"
+      precision: day
+  - id: reddits-human-content-wins-amid-the-ai-2026-02-17
+    type: Event
+    name: Reddit's human content wins amid the AI flood
+    category: finance
+    description: Reddit says its human contributors are valued amid an internet awash with AI-generated content.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T00:03:10.000Z"
+      precision: day
+  - id: trump-ups-pressure-on-kyiv-as-russia-uk-2026-02-17
+    type: Event
+    name: Trump ups pressure on Kyiv as Russia, Ukraine hold peace talks in Geneva
+    category: geopolitics
+    description: Kremlin says the talks are likely to focus on the issue of Ukrainian territory that Russian wants Kyiv to cede.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T05:35:24.000Z"
+      precision: day
+  - id: waste-piles-up-in-cuba-as-us-imposed-fue-2026-02-17
+    type: Event
+    name: Waste piles up in Cuba as US-imposed fuel blockade halts collection trucks
+    category: geopolitics
+    description: >-
+      Cubans suffer under a fuel blockade as US President Donald Trump calls the Caribbean country a &#039;failed
+      nation&#039;.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T05:18:03.000Z"
+      precision: day
+  - id: us-iran-talks-live-second-round-to-begi-2026-02-17
+    type: Event
+    name: "US-Iran talks live: Second round to begin in Geneva"
+    category: geopolitics
+    description: >-
+      The second round of negotiations to be held with mediation by Oman&#039;s Foreign Minister Badr bin Hamad
+      al-Busaidi.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T05:13:07.000Z"
+      precision: day
+  - id: judge-orders-trump-administration-to-res-2026-02-17
+    type: Decision
+    name: Judge orders Trump administration to restore Philadelphia slavery exhibit
+    category: geopolitics
+    description: >-
+      Judge accuses the US government of trying to rewrite history by taking down the exhibit in the city of
+      Philadelphia.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T05:00:52.000Z"
+      precision: day
+  - id: train-derails-in-switzerland-injuring-f-2026-02-17
+    type: Event
+    name: Train derails in Switzerland, injuring five amid avalanches in the Alps
+    category: geopolitics
+    description: The accident happened as the region is under its second-highest avalanche warning, a level four out of five.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T04:02:43.000Z"
+      precision: day
+  - id: australian-pm-albanese-says-no-help-for-2026-02-17
+    type: Claim
+    name: Australian PM Albanese says no help for ISIL relatives held in Syria camp
+    category: geopolitics
+    description: >-
+      Group of 34 women and children with Australian passports forced to return to Roj detention camp for ISIL
+      relatives.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T03:33:34.000Z"
+      precision: day
+  - id: trump-says-he-will-be-involved-indirect-2026-02-17
+    type: Claim
+    name: Trump says he will be involved ‘indirectly’ in Iran nuclear talks
+    category: geopolitics
+    description: The US president&#039;s comments come ahead of a second round of high-stakes talks in Geneva on Tuesday.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T03:10:14.000Z"
+      precision: day
+  - id: hyatt-hotels-chairman-thomas-pritzker-st-2026-02-17
+    type: Event
+    name: Hyatt Hotels chairman Thomas Pritzker steps down over Epstein ties
+    category: geopolitics
+    description: >-
+      Pritzker steps down as Hyatt executive chairman, effective immediately, over his relationship with the sex
+      offender.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T02:24:31.000Z"
+      precision: day
+  - id: lebanon-sets-four-months-for-second-phas-2026-02-17
+    type: Event
+    name: Lebanon sets four months for second phase of Hezbollah disarmament
+    category: geopolitics
+    description: >-
+      Hezbollah rejects calls to dismantle its arsenals north of Litani River, describing pressure to do so as a
+      &#039;grave sin&#039;.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T01:53:05.000Z"
+      precision: day
+  - id: rhode-island-shooting-2-killed-3-criti-2026-02-17
+    type: Fact
+    name: "Rhode Island shooting: 2 killed, 3 critically injured at Pawtucket ice rink"
+    category: geopolitics
+    description: The attacker has also died from a self-inflicted gunshot wound after opening fire at an ice hockey rink in the US.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T01:41:32.000Z"
+      precision: day
+  - id: bofa-survey-flags-dollar-bearish-bets-at-2026-02-17
+    type: Event
+    name: BofA survey flags dollar bearish bets at over a decade high. Here's what it means for bitcoin
+    category: finance.crypto
+    description: >-
+      BofA's February survey shows investor positioning in the U.S. dollar has fallen to its most negative level since
+      at least early 2012.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T05:43:15.000Z"
+      precision: day
+  - id: u-s-stock-futures-slump-as-investors-di-2026-02-17
+    type: Event
+    name: U.S. stock futures slump as investors digest ongoing tech selloff
+    category: finance.markets
+    description: U.S. stock futures turned lower Monday night, following another brutal week for tech stocks.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T04:01:00.000Z"
+      precision: day
+  - id: oil-bears-are-dangerously-underestimatin-2026-02-17
+    type: Event
+    name: Oil Bears Are Dangerously Underestimating Geopolitical Risk
+    category: finance.energy
+    description: >-
+      For decades, oil prices could swing wildly on even the distant prospect of war in the Middle East. With U.S.
+      shale, that changed, leading many to assume that anything short of an oil blockade in the Strait of Hormuz will
+      leave oil markets cold—and such a blockade is highly unlikely. This, however, i
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T01:00:00.000Z"
+      precision: day
+  - id: china-hits-renewable-milestone-but-coal-2026-02-17
+    type: Event
+    name: China Hits Renewable Milestone, But Coal Isn’t Going Anywhere
+    category: finance.energy
+    description: "For the first time ever, China now has more operating power capacity from clean energy sources than capacity running on fossil fuels, thanks to a decade of booming solar and wind installations.\_\_\_\_ China, the undisputed global leader in clean energy investment, has 52% of operating power capacity co"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-17T00:00:00.000Z"
+      precision: day
+sources:
+  - entity: trump-says-he-will-be-indirectly-invol-2026-02-17
+    type: article
+    title: Trump says he will be 'indirectly' involved in Iran nuclear talks
+    url: https://www.bbc.com/news/articles/cwyknjnd706o
+    excerpt: Speaking ahead of negotiations on Tuesday, the US president says he believes Iran wants to make a deal.
+    source_name: BBC News
+    published: "2026-02-17T05:14:21.000Z"
+  - entity: hyatt-hotels-chairman-steps-down-over-je-2026-02-17
+    type: article
+    title: Hyatt Hotels chairman steps down over Jeffrey Epstein ties
+    url: https://www.bbc.com/news/articles/c93wk4d7x19o
+    excerpt: Billionaire Thomas Pritzker said he had exercised "terrible judgement" in keeping contact with Epstein.
+    source_name: BBC Business
+    published: "2026-02-17T04:16:40.000Z"
+  - entity: the-tech-bros-might-show-more-humility-i-2026-02-17
+    type: article
+    title: The tech bros might show more humility in Delhi – but will they make AI any safer?
+    url: https://www.bbc.com/news/articles/cr5l6gnen72o
+    excerpt: As global tech leaders meet Delhi, India hopes to level the playing field for countries outside the US and China.
+    source_name: BBC Business
+    published: "2026-02-17T00:12:58.000Z"
+  - entity: reddits-human-content-wins-amid-the-ai-2026-02-17
+    type: article
+    title: Reddit's human content wins amid the AI flood
+    url: https://www.bbc.com/news/articles/c5y4zl0w062o
+    excerpt: Reddit says its human contributors are valued amid an internet awash with AI-generated content.
+    source_name: BBC Business
+    published: "2026-02-17T00:03:10.000Z"
+  - entity: trump-ups-pressure-on-kyiv-as-russia-uk-2026-02-17
+    type: article
+    title: Trump ups pressure on Kyiv as Russia, Ukraine hold peace talks in Geneva
+    url: https://www.aljazeera.com/news/2026/2/17/trump-ups-pressure-on-kyiv-as-russia-ukraine-hold-peace-talks-in-geneva
+    excerpt: Kremlin says the talks are likely to focus on the issue of Ukrainian territory that Russian wants Kyiv to cede.
+    source_name: Al Jazeera
+    published: "2026-02-17T05:35:24.000Z"
+  - entity: waste-piles-up-in-cuba-as-us-imposed-fue-2026-02-17
+    type: article
+    title: Waste piles up in Cuba as US-imposed fuel blockade halts collection trucks
+    url: >-
+      https://www.aljazeera.com/news/2026/2/17/waste-piles-up-in-cuba-as-us-imposed-fuel-blockade-halts-collection-trucks
+    excerpt: >-
+      Cubans suffer under a fuel blockade as US President Donald Trump calls the Caribbean country a &#039;failed
+      nation&#039;.
+    source_name: Al Jazeera
+    published: "2026-02-17T05:18:03.000Z"
+  - entity: us-iran-talks-live-second-round-to-begi-2026-02-17
+    type: article
+    title: "US-Iran talks live: Second round to begin in Geneva"
+    url: https://www.aljazeera.com/news/liveblog/2026/2/17/us-iran-talks-set-to-begin-at-omans-embassy-in-switzerland
+    excerpt: >-
+      The second round of negotiations to be held with mediation by Oman&#039;s Foreign Minister Badr bin Hamad
+      al-Busaidi.
+    source_name: Al Jazeera
+    published: "2026-02-17T05:13:07.000Z"
+  - entity: judge-orders-trump-administration-to-res-2026-02-17
+    type: article
+    title: Judge orders Trump administration to restore Philadelphia slavery exhibit
+    url: https://www.aljazeera.com/news/2026/2/17/judge-orders-trump-administration-to-restore-philadelphia-slavery-exhibit
+    excerpt: >-
+      Judge accuses the US government of trying to rewrite history by taking down the exhibit in the city of
+      Philadelphia.
+    source_name: Al Jazeera
+    published: "2026-02-17T05:00:52.000Z"
+  - entity: train-derails-in-switzerland-injuring-f-2026-02-17
+    type: article
+    title: Train derails in Switzerland, injuring five amid avalanches in the Alps
+    url: https://www.aljazeera.com/news/2026/2/17/train-derails-in-switzerland-injuring-five-amid-avalanches-in-the-alps
+    excerpt: The accident happened as the region is under its second-highest avalanche warning, a level four out of five.
+    source_name: Al Jazeera
+    published: "2026-02-17T04:02:43.000Z"
+  - entity: australian-pm-albanese-says-no-help-for-2026-02-17
+    type: article
+    title: Australian PM Albanese says no help for ISIL relatives held in Syria camp
+    url: https://www.aljazeera.com/news/2026/2/17/australian-pm-albanese-says-no-help-for-isil-relatives-held-in-syria-camp
+    excerpt: >-
+      Group of 34 women and children with Australian passports forced to return to Roj detention camp for ISIL
+      relatives.
+    source_name: Al Jazeera
+    published: "2026-02-17T03:33:34.000Z"
+  - entity: trump-says-he-will-be-involved-indirect-2026-02-17
+    type: article
+    title: Trump says he will be involved ‘indirectly’ in Iran nuclear talks
+    url: https://www.aljazeera.com/news/2026/2/17/trump-says-he-will-be-involved-indirectly-in-iran-nuclear-talks
+    excerpt: The US president&#039;s comments come ahead of a second round of high-stakes talks in Geneva on Tuesday.
+    source_name: Al Jazeera
+    published: "2026-02-17T03:10:14.000Z"
+  - entity: hyatt-hotels-chairman-thomas-pritzker-st-2026-02-17
+    type: article
+    title: Hyatt Hotels chairman Thomas Pritzker steps down over Epstein ties
+    url: https://www.aljazeera.com/news/2026/2/17/hyatt-hotels-chairman-thomas-pritzker-steps-down-over-epstein-ties
+    excerpt: >-
+      Pritzker steps down as Hyatt executive chairman, effective immediately, over his relationship with the sex
+      offender.
+    source_name: Al Jazeera
+    published: "2026-02-17T02:24:31.000Z"
+  - entity: lebanon-sets-four-months-for-second-phas-2026-02-17
+    type: article
+    title: Lebanon sets four months for second phase of Hezbollah disarmament
+    url: https://www.aljazeera.com/news/2026/2/17/lebanon-says-four-months-needed-for-second-phase-of-hezbollah-disarmament
+    excerpt: >-
+      Hezbollah rejects calls to dismantle its arsenals north of Litani River, describing pressure to do so as a
+      &#039;grave sin&#039;.
+    source_name: Al Jazeera
+    published: "2026-02-17T01:53:05.000Z"
+  - entity: rhode-island-shooting-2-killed-3-criti-2026-02-17
+    type: article
+    title: "Rhode Island shooting: 2 killed, 3 critically injured at Pawtucket ice rink"
+    url: https://www.aljazeera.com/news/2026/2/17/rhode-island-shooting-2-killed-3-critically-injured-at-pawtucket-ice-rink
+    excerpt: The attacker has also died from a self-inflicted gunshot wound after opening fire at an ice hockey rink in the US.
+    source_name: Al Jazeera
+    published: "2026-02-17T01:41:32.000Z"
+  - entity: bofa-survey-flags-dollar-bearish-bets-at-2026-02-17
+    type: article
+    title: BofA survey flags dollar bearish bets at over a decade high. Here's what it means for bitcoin
+    url: >-
+      https://www.coindesk.com/markets/2026/02/17/bofa-survey-shows-record-bearish-dollar-bets-here-s-what-it-means-for-bitcoin
+    excerpt: >-
+      BofA's February survey shows investor positioning in the U.S. dollar has fallen to its most negative level since
+      at least early 2012.
+    source_name: CoinDesk
+    published: "2026-02-17T05:43:15.000Z"
+  - entity: u-s-stock-futures-slump-as-investors-di-2026-02-17
+    type: article
+    title: U.S. stock futures slump as investors digest ongoing tech selloff
+    url: >-
+      https://www.marketwatch.com/story/u-s-stock-futures-flat-as-investors-digest-ongoing-tech-selloff-over-holiday-weekend-765f3c5c?mod=mw_rss_topstories
+    excerpt: U.S. stock futures turned lower Monday night, following another brutal week for tech stocks.
+    source_name: MarketWatch
+    published: "2026-02-17T04:01:00.000Z"
+  - entity: oil-bears-are-dangerously-underestimatin-2026-02-17
+    type: article
+    title: Oil Bears Are Dangerously Underestimating Geopolitical Risk
+    url: https://oilprice.com/Energy/Energy-General/Oil-Bears-Are-Dangerously-Underestimating-Geopolitical-Risk.html
+    excerpt: >-
+      For decades, oil prices could swing wildly on even the distant prospect of war in the Middle East. With U.S.
+      shale, that changed, leading many to assume that anything short of an oil blockade in the S
+    source_name: OilPrice.com
+    published: "2026-02-17T01:00:00.000Z"
+  - entity: china-hits-renewable-milestone-but-coal-2026-02-17
+    type: article
+    title: China Hits Renewable Milestone, But Coal Isn’t Going Anywhere
+    url: https://oilprice.com/Energy/Coal/China-Hits-Renewable-Milestone-But-Coal-Isnt-Going-Anywhere.html
+    excerpt: "For the first time ever, China now has more operating power capacity from clean energy sources than capacity running on fossil fuels, thanks to a decade of booming solar and wind installations.\_\_\_\_ Ch"
+    source_name: OilPrice.com
+    published: "2026-02-17T00:00:00.000Z"
