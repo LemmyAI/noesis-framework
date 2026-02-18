@@ -1,0 +1,979 @@
+seed:
+  name: news-week8-day-2026-02-18-hour-09
+  label: Daily News — 2026-02-18 09:00 (Week 8, 2026)
+  namespace: news.week8.day-2026-02-18
+  description: "Auto-gathered news: 47 stories, 2026-02-18 to 2026-02-18"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week8
+    extends: news
+  - namespace: news.week8.day-2026-02-18
+    extends: news.week8
+entities:
+  - id: us-says-meaningful-progress-made-as-uk-2026-02-18
+    type: Claim
+    name: US says 'meaningful progress' made as Ukraine talks enter second day
+    category: geopolitics
+    description: >-
+      The US special envoy struck an optimistic note after the first day of talks in Geneva, but hopes for a
+      breakthrough remain low.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T07:37:24.000Z"
+      precision: day
+  - id: i-would-scream-in-my-sleep-women-from-s-2026-02-18
+    type: Event
+    name: "I would scream in my sleep: Women from Syria's Alawite minority tell of kidnap and rape"
+    category: geopolitics
+    description: The BBC hears harrowing accounts of assaults appearing to target the sect of former President Assad.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T00:20:03.000Z"
+      precision: day
+  - id: rescuers-search-for-10-missing-skiers-af-2026-02-18
+    type: Event
+    name: Rescuers search for 10 missing skiers after California avalanche
+    category: geopolitics
+    description: Rescuers are racing to the scene, which has seen about 30 inches (76cm) of snowfall in the last 24 hours.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T05:57:55.000Z"
+      precision: day
+  - id: climber-on-trial-for-leaving-girlfriend-2026-02-18
+    type: Event
+    name: Climber on trial for leaving girlfriend to die on Austria's highest mountain
+    category: geopolitics
+    description: Kerstin G's boyfriend is accused of leaving her unprotected and exhausted close to the summit during a blizzard.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T07:58:02.000Z"
+      precision: day
+  - id: australia-bans-citizen-trying-to-return-2026-02-18
+    type: Decision
+    name: Australia bans citizen trying to return from IS camp in Syria
+    category: geopolitics
+    description: The person temporarily banned is among a group of 34 who this week attempted to leave the camp for Australia.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T07:08:18.000Z"
+      precision: day
+  - id: stephen-colbert-says-cbs-spiked-intervie-2026-02-18
+    type: Claim
+    name: Stephen Colbert says CBS spiked interview with Democrat over FCC fears
+    category: geopolitics
+    description: >-
+      The network denies it stopped the interview with a Texas Democrat from airing but warned it could run afoul of the
+      US broadcast media watchdog.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T00:12:01.000Z"
+      precision: day
+  - id: suspect-in-rhode-island-ice-hockey-shoot-2026-02-18
+    type: Fact
+    name: Suspect in Rhode Island ice hockey shooting killed ex-wife and son
+    category: geopolitics
+    description: Robert Dorgan - who also went by the name Roberta Esposito - was found dead inside the Pawtucket arena.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T04:50:10.000Z"
+      precision: day
+  - id: perus-congress-ousts-president-after-fo-2026-02-18
+    type: Event
+    name: Peru's Congress ousts president after four months in office
+    category: geopolitics
+    description: José Jerí is the third consecutive president to be removed and the country's seventh since 2016.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T06:55:41.000Z"
+      precision: day
+  - id: philippine-vp-sara-duterte-to-run-for-pr-2026-02-18
+    type: Event
+    name: Philippine VP Sara Duterte to run for president in 2028
+    category: geopolitics
+    description: The daughter of former President Rodrigo Duterte has feuded spectacularly with the incumbent, Bongbong Marcos.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T04:09:51.000Z"
+      precision: day
+  - id: plan-to-increase-youth-minimum-wage-coul-2026-02-18
+    type: Claim
+    name: Plan to increase youth minimum wage could be delayed
+    category: finance
+    description: Government sources tell BBC News they could slow down plans to make minimum wage equal across age groups.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T07:39:45.000Z"
+      precision: day
+  - id: lower-fuel-prices-and-airfares-help-driv-2026-02-18
+    type: Event
+    name: Lower fuel prices and airfares help drive inflation down
+    category: finance
+    description: The rate at which prices are rising is slowing down, which could lead to lower interest rates.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T08:17:39.000Z"
+      precision: day
+  - id: illegal-skin-lightening-cream-being-sold-2026-02-18
+    type: Claim
+    name: Illegal skin lightening cream being sold in UK butchers, watchdog warns
+    category: finance
+    description: A trade body has warned illegal skin bleaching products are being sold in an increasingly wide range of places.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T00:00:38.000Z"
+      precision: day
+  - id: reform-plans-to-keep-uks-budget-watchdo-2026-02-18
+    type: Event
+    name: Reform plans to keep UK's budget watchdog
+    category: finance
+    description: Robert Jenrick will promise to reform the OBR, rather than abolish it, in a move to reassure financial markets.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T01:39:39.000Z"
+      precision: day
+  - id: i-do-not-trust-them-top-streamers-le-2026-02-18
+    type: Event
+    name: "'I do not trust them' - top streamers left concerned by Discord age checks"
+    category: finance
+    description: The platform's plan to roll out global age checks has caused concern in streaming communities.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T01:47:12.000Z"
+      precision: day
+  - id: i-invested-12-000-in-brewdog-i-think-2026-02-18
+    type: Event
+    name: I invested £12,000 in Brewdog  - I think I've lost it all
+    category: finance
+    description: >-
+      More than 200,000 people bought Equity for Punks shares in the craft brewer but many now believe they are
+      worthless.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T06:24:08.000Z"
+      precision: day
+  - id: uk-inflation-drops-to-10-month-low-thank-2026-02-18
+    type: Event
+    name: >-
+      UK inflation drops to 10-month low thanks to cheaper petrol, air fares and food; FTSE 100 hits new record high –
+      business live
+    category: finance
+    description: >-
+      <p>Rolling coverage of the latest economic and financial news, including the UK inflation report for
+      January</p><p><strong>The chances of an interest rate cut next month have risen this morning, following the news
+      that UK inflation fell to 3% in January.</strong></p><p>The money markets are now indi
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T08:11:23.000Z"
+      precision: day
+  - id: us-and-japan-unveil-36bn-of-oil-gas-an-2026-02-18
+    type: Event
+    name: US and Japan unveil $36bn of oil, gas and critical minerals projects in challenge to China
+    category: finance
+    description: >-
+      <p>Donald Trump says deals ‘end our foolish dependence on foreign sources’, while Japanese PM hails enhanced
+      economic security</p><p>Japan has drawn up plans for investments in US oil, gas and critical mineral projects
+      worth about $36bn under the first wave of a deal with Donald Trump.</p><p>The US 
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T06:02:23.000Z"
+      precision: day
+  - id: tfl-facebook-ad-banned-for-negative-ster-2026-02-18
+    type: Event
+    name: TfL Facebook ad banned for negative stereotype about black men
+    category: finance
+    description: >-
+      <p>Ad was part of campaign to encourage Londoners to intervene if they witness sexual harassment or hate
+      crime</p><p>A Transport for London (TfL) ad featuring a black teenage boy verbally harassing a white girl has been
+      banned for “perpetuating the negative racial stereotype about black men as perpe
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T07:00:02.000Z"
+      precision: day
+  - id: training-more-britons-may-not-cut-net-mi-2026-02-18
+    type: Claim
+    name: Training more Britons may not cut net migration or plug skills shortages, study finds
+    category: finance
+    description: >-
+      <p>Local workers can be difficult to attract because of poor pay and conditions, say researchers</p><p>Keir
+      Starmer’s plan to force employers to be less reliant on overseas staff and instead train UK-based workers may not
+      lower net migration, researchers have found.</p><p>Skill shortages are just on
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T00:01:52.000Z"
+      precision: day
+  - id: boxing-legend-manny-pacquiao-to-face-rus-2026-02-18
+    type: Event
+    name: Boxing legend Manny Pacquiao to face Ruslan Provodnikov in April
+    category: geopolitics
+    description: >-
+      Eight-division ⁠world champion Pacquiao will face former junior welterweight world ⁠champion ⁠Provodnikov on April
+      18.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T07:57:22.000Z"
+      precision: day
+  - id: video-over-80-un-states-condemn-israeli-2026-02-18
+    type: Event
+    name: "Video: Over 80 UN states condemn Israeli measures in occupied West Bank"
+    category: geopolitics
+    description: >-
+      More than 80 UN nation ambassadors have condemned Israeli measures to tighten its control of the occupied West
+      Bank.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T07:45:22.000Z"
+      precision: day
+  - id: ronda-rousey-gina-carano-end-mma-retire-2026-02-18
+    type: Claim
+    name: Ronda Rousey, Gina Carano end MMA retirements to fight in May
+    category: geopolitics
+    description: >-
+      Rousey will return to MMA for the first time in nearly a decade when she challenges ⁠Carano on ⁠May 16 in
+      California.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T07:25:06.000Z"
+      precision: day
+  - id: ramadan-begins-in-palestine-many-muslim-2026-02-18
+    type: Event
+    name: Ramadan begins in Palestine, many Muslim states, Egypt, Syria to follow
+    category: geopolitics
+    description: Palestinians in Gaza face food shortages, restrictions as Israeli attacks continue during Islamic holy month.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T07:22:11.000Z"
+      precision: day
+  - id: nine-skiers-missing-6-trapped-after-nor-2026-02-18
+    type: Event
+    name: Nine skiers missing, 6 trapped after north California mountains avalanche
+    category: geopolitics
+    description: >-
+      Rescuers battle blizzard to save six skiers found trapped after avalanche in the Sierra Nevada mountains in
+      western US.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T07:15:15.000Z"
+      precision: day
+  - id: global-pressure-does-little-to-stop-isra-2026-02-18
+    type: Event
+    name: Global pressure does little to stop Israel’s anti-Palestinian policies
+    category: geopolitics
+    description: >-
+      Many Israelis see condemnation as evidence of anti-Semitism, rather than a verdict on their government&#039;s
+      actions.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T07:08:27.000Z"
+      precision: day
+  - id: gaza-welcomes-ramadan-amid-fragile-ceas-2026-02-18
+    type: Event
+    name: Gaza welcomes Ramadan amid fragile ‘ceasefire’ and fears of renewed war
+    category: geopolitics
+    description: >-
+      Despite displacement, Gaza families strive to create joy this Ramadan, navigating grief, scarcity, and fragile
+      peace.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T07:07:17.000Z"
+      precision: day
+  - id: philippine-vp-sara-duterte-announces-run-2026-02-18
+    type: Decision
+    name: Philippine VP Sara Duterte announces run for president in 2028
+    category: geopolitics
+    description: Announcement follows multiple impeachment complaints against the vice president over allegations of corruption.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T06:00:35.000Z"
+      precision: day
+  - id: updates-israel-steps-up-attacks-land-t-2026-02-18
+    type: Event
+    name: "Updates: Israel steps up attacks, land takeover across occupied West Bank"
+    category: geopolitics
+    description: >-
+      Ramped-up raids, violent settler attacks and bulldozed homes - Israel escalates its assault on the occupied West
+      Bank.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T05:51:03.000Z"
+      precision: day
+  - id: washington-appoints-new-us-envoy-on-tibe-2026-02-18
+    type: Event
+    name: Washington appoints new US envoy on Tibetan human rights
+    category: geopolitics
+    description: China has previously criticised the role, accusing the US of interfering in China’s internal affairs.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T05:05:29.000Z"
+      precision: day
+  - id: zora-moves-onto-solana-with-attention-m-2026-02-18
+    type: Event
+    name: Zora moves onto Solana with 'attention markets' for trading internet trends
+    category: finance.crypto
+    description: >-
+      The creator platform’s new product lets users trade tokens linked to social-media traction, a Polymarket-style bet
+      on vibes rather than events.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T07:55:27.000Z"
+      precision: day
+  - id: bitcoin-losing-70-000-is-a-warning-sign-2026-02-18
+    type: Event
+    name: Bitcoin losing $70,000 is a warning sign for further downside
+    category: finance.crypto
+    description: >-
+      Crypto majors soften while Asian equities rebound modestly, with traders continuing to weigh quantum fears, ETF
+      flows and a possible shift in bitcoin’s broader trend.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T07:03:52.000Z"
+      precision: day
+  - id: peter-thiels-founders-fund-dumps-every-2026-02-18
+    type: Fact
+    name: Peter Thiel's Founders Fund dumps every ETHZilla share
+    category: finance.crypto
+    description: Peter Thiel's Founders Fund held zero shares in ether treasury firm ETHZillan at the end of 2025, per SEC filings.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T06:54:34.000Z"
+      precision: day
+  - id: bitcoin-etfs-hold-billions-despite-price-2026-02-18
+    type: Event
+    name: Bitcoin ETFs hold billions despite price crash, but resilience masks harsh reality
+    category: finance.crypto
+    description: Bitcoin spot ETFs in the United States still hold about $85 billion in assets, despite the BTC price crash.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T06:08:37.000Z"
+      precision: day
+  - id: x2018-i-x2019-m-part-of-a-blended-fam-2026-02-18
+    type: Event
+    name: >-
+      &#x2018;I&#x2019;m part of a blended family that didn&#x2019;t blend well&#x2019;: My stepsister added her mailing
+      address to our mother&#x2019;s bank
+    category: finance.markets
+    description: "&#x201c;It&#x2019;s things like this that make me wonder what else she might be doing.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T03:05:00.000Z"
+      precision: day
+  - id: x2018-am-i-crazy-x2019-my-boyfriend-2026-02-18
+    type: Event
+    name: >-
+      &#x2018;Am I crazy?&#x2019; My boyfriend&#x2019;s parents say he shouldn&#x2019;t marry me until he earns $50K a
+      year. Who is to blame here?
+    category: finance.markets
+    description: "&#x201c;Am I crazy, or are these &#x2018;real&#x2019; concerns from his parents?&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T03:05:00.000Z"
+      precision: day
+  - id: palo-alto-networks-x2019-stock-slides-2026-02-18
+    type: Event
+    name: Palo Alto Networks&#x2019; stock slides as underwhelming outlook overshadows AI messaging
+    category: finance.markets
+    description: The cybersecurity company says it&#x2019;s poised to benefit as AI creates &#x201c;new classes of risks.&#x201d;
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T02:14:00.000Z"
+      precision: day
+  - id: sandisk-x2019-s-stock-falls-as-western-2026-02-18
+    type: Event
+    name: Sandisk&#x2019;s stock falls as Western Digital plans to sell shares. What investors need to know.
+    category: finance.markets
+    description: The move, while not unexpected, will allow Western Digital to bolster its balance sheet and reduce debt.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T02:13:00.000Z"
+      precision: day
+  - id: appaloosa-upped-its-bet-on-this-airline-2026-02-18
+    type: Event
+    name: Appaloosa upped its bet on this airline during the fourth quarter, while adding to tech and selling off financials
+    category: finance.markets
+    description: >-
+      Appaloosa Management boosted its stake in American Airlines and Big Tech names during the fourth quarter, while
+      selling off positions in several financial names.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T02:10:00.000Z"
+      precision: day
+  - id: berkshire-returns-to-the-newspaper-busin-2026-02-18
+    type: Event
+    name: Berkshire returns to the newspaper business, takes bigger bite of Domino&#x2019;s Pizza
+    category: finance.markets
+    description: >-
+      Berkshire&#x2019;s fresh bet on the publisher of the New York Times marks a return to newspapers for the
+      conglomerate after exiting the business six years ago.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T02:09:00.000Z"
+      precision: day
+  - id: x2018-i-have-a-moral-and-ethical-conun-2026-02-18
+    type: Fact
+    name: >-
+      &#x2018;I have a moral and ethical conundrum&#x2019;: My husband was killed by a careless driver. I received $2
+      million. What do I owe my stepdaughter
+    category: finance.markets
+    description: "&#x201c;As the children grew, life became more complicated.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T01:59:00.000Z"
+      precision: day
+  - id: x2018-it-x2019-s-a-life-changing-sum-2026-02-18
+    type: Event
+    name: >-
+      &#x2018;It&#x2019;s a life-changing sum&#x2019;: Can I stop my kids from using their inheritance to support
+      political causes I vehemently oppose?
+    category: finance.markets
+    description: >-
+      &#x201d;I would hate for our money to end up in the hands of organizations that oppose everything we have
+      supported throughout our lives.&#x201d;
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T01:58:00.000Z"
+      precision: day
+  - id: x2018-the-world-feels-unpredictable-x-2026-02-18
+    type: Event
+    name: >-
+      &#x2018;The world feels unpredictable&#x2019;: I&#x2019;m 56. My husband is 64. Our mortgage costs $17K a month.
+      Do we pay it off?
+    category: finance.markets
+    description: "&#x201c;We paid $3.1 million for the house and owe $1.3 million on the loan.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T01:58:00.000Z"
+      precision: day
+  - id: nvidia-x2019-s-new-meta-deal-may-not-be-2026-02-18
+    type: Claim
+    name: Nvidia&#x2019;s new Meta deal may not be great news for these other tech stocks
+    category: finance.markets
+    description: Shares of Broadcom, AMD and Arista fell after Nvidia and Meta announced an expansion of their partnership.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T01:01:00.000Z"
+      precision: day
+  - id: eni-considers-return-to-oil-trading-as-r-2026-02-18
+    type: Event
+    name: Eni Considers Return to Oil Trading as Rivals Reap Billions
+    category: finance.energy
+    description: >-
+      Italy’s Eni is considering reopening its oil-trading business as it misses out on the profits that its fellow
+      European supermajors are generating from selling the commodities they produce, the company’s chief executive told
+      the Financial Times. “I stopped trading in 2019, but the other big companies
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T08:07:58.000Z"
+      precision: day
+  - id: oil-prices-rebound-as-as-traders-reasses-2026-02-18
+    type: Event
+    name: Oil Prices Rebound as as Traders Reassess Iran Deal
+    category: finance.energy
+    description: >-
+      Crude oil prices reversed much of the losses they suffered on Tuesday as traders sold, expecting a deal between
+      Iran and the United States. Hours later, the wind of trader opinion has changed direction, and now doubts rule the
+      market. Brent crude was trading at $67.59 per barrel, with West Texas Int
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T06:28:28.000Z"
+      precision: day
+  - id: can-big-oil-succeed-where-diplomacy-has-2026-02-18
+    type: Event
+    name: Can Big Oil Succeed Where Diplomacy Has Failed in Libya?
+    category: finance.energy
+    description: >-
+      Libya’s first oil field licensing round since the removal of Muammar Gaddafi as leader in 2011 has seen a slew of
+      major Western international oil companies (IOCs) choose to either re-enter the country after a long absence or
+      bolster their existing operations in a stunning success for Tripoli. As par
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T01:00:00.000Z"
+      precision: day
+  - id: super-tanker-rates-soar-amid-sanctions-2026-02-18
+    type: Event
+    name: Super Tanker Rates Soar Amid Sanctions, Supply Shifts, and Strategic Hoarding
+    category: finance.energy
+    description: >-
+      Geopolitics, growing oil supply, longer voyages, and disruptions due to sanctions and altered shipping lanes
+      pushed crude oil tanker rates to multi-year highs at the end of 2025. After a dip in January, rates started
+      climbing again this month in what shipping executives described as a fundamental sh
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T00:00:00.000Z"
+      precision: day
+narratives:
+  - name: Israel-Palestine Conflict
+    steps:
+      - from: updates-israel-steps-up-attacks-land-t-2026-02-18
+        to: gaza-welcomes-ramadan-amid-fragile-ceas-2026-02-18
+        type: causes
+      - from: gaza-welcomes-ramadan-amid-fragile-ceas-2026-02-18
+        to: global-pressure-does-little-to-stop-isra-2026-02-18
+        type: causes
+      - from: global-pressure-does-little-to-stop-isra-2026-02-18
+        to: ramadan-begins-in-palestine-many-muslim-2026-02-18
+        type: causes
+      - from: ramadan-begins-in-palestine-many-muslim-2026-02-18
+        to: video-over-80-un-states-condemn-israeli-2026-02-18
+        type: causes
+  - name: Crypto Markets
+    steps:
+      - from: bitcoin-etfs-hold-billions-despite-price-2026-02-18
+        to: bitcoin-losing-70-000-is-a-warning-sign-2026-02-18
+        type: causes
+  - name: Energy Markets
+    steps:
+      - from: super-tanker-rates-soar-amid-sanctions-2026-02-18
+        to: oil-prices-rebound-as-as-traders-reasses-2026-02-18
+        type: causes
+sources:
+  - entity: us-says-meaningful-progress-made-as-uk-2026-02-18
+    type: article
+    title: US says 'meaningful progress' made as Ukraine talks enter second day
+    url: https://www.bbc.com/news/articles/cgk2mlv2k1ro
+    excerpt: >-
+      The US special envoy struck an optimistic note after the first day of talks in Geneva, but hopes for a
+      breakthrough remain low.
+    source_name: BBC News
+    published: "2026-02-18T07:37:24.000Z"
+  - entity: i-would-scream-in-my-sleep-women-from-s-2026-02-18
+    type: article
+    title: "I would scream in my sleep: Women from Syria's Alawite minority tell of kidnap and rape"
+    url: https://www.bbc.com/news/articles/cn5g751pl7lo
+    excerpt: The BBC hears harrowing accounts of assaults appearing to target the sect of former President Assad.
+    source_name: BBC News
+    published: "2026-02-18T00:20:03.000Z"
+  - entity: rescuers-search-for-10-missing-skiers-af-2026-02-18
+    type: article
+    title: Rescuers search for 10 missing skiers after California avalanche
+    url: https://www.bbc.com/news/articles/c62dke15357o
+    excerpt: Rescuers are racing to the scene, which has seen about 30 inches (76cm) of snowfall in the last 24 hours.
+    source_name: BBC News
+    published: "2026-02-18T05:57:55.000Z"
+  - entity: climber-on-trial-for-leaving-girlfriend-2026-02-18
+    type: article
+    title: Climber on trial for leaving girlfriend to die on Austria's highest mountain
+    url: https://www.bbc.com/news/articles/c5yv9plyjgpo
+    excerpt: Kerstin G's boyfriend is accused of leaving her unprotected and exhausted close to the summit during a blizzard.
+    source_name: BBC News
+    published: "2026-02-18T07:58:02.000Z"
+  - entity: australia-bans-citizen-trying-to-return-2026-02-18
+    type: article
+    title: Australia bans citizen trying to return from IS camp in Syria
+    url: https://www.bbc.com/news/articles/c4g2dgjrx75o
+    excerpt: The person temporarily banned is among a group of 34 who this week attempted to leave the camp for Australia.
+    source_name: BBC News
+    published: "2026-02-18T07:08:18.000Z"
+  - entity: stephen-colbert-says-cbs-spiked-intervie-2026-02-18
+    type: article
+    title: Stephen Colbert says CBS spiked interview with Democrat over FCC fears
+    url: https://www.bbc.com/news/articles/cze0dk3yd5eo
+    excerpt: >-
+      The network denies it stopped the interview with a Texas Democrat from airing but warned it could run afoul of the
+      US broadcast media watchdog.
+    source_name: BBC News
+    published: "2026-02-18T00:12:01.000Z"
+  - entity: suspect-in-rhode-island-ice-hockey-shoot-2026-02-18
+    type: article
+    title: Suspect in Rhode Island ice hockey shooting killed ex-wife and son
+    url: https://www.bbc.com/news/articles/cy4wvk9vn40o
+    excerpt: Robert Dorgan - who also went by the name Roberta Esposito - was found dead inside the Pawtucket arena.
+    source_name: BBC News
+    published: "2026-02-18T04:50:10.000Z"
+  - entity: perus-congress-ousts-president-after-fo-2026-02-18
+    type: article
+    title: Peru's Congress ousts president after four months in office
+    url: https://www.bbc.com/news/articles/cz7gvdx457vo
+    excerpt: José Jerí is the third consecutive president to be removed and the country's seventh since 2016.
+    source_name: BBC News
+    published: "2026-02-18T06:55:41.000Z"
+  - entity: philippine-vp-sara-duterte-to-run-for-pr-2026-02-18
+    type: article
+    title: Philippine VP Sara Duterte to run for president in 2028
+    url: https://www.bbc.com/news/articles/cn5g207k7d5o
+    excerpt: The daughter of former President Rodrigo Duterte has feuded spectacularly with the incumbent, Bongbong Marcos.
+    source_name: BBC News
+    published: "2026-02-18T04:09:51.000Z"
+  - entity: plan-to-increase-youth-minimum-wage-coul-2026-02-18
+    type: article
+    title: Plan to increase youth minimum wage could be delayed
+    url: https://www.bbc.com/news/articles/c5y6g57j3meo
+    excerpt: Government sources tell BBC News they could slow down plans to make minimum wage equal across age groups.
+    source_name: BBC Business
+    published: "2026-02-18T07:39:45.000Z"
+  - entity: lower-fuel-prices-and-airfares-help-driv-2026-02-18
+    type: article
+    title: Lower fuel prices and airfares help drive inflation down
+    url: https://www.bbc.com/news/articles/c5yg04jg1n5o
+    excerpt: The rate at which prices are rising is slowing down, which could lead to lower interest rates.
+    source_name: BBC Business
+    published: "2026-02-18T08:17:39.000Z"
+  - entity: illegal-skin-lightening-cream-being-sold-2026-02-18
+    type: article
+    title: Illegal skin lightening cream being sold in UK butchers, watchdog warns
+    url: https://www.bbc.com/news/articles/c3rzn1pxr3qo
+    excerpt: A trade body has warned illegal skin bleaching products are being sold in an increasingly wide range of places.
+    source_name: BBC Business
+    published: "2026-02-18T00:00:38.000Z"
+  - entity: reform-plans-to-keep-uks-budget-watchdo-2026-02-18
+    type: article
+    title: Reform plans to keep UK's budget watchdog
+    url: https://www.bbc.com/news/articles/c80jy2lkdg3o
+    excerpt: Robert Jenrick will promise to reform the OBR, rather than abolish it, in a move to reassure financial markets.
+    source_name: BBC Business
+    published: "2026-02-18T01:39:39.000Z"
+  - entity: i-do-not-trust-them-top-streamers-le-2026-02-18
+    type: article
+    title: "'I do not trust them' - top streamers left concerned by Discord age checks"
+    url: https://www.bbc.com/news/articles/cn4g8ynpwl8o
+    excerpt: The platform's plan to roll out global age checks has caused concern in streaming communities.
+    source_name: BBC Business
+    published: "2026-02-18T01:47:12.000Z"
+  - entity: i-invested-12-000-in-brewdog-i-think-2026-02-18
+    type: article
+    title: I invested £12,000 in Brewdog  - I think I've lost it all
+    url: https://www.bbc.com/news/articles/c795879x08go
+    excerpt: >-
+      More than 200,000 people bought Equity for Punks shares in the craft brewer but many now believe they are
+      worthless.
+    source_name: BBC Business
+    published: "2026-02-18T06:24:08.000Z"
+  - entity: uk-inflation-drops-to-10-month-low-thank-2026-02-18
+    type: article
+    title: >-
+      UK inflation drops to 10-month low thanks to cheaper petrol, air fares and food; FTSE 100 hits new record high –
+      business live
+    url: >-
+      https://www.theguardian.com/business/live/2026/feb/18/uk-inflation-fall-cost-of-living-interest-rates-house-prices-rents-news-updates
+    excerpt: >-
+      <p>Rolling coverage of the latest economic and financial news, including the UK inflation report for
+      January</p><p><strong>The chances of an interest rate cut next month have risen this morning, follo
+    source_name: The Guardian
+    published: "2026-02-18T08:11:23.000Z"
+  - entity: us-and-japan-unveil-36bn-of-oil-gas-an-2026-02-18
+    type: article
+    title: US and Japan unveil $36bn of oil, gas and critical minerals projects in challenge to China
+    url: https://www.theguardian.com/business/2026/feb/18/us-japan-critical-minerals-agreement-oil-gas-projects-deal
+    excerpt: >-
+      <p>Donald Trump says deals ‘end our foolish dependence on foreign sources’, while Japanese PM hails enhanced
+      economic security</p><p>Japan has drawn up plans for investments in US oil, gas and critica
+    source_name: The Guardian
+    published: "2026-02-18T06:02:23.000Z"
+  - entity: tfl-facebook-ad-banned-for-negative-ster-2026-02-18
+    type: article
+    title: TfL Facebook ad banned for negative stereotype about black men
+    url: https://www.theguardian.com/media/2026/feb/18/tfl-facebook-ad-banned-negative-stereotype-black-men
+    excerpt: >-
+      <p>Ad was part of campaign to encourage Londoners to intervene if they witness sexual harassment or hate
+      crime</p><p>A Transport for London (TfL) ad featuring a black teenage boy verbally harassing a 
+    source_name: The Guardian
+    published: "2026-02-18T07:00:02.000Z"
+  - entity: training-more-britons-may-not-cut-net-mi-2026-02-18
+    type: article
+    title: Training more Britons may not cut net migration or plug skills shortages, study finds
+    url: https://www.theguardian.com/uk-news/2026/feb/18/training-more-uk-workers-may-not-cut-net-migration-report--
+    excerpt: >-
+      <p>Local workers can be difficult to attract because of poor pay and conditions, say researchers</p><p>Keir
+      Starmer’s plan to force employers to be less reliant on overseas staff and instead train UK-
+    source_name: The Guardian
+    published: "2026-02-18T00:01:52.000Z"
+  - entity: boxing-legend-manny-pacquiao-to-face-rus-2026-02-18
+    type: article
+    title: Boxing legend Manny Pacquiao to face Ruslan Provodnikov in April
+    url: https://www.aljazeera.com/sports/2026/2/18/boxing-legend-manny-pacquiao-to-face-ruslan-provodnikov-in-april
+    excerpt: >-
+      Eight-division ⁠world champion Pacquiao will face former junior welterweight world ⁠champion ⁠Provodnikov on April
+      18.
+    source_name: Al Jazeera
+    published: "2026-02-18T07:57:22.000Z"
+  - entity: video-over-80-un-states-condemn-israeli-2026-02-18
+    type: article
+    title: "Video: Over 80 UN states condemn Israeli measures in occupied West Bank"
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/2/18/video-over-80-un-states-condemn-israeli-measures-in-occupied-west-bank
+    excerpt: >-
+      More than 80 UN nation ambassadors have condemned Israeli measures to tighten its control of the occupied West
+      Bank.
+    source_name: Al Jazeera
+    published: "2026-02-18T07:45:22.000Z"
+  - entity: ronda-rousey-gina-carano-end-mma-retire-2026-02-18
+    type: article
+    title: Ronda Rousey, Gina Carano end MMA retirements to fight in May
+    url: https://www.aljazeera.com/sports/2026/2/18/ronda-rousey-gina-carano-end-mma-retirements-to-fight-in-may
+    excerpt: >-
+      Rousey will return to MMA for the first time in nearly a decade when she challenges ⁠Carano on ⁠May 16 in
+      California.
+    source_name: Al Jazeera
+    published: "2026-02-18T07:25:06.000Z"
+  - entity: ramadan-begins-in-palestine-many-muslim-2026-02-18
+    type: article
+    title: Ramadan begins in Palestine, many Muslim states, Egypt, Syria to follow
+    url: https://www.aljazeera.com/news/2026/2/18/palestinians-in-gaza-face-food-shortages-restrictions-as-ramadan-begins
+    excerpt: Palestinians in Gaza face food shortages, restrictions as Israeli attacks continue during Islamic holy month.
+    source_name: Al Jazeera
+    published: "2026-02-18T07:22:11.000Z"
+  - entity: nine-skiers-missing-6-trapped-after-nor-2026-02-18
+    type: article
+    title: Nine skiers missing, 6 trapped after north California mountains avalanche
+    url: >-
+      https://www.aljazeera.com/news/2026/2/18/ten-skiers-missing-6-trapped-after-avalanche-in-north-california-mountains
+    excerpt: >-
+      Rescuers battle blizzard to save six skiers found trapped after avalanche in the Sierra Nevada mountains in
+      western US.
+    source_name: Al Jazeera
+    published: "2026-02-18T07:15:15.000Z"
+  - entity: global-pressure-does-little-to-stop-isra-2026-02-18
+    type: article
+    title: Global pressure does little to stop Israel’s anti-Palestinian policies
+    url: https://www.aljazeera.com/features/2026/2/18/global-pressure-does-little-to-stop-israels-anti-palestinian-policies
+    excerpt: >-
+      Many Israelis see condemnation as evidence of anti-Semitism, rather than a verdict on their government&#039;s
+      actions.
+    source_name: Al Jazeera
+    published: "2026-02-18T07:08:27.000Z"
+  - entity: gaza-welcomes-ramadan-amid-fragile-ceas-2026-02-18
+    type: article
+    title: Gaza welcomes Ramadan amid fragile ‘ceasefire’ and fears of renewed war
+    url: https://www.aljazeera.com/features/2026/2/18/gaza-welcomes-ramadan-amid-fragile-ceasefire-and-fears-of-renewed-war
+    excerpt: >-
+      Despite displacement, Gaza families strive to create joy this Ramadan, navigating grief, scarcity, and fragile
+      peace.
+    source_name: Al Jazeera
+    published: "2026-02-18T07:07:17.000Z"
+  - entity: philippine-vp-sara-duterte-announces-run-2026-02-18
+    type: article
+    title: Philippine VP Sara Duterte announces run for president in 2028
+    url: https://www.aljazeera.com/news/2026/2/18/philippine-vp-sara-duterte-announces-run-for-president-in-2028
+    excerpt: Announcement follows multiple impeachment complaints against the vice president over allegations of corruption.
+    source_name: Al Jazeera
+    published: "2026-02-18T06:00:35.000Z"
+  - entity: updates-israel-steps-up-attacks-land-t-2026-02-18
+    type: article
+    title: "Updates: Israel steps up attacks, land takeover across occupied West Bank"
+    url: >-
+      https://www.aljazeera.com/news/liveblog/2026/2/18/live-israel-steps-up-attacks-land-takeover-across-occupied-west-bank
+    excerpt: >-
+      Ramped-up raids, violent settler attacks and bulldozed homes - Israel escalates its assault on the occupied West
+      Bank.
+    source_name: Al Jazeera
+    published: "2026-02-18T05:51:03.000Z"
+  - entity: washington-appoints-new-us-envoy-on-tibe-2026-02-18
+    type: article
+    title: Washington appoints new US envoy on Tibetan human rights
+    url: https://www.aljazeera.com/news/2026/2/18/washington-appoints-new-us-envoy-on-tibetan-human-rights
+    excerpt: China has previously criticised the role, accusing the US of interfering in China’s internal affairs.
+    source_name: Al Jazeera
+    published: "2026-02-18T05:05:29.000Z"
+  - entity: zora-moves-onto-solana-with-attention-m-2026-02-18
+    type: article
+    title: Zora moves onto Solana with 'attention markets' for trading internet trends
+    url: https://www.coindesk.com/tech/2026/02/18/zora-moves-onto-solana-with-attention-markets-for-trading-internet-trends
+    excerpt: >-
+      The creator platform’s new product lets users trade tokens linked to social-media traction, a Polymarket-style bet
+      on vibes rather than events.
+    source_name: CoinDesk
+    published: "2026-02-18T07:55:27.000Z"
+  - entity: bitcoin-losing-70-000-is-a-warning-sign-2026-02-18
+    type: article
+    title: Bitcoin losing $70,000 is a warning sign for further downside
+    url: https://www.coindesk.com/markets/2026/02/18/bitcoin-losing-usd70-000-is-a-warning-sign-for-further-downside
+    excerpt: >-
+      Crypto majors soften while Asian equities rebound modestly, with traders continuing to weigh quantum fears, ETF
+      flows and a possible shift in bitcoin’s broader trend.
+    source_name: CoinDesk
+    published: "2026-02-18T07:03:52.000Z"
+  - entity: peter-thiels-founders-fund-dumps-every-2026-02-18
+    type: article
+    title: Peter Thiel's Founders Fund dumps every ETHZilla share
+    url: https://www.coindesk.com/markets/2026/02/18/peter-thiel-dumps-all-his-stock-in-ether-treasury-firm-ethzilla
+    excerpt: Peter Thiel's Founders Fund held zero shares in ether treasury firm ETHZillan at the end of 2025, per SEC filings.
+    source_name: CoinDesk
+    published: "2026-02-18T06:54:34.000Z"
+  - entity: bitcoin-etfs-hold-billions-despite-price-2026-02-18
+    type: article
+    title: Bitcoin ETFs hold billions despite price crash, but resilience masks harsh reality
+    url: >-
+      https://www.coindesk.com/markets/2026/02/18/bitcoin-etfs-hold-billions-after-price-crash-but-resilience-masks-harsh-reality
+    excerpt: Bitcoin spot ETFs in the United States still hold about $85 billion in assets, despite the BTC price crash.
+    source_name: CoinDesk
+    published: "2026-02-18T06:08:37.000Z"
+  - entity: x2018-i-x2019-m-part-of-a-blended-fam-2026-02-18
+    type: article
+    title: >-
+      &#x2018;I&#x2019;m part of a blended family that didn&#x2019;t blend well&#x2019;: My stepsister added her mailing
+      address to our mother&#x2019;s bank account. Can she be trusted?
+    url: >-
+      https://www.marketwatch.com/story/my-mom-was-very-upset-my-stepsister-changed-the-address-on-our-mothers-bank-account-can-she-be-trusted-as-executor-dab23670?mod=mw_rss_topstories
+    excerpt: "&#x201c;It&#x2019;s things like this that make me wonder what else she might be doing.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-18T03:05:00.000Z"
+  - entity: x2018-am-i-crazy-x2019-my-boyfriend-2026-02-18
+    type: article
+    title: >-
+      &#x2018;Am I crazy?&#x2019; My boyfriend&#x2019;s parents say he shouldn&#x2019;t marry me until he earns $50K a
+      year. Who is to blame here?
+    url: >-
+      https://www.marketwatch.com/story/weve-been-dating-for-5-years-my-boyfriends-parents-say-he-doesnt-earn-enough-to-marry-should-i-speak-to-his-father-44b48700?mod=mw_rss_topstories
+    excerpt: "&#x201c;Am I crazy, or are these &#x2018;real&#x2019; concerns from his parents?&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-18T03:05:00.000Z"
+  - entity: palo-alto-networks-x2019-stock-slides-2026-02-18
+    type: article
+    title: Palo Alto Networks&#x2019; stock slides as underwhelming outlook overshadows AI messaging
+    url: >-
+      https://www.marketwatch.com/story/palo-alto-networks-stock-slides-as-underwhelming-outlook-overshadows-ai-messaging-7bb6ad12?mod=mw_rss_topstories
+    excerpt: The cybersecurity company says it&#x2019;s poised to benefit as AI creates &#x201c;new classes of risks.&#x201d;
+    source_name: MarketWatch
+    published: "2026-02-18T02:14:00.000Z"
+  - entity: sandisk-x2019-s-stock-falls-as-western-2026-02-18
+    type: article
+    title: Sandisk&#x2019;s stock falls as Western Digital plans to sell shares. What investors need to know.
+    url: >-
+      https://www.marketwatch.com/story/sandisks-stock-falls-as-western-digital-plans-to-sell-shares-what-investors-need-to-know-5f4c8d48?mod=mw_rss_topstories
+    excerpt: The move, while not unexpected, will allow Western Digital to bolster its balance sheet and reduce debt.
+    source_name: MarketWatch
+    published: "2026-02-18T02:13:00.000Z"
+  - entity: appaloosa-upped-its-bet-on-this-airline-2026-02-18
+    type: article
+    title: Appaloosa upped its bet on this airline during the fourth quarter, while adding to tech and selling off financials
+    url: >-
+      https://www.marketwatch.com/story/appaloosa-upped-its-bet-on-this-airline-during-the-fourth-quarter-while-adding-to-tech-and-selling-off-financials-c2cee856?mod=mw_rss_topstories
+    excerpt: >-
+      Appaloosa Management boosted its stake in American Airlines and Big Tech names during the fourth quarter, while
+      selling off positions in several financial names.
+    source_name: MarketWatch
+    published: "2026-02-18T02:10:00.000Z"
+  - entity: berkshire-returns-to-the-newspaper-busin-2026-02-18
+    type: article
+    title: Berkshire returns to the newspaper business, takes bigger bite of Domino&#x2019;s Pizza
+    url: >-
+      https://www.marketwatch.com/story/berkshire-returns-to-the-newspaper-business-takes-bigger-bite-of-dominos-pizza-5c4dc5d8?mod=mw_rss_topstories
+    excerpt: >-
+      Berkshire&#x2019;s fresh bet on the publisher of the New York Times marks a return to newspapers for the
+      conglomerate after exiting the business six years ago.
+    source_name: MarketWatch
+    published: "2026-02-18T02:09:00.000Z"
+  - entity: x2018-i-have-a-moral-and-ethical-conun-2026-02-18
+    type: article
+    title: >-
+      &#x2018;I have a moral and ethical conundrum&#x2019;: My husband was killed by a careless driver. I received $2
+      million. What do I owe my stepdaughter?
+    url: >-
+      https://www.marketwatch.com/story/i-have-a-moral-and-ethical-conundrum-my-husband-was-killed-by-a-careless-driver-i-received-2-million-what-do-i-owe-my-stepdaughter-2c3250e8?mod=mw_rss_topstories
+    excerpt: "&#x201c;As the children grew, life became more complicated.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-18T01:59:00.000Z"
+  - entity: x2018-it-x2019-s-a-life-changing-sum-2026-02-18
+    type: article
+    title: >-
+      &#x2018;It&#x2019;s a life-changing sum&#x2019;: Can I stop my kids from using their inheritance to support
+      political causes I vehemently oppose?
+    url: >-
+      https://www.marketwatch.com/story/its-a-life-changing-sum-can-i-stop-my-kids-from-using-their-inheritance-to-support-political-causes-i-vehemently-oppose-90809fd7?mod=mw_rss_topstories
+    excerpt: >-
+      &#x201d;I would hate for our money to end up in the hands of organizations that oppose everything we have
+      supported throughout our lives.&#x201d;
+    source_name: MarketWatch
+    published: "2026-02-18T01:58:00.000Z"
+  - entity: x2018-the-world-feels-unpredictable-x-2026-02-18
+    type: article
+    title: >-
+      &#x2018;The world feels unpredictable&#x2019;: I&#x2019;m 56. My husband is 64. Our mortgage costs $17K a month.
+      Do we pay it off?
+    url: >-
+      https://www.marketwatch.com/story/the-world-feels-unpredictable-im-56-my-husband-is-64-our-mortgage-costs-17-000-a-month-do-we-pay-it-off-c8a454d8?mod=mw_rss_topstories
+    excerpt: "&#x201c;We paid $3.1 million for the house and owe $1.3 million on the loan.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-18T01:58:00.000Z"
+  - entity: nvidia-x2019-s-new-meta-deal-may-not-be-2026-02-18
+    type: article
+    title: Nvidia&#x2019;s new Meta deal may not be great news for these other tech stocks
+    url: >-
+      https://www.marketwatch.com/story/nvidias-new-meta-deal-may-not-be-great-news-for-these-other-tech-stocks-82b6e4d1?mod=mw_rss_topstories
+    excerpt: Shares of Broadcom, AMD and Arista fell after Nvidia and Meta announced an expansion of their partnership.
+    source_name: MarketWatch
+    published: "2026-02-18T01:01:00.000Z"
+  - entity: eni-considers-return-to-oil-trading-as-r-2026-02-18
+    type: article
+    title: Eni Considers Return to Oil Trading as Rivals Reap Billions
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/Eni-Considers-Return-to-Oil-Trading-as-Rivals-Reap-Billions.html
+    excerpt: >-
+      Italy’s Eni is considering reopening its oil-trading business as it misses out on the profits that its fellow
+      European supermajors are generating from selling the commodities they produce, the company
+    source_name: OilPrice.com
+    published: "2026-02-18T08:07:58.000Z"
+  - entity: oil-prices-rebound-as-as-traders-reasses-2026-02-18
+    type: article
+    title: Oil Prices Rebound as as Traders Reassess Iran Deal
+    url: https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Rebound-as-as-Traders-Reassess-Iran-Deal.html
+    excerpt: >-
+      Crude oil prices reversed much of the losses they suffered on Tuesday as traders sold, expecting a deal between
+      Iran and the United States. Hours later, the wind of trader opinion has changed directio
+    source_name: OilPrice.com
+    published: "2026-02-18T06:28:28.000Z"
+  - entity: can-big-oil-succeed-where-diplomacy-has-2026-02-18
+    type: article
+    title: Can Big Oil Succeed Where Diplomacy Has Failed in Libya?
+    url: https://oilprice.com/Energy/Energy-General/Can-Big-Oil-Succeed-Where-Diplomacy-Has-Failed-in-Libya.html
+    excerpt: >-
+      Libya’s first oil field licensing round since the removal of Muammar Gaddafi as leader in 2011 has seen a slew of
+      major Western international oil companies (IOCs) choose to either re-enter the country
+    source_name: OilPrice.com
+    published: "2026-02-18T01:00:00.000Z"
+  - entity: super-tanker-rates-soar-amid-sanctions-2026-02-18
+    type: article
+    title: Super Tanker Rates Soar Amid Sanctions, Supply Shifts, and Strategic Hoarding
+    url: >-
+      https://oilprice.com/Energy/Energy-General/Super-Tanker-Rates-Soar-Amid-Sanctions-Supply-Shifts-and-Strategic-Hoarding.html
+    excerpt: >-
+      Geopolitics, growing oil supply, longer voyages, and disruptions due to sanctions and altered shipping lanes
+      pushed crude oil tanker rates to multi-year highs at the end of 2025. After a dip in Januar
+    source_name: OilPrice.com
+    published: "2026-02-18T00:00:00.000Z"
