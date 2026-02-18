@@ -1,0 +1,257 @@
+seed:
+  name: news-week8-day-2026-02-18-hour-02
+  label: Daily News — 2026-02-18 02:00 (Week 8, 2026)
+  namespace: news.week8.day-2026-02-18
+  description: "Auto-gathered news: 13 stories, 2026-02-18 to 2026-02-18"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week8
+    extends: news
+  - namespace: news.week8.day-2026-02-18
+    extends: news.week8
+entities:
+  - id: stephen-colbert-says-cbs-spiked-intervie-2026-02-18
+    type: Claim
+    name: Stephen Colbert says CBS spiked interview with Democrat over FCC fears
+    category: geopolitics
+    description: >-
+      The network denies it stopped the interview with a Texas Democrat from airing but warned it could run afoul of the
+      US broadcast media watchdog.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T00:12:01.000Z"
+      precision: day
+  - id: i-would-scream-in-my-sleep-women-from-s-2026-02-18
+    type: Event
+    name: "I would scream in my sleep: Women from Syria's Alawite minority tell of kidnap and rape"
+    category: geopolitics
+    description: The BBC hears harrowing accounts of assaults appearing to target the sect of former President Assad.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T00:20:03.000Z"
+      precision: day
+  - id: under-pressure-from-trump-venezuelas-n-2026-02-18
+    type: Event
+    name: Under pressure from Trump, Venezuela's new president has aces up her sleeve
+    category: geopolitics
+    description: Delcy Rodriguez knows its in America's interests for her to be a success
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T00:48:22.000Z"
+      precision: day
+  - id: climber-on-trial-for-leaving-girlfriend-2026-02-18
+    type: Event
+    name: Climber on trial for leaving girlfriend to die on Austria's highest mountain
+    category: geopolitics
+    description: Kerstin G's boyfriend is accused of leaving her unprotected and exhausted close to the summit during a blizzard.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T00:41:52.000Z"
+      precision: day
+  - id: no-dna-matches-on-glove-found-in-nancy-g-2026-02-18
+    type: Fact
+    name: No DNA matches on glove found in Nancy Guthrie case, police say
+    category: geopolitics
+    description: It's been two weeks since the 84 year old's disappearance and authorities say there have not been any arrests
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T00:14:44.000Z"
+      precision: day
+  - id: illegal-skin-lightening-cream-being-sold-2026-02-18
+    type: Claim
+    name: Illegal skin lightening cream being sold in UK butchers, watchdog warns
+    category: finance
+    description: A trade body has warned illegal skin bleaching products are being sold in an increasingly wide range of places.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T00:00:38.000Z"
+      precision: day
+  - id: how-jesse-jackson-helped-empower-us-arab-2026-02-18
+    type: Event
+    name: How Jesse Jackson helped empower US Arabs and lift up the Palestinian cause
+    category: geopolitics
+    description: >-
+      Arab American advocates eulogise Jackson as a civil rights giant who embraced their communities and defended
+      Palestine.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T01:09:54.000Z"
+      precision: day
+  - id: russia-ukraine-war-list-of-key-events-2026-02-18
+    type: Event
+    name: "Russia-Ukraine war: List of key events, day 1,455"
+    category: geopolitics
+    description: These are the key developments from day 1,455 of Russia’s war on Ukraine.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T01:04:50.000Z"
+      precision: day
+  - id: nvidia-x2019-s-new-meta-deal-may-not-be-2026-02-18
+    type: Claim
+    name: Nvidia&#x2019;s new Meta deal may not be great news for these other tech stocks
+    category: finance.markets
+    description: Shares of Broadcom, AMD and Arista fell after Nvidia and Meta announced an expansion of their partnership.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T01:01:00.000Z"
+      precision: day
+  - id: palo-alto-networks-x2019-stock-slides-2026-02-18
+    type: Event
+    name: Palo Alto Networks&#x2019; stock slides as underwhelming outlook overshadows AI messaging
+    category: finance.markets
+    description: The cybersecurity company says it&#x2019;s poised to benefit as AI creates &#x201c;new classes of risks.&#x201d;
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T00:38:00.000Z"
+      precision: day
+  - id: this-auto-parts-maker-is-jumping-on-the-2026-02-18
+    type: Event
+    name: This auto-parts maker is jumping on the breakup bandwagon. Here&#x2019;s why the stock is tanking.
+    category: finance.markets
+    description: Genuine Parts shares tumbled Tuesday after a big earnings miss overshadowed breakup plans.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T00:10:00.000Z"
+      precision: day
+  - id: can-big-oil-succeed-where-diplomacy-has-2026-02-18
+    type: Event
+    name: Can Big Oil Succeed Where Diplomacy Has Failed in Libya?
+    category: finance.energy
+    description: >-
+      Libya’s first oil field licensing round since the removal of Muammar Gaddafi as leader in 2011 has seen a slew of
+      major Western international oil companies (IOCs) choose to either re-enter the country after a long absence or
+      bolster their existing operations in a stunning success for Tripoli. As par
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T01:00:00.000Z"
+      precision: day
+  - id: super-tanker-rates-soar-amid-sanctions-2026-02-18
+    type: Event
+    name: Super Tanker Rates Soar Amid Sanctions, Supply Shifts, and Strategic Hoarding
+    category: finance.energy
+    description: >-
+      Geopolitics, growing oil supply, longer voyages, and disruptions due to sanctions and altered shipping lanes
+      pushed crude oil tanker rates to multi-year highs at the end of 2025. After a dip in January, rates started
+      climbing again this month in what shipping executives described as a fundamental sh
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T00:00:00.000Z"
+      precision: day
+sources:
+  - entity: stephen-colbert-says-cbs-spiked-intervie-2026-02-18
+    type: article
+    title: Stephen Colbert says CBS spiked interview with Democrat over FCC fears
+    url: https://www.bbc.com/news/articles/cze0dk3yd5eo
+    excerpt: >-
+      The network denies it stopped the interview with a Texas Democrat from airing but warned it could run afoul of the
+      US broadcast media watchdog.
+    source_name: BBC News
+    published: "2026-02-18T00:12:01.000Z"
+  - entity: i-would-scream-in-my-sleep-women-from-s-2026-02-18
+    type: article
+    title: "I would scream in my sleep: Women from Syria's Alawite minority tell of kidnap and rape"
+    url: https://www.bbc.com/news/articles/cn5g751pl7lo
+    excerpt: The BBC hears harrowing accounts of assaults appearing to target the sect of former President Assad.
+    source_name: BBC News
+    published: "2026-02-18T00:20:03.000Z"
+  - entity: under-pressure-from-trump-venezuelas-n-2026-02-18
+    type: article
+    title: Under pressure from Trump, Venezuela's new president has aces up her sleeve
+    url: https://www.bbc.com/news/articles/cn87rv0jdy1o
+    excerpt: Delcy Rodriguez knows its in America's interests for her to be a success
+    source_name: BBC News
+    published: "2026-02-18T00:48:22.000Z"
+  - entity: climber-on-trial-for-leaving-girlfriend-2026-02-18
+    type: article
+    title: Climber on trial for leaving girlfriend to die on Austria's highest mountain
+    url: https://www.bbc.com/news/articles/c5yv9plyjgpo
+    excerpt: Kerstin G's boyfriend is accused of leaving her unprotected and exhausted close to the summit during a blizzard.
+    source_name: BBC News
+    published: "2026-02-18T00:41:52.000Z"
+  - entity: no-dna-matches-on-glove-found-in-nancy-g-2026-02-18
+    type: article
+    title: No DNA matches on glove found in Nancy Guthrie case, police say
+    url: https://www.bbc.com/news/articles/cj0dqp9pleeo
+    excerpt: It's been two weeks since the 84 year old's disappearance and authorities say there have not been any arrests
+    source_name: BBC News
+    published: "2026-02-18T00:14:44.000Z"
+  - entity: illegal-skin-lightening-cream-being-sold-2026-02-18
+    type: article
+    title: Illegal skin lightening cream being sold in UK butchers, watchdog warns
+    url: https://www.bbc.com/news/articles/c3rzn1pxr3qo
+    excerpt: A trade body has warned illegal skin bleaching products are being sold in an increasingly wide range of places.
+    source_name: BBC Business
+    published: "2026-02-18T00:00:38.000Z"
+  - entity: how-jesse-jackson-helped-empower-us-arab-2026-02-18
+    type: article
+    title: How Jesse Jackson helped empower US Arabs and lift up the Palestinian cause
+    url: https://www.aljazeera.com/news/2026/2/18/jesse-jackson-helped-empower-us-arabs-and-raise-palestinian-cause
+    excerpt: >-
+      Arab American advocates eulogise Jackson as a civil rights giant who embraced their communities and defended
+      Palestine.
+    source_name: Al Jazeera
+    published: "2026-02-18T01:09:54.000Z"
+  - entity: russia-ukraine-war-list-of-key-events-2026-02-18
+    type: article
+    title: "Russia-Ukraine war: List of key events, day 1,455"
+    url: https://www.aljazeera.com/news/2026/2/18/russia-ukraine-war-list-of-key-events-day-1455
+    excerpt: These are the key developments from day 1,455 of Russia’s war on Ukraine.
+    source_name: Al Jazeera
+    published: "2026-02-18T01:04:50.000Z"
+  - entity: nvidia-x2019-s-new-meta-deal-may-not-be-2026-02-18
+    type: article
+    title: Nvidia&#x2019;s new Meta deal may not be great news for these other tech stocks
+    url: >-
+      https://www.marketwatch.com/story/nvidias-new-meta-deal-may-not-be-great-news-for-these-other-tech-stocks-82b6e4d1?mod=mw_rss_topstories
+    excerpt: Shares of Broadcom, AMD and Arista fell after Nvidia and Meta announced an expansion of their partnership.
+    source_name: MarketWatch
+    published: "2026-02-18T01:01:00.000Z"
+  - entity: palo-alto-networks-x2019-stock-slides-2026-02-18
+    type: article
+    title: Palo Alto Networks&#x2019; stock slides as underwhelming outlook overshadows AI messaging
+    url: >-
+      https://www.marketwatch.com/story/palo-alto-networks-stock-slides-as-underwhelming-outlook-overshadows-ai-messaging-7bb6ad12?mod=mw_rss_topstories
+    excerpt: The cybersecurity company says it&#x2019;s poised to benefit as AI creates &#x201c;new classes of risks.&#x201d;
+    source_name: MarketWatch
+    published: "2026-02-18T00:38:00.000Z"
+  - entity: this-auto-parts-maker-is-jumping-on-the-2026-02-18
+    type: article
+    title: This auto-parts maker is jumping on the breakup bandwagon. Here&#x2019;s why the stock is tanking.
+    url: >-
+      https://www.marketwatch.com/story/this-auto-parts-maker-is-jumping-on-the-breakup-bandwagon-heres-why-the-stock-is-tanking-8d7da703?mod=mw_rss_topstories
+    excerpt: Genuine Parts shares tumbled Tuesday after a big earnings miss overshadowed breakup plans.
+    source_name: MarketWatch
+    published: "2026-02-18T00:10:00.000Z"
+  - entity: can-big-oil-succeed-where-diplomacy-has-2026-02-18
+    type: article
+    title: Can Big Oil Succeed Where Diplomacy Has Failed in Libya?
+    url: https://oilprice.com/Energy/Energy-General/Can-Big-Oil-Succeed-Where-Diplomacy-Has-Failed-in-Libya.html
+    excerpt: >-
+      Libya’s first oil field licensing round since the removal of Muammar Gaddafi as leader in 2011 has seen a slew of
+      major Western international oil companies (IOCs) choose to either re-enter the country
+    source_name: OilPrice.com
+    published: "2026-02-18T01:00:00.000Z"
+  - entity: super-tanker-rates-soar-amid-sanctions-2026-02-18
+    type: article
+    title: Super Tanker Rates Soar Amid Sanctions, Supply Shifts, and Strategic Hoarding
+    url: >-
+      https://oilprice.com/Energy/Energy-General/Super-Tanker-Rates-Soar-Amid-Sanctions-Supply-Shifts-and-Strategic-Hoarding.html
+    excerpt: >-
+      Geopolitics, growing oil supply, longer voyages, and disruptions due to sanctions and altered shipping lanes
+      pushed crude oil tanker rates to multi-year highs at the end of 2025. After a dip in Januar
+    source_name: OilPrice.com
+    published: "2026-02-18T00:00:00.000Z"
