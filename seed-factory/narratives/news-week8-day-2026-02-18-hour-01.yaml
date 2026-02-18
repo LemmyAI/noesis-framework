@@ -1,0 +1,89 @@
+seed:
+  name: news-week8-day-2026-02-18-hour-01
+  label: Daily News — 2026-02-18 01:00 (Week 8, 2026)
+  namespace: news.week8.day-2026-02-18
+  description: "Auto-gathered news: 4 stories, 2026-02-18 to 2026-02-18"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week8
+    extends: news
+  - namespace: news.week8.day-2026-02-18
+    extends: news.week8
+entities:
+  - id: no-dna-matches-on-glove-found-in-nancy-g-2026-02-18
+    type: Fact
+    name: No DNA matches on glove found in Nancy Guthrie case, police say
+    category: geopolitics
+    description: It's been two weeks since the 84 year old's disappearance and authorities say there have not been any arrests
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T00:14:44.000Z"
+      precision: day
+  - id: illegal-skin-lightening-cream-being-sold-2026-02-18
+    type: Claim
+    name: Illegal skin lightening cream being sold in UK butchers, watchdog warns
+    category: finance
+    description: A trade body has warned illegal skin bleaching products are being sold in an increasingly wide range of places.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T00:00:38.000Z"
+      precision: day
+  - id: this-auto-parts-maker-is-jumping-on-the-2026-02-18
+    type: Event
+    name: This auto-parts maker is jumping on the breakup bandwagon. Here&#x2019;s why the stock is tanking.
+    category: finance.markets
+    description: Genuine Parts shares tumbled Tuesday after a big earnings miss overshadowed breakup plans.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T00:10:00.000Z"
+      precision: day
+  - id: super-tanker-rates-soar-amid-sanctions-2026-02-18
+    type: Event
+    name: Super Tanker Rates Soar Amid Sanctions, Supply Shifts, and Strategic Hoarding
+    category: finance.energy
+    description: >-
+      Geopolitics, growing oil supply, longer voyages, and disruptions due to sanctions and altered shipping lanes
+      pushed crude oil tanker rates to multi-year highs at the end of 2025. After a dip in January, rates started
+      climbing again this month in what shipping executives described as a fundamental sh
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-18T00:00:00.000Z"
+      precision: day
+sources:
+  - entity: no-dna-matches-on-glove-found-in-nancy-g-2026-02-18
+    type: article
+    title: No DNA matches on glove found in Nancy Guthrie case, police say
+    url: https://www.bbc.com/news/articles/cj0dqp9pleeo
+    excerpt: It's been two weeks since the 84 year old's disappearance and authorities say there have not been any arrests
+    source_name: BBC News
+    published: "2026-02-18T00:14:44.000Z"
+  - entity: illegal-skin-lightening-cream-being-sold-2026-02-18
+    type: article
+    title: Illegal skin lightening cream being sold in UK butchers, watchdog warns
+    url: https://www.bbc.com/news/articles/c3rzn1pxr3qo
+    excerpt: A trade body has warned illegal skin bleaching products are being sold in an increasingly wide range of places.
+    source_name: BBC Business
+    published: "2026-02-18T00:00:38.000Z"
+  - entity: this-auto-parts-maker-is-jumping-on-the-2026-02-18
+    type: article
+    title: This auto-parts maker is jumping on the breakup bandwagon. Here&#x2019;s why the stock is tanking.
+    url: >-
+      https://www.marketwatch.com/story/this-auto-parts-maker-is-jumping-on-the-breakup-bandwagon-heres-why-the-stock-is-tanking-8d7da703?mod=mw_rss_topstories
+    excerpt: Genuine Parts shares tumbled Tuesday after a big earnings miss overshadowed breakup plans.
+    source_name: MarketWatch
+    published: "2026-02-18T00:10:00.000Z"
+  - entity: super-tanker-rates-soar-amid-sanctions-2026-02-18
+    type: article
+    title: Super Tanker Rates Soar Amid Sanctions, Supply Shifts, and Strategic Hoarding
+    url: >-
+      https://oilprice.com/Energy/Energy-General/Super-Tanker-Rates-Soar-Amid-Sanctions-Supply-Shifts-and-Strategic-Hoarding.html
+    excerpt: >-
+      Geopolitics, growing oil supply, longer voyages, and disruptions due to sanctions and altered shipping lanes
+      pushed crude oil tanker rates to multi-year highs at the end of 2025. After a dip in Januar
+    source_name: OilPrice.com
+    published: "2026-02-18T00:00:00.000Z"
