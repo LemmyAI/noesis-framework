@@ -1,0 +1,1111 @@
+seed:
+  name: news-week8-day-2026-02-19-hour-09
+  label: Daily News — 2026-02-19 09:00 (Week 8, 2026)
+  namespace: news.week8.day-2026-02-19
+  description: "Auto-gathered news: 53 stories, 2026-02-19 to 2026-02-19"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week8
+    extends: news
+  - namespace: news.week8.day-2026-02-19
+    extends: news.week8
+entities:
+  - id: white-house-presses-iran-to-make-deal-w-2026-02-19
+    type: Event
+    name: White House presses Iran to make deal, while ramping up military presence
+    category: geopolitics
+    description: >-
+      US media reports that Trump has discussed attack options with advisers, and a  strike could happen as early as
+      Saturday.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T06:08:07.000Z"
+      precision: day
+  - id: hamas-is-reasserting-control-in-gaza-des-2026-02-19
+    type: Event
+    name: Hamas is reasserting control in Gaza despite its heavy losses fighting Israel
+    category: geopolitics
+    description: Gazans say Hamas is again extending its control over security, tax revenue and government services.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T00:04:44.000Z"
+      precision: day
+  - id: float-featuring-brazils-lula-comes-last-2026-02-19
+    type: Event
+    name: Float featuring Brazil's Lula comes last at Rio Carnival
+    category: geopolitics
+    description: See the floats from the famous festival as the city's top samba schools compete for first prize.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T04:44:21.000Z"
+      precision: day
+  - id: desperate-hunt-for-breakthrough-in-nancy-2026-02-19
+    type: Event
+    name: Desperate hunt for breakthrough in Nancy Guthrie case turns to Mexico
+    category: geopolitics
+    description: The search for the 84-year-old mother of US presenter Savannah Guthrie has moved into a third week.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T01:15:49.000Z"
+      precision: day
+  - id: australian-presenter-apologises-for-drin-2026-02-19
+    type: Event
+    name: Australian presenter apologises for drinking before slurred Olympics report
+    category: geopolitics
+    description: Danika Mason also blamed the cold, after talking about coffee and iguanas in her live cross.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T04:11:15.000Z"
+      precision: day
+  - id: zuckerberg-defends-meta-in-landmark-soci-2026-02-19
+    type: Event
+    name: Zuckerberg defends Meta in landmark social media addiction trial
+    category: finance
+    description: The billionaire boss said he "always" regretted not making faster progress to identify users under 13.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T03:29:12.000Z"
+      precision: day
+  - id: reeves-borrowing-rules-need-a-rethink-2026-02-19
+    type: Decision
+    name: Reeves' borrowing rules 'need a rethink', claims IFS
+    category: finance
+    description: The think tank suggests the chancellor's fiscal rules need to shift the focus from one key figure.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T03:09:38.000Z"
+      precision: day
+  - id: why-theres-no-quick-fix-in-sight-for-th-2026-02-19
+    type: Event
+    name: Why there's no quick fix in sight for the problem of dazzling headlights
+    category: finance
+    description: Road users say headlight glare is an issue - but experts warn a solution might not be straightforward.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T01:10:15.000Z"
+      precision: day
+  - id: were-still-on-edge-toy-firms-look-to-2026-02-19
+    type: Event
+    name: "'We're still on edge': Toy firms look to US Supreme Court as tariffs hit profits"
+    category: finance
+    description: "\"You cannot go to sleep on this president,\" says one toymaker, of the ongoing uncertainty over trade policy."
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T06:08:18.000Z"
+      precision: day
+  - id: etsy-sells-second-hand-fashion-app-depop-2026-02-19
+    type: Event
+    name: Etsy sells second-hand fashion app Depop to eBay for $1.2bn
+    category: finance
+    description: The "pre-loved" fashion firm has been sold by Etsy just five years after it bought the firm.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T01:37:44.000Z"
+      precision: day
+  - id: the-two-farms-in-senegal-that-supply-man-2026-02-19
+    type: Event
+    name: The two farms in Senegal that supply many of the UK's vegetables
+    category: finance
+    description: During winter in Britain fresh produce is sent by cargo ship from the West African nation every week.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T00:16:54.000Z"
+      precision: day
+  - id: tech-firms-will-have-48-hours-to-remove-2026-02-19
+    type: Event
+    name: Tech firms will have 48 hours to remove abusive images under new law
+    category: finance
+    description: The government is proposing that intimate image abuse should be treated more severely.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T00:55:16.000Z"
+      precision: day
+  - id: bill-gates-pulls-out-of-indias-ai-summi-2026-02-19
+    type: Event
+    name: Bill Gates pulls out of India's AI summit amid Epstein files controversy
+    category: finance
+    description: The Gates Foundation said the decision was made to "ensure the focus remains on the summit's key priorities".
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T08:13:25.000Z"
+      precision: day
+  - id: pubs-to-open-late-for-home-nations-worl-2026-02-19
+    type: Event
+    name: Pubs to open late for home nations  World Cup knockout games
+    category: finance
+    description: >-
+      Football fans in the UK will be able to enjoy an extra round at the pub thanks to new rules during the men's World
+      Cup.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T04:51:23.000Z"
+      precision: day
+  - id: british-gas-owner-s-profits-tumble-39-2026-02-19
+    type: Event
+    name: British Gas owner’s profits tumble 39%; gen Z turning to trades for AI-proof work – business live
+    category: finance
+    description: >-
+      <p>Centrica has paused its share buyback after profits plunged, while new data shows Gen Z looking for AI-proof
+      jobs in traditional trades</p><p>Shareholders are not taking news of the profit plunge and share buyback pause
+      lightly, sending shares in <strong>Centrica</strong> down as much as 9.5% to 
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T08:18:38.000Z"
+      precision: day
+  - id: retailers-in-uk-plan-to-cut-staff-hours-2026-02-19
+    type: Event
+    name: Retailers in UK plan to cut staff hours and jobs amid rising employment costs
+    category: finance
+    description: >-
+      <p>BRC survey finds finance bosses expect technology to improve productivity, with 69% pessimistic about the
+      economy</p><p>UK retailers are planning to cut staff hours and jobs amid rising employment costs and pessimism
+      about the economy.</p><p>Almost two-thirds (61%) of finance bosses at retail com
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T05:00:57.000Z"
+      precision: day
+  - id: ebay-buys-depop-for-1-2bn-in-bid-to-cap-2026-02-19
+    type: Event
+    name: Ebay buys Depop for $1.2bn in bid to capture younger shoppers
+    category: finance
+    description: >-
+      <p>Depop, which is owned by Etsy, has 7 million active buyers on its marketplace, nearly 90% of whom are under the
+      age of 34</p><p>The online seller eBay has agreed to purchase the secondhand fashion marketplace Depop from Etsy
+      for about $1.2bn in cash, the companies announced on Wednesday, with eBa
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T02:43:24.000Z"
+      precision: day
+  - id: us-civil-rights-agency-sues-coca-cola-bo-2026-02-19
+    type: Event
+    name: US civil rights agency sues Coca-Cola bottler over event that excluded men
+    category: finance
+    description: >-
+      <p>Lawsuit is first by Equal Employment Opportunity Commission over workplace DEI in Trump’s second term</p><p>A
+      US civil rights agency has sued a bottler and distributor of Coca-Cola products it accuses of sex discrimination
+      over an employee networking event that excluded men, its first lawsuit ove
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T00:46:49.000Z"
+      precision: day
+  - id: i-m-putting-tech-firms-on-notice-deal-w-2026-02-19
+    type: Event
+    name: >-
+      I’m putting tech firms on notice: deal with the appalling abuse of women online – or we will deal with you | Keir
+      Starmer
+    category: finance
+    description: >-
+      <p>I see violence against women as a national emergency. The posting of non-consensual intimate images is part of
+      that crisis, and it must stop</p><p>Tackling violence against women and girls is not just a priority for my
+      government. It is central to who I am.</p><p>Before entering politics, when I 
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T06:00:57.000Z"
+      precision: day
+  - id: como-s-fabregas-milan-s-allegri-and-an-2026-02-19
+    type: Event
+    name: Como’s Fabregas, Milan’s Allegri and an alleged pull of Saelemaekers’ shirt
+    category: geopolitics
+    description: >-
+      AC Milan manager Massimo Allegri sent off in controversial Serie A draw but Como boss Cesc Fabregas is left
+      apologising.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T08:21:26.000Z"
+      precision: day
+  - id: video-openai-and-anthropic-ceos-refuse-2026-02-19
+    type: Event
+    name: "Video: OpenAI and Anthropic CEOs refuse to hold hands at India AI summit"
+    category: geopolitics
+    description: >-
+      Heads of companies OpenAI and Anthropic refused to hold hands in a group photo at the opening of an AI summit in
+      India.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T08:19:43.000Z"
+      precision: day
+  - id: south-korea-s-ex-president-yoon-gets-lif-2026-02-19
+    type: Event
+    name: South Korea’s ex-President Yoon gets life for insurrection
+    category: geopolitics
+    description: A South Korean court has found impeached president Yoon Suk Yeol guilty of insurrection.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T08:17:33.000Z"
+      precision: day
+  - id: torture-threats-rape-palestinian-jo-2026-02-19
+    type: Event
+    name: "‘Torture, threats, rape’: Palestinian journalists detail Israeli jail abuse"
+    category: geopolitics
+    description: CPJ report shares harrowing accounts of dozens of Palestinian journalists jailed by Israel since October 2023.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T08:00:51.000Z"
+      precision: day
+  - id: gas-explosion-kills-13-in-pakistan-s-kar-2026-02-19
+    type: Event
+    name: Gas explosion kills 13 in Pakistan’s Karachi, collapsing building
+    category: geopolitics
+    description: Rescuers are still removing rubble to search for any survivors trapped under the debris, police say.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T07:44:44.000Z"
+      precision: day
+  - id: live-south-korea-convicts-ex-president-2026-02-19
+    type: Event
+    name: "LIVE: South Korea convicts ex-President Yoon Suk Yeol for insurrection"
+    category: geopolitics
+    description: Former President Yoon sentenced to life in prison by Seoul court for his brief imposition of martial law in 2024.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T07:05:04.000Z"
+      precision: day
+  - id: south-korea-s-ex-president-yoon-given-li-2026-02-19
+    type: Event
+    name: South Korea’s ex-President Yoon given life in prison for insurrection
+    category: geopolitics
+    description: South Korean court finds former President Yoon Suk-yeol guilty over declaration of martial law in December 2024.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T06:54:47.000Z"
+      precision: day
+  - id: world-leaders-discuss-ai-future-at-india-2026-02-19
+    type: Event
+    name: World leaders discuss AI future at India’s global summit in New Delhi
+    category: geopolitics
+    description: >-
+      UN chief Guterres calls for open AI access and warns against leaving its future to the &#039;whims of a few
+      billionaires&#039;.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T06:54:37.000Z"
+      precision: day
+  - id: aid-reaches-sudan-s-kordofan-as-over-30-2026-02-19
+    type: Event
+    name: Aid reaches Sudan’s Kordofan as over 30 countries alarmed by drone attacks
+    category: geopolitics
+    description: >-
+      Food trucks arrive in area that has been cut off for two years as spate of deadly drone attacks hampers relief
+      efforts.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T06:33:55.000Z"
+      precision: day
+  - id: les-wexner-says-he-was-conned-by-epstein-2026-02-19
+    type: Claim
+    name: Les Wexner says he was conned by Epstein; Democrats push back on testimony
+    category: geopolitics
+    description: >-
+      Tycoon tells legislators that Jeffrey Epstein stole &#039;vast sums&#039; from him and denies knowledge of the
+      financier&#039;s crimes.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T06:30:29.000Z"
+      precision: day
+  - id: ledn-raises-188m-with-first-bitcoin-bac-2026-02-19
+    type: Event
+    name: Ledn raises $188m with first bitcoin backed bond sale in asset backed market
+    category: finance.crypto
+    description: >-
+      Crypto lender packages more than 5,400 bitcoin collateralized loans into first asset backed securities transaction
+      of its kind.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T07:25:19.000Z"
+      precision: day
+  - id: bitcoin-ether-xrp-etfs-bleed-while-sol-2026-02-19
+    type: Event
+    name: Bitcoin, ether, xrp ETFs bleed while Solana bucks outflow trend
+    category: finance.crypto
+    description: >-
+      U.S. spot crypto ETFs saw broad-based redemptions led by bitcoin and ether funds, while Solana products drew fresh
+      inflows, signaling selective institutional rotation rather than a full retreat from digital assets.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T07:25:08.000Z"
+      precision: day
+  - id: bitcoin-s-40-000-put-becomes-second-lar-2026-02-19
+    type: Event
+    name: Bitcoin’s $40,000 put becomes second-largest options bet ahead of February expiry next week
+    category: finance.crypto
+    description: Heavy positioning at lower strikes signals rising demand for downside protection for bitcoin.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T06:48:38.000Z"
+      precision: day
+  - id: ether-xrp-solana-slide-in-crypto-retre-2026-02-19
+    type: Event
+    name: Ether, XRP, Solana slide in crypto retreat despite tech-led lift in Asia stocks
+    category: finance.crypto
+    description: >-
+      Major tokens stayed under pressure even as risk sentiment improved in equities, with a firmer dollar and Fed rate
+      uncertainty keeping crypto rallies short-lived.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T06:48:14.000Z"
+      precision: day
+  - id: bitcoin-is-about-to-log-its-longest-losi-2026-02-19
+    type: Event
+    name: Bitcoin is about to log its longest losing streak since 2022 as geopolitical nerves hit risk trades
+    category: finance.crypto
+    description: Geopolitical tensions lift the U.S. dollar and crude prices, adding pressure to an already fragile crypto market.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T05:44:03.000Z"
+      precision: day
+  - id: coinbase-lets-xrp-ada-and-dogecoin-hold-2026-02-19
+    type: Event
+    name: Coinbase lets XRP, ADA and dogecoin holders borrow up to $100,000 without selling
+    category: finance.crypto
+    description: >-
+      The exchange is widening access to its Morpho-powered lending product after a wave of liquidations earlier this
+      month, giving holders of major retail tokens a way to borrow USDC without selling.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T05:08:37.000Z"
+      precision: day
+  - id: bitcoin-can-bounce-higher-but-the-mark-2026-02-19
+    type: Event
+    name: Bitcoin can bounce higher — but the market still lacks fuel for a real run
+    category: finance.crypto
+    description: >-
+      Recent trading shows bitcoin staging short-lived rallies that quickly fade amid a stronger dollar, hawkish Fed
+      signals and persistent selling pressure.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T04:51:21.000Z"
+      precision: day
+  - id: bitcoin-shakes-off-u-s-session-losses-a-2026-02-19
+    type: Claim
+    name: Bitcoin shakes off U.S. session losses as Trump says U.S. trade deficit cut by 78%
+    category: finance.crypto
+    description: >-
+      Investors are focused less on the accuracy of Trump’s trade figures and more on how renewed tariff talk could mean
+      higher-for-longer interest rates.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T04:11:55.000Z"
+      precision: day
+  - id: wlfi-surges-10-after-apex-stablecoin-de-2026-02-19
+    type: Claim
+    name: WLFI surges 10% after Apex stablecoin deal, outperforming BTC and ETH
+    category: finance.crypto
+    description: >-
+      The Trump-affiliated token rose on news that a $3.5 trillion asset servicer will pilot USD1, while BTC and ETH
+      continue to trade near multi-week lows.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T03:10:20.000Z"
+      precision: day
+  - id: south-korea-s-hanwha-makes-a-13-million-2026-02-19
+    type: Event
+    name: South Korea’s Hanwha makes a $13 million bet on ‘seedless’ crypto wallets
+    category: finance.crypto
+    description: >-
+      The South Korean financial firm backs the U.S.-based blockchain company to accelerate enterprise wallet technology
+      and real-world asset tokenization.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T00:20:00.000Z"
+      precision: day
+  - id: what-oil-hitting-70-a-barrel-would-sign-2026-02-19
+    type: Event
+    name: What oil hitting $70 a barrel would signal about rising U.S.-Iran tensions
+    category: finance.markets
+    description: >-
+      It looks unlikely that the U.S. would try destroying Iranian oil infrastructure because the Trump administration
+      has talked about bringing energy prices down, says strategist
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T03:48:00.000Z"
+      precision: day
+  - id: x2018-magnificent-seven-x2019-stocks-2026-02-19
+    type: Event
+    name: "&#x2018;Magnificent Seven&#x2019; stocks rise &#x2014; but hardly enough to reverse a brutal February"
+    category: finance.markets
+    description: A violent rotation away from Big Tech stocks this year could hobble the S&P 500.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T03:41:00.000Z"
+      precision: day
+  - id: will-microsoft-x2019-s-stock-finally-re-2026-02-19
+    type: Event
+    name: Will Microsoft&#x2019;s stock finally rebound? A board member just bet $2 million on a turnaround.
+    category: finance.markets
+    description: >-
+      There have been a few instances of insider purchases in the wake of the recent software selloff, with the latest
+      coming from Microsoft director John Stanton.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T02:17:00.000Z"
+      precision: day
+  - id: figma-x2019-s-stock-soars-as-ai-earning-2026-02-19
+    type: Event
+    name: Figma&#x2019;s stock soars as AI earnings momentum helps ease investors&#x2019; doubts
+    category: finance.markets
+    description: Figma&#x2019;s revenue grew 40% in the fourth quarter as net dollar retention rate increased to 136%
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T01:22:00.000Z"
+      precision: day
+  - id: doordash-users-want-more-complex-deliver-2026-02-19
+    type: Event
+    name: DoorDash users want more complex deliveries, and that&#x2019;s hitting profits
+    category: finance.markets
+    description: DoorDash reported quarterly earnings on Wednesday, with profit beating expectations but sales missing the mark.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T01:21:00.000Z"
+      precision: day
+  - id: after-record-sales-murky-forecast-sinks-2026-02-19
+    type: Claim
+    name: After record sales, murky forecast sinks Carvana&#x2019;s stock
+    category: finance.markets
+    description: >-
+      Shares of Carvana tumbled some 20% after hours on Wednesday, after the online used-car retailer&#x2019;s outlook
+      for the year ahead offered few specifics, following a year in which sales growth surged.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T01:17:00.000Z"
+      precision: day
+  - id: etsy-is-selling-depop-to-ebay-at-a-markd-2026-02-19
+    type: Event
+    name: Etsy is selling Depop to eBay at a markdown, in latest move to focus on basics. Both stocks are rallying.
+    category: finance.markets
+    description: >-
+      Etsy on Wednesday said it was selling the online secondhand-clothing site Depop to eBay for around $1.2 billion,
+      in an effort to focus more deeply on its main marketplace business.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T01:16:00.000Z"
+      precision: day
+  - id: x2018-the-world-feels-unpredictable-x-2026-02-19
+    type: Event
+    name: >-
+      &#x2018;The world feels unpredictable&#x2019;: I&#x2019;m 56. My husband is 64. Our mortgage costs $17K a month.
+      Do we pay it off?
+    category: finance.markets
+    description: "&#x201c;We paid $3.1 million for the house and owe $1.3 million on the loan.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T00:00:00.000Z"
+      precision: day
+  - id: california-leads-13-states-in-lawsuit-ov-2026-02-19
+    type: Event
+    name: California Leads 13 States in Lawsuit Over Canceled Clean Energy Funds
+    category: finance.energy
+    description: >-
+      A dozen states, led by California, are suing the federal government for the cancellation of billions in funding
+      for alternative energy projects approved by Congress. The suit was filed with a District Court in California, with
+      the plaintiffs—a total of 13 states—alleging that “the termination and ab
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T08:00:00.000Z"
+      precision: day
+  - id: u-s-to-redirect-venezuelan-oil-royaltie-2026-02-19
+    type: Event
+    name: U.S. to Redirect Venezuelan Oil Royalties Into a Treasury-Controlled Fund
+    category: finance.energy
+    description: >-
+      Energy companies that want to produce crude oil in Venezuela will be paying local taxes and fees to the Venezuelan
+      government, but royalty payments and federal taxes will go into a fund managed by the United States, the Treasury
+      Department has said. Citing a Frequently Asked Questions section yet to
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T06:45:00.000Z"
+      precision: day
+  - id: after-years-of-buybacks-big-oil-is-dril-2026-02-19
+    type: Event
+    name: After Years of Buybacks, Big Oil is Drilling Again
+    category: finance.energy
+    description: >-
+      After years of prioritizing returning cash to shareholders, oil supermajors are about to do something few
+      expected: turning to growth as a top priority. The reason: contrary to dominant expectations, oil and gas will
+      continue to be needed for decades. For years, analysts from some of the most reputa
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T01:00:00.000Z"
+      precision: day
+  - id: guyana-emerges-as-the-clear-winner-in-ve-2026-02-19
+    type: Event
+    name: Guyana Emerges as the Clear Winner in Venezuela’s Oil Reset
+    category: finance.energy
+    description: "One of the biggest winners from the new oil order in Venezuela is its neighbor to the east, Guyana, the country that turned into the newest oil producer in the world thanks to ExxonMobil’s massive oil discoveries.\_ Since Exxon first found oil in Guyana’s offshore Stabroek block a decade ago, one of "
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T00:00:00.000Z"
+      precision: day
+  - id: openai-taps-tata-for-100mw-ai-data-cente-2026-02-19
+    type: Event
+    name: OpenAI taps Tata for 100MW AI data center capacity in India, eyes 1GW
+    category: technology.ai
+    description: OpenAI also plans to expand its presence in India with new offices in Mumbai and Bengaluru later this year.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T05:34:25.000Z"
+      precision: day
+  - id: openai-deepens-india-push-with-pine-labs-2026-02-19
+    type: Event
+    name: OpenAI deepens India push with Pine Labs fintech partnership
+    category: technology.ai
+    description: OpenAI moves beyond ChatGPT in India with a Pine Labs deal targeting enterprise payments and AI-driven commerce.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T03:30:00.000Z"
+      precision: day
+narratives:
+  - name: Israel-Palestine Conflict
+    steps:
+      - from: hamas-is-reasserting-control-in-gaza-des-2026-02-19
+        to: torture-threats-rape-palestinian-jo-2026-02-19
+        type: causes
+  - name: AI Race
+    steps:
+      - from: openai-deepens-india-push-with-pine-labs-2026-02-19
+        to: openai-taps-tata-for-100mw-ai-data-cente-2026-02-19
+        type: causes
+      - from: openai-taps-tata-for-100mw-ai-data-cente-2026-02-19
+        to: video-openai-and-anthropic-ceos-refuse-2026-02-19
+        type: causes
+  - name: Crypto Markets
+    steps:
+      - from: south-korea-s-hanwha-makes-a-13-million-2026-02-19
+        to: wlfi-surges-10-after-apex-stablecoin-de-2026-02-19
+        type: supports
+      - from: wlfi-surges-10-after-apex-stablecoin-de-2026-02-19
+        to: bitcoin-shakes-off-u-s-session-losses-a-2026-02-19
+        type: follows
+      - from: bitcoin-shakes-off-u-s-session-losses-a-2026-02-19
+        to: bitcoin-can-bounce-higher-but-the-mark-2026-02-19
+        type: follows
+      - from: bitcoin-can-bounce-higher-but-the-mark-2026-02-19
+        to: coinbase-lets-xrp-ada-and-dogecoin-hold-2026-02-19
+        type: causes
+      - from: coinbase-lets-xrp-ada-and-dogecoin-hold-2026-02-19
+        to: bitcoin-is-about-to-log-its-longest-losi-2026-02-19
+        type: causes
+      - from: bitcoin-is-about-to-log-its-longest-losi-2026-02-19
+        to: ether-xrp-solana-slide-in-crypto-retre-2026-02-19
+        type: causes
+      - from: ether-xrp-solana-slide-in-crypto-retre-2026-02-19
+        to: bitcoin-s-40-000-put-becomes-second-lar-2026-02-19
+        type: causes
+      - from: bitcoin-s-40-000-put-becomes-second-lar-2026-02-19
+        to: bitcoin-ether-xrp-etfs-bleed-while-sol-2026-02-19
+        type: causes
+      - from: bitcoin-ether-xrp-etfs-bleed-while-sol-2026-02-19
+        to: ledn-raises-188m-with-first-bitcoin-bac-2026-02-19
+        type: causes
+  - name: Energy Markets
+    steps:
+      - from: what-oil-hitting-70-a-barrel-would-sign-2026-02-19
+        to: u-s-to-redirect-venezuelan-oil-royaltie-2026-02-19
+        type: causes
+sources:
+  - entity: white-house-presses-iran-to-make-deal-w-2026-02-19
+    type: article
+    title: White House presses Iran to make deal, while ramping up military presence
+    url: https://www.bbc.com/news/articles/c204zpz0lyro
+    excerpt: >-
+      US media reports that Trump has discussed attack options with advisers, and a  strike could happen as early as
+      Saturday.
+    source_name: BBC News
+    published: "2026-02-19T06:08:07.000Z"
+  - entity: hamas-is-reasserting-control-in-gaza-des-2026-02-19
+    type: article
+    title: Hamas is reasserting control in Gaza despite its heavy losses fighting Israel
+    url: https://www.bbc.com/news/articles/c98g1klxnpxo
+    excerpt: Gazans say Hamas is again extending its control over security, tax revenue and government services.
+    source_name: BBC News
+    published: "2026-02-19T00:04:44.000Z"
+  - entity: float-featuring-brazils-lula-comes-last-2026-02-19
+    type: article
+    title: Float featuring Brazil's Lula comes last at Rio Carnival
+    url: https://www.bbc.com/news/articles/c3ewvz0j87zo
+    excerpt: See the floats from the famous festival as the city's top samba schools compete for first prize.
+    source_name: BBC News
+    published: "2026-02-19T04:44:21.000Z"
+  - entity: desperate-hunt-for-breakthrough-in-nancy-2026-02-19
+    type: article
+    title: Desperate hunt for breakthrough in Nancy Guthrie case turns to Mexico
+    url: https://www.bbc.com/news/articles/c4gq2k8220go
+    excerpt: The search for the 84-year-old mother of US presenter Savannah Guthrie has moved into a third week.
+    source_name: BBC News
+    published: "2026-02-19T01:15:49.000Z"
+  - entity: australian-presenter-apologises-for-drin-2026-02-19
+    type: article
+    title: Australian presenter apologises for drinking before slurred Olympics report
+    url: https://www.bbc.com/news/articles/cdxgnrr11rwo
+    excerpt: Danika Mason also blamed the cold, after talking about coffee and iguanas in her live cross.
+    source_name: BBC News
+    published: "2026-02-19T04:11:15.000Z"
+  - entity: zuckerberg-defends-meta-in-landmark-soci-2026-02-19
+    type: article
+    title: Zuckerberg defends Meta in landmark social media addiction trial
+    url: https://www.bbc.com/news/articles/c5y42znjnjvo
+    excerpt: The billionaire boss said he "always" regretted not making faster progress to identify users under 13.
+    source_name: BBC Business
+    published: "2026-02-19T03:29:12.000Z"
+  - entity: reeves-borrowing-rules-need-a-rethink-2026-02-19
+    type: article
+    title: Reeves' borrowing rules 'need a rethink', claims IFS
+    url: https://www.bbc.com/news/articles/c1kg48m937wo
+    excerpt: The think tank suggests the chancellor's fiscal rules need to shift the focus from one key figure.
+    source_name: BBC Business
+    published: "2026-02-19T03:09:38.000Z"
+  - entity: why-theres-no-quick-fix-in-sight-for-th-2026-02-19
+    type: article
+    title: Why there's no quick fix in sight for the problem of dazzling headlights
+    url: https://www.bbc.com/news/articles/cn71xyjpdl2o
+    excerpt: Road users say headlight glare is an issue - but experts warn a solution might not be straightforward.
+    source_name: BBC Business
+    published: "2026-02-19T01:10:15.000Z"
+  - entity: were-still-on-edge-toy-firms-look-to-2026-02-19
+    type: article
+    title: "'We're still on edge': Toy firms look to US Supreme Court as tariffs hit profits"
+    url: https://www.bbc.com/news/articles/c87515x9p0zo
+    excerpt: "\"You cannot go to sleep on this president,\" says one toymaker, of the ongoing uncertainty over trade policy."
+    source_name: BBC Business
+    published: "2026-02-19T06:08:18.000Z"
+  - entity: etsy-sells-second-hand-fashion-app-depop-2026-02-19
+    type: article
+    title: Etsy sells second-hand fashion app Depop to eBay for $1.2bn
+    url: https://www.bbc.com/news/articles/cx240kme2k8o
+    excerpt: The "pre-loved" fashion firm has been sold by Etsy just five years after it bought the firm.
+    source_name: BBC Business
+    published: "2026-02-19T01:37:44.000Z"
+  - entity: the-two-farms-in-senegal-that-supply-man-2026-02-19
+    type: article
+    title: The two farms in Senegal that supply many of the UK's vegetables
+    url: https://www.bbc.com/news/articles/cwy6171wvppo
+    excerpt: During winter in Britain fresh produce is sent by cargo ship from the West African nation every week.
+    source_name: BBC Business
+    published: "2026-02-19T00:16:54.000Z"
+  - entity: tech-firms-will-have-48-hours-to-remove-2026-02-19
+    type: article
+    title: Tech firms will have 48 hours to remove abusive images under new law
+    url: https://www.bbc.com/news/articles/cz6ed1549yvo
+    excerpt: The government is proposing that intimate image abuse should be treated more severely.
+    source_name: BBC Business
+    published: "2026-02-19T00:55:16.000Z"
+  - entity: bill-gates-pulls-out-of-indias-ai-summi-2026-02-19
+    type: article
+    title: Bill Gates pulls out of India's AI summit amid Epstein files controversy
+    url: https://www.bbc.com/news/articles/c309qv9zglno
+    excerpt: The Gates Foundation said the decision was made to "ensure the focus remains on the summit's key priorities".
+    source_name: BBC Business
+    published: "2026-02-19T08:13:25.000Z"
+  - entity: pubs-to-open-late-for-home-nations-worl-2026-02-19
+    type: article
+    title: Pubs to open late for home nations  World Cup knockout games
+    url: https://www.bbc.com/news/articles/c8xy814855vo
+    excerpt: >-
+      Football fans in the UK will be able to enjoy an extra round at the pub thanks to new rules during the men's World
+      Cup.
+    source_name: BBC Business
+    published: "2026-02-19T04:51:23.000Z"
+  - entity: british-gas-owner-s-profits-tumble-39-2026-02-19
+    type: article
+    title: British Gas owner’s profits tumble 39%; gen Z turning to trades for AI-proof work – business live
+    url: >-
+      https://www.theguardian.com/business/live/2026/feb/19/british-gas-centrica-profit-gen-z-trades-ai-ftse-sterling-pound-stocks-business-live-news
+    excerpt: >-
+      <p>Centrica has paused its share buyback after profits plunged, while new data shows Gen Z looking for AI-proof
+      jobs in traditional trades</p><p>Shareholders are not taking news of the profit plunge a
+    source_name: The Guardian
+    published: "2026-02-19T08:18:38.000Z"
+  - entity: retailers-in-uk-plan-to-cut-staff-hours-2026-02-19
+    type: article
+    title: Retailers in UK plan to cut staff hours and jobs amid rising employment costs
+    url: >-
+      https://www.theguardian.com/business/2026/feb/19/retailers-in-uk-plan-to-cut-staff-hours-and-jobs-amid-rising-employment-costs
+    excerpt: >-
+      <p>BRC survey finds finance bosses expect technology to improve productivity, with 69% pessimistic about the
+      economy</p><p>UK retailers are planning to cut staff hours and jobs amid rising employment 
+    source_name: The Guardian
+    published: "2026-02-19T05:00:57.000Z"
+  - entity: ebay-buys-depop-for-1-2bn-in-bid-to-cap-2026-02-19
+    type: article
+    title: Ebay buys Depop for $1.2bn in bid to capture younger shoppers
+    url: https://www.theguardian.com/technology/2026/feb/19/ebay-buys-depop-from-etsy
+    excerpt: >-
+      <p>Depop, which is owned by Etsy, has 7 million active buyers on its marketplace, nearly 90% of whom are under the
+      age of 34</p><p>The online seller eBay has agreed to purchase the secondhand fashion 
+    source_name: The Guardian
+    published: "2026-02-19T02:43:24.000Z"
+  - entity: us-civil-rights-agency-sues-coca-cola-bo-2026-02-19
+    type: article
+    title: US civil rights agency sues Coca-Cola bottler over event that excluded men
+    url: https://www.theguardian.com/us-news/2026/feb/18/coca-cola-equal-employment-sued
+    excerpt: >-
+      <p>Lawsuit is first by Equal Employment Opportunity Commission over workplace DEI in Trump’s second term</p><p>A
+      US civil rights agency has sued a bottler and distributor of Coca-Cola products it accu
+    source_name: The Guardian
+    published: "2026-02-19T00:46:49.000Z"
+  - entity: i-m-putting-tech-firms-on-notice-deal-w-2026-02-19
+    type: article
+    title: >-
+      I’m putting tech firms on notice: deal with the appalling abuse of women online – or we will deal with you | Keir
+      Starmer
+    url: https://www.theguardian.com/commentisfree/2026/feb/19/keir-starmer-tech-firms-abuse-women-online-violence
+    excerpt: >-
+      <p>I see violence against women as a national emergency. The posting of non-consensual intimate images is part of
+      that crisis, and it must stop</p><p>Tackling violence against women and girls is not j
+    source_name: The Guardian
+    published: "2026-02-19T06:00:57.000Z"
+  - entity: como-s-fabregas-milan-s-allegri-and-an-2026-02-19
+    type: article
+    title: Como’s Fabregas, Milan’s Allegri and an alleged pull of Saelemaekers’ shirt
+    url: https://www.aljazeera.com/sports/2026/2/19/comos-fabregas-milans-allegri-and-an-alleged-pull-of-saelemaekers-shirt
+    excerpt: >-
+      AC Milan manager Massimo Allegri sent off in controversial Serie A draw but Como boss Cesc Fabregas is left
+      apologising.
+    source_name: Al Jazeera
+    published: "2026-02-19T08:21:26.000Z"
+  - entity: video-openai-and-anthropic-ceos-refuse-2026-02-19
+    type: article
+    title: "Video: OpenAI and Anthropic CEOs refuse to hold hands at India AI summit"
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/2/19/video-openai-and-anthropic-ceos-refuse-to-hold-hands-at-india-ai-summit
+    excerpt: >-
+      Heads of companies OpenAI and Anthropic refused to hold hands in a group photo at the opening of an AI summit in
+      India.
+    source_name: Al Jazeera
+    published: "2026-02-19T08:19:43.000Z"
+  - entity: south-korea-s-ex-president-yoon-gets-lif-2026-02-19
+    type: article
+    title: South Korea’s ex-President Yoon gets life for insurrection
+    url: https://www.aljazeera.com/video/newsfeed/2026/2/19/south-koreas-ex-president-yoon-gets-life-for-insurrection
+    excerpt: A South Korean court has found impeached president Yoon Suk Yeol guilty of insurrection.
+    source_name: Al Jazeera
+    published: "2026-02-19T08:17:33.000Z"
+  - entity: torture-threats-rape-palestinian-jo-2026-02-19
+    type: article
+    title: "‘Torture, threats, rape’: Palestinian journalists detail Israeli jail abuse"
+    url: https://www.aljazeera.com/news/2026/2/19/torture-threats-rape-palestinian-journalists-detail-israeli-jail-abuse
+    excerpt: CPJ report shares harrowing accounts of dozens of Palestinian journalists jailed by Israel since October 2023.
+    source_name: Al Jazeera
+    published: "2026-02-19T08:00:51.000Z"
+  - entity: gas-explosion-kills-13-in-pakistan-s-kar-2026-02-19
+    type: article
+    title: Gas explosion kills 13 in Pakistan’s Karachi, collapsing building
+    url: https://www.aljazeera.com/news/2026/2/19/gas-explosion-kills-13-in-pakistans-karachi-collapsing-building
+    excerpt: Rescuers are still removing rubble to search for any survivors trapped under the debris, police say.
+    source_name: Al Jazeera
+    published: "2026-02-19T07:44:44.000Z"
+  - entity: live-south-korea-convicts-ex-president-2026-02-19
+    type: article
+    title: "LIVE: South Korea convicts ex-President Yoon Suk Yeol for insurrection"
+    url: >-
+      https://www.aljazeera.com/news/liveblog/2026/2/19/live-south-korea-convicts-ex-president-yoon-suk-yeol-for-insurrection
+    excerpt: Former President Yoon sentenced to life in prison by Seoul court for his brief imposition of martial law in 2024.
+    source_name: Al Jazeera
+    published: "2026-02-19T07:05:04.000Z"
+  - entity: south-korea-s-ex-president-yoon-given-li-2026-02-19
+    type: article
+    title: South Korea’s ex-President Yoon given life in prison for insurrection
+    url: https://www.aljazeera.com/news/2026/2/19/south-koreas-ex-president-yoon-suk-yeol-found-guilty-of-insurrection
+    excerpt: South Korean court finds former President Yoon Suk-yeol guilty over declaration of martial law in December 2024.
+    source_name: Al Jazeera
+    published: "2026-02-19T06:54:47.000Z"
+  - entity: world-leaders-discuss-ai-future-at-india-2026-02-19
+    type: article
+    title: World leaders discuss AI future at India’s global summit in New Delhi
+    url: https://www.aljazeera.com/news/2026/2/19/world-leaders-discuss-ai-future-at-indias-global-summit-in-new-delhi
+    excerpt: >-
+      UN chief Guterres calls for open AI access and warns against leaving its future to the &#039;whims of a few
+      billionaires&#039;.
+    source_name: Al Jazeera
+    published: "2026-02-19T06:54:37.000Z"
+  - entity: aid-reaches-sudan-s-kordofan-as-over-30-2026-02-19
+    type: article
+    title: Aid reaches Sudan’s Kordofan as over 30 countries alarmed by drone attacks
+    url: https://www.aljazeera.com/news/2026/2/19/aid-reaches-sudans-kordofan-as-over-30-countries-alarmed-by-drone-attacks
+    excerpt: >-
+      Food trucks arrive in area that has been cut off for two years as spate of deadly drone attacks hampers relief
+      efforts.
+    source_name: Al Jazeera
+    published: "2026-02-19T06:33:55.000Z"
+  - entity: les-wexner-says-he-was-conned-by-epstein-2026-02-19
+    type: article
+    title: Les Wexner says he was conned by Epstein; Democrats push back on testimony
+    url: https://www.aljazeera.com/news/2026/2/19/les-wexner-says-he-was-conned-by-epstein-democrats-push-back-on-testimony
+    excerpt: >-
+      Tycoon tells legislators that Jeffrey Epstein stole &#039;vast sums&#039; from him and denies knowledge of the
+      financier&#039;s crimes.
+    source_name: Al Jazeera
+    published: "2026-02-19T06:30:29.000Z"
+  - entity: ledn-raises-188m-with-first-bitcoin-bac-2026-02-19
+    type: article
+    title: Ledn raises $188m with first bitcoin backed bond sale in asset backed market
+    url: >-
+      https://www.coindesk.com/markets/2026/02/19/ledn-raises-usd188m-with-first-bitcoin-backed-bond-sale-in-asset-backed-market
+    excerpt: >-
+      Crypto lender packages more than 5,400 bitcoin collateralized loans into first asset backed securities transaction
+      of its kind.
+    source_name: CoinDesk
+    published: "2026-02-19T07:25:19.000Z"
+  - entity: bitcoin-ether-xrp-etfs-bleed-while-sol-2026-02-19
+    type: article
+    title: Bitcoin, ether, xrp ETFs bleed while Solana bucks outflow trend
+    url: https://www.coindesk.com/markets/2026/02/19/bitcoin-ether-xrp-etfs-bleed-while-solana-bucks-outflow-trend
+    excerpt: >-
+      U.S. spot crypto ETFs saw broad-based redemptions led by bitcoin and ether funds, while Solana products drew fresh
+      inflows, signaling selective institutional rotation rather than a full retreat from d
+    source_name: CoinDesk
+    published: "2026-02-19T07:25:08.000Z"
+  - entity: bitcoin-s-40-000-put-becomes-second-lar-2026-02-19
+    type: article
+    title: Bitcoin’s $40,000 put becomes second-largest options bet ahead of February expiry next week
+    url: >-
+      https://www.coindesk.com/markets/2026/02/19/tbitcoin-s-usd40-000-put-becomes-second-largest-options-bet-ahead-of-february-expiry-next-week
+    excerpt: Heavy positioning at lower strikes signals rising demand for downside protection for bitcoin.
+    source_name: CoinDesk
+    published: "2026-02-19T06:48:38.000Z"
+  - entity: ether-xrp-solana-slide-in-crypto-retre-2026-02-19
+    type: article
+    title: Ether, XRP, Solana slide in crypto retreat despite tech-led lift in Asia stocks
+    url: >-
+      https://www.coindesk.com/markets/2026/02/19/ether-xrp-solana-slide-in-crypto-retreat-despite-tech-led-lift-in-asia-stocks
+    excerpt: >-
+      Major tokens stayed under pressure even as risk sentiment improved in equities, with a firmer dollar and Fed rate
+      uncertainty keeping crypto rallies short-lived.
+    source_name: CoinDesk
+    published: "2026-02-19T06:48:14.000Z"
+  - entity: bitcoin-is-about-to-log-its-longest-losi-2026-02-19
+    type: article
+    title: Bitcoin is about to log its longest losing streak since 2022 as geopolitical nerves hit risk trades
+    url: >-
+      https://www.coindesk.com/markets/2026/02/19/bitcoin-on-track-for-fifth-weekly-decline-first-since-2022-as-geopolitical-risks-mount
+    excerpt: Geopolitical tensions lift the U.S. dollar and crude prices, adding pressure to an already fragile crypto market.
+    source_name: CoinDesk
+    published: "2026-02-19T05:44:03.000Z"
+  - entity: coinbase-lets-xrp-ada-and-dogecoin-hold-2026-02-19
+    type: article
+    title: Coinbase lets XRP, ADA and dogecoin holders borrow up to $100,000 without selling
+    url: >-
+      https://www.coindesk.com/markets/2026/02/19/coinbase-lets-xrp-ada-and-dogecoin-holders-borrow-up-to-usd100-000-without-selling
+    excerpt: >-
+      The exchange is widening access to its Morpho-powered lending product after a wave of liquidations earlier this
+      month, giving holders of major retail tokens a way to borrow USDC without selling.
+    source_name: CoinDesk
+    published: "2026-02-19T05:08:37.000Z"
+  - entity: bitcoin-can-bounce-higher-but-the-mark-2026-02-19
+    type: article
+    title: Bitcoin can bounce higher — but the market still lacks fuel for a real run
+    url: >-
+      https://www.coindesk.com/markets/2026/02/19/bitcoin-can-bounce-higher-but-the-market-still-lacks-fuel-for-a-real-run
+    excerpt: >-
+      Recent trading shows bitcoin staging short-lived rallies that quickly fade amid a stronger dollar, hawkish Fed
+      signals and persistent selling pressure.
+    source_name: CoinDesk
+    published: "2026-02-19T04:51:21.000Z"
+  - entity: bitcoin-shakes-off-u-s-session-losses-a-2026-02-19
+    type: article
+    title: Bitcoin shakes off U.S. session losses as Trump says U.S. trade deficit cut by 78%
+    url: >-
+      https://www.coindesk.com/markets/2026/02/19/bitcoin-shakes-off-u-s-session-losses-as-trump-says-u-s-trade-deficit-cut-by-78
+    excerpt: >-
+      Investors are focused less on the accuracy of Trump’s trade figures and more on how renewed tariff talk could mean
+      higher-for-longer interest rates.
+    source_name: CoinDesk
+    published: "2026-02-19T04:11:55.000Z"
+  - entity: wlfi-surges-10-after-apex-stablecoin-de-2026-02-19
+    type: article
+    title: WLFI surges 10% after Apex stablecoin deal, outperforming BTC and ETH
+    url: https://www.coindesk.com/markets/2026/02/19/wlfi-surges-10-after-apex-stablecoin-deal-outperforming-btc-and-eth
+    excerpt: >-
+      The Trump-affiliated token rose on news that a $3.5 trillion asset servicer will pilot USD1, while BTC and ETH
+      continue to trade near multi-week lows.
+    source_name: CoinDesk
+    published: "2026-02-19T03:10:20.000Z"
+  - entity: south-korea-s-hanwha-makes-a-13-million-2026-02-19
+    type: article
+    title: South Korea’s Hanwha makes a $13 million bet on ‘seedless’ crypto wallets
+    url: >-
+      https://www.coindesk.com/business/2026/02/18/south-korea-s-hanwhamakes-a-usd13-million-bet-on-seedless-crypto-wallets
+    excerpt: >-
+      The South Korean financial firm backs the U.S.-based blockchain company to accelerate enterprise wallet technology
+      and real-world asset tokenization.
+    source_name: CoinDesk
+    published: "2026-02-19T00:20:00.000Z"
+  - entity: what-oil-hitting-70-a-barrel-would-sign-2026-02-19
+    type: article
+    title: What oil hitting $70 a barrel would signal about rising U.S.-Iran tensions
+    url: >-
+      https://www.marketwatch.com/story/what-oil-hitting-70-a-barrel-would-signal-about-iran-and-u-s-tensions-cc026155?mod=mw_rss_topstories
+    excerpt: >-
+      It looks unlikely that the U.S. would try destroying Iranian oil infrastructure because the Trump administration
+      has talked about bringing energy prices down, says strategist
+    source_name: MarketWatch
+    published: "2026-02-19T03:48:00.000Z"
+  - entity: x2018-magnificent-seven-x2019-stocks-2026-02-19
+    type: article
+    title: "&#x2018;Magnificent Seven&#x2019; stocks rise &#x2014; but hardly enough to reverse a brutal February"
+    url: >-
+      https://www.marketwatch.com/story/magnificent-seven-stocks-rise-but-hardly-enough-to-reverse-a-brutal-february-ddc78b51?mod=mw_rss_topstories
+    excerpt: A violent rotation away from Big Tech stocks this year could hobble the S&P 500.
+    source_name: MarketWatch
+    published: "2026-02-19T03:41:00.000Z"
+  - entity: will-microsoft-x2019-s-stock-finally-re-2026-02-19
+    type: article
+    title: Will Microsoft&#x2019;s stock finally rebound? A board member just bet $2 million on a turnaround.
+    url: >-
+      https://www.marketwatch.com/story/will-microsofts-stock-finally-rebound-a-board-member-just-bet-2-million-on-a-turnaround-5aa41ff8?mod=mw_rss_topstories
+    excerpt: >-
+      There have been a few instances of insider purchases in the wake of the recent software selloff, with the latest
+      coming from Microsoft director John Stanton.
+    source_name: MarketWatch
+    published: "2026-02-19T02:17:00.000Z"
+  - entity: figma-x2019-s-stock-soars-as-ai-earning-2026-02-19
+    type: article
+    title: Figma&#x2019;s stock soars as AI earnings momentum helps ease investors&#x2019; doubts
+    url: >-
+      https://www.marketwatch.com/story/figmas-stock-soars-as-ai-earnings-momentum-helps-ease-investors-doubts-9f31e005?mod=mw_rss_topstories
+    excerpt: Figma&#x2019;s revenue grew 40% in the fourth quarter as net dollar retention rate increased to 136%
+    source_name: MarketWatch
+    published: "2026-02-19T01:22:00.000Z"
+  - entity: doordash-users-want-more-complex-deliver-2026-02-19
+    type: article
+    title: DoorDash users want more complex deliveries, and that&#x2019;s hitting profits
+    url: >-
+      https://www.marketwatch.com/story/doordash-users-want-more-complex-deliveries-and-thats-hitting-profits-60fa6b2d?mod=mw_rss_topstories
+    excerpt: DoorDash reported quarterly earnings on Wednesday, with profit beating expectations but sales missing the mark.
+    source_name: MarketWatch
+    published: "2026-02-19T01:21:00.000Z"
+  - entity: after-record-sales-murky-forecast-sinks-2026-02-19
+    type: article
+    title: After record sales, murky forecast sinks Carvana&#x2019;s stock
+    url: >-
+      https://www.marketwatch.com/story/after-record-sales-murky-forecast-sinks-carvanas-stock-a292ad88?mod=mw_rss_topstories
+    excerpt: >-
+      Shares of Carvana tumbled some 20% after hours on Wednesday, after the online used-car retailer&#x2019;s outlook
+      for the year ahead offered few specifics, following a year in which sales growth surged
+    source_name: MarketWatch
+    published: "2026-02-19T01:17:00.000Z"
+  - entity: etsy-is-selling-depop-to-ebay-at-a-markd-2026-02-19
+    type: article
+    title: Etsy is selling Depop to eBay at a markdown, in latest move to focus on basics. Both stocks are rallying.
+    url: >-
+      https://www.marketwatch.com/story/etsy-is-selling-depop-to-ebay-at-a-markdown-in-latest-move-to-focus-on-basics-both-stocks-are-rallying-d866740d?mod=mw_rss_topstories
+    excerpt: >-
+      Etsy on Wednesday said it was selling the online secondhand-clothing site Depop to eBay for around $1.2 billion,
+      in an effort to focus more deeply on its main marketplace business.
+    source_name: MarketWatch
+    published: "2026-02-19T01:16:00.000Z"
+  - entity: x2018-the-world-feels-unpredictable-x-2026-02-19
+    type: article
+    title: >-
+      &#x2018;The world feels unpredictable&#x2019;: I&#x2019;m 56. My husband is 64. Our mortgage costs $17K a month.
+      Do we pay it off?
+    url: >-
+      https://www.marketwatch.com/story/the-world-feels-unpredictable-im-56-my-husband-is-64-our-mortgage-costs-17-000-a-month-do-we-pay-it-off-c8a454d8?mod=mw_rss_topstories
+    excerpt: "&#x201c;We paid $3.1 million for the house and owe $1.3 million on the loan.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-19T00:00:00.000Z"
+  - entity: california-leads-13-states-in-lawsuit-ov-2026-02-19
+    type: article
+    title: California Leads 13 States in Lawsuit Over Canceled Clean Energy Funds
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/California-Leads-13-States-in-Lawsuit-Over-Canceled-Clean-Energy-Funds.html
+    excerpt: >-
+      A dozen states, led by California, are suing the federal government for the cancellation of billions in funding
+      for alternative energy projects approved by Congress. The suit was filed with a District
+    source_name: OilPrice.com
+    published: "2026-02-19T08:00:00.000Z"
+  - entity: u-s-to-redirect-venezuelan-oil-royaltie-2026-02-19
+    type: article
+    title: U.S. to Redirect Venezuelan Oil Royalties Into a Treasury-Controlled Fund
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/US-to-Redirect-Venezuelan-Oil-Royalties-Into-a-Treasury-Controlled-Fund.html
+    excerpt: >-
+      Energy companies that want to produce crude oil in Venezuela will be paying local taxes and fees to the Venezuelan
+      government, but royalty payments and federal taxes will go into a fund managed by the
+    source_name: OilPrice.com
+    published: "2026-02-19T06:45:00.000Z"
+  - entity: after-years-of-buybacks-big-oil-is-dril-2026-02-19
+    type: article
+    title: After Years of Buybacks, Big Oil is Drilling Again
+    url: https://oilprice.com/Energy/Crude-Oil/After-Years-of-Buybacks-Big-Oil-is-Drilling-Again.html
+    excerpt: >-
+      After years of prioritizing returning cash to shareholders, oil supermajors are about to do something few
+      expected: turning to growth as a top priority. The reason: contrary to dominant expectations, 
+    source_name: OilPrice.com
+    published: "2026-02-19T01:00:00.000Z"
+  - entity: guyana-emerges-as-the-clear-winner-in-ve-2026-02-19
+    type: article
+    title: Guyana Emerges as the Clear Winner in Venezuela’s Oil Reset
+    url: https://oilprice.com/Energy/Crude-Oil/Guyana-Emerges-as-the-Clear-Winner-in-Venezuelas-Oil-Reset.html
+    excerpt: >-
+      One of the biggest winners from the new oil order in Venezuela is its neighbor to the east, Guyana, the country
+      that turned into the newest oil producer in the world thanks to ExxonMobil’s massive oil
+    source_name: OilPrice.com
+    published: "2026-02-19T00:00:00.000Z"
+  - entity: openai-taps-tata-for-100mw-ai-data-cente-2026-02-19
+    type: article
+    title: OpenAI taps Tata for 100MW AI data center capacity in India, eyes 1GW
+    url: https://techcrunch.com/2026/02/18/openai-taps-tata-for-100mw-ai-data-center-capacity-in-india-eyes-1gw/
+    excerpt: OpenAI also plans to expand its presence in India with new offices in Mumbai and Bengaluru later this year.
+    source_name: TechCrunch
+    published: "2026-02-19T05:34:25.000Z"
+  - entity: openai-deepens-india-push-with-pine-labs-2026-02-19
+    type: article
+    title: OpenAI deepens India push with Pine Labs fintech partnership
+    url: https://techcrunch.com/2026/02/18/openai-deepens-india-push-with-pine-labs-fintech-partnership/
+    excerpt: OpenAI moves beyond ChatGPT in India with a Pine Labs deal targeting enterprise payments and AI-driven commerce.
+    source_name: TechCrunch
+    published: "2026-02-19T03:30:00.000Z"
