@@ -1,0 +1,380 @@
+seed:
+  name: news-week8-day-2026-02-19-hour-03
+  label: Daily News — 2026-02-19 03:00 (Week 8, 2026)
+  namespace: news.week8.day-2026-02-19
+  description: "Auto-gathered news: 19 stories, 2026-02-19 to 2026-02-19"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week8
+    extends: news
+  - namespace: news.week8.day-2026-02-19
+    extends: news.week8
+entities:
+  - id: hamas-is-reasserting-control-in-gaza-des-2026-02-19
+    type: Event
+    name: Hamas is reasserting control in Gaza despite its heavy losses fighting Israel
+    category: geopolitics
+    description: Gazans say Hamas is again extending its control over security, tax revenue and government services.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T00:04:44.000Z"
+      precision: day
+  - id: desperate-hunt-for-breakthrough-in-nancy-2026-02-19
+    type: Event
+    name: Desperate hunt for breakthrough in Nancy Guthrie case turns to Mexico
+    category: geopolitics
+    description: The search for the 84-year-old mother of US presenter Savannah Guthrie has moved into a third week.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T01:15:49.000Z"
+      precision: day
+  - id: us-to-withdraw-troops-from-syria-as-tens-2026-02-19
+    type: Event
+    name: US to withdraw troops from Syria as tensions mount with Iran
+    category: geopolitics
+    description: >-
+      The decision came as US President Donald Trump ramps up military presence in the Middle East as tensions mount
+      with Iran.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T01:14:47.000Z"
+      precision: day
+  - id: billionaire-les-wexner-tells-us-lawmaker-2026-02-19
+    type: Claim
+    name: Billionaire Les Wexner tells US lawmakers he was 'naive' and 'conned' by Epstein
+    category: geopolitics
+    description: >-
+      Testifying before Congress, the former CEO of Victoria's Secret lingerie brand accused Epstein of stealing "vast
+      sums" of money from his family.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T02:08:47.000Z"
+      precision: day
+  - id: tech-firms-will-have-48-hours-to-remove-2026-02-19
+    type: Event
+    name: Tech firms will have 48 hours to remove abusive images under new law
+    category: finance
+    description: The government is proposing that intimate image abuse should be treated more severely.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T00:55:16.000Z"
+      precision: day
+  - id: why-theres-no-quick-fix-in-sight-for-th-2026-02-19
+    type: Event
+    name: Why there's no quick fix in sight for the problem of dazzling headlights
+    category: finance
+    description: Road users say headlight glare is an issue - but experts warn a solution might not be straightforward.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T01:10:15.000Z"
+      precision: day
+  - id: etsy-sells-second-hand-fashion-app-depop-2026-02-19
+    type: Event
+    name: Etsy sells second-hand fashion app Depop to eBay for $1.2bn
+    category: finance
+    description: The "pre-loved" fashion firm has been sold by Etsy just five years after it bought the firm.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T01:37:44.000Z"
+      precision: day
+  - id: the-two-farms-in-senegal-that-supply-man-2026-02-19
+    type: Event
+    name: The two farms in Senegal that supply many of the UK's vegetables
+    category: finance
+    description: During winter in Britain fresh produce is sent by cargo ship from the West African nation every week.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T00:16:54.000Z"
+      precision: day
+  - id: advocacy-groups-sue-trump-administration-2026-02-19
+    type: Event
+    name: Advocacy groups sue Trump administration over endangerment finding’s repeal
+    category: geopolitics
+    description: The US Environmental Protection Agency rescinded the climate change finding as part of a push to slash regulation.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T01:52:35.000Z"
+      precision: day
+  - id: russia-ukraine-war-list-of-key-events-2026-02-19
+    type: Event
+    name: "Russia-Ukraine war: List of key events, day 1,456"
+    category: geopolitics
+    description: These are the key developments from day 1,456 of Russia&#039;s war on Ukraine.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T01:25:50.000Z"
+      precision: day
+  - id: south-korea-s-hanwha-makes-a-13-million-2026-02-19
+    type: Event
+    name: South Korea’s Hanwha makes a $13 million bet on ‘seedless’ crypto wallets
+    category: finance.crypto
+    description: >-
+      The South Korean financial firm backs the U.S.-based blockchain company to accelerate enterprise wallet technology
+      and real-world asset tokenization.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T00:20:00.000Z"
+      precision: day
+  - id: will-microsoft-x2019-s-stock-finally-re-2026-02-19
+    type: Event
+    name: Will Microsoft&#x2019;s stock finally rebound? A board member just bet $2 million on a turnaround.
+    category: finance.markets
+    description: >-
+      There have been a few instances of insider purchases in the wake of the recent software selloff, with the latest
+      coming from Microsoft director John Stanton.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T02:17:00.000Z"
+      precision: day
+  - id: figma-x2019-s-stock-soars-as-ai-earning-2026-02-19
+    type: Event
+    name: Figma&#x2019;s stock soars as AI earnings momentum helps ease investors&#x2019; doubts
+    category: finance.markets
+    description: Figma&#x2019;s revenue grew 40% in the fourth quarter as net dollar retention rate increased to 136%
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T01:22:00.000Z"
+      precision: day
+  - id: doordash-users-want-more-complex-deliver-2026-02-19
+    type: Event
+    name: DoorDash users want more complex deliveries, and that&#x2019;s hitting profits
+    category: finance.markets
+    description: DoorDash reported quarterly earnings on Wednesday, with profit beating expectations but sales missing the mark.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T01:21:00.000Z"
+      precision: day
+  - id: after-record-sales-murky-forecast-sinks-2026-02-19
+    type: Claim
+    name: After record sales, murky forecast sinks Carvana&#x2019;s stock
+    category: finance.markets
+    description: >-
+      Shares of Carvana tumbled some 20% after hours on Wednesday, after the online used-car retailer&#x2019;s outlook
+      for the year ahead offered few specifics, following a year in which sales growth surged.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T01:17:00.000Z"
+      precision: day
+  - id: etsy-is-selling-depop-to-ebay-at-a-markd-2026-02-19
+    type: Event
+    name: Etsy is selling Depop to eBay at a markdown, in latest move to focus on basics. Both stocks are rallying.
+    category: finance.markets
+    description: >-
+      Etsy on Wednesday said it was selling the online secondhand-clothing site Depop to eBay for around $1.2 billion,
+      in an effort to focus more deeply on its main marketplace business.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T01:16:00.000Z"
+      precision: day
+  - id: x2018-the-world-feels-unpredictable-x-2026-02-19
+    type: Event
+    name: >-
+      &#x2018;The world feels unpredictable&#x2019;: I&#x2019;m 56. My husband is 64. Our mortgage costs $17K a month.
+      Do we pay it off?
+    category: finance.markets
+    description: "&#x201c;We paid $3.1 million for the house and owe $1.3 million on the loan.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T00:00:00.000Z"
+      precision: day
+  - id: after-years-of-buybacks-big-oil-is-dril-2026-02-19
+    type: Event
+    name: After Years of Buybacks, Big Oil is Drilling Again
+    category: finance.energy
+    description: >-
+      After years of prioritizing returning cash to shareholders, oil supermajors are about to do something few
+      expected: turning to growth as a top priority. The reason: contrary to dominant expectations, oil and gas will
+      continue to be needed for decades. For years, analysts from some of the most reputa
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T01:00:00.000Z"
+      precision: day
+  - id: guyana-emerges-as-the-clear-winner-in-ve-2026-02-19
+    type: Event
+    name: Guyana Emerges as the Clear Winner in Venezuela’s Oil Reset
+    category: finance.energy
+    description: "One of the biggest winners from the new oil order in Venezuela is its neighbor to the east, Guyana, the country that turned into the newest oil producer in the world thanks to ExxonMobil’s massive oil discoveries.\_ Since Exxon first found oil in Guyana’s offshore Stabroek block a decade ago, one of "
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-19T00:00:00.000Z"
+      precision: day
+sources:
+  - entity: hamas-is-reasserting-control-in-gaza-des-2026-02-19
+    type: article
+    title: Hamas is reasserting control in Gaza despite its heavy losses fighting Israel
+    url: https://www.bbc.com/news/articles/c98g1klxnpxo
+    excerpt: Gazans say Hamas is again extending its control over security, tax revenue and government services.
+    source_name: BBC News
+    published: "2026-02-19T00:04:44.000Z"
+  - entity: desperate-hunt-for-breakthrough-in-nancy-2026-02-19
+    type: article
+    title: Desperate hunt for breakthrough in Nancy Guthrie case turns to Mexico
+    url: https://www.bbc.com/news/articles/c4gq2k8220go
+    excerpt: The search for the 84-year-old mother of US presenter Savannah Guthrie has moved into a third week.
+    source_name: BBC News
+    published: "2026-02-19T01:15:49.000Z"
+  - entity: us-to-withdraw-troops-from-syria-as-tens-2026-02-19
+    type: article
+    title: US to withdraw troops from Syria as tensions mount with Iran
+    url: https://www.bbc.com/news/articles/c875pey8vy2o
+    excerpt: >-
+      The decision came as US President Donald Trump ramps up military presence in the Middle East as tensions mount
+      with Iran.
+    source_name: BBC News
+    published: "2026-02-19T01:14:47.000Z"
+  - entity: billionaire-les-wexner-tells-us-lawmaker-2026-02-19
+    type: article
+    title: Billionaire Les Wexner tells US lawmakers he was 'naive' and 'conned' by Epstein
+    url: https://www.bbc.com/news/articles/cy57rrrpvg7o
+    excerpt: >-
+      Testifying before Congress, the former CEO of Victoria's Secret lingerie brand accused Epstein of stealing "vast
+      sums" of money from his family.
+    source_name: BBC News
+    published: "2026-02-19T02:08:47.000Z"
+  - entity: tech-firms-will-have-48-hours-to-remove-2026-02-19
+    type: article
+    title: Tech firms will have 48 hours to remove abusive images under new law
+    url: https://www.bbc.com/news/articles/cz6ed1549yvo
+    excerpt: The government is proposing that intimate image abuse should be treated more severely.
+    source_name: BBC Business
+    published: "2026-02-19T00:55:16.000Z"
+  - entity: why-theres-no-quick-fix-in-sight-for-th-2026-02-19
+    type: article
+    title: Why there's no quick fix in sight for the problem of dazzling headlights
+    url: https://www.bbc.com/news/articles/cn71xyjpdl2o
+    excerpt: Road users say headlight glare is an issue - but experts warn a solution might not be straightforward.
+    source_name: BBC Business
+    published: "2026-02-19T01:10:15.000Z"
+  - entity: etsy-sells-second-hand-fashion-app-depop-2026-02-19
+    type: article
+    title: Etsy sells second-hand fashion app Depop to eBay for $1.2bn
+    url: https://www.bbc.com/news/articles/cx240kme2k8o
+    excerpt: The "pre-loved" fashion firm has been sold by Etsy just five years after it bought the firm.
+    source_name: BBC Business
+    published: "2026-02-19T01:37:44.000Z"
+  - entity: the-two-farms-in-senegal-that-supply-man-2026-02-19
+    type: article
+    title: The two farms in Senegal that supply many of the UK's vegetables
+    url: https://www.bbc.com/news/articles/cwy6171wvppo
+    excerpt: During winter in Britain fresh produce is sent by cargo ship from the West African nation every week.
+    source_name: BBC Business
+    published: "2026-02-19T00:16:54.000Z"
+  - entity: advocacy-groups-sue-trump-administration-2026-02-19
+    type: article
+    title: Advocacy groups sue Trump administration over endangerment finding’s repeal
+    url: >-
+      https://www.aljazeera.com/news/2026/2/19/advocacy-groups-sue-trump-administration-over-endangerment-findings-repeal
+    excerpt: The US Environmental Protection Agency rescinded the climate change finding as part of a push to slash regulation.
+    source_name: Al Jazeera
+    published: "2026-02-19T01:52:35.000Z"
+  - entity: russia-ukraine-war-list-of-key-events-2026-02-19
+    type: article
+    title: "Russia-Ukraine war: List of key events, day 1,456"
+    url: https://www.aljazeera.com/news/2026/2/19/russia-ukraine-war-list-of-key-events-day-1456
+    excerpt: These are the key developments from day 1,456 of Russia&#039;s war on Ukraine.
+    source_name: Al Jazeera
+    published: "2026-02-19T01:25:50.000Z"
+  - entity: south-korea-s-hanwha-makes-a-13-million-2026-02-19
+    type: article
+    title: South Korea’s Hanwha makes a $13 million bet on ‘seedless’ crypto wallets
+    url: >-
+      https://www.coindesk.com/business/2026/02/18/south-korea-s-hanwhamakes-a-usd13-million-bet-on-seedless-crypto-wallets
+    excerpt: >-
+      The South Korean financial firm backs the U.S.-based blockchain company to accelerate enterprise wallet technology
+      and real-world asset tokenization.
+    source_name: CoinDesk
+    published: "2026-02-19T00:20:00.000Z"
+  - entity: will-microsoft-x2019-s-stock-finally-re-2026-02-19
+    type: article
+    title: Will Microsoft&#x2019;s stock finally rebound? A board member just bet $2 million on a turnaround.
+    url: >-
+      https://www.marketwatch.com/story/will-microsofts-stock-finally-rebound-a-board-member-just-bet-2-million-on-a-turnaround-5aa41ff8?mod=mw_rss_topstories
+    excerpt: >-
+      There have been a few instances of insider purchases in the wake of the recent software selloff, with the latest
+      coming from Microsoft director John Stanton.
+    source_name: MarketWatch
+    published: "2026-02-19T02:17:00.000Z"
+  - entity: figma-x2019-s-stock-soars-as-ai-earning-2026-02-19
+    type: article
+    title: Figma&#x2019;s stock soars as AI earnings momentum helps ease investors&#x2019; doubts
+    url: >-
+      https://www.marketwatch.com/story/figmas-stock-soars-as-ai-earnings-momentum-helps-ease-investors-doubts-9f31e005?mod=mw_rss_topstories
+    excerpt: Figma&#x2019;s revenue grew 40% in the fourth quarter as net dollar retention rate increased to 136%
+    source_name: MarketWatch
+    published: "2026-02-19T01:22:00.000Z"
+  - entity: doordash-users-want-more-complex-deliver-2026-02-19
+    type: article
+    title: DoorDash users want more complex deliveries, and that&#x2019;s hitting profits
+    url: >-
+      https://www.marketwatch.com/story/doordash-users-want-more-complex-deliveries-and-thats-hitting-profits-60fa6b2d?mod=mw_rss_topstories
+    excerpt: DoorDash reported quarterly earnings on Wednesday, with profit beating expectations but sales missing the mark.
+    source_name: MarketWatch
+    published: "2026-02-19T01:21:00.000Z"
+  - entity: after-record-sales-murky-forecast-sinks-2026-02-19
+    type: article
+    title: After record sales, murky forecast sinks Carvana&#x2019;s stock
+    url: >-
+      https://www.marketwatch.com/story/after-record-sales-murky-forecast-sinks-carvanas-stock-a292ad88?mod=mw_rss_topstories
+    excerpt: >-
+      Shares of Carvana tumbled some 20% after hours on Wednesday, after the online used-car retailer&#x2019;s outlook
+      for the year ahead offered few specifics, following a year in which sales growth surged
+    source_name: MarketWatch
+    published: "2026-02-19T01:17:00.000Z"
+  - entity: etsy-is-selling-depop-to-ebay-at-a-markd-2026-02-19
+    type: article
+    title: Etsy is selling Depop to eBay at a markdown, in latest move to focus on basics. Both stocks are rallying.
+    url: >-
+      https://www.marketwatch.com/story/etsy-is-selling-depop-to-ebay-at-a-markdown-in-latest-move-to-focus-on-basics-both-stocks-are-rallying-d866740d?mod=mw_rss_topstories
+    excerpt: >-
+      Etsy on Wednesday said it was selling the online secondhand-clothing site Depop to eBay for around $1.2 billion,
+      in an effort to focus more deeply on its main marketplace business.
+    source_name: MarketWatch
+    published: "2026-02-19T01:16:00.000Z"
+  - entity: x2018-the-world-feels-unpredictable-x-2026-02-19
+    type: article
+    title: >-
+      &#x2018;The world feels unpredictable&#x2019;: I&#x2019;m 56. My husband is 64. Our mortgage costs $17K a month.
+      Do we pay it off?
+    url: >-
+      https://www.marketwatch.com/story/the-world-feels-unpredictable-im-56-my-husband-is-64-our-mortgage-costs-17-000-a-month-do-we-pay-it-off-c8a454d8?mod=mw_rss_topstories
+    excerpt: "&#x201c;We paid $3.1 million for the house and owe $1.3 million on the loan.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-19T00:00:00.000Z"
+  - entity: after-years-of-buybacks-big-oil-is-dril-2026-02-19
+    type: article
+    title: After Years of Buybacks, Big Oil is Drilling Again
+    url: https://oilprice.com/Energy/Crude-Oil/After-Years-of-Buybacks-Big-Oil-is-Drilling-Again.html
+    excerpt: >-
+      After years of prioritizing returning cash to shareholders, oil supermajors are about to do something few
+      expected: turning to growth as a top priority. The reason: contrary to dominant expectations, 
+    source_name: OilPrice.com
+    published: "2026-02-19T01:00:00.000Z"
+  - entity: guyana-emerges-as-the-clear-winner-in-ve-2026-02-19
+    type: article
+    title: Guyana Emerges as the Clear Winner in Venezuela’s Oil Reset
+    url: https://oilprice.com/Energy/Crude-Oil/Guyana-Emerges-as-the-Clear-Winner-in-Venezuelas-Oil-Reset.html
+    excerpt: >-
+      One of the biggest winners from the new oil order in Venezuela is its neighbor to the east, Guyana, the country
+      that turned into the newest oil producer in the world thanks to ExxonMobil’s massive oil
+    source_name: OilPrice.com
+    published: "2026-02-19T00:00:00.000Z"
