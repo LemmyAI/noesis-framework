@@ -1,0 +1,69 @@
+/**
+ * NOESIS Seed: Daily News — 2026-02-20 02:00 (Week 8, 2026)
+ * Namespace: news.week8.day-2026-02-20
+ * Built by seed-factory on 2026-02-20
+ * Auto-gathered news: 13 stories, 2026-02-20 to 2026-02-20
+ * Entities: 13 | Relations: 0 | Sources: 13
+ */
+module.exports = async function seed_news_week8_day_2026_02_20_hour_02(client) {
+  console.log('  \u2192 Seeding: news-week8-day-2026-02-20-hour-02');
+
+  // === NAMESPACE ===
+  await client.query(`
+    INSERT INTO namespace_configs (namespace, extends, config) VALUES
+    ('news', 'default', '{}'::jsonb)
+    ON CONFLICT (namespace) DO NOTHING
+  `);
+  await client.query(`
+    INSERT INTO namespace_configs (namespace, extends, config) VALUES
+    ('news.week8', 'news', '{}'::jsonb)
+    ON CONFLICT (namespace) DO NOTHING
+  `);
+  await client.query(`
+    INSERT INTO namespace_configs (namespace, extends, config) VALUES
+    ('news.week8.day-2026-02-20', 'news.week8', '{}'::jsonb)
+    ON CONFLICT (namespace) DO NOTHING
+  `);
+
+  // === ENTITIES ===
+  await client.query(`
+    INSERT INTO entities (id, namespace, type, name, key, metadata, temporal, credibility) VALUES
+    ('epstein-eyed-record-label-investment-to-2026-02-20', 'news.week8.day-2026-02-20', 'Event', 'Epstein eyed record label investment to access women, files suggest', NULL, '{"category":"finance","description":"His associate said the music industry was \\"related to P\\", a way Epstein apparently often referred to women."}'::jsonb, '{"timestamp":"2026-02-20T01:07:40.000Z","precision":"day"}'::jsonb, '{"confidence":"verified","sources_count":1}'::jsonb),
+    ('live-nation-sees-strong-ticket-sales-as-2026-02-20', 'news.week8.day-2026-02-20', 'Event', 'Live Nation sees strong ticket sales as monopoly lawsuit looms', NULL, '{"category":"finance","description":"The entertainment giant''s revenue surged last year as 159 million fans attended its concerts."}'::jsonb, '{"timestamp":"2026-02-20T01:09:51.000Z","precision":"day"}'::jsonb, '{"confidence":"verified","sources_count":1}'::jsonb),
+    ('how-do-you-modernise-mango-farming-2026-02-20', 'news.week8.day-2026-02-20', 'Event', 'How do you modernise mango farming?', NULL, '{"category":"finance","description":"India''s mango farmers are being urged to innovate as climate change makes cultivation \\"unpredictable\\"."}'::jsonb, '{"timestamp":"2026-02-20T00:05:20.000Z","precision":"day"}'::jsonb, '{"confidence":"verified","sources_count":1}'::jsonb),
+    ('imf-warns-venezuela-s-economy-and-humani-2026-02-20', 'news.week8.day-2026-02-20', 'Claim', 'IMF warns Venezuela’s economy and humanitarian situation is ‘quite fragile’', NULL, '{"category":"geopolitics","description":"Figures show Venezuela''s public debt sits at roughly 180 percent of its GDP as the country struggles with tumult."}'::jsonb, '{"timestamp":"2026-02-20T00:08:17.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('people-still-want-to-see-bts-and-harry-s-2026-02-20', 'news.week8.day-2026-02-20', 'Event', 'People still want to see BTS and Harry Styles concerts, lifting Live Nation&#x2019;s sales', NULL, '{"category":"finance.markets","description":"Ticketmaster parent Live Nation Entertainment on Thursday reported fourth-quarter sales that topped Wall Street&#x2019;s expectations, helped by bigger shows, international expansion and more upsells at concerts."}'::jsonb, '{"timestamp":"2026-02-20T01:27:00.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('x2018-she-spent-over-1-000-a-month-on-2026-02-20', 'news.week8.day-2026-02-20', 'Event', '&#x2018;She spent over $1,000 a month on weight-loss drugs&#x2019;: My son wrecked his finances after meeting his girlfriend. Who&#x2019;s to blame?', NULL, '{"category":"finance.markets","description":"&#x201c;My son is smart &#x2014; he really is &#x2014; but he was in love.&#x201d;"}'::jsonb, '{"timestamp":"2026-02-20T00:29:00.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('x2018-this-is-stressful-for-my-parents-2026-02-20', 'news.week8.day-2026-02-20', 'Event', '&#x2018;This is stressful for my parents&#x2019;: My siblings harass our mother and father for money. Should they be cut out of their will?', NULL, '{"category":"finance.markets","description":"&#x201c;My parents have asked me to help them secure their assets when they pass on.&#x201d;"}'::jsonb, '{"timestamp":"2026-02-20T00:29:00.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('x2018-i-won-x2019-t-take-out-a-loan-2026-02-20', 'news.week8.day-2026-02-20', 'Event', '&#x2018;I won&#x2019;t take out a loan&#x2019;: I need $18K in house repairs. Do I take it from my Roth, 401(k) or IRA?', NULL, '{"category":"finance.markets","description":"&#x201c;I plan to be debt-free in less than two years.&#x201d;"}'::jsonb, '{"timestamp":"2026-02-20T00:22:00.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('my-ex-wife-took-out-a-100k-parent-plus-2026-02-20', 'news.week8.day-2026-02-20', 'Event', 'My ex-wife took out a $100K Parent PLUS loan for our son. Am I morally or legally obliged to pay it off?', NULL, '{"category":"finance.markets","description":"&#x201c;Our son makes $45,000 a year and has no immediate prospects for significantly increasing his income.&#x201d;"}'::jsonb, '{"timestamp":"2026-02-20T00:21:00.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('libya-s-oil-licensing-round-fails-to-del-2026-02-20', 'news.week8.day-2026-02-20', 'Event', 'Libya’s Oil Licensing Round Fails to Deliver Promised Comeback', NULL, '{"category":"finance.energy","description":"Libya’s first oil licensing round in more than 17 years, launched by the National Oil Corporation (NOC) in March 2025, was meant to signal the country’s upstream comeback after more than a decade of war and fragmentation. The round offered 22 onshore and offshore blocks, including 19 undeveloped dis"}'::jsonb, '{"timestamp":"2026-02-20T01:00:00.000Z","precision":"day"}'::jsonb, '{"confidence":"medium","sources_count":1}'::jsonb),
+    ('civil-war-torn-sudan-sits-on-unexplored-2026-02-20', 'news.week8.day-2026-02-20', 'Event', 'Civil War-Torn Sudan Sits On Unexplored Mineral Riches Worth Billions', NULL, '{"category":"finance.energy","description":"Long dominated by its agricultural and oil sectors, Sudan is now keen to unlock its vast mineral wealth as Africa''s third-largest, and the world''s thirteenth-largest, nation in terms of mineral diversity. Sudan is a major African gold producer, with the sector becoming a crucial source of "}'::jsonb, '{"timestamp":"2026-02-20T00:00:00.000Z","precision":"day"}'::jsonb, '{"confidence":"medium","sources_count":1}'::jsonb),
+    ('google-8217-s-new-gemini-pro-model-has-2026-02-20', 'news.week8.day-2026-02-20', 'Event', 'Google''s new Gemini Pro model has record benchmark scores — again', NULL, '{"category":"technology.ai","description":"Gemini 3.1 Pro promises a Google LLM capable of handling more complex forms of work."}'::jsonb, '{"timestamp":"2026-02-20T00:55:22.000Z","precision":"day"}'::jsonb, '{"confidence":"medium","sources_count":1}'::jsonb),
+    ('nvidia-deepens-early-stage-push-into-ind-2026-02-20', 'news.week8.day-2026-02-20', 'Event', 'Nvidia deepens early-stage push into India''s AI startup ecosystem', NULL, '{"category":"technology.ai","description":"Nvidia is working with investors, nonprofits, and venture firms to build earlier ties with India''s fast-growing AI founder ecosystem."}'::jsonb, '{"timestamp":"2026-02-20T00:30:00.000Z","precision":"day"}'::jsonb, '{"confidence":"medium","sources_count":1}'::jsonb)
+    ON CONFLICT (id, version_number) DO NOTHING
+  `);
+  console.log('    Entities: 13');
+
+  // === DATALAYER ===
+  await client.query(`
+    INSERT INTO datalayer (entity_id, source_type, title, url, excerpt, source_name, published_at) VALUES
+    ('epstein-eyed-record-label-investment-to-2026-02-20', 'article', 'Epstein eyed record label investment to access women, files suggest', 'https://www.bbc.com/news/articles/czx41k51595o', 'His associate said the music industry was "related to P", a way Epstein apparently often referred to women.', 'BBC Business', '2026-02-20T01:07:40.000Z'),
+    ('live-nation-sees-strong-ticket-sales-as-2026-02-20', 'article', 'Live Nation sees strong ticket sales as monopoly lawsuit looms', 'https://www.bbc.com/news/articles/cgqgvxz27z7o', 'The entertainment giant''s revenue surged last year as 159 million fans attended its concerts.', 'BBC Business', '2026-02-20T01:09:51.000Z'),
+    ('how-do-you-modernise-mango-farming-2026-02-20', 'article', 'How do you modernise mango farming?', 'https://www.bbc.com/news/articles/c86yl809ld6o', 'India''s mango farmers are being urged to innovate as climate change makes cultivation "unpredictable".', 'BBC Business', '2026-02-20T00:05:20.000Z'),
+    ('imf-warns-venezuela-s-economy-and-humani-2026-02-20', 'article', 'IMF warns Venezuela’s economy and humanitarian situation is ‘quite fragile’', 'https://www.aljazeera.com/news/2026/2/20/imf-warns-venezuelas-economy-and-humanitarian-situation-is-quite-fragile', 'Figures show Venezuela''s public debt sits at roughly 180 percent of its GDP as the country struggles with tumult.', 'Al Jazeera', '2026-02-20T00:08:17.000Z'),
+    ('people-still-want-to-see-bts-and-harry-s-2026-02-20', 'article', 'People still want to see BTS and Harry Styles concerts, lifting Live Nation&#x2019;s sales', 'https://www.marketwatch.com/story/people-still-want-to-see-bts-and-harry-styles-concerts-lifting-live-nations-sales-eee12233?mod=mw_rss_topstories', 'Ticketmaster parent Live Nation Entertainment on Thursday reported fourth-quarter sales that topped Wall Street&#x2019;s expectations, helped by bigger shows, international expansion and more upsells ', 'MarketWatch', '2026-02-20T01:27:00.000Z'),
+    ('x2018-she-spent-over-1-000-a-month-on-2026-02-20', 'article', '&#x2018;She spent over $1,000 a month on weight-loss drugs&#x2019;: My son wrecked his finances after meeting his girlfriend. Who&#x2019;s to blame?', 'https://www.marketwatch.com/story/his-credit-rating-is-wrecked-my-son-and-his-girlfriend-mingled-their-finances-big-mistake-b5273119?mod=mw_rss_topstories', '&#x201c;My son is smart &#x2014; he really is &#x2014; but he was in love.&#x201d;', 'MarketWatch', '2026-02-20T00:29:00.000Z'),
+    ('x2018-this-is-stressful-for-my-parents-2026-02-20', 'article', '&#x2018;This is stressful for my parents&#x2019;: My siblings harass our mother and father for money. Should they be cut out of their will?', 'https://www.marketwatch.com/story/this-is-stressful-my-two-siblings-are-financial-horrors-how-can-i-make-sure-their-estate-goes-to-the-right-people-4842a5a7?mod=mw_rss_topstories', '&#x201c;My parents have asked me to help them secure their assets when they pass on.&#x201d;', 'MarketWatch', '2026-02-20T00:29:00.000Z'),
+    ('x2018-i-won-x2019-t-take-out-a-loan-2026-02-20', 'article', '&#x2018;I won&#x2019;t take out a loan&#x2019;: I need $18K in house repairs. Do I take it from my Roth, 401(k) or IRA?', 'https://www.marketwatch.com/story/i-wont-take-out-a-loan-i-need-18k-in-house-repairs-do-i-take-it-from-my-roth-401-k-or-ira-651f80f1?mod=mw_rss_topstories', '&#x201c;I plan to be debt-free in less than two years.&#x201d;', 'MarketWatch', '2026-02-20T00:22:00.000Z'),
+    ('my-ex-wife-took-out-a-100k-parent-plus-2026-02-20', 'article', 'My ex-wife took out a $100K Parent PLUS loan for our son. Am I morally or legally obliged to pay it off?', 'https://www.marketwatch.com/story/my-ex-wife-took-out-a-100k-parent-plus-loan-for-our-son-am-i-morally-or-legally-obliged-to-pay-it-off-30510e58?mod=mw_rss_topstories', '&#x201c;Our son makes $45,000 a year and has no immediate prospects for significantly increasing his income.&#x201d;', 'MarketWatch', '2026-02-20T00:21:00.000Z'),
+    ('libya-s-oil-licensing-round-fails-to-del-2026-02-20', 'article', 'Libya’s Oil Licensing Round Fails to Deliver Promised Comeback', 'https://oilprice.com/Energy/Energy-General/Libyas-Oil-Licensing-Round-Fails-to-Deliver-Promised-Comeback.html', 'Libya’s first oil licensing round in more than 17 years, launched by the National Oil Corporation (NOC) in March 2025, was meant to signal the country’s upstream comeback after more than a decade of w', 'OilPrice.com', '2026-02-20T01:00:00.000Z'),
+    ('civil-war-torn-sudan-sits-on-unexplored-2026-02-20', 'article', 'Civil War-Torn Sudan Sits On Unexplored Mineral Riches Worth Billions', 'https://oilprice.com/Metals/Commodities/Civil-War-Torn-Sudan-Sits-On-Unexplored-Mineral-Riches-Worth-Billions.html', 'Long dominated by its agricultural and oil sectors, Sudan is now keen to unlock its vast mineral wealth as Africa''s third-largest, and the world''s thirteenth-largest, nation in terms of mine', 'OilPrice.com', '2026-02-20T00:00:00.000Z'),
+    ('google-8217-s-new-gemini-pro-model-has-2026-02-20', 'article', 'Google''s new Gemini Pro model has record benchmark scores — again', 'https://techcrunch.com/2026/02/19/googles-new-gemini-pro-model-has-record-benchmark-scores-again/', 'Gemini 3.1 Pro promises a Google LLM capable of handling more complex forms of work.', 'TechCrunch', '2026-02-20T00:55:22.000Z'),
+    ('nvidia-deepens-early-stage-push-into-ind-2026-02-20', 'article', 'Nvidia deepens early-stage push into India''s AI startup ecosystem', 'https://techcrunch.com/2026/02/19/nvidia-deepens-early-stage-push-into-indias-ai-startup-ecosystem/', 'Nvidia is working with investors, nonprofits, and venture firms to build earlier ties with India''s fast-growing AI founder ecosystem.', 'TechCrunch', '2026-02-20T00:30:00.000Z')
+    ON CONFLICT DO NOTHING
+  `);
+  console.log('    Sources: 13');
+
+  console.log('  \u2713 news-week8-day-2026-02-20-hour-02: 13 entities, 0 relations, 13 sources');
+};
