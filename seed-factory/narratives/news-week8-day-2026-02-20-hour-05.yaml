@@ -1,0 +1,491 @@
+seed:
+  name: news-week8-day-2026-02-20-hour-05
+  label: Daily News — 2026-02-20 05:00 (Week 8, 2026)
+  namespace: news.week8.day-2026-02-20
+  description: "Auto-gathered news: 24 stories, 2026-02-20 to 2026-02-20"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week8
+    extends: news
+  - namespace: news.week8.day-2026-02-20
+    extends: news.week8
+entities:
+  - id: austrian-climber-found-guilty-after-girl-2026-02-20
+    type: Fact
+    name: Austrian climber found guilty after girlfriend froze to death on mountain
+    category: geopolitics
+    description: The woman died of hypothermia during a climbing trip on the Grossglockner mountain in January 2025.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T01:10:28.000Z"
+      precision: day
+  - id: mystery-donor-gives-japanese-city-3-6m-2026-02-20
+    type: Event
+    name: Mystery donor gives Japanese city $3.6m in gold bars to fix water system
+    category: geopolitics
+    description: Osaka's mayor says he is 'lost for words' and that he has 'nothing but appreciation' for the gesture.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T02:55:04.000Z"
+      precision: day
+  - id: epstein-eyed-record-label-investment-to-2026-02-20
+    type: Event
+    name: Epstein eyed record label investment to access women, files suggest
+    category: finance
+    description: His associate said the music industry was "related to P", a way Epstein apparently often referred to women.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T01:07:40.000Z"
+      precision: day
+  - id: nasa-boss-says-boeing-starliner-failure-2026-02-20
+    type: Claim
+    name: Nasa boss says Boeing Starliner failure one of worst in its history
+    category: finance
+    description: >-
+      The agency released a critical report that puts the Starliner incident at same mistake level assigned to the fatal
+      Columbia and Challenger shuttle disasters.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T01:44:48.000Z"
+      precision: day
+  - id: live-nation-sees-strong-ticket-sales-as-2026-02-20
+    type: Event
+    name: Live Nation sees strong ticket sales as monopoly lawsuit looms
+    category: finance
+    description: The entertainment giant's revenue surged last year as 159 million fans attended its concerts.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T01:09:51.000Z"
+      precision: day
+  - id: us-and-indonesia-finalise-deal-to-cut-ta-2026-02-20
+    type: Event
+    name: US and Indonesia finalise deal to cut tariffs to 19%
+    category: finance
+    description: Washington will set a 19% tariff on most Indonesian goods in exchange for lower trade barriers for US goods
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T03:05:32.000Z"
+      precision: day
+  - id: how-do-you-modernise-mango-farming-2026-02-20
+    type: Event
+    name: How do you modernise mango farming?
+    category: finance
+    description: India's mango farmers are being urged to innovate as climate change makes cultivation "unpredictable".
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T00:05:20.000Z"
+      precision: day
+  - id: bolivia-s-ex-leader-evo-morales-reappear-2026-02-20
+    type: Event
+    name: Bolivia’s ex-leader Evo Morales reappears after months-long unexplained absence
+    category: geopolitics
+    description: >-
+      <p>Long-serving socialist former leader Evo Morales has reappeared in his political stronghold after almost seven
+      weeks of unexplained absence</p><p>Bolivia’s long-serving socialist former leader, <a
+      href="https://www.theguardian.com/world/evo-morales">Evo Morales</a>, reappeared on Thursday in his 
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T04:10:29.000Z"
+      precision: day
+  - id: major-road-crash-leaves-18-dead-3-injur-2026-02-20
+    type: Fact
+    name: Major road crash leaves 18 dead, 3 injured in northeast Egypt
+    category: geopolitics
+    description: Road accidents, often linked to speeding, claim thousands of lives each year in Egypt.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T04:12:42.000Z"
+      precision: day
+  - id: us-pays-about-160m-towards-nearly-4bn-2026-02-20
+    type: Event
+    name: US pays about $160m towards nearly $4bn in UN dues
+    category: geopolitics
+    description: >-
+      President Trump has slashed foreign aid and repeatedly criticised the United Nations for failing to meet its
+      goals.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T02:33:34.000Z"
+      precision: day
+  - id: north-korea-s-kim-jong-un-launches-key-p-2026-02-20
+    type: Decision
+    name: North Korea’s Kim Jong Un launches key party congress held every 5 years
+    category: geopolitics
+    description: >-
+      Kim focuses on improving economic activity in opening speech at Ninth Congress of the Workers&#039; Party of
+      Korea.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T02:22:11.000Z"
+      precision: day
+  - id: russia-ukraine-war-list-of-key-events-2026-02-20
+    type: Event
+    name: "Russia-Ukraine war: List of key events, day 1,457"
+    category: geopolitics
+    description: These are the key developments from day 1,457 of Russia’s war on Ukraine.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T02:02:24.000Z"
+      precision: day
+  - id: new-mexico-reopens-criminal-probe-relate-2026-02-20
+    type: Event
+    name: New Mexico reopens criminal probe related to Jeffrey Epstein’s Zorro Ranch
+    category: geopolitics
+    description: >-
+      State officials say the information in unsealed FBI files &#039;warrant further examination&#039; of a case closed
+      in 2019.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T01:18:48.000Z"
+      precision: day
+  - id: imf-warns-venezuela-s-economy-and-humani-2026-02-20
+    type: Claim
+    name: IMF warns Venezuela’s economy and humanitarian situation is ‘quite fragile’
+    category: geopolitics
+    description: >-
+      Figures show Venezuela&#039;s public debt sits at roughly 180 percent of its GDP as the country struggles with
+      tumult.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T00:08:17.000Z"
+      precision: day
+  - id: united-airlines-x2019-best-loyalty-per-2026-02-20
+    type: Event
+    name: United Airlines&#x2019; best loyalty perks will soon be reserved for its cardholders. Is the card worth it?
+    category: finance.markets
+    description: >-
+      Frequent flyers who hold a United Airlines co-branded credit or debit card can soon earn up to twice as many miles
+      as noncardholders, effectively rewarding the airline&#x2019;s biggest spenders.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T01:56:00.000Z"
+      precision: day
+  - id: people-still-want-to-see-bts-and-harry-s-2026-02-20
+    type: Event
+    name: People still want to see BTS and Harry Styles concerts, lifting Live Nation&#x2019;s sales
+    category: finance.markets
+    description: >-
+      Ticketmaster parent Live Nation Entertainment on Thursday reported fourth-quarter sales that topped Wall
+      Street&#x2019;s expectations, helped by bigger shows, international expansion and more upsells at concerts.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T01:27:00.000Z"
+      precision: day
+  - id: x2018-she-spent-over-1-000-a-month-on-2026-02-20
+    type: Event
+    name: >-
+      &#x2018;She spent over $1,000 a month on weight-loss drugs&#x2019;: My son wrecked his finances after meeting his
+      girlfriend. Who&#x2019;s to blame?
+    category: finance.markets
+    description: "&#x201c;My son is smart &#x2014; he really is &#x2014; but he was in love.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T00:29:00.000Z"
+      precision: day
+  - id: x2018-this-is-stressful-for-my-parents-2026-02-20
+    type: Event
+    name: >-
+      &#x2018;This is stressful for my parents&#x2019;: My siblings harass our mother and father for money. Should they
+      be cut out of their will?
+    category: finance.markets
+    description: "&#x201c;My parents have asked me to help them secure their assets when they pass on.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T00:29:00.000Z"
+      precision: day
+  - id: x2018-i-won-x2019-t-take-out-a-loan-2026-02-20
+    type: Event
+    name: >-
+      &#x2018;I won&#x2019;t take out a loan&#x2019;: I need $18K in house repairs. Do I take it from my Roth, 401(k) or
+      IRA?
+    category: finance.markets
+    description: "&#x201c;I plan to be debt-free in less than two years.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T00:22:00.000Z"
+      precision: day
+  - id: my-ex-wife-took-out-a-100k-parent-plus-2026-02-20
+    type: Event
+    name: My ex-wife took out a $100K Parent PLUS loan for our son. Am I morally or legally obliged to pay it off?
+    category: finance.markets
+    description: >-
+      &#x201c;Our son makes $45,000 a year and has no immediate prospects for significantly increasing his
+      income.&#x201d;
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T00:21:00.000Z"
+      precision: day
+  - id: libya-s-oil-licensing-round-fails-to-del-2026-02-20
+    type: Event
+    name: Libya’s Oil Licensing Round Fails to Deliver Promised Comeback
+    category: finance.energy
+    description: >-
+      Libya’s first oil licensing round in more than 17 years, launched by the National Oil Corporation (NOC) in March
+      2025, was meant to signal the country’s upstream comeback after more than a decade of war and fragmentation. The
+      round offered 22 onshore and offshore blocks, including 19 undeveloped dis
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T01:00:00.000Z"
+      precision: day
+  - id: civil-war-torn-sudan-sits-on-unexplored-2026-02-20
+    type: Event
+    name: Civil War-Torn Sudan Sits On Unexplored Mineral Riches Worth Billions
+    category: finance.energy
+    description: >-
+      Long dominated by its agricultural and oil sectors, Sudan is now keen to unlock its vast mineral wealth as
+      Africa&#039;s third-largest, and the world&#039;s thirteenth-largest, nation in terms of mineral diversity. Sudan
+      is a major African gold producer, with the sector becoming a crucial source of 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T00:00:00.000Z"
+      precision: day
+  - id: google-8217-s-new-gemini-pro-model-has-2026-02-20
+    type: Event
+    name: Google&#8217;s new Gemini Pro model has record benchmark scores — again
+    category: technology.ai
+    description: Gemini 3.1 Pro promises a Google LLM capable of handling more complex forms of work.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T00:55:22.000Z"
+      precision: day
+  - id: nvidia-deepens-early-stage-push-into-ind-2026-02-20
+    type: Event
+    name: Nvidia deepens early-stage push into India&#8217;s AI startup ecosystem
+    category: technology.ai
+    description: >-
+      Nvidia is working with investors, nonprofits, and venture firms to build earlier ties with India's fast-growing AI
+      founder ecosystem.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T00:30:00.000Z"
+      precision: day
+sources:
+  - entity: austrian-climber-found-guilty-after-girl-2026-02-20
+    type: article
+    title: Austrian climber found guilty after girlfriend froze to death on mountain
+    url: https://www.bbc.com/news/articles/c0k1xkllknmo
+    excerpt: The woman died of hypothermia during a climbing trip on the Grossglockner mountain in January 2025.
+    source_name: BBC News
+    published: "2026-02-20T01:10:28.000Z"
+  - entity: mystery-donor-gives-japanese-city-3-6m-2026-02-20
+    type: article
+    title: Mystery donor gives Japanese city $3.6m in gold bars to fix water system
+    url: https://www.bbc.com/news/articles/c3ew5jlqz87o
+    excerpt: Osaka's mayor says he is 'lost for words' and that he has 'nothing but appreciation' for the gesture.
+    source_name: BBC News
+    published: "2026-02-20T02:55:04.000Z"
+  - entity: epstein-eyed-record-label-investment-to-2026-02-20
+    type: article
+    title: Epstein eyed record label investment to access women, files suggest
+    url: https://www.bbc.com/news/articles/czx41k51595o
+    excerpt: His associate said the music industry was "related to P", a way Epstein apparently often referred to women.
+    source_name: BBC Business
+    published: "2026-02-20T01:07:40.000Z"
+  - entity: nasa-boss-says-boeing-starliner-failure-2026-02-20
+    type: article
+    title: Nasa boss says Boeing Starliner failure one of worst in its history
+    url: https://www.bbc.com/news/articles/cm2x3nlxg9jo
+    excerpt: >-
+      The agency released a critical report that puts the Starliner incident at same mistake level assigned to the fatal
+      Columbia and Challenger shuttle disasters.
+    source_name: BBC Business
+    published: "2026-02-20T01:44:48.000Z"
+  - entity: live-nation-sees-strong-ticket-sales-as-2026-02-20
+    type: article
+    title: Live Nation sees strong ticket sales as monopoly lawsuit looms
+    url: https://www.bbc.com/news/articles/cgqgvxz27z7o
+    excerpt: The entertainment giant's revenue surged last year as 159 million fans attended its concerts.
+    source_name: BBC Business
+    published: "2026-02-20T01:09:51.000Z"
+  - entity: us-and-indonesia-finalise-deal-to-cut-ta-2026-02-20
+    type: article
+    title: US and Indonesia finalise deal to cut tariffs to 19%
+    url: https://www.bbc.com/news/articles/cgk2d7yxm2zo
+    excerpt: Washington will set a 19% tariff on most Indonesian goods in exchange for lower trade barriers for US goods
+    source_name: BBC Business
+    published: "2026-02-20T03:05:32.000Z"
+  - entity: how-do-you-modernise-mango-farming-2026-02-20
+    type: article
+    title: How do you modernise mango farming?
+    url: https://www.bbc.com/news/articles/c86yl809ld6o
+    excerpt: India's mango farmers are being urged to innovate as climate change makes cultivation "unpredictable".
+    source_name: BBC Business
+    published: "2026-02-20T00:05:20.000Z"
+  - entity: bolivia-s-ex-leader-evo-morales-reappear-2026-02-20
+    type: article
+    title: Bolivia’s ex-leader Evo Morales reappears after months-long unexplained absence
+    url: https://www.theguardian.com/world/2026/feb/20/bolivia-evo-morales-public-appearance
+    excerpt: >-
+      <p>Long-serving socialist former leader Evo Morales has reappeared in his political stronghold after almost seven
+      weeks of unexplained absence</p><p>Bolivia’s long-serving socialist former leader, <a 
+    source_name: The Guardian
+    published: "2026-02-20T04:10:29.000Z"
+  - entity: major-road-crash-leaves-18-dead-3-injur-2026-02-20
+    type: article
+    title: Major road crash leaves 18 dead, 3 injured in northeast Egypt
+    url: https://www.aljazeera.com/news/2026/2/20/major-road-crash-leaves-18-dead-3-injured-in-northeast-egypt
+    excerpt: Road accidents, often linked to speeding, claim thousands of lives each year in Egypt.
+    source_name: Al Jazeera
+    published: "2026-02-20T04:12:42.000Z"
+  - entity: us-pays-about-160m-towards-nearly-4bn-2026-02-20
+    type: article
+    title: US pays about $160m towards nearly $4bn in UN dues
+    url: https://www.aljazeera.com/news/2026/2/20/us-pays-about-160m-towards-nearly-4bn-in-un-dues
+    excerpt: >-
+      President Trump has slashed foreign aid and repeatedly criticised the United Nations for failing to meet its
+      goals.
+    source_name: Al Jazeera
+    published: "2026-02-20T02:33:34.000Z"
+  - entity: north-korea-s-kim-jong-un-launches-key-p-2026-02-20
+    type: article
+    title: North Korea’s Kim Jong Un launches key party congress held every 5 years
+    url: https://www.aljazeera.com/news/2026/2/20/north-koreas-kim-jong-un-launches-key-party-congress-held-every-5-years
+    excerpt: >-
+      Kim focuses on improving economic activity in opening speech at Ninth Congress of the Workers&#039; Party of
+      Korea.
+    source_name: Al Jazeera
+    published: "2026-02-20T02:22:11.000Z"
+  - entity: russia-ukraine-war-list-of-key-events-2026-02-20
+    type: article
+    title: "Russia-Ukraine war: List of key events, day 1,457"
+    url: https://www.aljazeera.com/news/2026/2/20/russia-ukraine-war-list-of-key-events-day-1457
+    excerpt: These are the key developments from day 1,457 of Russia’s war on Ukraine.
+    source_name: Al Jazeera
+    published: "2026-02-20T02:02:24.000Z"
+  - entity: new-mexico-reopens-criminal-probe-relate-2026-02-20
+    type: article
+    title: New Mexico reopens criminal probe related to Jeffrey Epstein’s Zorro Ranch
+    url: https://www.aljazeera.com/news/2026/2/20/new-mexico-reopens-criminal-probe-related-to-jeffrey-epsteins-zorro-ranch
+    excerpt: >-
+      State officials say the information in unsealed FBI files &#039;warrant further examination&#039; of a case closed
+      in 2019.
+    source_name: Al Jazeera
+    published: "2026-02-20T01:18:48.000Z"
+  - entity: imf-warns-venezuela-s-economy-and-humani-2026-02-20
+    type: article
+    title: IMF warns Venezuela’s economy and humanitarian situation is ‘quite fragile’
+    url: https://www.aljazeera.com/news/2026/2/20/imf-warns-venezuelas-economy-and-humanitarian-situation-is-quite-fragile
+    excerpt: >-
+      Figures show Venezuela&#039;s public debt sits at roughly 180 percent of its GDP as the country struggles with
+      tumult.
+    source_name: Al Jazeera
+    published: "2026-02-20T00:08:17.000Z"
+  - entity: united-airlines-x2019-best-loyalty-per-2026-02-20
+    type: article
+    title: United Airlines&#x2019; best loyalty perks will soon be reserved for its cardholders. Is the card worth it?
+    url: >-
+      https://www.marketwatch.com/story/united-airlines-best-loyalty-perks-will-soon-be-reserved-for-its-cardholders-is-the-card-worth-it-39675942?mod=mw_rss_topstories
+    excerpt: >-
+      Frequent flyers who hold a United Airlines co-branded credit or debit card can soon earn up to twice as many miles
+      as noncardholders, effectively rewarding the airline&#x2019;s biggest spenders.
+    source_name: MarketWatch
+    published: "2026-02-20T01:56:00.000Z"
+  - entity: people-still-want-to-see-bts-and-harry-s-2026-02-20
+    type: article
+    title: People still want to see BTS and Harry Styles concerts, lifting Live Nation&#x2019;s sales
+    url: >-
+      https://www.marketwatch.com/story/people-still-want-to-see-bts-and-harry-styles-concerts-lifting-live-nations-sales-eee12233?mod=mw_rss_topstories
+    excerpt: >-
+      Ticketmaster parent Live Nation Entertainment on Thursday reported fourth-quarter sales that topped Wall
+      Street&#x2019;s expectations, helped by bigger shows, international expansion and more upsells 
+    source_name: MarketWatch
+    published: "2026-02-20T01:27:00.000Z"
+  - entity: x2018-she-spent-over-1-000-a-month-on-2026-02-20
+    type: article
+    title: >-
+      &#x2018;She spent over $1,000 a month on weight-loss drugs&#x2019;: My son wrecked his finances after meeting his
+      girlfriend. Who&#x2019;s to blame?
+    url: >-
+      https://www.marketwatch.com/story/his-credit-rating-is-wrecked-my-son-and-his-girlfriend-mingled-their-finances-big-mistake-b5273119?mod=mw_rss_topstories
+    excerpt: "&#x201c;My son is smart &#x2014; he really is &#x2014; but he was in love.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-20T00:29:00.000Z"
+  - entity: x2018-this-is-stressful-for-my-parents-2026-02-20
+    type: article
+    title: >-
+      &#x2018;This is stressful for my parents&#x2019;: My siblings harass our mother and father for money. Should they
+      be cut out of their will?
+    url: >-
+      https://www.marketwatch.com/story/this-is-stressful-my-two-siblings-are-financial-horrors-how-can-i-make-sure-their-estate-goes-to-the-right-people-4842a5a7?mod=mw_rss_topstories
+    excerpt: "&#x201c;My parents have asked me to help them secure their assets when they pass on.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-20T00:29:00.000Z"
+  - entity: x2018-i-won-x2019-t-take-out-a-loan-2026-02-20
+    type: article
+    title: >-
+      &#x2018;I won&#x2019;t take out a loan&#x2019;: I need $18K in house repairs. Do I take it from my Roth, 401(k) or
+      IRA?
+    url: >-
+      https://www.marketwatch.com/story/i-wont-take-out-a-loan-i-need-18k-in-house-repairs-do-i-take-it-from-my-roth-401-k-or-ira-651f80f1?mod=mw_rss_topstories
+    excerpt: "&#x201c;I plan to be debt-free in less than two years.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-20T00:22:00.000Z"
+  - entity: my-ex-wife-took-out-a-100k-parent-plus-2026-02-20
+    type: article
+    title: My ex-wife took out a $100K Parent PLUS loan for our son. Am I morally or legally obliged to pay it off?
+    url: >-
+      https://www.marketwatch.com/story/my-ex-wife-took-out-a-100k-parent-plus-loan-for-our-son-am-i-morally-or-legally-obliged-to-pay-it-off-30510e58?mod=mw_rss_topstories
+    excerpt: >-
+      &#x201c;Our son makes $45,000 a year and has no immediate prospects for significantly increasing his
+      income.&#x201d;
+    source_name: MarketWatch
+    published: "2026-02-20T00:21:00.000Z"
+  - entity: libya-s-oil-licensing-round-fails-to-del-2026-02-20
+    type: article
+    title: Libya’s Oil Licensing Round Fails to Deliver Promised Comeback
+    url: https://oilprice.com/Energy/Energy-General/Libyas-Oil-Licensing-Round-Fails-to-Deliver-Promised-Comeback.html
+    excerpt: >-
+      Libya’s first oil licensing round in more than 17 years, launched by the National Oil Corporation (NOC) in March
+      2025, was meant to signal the country’s upstream comeback after more than a decade of w
+    source_name: OilPrice.com
+    published: "2026-02-20T01:00:00.000Z"
+  - entity: civil-war-torn-sudan-sits-on-unexplored-2026-02-20
+    type: article
+    title: Civil War-Torn Sudan Sits On Unexplored Mineral Riches Worth Billions
+    url: https://oilprice.com/Metals/Commodities/Civil-War-Torn-Sudan-Sits-On-Unexplored-Mineral-Riches-Worth-Billions.html
+    excerpt: >-
+      Long dominated by its agricultural and oil sectors, Sudan is now keen to unlock its vast mineral wealth as
+      Africa&#039;s third-largest, and the world&#039;s thirteenth-largest, nation in terms of mine
+    source_name: OilPrice.com
+    published: "2026-02-20T00:00:00.000Z"
+  - entity: google-8217-s-new-gemini-pro-model-has-2026-02-20
+    type: article
+    title: Google&#8217;s new Gemini Pro model has record benchmark scores — again
+    url: https://techcrunch.com/2026/02/19/googles-new-gemini-pro-model-has-record-benchmark-scores-again/
+    excerpt: Gemini 3.1 Pro promises a Google LLM capable of handling more complex forms of work.
+    source_name: TechCrunch
+    published: "2026-02-20T00:55:22.000Z"
+  - entity: nvidia-deepens-early-stage-push-into-ind-2026-02-20
+    type: article
+    title: Nvidia deepens early-stage push into India&#8217;s AI startup ecosystem
+    url: https://techcrunch.com/2026/02/19/nvidia-deepens-early-stage-push-into-indias-ai-startup-ecosystem/
+    excerpt: >-
+      Nvidia is working with investors, nonprofits, and venture firms to build earlier ties with India's fast-growing AI
+      founder ecosystem.
+    source_name: TechCrunch
+    published: "2026-02-20T00:30:00.000Z"
