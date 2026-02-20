@@ -1,0 +1,1827 @@
+seed:
+  name: news-week8-day-2026-02-20-hour-21
+  label: Daily News — 2026-02-20 21:00 (Week 8, 2026)
+  namespace: news.week8.day-2026-02-20
+  description: "Auto-gathered news: 90 stories, 2026-02-20 to 2026-02-20"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week8
+    extends: news
+  - namespace: news.week8.day-2026-02-20
+    extends: news.week8
+entities:
+  - id: tariffs-ruling-is-major-blow-to-trumps-2026-02-20
+    type: Event
+    name: Tariffs ruling is major blow to Trump's second-term agenda
+    category: geopolitics
+    description: The Supreme Court has weakened Trump's hand in dealing with other nations, writes Anthony Zurcher.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T19:01:57.000Z"
+      precision: day
+  - id: nasa-targets-early-march-to-send-humans-2026-02-20
+    type: Event
+    name: Nasa targets early March to send humans back around the Moon
+    category: geopolitics
+    description: Nasa sets the launch date following a successful "wet dress rehearsal" of the Artemis II mission.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T17:00:26.000Z"
+      precision: day
+  - id: austrian-climber-found-guilty-after-girl-2026-02-20
+    type: Fact
+    name: Austrian climber found guilty after girlfriend froze to death on mountain
+    category: geopolitics
+    description: The woman died of hypothermia during a climbing trip on the Grossglockner mountain in January 2025.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T11:10:31.000Z"
+      precision: day
+  - id: asos-co-founder-dies-after-thailand-apar-2026-02-20
+    type: Fact
+    name: Asos co-founder dies after Thailand apartment block fall
+    category: geopolitics
+    description: >-
+      Quentin Griffiths co-founded Asos in 2000 and remained a significant shareholder after leaving the firm five years
+      later.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T14:35:49.000Z"
+      precision: day
+  - id: venezuelan-opposition-politician-release-2026-02-20
+    type: Event
+    name: Venezuelan opposition politician released after amnesty law passed
+    category: geopolitics
+    description: Juan Pablo Guanipa announces that he has been freed after "almost nine months" of imprisonment.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T13:37:44.000Z"
+      precision: day
+  - id: rare-prison-sentences-handed-to-cameroon-2026-02-20
+    type: Event
+    name: Rare prison sentences handed to Cameroon soldiers after killing of 21 civilians
+    category: geopolitics
+    description: In a rare occurence, three soldiers were handed jail terms for killings in the troubled Anglophone region.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T13:44:30.000Z"
+      precision: day
+  - id: french-soldier-dies-after-being-shot-in-2026-02-20
+    type: Event
+    name: French soldier dies after being shot in head during 'game' with other soldiers
+    category: geopolitics
+    description: >-
+      According to prosecutors, the game - known within the military - involves attempting to disarm a colleague and
+      disable their weapon.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T14:19:27.000Z"
+      precision: day
+  - id: dog-trained-to-illegally-dump-rubbish-i-2026-02-20
+    type: Event
+    name: Dog trained to illegally dump rubbish, Italian authorities say
+    category: geopolitics
+    description: "\"Ingenuity can never become an alibi for incivility\", the City of Catania warns."
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T15:57:17.000Z"
+      precision: day
+  - id: mother-and-infant-burnt-to-death-in-indi-2026-02-20
+    type: Event
+    name: Mother and infant burnt to death in Indian state over witchcraft allegations
+    category: geopolitics
+    description: Eyewitnesses say a mob stormed the woman's home after rumours spread that she was practising witchcraft.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T10:10:42.000Z"
+      precision: day
+  - id: trump-says-world-has-10-days-to-see-if-i-2026-02-20
+    type: Decision
+    name: Trump says world has 10 days to see if Iran agrees deal or 'bad things happen'
+    category: geopolitics
+    description: >-
+      The US is surging forces to the Middle East amid negotiations with the Islamic Republic over its nuclear
+      programme.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T05:45:43.000Z"
+      precision: day
+  - id: supreme-court-strikes-down-trumps-sweep-2026-02-20
+    type: Event
+    name: Supreme Court strikes down Trump's sweeping global tariffs
+    category: finance
+    description: The ruling opens the door to potentially hundreds of billions of dollars in tariff refunds.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T16:53:30.000Z"
+      precision: day
+  - id: trump-tariffs-ripped-up-global-trade-ord-2026-02-20
+    type: Event
+    name: Trump tariffs ripped up global trade order. What now?
+    category: finance
+    description: If you think the Supreme Court ruling heralds a return to pre-Trump business as usual - think again.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T16:25:34.000Z"
+      precision: day
+  - id: kfc-nandos-and-others-ditch-chicken-w-2026-02-20
+    type: Event
+    name: KFC, Nando's, and others ditch chicken welfare pledge
+    category: finance
+    description: >-
+      Wingstop, Burger King, and others have walked away from an industry commitment to avoid using fast-growing
+      chickens
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T16:17:53.000Z"
+      precision: day
+  - id: uk-agrees-drone-defence-plan-with-four-e-2026-02-20
+    type: Decision
+    name: UK agrees drone defence plan with four EU allies
+    category: finance
+    description: The scheme will seek to take inspiration from Ukraine's drone manufacturing programme.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T17:35:35.000Z"
+      precision: day
+  - id: higher-tax-helped-uk-government-reach-re-2026-02-20
+    type: Event
+    name: Higher tax helped UK government reach record January surplus
+    category: finance
+    description: The government took in more from tax receipts than expected, official data suggests.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T12:13:35.000Z"
+      precision: day
+  - id: how-do-you-modernise-mango-farming-2026-02-20
+    type: Event
+    name: How do you modernise mango farming?
+    category: finance
+    description: India's mango farmers are being urged to innovate as climate change makes cultivation "unpredictable".
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T00:05:20.000Z"
+      precision: day
+  - id: new-years-sport-supplement-buying-adds-2026-02-20
+    type: Event
+    name: New Year's sport supplement buying adds to January retail sales surge
+    category: finance
+    description: Continuing strong sales from online jewellers after a recent spike in gold prices also helped drive the increase.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T12:30:41.000Z"
+      precision: day
+  - id: lobbying-firm-co-founded-by-mandelson-go-2026-02-20
+    type: Fact
+    name: Lobbying firm co-founded by Mandelson goes into administration
+    category: finance
+    description: Global Counsel's clients cut ties with the firm over Lord Mandelson's links with sex offender Jeffrey Epstein.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T13:25:43.000Z"
+      precision: day
+  - id: us-economy-slows-in-final-months-after-t-2026-02-20
+    type: Event
+    name: US economy slows in final months after turbulent year
+    category: finance
+    description: >-
+      Overall the economy grew 2.2% last year, holding up despite pressures from changes to tariff and immigration
+      policy.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T14:58:20.000Z"
+      precision: day
+  - id: bolivia-s-ex-leader-evo-morales-reappear-2026-02-20
+    type: Event
+    name: Bolivia’s ex-leader Evo Morales reappears after months-long unexplained absence
+    category: geopolitics
+    description: >-
+      <p>Long-serving socialist former leader Evo Morales has reappeared in his political stronghold after almost seven
+      weeks of unexplained absence</p><p>Bolivia’s long-serving socialist former leader, <a
+      href="https://www.theguardian.com/world/evo-morales">Evo Morales</a>, reappeared on Thursday in his 
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T04:10:29.000Z"
+      precision: day
+  - id: brighter-uk-economy-gives-reeves-a-sprin-2026-02-20
+    type: Event
+    name: Brighter UK economy gives Reeves a springboard for March statement
+    category: finance
+    description: >-
+      <p>Record public finances accompany stronger retail sales and business activity but some analysts express
+      caution</p><p>The economic backdrop to Rachel Reeves’s upcoming spring statement appeared to brighten on Friday
+      after a trio of reports painted a better-than-expected picture of the UK economy.<
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T17:24:02.000Z"
+      precision: day
+  - id: uk-working-with-us-to-analyse-impact-o-2026-02-20
+    type: Event
+    name: UK ‘working with US’ to analyse impact of supreme court’s ruling against tariffs
+    category: finance
+    description: >-
+      <p>Government ‘expects privileged trading position’ to go on as EU ‘seeks clarity’ over Trump administration’s
+      next steps</p><p>Britain and the EU said they were assessing the implications of the <a
+      href="https://www.theguardian.com/us-news/2026/feb/20/trump-supreme-court-tariffs-ruling">US supreme 
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T18:34:47.000Z"
+      precision: day
+  - id: it-s-survival-of-the-fittest-the-uk-k-2026-02-20
+    type: Event
+    name: "‘It’s survival of the fittest’: the UK kebab chain seeking an edge with robot slicers"
+    category: finance
+    description: >-
+      <p>German Doner Kebab aims to open at 25 new sites this year with self-service screens and healthy options aimed
+      at gen Z </p><p></p><p>They are already packing our groceries and delivering shopping. Now robots are coming to
+      the kebab shop, alongside self-service screens and loyalty apps, as takeawa
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T16:00:14.000Z"
+      precision: day
+  - id: consultancy-co-founded-by-peter-mandelso-2026-02-20
+    type: Fact
+    name: Consultancy co-founded by Peter Mandelson falls into administration
+    category: finance
+    description: >-
+      <p>Global Counsel stops trading after clients cut ties over former ambassador’s relationship with Jeffrey
+      Epstein</p><p>The consultancy co-founded by Peter Mandelson has collapsed into administration, after a number of
+      clients cut ties with the company over the former ambassador’s relationship with 
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T14:26:04.000Z"
+      precision: day
+  - id: politico-owner-axel-springer-joins-rival-2026-02-20
+    type: Event
+    name: Politico owner Axel Springer joins rival Telegraph bid led by Dovid Efune
+    category: finance
+    description: >-
+      <p>Sale to Lord Rothermere, Daily Mail owner, referred to regulators on media plurality and competition
+      grounds</p><p>The media company Axel Springer, the owner of Politico and Business Insider, has joined a rival bid
+      for the Telegraph as a proposed £500m sale to the owner of the Daily Mail faces mo
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T16:35:20.000Z"
+      precision: day
+  - id: statistics-chief-complains-to-bbc-over-i-2026-02-20
+    type: Event
+    name: Statistics chief complains to BBC over impersonation of staff in hit drama Industry
+    category: finance
+    description: "<p>ONS tells broadcaster that depiction risks undermining interviewers’ ‘delicate relationship’ with the public</p><p><br>\r\n Best known for its depiction of City traders as drug-addled, sex-crazed adrenaline junkies, the BBC hit series <em><a href=\"https://www.theguardian.com/tv-and-radio/2026/jan/0"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T15:18:33.000Z"
+      precision: day
+  - id: amazon-s-cloud-hit-by-two-outages-cause-2026-02-20
+    type: Event
+    name: Amazon’s cloud ‘hit by two outages caused by AI tools last year’
+    category: finance
+    description: >-
+      <p>Reported issues at Amazon Web Services raise questions about firm’s use of artificial intelligence as it cuts
+      staff</p><p>Amazon’s huge cloud computing arm reportedly experienced at least two outages caused by its own
+      artificial intelligence tools, raising questions about the company’s <a href="h
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T17:24:16.000Z"
+      precision: day
+  - id: nvidia-reportedly-plans-to-invest-30bn-2026-02-20
+    type: Event
+    name: Nvidia reportedly plans to invest $30bn in OpenAI’s next funding round
+    category: finance
+    description: >-
+      <p>Chip manufacturer to invest in return for stock after previous ‘circular’ $100bn deal dissolved earlier this
+      month</p><p>Nvidia, the world’s most valuable company, is reportedly planning to invest $30bn (£22bn) in OpenAI’s
+      next funding round, after a $100bn deal between the two dissolved earlier 
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T12:15:56.000Z"
+      precision: day
+  - id: asos-co-founder-dies-in-fall-from-18-sto-2026-02-20
+    type: Fact
+    name: Asos co-founder dies in fall from 18-storey building in Thailand
+    category: finance
+    description: >-
+      <p>Police say UK entrepreneur Quentin Griffiths fell from 17th floor of an 18-floor condominium on 9
+      February</p><p>Quentin Griffiths, the co-founder of the online fashion retailer Asos, has died after falling from
+      an apartment building in the Thai seaside resort city of Pattaya.</p><p>Police told R
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T15:31:23.000Z"
+      precision: day
+  - id: what-will-happen-to-trump-s-tariffs-afte-2026-02-20
+    type: Event
+    name: What will happen to Trump’s tariffs after supreme court verdict?
+    category: finance
+    description: >-
+      <p>6-3 ruling against unilateral imposition of tariffs without congressional approval labelled a ‘disgrace’ by
+      Trump</p><ul><li><p><a
+      href="https://www.theguardian.com/us-news/2026/feb/20/trump-supreme-court-tariffs-ruling">Trump illegally used
+      executive power to impose global tariffs, supreme court
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T20:05:17.000Z"
+      precision: day
+  - id: tariff-refunds-could-take-years-amid-us-2026-02-20
+    type: Claim
+    name: Tariff refunds could take years amid US Supreme Court ruling, experts warn
+    category: geopolitics
+    description: At least 1,000 companies have already sued the administration of United States President Donald Trump.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T20:19:48.000Z"
+      precision: day
+  - id: us-president-trump-promises-new-tariffs-2026-02-20
+    type: Event
+    name: US President Trump promises new tariffs, slams Supreme Court decision
+    category: geopolitics
+    description: >-
+      Supreme Court blocks Trump&#039;s emergency tariffs, but he plans to invoke other laws to maintain and raise
+      tariffs.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T20:14:54.000Z"
+      precision: day
+  - id: more-than-37-days-of-heavy-rain-brings-d-2026-02-20
+    type: Event
+    name: More than 37 days of heavy rain brings disastrous flooding to France
+    category: geopolitics
+    description: Devastating floods have left entire villages isolated in western France after a record-breaking 37 days of rain.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T19:55:20.000Z"
+      precision: day
+  - id: at-least-two-killed-in-israeli-attack-on-2026-02-20
+    type: Fact
+    name: At least two killed in Israeli attack on Palestinian camp in Lebanon
+    category: geopolitics
+    description: >-
+      Lebanon&#039;s official news agency NNA says &#039;Israeli drone&#039; targeted the Hittin neighbourhood of the
+      Ein el-Hilweh camp.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T19:37:47.000Z"
+      precision: day
+  - id: the-truth-behind-wildlife-tourism-2026-02-20
+    type: Event
+    name: The truth behind wildlife tourism
+    category: geopolitics
+    description: Can wildlife tourism balance conservation, land rights and profit?
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T19:30:00.000Z"
+      precision: day
+  - id: trump-suggests-he-won-t-refund-tariffs-a-2026-02-20
+    type: Event
+    name: Trump suggests he won’t refund tariffs after Supreme Court ruling
+    category: geopolitics
+    description: President Donald Trump suggested he doesn’t plan to refund tariff fees already collected by the US government.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T19:27:25.000Z"
+      precision: day
+  - id: trump-considering-limited-strikes-on-i-2026-02-20
+    type: Event
+    name: Trump ‘considering’ limited strikes on Iran
+    category: geopolitics
+    description: >-
+      US President Trump says he is “considering” limited strikes on Iran as negotiations continue over its nuclear
+      program.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T19:13:58.000Z"
+      precision: day
+  - id: trump-supreme-court-s-rejection-of-tari-2026-02-20
+    type: Event
+    name: "Trump: Supreme Court’s rejection of tariffs ‘deeply disappointing’"
+    category: geopolitics
+    description: >-
+      US President Trump called several Supreme Court justices a “disgrace” after they struck down tariffs he issued in
+      2025.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T19:10:20.000Z"
+      precision: day
+  - id: argentina-s-chamber-of-deputies-passes-c-2026-02-20
+    type: Decision
+    name: Argentina’s Chamber of Deputies passes controversial labour reform bill
+    category: geopolitics
+    description: >-
+      Unions have slammed the reforms as an effort under libertarian President Javier Milei to erode protections for
+      workers.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T19:06:00.000Z"
+      precision: day
+  - id: why-did-the-us-supreme-court-strike-down-2026-02-20
+    type: Event
+    name: Why did the US Supreme Court strike down Trump’s global tariff policy?
+    category: geopolitics
+    description: The US Supreme Court has struck down Donald Trump’s imposition of sweeping global tariffs.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T18:36:39.000Z"
+      precision: day
+  - id: specialized-ai-detects-92-of-real-world-2026-02-20
+    type: Event
+    name: Specialized AI detects 92% of real-world DeFi exploits
+    category: finance.crypto
+    description: >-
+      New research claims specialized AI dramatically outperforms general-purpose models at detecting exploited DeFi
+      vulnerabilities.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T19:06:15.000Z"
+      precision: day
+  - id: u-s-supreme-courts-decision-on-trumps-2026-02-20
+    type: Claim
+    name: U.S. Supreme Court's decision on Trump's tariffs may not rock crypto — yet
+    category: finance.crypto
+    description: >-
+      The more significant result from the U.S. Supreme Court's rejection of President Donald Trump's trade tariffs may
+      be political, which could sting the industry.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T18:42:06.000Z"
+      precision: day
+  - id: dubai-takes-next-step-to-make-real-estat-2026-02-20
+    type: Event
+    name: Dubai takes next step to make real estate flips instant in $16 billion tokenization plan
+    category: finance.crypto
+    description: >-
+      Dubai Land Department and Ctrl Alt move to the next phase of real estate tokenization project, enabling the resale
+      of property tokens.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T17:09:59.000Z"
+      precision: day
+  - id: rwa-issuers-prioritize-capital-formation-2026-02-20
+    type: Fact
+    name: RWA issuers prioritize capital formation over liquidity, according to Brickken survey
+    category: finance.crypto
+    description: >-
+      Exclusive fourth quarter data shows 69.2% of issuers are live, while 84.6% report regulatory friction shaping
+      tokenization rollout.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T15:55:33.000Z"
+      precision: day
+  - id: bitcoin-pops-then-drops-as-supreme-court-2026-02-20
+    type: Event
+    name: Bitcoin pops then drops as Supreme Court strikes down Trump tariffs
+    category: finance.crypto
+    description: As has been typical in crypto markets of late, even the most modest move higher was met with immediate selling.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T15:20:45.000Z"
+      precision: day
+  - id: goldman-sachs-franklin-templeton-and-n-2026-02-20
+    type: Event
+    name: "Goldman Sachs, Franklin Templeton, and Nicki Minaj: Inside Trump’s surreal Mar-a-Lago crypto summit"
+    category: finance.crypto
+    description: >-
+      Crypto, real estate and politics collided at Trump’s Mar-a-Lago club as insiders debated tokenization and
+      regulation.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T14:59:37.000Z"
+      precision: day
+  - id: coindesk-20-performance-update-aave-fal-2026-02-20
+    type: Event
+    name: "CoinDesk 20 performance update: AAVE falls 3.3%, leading index lower"
+    category: finance.crypto
+    description: Bitcoin Cash (BCH), down 2.1% from Thursday, was also among the underperformers.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T14:11:46.000Z"
+      precision: day
+  - id: what-next-for-xrp-as-volatility-sinks-to-2026-02-20
+    type: Event
+    name: What next for XRP as volatility sinks to 2024 lows
+    category: finance.crypto
+    description: >-
+      Technical traders see a compression setup, with $1.39 as key support and $1.44 as near-term resistance that could
+      open a move toward $1.50 to $1.62 if reclaimed.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T13:08:41.000Z"
+      precision: day
+  - id: bitcoin-gains-is-still-signficantly-un-2026-02-20
+    type: Claim
+    name: Bitcoin gains, is still 'signficantly undervalued,' Bitwise says. 'Extreme fear' dominates.
+    category: finance.crypto
+    description: Your day-ahead look for Feb. 20, 2026
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T12:15:00.000Z"
+      precision: day
+  - id: dual-south-korean-listings-send-ethereum-2026-02-20
+    type: Event
+    name: Dual South Korean listings send Ethereum layer-2 token AZTEC surging 82%
+    category: finance.crypto
+    description: >-
+      Korean exchanges Upbit and Bithumb both added local currency pairs for the privacy-focused layer-2 token,
+      triggering a sharp move in a thinly traded market.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T11:42:25.000Z"
+      precision: day
+  - id: nvidia-options-are-priced-for-a-perfect-2026-02-20
+    type: Event
+    name: Nvidia options are priced for a perfect earnings outlook. These are your smarter trades.
+    category: finance.markets
+    description: Earnings reports will flood the market next week. Could this be the juice the S&P 500 needs?
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T19:51:00.000Z"
+      precision: day
+  - id: will-american-companies-get-tariff-refun-2026-02-20
+    type: Event
+    name: Will American companies get tariff refunds after the Supreme Court decision? What we know so far.
+    category: finance.markets
+    description: >-
+      The Supreme Court&#x2019;s decision striking down most of President Donald Trump&#x2019;s tariffs left at least
+      one big question unanswered: What about refunds?
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T19:24:00.000Z"
+      precision: day
+  - id: x2018-it-x2019-s-a-life-changing-sum-2026-02-20
+    type: Event
+    name: >-
+      &#x2018;It&#x2019;s a life-changing sum&#x2019;: Can I stop my kids from using their inheritance to support
+      political causes I vehemently oppose?
+    category: finance.markets
+    description: >-
+      &#x201d;I would hate for our money to end up in the hands of organizations that oppose everything we have
+      supported throughout our lives.&#x201d;
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T19:15:00.000Z"
+      precision: day
+  - id: supreme-court-rejects-trump-x2019-s-tar-2026-02-20
+    type: Event
+    name: Supreme Court rejects Trump&#x2019;s tariffs. The president is already rolling out new ones.
+    category: finance.markets
+    description: >-
+      The U.S. Supreme Court said President Trump exceeded his authority in using a 1977 law to justify a large swath of
+      his tariffs, but that does not mean he&#x2019;s now unable to slap tariffs on other countries&#x2019; products.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T19:09:00.000Z"
+      precision: day
+  - id: coreweave-x2019-s-stock-drops-why-a-4-2026-02-20
+    type: Event
+    name: CoreWeave&#x2019;s stock drops. Why a $4 billion Blue Owl funding snag has investors on edge.
+    category: finance.markets
+    description: >-
+      CoreWeave&#x2019;s below-investment-grade credit rating has reportedly spooked lenders, raising questions about
+      how the neocloud can maintain its capital-intensive business.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T19:03:00.000Z"
+      precision: day
+  - id: retailers-could-win-big-on-a-repeal-of-t-2026-02-20
+    type: Claim
+    name: Retailers could win big on a repeal of Trump&#x2019;s tariffs. Here&#x2019;s why the stocks aren&#x2019;t rising.
+    category: finance.markets
+    description: >-
+      Target, Nike and Hasbro stand to be big beneficiaries as the SCOTUS ruling could lower costs, analysts say, but
+      stocks of retail giants like Walmart and Costco fell.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T19:00:00.000Z"
+      precision: day
+  - id: the-biggest-purchase-in-life-now-seems-u-2026-02-20
+    type: Event
+    name: The biggest purchase in life now seems unaffordable &#x2014; and that&#x2019;s putting consumers in a sour mood
+    category: finance.markets
+    description: Americans are gloomy about spending despite encouraging inflation and unemployment trends.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T18:51:00.000Z"
+      precision: day
+  - id: why-nvidia-is-x2018-highly-motivated-2026-02-20
+    type: Event
+    name: Why Nvidia is &#x2018;highly motivated&#x2019; to keep investing in OpenAI
+    category: finance.markets
+    description: >-
+      The chip maker&#x2019;s investment is a hedge against Google and a way to keep demand for its chips, an analyst
+      says.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T18:51:00.000Z"
+      precision: day
+  - id: adding-these-stocks-to-your-401-k-could-2026-02-20
+    type: Claim
+    name: Adding these stocks to your 401(k) could protect against crises like a war with Iran
+    category: finance.markets
+    description: Subverting the conventional wisdom that the only stock exposure you need is in the broad indexes.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T18:39:00.000Z"
+      precision: day
+  - id: trump-x2019-s-tariff-loss-is-a-win-for-2026-02-20
+    type: Event
+    name: Trump&#x2019;s tariff loss is a win for your relationship
+    category: finance.markets
+    description: The Supreme Court decision just made &#x2018;money talks&#x2019; with your partner a lot less stressful.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T18:33:00.000Z"
+      precision: day
+  - id: denmark-seizes-blacklisted-container-shi-2026-02-20
+    type: Event
+    name: Denmark Seizes Blacklisted Container Ship Tied to Iran&#039;s Shadow Fleet
+    category: finance.energy
+    description: >-
+      Denmark detained a container vessel previously blacklisted by Washington under last year&#039;s sweeping Iran
+      sanctions on Thursday, amid suspicions it was operating under a false flag. The Nora was seized after authorities
+      determined it was allegedly sailing under the flag of Comoros without author
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T20:00:00.000Z"
+      precision: day
+  - id: us-oil-drilling-activity-still-going-now-2026-02-20
+    type: Event
+    name: US Oil Drilling Activity Still Going Nowhere
+    category: finance.energy
+    description: "The total number of active drilling rigs for oil and gas in the United States stayed the same this week, according to new data that Baker Hughes published on Friday, keeping the total rig count in the US \_at 551 this week, down 41 from this same time last year. The number of active oil rigs stayed a"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T18:13:00.000Z"
+      precision: day
+  - id: wood-mackenzie-says-big-oil-s-strategy-h-2026-02-20
+    type: Claim
+    name: Wood Mackenzie Says Big Oil’s Strategy Has Snapped Back to Upstream
+    category: finance.energy
+    description: >-
+      If there was any lingering doubt about what’s keeping Big Oil executives up at night, the fourth-quarter results
+      cleared it up. It’s not slogans. It’s not transition optics. It’s whether they have enough high-quality barrels to
+      avoid production decline in the 2030s. The majors are refocusing hard on
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T17:30:00.000Z"
+      precision: day
+  - id: kyrgyzstan-s-energy-emergency-opens-the-2026-02-20
+    type: Event
+    name: Kyrgyzstan’s Energy Emergency Opens the Door to Russian Nuclear Influence
+    category: finance.energy
+    description: >-
+      In late 2025, during his visit to Kyrgyzstan, Russia’s President Vladimir Putin declared Russia’s readiness to
+      build a small modular nuclear power reactor (SMR) in Kyrgyzstan, thereby signaling Moscow’s intention to move
+      beyond traditional trade relations toward projects in long-term strategic infra
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T17:00:00.000Z"
+      precision: day
+  - id: ft-uncovers-90-billion-russian-oil-smug-2026-02-20
+    type: Event
+    name: FT Uncovers $90 Billion Russian Oil Smuggling Operation
+    category: finance.energy
+    description: "Nearly fifty seemingly separate companies have been involved in coordinating to mask the origin of Russian oil, moving crude worth at least $90 billion, an investigation of the Financial Times has found.\_ FT uncovered the network due to an IT blunder—the 48 identified entities all share a single pri"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T16:30:00.000Z"
+      precision: day
+  - id: supreme-court-strikes-down-trump-s-emerg-2026-02-20
+    type: Event
+    name: Supreme Court Strikes Down Trump’s Emergency Tariffs, Energy Trade Faces Reset
+    category: finance.energy
+    description: >-
+      The U.S. Supreme Court just kneecapped one of the most aggressive trade levers Washington has pulled in decades,
+      and energy markets are now left sorting out what sticks and what doesn’t. In a 6–3 ruling, the Court struck down
+      most of President Trump’s across-the-board tariffs imposed under the Inter
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T15:53:00.000Z"
+      precision: day
+  - id: u-s-iran-tensions-threaten-to-send-oil-2026-02-20
+    type: Event
+    name: U.S.-Iran Tensions Threaten to Send Oil Tanker Rates Soaring
+    category: finance.energy
+    description: "The ratcheting up of tensions between the United States and Iran could push an already red-hot supertanker market even higher with rates soaring to the highest level since 2019, analysts say.\_ The daily rate for hiring a supertanker on the key Middle East-to-China route has surged threefold since th"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T15:30:00.000Z"
+      precision: day
+  - id: experts-sees-even-odds-of-peace-or-confl-2026-02-20
+    type: Event
+    name: Experts Sees Even Odds of Peace or Conflict With Iran
+    category: finance.energy
+    description: >-
+      After US-Iran nuclear talks concluded in Geneva under heavy American pressure on Tehran to curb its nuclear
+      activities, leading Washington experts say the crisis now stands at a tipping point, with the chances of peace or
+      war at "50-50." Negotiations ended on February 18 with no breakthrough. The Wh
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T15:00:00.000Z"
+      precision: day
+  - id: the-politics-behind-the-17-billion-gaza-2026-02-20
+    type: Event
+    name: The Politics Behind the $17 Billion Gaza Pledge
+    category: finance.energy
+    description: >-
+      Politics, Geopolitics & Conflict The next strategic territory emerging as a point of friction on the world stage
+      is the Chagos Islands. The UK is preparing to transfer sovereignty of the islands to Mauritius, while still
+      preserving long-term U.S.-UK control over the military base on Diego Garcia. Th
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T14:30:00.000Z"
+      precision: day
+  - id: satellite-images-reveal-iran-hardening-k-2026-02-20
+    type: Event
+    name: Satellite Images Reveal Iran Hardening Key Nuclear Facilities
+    category: finance.energy
+    description: >-
+      Iran is burying parts of its nuclear infrastructure because it is preparing for a U.S. strike, not an invasion.
+      The U.S. has the ability to hit fixed targets inside Iran instantly, without moving ground forces, so the only
+      plausible military scenario in view is a limited strike. Negotiations have co
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T14:30:00.000Z"
+      precision: day
+  - id: inscope-nabs-14-5m-to-solve-the-pain-of-2026-02-20
+    type: Event
+    name: InScope nabs $14.5M to solve the pain of financial reporting
+    category: technology.ai
+    description: >-
+      The startup, founded by accountants who worked at Flexport, Miro, Hopin and Thrive Global, automates the
+      difficulties of prepping financial statements.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T19:24:57.000Z"
+      precision: day
+  - id: great-news-for-xai-grok-is-now-pretty-g-2026-02-20
+    type: Event
+    name: "Great news for xAI: Grok is now pretty good at answering questions about Baldur’s Gate"
+    category: technology.ai
+    description: >-
+      A new report from Business Insider reveals that high-level engineers at xAI were pulled off other projects to make
+      sure Grok could answer detailed questions about the video game Baldur's Gate.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T18:26:54.000Z"
+      precision: day
+  - id: 8216-toy-story-5-8217-takes-aim-at-c-2026-02-20
+    type: Event
+    name: "&#8216;Toy Story 5&#8217; takes aim at creepy AI toys: &#8216;I&#8217;m always listening&#8217;"
+    category: technology.ai
+    description: Addictive, AI-enabled tablets are taking over, and also, Woody is balding in the new Toy Story movie, out June 19.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T16:25:54.000Z"
+      precision: day
+  - id: ai-s-promise-to-indie-filmmakers-faster-2026-02-20
+    type: Event
+    name: "AI’s promise to indie filmmakers: Faster, cheaper, lonelier"
+    category: technology.ai
+    description: >-
+      AI expands access to filmmaking for resource-constrained creators. But as efficiency becomes the industry’s north
+      star, creativity risks being overwhelmed by a deluge of low-effort, AI-generated content.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T15:30:00.000Z"
+      precision: day
+  - id: peak-xv-raises-1-3b-doubles-down-on-ai-2026-02-20
+    type: Event
+    name: Peak XV raises $1.3B, doubles down on AI as global VC rivalry in India heats up
+    category: technology.ai
+    description: >-
+      Peak XV says most of its new capital will target India as the firm prioritizes AI, fintech and cross-border bets
+      while navigating recent partner departures.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T15:10:40.000Z"
+      precision: day
+  - id: techcrunch-disrupt-2026-super-early-bird-2026-02-20
+    type: Event
+    name: "TechCrunch Disrupt\_2026 Super Early Bird rates end in\_1\_week"
+    category: technology.ai
+    description: >-
+      The lowest ticket rates of the year for TechCrunch Disrupt 2026 end next Friday, February 27. Save up to $680 on
+      your pass. Register now before prices increase.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T15:00:00.000Z"
+      precision: day
+  - id: openai-says-18-to-24-year-olds-account-2026-02-20
+    type: Claim
+    name: OpenAI says 18- to 24-year-olds account for nearly 50% of ChatGPT usage in India
+    category: technology.ai
+    description: >-
+      The company said on Friday that users between 18 and 24 years of age account for nearly 50% of all messages sent
+      by Indians to ChatGPT, and users under 30 account for 80% of usage in the country.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T13:57:03.000Z"
+      precision: day
+  - id: uae-8217-s-g42-teams-up-with-cerebras-t-2026-02-20
+    type: Event
+    name: UAE&#8217;s G42 teams up with Cerebras to deploy 8 exaflops of compute in India
+    category: technology.ai
+    description: >-
+      Abu Dhabi-based tech company G42 has partnered with U.S.-based chipmaker Cerebras to deploy 8 exaflops of compute
+      through a new system in India.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T11:58:15.000Z"
+      precision: day
+  - id: general-catalyst-commits-5b-to-india-ov-2026-02-20
+    type: Event
+    name: General Catalyst commits $5B to India over five years
+    category: technology.ai
+    description: The pledge marks a sharp jump from General Catalyst's earlier $500 million–$1 billion India earmark.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T06:41:44.000Z"
+      precision: day
+  - id: google-8217-s-new-gemini-pro-model-has-2026-02-20
+    type: Event
+    name: Google&#8217;s new Gemini Pro model has record benchmark scores — again
+    category: technology.ai
+    description: Gemini 3.1 Pro promises a Google LLM capable of handling more complex forms of work.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T00:55:22.000Z"
+      precision: day
+  - id: with-nih-in-chaos-its-controversial-dir-2026-02-20
+    type: Event
+    name: With NIH in chaos, its controversial director is taking over CDC, too
+    category: technology
+    description: With NIH in chaos, its controversial director is taking over CDC, too
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T19:44:39.000Z"
+      precision: day
+  - id: wikipedia-blacklists-archive-today-star-2026-02-20
+    type: Event
+    name: Wikipedia blacklists Archive.today, starts removing 695,000 archive links
+    category: technology
+    description: Wikipedia blacklists Archive.today, starts removing 695,000 archive links
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T18:35:43.000Z"
+      precision: day
+  - id: why-final-fantasy-is-now-targeting-pc-as-2026-02-20
+    type: Event
+    name: Why Final Fantasy is now targeting PC as its "lead platform"
+    category: technology
+    description: Why Final Fantasy is now targeting PC as its "lead platform"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T17:26:59.000Z"
+      precision: day
+  - id: million-year-old-fossil-skulls-from-ch-2026-02-20
+    type: Event
+    name: "\"Million-year-old\" fossil skulls from China are far older—and not Denisovans"
+    category: technology
+    description: "\"Million-year-old\" fossil skulls from China are far older—and not Denisovans"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T17:03:06.000Z"
+      precision: day
+  - id: its-outright-war-for-the-iron-throne-in-2026-02-20
+    type: Event
+    name: It's outright war for the Iron Throne in House of the Dragon S3 teaser
+    category: technology
+    description: It's outright war for the Iron Throne in House of the Dragon S3 teaser
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T16:40:31.000Z"
+      precision: day
+  - id: nintendo-brings-gba-era-pok-mon-to-the-s-2026-02-20
+    type: Event
+    name: Nintendo brings GBA-era Pokémon to the Switch, but not Switch Online subscribers
+    category: technology
+    description: Nintendo brings GBA-era Pokémon to the Switch, but not Switch Online subscribers
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T16:30:21.000Z"
+      precision: day
+  - id: supreme-court-blocks-trumps-emergency-t-2026-02-20
+    type: Claim
+    name: Supreme Court blocks Trump's emergency tariffs, billions in refunds may be owed
+    category: technology
+    description: Supreme Court blocks Trump's emergency tariffs, billions in refunds may be owed
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T15:37:15.000Z"
+      precision: day
+  - id: tesla-slashes-cybertruck-prices-as-it-tr-2026-02-20
+    type: Event
+    name: Tesla slashes Cybertruck prices as it tries to move (unpainted) metal
+    category: technology
+    description: Tesla slashes Cybertruck prices as it tries to move (unpainted) metal
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T14:31:05.000Z"
+      precision: day
+  - id: an-ai-coding-bot-took-down-amazon-web-se-2026-02-20
+    type: Event
+    name: An AI coding bot took down Amazon Web Services
+    category: technology
+    description: An AI coding bot took down Amazon Web Services
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T14:13:32.000Z"
+      precision: day
+  - id: microsoft-deletes-blog-telling-users-to-2026-02-20
+    type: Event
+    name: Microsoft deletes blog telling users to train AI on pirated Harry Potter books
+    category: technology
+    description: Microsoft deletes blog telling users to train AI on pirated Harry Potter books
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-20T12:11:28.000Z"
+      precision: day
+narratives:
+  - name: AI Race
+    steps:
+      - from: nvidia-reportedly-plans-to-invest-30bn-2026-02-20
+        to: openai-says-18-to-24-year-olds-account-2026-02-20
+        type: supports
+      - from: openai-says-18-to-24-year-olds-account-2026-02-20
+        to: why-nvidia-is-x2018-highly-motivated-2026-02-20
+        type: follows
+  - name: Israel-Palestine Conflict
+    steps:
+      - from: the-politics-behind-the-17-billion-gaza-2026-02-20
+        to: at-least-two-killed-in-israeli-attack-on-2026-02-20
+        type: follows
+  - name: Crypto Markets
+    steps:
+      - from: dual-south-korean-listings-send-ethereum-2026-02-20
+        to: bitcoin-gains-is-still-signficantly-un-2026-02-20
+        type: supports
+      - from: bitcoin-gains-is-still-signficantly-un-2026-02-20
+        to: coindesk-20-performance-update-aave-fal-2026-02-20
+        type: follows
+      - from: coindesk-20-performance-update-aave-fal-2026-02-20
+        to: goldman-sachs-franklin-templeton-and-n-2026-02-20
+        type: causes
+      - from: goldman-sachs-franklin-templeton-and-n-2026-02-20
+        to: bitcoin-pops-then-drops-as-supreme-court-2026-02-20
+        type: causes
+      - from: bitcoin-pops-then-drops-as-supreme-court-2026-02-20
+        to: u-s-supreme-courts-decision-on-trumps-2026-02-20
+        type: supports
+      - from: u-s-supreme-courts-decision-on-trumps-2026-02-20
+        to: specialized-ai-detects-92-of-real-world-2026-02-20
+        type: follows
+sources:
+  - entity: tariffs-ruling-is-major-blow-to-trumps-2026-02-20
+    type: article
+    title: Tariffs ruling is major blow to Trump's second-term agenda
+    url: https://www.bbc.com/news/articles/cx2jqgdn719o
+    excerpt: The Supreme Court has weakened Trump's hand in dealing with other nations, writes Anthony Zurcher.
+    source_name: BBC News
+    published: "2026-02-20T19:01:57.000Z"
+  - entity: nasa-targets-early-march-to-send-humans-2026-02-20
+    type: article
+    title: Nasa targets early March to send humans back around the Moon
+    url: https://www.bbc.com/news/articles/c86y1g6wde3o
+    excerpt: Nasa sets the launch date following a successful "wet dress rehearsal" of the Artemis II mission.
+    source_name: BBC News
+    published: "2026-02-20T17:00:26.000Z"
+  - entity: austrian-climber-found-guilty-after-girl-2026-02-20
+    type: article
+    title: Austrian climber found guilty after girlfriend froze to death on mountain
+    url: https://www.bbc.com/news/articles/c0k1xkllknmo
+    excerpt: The woman died of hypothermia during a climbing trip on the Grossglockner mountain in January 2025.
+    source_name: BBC News
+    published: "2026-02-20T11:10:31.000Z"
+  - entity: asos-co-founder-dies-after-thailand-apar-2026-02-20
+    type: article
+    title: Asos co-founder dies after Thailand apartment block fall
+    url: https://www.bbc.com/news/articles/ce8w0n061ryo
+    excerpt: >-
+      Quentin Griffiths co-founded Asos in 2000 and remained a significant shareholder after leaving the firm five years
+      later.
+    source_name: BBC News
+    published: "2026-02-20T14:35:49.000Z"
+  - entity: venezuelan-opposition-politician-release-2026-02-20
+    type: article
+    title: Venezuelan opposition politician released after amnesty law passed
+    url: https://www.bbc.com/news/articles/cy57en3590no
+    excerpt: Juan Pablo Guanipa announces that he has been freed after "almost nine months" of imprisonment.
+    source_name: BBC News
+    published: "2026-02-20T13:37:44.000Z"
+  - entity: rare-prison-sentences-handed-to-cameroon-2026-02-20
+    type: article
+    title: Rare prison sentences handed to Cameroon soldiers after killing of 21 civilians
+    url: https://www.bbc.com/news/articles/cev74dywd7eo
+    excerpt: In a rare occurence, three soldiers were handed jail terms for killings in the troubled Anglophone region.
+    source_name: BBC News
+    published: "2026-02-20T13:44:30.000Z"
+  - entity: french-soldier-dies-after-being-shot-in-2026-02-20
+    type: article
+    title: French soldier dies after being shot in head during 'game' with other soldiers
+    url: https://www.bbc.com/news/articles/cj4z25gl24eo
+    excerpt: >-
+      According to prosecutors, the game - known within the military - involves attempting to disarm a colleague and
+      disable their weapon.
+    source_name: BBC News
+    published: "2026-02-20T14:19:27.000Z"
+  - entity: dog-trained-to-illegally-dump-rubbish-i-2026-02-20
+    type: article
+    title: Dog trained to illegally dump rubbish, Italian authorities say
+    url: https://www.bbc.com/news/articles/cy57erz57xyo
+    excerpt: "\"Ingenuity can never become an alibi for incivility\", the City of Catania warns."
+    source_name: BBC News
+    published: "2026-02-20T15:57:17.000Z"
+  - entity: mother-and-infant-burnt-to-death-in-indi-2026-02-20
+    type: article
+    title: Mother and infant burnt to death in Indian state over witchcraft allegations
+    url: https://www.bbc.com/news/articles/c98q93gdy3do
+    excerpt: Eyewitnesses say a mob stormed the woman's home after rumours spread that she was practising witchcraft.
+    source_name: BBC News
+    published: "2026-02-20T10:10:42.000Z"
+  - entity: trump-says-world-has-10-days-to-see-if-i-2026-02-20
+    type: article
+    title: Trump says world has 10 days to see if Iran agrees deal or 'bad things happen'
+    url: https://www.bbc.com/news/articles/c86yjnw4x49o
+    excerpt: >-
+      The US is surging forces to the Middle East amid negotiations with the Islamic Republic over its nuclear
+      programme.
+    source_name: BBC News
+    published: "2026-02-20T05:45:43.000Z"
+  - entity: supreme-court-strikes-down-trumps-sweep-2026-02-20
+    type: article
+    title: Supreme Court strikes down Trump's sweeping global tariffs
+    url: https://www.bbc.com/news/articles/cn8146l0n55o
+    excerpt: The ruling opens the door to potentially hundreds of billions of dollars in tariff refunds.
+    source_name: BBC Business
+    published: "2026-02-20T16:53:30.000Z"
+  - entity: trump-tariffs-ripped-up-global-trade-ord-2026-02-20
+    type: article
+    title: Trump tariffs ripped up global trade order. What now?
+    url: https://www.bbc.com/news/articles/cvgvn810njpo
+    excerpt: If you think the Supreme Court ruling heralds a return to pre-Trump business as usual - think again.
+    source_name: BBC Business
+    published: "2026-02-20T16:25:34.000Z"
+  - entity: kfc-nandos-and-others-ditch-chicken-w-2026-02-20
+    type: article
+    title: KFC, Nando's, and others ditch chicken welfare pledge
+    url: https://www.bbc.com/news/articles/cm2r6jqm042o
+    excerpt: >-
+      Wingstop, Burger King, and others have walked away from an industry commitment to avoid using fast-growing
+      chickens
+    source_name: BBC Business
+    published: "2026-02-20T16:17:53.000Z"
+  - entity: uk-agrees-drone-defence-plan-with-four-e-2026-02-20
+    type: article
+    title: UK agrees drone defence plan with four EU allies
+    url: https://www.bbc.com/news/articles/c875jj3y475o
+    excerpt: The scheme will seek to take inspiration from Ukraine's drone manufacturing programme.
+    source_name: BBC Business
+    published: "2026-02-20T17:35:35.000Z"
+  - entity: higher-tax-helped-uk-government-reach-re-2026-02-20
+    type: article
+    title: Higher tax helped UK government reach record January surplus
+    url: https://www.bbc.com/news/articles/c93w4egd3gzo
+    excerpt: The government took in more from tax receipts than expected, official data suggests.
+    source_name: BBC Business
+    published: "2026-02-20T12:13:35.000Z"
+  - entity: how-do-you-modernise-mango-farming-2026-02-20
+    type: article
+    title: How do you modernise mango farming?
+    url: https://www.bbc.com/news/articles/c86yl809ld6o
+    excerpt: India's mango farmers are being urged to innovate as climate change makes cultivation "unpredictable".
+    source_name: BBC Business
+    published: "2026-02-20T00:05:20.000Z"
+  - entity: new-years-sport-supplement-buying-adds-2026-02-20
+    type: article
+    title: New Year's sport supplement buying adds to January retail sales surge
+    url: https://www.bbc.com/news/articles/c78x7jwjg4no
+    excerpt: Continuing strong sales from online jewellers after a recent spike in gold prices also helped drive the increase.
+    source_name: BBC Business
+    published: "2026-02-20T12:30:41.000Z"
+  - entity: lobbying-firm-co-founded-by-mandelson-go-2026-02-20
+    type: article
+    title: Lobbying firm co-founded by Mandelson goes into administration
+    url: https://www.bbc.com/news/articles/cjd9zx7zne2o
+    excerpt: Global Counsel's clients cut ties with the firm over Lord Mandelson's links with sex offender Jeffrey Epstein.
+    source_name: BBC Business
+    published: "2026-02-20T13:25:43.000Z"
+  - entity: us-economy-slows-in-final-months-after-t-2026-02-20
+    type: article
+    title: US economy slows in final months after turbulent year
+    url: https://www.bbc.com/news/articles/c0rj5lly78xo
+    excerpt: >-
+      Overall the economy grew 2.2% last year, holding up despite pressures from changes to tariff and immigration
+      policy.
+    source_name: BBC Business
+    published: "2026-02-20T14:58:20.000Z"
+  - entity: bolivia-s-ex-leader-evo-morales-reappear-2026-02-20
+    type: article
+    title: Bolivia’s ex-leader Evo Morales reappears after months-long unexplained absence
+    url: https://www.theguardian.com/world/2026/feb/20/bolivia-evo-morales-public-appearance
+    excerpt: >-
+      <p>Long-serving socialist former leader Evo Morales has reappeared in his political stronghold after almost seven
+      weeks of unexplained absence</p><p>Bolivia’s long-serving socialist former leader, <a 
+    source_name: The Guardian
+    published: "2026-02-20T04:10:29.000Z"
+  - entity: brighter-uk-economy-gives-reeves-a-sprin-2026-02-20
+    type: article
+    title: Brighter UK economy gives Reeves a springboard for March statement
+    url: https://www.theguardian.com/business/2026/feb/20/brighter-uk-economy-rachel-reeves-march-spring-statement
+    excerpt: >-
+      <p>Record public finances accompany stronger retail sales and business activity but some analysts express
+      caution</p><p>The economic backdrop to Rachel Reeves’s upcoming spring statement appeared to b
+    source_name: The Guardian
+    published: "2026-02-20T17:24:02.000Z"
+  - entity: uk-working-with-us-to-analyse-impact-o-2026-02-20
+    type: article
+    title: UK ‘working with US’ to analyse impact of supreme court’s ruling against tariffs
+    url: https://www.theguardian.com/politics/2026/feb/20/uk-eu-reaction-us-supreme-court-ruling-trump-tariffs
+    excerpt: >-
+      <p>Government ‘expects privileged trading position’ to go on as EU ‘seeks clarity’ over Trump administration’s
+      next steps</p><p>Britain and the EU said they were assessing the implications of the <a h
+    source_name: The Guardian
+    published: "2026-02-20T18:34:47.000Z"
+  - entity: it-s-survival-of-the-fittest-the-uk-k-2026-02-20
+    type: article
+    title: "‘It’s survival of the fittest’: the UK kebab chain seeking an edge with robot slicers"
+    url: >-
+      https://www.theguardian.com/technology/2026/feb/20/german-doner-kebab-uk-takeaway-fast-food-business-robotic-slicers
+    excerpt: >-
+      <p>German Doner Kebab aims to open at 25 new sites this year with self-service screens and healthy options aimed
+      at gen Z </p><p></p><p>They are already packing our groceries and delivering shopping. 
+    source_name: The Guardian
+    published: "2026-02-20T16:00:14.000Z"
+  - entity: consultancy-co-founded-by-peter-mandelso-2026-02-20
+    type: article
+    title: Consultancy co-founded by Peter Mandelson falls into administration
+    url: >-
+      https://www.theguardian.com/politics/2026/feb/20/global-counsel-peter-mandelson-advisory-consultancy-administration
+    excerpt: >-
+      <p>Global Counsel stops trading after clients cut ties over former ambassador’s relationship with Jeffrey
+      Epstein</p><p>The consultancy co-founded by Peter Mandelson has collapsed into administration,
+    source_name: The Guardian
+    published: "2026-02-20T14:26:04.000Z"
+  - entity: politico-owner-axel-springer-joins-rival-2026-02-20
+    type: article
+    title: Politico owner Axel Springer joins rival Telegraph bid led by Dovid Efune
+    url: >-
+      https://www.theguardian.com/media/2026/feb/20/politico-owner-axel-springer-joins-rival-telegraph-bid-led-by-dovid-efune
+    excerpt: >-
+      <p>Sale to Lord Rothermere, Daily Mail owner, referred to regulators on media plurality and competition
+      grounds</p><p>The media company Axel Springer, the owner of Politico and Business Insider, has j
+    source_name: The Guardian
+    published: "2026-02-20T16:35:20.000Z"
+  - entity: statistics-chief-complains-to-bbc-over-i-2026-02-20
+    type: article
+    title: Statistics chief complains to BBC over impersonation of staff in hit drama Industry
+    url: https://www.theguardian.com/media/2026/feb/20/ons-office-national-statistics-tv-industry-bbc
+    excerpt: "<p>ONS tells broadcaster that depiction risks undermining interviewers’ ‘delicate relationship’ with the public</p><p><br>\r\n Best known for its depiction of City traders as drug-addled, sex-crazed adr"
+    source_name: The Guardian
+    published: "2026-02-20T15:18:33.000Z"
+  - entity: amazon-s-cloud-hit-by-two-outages-cause-2026-02-20
+    type: article
+    title: Amazon’s cloud ‘hit by two outages caused by AI tools last year’
+    url: https://www.theguardian.com/technology/2026/feb/20/amazon-cloud-outages-ai-tools-amazon-web-services-aws
+    excerpt: >-
+      <p>Reported issues at Amazon Web Services raise questions about firm’s use of artificial intelligence as it cuts
+      staff</p><p>Amazon’s huge cloud computing arm reportedly experienced at least two outag
+    source_name: The Guardian
+    published: "2026-02-20T17:24:16.000Z"
+  - entity: nvidia-reportedly-plans-to-invest-30bn-2026-02-20
+    type: article
+    title: Nvidia reportedly plans to invest $30bn in OpenAI’s next funding round
+    url: >-
+      https://www.theguardian.com/technology/2026/feb/20/nvidia-investment-openai-chatgpt-funding-round-ai-artificial-intelligence
+    excerpt: >-
+      <p>Chip manufacturer to invest in return for stock after previous ‘circular’ $100bn deal dissolved earlier this
+      month</p><p>Nvidia, the world’s most valuable company, is reportedly planning to invest 
+    source_name: The Guardian
+    published: "2026-02-20T12:15:56.000Z"
+  - entity: asos-co-founder-dies-in-fall-from-18-sto-2026-02-20
+    type: article
+    title: Asos co-founder dies in fall from 18-storey building in Thailand
+    url: https://www.theguardian.com/world/2026/feb/20/asos-cofounder-quentin-griffiths-killed-fall-apartment-thailand
+    excerpt: >-
+      <p>Police say UK entrepreneur Quentin Griffiths fell from 17th floor of an 18-floor condominium on 9
+      February</p><p>Quentin Griffiths, the co-founder of the online fashion retailer Asos, has died afte
+    source_name: The Guardian
+    published: "2026-02-20T15:31:23.000Z"
+  - entity: what-will-happen-to-trump-s-tariffs-afte-2026-02-20
+    type: article
+    title: What will happen to Trump’s tariffs after supreme court verdict?
+    url: https://www.theguardian.com/us-news/2026/feb/20/what-will-happen-to-trump-tariffs-after-supreme-court-verdict
+    excerpt: >-
+      <p>6-3 ruling against unilateral imposition of tariffs without congressional approval labelled a ‘disgrace’ by
+      Trump</p><ul><li><p><a href="https://www.theguardian.com/us-news/2026/feb/20/trump-suprem
+    source_name: The Guardian
+    published: "2026-02-20T20:05:17.000Z"
+  - entity: tariff-refunds-could-take-years-amid-us-2026-02-20
+    type: article
+    title: Tariff refunds could take years amid US Supreme Court ruling, experts warn
+    url: >-
+      https://www.aljazeera.com/economy/2026/2/20/tariff-refunds-could-take-years-amid-us-supreme-court-ruling-experts-warn
+    excerpt: At least 1,000 companies have already sued the administration of United States President Donald Trump.
+    source_name: Al Jazeera
+    published: "2026-02-20T20:19:48.000Z"
+  - entity: us-president-trump-promises-new-tariffs-2026-02-20
+    type: article
+    title: US President Trump promises new tariffs, slams Supreme Court decision
+    url: https://www.aljazeera.com/news/2026/2/20/us-president-trump-promises-new-tariffs-slams-supreme-court-decision
+    excerpt: >-
+      Supreme Court blocks Trump&#039;s emergency tariffs, but he plans to invoke other laws to maintain and raise
+      tariffs.
+    source_name: Al Jazeera
+    published: "2026-02-20T20:14:54.000Z"
+  - entity: more-than-37-days-of-heavy-rain-brings-d-2026-02-20
+    type: article
+    title: More than 37 days of heavy rain brings disastrous flooding to France
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/2/20/more-than-37-days-of-heavy-rain-brings-disastrous-flooding-to-france
+    excerpt: Devastating floods have left entire villages isolated in western France after a record-breaking 37 days of rain.
+    source_name: Al Jazeera
+    published: "2026-02-20T19:55:20.000Z"
+  - entity: at-least-two-killed-in-israeli-attack-on-2026-02-20
+    type: article
+    title: At least two killed in Israeli attack on Palestinian camp in Lebanon
+    url: >-
+      https://www.aljazeera.com/news/2026/2/20/one-killed-in-israeli-strike-on-largest-palestinian-refugee-camp-in-lebanon
+    excerpt: >-
+      Lebanon&#039;s official news agency NNA says &#039;Israeli drone&#039; targeted the Hittin neighbourhood of the
+      Ein el-Hilweh camp.
+    source_name: Al Jazeera
+    published: "2026-02-20T19:37:47.000Z"
+  - entity: the-truth-behind-wildlife-tourism-2026-02-20
+    type: article
+    title: The truth behind wildlife tourism
+    url: https://www.aljazeera.com/video/the-stream/2026/2/20/the-truth-behind-wildlife-tourism
+    excerpt: Can wildlife tourism balance conservation, land rights and profit?
+    source_name: Al Jazeera
+    published: "2026-02-20T19:30:00.000Z"
+  - entity: trump-suggests-he-won-t-refund-tariffs-a-2026-02-20
+    type: article
+    title: Trump suggests he won’t refund tariffs after Supreme Court ruling
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/2/20/trump-suggests-he-wont-refund-tariffs-after-supreme-court-ruling
+    excerpt: President Donald Trump suggested he doesn’t plan to refund tariff fees already collected by the US government.
+    source_name: Al Jazeera
+    published: "2026-02-20T19:27:25.000Z"
+  - entity: trump-considering-limited-strikes-on-i-2026-02-20
+    type: article
+    title: Trump ‘considering’ limited strikes on Iran
+    url: https://www.aljazeera.com/video/newsfeed/2026/2/20/trump-considering-limited-strikes-on-iran
+    excerpt: >-
+      US President Trump says he is “considering” limited strikes on Iran as negotiations continue over its nuclear
+      program.
+    source_name: Al Jazeera
+    published: "2026-02-20T19:13:58.000Z"
+  - entity: trump-supreme-court-s-rejection-of-tari-2026-02-20
+    type: article
+    title: "Trump: Supreme Court’s rejection of tariffs ‘deeply disappointing’"
+    url: https://www.aljazeera.com/video/newsfeed/2026/2/20/trump-supreme-courts-rejection-of-tariffs-deeply
+    excerpt: >-
+      US President Trump called several Supreme Court justices a “disgrace” after they struck down tariffs he issued in
+      2025.
+    source_name: Al Jazeera
+    published: "2026-02-20T19:10:20.000Z"
+  - entity: argentina-s-chamber-of-deputies-passes-c-2026-02-20
+    type: article
+    title: Argentina’s Chamber of Deputies passes controversial labour reform bill
+    url: https://www.aljazeera.com/news/2026/2/20/argentinas-chamber-of-deputies-passes-controversial-labour-reform-bill
+    excerpt: >-
+      Unions have slammed the reforms as an effort under libertarian President Javier Milei to erode protections for
+      workers.
+    source_name: Al Jazeera
+    published: "2026-02-20T19:06:00.000Z"
+  - entity: why-did-the-us-supreme-court-strike-down-2026-02-20
+    type: article
+    title: Why did the US Supreme Court strike down Trump’s global tariff policy?
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/2/20/why-did-the-us-supreme-court-strike-down-trumps-global-tariff-policy
+    excerpt: The US Supreme Court has struck down Donald Trump’s imposition of sweeping global tariffs.
+    source_name: Al Jazeera
+    published: "2026-02-20T18:36:39.000Z"
+  - entity: specialized-ai-detects-92-of-real-world-2026-02-20
+    type: article
+    title: Specialized AI detects 92% of real-world DeFi exploits
+    url: https://www.coindesk.com/business/2026/02/20/specialized-ai-detects-92-of-real-world-defi-exploits
+    excerpt: >-
+      New research claims specialized AI dramatically outperforms general-purpose models at detecting exploited DeFi
+      vulnerabilities.
+    source_name: CoinDesk
+    published: "2026-02-20T19:06:15.000Z"
+  - entity: u-s-supreme-courts-decision-on-trumps-2026-02-20
+    type: article
+    title: U.S. Supreme Court's decision on Trump's tariffs may not rock crypto — yet
+    url: >-
+      https://www.coindesk.com/news-analysis/2026/02/20/u-s-supreme-court-s-decision-on-trump-s-tariffs-may-not-rock-crypto-yet
+    excerpt: >-
+      The more significant result from the U.S. Supreme Court's rejection of President Donald Trump's trade tariffs may
+      be political, which could sting the industry.
+    source_name: CoinDesk
+    published: "2026-02-20T18:42:06.000Z"
+  - entity: dubai-takes-next-step-to-make-real-estat-2026-02-20
+    type: article
+    title: Dubai takes next step to make real estate flips instant in $16 billion tokenization plan
+    url: >-
+      https://www.coindesk.com/business/2026/02/20/dubai-unveils-secondary-market-for-usd5-million-tokenized-real-estate-via-xrp-ledger
+    excerpt: >-
+      Dubai Land Department and Ctrl Alt move to the next phase of real estate tokenization project, enabling the resale
+      of property tokens.
+    source_name: CoinDesk
+    published: "2026-02-20T17:09:59.000Z"
+  - entity: rwa-issuers-prioritize-capital-formation-2026-02-20
+    type: article
+    title: RWA issuers prioritize capital formation over liquidity, according to Brickken survey
+    url: >-
+      https://www.coindesk.com/business/2026/02/20/rwa-issuers-prioritize-capital-formation-over-liquidity-according-to-brickken-survey
+    excerpt: >-
+      Exclusive fourth quarter data shows 69.2% of issuers are live, while 84.6% report regulatory friction shaping
+      tokenization rollout.
+    source_name: CoinDesk
+    published: "2026-02-20T15:55:33.000Z"
+  - entity: bitcoin-pops-then-drops-as-supreme-court-2026-02-20
+    type: article
+    title: Bitcoin pops then drops as Supreme Court strikes down Trump tariffs
+    url: https://www.coindesk.com/markets/2026/02/20/bitcoin-pops-then-drops-as-supreme-court-strikes-down-trump-tariffs
+    excerpt: As has been typical in crypto markets of late, even the most modest move higher was met with immediate selling.
+    source_name: CoinDesk
+    published: "2026-02-20T15:20:45.000Z"
+  - entity: goldman-sachs-franklin-templeton-and-n-2026-02-20
+    type: article
+    title: "Goldman Sachs, Franklin Templeton, and Nicki Minaj: Inside Trump’s surreal Mar-a-Lago crypto summit"
+    url: >-
+      https://www.coindesk.com/business/2026/02/20/goldman-sachs-franklin-templeton-and-nicki-minaj-inside-trump-s-surreal-mar-a-lago-crypto-summit
+    excerpt: >-
+      Crypto, real estate and politics collided at Trump’s Mar-a-Lago club as insiders debated tokenization and
+      regulation.
+    source_name: CoinDesk
+    published: "2026-02-20T14:59:37.000Z"
+  - entity: coindesk-20-performance-update-aave-fal-2026-02-20
+    type: article
+    title: "CoinDesk 20 performance update: AAVE falls 3.3%, leading index lower"
+    url: >-
+      https://www.coindesk.com/coindesk-indices/2026/02/20/coindesk-20-performance-update-aave-falls-3-3-leading-index-lower
+    excerpt: Bitcoin Cash (BCH), down 2.1% from Thursday, was also among the underperformers.
+    source_name: CoinDesk
+    published: "2026-02-20T14:11:46.000Z"
+  - entity: what-next-for-xrp-as-volatility-sinks-to-2026-02-20
+    type: article
+    title: What next for XRP as volatility sinks to 2024 lows
+    url: https://www.coindesk.com/markets/2026/02/20/what-next-for-xrp-as-volatility-sinks-to-2024-lows
+    excerpt: >-
+      Technical traders see a compression setup, with $1.39 as key support and $1.44 as near-term resistance that could
+      open a move toward $1.50 to $1.62 if reclaimed.
+    source_name: CoinDesk
+    published: "2026-02-20T13:08:41.000Z"
+  - entity: bitcoin-gains-is-still-signficantly-un-2026-02-20
+    type: article
+    title: Bitcoin gains, is still 'signficantly undervalued,' Bitwise says. 'Extreme fear' dominates.
+    url: >-
+      https://www.coindesk.com/daybook-us/2026/02/20/bitcoin-gains-is-still-signficantly-undervalued-bitwise-says-extreme-fear-dominates
+    excerpt: Your day-ahead look for Feb. 20, 2026
+    source_name: CoinDesk
+    published: "2026-02-20T12:15:00.000Z"
+  - entity: dual-south-korean-listings-send-ethereum-2026-02-20
+    type: article
+    title: Dual South Korean listings send Ethereum layer-2 token AZTEC surging 82%
+    url: https://www.coindesk.com/markets/2026/02/20/dual-s-korea-listings-send-ethereum-layer-2-token-aztec-surging-82
+    excerpt: >-
+      Korean exchanges Upbit and Bithumb both added local currency pairs for the privacy-focused layer-2 token,
+      triggering a sharp move in a thinly traded market.
+    source_name: CoinDesk
+    published: "2026-02-20T11:42:25.000Z"
+  - entity: nvidia-options-are-priced-for-a-perfect-2026-02-20
+    type: article
+    title: Nvidia options are priced for a perfect earnings outlook. These are your smarter trades.
+    url: >-
+      https://www.marketwatch.com/story/nvidia-options-are-priced-for-a-perfect-earnings-outlook-these-are-your-smarter-trades-4cac5291?mod=mw_rss_topstories
+    excerpt: Earnings reports will flood the market next week. Could this be the juice the S&P 500 needs?
+    source_name: MarketWatch
+    published: "2026-02-20T19:51:00.000Z"
+  - entity: will-american-companies-get-tariff-refun-2026-02-20
+    type: article
+    title: Will American companies get tariff refunds after the Supreme Court decision? What we know so far.
+    url: >-
+      https://www.marketwatch.com/story/will-the-u-s-give-tariff-refunds-after-the-supreme-court-decision-what-we-know-so-far-5d1bf6fb?mod=mw_rss_topstories
+    excerpt: >-
+      The Supreme Court&#x2019;s decision striking down most of President Donald Trump&#x2019;s tariffs left at least
+      one big question unanswered: What about refunds?
+    source_name: MarketWatch
+    published: "2026-02-20T19:24:00.000Z"
+  - entity: x2018-it-x2019-s-a-life-changing-sum-2026-02-20
+    type: article
+    title: >-
+      &#x2018;It&#x2019;s a life-changing sum&#x2019;: Can I stop my kids from using their inheritance to support
+      political causes I vehemently oppose?
+    url: >-
+      https://www.marketwatch.com/story/its-a-life-changing-sum-can-i-stop-my-kids-from-using-their-inheritance-to-support-political-causes-i-vehemently-oppose-90809fd7?mod=mw_rss_topstories
+    excerpt: >-
+      &#x201d;I would hate for our money to end up in the hands of organizations that oppose everything we have
+      supported throughout our lives.&#x201d;
+    source_name: MarketWatch
+    published: "2026-02-20T19:15:00.000Z"
+  - entity: supreme-court-rejects-trump-x2019-s-tar-2026-02-20
+    type: article
+    title: Supreme Court rejects Trump&#x2019;s tariffs. The president is already rolling out new ones.
+    url: >-
+      https://www.marketwatch.com/story/supreme-court-rejects-trumps-tariffs-heres-what-the-president-could-try-to-use-instead-c09ec3fa?mod=mw_rss_topstories
+    excerpt: >-
+      The U.S. Supreme Court said President Trump exceeded his authority in using a 1977 law to justify a large swath of
+      his tariffs, but that does not mean he&#x2019;s now unable to slap tariffs on other c
+    source_name: MarketWatch
+    published: "2026-02-20T19:09:00.000Z"
+  - entity: coreweave-x2019-s-stock-drops-why-a-4-2026-02-20
+    type: article
+    title: CoreWeave&#x2019;s stock drops. Why a $4 billion Blue Owl funding snag has investors on edge.
+    url: >-
+      https://www.marketwatch.com/story/coreweaves-stock-drops-why-a-4-billion-blue-owl-funding-snag-has-investors-on-edge-1f4760f6?mod=mw_rss_topstories
+    excerpt: >-
+      CoreWeave&#x2019;s below-investment-grade credit rating has reportedly spooked lenders, raising questions about
+      how the neocloud can maintain its capital-intensive business.
+    source_name: MarketWatch
+    published: "2026-02-20T19:03:00.000Z"
+  - entity: retailers-could-win-big-on-a-repeal-of-t-2026-02-20
+    type: article
+    title: Retailers could win big on a repeal of Trump&#x2019;s tariffs. Here&#x2019;s why the stocks aren&#x2019;t rising.
+    url: >-
+      https://www.marketwatch.com/story/retailers-could-be-big-winners-in-a-repeal-of-trumps-tariffs-heres-why-the-stocks-arent-rising-224ed022?mod=mw_rss_topstories
+    excerpt: >-
+      Target, Nike and Hasbro stand to be big beneficiaries as the SCOTUS ruling could lower costs, analysts say, but
+      stocks of retail giants like Walmart and Costco fell.
+    source_name: MarketWatch
+    published: "2026-02-20T19:00:00.000Z"
+  - entity: the-biggest-purchase-in-life-now-seems-u-2026-02-20
+    type: article
+    title: The biggest purchase in life now seems unaffordable &#x2014; and that&#x2019;s putting consumers in a sour mood
+    url: >-
+      https://www.marketwatch.com/story/the-biggest-purchase-in-life-now-seems-unaffordable-and-thats-putting-consumers-in-a-sour-mood-30d0ba3e?mod=mw_rss_topstories
+    excerpt: Americans are gloomy about spending despite encouraging inflation and unemployment trends.
+    source_name: MarketWatch
+    published: "2026-02-20T18:51:00.000Z"
+  - entity: why-nvidia-is-x2018-highly-motivated-2026-02-20
+    type: article
+    title: Why Nvidia is &#x2018;highly motivated&#x2019; to keep investing in OpenAI
+    url: >-
+      https://www.marketwatch.com/story/why-nvidia-is-highly-motivated-to-keep-investing-in-openai-8c2186c0?mod=mw_rss_topstories
+    excerpt: >-
+      The chip maker&#x2019;s investment is a hedge against Google and a way to keep demand for its chips, an analyst
+      says.
+    source_name: MarketWatch
+    published: "2026-02-20T18:51:00.000Z"
+  - entity: adding-these-stocks-to-your-401-k-could-2026-02-20
+    type: article
+    title: Adding these stocks to your 401(k) could protect against crises like a war with Iran
+    url: >-
+      https://www.marketwatch.com/story/adding-these-stocks-to-your-401-k-could-protect-against-crises-like-war-with-iran-b802dd88?mod=mw_rss_topstories
+    excerpt: Subverting the conventional wisdom that the only stock exposure you need is in the broad indexes.
+    source_name: MarketWatch
+    published: "2026-02-20T18:39:00.000Z"
+  - entity: trump-x2019-s-tariff-loss-is-a-win-for-2026-02-20
+    type: article
+    title: Trump&#x2019;s tariff loss is a win for your relationship
+    url: >-
+      https://www.marketwatch.com/story/tariff-proof-your-partnership-how-couples-can-turn-economic-hurdles-into-financial-wins-971134e9?mod=mw_rss_topstories
+    excerpt: The Supreme Court decision just made &#x2018;money talks&#x2019; with your partner a lot less stressful.
+    source_name: MarketWatch
+    published: "2026-02-20T18:33:00.000Z"
+  - entity: denmark-seizes-blacklisted-container-shi-2026-02-20
+    type: article
+    title: Denmark Seizes Blacklisted Container Ship Tied to Iran&#039;s Shadow Fleet
+    url: >-
+      https://oilprice.com/Geopolitics/International/Denmark-Seizes-Blacklisted-Container-Ship-Tied-to-Irans-Shadow-Fleet.html
+    excerpt: >-
+      Denmark detained a container vessel previously blacklisted by Washington under last year&#039;s sweeping Iran
+      sanctions on Thursday, amid suspicions it was operating under a false flag. The Nora was s
+    source_name: OilPrice.com
+    published: "2026-02-20T20:00:00.000Z"
+  - entity: us-oil-drilling-activity-still-going-now-2026-02-20
+    type: article
+    title: US Oil Drilling Activity Still Going Nowhere
+    url: https://oilprice.com/Energy/Crude-Oil/US-Oil-Drilling-Activity-Still-Going-Nowhere.html
+    excerpt: >-
+      The total number of active drilling rigs for oil and gas in the United States stayed the same this week, according
+      to new data that Baker Hughes published on Friday, keeping the total rig count in the
+    source_name: OilPrice.com
+    published: "2026-02-20T18:13:00.000Z"
+  - entity: wood-mackenzie-says-big-oil-s-strategy-h-2026-02-20
+    type: article
+    title: Wood Mackenzie Says Big Oil’s Strategy Has Snapped Back to Upstream
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/Wood-Mackenzie-Says-Big-Oils-Strategy-Has-Snapped-Back-to-Upstream.html
+    excerpt: >-
+      If there was any lingering doubt about what’s keeping Big Oil executives up at night, the fourth-quarter results
+      cleared it up. It’s not slogans. It’s not transition optics. It’s whether they have eno
+    source_name: OilPrice.com
+    published: "2026-02-20T17:30:00.000Z"
+  - entity: kyrgyzstan-s-energy-emergency-opens-the-2026-02-20
+    type: article
+    title: Kyrgyzstan’s Energy Emergency Opens the Door to Russian Nuclear Influence
+    url: >-
+      https://oilprice.com/Geopolitics/Asia/Kyrgyzstans-Energy-Emergency-Opens-the-Door-to-Russian-Nuclear-Influence.html
+    excerpt: >-
+      In late 2025, during his visit to Kyrgyzstan, Russia’s President Vladimir Putin declared Russia’s readiness to
+      build a small modular nuclear power reactor (SMR) in Kyrgyzstan, thereby signaling Moscow
+    source_name: OilPrice.com
+    published: "2026-02-20T17:00:00.000Z"
+  - entity: ft-uncovers-90-billion-russian-oil-smug-2026-02-20
+    type: article
+    title: FT Uncovers $90 Billion Russian Oil Smuggling Operation
+    url: https://oilprice.com/Latest-Energy-News/World-News/FT-Uncovers-90-Billion-Russian-Oil-Smuggling-Operation.html
+    excerpt: >-
+      Nearly fifty seemingly separate companies have been involved in coordinating to mask the origin of Russian oil,
+      moving crude worth at least $90 billion, an investigation of the Financial Times has fou
+    source_name: OilPrice.com
+    published: "2026-02-20T16:30:00.000Z"
+  - entity: supreme-court-strikes-down-trump-s-emerg-2026-02-20
+    type: article
+    title: Supreme Court Strikes Down Trump’s Emergency Tariffs, Energy Trade Faces Reset
+    url: >-
+      https://oilprice.com/Energy/Energy-General/Supreme-Court-Strikes-Down-Trumps-Emergency-Tariffs-Energy-Trade-Faces-Reset.html
+    excerpt: >-
+      The U.S. Supreme Court just kneecapped one of the most aggressive trade levers Washington has pulled in decades,
+      and energy markets are now left sorting out what sticks and what doesn’t. In a 6–3 ruli
+    source_name: OilPrice.com
+    published: "2026-02-20T15:53:00.000Z"
+  - entity: u-s-iran-tensions-threaten-to-send-oil-2026-02-20
+    type: article
+    title: U.S.-Iran Tensions Threaten to Send Oil Tanker Rates Soaring
+    url: https://oilprice.com/Latest-Energy-News/World-News/US-Iran-Tensions-Threaten-to-Send-Oil-Tanker-Rates-Soaring.html
+    excerpt: "The ratcheting up of tensions between the United States and Iran could push an already red-hot supertanker market even higher with rates soaring to the highest level since 2019, analysts say.\_ The dai"
+    source_name: OilPrice.com
+    published: "2026-02-20T15:30:00.000Z"
+  - entity: experts-sees-even-odds-of-peace-or-confl-2026-02-20
+    type: article
+    title: Experts Sees Even Odds of Peace or Conflict With Iran
+    url: https://oilprice.com/Geopolitics/Middle-East/Experts-Sees-Even-Odds-of-Peace-or-Conflict-With-Iran.html
+    excerpt: >-
+      After US-Iran nuclear talks concluded in Geneva under heavy American pressure on Tehran to curb its nuclear
+      activities, leading Washington experts say the crisis now stands at a tipping point, with th
+    source_name: OilPrice.com
+    published: "2026-02-20T15:00:00.000Z"
+  - entity: the-politics-behind-the-17-billion-gaza-2026-02-20
+    type: article
+    title: The Politics Behind the $17 Billion Gaza Pledge
+    url: https://oilprice.com/Energy/Energy-General/The-Politics-Behind-the-17-Billion-Gaza-Pledge.html
+    excerpt: >-
+      Politics, Geopolitics & Conflict The next strategic territory emerging as a point of friction on the world stage
+      is the Chagos Islands. The UK is preparing to transfer sovereignty of the islands to Ma
+    source_name: OilPrice.com
+    published: "2026-02-20T14:30:00.000Z"
+  - entity: satellite-images-reveal-iran-hardening-k-2026-02-20
+    type: article
+    title: Satellite Images Reveal Iran Hardening Key Nuclear Facilities
+    url: https://oilprice.com/Energy/Energy-General/Satellite-Images-Reveal-Iran-Hardening-Key-Nuclear-Facilities.html
+    excerpt: >-
+      Iran is burying parts of its nuclear infrastructure because it is preparing for a U.S. strike, not an invasion.
+      The U.S. has the ability to hit fixed targets inside Iran instantly, without moving grou
+    source_name: OilPrice.com
+    published: "2026-02-20T14:30:00.000Z"
+  - entity: inscope-nabs-14-5m-to-solve-the-pain-of-2026-02-20
+    type: article
+    title: InScope nabs $14.5M to solve the pain of financial reporting
+    url: https://techcrunch.com/2026/02/20/inscope-nabs-14-5m-to-solve-the-pain-of-financial-reporting/
+    excerpt: >-
+      The startup, founded by accountants who worked at Flexport, Miro, Hopin and Thrive Global, automates the
+      difficulties of prepping financial statements.
+    source_name: TechCrunch
+    published: "2026-02-20T19:24:57.000Z"
+  - entity: great-news-for-xai-grok-is-now-pretty-g-2026-02-20
+    type: article
+    title: "Great news for xAI: Grok is now pretty good at answering questions about Baldur’s Gate"
+    url: >-
+      https://techcrunch.com/2026/02/20/great-news-for-xai-grok-is-now-pretty-good-at-answering-questions-about-baldurs-gate/
+    excerpt: >-
+      A new report from Business Insider reveals that high-level engineers at xAI were pulled off other projects to make
+      sure Grok could answer detailed questions about the video game Baldur's Gate.
+    source_name: TechCrunch
+    published: "2026-02-20T18:26:54.000Z"
+  - entity: 8216-toy-story-5-8217-takes-aim-at-c-2026-02-20
+    type: article
+    title: "&#8216;Toy Story 5&#8217; takes aim at creepy AI toys: &#8216;I&#8217;m always listening&#8217;"
+    url: https://techcrunch.com/2026/02/20/toy-story-5-takes-aim-at-creepy-ai-toys-im-always-listening/
+    excerpt: Addictive, AI-enabled tablets are taking over, and also, Woody is balding in the new Toy Story movie, out June 19.
+    source_name: TechCrunch
+    published: "2026-02-20T16:25:54.000Z"
+  - entity: ai-s-promise-to-indie-filmmakers-faster-2026-02-20
+    type: article
+    title: "AI’s promise to indie filmmakers: Faster, cheaper, lonelier"
+    url: https://techcrunch.com/2026/02/20/ais-promise-to-indie-filmmakers-faster-cheaper-lonelier/
+    excerpt: >-
+      AI expands access to filmmaking for resource-constrained creators. But as efficiency becomes the industry’s north
+      star, creativity risks being overwhelmed by a deluge of low-effort, AI-generated conte
+    source_name: TechCrunch
+    published: "2026-02-20T15:30:00.000Z"
+  - entity: peak-xv-raises-1-3b-doubles-down-on-ai-2026-02-20
+    type: article
+    title: Peak XV raises $1.3B, doubles down on AI as global VC rivalry in India heats up
+    url: https://techcrunch.com/2026/02/20/peak-xv-raises-1-3b-doubles-down-on-ai-as-global-vc-rivalry-in-india-heats-up/
+    excerpt: >-
+      Peak XV says most of its new capital will target India as the firm prioritizes AI, fintech and cross-border bets
+      while navigating recent partner departures.
+    source_name: TechCrunch
+    published: "2026-02-20T15:10:40.000Z"
+  - entity: techcrunch-disrupt-2026-super-early-bird-2026-02-20
+    type: article
+    title: "TechCrunch Disrupt\_2026 Super Early Bird rates end in\_1\_week"
+    url: https://techcrunch.com/2026/02/20/techcrunch-disrupt-2026-super-early-bird-rates-end-in-1-week/
+    excerpt: >-
+      The lowest ticket rates of the year for TechCrunch Disrupt 2026 end next Friday, February 27. Save up to $680 on
+      your pass. Register now before prices increase.
+    source_name: TechCrunch
+    published: "2026-02-20T15:00:00.000Z"
+  - entity: openai-says-18-to-24-year-olds-account-2026-02-20
+    type: article
+    title: OpenAI says 18- to 24-year-olds account for nearly 50% of ChatGPT usage in India
+    url: https://techcrunch.com/2026/02/20/openai-says-18-to-24-year-olds-account-for-nearly-50-of-chatgpt-usage-in-india/
+    excerpt: >-
+      The company said on Friday that users between 18 and 24 years of age account for nearly 50% of all messages sent
+      by Indians to ChatGPT, and users under 30 account for 80% of usage in the country.
+    source_name: TechCrunch
+    published: "2026-02-20T13:57:03.000Z"
+  - entity: uae-8217-s-g42-teams-up-with-cerebras-t-2026-02-20
+    type: article
+    title: UAE&#8217;s G42 teams up with Cerebras to deploy 8 exaflops of compute in India
+    url: https://techcrunch.com/2026/02/20/uaes-g42-teams-up-with-cerebras-to-deploy-8-exaflops-of-compute-in-india/
+    excerpt: >-
+      Abu Dhabi-based tech company G42 has partnered with U.S.-based chipmaker Cerebras to deploy 8 exaflops of compute
+      through a new system in India.
+    source_name: TechCrunch
+    published: "2026-02-20T11:58:15.000Z"
+  - entity: general-catalyst-commits-5b-to-india-ov-2026-02-20
+    type: article
+    title: General Catalyst commits $5B to India over five years
+    url: https://techcrunch.com/2026/02/19/general-catalyst-commits-5b-to-india-over-five-years/
+    excerpt: The pledge marks a sharp jump from General Catalyst's earlier $500 million–$1 billion India earmark.
+    source_name: TechCrunch
+    published: "2026-02-20T06:41:44.000Z"
+  - entity: google-8217-s-new-gemini-pro-model-has-2026-02-20
+    type: article
+    title: Google&#8217;s new Gemini Pro model has record benchmark scores — again
+    url: https://techcrunch.com/2026/02/19/googles-new-gemini-pro-model-has-record-benchmark-scores-again/
+    excerpt: Gemini 3.1 Pro promises a Google LLM capable of handling more complex forms of work.
+    source_name: TechCrunch
+    published: "2026-02-20T00:55:22.000Z"
+  - entity: with-nih-in-chaos-its-controversial-dir-2026-02-20
+    type: article
+    title: With NIH in chaos, its controversial director is taking over CDC, too
+    url: https://arstechnica.com/health/2026/02/with-nih-in-chaos-its-controversial-director-is-taking-over-cdc-too/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-02-20T19:44:39.000Z"
+  - entity: wikipedia-blacklists-archive-today-star-2026-02-20
+    type: article
+    title: Wikipedia blacklists Archive.today, starts removing 695,000 archive links
+    url: >-
+      https://arstechnica.com/tech-policy/2026/02/wikipedia-bans-archive-today-after-site-executed-ddos-and-altered-web-captures/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-02-20T18:35:43.000Z"
+  - entity: why-final-fantasy-is-now-targeting-pc-as-2026-02-20
+    type: article
+    title: Why Final Fantasy is now targeting PC as its "lead platform"
+    url: https://arstechnica.com/gaming/2026/02/why-final-fantasy-is-now-targeting-pc-as-its-lead-platform/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-02-20T17:26:59.000Z"
+  - entity: million-year-old-fossil-skulls-from-ch-2026-02-20
+    type: article
+    title: "\"Million-year-old\" fossil skulls from China are far older—and not Denisovans"
+    url: >-
+      https://arstechnica.com/science/2026/02/new-dates-on-chinese-fossils-raise-question-of-how-many-times-we-left-africa/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-02-20T17:03:06.000Z"
+  - entity: its-outright-war-for-the-iron-throne-in-2026-02-20
+    type: article
+    title: It's outright war for the Iron Throne in House of the Dragon S3 teaser
+    url: https://arstechnica.com/culture/2026/02/its-outright-war-for-the-iron-throne-in-house-of-the-dragon-s3-teaser/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-02-20T16:40:31.000Z"
+  - entity: nintendo-brings-gba-era-pok-mon-to-the-s-2026-02-20
+    type: article
+    title: Nintendo brings GBA-era Pokémon to the Switch, but not Switch Online subscribers
+    url: >-
+      https://arstechnica.com/gaming/2026/02/pokemon-red-and-greens-gba-remakes-are-getting-re-released-on-switch-for-20-a-pop/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-02-20T16:30:21.000Z"
+  - entity: supreme-court-blocks-trumps-emergency-t-2026-02-20
+    type: article
+    title: Supreme Court blocks Trump's emergency tariffs, billions in refunds may be owed
+    url: >-
+      https://arstechnica.com/tech-policy/2026/02/supreme-court-blocks-trumps-emergency-tariffs-billions-in-refunds-may-be-owed/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-02-20T15:37:15.000Z"
+  - entity: tesla-slashes-cybertruck-prices-as-it-tr-2026-02-20
+    type: article
+    title: Tesla slashes Cybertruck prices as it tries to move (unpainted) metal
+    url: https://arstechnica.com/cars/2026/02/tesla-slashes-cybertruck-prices-as-it-tries-to-move-unpainted-metal/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-02-20T14:31:05.000Z"
+  - entity: an-ai-coding-bot-took-down-amazon-web-se-2026-02-20
+    type: article
+    title: An AI coding bot took down Amazon Web Services
+    url: https://arstechnica.com/ai/2026/02/an-ai-coding-bot-took-down-amazon-web-services/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-02-20T14:13:32.000Z"
+  - entity: microsoft-deletes-blog-telling-users-to-2026-02-20
+    type: article
+    title: Microsoft deletes blog telling users to train AI on pirated Harry Potter books
+    url: >-
+      https://arstechnica.com/tech-policy/2026/02/microsoft-removes-guide-on-how-to-train-llms-on-pirated-harry-potter-books/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-02-20T12:11:28.000Z"
