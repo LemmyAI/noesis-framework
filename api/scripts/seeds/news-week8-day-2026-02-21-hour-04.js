@@ -1,0 +1,69 @@
+/**
+ * NOESIS Seed: Daily News — 2026-02-21 04:00 (Week 8, 2026)
+ * Namespace: news.week8.day-2026-02-21
+ * Built by seed-factory on 2026-02-21
+ * Auto-gathered news: 13 stories, 2026-02-21 to 2026-02-21
+ * Entities: 13 | Relations: 0 | Sources: 13
+ */
+module.exports = async function seed_news_week8_day_2026_02_21_hour_04(client) {
+  console.log('  \u2192 Seeding: news-week8-day-2026-02-21-hour-04');
+
+  // === NAMESPACE ===
+  await client.query(`
+    INSERT INTO namespace_configs (namespace, extends, config) VALUES
+    ('news', 'default', '{}'::jsonb)
+    ON CONFLICT (namespace) DO NOTHING
+  `);
+  await client.query(`
+    INSERT INTO namespace_configs (namespace, extends, config) VALUES
+    ('news.week8', 'news', '{}'::jsonb)
+    ON CONFLICT (namespace) DO NOTHING
+  `);
+  await client.query(`
+    INSERT INTO namespace_configs (namespace, extends, config) VALUES
+    ('news.week8.day-2026-02-21', 'news.week8', '{}'::jsonb)
+    ON CONFLICT (namespace) DO NOTHING
+  `);
+
+  // === ENTITIES ===
+  await client.query(`
+    INSERT INTO entities (id, namespace, type, name, key, metadata, temporal, credibility) VALUES
+    ('trump-brings-in-new-10-tariff-as-suprem-2026-02-21', 'news.week8.day-2026-02-21', 'Event', 'Trump brings in new 10% tariff as Supreme Court rejects his global import taxes', NULL, '{"category":"geopolitics","description":"The Supreme Court decision striking down some of Trump''s most sweeping tariffs injects new uncertainty into global trade."}'::jsonb, '{"timestamp":"2026-02-21T01:43:05.000Z","precision":"day"}'::jsonb, '{"confidence":"verified","sources_count":1}'::jsonb),
+    ('trump-lashes-out-at-supreme-court-justic-2026-02-21', 'news.week8.day-2026-02-21', 'Event', 'Trump lashes out at Supreme Court justices over tariffs ruling', NULL, '{"category":"geopolitics","description":"The six justices who voted against the tariffs, dealing a major blow to his signature economic policy, should be \\"absolutely ashamed\\", Trump said."}'::jsonb, '{"timestamp":"2026-02-21T02:19:29.000Z","precision":"day"}'::jsonb, '{"confidence":"verified","sources_count":1}'::jsonb),
+    ('killing-of-nationalist-student-leaves-fr-2026-02-21', 'news.week8.day-2026-02-21', 'Event', 'Killing of nationalist student leaves French far left in deep trouble as elections loom', NULL, '{"category":"geopolitics","description":"Far-left militants are suspected of being behind Quentin Deranque''s death and the party of Jean-Luc Mélenchon is being widely condemned."}'::jsonb, '{"timestamp":"2026-02-21T00:32:16.000Z","precision":"day"}'::jsonb, '{"confidence":"verified","sources_count":1}'::jsonb),
+    ('at-least-10-killed-in-israeli-strikes-on-2026-02-21', 'news.week8.day-2026-02-21', 'Fact', 'At least 10 killed in Israeli strikes on Lebanon - state media', NULL, '{"category":"geopolitics","description":"A senior Hezbollah official was among those reported killed in air strikes on the Bekaa Valley and southern Lebanon."}'::jsonb, '{"timestamp":"2026-02-21T02:42:05.000Z","precision":"day"}'::jsonb, '{"confidence":"verified","sources_count":1}'::jsonb),
+    ('anna-murdoch-mann-mother-of-news-corp-h-2026-02-21', 'news.week8.day-2026-02-21', 'Event', 'Anna Murdoch-Mann, mother of News Corp heir, dies aged 81', NULL, '{"category":"geopolitics","description":"The author, journalist and philanthropist died at home in Florida, according to Rupert Murdoch''s news outlets."}'::jsonb, '{"timestamp":"2026-02-21T03:02:20.000Z","precision":"day"}'::jsonb, '{"confidence":"verified","sources_count":1}'::jsonb),
+    ('furious-trump-signs-global-10-duty-afte-2026-02-21', 'news.week8.day-2026-02-21', 'Decision', 'Furious Trump signs global 10% duty after supreme court issues tariff blow', NULL, '{"category":"finance","description":"<p>President calls six justices a ‘disgrace to the nation’ while praising three justices who dissented</p><ul><li><p><a href=\\"https://www.theguardian.com/us-news/live/2026/feb/20/us-iran-nuclear-deal-trump-agreement-strikes-latest-news-live-updates\\">US politics live – latest updates</a></p></li></ul"}'::jsonb, '{"timestamp":"2026-02-21T00:04:01.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('trump-jd-vance-vilify-lawless-supreme-2026-02-21', 'news.week8.day-2026-02-21', 'Event', 'Trump, JD Vance vilify ‘lawless’ Supreme Court justices over tariff ruling', NULL, '{"category":"geopolitics","description":"President Trump calls Supreme Court justices an ''embarrassment to their families'' in 45-minute address to media."}'::jsonb, '{"timestamp":"2026-02-21T02:46:25.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('russia-ukraine-war-list-of-key-events-2026-02-21', 'news.week8.day-2026-02-21', 'Event', 'Russia-Ukraine war: List of key events, day 1,458', NULL, '{"category":"geopolitics","description":"These are the key developments from day 1,458 of Russia''s war on Ukraine."}'::jsonb, '{"timestamp":"2026-02-21T01:25:18.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('us-military-says-it-attacked-vessel-in-p-2026-02-21', 'news.week8.day-2026-02-21', 'Claim', 'US military says it attacked vessel in Pacific Ocean, killing three people', NULL, '{"category":"geopolitics","description":"US military''s Southern Command (SOUTHCOM) claimed the vessel was involved in drug trafficking, without providing proof."}'::jsonb, '{"timestamp":"2026-02-21T01:04:15.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('don-x2019-t-expect-lower-prices-now-tha-2026-02-21', 'news.week8.day-2026-02-21', 'Event', 'Don&#x2019;t expect lower prices now that the Supreme Court has ruled against Trump&#x2019;s tariffs', NULL, '{"category":"finance.markets","description":"The Supreme Court&#x2019;s decision to strike down many of President Donald Trump&#x2019;s tariffs is a massive blow to the president&#x2019;s agenda. But for cost-conscious consumers, the immediate impact could be further economic uncertainty, with few price cuts in store."}'::jsonb, '{"timestamp":"2026-02-21T01:05:00.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('x2018-am-i-crazy-x2019-my-boyfriend-2026-02-21', 'news.week8.day-2026-02-21', 'Event', '&#x2018;Am I crazy?&#x2019; My boyfriend&#x2019;s parents say he shouldn&#x2019;t marry me until he earns $50K a year. Who is to blame here?', NULL, '{"category":"finance.markets","description":"&#x201c;Am I crazy, or are these &#x2018;real&#x2019; concerns from his parents?&#x201d;"}'::jsonb, '{"timestamp":"2026-02-21T00:31:00.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('the-quiet-revolution-reshaping-america-2026-02-21', 'news.week8.day-2026-02-21', 'Event', 'The Quiet Revolution Reshaping America''s Energy Future', NULL, '{"category":"finance.energy","description":"A geothermal revolution is unfolding around the United States in ways both flashy and quiet. As Big Tech becomes increasingly involved in developing alternative energy sources to meet skyrocketing energy demand driven by the AI boom, innovative and advanced geothermal technologies have been taking o"}'::jsonb, '{"timestamp":"2026-02-21T00:00:00.000Z","precision":"day"}'::jsonb, '{"confidence":"medium","sources_count":1}'::jsonb),
+    ('india-8217-s-sarvam-launches-indus-ai-c-2026-02-21', 'news.week8.day-2026-02-21', 'Decision', 'India''s Sarvam launches Indus AI chat app as competition heats up', NULL, '{"category":"technology.ai","description":"Sarvam''s Indus chat app is currently available in beta."}'::jsonb, '{"timestamp":"2026-02-21T01:00:00.000Z","precision":"day"}'::jsonb, '{"confidence":"medium","sources_count":1}'::jsonb)
+    ON CONFLICT (id, version_number) DO NOTHING
+  `);
+  console.log('    Entities: 13');
+
+  // === DATALAYER ===
+  await client.query(`
+    INSERT INTO datalayer (entity_id, source_type, title, url, excerpt, source_name, published_at) VALUES
+    ('trump-brings-in-new-10-tariff-as-suprem-2026-02-21', 'article', 'Trump brings in new 10% tariff as Supreme Court rejects his global import taxes', 'https://www.bbc.com/news/articles/cn8146l0n55o', 'The Supreme Court decision striking down some of Trump''s most sweeping tariffs injects new uncertainty into global trade.', 'BBC News', '2026-02-21T01:43:05.000Z'),
+    ('trump-lashes-out-at-supreme-court-justic-2026-02-21', 'article', 'Trump lashes out at Supreme Court justices over tariffs ruling', 'https://www.bbc.com/news/articles/cd9g0e7zd8wo', 'The six justices who voted against the tariffs, dealing a major blow to his signature economic policy, should be "absolutely ashamed", Trump said.', 'BBC News', '2026-02-21T02:19:29.000Z'),
+    ('killing-of-nationalist-student-leaves-fr-2026-02-21', 'article', 'Killing of nationalist student leaves French far left in deep trouble as elections loom', 'https://www.bbc.com/news/articles/cnv61zv534eo', 'Far-left militants are suspected of being behind Quentin Deranque''s death and the party of Jean-Luc Mélenchon is being widely condemned.', 'BBC News', '2026-02-21T00:32:16.000Z'),
+    ('at-least-10-killed-in-israeli-strikes-on-2026-02-21', 'article', 'At least 10 killed in Israeli strikes on Lebanon - state media', 'https://www.bbc.com/news/articles/cvg8914dkl0o', 'A senior Hezbollah official was among those reported killed in air strikes on the Bekaa Valley and southern Lebanon.', 'BBC News', '2026-02-21T02:42:05.000Z'),
+    ('anna-murdoch-mann-mother-of-news-corp-h-2026-02-21', 'article', 'Anna Murdoch-Mann, mother of News Corp heir, dies aged 81', 'https://www.bbc.com/news/articles/cp8150xj36wo', 'The author, journalist and philanthropist died at home in Florida, according to Rupert Murdoch''s news outlets.', 'BBC News', '2026-02-21T03:02:20.000Z'),
+    ('furious-trump-signs-global-10-duty-afte-2026-02-21', 'article', 'Furious Trump signs global 10% duty after supreme court issues tariff blow', 'https://www.theguardian.com/us-news/2026/feb/20/trump-tariff-scotus-response', '<p>President calls six justices a ‘disgrace to the nation’ while praising three justices who dissented</p><ul><li><p><a href="https://www.theguardian.com/us-news/live/2026/feb/20/us-iran-nuclear-deal-', 'The Guardian', '2026-02-21T00:04:01.000Z'),
+    ('trump-jd-vance-vilify-lawless-supreme-2026-02-21', 'article', 'Trump, JD Vance vilify ‘lawless’ Supreme Court justices over tariff ruling', 'https://www.aljazeera.com/news/2026/2/21/trump-jd-vance-vilify-lawless-supreme-court-justices-over-tariff-ruling', 'President Trump calls Supreme Court justices an ''embarrassment to their families'' in 45-minute address to media.', 'Al Jazeera', '2026-02-21T02:46:25.000Z'),
+    ('russia-ukraine-war-list-of-key-events-2026-02-21', 'article', 'Russia-Ukraine war: List of key events, day 1,458', 'https://www.aljazeera.com/news/2026/2/21/russia-ukraine-war-list-of-key-events-day-1458', 'These are the key developments from day 1,458 of Russia''s war on Ukraine.', 'Al Jazeera', '2026-02-21T01:25:18.000Z'),
+    ('us-military-says-it-attacked-vessel-in-p-2026-02-21', 'article', 'US military says it attacked vessel in Pacific Ocean, killing three people', 'https://www.aljazeera.com/news/2026/2/21/us-military-says-it-attacked-vessel-in-pacific-ocean-killing-three-people', 'US military''s Southern Command (SOUTHCOM) claimed the vessel was involved in drug trafficking, without providing proof.', 'Al Jazeera', '2026-02-21T01:04:15.000Z'),
+    ('don-x2019-t-expect-lower-prices-now-tha-2026-02-21', 'article', 'Don&#x2019;t expect lower prices now that the Supreme Court has ruled against Trump&#x2019;s tariffs', 'https://www.marketwatch.com/story/dont-expect-lower-prices-now-that-the-supreme-court-ruled-against-trumps-tariffs-7334f6c9?mod=mw_rss_topstories', 'The Supreme Court&#x2019;s decision to strike down many of President Donald Trump&#x2019;s tariffs is a massive blow to the president&#x2019;s agenda. But for cost-conscious consumers, the immediate i', 'MarketWatch', '2026-02-21T01:05:00.000Z'),
+    ('x2018-am-i-crazy-x2019-my-boyfriend-2026-02-21', 'article', '&#x2018;Am I crazy?&#x2019; My boyfriend&#x2019;s parents say he shouldn&#x2019;t marry me until he earns $50K a year. Who is to blame here?', 'https://www.marketwatch.com/story/weve-been-dating-for-5-years-my-boyfriends-parents-say-he-doesnt-earn-enough-to-marry-should-i-speak-to-his-father-44b48700?mod=mw_rss_topstories', '&#x201c;Am I crazy, or are these &#x2018;real&#x2019; concerns from his parents?&#x201d;', 'MarketWatch', '2026-02-21T00:31:00.000Z'),
+    ('the-quiet-revolution-reshaping-america-2026-02-21', 'article', 'The Quiet Revolution Reshaping America''s Energy Future', 'https://oilprice.com/Energy/Energy-General/The-Quiet-Revolution-Reshaping-Americas-Energy-Future.html', 'A geothermal revolution is unfolding around the United States in ways both flashy and quiet. As Big Tech becomes increasingly involved in developing alternative energy sources to meet skyrocketing ene', 'OilPrice.com', '2026-02-21T00:00:00.000Z'),
+    ('india-8217-s-sarvam-launches-indus-ai-c-2026-02-21', 'article', 'India''s Sarvam launches Indus AI chat app as competition heats up', 'https://techcrunch.com/2026/02/20/indias-sarvam-launches-indus-ai-chat-app-as-competition-heats-up/', 'Sarvam''s Indus chat app is currently available in beta.', 'TechCrunch', '2026-02-21T01:00:00.000Z')
+    ON CONFLICT DO NOTHING
+  `);
+  console.log('    Sources: 13');
+
+  console.log('  \u2713 news-week8-day-2026-02-21-hour-04: 13 entities, 0 relations, 13 sources');
+};
