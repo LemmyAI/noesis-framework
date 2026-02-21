@@ -1,0 +1,163 @@
+seed:
+  name: news-week8-day-2026-02-21-hour-02
+  label: Daily News — 2026-02-21 02:00 (Week 8, 2026)
+  namespace: news.week8.day-2026-02-21
+  description: "Auto-gathered news: 7 stories, 2026-02-21 to 2026-02-21"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week8
+    extends: news
+  - namespace: news.week8.day-2026-02-21
+    extends: news.week8
+entities:
+  - id: trump-lashes-out-at-supreme-court-justic-2026-02-21
+    type: Event
+    name: Trump lashes out at Supreme Court justices over tariffs ruling
+    category: geopolitics
+    description: >-
+      The six justices who voted against the tariffs, dealing a major blow to his signature economic policy, should be
+      "absolutely ashamed", Trump said.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-21T00:49:09.000Z"
+      precision: day
+  - id: trump-imposes-global-10-tariff-and-rail-2026-02-21
+    type: Event
+    name: Trump imposes global 10% tariff and rails against supreme court justices
+    category: finance
+    description: >-
+      <p>President calls decision a ‘disgrace to the nation’ while praising three justices who
+      dissented</p><ul><li><p><a
+      href="https://www.theguardian.com/us-news/live/2026/feb/20/us-iran-nuclear-deal-trump-agreement-strikes-latest-news-live-updates">US
+      politics live – latest updates</a></p></li></ul><p>
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-21T00:04:01.000Z"
+      precision: day
+  - id: us-military-says-it-attacked-vessel-in-p-2026-02-21
+    type: Claim
+    name: US military says it attacked vessel in Pacific Ocean, killing three people
+    category: geopolitics
+    description: >-
+      US military&#039;s Southern Command (SOUTHCOM) claimed the vessel was involved in drug trafficking without
+      providing proof.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-21T01:04:15.000Z"
+      precision: day
+  - id: don-x2019-t-expect-lower-prices-now-tha-2026-02-21
+    type: Event
+    name: Don&#x2019;t expect lower prices now that the Supreme Court has ruled against Trump&#x2019;s tariffs
+    category: finance.markets
+    description: >-
+      The Supreme Court&#x2019;s decision to strike down many of President Donald Trump&#x2019;s tariffs is a massive
+      blow to the president&#x2019;s agenda. But for cost-conscious consumers, the immediate impact could be further
+      economic uncertainty, with few price cuts in store.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-21T01:05:00.000Z"
+      precision: day
+  - id: x2018-am-i-crazy-x2019-my-boyfriend-2026-02-21
+    type: Event
+    name: >-
+      &#x2018;Am I crazy?&#x2019; My boyfriend&#x2019;s parents say he shouldn&#x2019;t marry me until he earns $50K a
+      year. Who is to blame here?
+    category: finance.markets
+    description: "&#x201c;Am I crazy, or are these &#x2018;real&#x2019; concerns from his parents?&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-21T00:31:00.000Z"
+      precision: day
+  - id: the-quiet-revolution-reshaping-america-2026-02-21
+    type: Event
+    name: The Quiet Revolution Reshaping America&#039;s Energy Future
+    category: finance.energy
+    description: >-
+      A geothermal revolution is unfolding around the United States in ways both flashy and quiet. As Big Tech becomes
+      increasingly involved in developing alternative energy sources to meet skyrocketing energy demand driven by the AI
+      boom, innovative and advanced geothermal technologies have been taking o
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-21T00:00:00.000Z"
+      precision: day
+  - id: india-8217-s-sarvam-launches-indus-ai-c-2026-02-21
+    type: Decision
+    name: India&#8217;s Sarvam launches Indus AI chat app as competition heats up
+    category: technology.ai
+    description: Sarvam's Indus chat app is currently available in beta.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-21T01:00:00.000Z"
+      precision: day
+sources:
+  - entity: trump-lashes-out-at-supreme-court-justic-2026-02-21
+    type: article
+    title: Trump lashes out at Supreme Court justices over tariffs ruling
+    url: https://www.bbc.com/news/articles/cd9g0e7zd8wo
+    excerpt: >-
+      The six justices who voted against the tariffs, dealing a major blow to his signature economic policy, should be
+      "absolutely ashamed", Trump said.
+    source_name: BBC News
+    published: "2026-02-21T00:49:09.000Z"
+  - entity: trump-imposes-global-10-tariff-and-rail-2026-02-21
+    type: article
+    title: Trump imposes global 10% tariff and rails against supreme court justices
+    url: https://www.theguardian.com/us-news/2026/feb/20/trump-tariff-scotus-response
+    excerpt: >-
+      <p>President calls decision a ‘disgrace to the nation’ while praising three justices who
+      dissented</p><ul><li><p><a href="https://www.theguardian.com/us-news/live/2026/feb/20/us-iran-nuclear-deal-trum
+    source_name: The Guardian
+    published: "2026-02-21T00:04:01.000Z"
+  - entity: us-military-says-it-attacked-vessel-in-p-2026-02-21
+    type: article
+    title: US military says it attacked vessel in Pacific Ocean, killing three people
+    url: https://www.aljazeera.com/news/2026/2/21/us-military-says-it-attacked-vessel-in-pacific-ocean-killing-three-people
+    excerpt: >-
+      US military&#039;s Southern Command (SOUTHCOM) claimed the vessel was involved in drug trafficking without
+      providing proof.
+    source_name: Al Jazeera
+    published: "2026-02-21T01:04:15.000Z"
+  - entity: don-x2019-t-expect-lower-prices-now-tha-2026-02-21
+    type: article
+    title: Don&#x2019;t expect lower prices now that the Supreme Court has ruled against Trump&#x2019;s tariffs
+    url: >-
+      https://www.marketwatch.com/story/dont-expect-lower-prices-now-that-the-supreme-court-ruled-against-trumps-tariffs-7334f6c9?mod=mw_rss_topstories
+    excerpt: >-
+      The Supreme Court&#x2019;s decision to strike down many of President Donald Trump&#x2019;s tariffs is a massive
+      blow to the president&#x2019;s agenda. But for cost-conscious consumers, the immediate i
+    source_name: MarketWatch
+    published: "2026-02-21T01:05:00.000Z"
+  - entity: x2018-am-i-crazy-x2019-my-boyfriend-2026-02-21
+    type: article
+    title: >-
+      &#x2018;Am I crazy?&#x2019; My boyfriend&#x2019;s parents say he shouldn&#x2019;t marry me until he earns $50K a
+      year. Who is to blame here?
+    url: >-
+      https://www.marketwatch.com/story/weve-been-dating-for-5-years-my-boyfriends-parents-say-he-doesnt-earn-enough-to-marry-should-i-speak-to-his-father-44b48700?mod=mw_rss_topstories
+    excerpt: "&#x201c;Am I crazy, or are these &#x2018;real&#x2019; concerns from his parents?&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-21T00:31:00.000Z"
+  - entity: the-quiet-revolution-reshaping-america-2026-02-21
+    type: article
+    title: The Quiet Revolution Reshaping America&#039;s Energy Future
+    url: https://oilprice.com/Energy/Energy-General/The-Quiet-Revolution-Reshaping-Americas-Energy-Future.html
+    excerpt: >-
+      A geothermal revolution is unfolding around the United States in ways both flashy and quiet. As Big Tech becomes
+      increasingly involved in developing alternative energy sources to meet skyrocketing ene
+    source_name: OilPrice.com
+    published: "2026-02-21T00:00:00.000Z"
+  - entity: india-8217-s-sarvam-launches-indus-ai-c-2026-02-21
+    type: article
+    title: India&#8217;s Sarvam launches Indus AI chat app as competition heats up
+    url: https://techcrunch.com/2026/02/20/indias-sarvam-launches-indus-ai-chat-app-as-competition-heats-up/
+    excerpt: Sarvam's Indus chat app is currently available in beta.
+    source_name: TechCrunch
+    published: "2026-02-21T01:00:00.000Z"
