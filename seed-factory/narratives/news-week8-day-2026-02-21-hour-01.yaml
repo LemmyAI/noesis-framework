@@ -1,0 +1,59 @@
+seed:
+  name: news-week8-day-2026-02-21-hour-01
+  label: Daily News — 2026-02-21 01:00 (Week 8, 2026)
+  namespace: news.week8.day-2026-02-21
+  description: "Auto-gathered news: 2 stories, 2026-02-21 to 2026-02-21"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week8
+    extends: news
+  - namespace: news.week8.day-2026-02-21
+    extends: news.week8
+entities:
+  - id: trump-imposes-global-10-tariff-and-rail-2026-02-21
+    type: Event
+    name: Trump imposes global 10% tariff and rails against supreme court justices
+    category: finance
+    description: >-
+      <p>President calls decision a ‘disgrace to the nation’ while praising three justices who
+      dissented</p><ul><li><p><a
+      href="https://www.theguardian.com/us-news/live/2026/feb/20/us-iran-nuclear-deal-trump-agreement-strikes-latest-news-live-updates">US
+      politics live – latest updates</a></p></li></ul><p>
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-21T00:04:01.000Z"
+      precision: day
+  - id: the-quiet-revolution-reshaping-america-2026-02-21
+    type: Event
+    name: The Quiet Revolution Reshaping America&#039;s Energy Future
+    category: finance.energy
+    description: >-
+      A geothermal revolution is unfolding around the United States in ways both flashy and quiet. As Big Tech becomes
+      increasingly involved in developing alternative energy sources to meet skyrocketing energy demand driven by the AI
+      boom, innovative and advanced geothermal technologies have been taking o
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-21T00:00:00.000Z"
+      precision: day
+sources:
+  - entity: trump-imposes-global-10-tariff-and-rail-2026-02-21
+    type: article
+    title: Trump imposes global 10% tariff and rails against supreme court justices
+    url: https://www.theguardian.com/us-news/2026/feb/20/trump-tariff-scotus-response
+    excerpt: >-
+      <p>President calls decision a ‘disgrace to the nation’ while praising three justices who
+      dissented</p><ul><li><p><a href="https://www.theguardian.com/us-news/live/2026/feb/20/us-iran-nuclear-deal-trum
+    source_name: The Guardian
+    published: "2026-02-21T00:04:01.000Z"
+  - entity: the-quiet-revolution-reshaping-america-2026-02-21
+    type: article
+    title: The Quiet Revolution Reshaping America&#039;s Energy Future
+    url: https://oilprice.com/Energy/Energy-General/The-Quiet-Revolution-Reshaping-Americas-Energy-Future.html
+    excerpt: >-
+      A geothermal revolution is unfolding around the United States in ways both flashy and quiet. As Big Tech becomes
+      increasingly involved in developing alternative energy sources to meet skyrocketing ene
+    source_name: OilPrice.com
+    published: "2026-02-21T00:00:00.000Z"
