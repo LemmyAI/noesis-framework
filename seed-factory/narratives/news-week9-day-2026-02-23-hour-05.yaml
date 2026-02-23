@@ -1,0 +1,279 @@
+seed:
+  name: news-week9-day-2026-02-23-hour-05
+  label: Daily News — 2026-02-23 05:00 (Week 9, 2026)
+  namespace: news.week9.day-2026-02-23
+  description: "Auto-gathered news: 13 stories, 2026-02-23 to 2026-02-23"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week9
+    extends: news
+  - namespace: news.week9.day-2026-02-23
+    extends: news.week9
+entities:
+  - id: mexicos-most-wanted-drug-lord-el-mench-2026-02-23
+    type: Fact
+    name: Mexico's most wanted drug lord 'El Mencho' killed in military operation
+    category: geopolitics
+    description: Nemesio Oseguera Cervantes, known as "El Mencho", headed one of Mexico's most powerful drug cartels.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T00:55:41.000Z"
+      precision: day
+  - id: kim-jong-un-re-appointed-leader-of-north-2026-02-23
+    type: Event
+    name: Kim Jong Un re-appointed leader of North Korea's ruling party
+    category: geopolitics
+    description: The announcement by the rubber-stamp party congress comes as little surprise.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T02:40:35.000Z"
+      precision: day
+  - id: how-budget-fast-fashion-is-taking-small-2026-02-23
+    type: Event
+    name: How budget fast fashion is taking small-town India by storm
+    category: finance
+    description: More Indians in small towns are now shopping for affordable brands instead of unlabelled goods in the bazaars.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T00:40:05.000Z"
+      precision: day
+  - id: are-you-cut-out-for-living-and-working-i-2026-02-23
+    type: Event
+    name: Are you cut out for living and working in Antarctica?
+    category: finance
+    description: Jobs are available on the icy continent for chefs, plumbers, carpenters and even hairdressers.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T00:01:56.000Z"
+      precision: day
+  - id: who-was-el-mencho-the-former-police-off-2026-02-23
+    type: Fact
+    name: Who was El Mencho, the former police officer who co-founded an ultraviolent cartel in Mexico?
+    category: geopolitics
+    description: >-
+      <p>Drug lord who was killed by Mexican special forces on Sunday led a cartel known for aggression and
+      military-style arsenal</p><ul><li><p><a
+      href="https://www.theguardian.com/world/2026/feb/22/mexican-security-forces-reportedly-kill-drug-cartel-boss-el-mencho">Violence
+      erupts after Mexican security
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T02:52:09.000Z"
+      precision: day
+  - id: violence-erupts-after-mexican-security-f-2026-02-23
+    type: Event
+    name: Violence erupts after Mexican security forces kill drug cartel boss ‘El Mencho’
+    category: geopolitics
+    description: >-
+      <p>Death of Nemesio Oseguera Cervantes, one of world’s most wanted drug traffickers, sets off wave of disorder
+      across several Mexican states</p><ul><li><p><a
+      href="https://www.theguardian.com/world/2026/feb/23/who-was-el-mencho-drug-cartel-boss-killed-mexico">Who was El
+      Mencho, the former police off
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T00:39:49.000Z"
+      precision: day
+  - id: uk-job-vacancies-fall-to-lowest-level-s-2026-02-23
+    type: Event
+    name: UK job vacancies ‘fall to lowest level since pandemic’
+    category: finance
+    description: >-
+      <p>Advertised roles dropped 3% last month to 695,000 – first dip below 700,000 since January 2021, job site Adzuna
+      says</p><p>The number of job vacancies in the UK has tumbled to the lowest level in five years, research suggests,
+      falling to levels not seen since the pandemic.</p><p>The number of job
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T00:01:51.000Z"
+      precision: day
+  - id: russia-ukraine-war-list-of-key-events-2026-02-23
+    type: Event
+    name: "Russia-Ukraine war: List of key events, day 1,460"
+    category: geopolitics
+    description: These are the key developments from day 1,460 of Russia’s war on Ukraine.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T02:02:59.000Z"
+      precision: day
+  - id: bitcoin-slides-5-tumbling-below-65-0-2026-02-23
+    type: Event
+    name: Bitcoin slides 5%,  tumbling below $65,000 as whale selling grows and recent buyers lock in losses
+    category: finance.crypto
+    description: >-
+      On-chain data from Glassnode and CryptoQuant shows large holders dominating exchange inflows while short-term
+      investors continue to sell at a loss, pointing to a fragile base-building phase.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T01:49:11.000Z"
+      precision: day
+  - id: u-s-stock-futures-dollar-and-bitcoin-d-2026-02-23
+    type: Event
+    name: U.S. stock futures, dollar and bitcoin drop as investors await clarity on Trump&#x2019;s latest tariff plans
+    category: finance.markets
+    description: >-
+      U.S. stock-index futures declined Sunday, as investors grappled with the implications of Friday&#x2019;s Supreme
+      Court ruling that overturned most of President Donald Trump&#x2019;s tariffs.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T04:02:00.000Z"
+      precision: day
+  - id: tariff-costs-and-refunds-take-the-spotli-2026-02-23
+    type: Event
+    name: Tariff costs and refunds take the spotlight as Home Depot, TJX and other retailers report earnings this week
+    category: finance.markets
+    description: >-
+      The Supreme Court struck down most of the Trump administration&#x2019;s tariffs, but uncertainty remains for store
+      chains.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T01:57:00.000Z"
+      precision: day
+  - id: my-wife-x2019-s-credit-card-payment-is-2026-02-23
+    type: Event
+    name: My wife&#x2019;s credit-card payment is three months overdue. As an authorized user, am I in trouble?
+    category: finance.markets
+    description: "&#x201c;All correspondence regarding the account was sent to my wife&#x2019;s email.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T00:26:00.000Z"
+      precision: day
+  - id: oil-traders-may-be-pricing-iran-risk-too-2026-02-23
+    type: Claim
+    name: Oil Traders May Be Pricing Iran Risk Too Lightly
+    category: finance.energy
+    description: >-
+      Crude oil prices on Thursday settled at the highest in six months, with Brent crude topping $71 per barrel and WTI
+      over $66. However, this may be just the start of a much stronger rally—it all depends on developments between the
+      United States and Iran. The latest round of negotiations between the tw
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T00:00:00.000Z"
+      precision: day
+narratives:
+  - name: Crypto Markets
+    steps:
+      - from: bitcoin-slides-5-tumbling-below-65-0-2026-02-23
+        to: u-s-stock-futures-dollar-and-bitcoin-d-2026-02-23
+        type: causes
+sources:
+  - entity: mexicos-most-wanted-drug-lord-el-mench-2026-02-23
+    type: article
+    title: Mexico's most wanted drug lord 'El Mencho' killed in military operation
+    url: https://www.bbc.com/news/articles/cy4wywnrdd8o
+    excerpt: Nemesio Oseguera Cervantes, known as "El Mencho", headed one of Mexico's most powerful drug cartels.
+    source_name: BBC News
+    published: "2026-02-23T00:55:41.000Z"
+  - entity: kim-jong-un-re-appointed-leader-of-north-2026-02-23
+    type: article
+    title: Kim Jong Un re-appointed leader of North Korea's ruling party
+    url: https://www.bbc.com/news/articles/cvg18588mdko
+    excerpt: The announcement by the rubber-stamp party congress comes as little surprise.
+    source_name: BBC News
+    published: "2026-02-23T02:40:35.000Z"
+  - entity: how-budget-fast-fashion-is-taking-small-2026-02-23
+    type: article
+    title: How budget fast fashion is taking small-town India by storm
+    url: https://www.bbc.com/news/articles/c15xvy7k2q5o
+    excerpt: More Indians in small towns are now shopping for affordable brands instead of unlabelled goods in the bazaars.
+    source_name: BBC Business
+    published: "2026-02-23T00:40:05.000Z"
+  - entity: are-you-cut-out-for-living-and-working-i-2026-02-23
+    type: article
+    title: Are you cut out for living and working in Antarctica?
+    url: https://www.bbc.com/news/articles/cn0e30d9wj9o
+    excerpt: Jobs are available on the icy continent for chefs, plumbers, carpenters and even hairdressers.
+    source_name: BBC Business
+    published: "2026-02-23T00:01:56.000Z"
+  - entity: who-was-el-mencho-the-former-police-off-2026-02-23
+    type: article
+    title: Who was El Mencho, the former police officer who co-founded an ultraviolent cartel in Mexico?
+    url: https://www.theguardian.com/world/2026/feb/23/who-was-el-mencho-drug-cartel-boss-killed-mexico
+    excerpt: >-
+      <p>Drug lord who was killed by Mexican special forces on Sunday led a cartel known for aggression and
+      military-style arsenal</p><ul><li><p><a href="https://www.theguardian.com/world/2026/feb/22/mexica
+    source_name: The Guardian
+    published: "2026-02-23T02:52:09.000Z"
+  - entity: violence-erupts-after-mexican-security-f-2026-02-23
+    type: article
+    title: Violence erupts after Mexican security forces kill drug cartel boss ‘El Mencho’
+    url: https://www.theguardian.com/world/2026/feb/22/mexican-security-forces-reportedly-kill-drug-cartel-boss-el-mencho
+    excerpt: >-
+      <p>Death of Nemesio Oseguera Cervantes, one of world’s most wanted drug traffickers, sets off wave of disorder
+      across several Mexican states</p><ul><li><p><a href="https://www.theguardian.com/world/20
+    source_name: The Guardian
+    published: "2026-02-23T00:39:49.000Z"
+  - entity: uk-job-vacancies-fall-to-lowest-level-s-2026-02-23
+    type: article
+    title: UK job vacancies ‘fall to lowest level since pandemic’
+    url: https://www.theguardian.com/business/2026/feb/23/uk-job-vacancies-fall-to-lowest-level-since-pandemic
+    excerpt: >-
+      <p>Advertised roles dropped 3% last month to 695,000 – first dip below 700,000 since January 2021, job site Adzuna
+      says</p><p>The number of job vacancies in the UK has tumbled to the lowest level in f
+    source_name: The Guardian
+    published: "2026-02-23T00:01:51.000Z"
+  - entity: russia-ukraine-war-list-of-key-events-2026-02-23
+    type: article
+    title: "Russia-Ukraine war: List of key events, day 1,460"
+    url: https://www.aljazeera.com/news/2026/2/23/russia-ukraine-war-list-of-key-events-day-1460
+    excerpt: These are the key developments from day 1,460 of Russia’s war on Ukraine.
+    source_name: Al Jazeera
+    published: "2026-02-23T02:02:59.000Z"
+  - entity: bitcoin-slides-5-tumbling-below-65-0-2026-02-23
+    type: article
+    title: Bitcoin slides 5%,  tumbling below $65,000 as whale selling grows and recent buyers lock in losses
+    url: >-
+      https://www.coindesk.com/markets/2026/02/23/bitcoin-slides-4-to-usd65-000-as-whale-selling-grows-and-recent-buyers-lock-in-losses
+    excerpt: >-
+      On-chain data from Glassnode and CryptoQuant shows large holders dominating exchange inflows while short-term
+      investors continue to sell at a loss, pointing to a fragile base-building phase.
+    source_name: CoinDesk
+    published: "2026-02-23T01:49:11.000Z"
+  - entity: u-s-stock-futures-dollar-and-bitcoin-d-2026-02-23
+    type: article
+    title: U.S. stock futures, dollar and bitcoin drop as investors await clarity on Trump&#x2019;s latest tariff plans
+    url: >-
+      https://www.marketwatch.com/story/u-s-stock-futures-flat-as-investors-await-clarity-on-trumps-latest-tariff-plans-ae774ba0?mod=mw_rss_topstories
+    excerpt: >-
+      U.S. stock-index futures declined Sunday, as investors grappled with the implications of Friday&#x2019;s Supreme
+      Court ruling that overturned most of President Donald Trump&#x2019;s tariffs.
+    source_name: MarketWatch
+    published: "2026-02-23T04:02:00.000Z"
+  - entity: tariff-costs-and-refunds-take-the-spotli-2026-02-23
+    type: article
+    title: Tariff costs and refunds take the spotlight as Home Depot, TJX and other retailers report earnings this week
+    url: >-
+      https://www.marketwatch.com/story/tariffs-costs-and-refunds-take-the-spotlight-as-home-depot-tjx-and-other-retailers-report-earnings-this-week-7f2a144a?mod=mw_rss_topstories
+    excerpt: >-
+      The Supreme Court struck down most of the Trump administration&#x2019;s tariffs, but uncertainty remains for store
+      chains.
+    source_name: MarketWatch
+    published: "2026-02-23T01:57:00.000Z"
+  - entity: my-wife-x2019-s-credit-card-payment-is-2026-02-23
+    type: article
+    title: My wife&#x2019;s credit-card payment is three months overdue. As an authorized user, am I in trouble?
+    url: >-
+      https://www.marketwatch.com/story/my-wifes-credit-card-payment-is-three-months-overdue-as-an-authorized-user-am-i-in-trouble-9094513f?mod=mw_rss_topstories
+    excerpt: "&#x201c;All correspondence regarding the account was sent to my wife&#x2019;s email.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-23T00:26:00.000Z"
+  - entity: oil-traders-may-be-pricing-iran-risk-too-2026-02-23
+    type: article
+    title: Oil Traders May Be Pricing Iran Risk Too Lightly
+    url: https://oilprice.com/Energy/Crude-Oil/Oil-Traders-May-Be-Pricing-Iran-Risk-Too-Lightly.html
+    excerpt: >-
+      Crude oil prices on Thursday settled at the highest in six months, with Brent crude topping $71 per barrel and WTI
+      over $66. However, this may be just the start of a much stronger rally—it all depends
+    source_name: OilPrice.com
+    published: "2026-02-23T00:00:00.000Z"
