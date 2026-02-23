@@ -1,0 +1,1332 @@
+seed:
+  name: news-week9-day-2026-02-23-hour-12
+  label: Daily News — 2026-02-23 12:00 (Week 9, 2026)
+  namespace: news.week9.day-2026-02-23
+  description: "Auto-gathered news: 63 stories, 2026-02-23 to 2026-02-23"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week9
+    extends: news
+  - namespace: news.week9.day-2026-02-23
+    extends: news.week9
+entities:
+  - id: four-years-into-its-full-scale-war-in-uk-2026-02-23
+    type: Event
+    name: Four years into its full-scale war in Ukraine, Russia is feeling the effects
+    category: geopolitics
+    description: Steve Rosenberg reports on the economic consequences of Russia's war, and how people are coping.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T06:01:59.000Z"
+      precision: day
+  - id: cartel-henchmen-unleash-violence-after-t-2026-02-23
+    type: Fact
+    name: Cartel henchmen unleash violence after top drug lord killed in Mexico
+    category: geopolitics
+    description: >-
+      The death of the most-wanted Jalisco cartel chief sparks retaliatory violence in at least a dozen states in
+      Mexico.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T11:27:45.000Z"
+      precision: day
+  - id: armed-man-killed-after-entering-secure-p-2026-02-23
+    type: Fact
+    name: Armed man killed after entering secure perimeter of Trump's residence, Secret Service says
+    category: geopolitics
+    description: >-
+      The suspect was carrying a shotgun and fuel can when he was killed, officers say, while Trump was in Washington DC
+      at the time.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T07:16:16.000Z"
+      precision: day
+  - id: briton-among-19-killed-in-nepal-bus-cras-2026-02-23
+    type: Fact
+    name: Briton among 19 killed in Nepal bus crash
+    category: geopolitics
+    description: Nepalese police say the British national was a 24-year-old man.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T11:16:56.000Z"
+      precision: day
+  - id: kim-jong-un-re-appointed-leader-of-north-2026-02-23
+    type: Event
+    name: Kim Jong Un re-appointed leader of North Korea's ruling party
+    category: geopolitics
+    description: >-
+      The announcement by the rubber-stamp party congress comes as little surprise given the Kim family's grip since the
+      1940s.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T07:15:47.000Z"
+      precision: day
+  - id: australian-prosecutors-consider-reopenin-2026-02-23
+    type: Event
+    name: Australian prosecutors consider reopening British girl's cold case disappearance
+    category: geopolitics
+    description: Cheryl Grimmer's family have been petitioning police to consider the new evidence they say they've found.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T05:07:47.000Z"
+      precision: day
+  - id: netflix-boss-defends-bid-for-warner-bros-2026-02-23
+    type: Fact
+    name: Netflix boss defends bid for Warner Bros as Paramount deadline looms
+    category: finance
+    description: >-
+      Ted Sarandos says his company's offer is better for industry growth as it is "buying assets we don't currently
+      have".
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T10:41:49.000Z"
+      precision: day
+  - id: what-now-for-asia-after-trumps-tariffs-2026-02-23
+    type: Event
+    name: What now for Asia after Trump's tariffs struck down?
+    category: finance
+    description: After the Supreme Court ruling, Trump said he would impose new levies of 15% on goods entering the US.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T07:29:11.000Z"
+      precision: day
+  - id: how-budget-fast-fashion-is-taking-small-2026-02-23
+    type: Event
+    name: How budget fast fashion is taking small-town India by storm
+    category: finance
+    description: More Indians in small towns are now shopping for affordable brands instead of unlabelled goods in the bazaars.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T00:40:05.000Z"
+      precision: day
+  - id: are-you-cut-out-for-living-and-working-i-2026-02-23
+    type: Event
+    name: Are you cut out for living and working in Antarctica?
+    category: finance
+    description: Jobs are available on the icy continent for chefs, plumbers, carpenters and even hairdressers.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T00:01:56.000Z"
+      precision: day
+  - id: who-was-el-mencho-the-former-police-off-2026-02-23
+    type: Fact
+    name: Who was El Mencho, the former police officer who co-founded an ultraviolent cartel in Mexico?
+    category: geopolitics
+    description: >-
+      <p>Drug lord who was killed by Mexican special forces on Sunday led a cartel known for aggression and
+      military-style arsenal</p><ul><li><p><a
+      href="https://www.theguardian.com/world/2026/feb/22/mexican-security-forces-reportedly-kill-drug-cartel-boss-el-mencho">Violence
+      erupts after Mexican security
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T02:52:09.000Z"
+      precision: day
+  - id: violence-erupts-after-mexican-security-f-2026-02-23
+    type: Event
+    name: Violence erupts after Mexican security forces kill drug cartel boss ‘El Mencho’
+    category: geopolitics
+    description: >-
+      <p>Death of Nemesio Oseguera Cervantes, one of world’s most wanted drug traffickers, sets off wave of disorder
+      across several Mexican states</p><ul><li><p><a
+      href="https://www.theguardian.com/world/2026/feb/23/who-was-el-mencho-drug-cartel-boss-killed-mexico">Who was El
+      Mencho, the former police off
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T00:39:49.000Z"
+      precision: day
+  - id: confusion-in-uk-and-eu-as-trump-s-15-gl-2026-02-23
+    type: Event
+    name: Confusion in UK and EU as Trump’s 15% global tariff creates ‘an unholy mess’ – business live
+    category: finance
+    description: >-
+      <p>Rolling coverage of the latest economic and financial news</p><p><strong>The London stock market has dipped
+      slightly in early trading.</strong></p><p>The <strong>FTSE</strong> <strong>100</strong> index is down 19 points,
+      or 0.18%, at 10,668 points.</p> <a href="https://www.theguardian.com/busine
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T11:19:08.000Z"
+      precision: day
+  - id: netflix-boss-says-83bn-warner-bros-take-2026-02-23
+    type: Claim
+    name: Netflix boss says $83bn Warner Bros takeover will benefit industry
+    category: finance
+    description: >-
+      <p>Comments by Ted Sarandos follow Donald Trump’s demand for company to remove Democrat from
+      board</p><ul><li><p><a
+      href="https://www.theguardian.com/media/2026/feb/22/trump-warns-netflix-of-consequences-unless-it-pulls-top-democrat-susan-rice-from-board">Trump
+      warns Netflix of ‘consequences’ unless
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T11:08:16.000Z"
+      precision: day
+  - id: progressive-membership-ukraine-s-econ-2026-02-23
+    type: Event
+    name: "‘Progressive membership’: Ukraine’s economic resilience shows future for EU business tie-ups"
+    category: finance
+    description: >-
+      <p>Joint ventures on defence, green energy and telecoms suggest how country could join bloc in stages rather than
+      wait for full status</p><p>When the first Ukrainian-designed drone to be made in a German factory rolled off the
+      production line last month, Volodymyr Zelenskyy knew it marked a turning 
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T10:36:43.000Z"
+      precision: day
+  - id: uk-job-vacancies-fall-to-lowest-level-s-2026-02-23
+    type: Event
+    name: UK job vacancies ‘fall to lowest level since pandemic’
+    category: finance
+    description: >-
+      <p>Advertised roles dropped 3% last month to 695,000 – first dip below 700,000 since January 2021, job site Adzuna
+      says</p><p>The number of job vacancies in the UK has tumbled to the lowest level in five years, research suggests,
+      falling to levels not seen since the pandemic.</p><p>The number of job
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T00:01:51.000Z"
+      precision: day
+  - id: why-are-homegrown-apples-in-the-uk-more-2026-02-23
+    type: Event
+    name: Why are homegrown apples in the UK more expensive than imported bananas?
+    category: finance
+    description: >-
+      <p>From flooding in Peru to the fight for fair wages, a lot more goes into the price of fruit than what
+      supermarkets charge consumers for</p><p>Why have apples increased so much in price in the UK? They seem much more
+      expensive than bananas, even though many are homegrown, and so don’t have to trave
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T05:00:58.000Z"
+      precision: day
+  - id: gaza-child-dies-waiting-for-israeli-perm-2026-02-23
+    type: Event
+    name: Gaza child dies waiting for Israeli permission to leave for treatment
+    category: geopolitics
+    description: Israel continues to block thousands of Palestinians from seeking medical treatment abroad through Rafah crossing.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T10:47:14.000Z"
+      precision: day
+  - id: ramadan-in-gaza-cost-of-iftar-doubles-a-2026-02-23
+    type: Event
+    name: "Ramadan in Gaza: Cost of iftar doubles as genocidal war devastates economy"
+    category: geopolitics
+    description: Al Jazeera analysis shows cost of a basic Ramadan meal in Gaza doubles under Israeli siege.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T10:37:21.000Z"
+      precision: day
+  - id: russia-kills-four-ukrainians-on-eve-of-f-2026-02-23
+    type: Event
+    name: Russia kills four Ukrainians on eve of fourth war anniversary
+    category: geopolitics
+    description: >-
+      EU foreign ministers are meeting in Brussels to discuss a loan for Kyiv and 20th package of sanctions against
+      Russia.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T10:19:13.000Z"
+      precision: day
+  - id: winter-olympics-2026-closes-after-settin-2026-02-23
+    type: Event
+    name: Winter Olympics 2026 closes after setting ‘a new standard for future’
+    category: geopolitics
+    description: Italy’s record medal haul crowns Milano Cortina Winter Olympics as Verona hosts a music-filled farewell.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T09:40:23.000Z"
+      precision: day
+  - id: football-matches-postponed-in-mexico-aft-2026-02-23
+    type: Fact
+    name: Football matches postponed in Mexico after drug kingpin El Mencho killed
+    category: geopolitics
+    description: >-
+      Cancelled games included the seventh round of the Clausura tournament in Mexico&#039;s premier MX professional
+      league.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T09:07:04.000Z"
+      precision: day
+  - id: video-armed-man-killed-after-breaching-2026-02-23
+    type: Fact
+    name: "Video: Armed man killed after breaching perimeter of Trump residence"
+    category: geopolitics
+    description: >-
+      US Secret Service ⁠agents killed a man who broke into the secure perimeter of President Donald Trump&#039;s
+      Florida property.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T08:52:07.000Z"
+      precision: day
+  - id: mexico-descends-into-violence-after-cart-2026-02-23
+    type: Fact
+    name: Mexico descends into violence after cartel leader ‘El Mencho’ killed
+    category: geopolitics
+    description: Killing of Jalisco cartel boss El Mencho triggers widespread violence and piles pressure on President Sheinbaum.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T08:51:26.000Z"
+      precision: day
+  - id: new-york-mayor-zohran-mamdani-orders-cit-2026-02-23
+    type: Decision
+    name: New York Mayor Zohran Mamdani orders citywide shutdown as snowstorm hits
+    category: geopolitics
+    description: >-
+      The city&#039;s entire traffic network is shut down except for emergency travel as a severe snowstorm hits
+      northeast US.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T08:36:16.000Z"
+      precision: day
+  - id: donald-trump-s-actions-stir-election-con-2026-02-23
+    type: Event
+    name: Donald Trump’s actions stir election concerns in the lead-up to US midterms
+    category: geopolitics
+    description: November midterms will be first major US election since Trump took office and follow false claims over 2020 loss.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T07:58:24.000Z"
+      precision: day
+  - id: pakistan-claims-at-least-70-fighters-kil-2026-02-23
+    type: Fact
+    name: Pakistan claims at least 70 fighters killed in strikes along Afghan border
+    category: geopolitics
+    description: >-
+      Afghan officials accuse Pakistan of targeting civilians and violating its sovereignty in Sunday&#039;s border air
+      raids.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T07:46:42.000Z"
+      precision: day
+  - id: pre-market-trading-stabilizes-as-bitcoin-2026-02-23
+    type: Claim
+    name: Pre-market trading stabilizes as bitcoin reclaims $66,000, Saylor eyes 100th BTC purchase
+    category: finance.crypto
+    description: President Trump’s proposed tariffs and U.S. tensions with Iran have weighed on broader risk sentiment.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T10:52:15.000Z"
+      precision: day
+  - id: kucoin-told-to-halt-new-eu-business-due-2026-02-23
+    type: Event
+    name: Kucoin told to halt new EU business due to compliance staffing shortfalls
+    category: finance.crypto
+    description: >-
+      Austria's financial regulator said Kucoin EU must appoint an anti-money-laundering officer and deputy officer, as
+      well as a sanctions compliance officer and deputy.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T10:24:42.000Z"
+      precision: day
+  - id: bitcoin-balances-on-binance-hit-highest-2026-02-23
+    type: Event
+    name: "Bitcoin balances on Binance hit highest since November 2024: here's what it means"
+    category: finance.crypto
+    description: Users' bitcoin holdings in wallets linked to Binance have climbed to highest since late 2024.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T10:21:12.000Z"
+      precision: day
+  - id: ethereum-founder-vitalik-buterin-acceler-2026-02-23
+    type: Fact
+    name: Ethereum founder Vitalik Buterin accelerates ether sales
+    category: finance.crypto
+    description: >-
+      The latest sales are part of a broader plan announced in late January to fund ecosystem development and other
+      initiative.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T10:15:59.000Z"
+      precision: day
+  - id: bitdeer-sold-all-its-bitcoin-to-fund-its-2026-02-23
+    type: Event
+    name: Bitdeer sold all its bitcoin to fund its move into AI data centers
+    category: finance.crypto
+    description: >-
+      Singapore based BTC and AI miner sells all holdings to build liquidity for expansion, signaling a broader shift in
+      capital strategy across the sector.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T09:58:57.000Z"
+      precision: day
+  - id: circle-internet-crypto-miners-report-ea-2026-02-23
+    type: Event
+    name: "Circle Internet, crypto miners report earnings: Crypto Week Ahead"
+    category: finance.crypto
+    description: Your look at what's coming in the week starting Feb. 23
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T09:24:02.000Z"
+      precision: day
+  - id: ai-bots-tipping-blunder-hands-450-000-2026-02-23
+    type: Event
+    name: AI bot's tipping blunder hands $450,000 memecoin pile to X sad story poster
+    category: finance.crypto
+    description: >-
+      AI trading bot "Lobstar Wilde" accidentally sent a large coin stash to an X user in need of 4 SOL for medical
+      treatment.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T06:15:37.000Z"
+      precision: day
+  - id: 61-million-bitcoin-whale-liquidated-on-2026-02-23
+    type: Event
+    name: $61 million bitcoin whale liquidated on HTX as sentiment back at 'extreme fear'
+    category: finance.crypto
+    description: >-
+      The position was the largest single forced closure in 24 hours as bitcoin shed weekend gains and the fear index
+      returned to historic lows.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T06:15:20.000Z"
+      precision: day
+  - id: bitcoin-etfs-bleed-3-8-billion-in-histo-2026-02-23
+    type: Event
+    name: Bitcoin ETFs bleed $3.8 billion in historic five-week outflow streak
+    category: finance.crypto
+    description: Outflows underscore persistent institutional wariness toward bitcoin after the early October crash.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T04:42:13.000Z"
+      precision: day
+  - id: bitcoin-slides-5-tumbling-below-65-0-2026-02-23
+    type: Event
+    name: Bitcoin slides 5%,  tumbling below $65,000 as whale selling grows and recent buyers lock in losses
+    category: finance.crypto
+    description: >-
+      On-chain data from Glassnode and CryptoQuant shows large holders dominating exchange inflows while short-term
+      investors continue to sell at a loss, pointing to a fragile base-building phase.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T01:49:11.000Z"
+      precision: day
+  - id: jpmorgan-admits-closing-accounts-linked-2026-02-23
+    type: Event
+    name: JPMorgan admits closing accounts linked to Donald Trump
+    category: finance
+    description: JPMorgan admits closing accounts linked to Donald Trump
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T11:21:11.000Z"
+      precision: day
+  - id: software-companies-face-higher-borrowing-2026-02-23
+    type: Event
+    name: Software companies face higher borrowing costs, tougher scrutiny as AI threatens businesses
+    category: finance
+    description: Software companies face higher borrowing costs, tougher scrutiny as AI threatens businesses
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T11:03:48.000Z"
+      precision: day
+  - id: us-supreme-court-to-hear-exxon-bid-for-c-2026-02-23
+    type: Event
+    name: US Supreme Court to hear Exxon bid for compensation from Cuba
+    category: finance
+    description: US Supreme Court to hear Exxon bid for compensation from Cuba
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T11:02:10.000Z"
+      precision: day
+  - id: the-ai-boom-is-helping-samsung-and-comin-2026-02-23
+    type: Event
+    name: The AI boom is helping Samsung and coming for Apple
+    category: finance
+    description: The AI boom is helping Samsung and coming for Apple
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T11:00:57.000Z"
+      precision: day
+  - id: mortgage-and-refinance-interest-rates-to-2026-02-23
+    type: Event
+    name: "Mortgage and refinance interest rates today, February 23, 2026: Looking for a rate below 6%? (How is 5.86%?)"
+    category: finance
+    description: "Mortgage and refinance interest rates today, February 23, 2026: Looking for a rate below 6%? (How is 5.86%?)"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T11:00:28.000Z"
+      precision: day
+  - id: mic-global-launches-miincome-in-qatar-wi-2026-02-23
+    type: Decision
+    name: MIC Global launches MiIncome in Qatar with QIC
+    category: finance
+    description: MIC Global launches MiIncome in Qatar with QIC
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T11:16:28.000Z"
+      precision: day
+  - id: heloc-and-home-equity-loan-rates-monday-2026-02-23
+    type: Event
+    name: >-
+      HELOC and home equity loan rates Monday, February 23, 2026: Unlocking the cash in your home at the lowest rates in
+      years
+    category: finance
+    description: >-
+      HELOC and home equity loan rates Monday, February 23, 2026: Unlocking the cash in your home at the lowest rates in
+      years
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T11:00:10.000Z"
+      precision: day
+  - id: best-cd-rates-today-february-23-2026-2026-02-23
+    type: Event
+    name: Best CD rates today, February 23, 2026 (Lock in up to 4% APY)
+    category: finance
+    description: Best CD rates today, February 23, 2026 (Lock in up to 4% APY)
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T11:00:02.000Z"
+      precision: day
+  - id: best-money-market-account-rates-today-f-2026-02-23
+    type: Event
+    name: Best money market account rates today, February 23, 2026 (Earn up to 4.01% APY)
+    category: finance
+    description: Best money market account rates today, February 23, 2026 (Earn up to 4.01% APY)
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T11:00:01.000Z"
+      precision: day
+  - id: best-high-yield-savings-interest-rates-t-2026-02-23
+    type: Event
+    name: Best high-yield savings interest rates today, February 23, 2026 (Earn up to 4% APY)
+    category: finance
+    description: Best high-yield savings interest rates today, February 23, 2026 (Earn up to 4% APY)
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T11:00:00.000Z"
+      precision: day
+  - id: novo-nordisk-pitted-a-new-weight-loss-dr-2026-02-23
+    type: Event
+    name: Novo Nordisk pitted a new weight-loss drug against Eli Lilly&#x2019;s &#x2014; and lost
+    category: finance.markets
+    description: >-
+      Novo Nordisk shares were under pressure on Monday as the struggling Danish pharmaceutical said a head-to-head
+      study found a drug in development didn&#x2019;t cut as much weight as an Eli Lilly product.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T11:01:00.000Z"
+      precision: day
+  - id: here-are-the-five-companies-that-9-tril-2026-02-23
+    type: Event
+    name: Here are the five companies that $9 trillion of funds agree on right now
+    category: finance.markets
+    description: >-
+      Vertiv has been a top holding among hedge and mutual funds in the first quarter of this year so far, and a
+      lucrative one.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T10:53:00.000Z"
+      precision: day
+  - id: x2018-i-spend-7-500-a-month-x2019-2026-02-23
+    type: Event
+    name: "&#x2018;I spend $7,500 a month&#x2019;: I&#x2019;m 47, earn $260K, and have $3 million. Can I retire at 50?"
+    category: finance.markets
+    description: "&#x201c;I own a home worth $520,000 and do not have a mortgage on it.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T10:30:00.000Z"
+      precision: day
+  - id: why-jpmorgan-says-the-international-stoc-2026-02-23
+    type: Claim
+    name: Why JPMorgan says the international stock story still has legs
+    category: finance.markets
+    description: >-
+      Decent growth, benign inflation, a dovish Fed and a weaker dollar all favor equities but international and
+      emerging stocks look set to build on the outperformance of the last year
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T10:19:00.000Z"
+      precision: day
+  - id: former-canada-pm-justin-trudeau-buys-a-2026-02-23
+    type: Event
+    name: Former Canada PM Justin Trudeau buys a $3.1 million home in Montreal&#x2014;will he live there with Katy Perry?
+    category: finance.markets
+    description: >-
+      Justin Trudeau has forked over $3.1 million for an expansive estate in Montreal&#x2019;s exclusive Outremont
+      neighborhood&#x2014;and got the seal of approval from girlfriend Katy Perry.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T10:02:00.000Z"
+      precision: day
+  - id: l-a-olympics-chair-casey-wasserman-cuts-2026-02-23
+    type: Event
+    name: L.A. Olympics chair Casey Wasserman cuts price of $30 million Kubrick-inspired mansion
+    category: finance.markets
+    description: >-
+      The home, inspired by Kubrick&#x2019;s 2001 movie &#x201c;Space Odyssey&#x201d; is located in a highly
+      sought-after neighborhood of Hollywood Hills, but has been on the market since September.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T09:58:00.000Z"
+      precision: day
+  - id: green-deals-are-being-postponed-so-hone-2026-02-23
+    type: Event
+    name: Green deals are being postponed, so Honeywell just shaved $500 million off a chemicals acquisition
+    category: finance.markets
+    description: >-
+      Honeywell International on Monday received a 26% discount on its deal to acquire a business tied to the struggling
+      chemicals industry.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T09:55:00.000Z"
+      precision: day
+  - id: hedge-funds-offer-locked-up-private-cred-2026-02-23
+    type: Event
+    name: Hedge funds offer locked-up private credit investors a way out &#x2014; at a hefty discount
+    category: finance.markets
+    description: >-
+      Two investment funds said they would offer investors in a locked up private credit fund an exit &#x2014; but at a
+      hefty discount.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T09:15:00.000Z"
+      precision: day
+  - id: u-s-stock-futures-dollar-and-bitcoin-d-2026-02-23
+    type: Event
+    name: U.S. stock futures, dollar and bitcoin drop as investors await clarity on Trump&#x2019;s latest tariff plans
+    category: finance.markets
+    description: >-
+      U.S. stock-index futures declined Sunday, as investors grappled with the implications of Friday&#x2019;s Supreme
+      Court ruling that overturned most of President Donald Trump&#x2019;s tariffs.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T04:02:00.000Z"
+      precision: day
+  - id: tariff-costs-and-refunds-take-the-spotli-2026-02-23
+    type: Event
+    name: Tariff costs and refunds take the spotlight as Home Depot, TJX and other retailers report earnings this week
+    category: finance.markets
+    description: >-
+      The Supreme Court struck down most of the Trump administration&#x2019;s tariffs, but uncertainty remains for store
+      chains.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T01:57:00.000Z"
+      precision: day
+  - id: 100-oil-price-forecasts-resurface-amid-2026-02-23
+    type: Claim
+    name: $100 Oil Price Forecasts Resurface Amid U.S.-Iran Standoff
+    category: finance.energy
+    description: >-
+      Oil price spikes to $90-$100 per barrel are “within reach” as the United States and Iran appear close to war,
+      Fereidun Fesharaki, Chairman Emeritus at energy market consultancy FGE NexantECA, told Bloomberg Television on
+      Monday. “I don’t think the US has a choice but to go to war,” Fesharaki told Bl
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T11:26:39.000Z"
+      precision: day
+  - id: goldman-sachs-hikes-year-end-oil-price-f-2026-02-23
+    type: Claim
+    name: Goldman Sachs Hikes Year-End Oil Price Forecast by $6 Per Barrel
+    category: finance.energy
+    description: >-
+      Even if it maintains the view of global oversupply this year, Goldman Sachs has raised its oil price forecast for
+      the fourth quarter by $6 per barrel as inventories in advanced economies remain low. The Wall Street bank lifted
+      its Q4 2026 price estimate by $6 to $60 per barrel Brent Crude and made t
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T10:30:00.000Z"
+      precision: day
+  - id: saudi-aramco-secures-first-condensate-de-2026-02-23
+    type: Event
+    name: Saudi Aramco Secures First Condensate Deals From $100 Billion Jafurah Project
+    category: finance.energy
+    description: >-
+      Saudi Aramco has sealed deals for several cargos of gas condensates from its $100-billion Jafurah shale gas
+      facility, Reuters has reported, citing unnamed trade sources. The first cargo is set to depart by the end of the
+      month. The deals Aramco has already secured are with U.S. companies and one Ind
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T10:00:00.000Z"
+      precision: day
+  - id: europe-set-for-another-record-lng-import-2026-02-23
+    type: Event
+    name: Europe Set for Another Record LNG Import Month
+    category: finance.energy
+    description: >-
+      Europe is on track to break its previous record for monthly LNG imports in February, with Kpler forecasting a
+      total of 14.20 million tons amid fast-depleting gas inventories. This amount would be an increase on the 13.67
+      million tons imported in January, Reuters’ Clyde Russell noted in a report on L
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T08:30:00.000Z"
+      precision: day
+  - id: eu-urges-trump-to-honor-trade-deal-2026-02-23
+    type: Claim
+    name: EU Urges Trump to Honor Trade Deal
+    category: finance.energy
+    description: >-
+      The European Commission has called on President Trump to stick to a trade deal the two sealed last summer, which
+      features a commitment on the part of the EU to buy $250 billion worth of U.S. energy annually for a period of
+      three years. Separately, the European Parliament is considering a freeze of t
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T07:00:00.000Z"
+      precision: day
+  - id: oil-traders-may-be-pricing-iran-risk-too-2026-02-23
+    type: Claim
+    name: Oil Traders May Be Pricing Iran Risk Too Lightly
+    category: finance.energy
+    description: >-
+      Crude oil prices on Thursday settled at the highest in six months, with Brent crude topping $71 per barrel and WTI
+      over $66. However, this may be just the start of a much stronger rally—it all depends on developments between the
+      United States and Iran. The latest round of negotiations between the tw
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T00:00:00.000Z"
+      precision: day
+narratives:
+  - name: Ukraine Peace Process
+    steps:
+      - from: four-years-into-its-full-scale-war-in-uk-2026-02-23
+        to: russia-kills-four-ukrainians-on-eve-of-f-2026-02-23
+        type: causes
+      - from: russia-kills-four-ukrainians-on-eve-of-f-2026-02-23
+        to: progressive-membership-ukraine-s-econ-2026-02-23
+        type: causes
+  - name: Israel-Palestine Conflict
+    steps:
+      - from: ramadan-in-gaza-cost-of-iftar-doubles-a-2026-02-23
+        to: gaza-child-dies-waiting-for-israeli-perm-2026-02-23
+        type: causes
+  - name: Crypto Markets
+    steps:
+      - from: bitcoin-slides-5-tumbling-below-65-0-2026-02-23
+        to: u-s-stock-futures-dollar-and-bitcoin-d-2026-02-23
+        type: causes
+      - from: u-s-stock-futures-dollar-and-bitcoin-d-2026-02-23
+        to: bitcoin-etfs-bleed-3-8-billion-in-histo-2026-02-23
+        type: causes
+      - from: bitcoin-etfs-bleed-3-8-billion-in-histo-2026-02-23
+        to: 61-million-bitcoin-whale-liquidated-on-2026-02-23
+        type: causes
+      - from: 61-million-bitcoin-whale-liquidated-on-2026-02-23
+        to: circle-internet-crypto-miners-report-ea-2026-02-23
+        type: causes
+      - from: circle-internet-crypto-miners-report-ea-2026-02-23
+        to: bitdeer-sold-all-its-bitcoin-to-fund-its-2026-02-23
+        type: causes
+      - from: bitdeer-sold-all-its-bitcoin-to-fund-its-2026-02-23
+        to: ethereum-founder-vitalik-buterin-acceler-2026-02-23
+        type: follows
+      - from: ethereum-founder-vitalik-buterin-acceler-2026-02-23
+        to: bitcoin-balances-on-binance-hit-highest-2026-02-23
+        type: causes
+      - from: bitcoin-balances-on-binance-hit-highest-2026-02-23
+        to: pre-market-trading-stabilizes-as-bitcoin-2026-02-23
+        type: supports
+  - name: Energy Markets
+    steps:
+      - from: oil-traders-may-be-pricing-iran-risk-too-2026-02-23
+        to: goldman-sachs-hikes-year-end-oil-price-f-2026-02-23
+        type: follows
+      - from: goldman-sachs-hikes-year-end-oil-price-f-2026-02-23
+        to: 100-oil-price-forecasts-resurface-amid-2026-02-23
+        type: follows
+sources:
+  - entity: four-years-into-its-full-scale-war-in-uk-2026-02-23
+    type: article
+    title: Four years into its full-scale war in Ukraine, Russia is feeling the effects
+    url: https://www.bbc.com/news/articles/c4gj20xzw39o
+    excerpt: Steve Rosenberg reports on the economic consequences of Russia's war, and how people are coping.
+    source_name: BBC News
+    published: "2026-02-23T06:01:59.000Z"
+  - entity: cartel-henchmen-unleash-violence-after-t-2026-02-23
+    type: article
+    title: Cartel henchmen unleash violence after top drug lord killed in Mexico
+    url: https://www.bbc.com/news/articles/c795qgejzpxo
+    excerpt: >-
+      The death of the most-wanted Jalisco cartel chief sparks retaliatory violence in at least a dozen states in
+      Mexico.
+    source_name: BBC News
+    published: "2026-02-23T11:27:45.000Z"
+  - entity: armed-man-killed-after-entering-secure-p-2026-02-23
+    type: article
+    title: Armed man killed after entering secure perimeter of Trump's residence, Secret Service says
+    url: https://www.bbc.com/news/articles/cp32l9w9pgyo
+    excerpt: >-
+      The suspect was carrying a shotgun and fuel can when he was killed, officers say, while Trump was in Washington DC
+      at the time.
+    source_name: BBC News
+    published: "2026-02-23T07:16:16.000Z"
+  - entity: briton-among-19-killed-in-nepal-bus-cras-2026-02-23
+    type: article
+    title: Briton among 19 killed in Nepal bus crash
+    url: https://www.bbc.com/news/articles/c39wz97y90no
+    excerpt: Nepalese police say the British national was a 24-year-old man.
+    source_name: BBC News
+    published: "2026-02-23T11:16:56.000Z"
+  - entity: kim-jong-un-re-appointed-leader-of-north-2026-02-23
+    type: article
+    title: Kim Jong Un re-appointed leader of North Korea's ruling party
+    url: https://www.bbc.com/news/articles/cvg18588mdko
+    excerpt: >-
+      The announcement by the rubber-stamp party congress comes as little surprise given the Kim family's grip since the
+      1940s.
+    source_name: BBC News
+    published: "2026-02-23T07:15:47.000Z"
+  - entity: australian-prosecutors-consider-reopenin-2026-02-23
+    type: article
+    title: Australian prosecutors consider reopening British girl's cold case disappearance
+    url: https://www.bbc.com/news/articles/cd6zg91l75qo
+    excerpt: Cheryl Grimmer's family have been petitioning police to consider the new evidence they say they've found.
+    source_name: BBC News
+    published: "2026-02-23T05:07:47.000Z"
+  - entity: netflix-boss-defends-bid-for-warner-bros-2026-02-23
+    type: article
+    title: Netflix boss defends bid for Warner Bros as Paramount deadline looms
+    url: https://www.bbc.com/news/articles/c20jn073gj4o
+    excerpt: >-
+      Ted Sarandos says his company's offer is better for industry growth as it is "buying assets we don't currently
+      have".
+    source_name: BBC Business
+    published: "2026-02-23T10:41:49.000Z"
+  - entity: what-now-for-asia-after-trumps-tariffs-2026-02-23
+    type: article
+    title: What now for Asia after Trump's tariffs struck down?
+    url: https://www.bbc.com/news/articles/c4g58vlwdq3o
+    excerpt: After the Supreme Court ruling, Trump said he would impose new levies of 15% on goods entering the US.
+    source_name: BBC Business
+    published: "2026-02-23T07:29:11.000Z"
+  - entity: how-budget-fast-fashion-is-taking-small-2026-02-23
+    type: article
+    title: How budget fast fashion is taking small-town India by storm
+    url: https://www.bbc.com/news/articles/c15xvy7k2q5o
+    excerpt: More Indians in small towns are now shopping for affordable brands instead of unlabelled goods in the bazaars.
+    source_name: BBC Business
+    published: "2026-02-23T00:40:05.000Z"
+  - entity: are-you-cut-out-for-living-and-working-i-2026-02-23
+    type: article
+    title: Are you cut out for living and working in Antarctica?
+    url: https://www.bbc.com/news/articles/cn0e30d9wj9o
+    excerpt: Jobs are available on the icy continent for chefs, plumbers, carpenters and even hairdressers.
+    source_name: BBC Business
+    published: "2026-02-23T00:01:56.000Z"
+  - entity: who-was-el-mencho-the-former-police-off-2026-02-23
+    type: article
+    title: Who was El Mencho, the former police officer who co-founded an ultraviolent cartel in Mexico?
+    url: https://www.theguardian.com/world/2026/feb/23/who-was-el-mencho-drug-cartel-boss-killed-mexico
+    excerpt: >-
+      <p>Drug lord who was killed by Mexican special forces on Sunday led a cartel known for aggression and
+      military-style arsenal</p><ul><li><p><a href="https://www.theguardian.com/world/2026/feb/22/mexica
+    source_name: The Guardian
+    published: "2026-02-23T02:52:09.000Z"
+  - entity: violence-erupts-after-mexican-security-f-2026-02-23
+    type: article
+    title: Violence erupts after Mexican security forces kill drug cartel boss ‘El Mencho’
+    url: https://www.theguardian.com/world/2026/feb/22/mexican-security-forces-reportedly-kill-drug-cartel-boss-el-mencho
+    excerpt: >-
+      <p>Death of Nemesio Oseguera Cervantes, one of world’s most wanted drug traffickers, sets off wave of disorder
+      across several Mexican states</p><ul><li><p><a href="https://www.theguardian.com/world/20
+    source_name: The Guardian
+    published: "2026-02-23T00:39:49.000Z"
+  - entity: confusion-in-uk-and-eu-as-trump-s-15-gl-2026-02-23
+    type: article
+    title: Confusion in UK and EU as Trump’s 15% global tariff creates ‘an unholy mess’ – business live
+    url: >-
+      https://www.theguardian.com/business/live/2026/feb/23/us-dollar-stock-markets-losses-trump-global-tariff-supreme-court-news-updates
+    excerpt: >-
+      <p>Rolling coverage of the latest economic and financial news</p><p><strong>The London stock market has dipped
+      slightly in early trading.</strong></p><p>The <strong>FTSE</strong> <strong>100</strong> 
+    source_name: The Guardian
+    published: "2026-02-23T11:19:08.000Z"
+  - entity: netflix-boss-says-83bn-warner-bros-take-2026-02-23
+    type: article
+    title: Netflix boss says $83bn Warner Bros takeover will benefit industry
+    url: https://www.theguardian.com/media/2026/feb/23/netflix-warner-bros-takeover-ted-sarandos-donald-trump-susan-rice
+    excerpt: >-
+      <p>Comments by Ted Sarandos follow Donald Trump’s demand for company to remove Democrat from
+      board</p><ul><li><p><a href="https://www.theguardian.com/media/2026/feb/22/trump-warns-netflix-of-consequen
+    source_name: The Guardian
+    published: "2026-02-23T11:08:16.000Z"
+  - entity: progressive-membership-ukraine-s-econ-2026-02-23
+    type: article
+    title: "‘Progressive membership’: Ukraine’s economic resilience shows future for EU business tie-ups"
+    url: https://www.theguardian.com/world/2026/feb/23/ukraine-economic-resilience-eu-business-tie-ups
+    excerpt: >-
+      <p>Joint ventures on defence, green energy and telecoms suggest how country could join bloc in stages rather than
+      wait for full status</p><p>When the first Ukrainian-designed drone to be made in a Ger
+    source_name: The Guardian
+    published: "2026-02-23T10:36:43.000Z"
+  - entity: uk-job-vacancies-fall-to-lowest-level-s-2026-02-23
+    type: article
+    title: UK job vacancies ‘fall to lowest level since pandemic’
+    url: https://www.theguardian.com/business/2026/feb/23/uk-job-vacancies-fall-to-lowest-level-since-pandemic
+    excerpt: >-
+      <p>Advertised roles dropped 3% last month to 695,000 – first dip below 700,000 since January 2021, job site Adzuna
+      says</p><p>The number of job vacancies in the UK has tumbled to the lowest level in f
+    source_name: The Guardian
+    published: "2026-02-23T00:01:51.000Z"
+  - entity: why-are-homegrown-apples-in-the-uk-more-2026-02-23
+    type: article
+    title: Why are homegrown apples in the UK more expensive than imported bananas?
+    url: https://www.theguardian.com/lifeandstyle/2026/feb/23/why-have-apples-increased-so-much-in-price-in-the-uk
+    excerpt: >-
+      <p>From flooding in Peru to the fight for fair wages, a lot more goes into the price of fruit than what
+      supermarkets charge consumers for</p><p>Why have apples increased so much in price in the UK? Th
+    source_name: The Guardian
+    published: "2026-02-23T05:00:58.000Z"
+  - entity: gaza-child-dies-waiting-for-israeli-perm-2026-02-23
+    type: article
+    title: Gaza child dies waiting for Israeli permission to leave for treatment
+    url: https://www.aljazeera.com/news/2026/2/23/gaza-child-dies-waiting-for-israeli-permission-to-leave-for-treatment
+    excerpt: Israel continues to block thousands of Palestinians from seeking medical treatment abroad through Rafah crossing.
+    source_name: Al Jazeera
+    published: "2026-02-23T10:47:14.000Z"
+  - entity: ramadan-in-gaza-cost-of-iftar-doubles-a-2026-02-23
+    type: article
+    title: "Ramadan in Gaza: Cost of iftar doubles as genocidal war devastates economy"
+    url: >-
+      https://www.aljazeera.com/features/2026/2/23/ramadan-in-gaza-cost-of-iftar-doubles-as-genocidal-war-devastates-economy
+    excerpt: Al Jazeera analysis shows cost of a basic Ramadan meal in Gaza doubles under Israeli siege.
+    source_name: Al Jazeera
+    published: "2026-02-23T10:37:21.000Z"
+  - entity: russia-kills-four-ukrainians-on-eve-of-f-2026-02-23
+    type: article
+    title: Russia kills four Ukrainians on eve of fourth war anniversary
+    url: https://www.aljazeera.com/news/2026/2/23/four-killed-in-russian-attacks-in-ukraine-ahead-of-eu-ministers-meeting
+    excerpt: >-
+      EU foreign ministers are meeting in Brussels to discuss a loan for Kyiv and 20th package of sanctions against
+      Russia.
+    source_name: Al Jazeera
+    published: "2026-02-23T10:19:13.000Z"
+  - entity: winter-olympics-2026-closes-after-settin-2026-02-23
+    type: article
+    title: Winter Olympics 2026 closes after setting ‘a new standard for future’
+    url: https://www.aljazeera.com/gallery/2026/2/23/winter-olympics-2026-closes-after-setting-a-new-standard-for-future
+    excerpt: Italy’s record medal haul crowns Milano Cortina Winter Olympics as Verona hosts a music-filled farewell.
+    source_name: Al Jazeera
+    published: "2026-02-23T09:40:23.000Z"
+  - entity: football-matches-postponed-in-mexico-aft-2026-02-23
+    type: article
+    title: Football matches postponed in Mexico after drug kingpin El Mencho killed
+    url: https://www.aljazeera.com/sports/2026/2/23/football-matches-postponed-in-mexico-after-drug-cartel-leader-killed
+    excerpt: >-
+      Cancelled games included the seventh round of the Clausura tournament in Mexico&#039;s premier MX professional
+      league.
+    source_name: Al Jazeera
+    published: "2026-02-23T09:07:04.000Z"
+  - entity: video-armed-man-killed-after-breaching-2026-02-23
+    type: article
+    title: "Video: Armed man killed after breaching perimeter of Trump residence"
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/2/23/video-armed-man-killed-after-breaching-perimeter-of-trump-residence
+    excerpt: >-
+      US Secret Service ⁠agents killed a man who broke into the secure perimeter of President Donald Trump&#039;s
+      Florida property.
+    source_name: Al Jazeera
+    published: "2026-02-23T08:52:07.000Z"
+  - entity: mexico-descends-into-violence-after-cart-2026-02-23
+    type: article
+    title: Mexico descends into violence after cartel leader ‘El Mencho’ killed
+    url: >-
+      https://www.aljazeera.com/gallery/2026/2/23/mexico-erupts-in-violence-after-army-kills-jalisco-cartel-boss-el-mencho
+    excerpt: Killing of Jalisco cartel boss El Mencho triggers widespread violence and piles pressure on President Sheinbaum.
+    source_name: Al Jazeera
+    published: "2026-02-23T08:51:26.000Z"
+  - entity: new-york-mayor-zohran-mamdani-orders-cit-2026-02-23
+    type: article
+    title: New York Mayor Zohran Mamdani orders citywide shutdown as snowstorm hits
+    url: https://www.aljazeera.com/news/2026/2/23/new-york-mayor-zohran-mamdani-orders-citywide-shutdown-as-snowstorm-hits
+    excerpt: >-
+      The city&#039;s entire traffic network is shut down except for emergency travel as a severe snowstorm hits
+      northeast US.
+    source_name: Al Jazeera
+    published: "2026-02-23T08:36:16.000Z"
+  - entity: donald-trump-s-actions-stir-election-con-2026-02-23
+    type: article
+    title: Donald Trump’s actions stir election concerns in the lead-up to US midterms
+    url: >-
+      https://www.aljazeera.com/news/2026/2/23/donald-trumps-actions-stir-election-concerns-in-the-lead-up-to-us-midterms
+    excerpt: November midterms will be first major US election since Trump took office and follow false claims over 2020 loss.
+    source_name: Al Jazeera
+    published: "2026-02-23T07:58:24.000Z"
+  - entity: pakistan-claims-at-least-70-fighters-kil-2026-02-23
+    type: article
+    title: Pakistan claims at least 70 fighters killed in strikes along Afghan border
+    url: >-
+      https://www.aljazeera.com/news/2026/2/23/pakistan-claims-at-least-70-fighters-killed-in-strikes-along-afghan-border
+    excerpt: >-
+      Afghan officials accuse Pakistan of targeting civilians and violating its sovereignty in Sunday&#039;s border air
+      raids.
+    source_name: Al Jazeera
+    published: "2026-02-23T07:46:42.000Z"
+  - entity: pre-market-trading-stabilizes-as-bitcoin-2026-02-23
+    type: article
+    title: Pre-market trading stabilizes as bitcoin reclaims $66,000, Saylor eyes 100th BTC purchase
+    url: >-
+      https://www.coindesk.com/markets/2026/02/23/pre-market-trading-stabilizes-as-bitcoin-reclaims-usd66-000-saylor-eyes-100th-btc-purchase
+    excerpt: President Trump’s proposed tariffs and U.S. tensions with Iran have weighed on broader risk sentiment.
+    source_name: CoinDesk
+    published: "2026-02-23T10:52:15.000Z"
+  - entity: kucoin-told-to-halt-new-eu-business-due-2026-02-23
+    type: article
+    title: Kucoin told to halt new EU business due to compliance staffing shortfalls
+    url: >-
+      https://www.coindesk.com/policy/2026/02/23/kucoin-banned-in-europe-over-anti-money-laundering-and-compliance-staff-shortfall
+    excerpt: >-
+      Austria's financial regulator said Kucoin EU must appoint an anti-money-laundering officer and deputy officer, as
+      well as a sanctions compliance officer and deputy.
+    source_name: CoinDesk
+    published: "2026-02-23T10:24:42.000Z"
+  - entity: bitcoin-balances-on-binance-hit-highest-2026-02-23
+    type: article
+    title: "Bitcoin balances on Binance hit highest since November 2024: here's what it means"
+    url: >-
+      https://www.coindesk.com/markets/2026/02/23/bitcoin-balances-on-binance-hit-highest-since-november-2024-here-s-what-it-means
+    excerpt: Users' bitcoin holdings in wallets linked to Binance have climbed to highest since late 2024.
+    source_name: CoinDesk
+    published: "2026-02-23T10:21:12.000Z"
+  - entity: ethereum-founder-vitalik-buterin-acceler-2026-02-23
+    type: article
+    title: Ethereum founder Vitalik Buterin accelerates ether sales
+    url: https://www.coindesk.com/markets/2026/02/23/ethereum-founder-vitalik-buterin-accelerates-ether-sales
+    excerpt: >-
+      The latest sales are part of a broader plan announced in late January to fund ecosystem development and other
+      initiative.
+    source_name: CoinDesk
+    published: "2026-02-23T10:15:59.000Z"
+  - entity: bitdeer-sold-all-its-bitcoin-to-fund-its-2026-02-23
+    type: article
+    title: Bitdeer sold all its bitcoin to fund its move into AI data centers
+    url: >-
+      https://www.coindesk.com/markets/2026/02/23/bitdeer-empties-bitcoin-treasury-as-miners-accelerate-industry-wide-ai-pivot
+    excerpt: >-
+      Singapore based BTC and AI miner sells all holdings to build liquidity for expansion, signaling a broader shift in
+      capital strategy across the sector.
+    source_name: CoinDesk
+    published: "2026-02-23T09:58:57.000Z"
+  - entity: circle-internet-crypto-miners-report-ea-2026-02-23
+    type: article
+    title: "Circle Internet, crypto miners report earnings: Crypto Week Ahead"
+    url: https://www.coindesk.com/markets/2026/02/23/circle-internet-crypto-miners-report-earnings-crypto-week-ahead
+    excerpt: Your look at what's coming in the week starting Feb. 23
+    source_name: CoinDesk
+    published: "2026-02-23T09:24:02.000Z"
+  - entity: ai-bots-tipping-blunder-hands-450-000-2026-02-23
+    type: article
+    title: AI bot's tipping blunder hands $450,000 memecoin pile to X sad story poster
+    url: >-
+      https://www.coindesk.com/markets/2026/02/23/ai-bot-s-tipping-blunder-hands-usd250-000-memecoin-pile-to-x-sad-story-poster
+    excerpt: >-
+      AI trading bot "Lobstar Wilde" accidentally sent a large coin stash to an X user in need of 4 SOL for medical
+      treatment.
+    source_name: CoinDesk
+    published: "2026-02-23T06:15:37.000Z"
+  - entity: 61-million-bitcoin-whale-liquidated-on-2026-02-23
+    type: article
+    title: $61 million bitcoin whale liquidated on HTX as sentiment back at 'extreme fear'
+    url: >-
+      https://www.coindesk.com/markets/2026/02/23/usd61-million-bitcoin-whale-liquidated-on-htx-as-sentiment-back-at-extreme-fear
+    excerpt: >-
+      The position was the largest single forced closure in 24 hours as bitcoin shed weekend gains and the fear index
+      returned to historic lows.
+    source_name: CoinDesk
+    published: "2026-02-23T06:15:20.000Z"
+  - entity: bitcoin-etfs-bleed-3-8-billion-in-histo-2026-02-23
+    type: article
+    title: Bitcoin ETFs bleed $3.8 billion in historic five-week outflow streak
+    url: https://www.coindesk.com/markets/2026/02/23/bitcoin-etfs-bleed-usd3-8-billion-in-historic-five-week-outflow-streak
+    excerpt: Outflows underscore persistent institutional wariness toward bitcoin after the early October crash.
+    source_name: CoinDesk
+    published: "2026-02-23T04:42:13.000Z"
+  - entity: bitcoin-slides-5-tumbling-below-65-0-2026-02-23
+    type: article
+    title: Bitcoin slides 5%,  tumbling below $65,000 as whale selling grows and recent buyers lock in losses
+    url: >-
+      https://www.coindesk.com/markets/2026/02/23/bitcoin-slides-4-to-usd65-000-as-whale-selling-grows-and-recent-buyers-lock-in-losses
+    excerpt: >-
+      On-chain data from Glassnode and CryptoQuant shows large holders dominating exchange inflows while short-term
+      investors continue to sell at a loss, pointing to a fragile base-building phase.
+    source_name: CoinDesk
+    published: "2026-02-23T01:49:11.000Z"
+  - entity: jpmorgan-admits-closing-accounts-linked-2026-02-23
+    type: article
+    title: JPMorgan admits closing accounts linked to Donald Trump
+    url: https://finance.yahoo.com/news/jpmorgan-admits-closing-accounts-linked-112111576.html
+    excerpt: ""
+    source_name: Retail Banker International
+    published: "2026-02-23T11:21:11.000Z"
+  - entity: software-companies-face-higher-borrowing-2026-02-23
+    type: article
+    title: Software companies face higher borrowing costs, tougher scrutiny as AI threatens businesses
+    url: https://finance.yahoo.com/news/software-companies-face-higher-borrowing-110348553.html
+    excerpt: ""
+    source_name: Reuters
+    published: "2026-02-23T11:03:48.000Z"
+  - entity: us-supreme-court-to-hear-exxon-bid-for-c-2026-02-23
+    type: article
+    title: US Supreme Court to hear Exxon bid for compensation from Cuba
+    url: https://finance.yahoo.com/news/us-supreme-court-hear-exxon-110210173.html
+    excerpt: ""
+    source_name: Reuters
+    published: "2026-02-23T11:02:10.000Z"
+  - entity: the-ai-boom-is-helping-samsung-and-comin-2026-02-23
+    type: article
+    title: The AI boom is helping Samsung and coming for Apple
+    url: https://finance.yahoo.com/news/the-ai-boom-is-helping-samsung-and-coming-for-apple-110057196.html
+    excerpt: ""
+    source_name: Yahoo Finance
+    published: "2026-02-23T11:00:57.000Z"
+  - entity: mortgage-and-refinance-interest-rates-to-2026-02-23
+    type: article
+    title: "Mortgage and refinance interest rates today, February 23, 2026: Looking for a rate below 6%? (How is 5.86%?)"
+    url: >-
+      https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-refinance-rates-today-monday-february-23-2026-110028639.html
+    excerpt: ""
+    source_name: Yahoo Personal Finance
+    published: "2026-02-23T11:00:28.000Z"
+  - entity: mic-global-launches-miincome-in-qatar-wi-2026-02-23
+    type: article
+    title: MIC Global launches MiIncome in Qatar with QIC
+    url: https://finance.yahoo.com/news/mic-global-launches-miincome-qatar-111628880.html
+    excerpt: ""
+    source_name: Life Insurance International
+    published: "2026-02-23T11:16:28.000Z"
+  - entity: heloc-and-home-equity-loan-rates-monday-2026-02-23
+    type: article
+    title: >-
+      HELOC and home equity loan rates Monday, February 23, 2026: Unlocking the cash in your home at the lowest rates in
+      years
+    url: >-
+      https://finance.yahoo.com/personal-finance/mortgages/article/heloc-home-equity-loan-rates-today-monday-february-23-2026-110010534.html
+    excerpt: ""
+    source_name: Yahoo Personal Finance
+    published: "2026-02-23T11:00:10.000Z"
+  - entity: best-cd-rates-today-february-23-2026-2026-02-23
+    type: article
+    title: Best CD rates today, February 23, 2026 (Lock in up to 4% APY)
+    url: >-
+      https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-monday-february-23-2026-110002703.html
+    excerpt: ""
+    source_name: Yahoo Personal Finance
+    published: "2026-02-23T11:00:02.000Z"
+  - entity: best-money-market-account-rates-today-f-2026-02-23
+    type: article
+    title: Best money market account rates today, February 23, 2026 (Earn up to 4.01% APY)
+    url: >-
+      https://finance.yahoo.com/personal-finance/banking/article/best-money-market-account-rates-today-monday-february-23-2026-110001859.html
+    excerpt: ""
+    source_name: Yahoo Personal Finance
+    published: "2026-02-23T11:00:01.000Z"
+  - entity: best-high-yield-savings-interest-rates-t-2026-02-23
+    type: article
+    title: Best high-yield savings interest rates today, February 23, 2026 (Earn up to 4% APY)
+    url: >-
+      https://finance.yahoo.com/personal-finance/article/best-high-yield-savings-interest-rates-today-monday-february-23-2026-110000563.html
+    excerpt: ""
+    source_name: Yahoo Personal Finance
+    published: "2026-02-23T11:00:00.000Z"
+  - entity: novo-nordisk-pitted-a-new-weight-loss-dr-2026-02-23
+    type: article
+    title: Novo Nordisk pitted a new weight-loss drug against Eli Lilly&#x2019;s &#x2014; and lost
+    url: >-
+      https://www.marketwatch.com/story/novo-nordisk-pitted-a-new-weight-loss-drug-against-eli-lilly-and-lost-5652d079?mod=mw_rss_topstories
+    excerpt: >-
+      Novo Nordisk shares were under pressure on Monday as the struggling Danish pharmaceutical said a head-to-head
+      study found a drug in development didn&#x2019;t cut as much weight as an Eli Lilly product
+    source_name: MarketWatch
+    published: "2026-02-23T11:01:00.000Z"
+  - entity: here-are-the-five-companies-that-9-tril-2026-02-23
+    type: article
+    title: Here are the five companies that $9 trillion of funds agree on right now
+    url: >-
+      https://www.marketwatch.com/story/here-are-the-five-companies-that-9-trillion-of-funds-agree-on-right-now-4ac77fc3?mod=mw_rss_topstories
+    excerpt: >-
+      Vertiv has been a top holding among hedge and mutual funds in the first quarter of this year so far, and a
+      lucrative one.
+    source_name: MarketWatch
+    published: "2026-02-23T10:53:00.000Z"
+  - entity: x2018-i-spend-7-500-a-month-x2019-2026-02-23
+    type: article
+    title: "&#x2018;I spend $7,500 a month&#x2019;: I&#x2019;m 47, earn $260K, and have $3 million. Can I retire at 50?"
+    url: >-
+      https://www.marketwatch.com/story/i-spend-7-500-a-month-im-47-earn-260k-and-have-3-million-can-i-retire-at-50-05afc0b5?mod=mw_rss_topstories
+    excerpt: "&#x201c;I own a home worth $520,000 and do not have a mortgage on it.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-23T10:30:00.000Z"
+  - entity: why-jpmorgan-says-the-international-stoc-2026-02-23
+    type: article
+    title: Why JPMorgan says the international stock story still has legs
+    url: >-
+      https://www.marketwatch.com/story/why-jpmorgan-says-the-international-stock-story-still-has-legs-bfd6cd61?mod=mw_rss_topstories
+    excerpt: >-
+      Decent growth, benign inflation, a dovish Fed and a weaker dollar all favor equities but international and
+      emerging stocks look set to build on the outperformance of the last year
+    source_name: MarketWatch
+    published: "2026-02-23T10:19:00.000Z"
+  - entity: former-canada-pm-justin-trudeau-buys-a-2026-02-23
+    type: article
+    title: Former Canada PM Justin Trudeau buys a $3.1 million home in Montreal&#x2014;will he live there with Katy Perry?
+    url: >-
+      https://www.marketwatch.com/story/former-canada-pm-justin-trudeau-buys-a-3-1-million-home-in-montrealwill-he-live-there-with-katy-perry-5b8b53cf?mod=mw_rss_topstories
+    excerpt: >-
+      Justin Trudeau has forked over $3.1 million for an expansive estate in Montreal&#x2019;s exclusive Outremont
+      neighborhood&#x2014;and got the seal of approval from girlfriend Katy Perry.
+    source_name: MarketWatch
+    published: "2026-02-23T10:02:00.000Z"
+  - entity: l-a-olympics-chair-casey-wasserman-cuts-2026-02-23
+    type: article
+    title: L.A. Olympics chair Casey Wasserman cuts price of $30 million Kubrick-inspired mansion
+    url: >-
+      https://www.marketwatch.com/story/l-a-olympics-chair-casey-wasserman-cuts-price-of-30-million-kubrick-inspired-mansion-31414975?mod=mw_rss_topstories
+    excerpt: >-
+      The home, inspired by Kubrick&#x2019;s 2001 movie &#x201c;Space Odyssey&#x201d; is located in a highly
+      sought-after neighborhood of Hollywood Hills, but has been on the market since September.
+    source_name: MarketWatch
+    published: "2026-02-23T09:58:00.000Z"
+  - entity: green-deals-are-being-postponed-so-hone-2026-02-23
+    type: article
+    title: Green deals are being postponed, so Honeywell just shaved $500 million off a chemicals acquisition
+    url: >-
+      https://www.marketwatch.com/story/green-deals-are-being-postponed-so-honeywell-just-shaved-500-million-off-a-chemicals-acquisition-93965abb?mod=mw_rss_topstories
+    excerpt: >-
+      Honeywell International on Monday received a 26% discount on its deal to acquire a business tied to the struggling
+      chemicals industry.
+    source_name: MarketWatch
+    published: "2026-02-23T09:55:00.000Z"
+  - entity: hedge-funds-offer-locked-up-private-cred-2026-02-23
+    type: article
+    title: Hedge funds offer locked-up private credit investors a way out &#x2014; at a hefty discount
+    url: >-
+      https://www.marketwatch.com/story/hedge-funds-offer-locked-up-private-credit-investors-a-way-out-at-a-hefty-discount-8b4f01cd?mod=mw_rss_topstories
+    excerpt: >-
+      Two investment funds said they would offer investors in a locked up private credit fund an exit &#x2014; but at a
+      hefty discount.
+    source_name: MarketWatch
+    published: "2026-02-23T09:15:00.000Z"
+  - entity: u-s-stock-futures-dollar-and-bitcoin-d-2026-02-23
+    type: article
+    title: U.S. stock futures, dollar and bitcoin drop as investors await clarity on Trump&#x2019;s latest tariff plans
+    url: >-
+      https://www.marketwatch.com/story/u-s-stock-futures-flat-as-investors-await-clarity-on-trumps-latest-tariff-plans-ae774ba0?mod=mw_rss_topstories
+    excerpt: >-
+      U.S. stock-index futures declined Sunday, as investors grappled with the implications of Friday&#x2019;s Supreme
+      Court ruling that overturned most of President Donald Trump&#x2019;s tariffs.
+    source_name: MarketWatch
+    published: "2026-02-23T04:02:00.000Z"
+  - entity: tariff-costs-and-refunds-take-the-spotli-2026-02-23
+    type: article
+    title: Tariff costs and refunds take the spotlight as Home Depot, TJX and other retailers report earnings this week
+    url: >-
+      https://www.marketwatch.com/story/tariffs-costs-and-refunds-take-the-spotlight-as-home-depot-tjx-and-other-retailers-report-earnings-this-week-7f2a144a?mod=mw_rss_topstories
+    excerpt: >-
+      The Supreme Court struck down most of the Trump administration&#x2019;s tariffs, but uncertainty remains for store
+      chains.
+    source_name: MarketWatch
+    published: "2026-02-23T01:57:00.000Z"
+  - entity: 100-oil-price-forecasts-resurface-amid-2026-02-23
+    type: article
+    title: $100 Oil Price Forecasts Resurface Amid U.S.-Iran Standoff
+    url: https://oilprice.com/Latest-Energy-News/World-News/100-Oil-Price-Forecasts-Resurface-Amid-US-Iran-Standoff.html
+    excerpt: >-
+      Oil price spikes to $90-$100 per barrel are “within reach” as the United States and Iran appear close to war,
+      Fereidun Fesharaki, Chairman Emeritus at energy market consultancy FGE NexantECA, told Blo
+    source_name: OilPrice.com
+    published: "2026-02-23T11:26:39.000Z"
+  - entity: goldman-sachs-hikes-year-end-oil-price-f-2026-02-23
+    type: article
+    title: Goldman Sachs Hikes Year-End Oil Price Forecast by $6 Per Barrel
+    url: https://oilprice.com/Energy/Energy-General/Goldman-Sachs-Hikes-Year-End-Oil-Price-Forecast-by-6-Per-Barrel.html
+    excerpt: >-
+      Even if it maintains the view of global oversupply this year, Goldman Sachs has raised its oil price forecast for
+      the fourth quarter by $6 per barrel as inventories in advanced economies remain low. T
+    source_name: OilPrice.com
+    published: "2026-02-23T10:30:00.000Z"
+  - entity: saudi-aramco-secures-first-condensate-de-2026-02-23
+    type: article
+    title: Saudi Aramco Secures First Condensate Deals From $100 Billion Jafurah Project
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/Saudi-Aramco-Secures-First-Condensate-Deals-From-100-Billion-Jafurah-Project.html
+    excerpt: >-
+      Saudi Aramco has sealed deals for several cargos of gas condensates from its $100-billion Jafurah shale gas
+      facility, Reuters has reported, citing unnamed trade sources. The first cargo is set to depa
+    source_name: OilPrice.com
+    published: "2026-02-23T10:00:00.000Z"
+  - entity: europe-set-for-another-record-lng-import-2026-02-23
+    type: article
+    title: Europe Set for Another Record LNG Import Month
+    url: https://oilprice.com/Latest-Energy-News/World-News/Europe-Set-for-Another-Record-LNG-Import-Month.html
+    excerpt: >-
+      Europe is on track to break its previous record for monthly LNG imports in February, with Kpler forecasting a
+      total of 14.20 million tons amid fast-depleting gas inventories. This amount would be an i
+    source_name: OilPrice.com
+    published: "2026-02-23T08:30:00.000Z"
+  - entity: eu-urges-trump-to-honor-trade-deal-2026-02-23
+    type: article
+    title: EU Urges Trump to Honor Trade Deal
+    url: https://oilprice.com/Latest-Energy-News/World-News/EU-Urges-Trump-to-Honor-Trade-Deal.html
+    excerpt: >-
+      The European Commission has called on President Trump to stick to a trade deal the two sealed last summer, which
+      features a commitment on the part of the EU to buy $250 billion worth of U.S. energy an
+    source_name: OilPrice.com
+    published: "2026-02-23T07:00:00.000Z"
+  - entity: oil-traders-may-be-pricing-iran-risk-too-2026-02-23
+    type: article
+    title: Oil Traders May Be Pricing Iran Risk Too Lightly
+    url: https://oilprice.com/Energy/Crude-Oil/Oil-Traders-May-Be-Pricing-Iran-Risk-Too-Lightly.html
+    excerpt: >-
+      Crude oil prices on Thursday settled at the highest in six months, with Brent crude topping $71 per barrel and WTI
+      over $66. However, this may be just the start of a much stronger rally—it all depends
+    source_name: OilPrice.com
+    published: "2026-02-23T00:00:00.000Z"
