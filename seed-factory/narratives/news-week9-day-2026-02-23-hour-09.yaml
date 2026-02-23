@@ -1,0 +1,664 @@
+seed:
+  name: news-week9-day-2026-02-23-hour-09
+  label: Daily News — 2026-02-23 09:00 (Week 9, 2026)
+  namespace: news.week9.day-2026-02-23
+  description: "Auto-gathered news: 31 stories, 2026-02-23 to 2026-02-23"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week9
+    extends: news
+  - namespace: news.week9.day-2026-02-23
+    extends: news.week9
+entities:
+  - id: four-years-into-its-full-scale-war-in-uk-2026-02-23
+    type: Event
+    name: Four years into its full-scale war in Ukraine, Russia is feeling the effects
+    category: geopolitics
+    description: Steve Rosenberg reports on the economic consequences of Russia's war, and how people are coping.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T06:01:59.000Z"
+      precision: day
+  - id: violence-erupts-in-mexico-after-drug-lor-2026-02-23
+    type: Fact
+    name: Violence erupts in Mexico after drug lord El Mencho killed
+    category: geopolitics
+    description: >-
+      The death of the most-wanted Jalisco cartel chief sparks retaliatory violence in at least a dozen states in
+      Mexico.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T05:30:58.000Z"
+      precision: day
+  - id: armed-man-killed-after-entering-secure-p-2026-02-23
+    type: Fact
+    name: Armed man killed after entering secure perimeter of Trump's residence, Secret Service says
+    category: geopolitics
+    description: >-
+      The suspect was carrying a shotgun and fuel can when he was killed, officers say, while Trump was in Washington DC
+      at the time.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T07:16:16.000Z"
+      precision: day
+  - id: kim-jong-un-re-appointed-leader-of-north-2026-02-23
+    type: Event
+    name: Kim Jong Un re-appointed leader of North Korea's ruling party
+    category: geopolitics
+    description: >-
+      The announcement by the rubber-stamp party congress comes as little surprise given the Kim family's grip since the
+      1940s.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T07:15:47.000Z"
+      precision: day
+  - id: australian-prosecutors-consider-reopenin-2026-02-23
+    type: Event
+    name: Australian prosecutors consider reopening British girl's cold case disappearance
+    category: geopolitics
+    description: Cheryl Grimmer's family have been petitioning police to consider the new evidence they say they've found.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T05:07:47.000Z"
+      precision: day
+  - id: what-now-for-asia-after-trumps-tariffs-2026-02-23
+    type: Event
+    name: What now for Asia after Trump's tariffs struck down?
+    category: finance
+    description: After the Supreme Court ruling, Trump said he would impose new levies of 15% on goods entering the US.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T07:29:11.000Z"
+      precision: day
+  - id: how-budget-fast-fashion-is-taking-small-2026-02-23
+    type: Event
+    name: How budget fast fashion is taking small-town India by storm
+    category: finance
+    description: More Indians in small towns are now shopping for affordable brands instead of unlabelled goods in the bazaars.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T00:40:05.000Z"
+      precision: day
+  - id: are-you-cut-out-for-living-and-working-i-2026-02-23
+    type: Event
+    name: Are you cut out for living and working in Antarctica?
+    category: finance
+    description: Jobs are available on the icy continent for chefs, plumbers, carpenters and even hairdressers.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T00:01:56.000Z"
+      precision: day
+  - id: who-was-el-mencho-the-former-police-off-2026-02-23
+    type: Fact
+    name: Who was El Mencho, the former police officer who co-founded an ultraviolent cartel in Mexico?
+    category: geopolitics
+    description: >-
+      <p>Drug lord who was killed by Mexican special forces on Sunday led a cartel known for aggression and
+      military-style arsenal</p><ul><li><p><a
+      href="https://www.theguardian.com/world/2026/feb/22/mexican-security-forces-reportedly-kill-drug-cartel-boss-el-mencho">Violence
+      erupts after Mexican security
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T02:52:09.000Z"
+      precision: day
+  - id: violence-erupts-after-mexican-security-f-2026-02-23
+    type: Event
+    name: Violence erupts after Mexican security forces kill drug cartel boss ‘El Mencho’
+    category: geopolitics
+    description: >-
+      <p>Death of Nemesio Oseguera Cervantes, one of world’s most wanted drug traffickers, sets off wave of disorder
+      across several Mexican states</p><ul><li><p><a
+      href="https://www.theguardian.com/world/2026/feb/23/who-was-el-mencho-drug-cartel-boss-killed-mexico">Who was El
+      Mencho, the former police off
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T00:39:49.000Z"
+      precision: day
+  - id: us-dollar-and-european-stock-markets-dro-2026-02-23
+    type: Decision
+    name: US dollar and European stock markets drop after Trump announces 15% global tariff – business live
+    category: finance
+    description: >-
+      <p>Rolling coverage of the latest economic and financial news</p><p><strong>The London stock market has dipped
+      slightly in early trading.</strong></p><p>The <strong>FTSE</strong> <strong>100</strong> index is down 19 points,
+      or 0.18%, at 10,668 points.</p> <a href="https://www.theguardian.com/busine
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T08:22:35.000Z"
+      precision: day
+  - id: uk-job-vacancies-fall-to-lowest-level-s-2026-02-23
+    type: Event
+    name: UK job vacancies ‘fall to lowest level since pandemic’
+    category: finance
+    description: >-
+      <p>Advertised roles dropped 3% last month to 695,000 – first dip below 700,000 since January 2021, job site Adzuna
+      says</p><p>The number of job vacancies in the UK has tumbled to the lowest level in five years, research suggests,
+      falling to levels not seen since the pandemic.</p><p>The number of job
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T00:01:51.000Z"
+      precision: day
+  - id: why-are-homegrown-apples-in-the-uk-more-2026-02-23
+    type: Event
+    name: Why are homegrown apples in the UK more expensive than imported bananas?
+    category: finance
+    description: >-
+      <p>From flooding in Peru to the fight for fair wages, a lot more goes into the price of fruit than what
+      supermarkets charge consumers for</p><p>Why have apples increased so much in price in the UK? They seem much more
+      expensive than bananas, even though many are homegrown, and so don’t have to trave
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T05:00:58.000Z"
+      precision: day
+  - id: donald-trump-s-actions-stir-election-con-2026-02-23
+    type: Event
+    name: Donald Trump’s actions stir election concerns in the lead-up to US midterms
+    category: geopolitics
+    description: November midterms will be first major US election since Trump took office and follow false claims over 2020 loss.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T07:58:24.000Z"
+      precision: day
+  - id: pakistan-claims-at-least-70-fighters-kil-2026-02-23
+    type: Fact
+    name: Pakistan claims at least 70 fighters killed in strikes along Afghan border
+    category: geopolitics
+    description: >-
+      Afghan officials accuse Pakistan of targeting civilians and violating its sovereignty in Sunday&#039;s border air
+      raids.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T07:46:42.000Z"
+      precision: day
+  - id: the-ukraine-war-in-numbers-people-terr-2026-02-23
+    type: Event
+    name: "The Ukraine war in numbers: People, territory, money"
+    category: geopolitics
+    description: >-
+      Four years into Russia&#039;s grinding war on Ukraine, Al Jazeera looks at the costs — to people, territory and
+      treasuries.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T07:19:09.000Z"
+      precision: day
+  - id: icc-to-hold-hearings-on-charges-against-2026-02-23
+    type: Event
+    name: ICC to hold hearings on charges against ex-Philippine President Duterte
+    category: geopolitics
+    description: >-
+      Duterte faces three counts of crimes against humanity allegedly committed during his time as president and Davao
+      mayor.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T06:39:39.000Z"
+      precision: day
+  - id: how-modi-broke-down-walls-between-indi-2026-02-23
+    type: Event
+    name: How Modi ‘broke down walls’ between India, Israel – at Palestine’s expense
+    category: geopolitics
+    description: >-
+      Under Modi, India, a long supporter of the Palestinian cause, has found a friend in Israel&#039;s Netanyahu
+      despite genocide.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T05:20:14.000Z"
+      precision: day
+  - id: hong-kong-court-rejects-appeal-in-landma-2026-02-23
+    type: Event
+    name: Hong Kong court rejects appeal in landmark subversion case
+    category: geopolitics
+    description: >-
+      Appellants were among 45 opposition figures sentenced to prison in 2024 for organising an unofficial primary
+      election.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T04:59:44.000Z"
+      precision: day
+  - id: one-battle-after-another-triumphs-at-uk-2026-02-23
+    type: Event
+    name: One Battle After Another triumphs at UK’s BAFTA film awards
+    category: geopolitics
+    description: The offbeat thriller has won six BAFTAs, including best film and best director for Paul Thomas Anderson.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T04:47:22.000Z"
+      precision: day
+  - id: russia-ukraine-war-list-of-key-events-2026-02-23
+    type: Event
+    name: "Russia-Ukraine war: List of key events, day 1,460"
+    category: geopolitics
+    description: These are the key developments from day 1,460 of Russia’s war on Ukraine.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T02:02:59.000Z"
+      precision: day
+  - id: ai-bots-tipping-blunder-hands-450-000-2026-02-23
+    type: Event
+    name: AI bot's tipping blunder hands $450,000 memecoin pile to X sad story poster
+    category: finance.crypto
+    description: >-
+      AI trading bot "Lobstar Wilde" accidentally sent a large coin stash to an X user in need of 4 SOL for medical
+      treatment.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T06:15:37.000Z"
+      precision: day
+  - id: 61-million-bitcoin-whale-liquidated-on-2026-02-23
+    type: Event
+    name: $61 million bitcoin whale liquidated on HTX as sentiment back at 'extreme fear'
+    category: finance.crypto
+    description: >-
+      The position was the largest single forced closure in 24 hours as bitcoin shed weekend gains and the fear index
+      returned to historic lows.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T06:15:20.000Z"
+      precision: day
+  - id: bitcoin-etfs-bleed-3-8-billion-in-histo-2026-02-23
+    type: Event
+    name: Bitcoin ETFs bleed $3.8 billion in historic five-week outflow streak
+    category: finance.crypto
+    description: Outflows underscore persistent institutional wariness toward bitcoin after the early October crash.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T04:42:13.000Z"
+      precision: day
+  - id: bitcoin-slides-5-tumbling-below-65-0-2026-02-23
+    type: Event
+    name: Bitcoin slides 5%,  tumbling below $65,000 as whale selling grows and recent buyers lock in losses
+    category: finance.crypto
+    description: >-
+      On-chain data from Glassnode and CryptoQuant shows large holders dominating exchange inflows while short-term
+      investors continue to sell at a loss, pointing to a fragile base-building phase.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T01:49:11.000Z"
+      precision: day
+  - id: u-s-stock-futures-dollar-and-bitcoin-d-2026-02-23
+    type: Event
+    name: U.S. stock futures, dollar and bitcoin drop as investors await clarity on Trump&#x2019;s latest tariff plans
+    category: finance.markets
+    description: >-
+      U.S. stock-index futures declined Sunday, as investors grappled with the implications of Friday&#x2019;s Supreme
+      Court ruling that overturned most of President Donald Trump&#x2019;s tariffs.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T04:02:00.000Z"
+      precision: day
+  - id: tariff-costs-and-refunds-take-the-spotli-2026-02-23
+    type: Event
+    name: Tariff costs and refunds take the spotlight as Home Depot, TJX and other retailers report earnings this week
+    category: finance.markets
+    description: >-
+      The Supreme Court struck down most of the Trump administration&#x2019;s tariffs, but uncertainty remains for store
+      chains.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T01:57:00.000Z"
+      precision: day
+  - id: my-wife-x2019-s-credit-card-payment-is-2026-02-23
+    type: Event
+    name: My wife&#x2019;s credit-card payment is three months overdue. As an authorized user, am I in trouble?
+    category: finance.markets
+    description: "&#x201c;All correspondence regarding the account was sent to my wife&#x2019;s email.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T00:26:00.000Z"
+      precision: day
+  - id: europe-set-for-another-record-lng-import-2026-02-23
+    type: Event
+    name: Europe Set for Another Record LNG Import Month
+    category: finance.energy
+    description: >-
+      Europe is on track to break its previous record for monthly LNG imports in February, with Kpler forecasting a
+      total of 14.20 million tons amid fast-depleting gas inventories. This amount would be an increase on the 13.67
+      million tons imported in January, Reuters’ Clyde Russell noted in a report on L
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T08:30:00.000Z"
+      precision: day
+  - id: eu-urges-trump-to-honor-trade-deal-2026-02-23
+    type: Claim
+    name: EU Urges Trump to Honor Trade Deal
+    category: finance.energy
+    description: >-
+      The European Commission has called on President Trump to stick to a trade deal the two sealed last summer, which
+      features a commitment on the part of the EU to buy $250 billion worth of U.S. energy annually for a period of
+      three years. Separately, the European Parliament is considering a freeze of t
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T07:00:00.000Z"
+      precision: day
+  - id: oil-traders-may-be-pricing-iran-risk-too-2026-02-23
+    type: Claim
+    name: Oil Traders May Be Pricing Iran Risk Too Lightly
+    category: finance.energy
+    description: >-
+      Crude oil prices on Thursday settled at the highest in six months, with Brent crude topping $71 per barrel and WTI
+      over $66. However, this may be just the start of a much stronger rally—it all depends on developments between the
+      United States and Iran. The latest round of negotiations between the tw
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-23T00:00:00.000Z"
+      precision: day
+narratives:
+  - name: Ukraine Peace Process
+    steps:
+      - from: russia-ukraine-war-list-of-key-events-2026-02-23
+        to: four-years-into-its-full-scale-war-in-uk-2026-02-23
+        type: causes
+      - from: four-years-into-its-full-scale-war-in-uk-2026-02-23
+        to: the-ukraine-war-in-numbers-people-terr-2026-02-23
+        type: causes
+  - name: Crypto Markets
+    steps:
+      - from: bitcoin-slides-5-tumbling-below-65-0-2026-02-23
+        to: u-s-stock-futures-dollar-and-bitcoin-d-2026-02-23
+        type: causes
+      - from: u-s-stock-futures-dollar-and-bitcoin-d-2026-02-23
+        to: bitcoin-etfs-bleed-3-8-billion-in-histo-2026-02-23
+        type: causes
+      - from: bitcoin-etfs-bleed-3-8-billion-in-histo-2026-02-23
+        to: 61-million-bitcoin-whale-liquidated-on-2026-02-23
+        type: causes
+sources:
+  - entity: four-years-into-its-full-scale-war-in-uk-2026-02-23
+    type: article
+    title: Four years into its full-scale war in Ukraine, Russia is feeling the effects
+    url: https://www.bbc.com/news/articles/c4gj20xzw39o
+    excerpt: Steve Rosenberg reports on the economic consequences of Russia's war, and how people are coping.
+    source_name: BBC News
+    published: "2026-02-23T06:01:59.000Z"
+  - entity: violence-erupts-in-mexico-after-drug-lor-2026-02-23
+    type: article
+    title: Violence erupts in Mexico after drug lord El Mencho killed
+    url: https://www.bbc.com/news/articles/c795qgejzpxo
+    excerpt: >-
+      The death of the most-wanted Jalisco cartel chief sparks retaliatory violence in at least a dozen states in
+      Mexico.
+    source_name: BBC News
+    published: "2026-02-23T05:30:58.000Z"
+  - entity: armed-man-killed-after-entering-secure-p-2026-02-23
+    type: article
+    title: Armed man killed after entering secure perimeter of Trump's residence, Secret Service says
+    url: https://www.bbc.com/news/articles/cp32l9w9pgyo
+    excerpt: >-
+      The suspect was carrying a shotgun and fuel can when he was killed, officers say, while Trump was in Washington DC
+      at the time.
+    source_name: BBC News
+    published: "2026-02-23T07:16:16.000Z"
+  - entity: kim-jong-un-re-appointed-leader-of-north-2026-02-23
+    type: article
+    title: Kim Jong Un re-appointed leader of North Korea's ruling party
+    url: https://www.bbc.com/news/articles/cvg18588mdko
+    excerpt: >-
+      The announcement by the rubber-stamp party congress comes as little surprise given the Kim family's grip since the
+      1940s.
+    source_name: BBC News
+    published: "2026-02-23T07:15:47.000Z"
+  - entity: australian-prosecutors-consider-reopenin-2026-02-23
+    type: article
+    title: Australian prosecutors consider reopening British girl's cold case disappearance
+    url: https://www.bbc.com/news/articles/cd6zg91l75qo
+    excerpt: Cheryl Grimmer's family have been petitioning police to consider the new evidence they say they've found.
+    source_name: BBC News
+    published: "2026-02-23T05:07:47.000Z"
+  - entity: what-now-for-asia-after-trumps-tariffs-2026-02-23
+    type: article
+    title: What now for Asia after Trump's tariffs struck down?
+    url: https://www.bbc.com/news/articles/c4g58vlwdq3o
+    excerpt: After the Supreme Court ruling, Trump said he would impose new levies of 15% on goods entering the US.
+    source_name: BBC Business
+    published: "2026-02-23T07:29:11.000Z"
+  - entity: how-budget-fast-fashion-is-taking-small-2026-02-23
+    type: article
+    title: How budget fast fashion is taking small-town India by storm
+    url: https://www.bbc.com/news/articles/c15xvy7k2q5o
+    excerpt: More Indians in small towns are now shopping for affordable brands instead of unlabelled goods in the bazaars.
+    source_name: BBC Business
+    published: "2026-02-23T00:40:05.000Z"
+  - entity: are-you-cut-out-for-living-and-working-i-2026-02-23
+    type: article
+    title: Are you cut out for living and working in Antarctica?
+    url: https://www.bbc.com/news/articles/cn0e30d9wj9o
+    excerpt: Jobs are available on the icy continent for chefs, plumbers, carpenters and even hairdressers.
+    source_name: BBC Business
+    published: "2026-02-23T00:01:56.000Z"
+  - entity: who-was-el-mencho-the-former-police-off-2026-02-23
+    type: article
+    title: Who was El Mencho, the former police officer who co-founded an ultraviolent cartel in Mexico?
+    url: https://www.theguardian.com/world/2026/feb/23/who-was-el-mencho-drug-cartel-boss-killed-mexico
+    excerpt: >-
+      <p>Drug lord who was killed by Mexican special forces on Sunday led a cartel known for aggression and
+      military-style arsenal</p><ul><li><p><a href="https://www.theguardian.com/world/2026/feb/22/mexica
+    source_name: The Guardian
+    published: "2026-02-23T02:52:09.000Z"
+  - entity: violence-erupts-after-mexican-security-f-2026-02-23
+    type: article
+    title: Violence erupts after Mexican security forces kill drug cartel boss ‘El Mencho’
+    url: https://www.theguardian.com/world/2026/feb/22/mexican-security-forces-reportedly-kill-drug-cartel-boss-el-mencho
+    excerpt: >-
+      <p>Death of Nemesio Oseguera Cervantes, one of world’s most wanted drug traffickers, sets off wave of disorder
+      across several Mexican states</p><ul><li><p><a href="https://www.theguardian.com/world/20
+    source_name: The Guardian
+    published: "2026-02-23T00:39:49.000Z"
+  - entity: us-dollar-and-european-stock-markets-dro-2026-02-23
+    type: article
+    title: US dollar and European stock markets drop after Trump announces 15% global tariff – business live
+    url: >-
+      https://www.theguardian.com/business/live/2026/feb/23/us-dollar-stock-markets-losses-trump-global-tariff-supreme-court-news-updates
+    excerpt: >-
+      <p>Rolling coverage of the latest economic and financial news</p><p><strong>The London stock market has dipped
+      slightly in early trading.</strong></p><p>The <strong>FTSE</strong> <strong>100</strong> 
+    source_name: The Guardian
+    published: "2026-02-23T08:22:35.000Z"
+  - entity: uk-job-vacancies-fall-to-lowest-level-s-2026-02-23
+    type: article
+    title: UK job vacancies ‘fall to lowest level since pandemic’
+    url: https://www.theguardian.com/business/2026/feb/23/uk-job-vacancies-fall-to-lowest-level-since-pandemic
+    excerpt: >-
+      <p>Advertised roles dropped 3% last month to 695,000 – first dip below 700,000 since January 2021, job site Adzuna
+      says</p><p>The number of job vacancies in the UK has tumbled to the lowest level in f
+    source_name: The Guardian
+    published: "2026-02-23T00:01:51.000Z"
+  - entity: why-are-homegrown-apples-in-the-uk-more-2026-02-23
+    type: article
+    title: Why are homegrown apples in the UK more expensive than imported bananas?
+    url: https://www.theguardian.com/lifeandstyle/2026/feb/23/why-have-apples-increased-so-much-in-price-in-the-uk
+    excerpt: >-
+      <p>From flooding in Peru to the fight for fair wages, a lot more goes into the price of fruit than what
+      supermarkets charge consumers for</p><p>Why have apples increased so much in price in the UK? Th
+    source_name: The Guardian
+    published: "2026-02-23T05:00:58.000Z"
+  - entity: donald-trump-s-actions-stir-election-con-2026-02-23
+    type: article
+    title: Donald Trump’s actions stir election concerns in the lead-up to US midterms
+    url: >-
+      https://www.aljazeera.com/news/2026/2/23/donald-trumps-actions-stir-election-concerns-in-the-lead-up-to-us-midterms
+    excerpt: November midterms will be first major US election since Trump took office and follow false claims over 2020 loss.
+    source_name: Al Jazeera
+    published: "2026-02-23T07:58:24.000Z"
+  - entity: pakistan-claims-at-least-70-fighters-kil-2026-02-23
+    type: article
+    title: Pakistan claims at least 70 fighters killed in strikes along Afghan border
+    url: >-
+      https://www.aljazeera.com/news/2026/2/23/pakistan-claims-at-least-70-fighters-killed-in-strikes-along-afghan-border
+    excerpt: >-
+      Afghan officials accuse Pakistan of targeting civilians and violating its sovereignty in Sunday&#039;s border air
+      raids.
+    source_name: Al Jazeera
+    published: "2026-02-23T07:46:42.000Z"
+  - entity: the-ukraine-war-in-numbers-people-terr-2026-02-23
+    type: article
+    title: "The Ukraine war in numbers: People, territory, money"
+    url: https://www.aljazeera.com/news/2026/2/23/the-ukraine-war-in-numbers-people-territory-money
+    excerpt: >-
+      Four years into Russia&#039;s grinding war on Ukraine, Al Jazeera looks at the costs — to people, territory and
+      treasuries.
+    source_name: Al Jazeera
+    published: "2026-02-23T07:19:09.000Z"
+  - entity: icc-to-hold-hearings-on-charges-against-2026-02-23
+    type: article
+    title: ICC to hold hearings on charges against ex-Philippine President Duterte
+    url: https://www.aljazeera.com/news/2026/2/23/icc-to-hold-hearings-on-charges-against-ex-philippine-president-duterte
+    excerpt: >-
+      Duterte faces three counts of crimes against humanity allegedly committed during his time as president and Davao
+      mayor.
+    source_name: Al Jazeera
+    published: "2026-02-23T06:39:39.000Z"
+  - entity: how-modi-broke-down-walls-between-indi-2026-02-23
+    type: article
+    title: How Modi ‘broke down walls’ between India, Israel – at Palestine’s expense
+    url: https://www.aljazeera.com/features/2026/2/23/how-modi-broke-down-walls-between-india-israel-at-palestines
+    excerpt: >-
+      Under Modi, India, a long supporter of the Palestinian cause, has found a friend in Israel&#039;s Netanyahu
+      despite genocide.
+    source_name: Al Jazeera
+    published: "2026-02-23T05:20:14.000Z"
+  - entity: hong-kong-court-rejects-appeal-in-landma-2026-02-23
+    type: article
+    title: Hong Kong court rejects appeal in landmark subversion case
+    url: https://www.aljazeera.com/news/2026/2/23/hong-kong-court-rejects-appeal-in-landmark-subversion-case
+    excerpt: >-
+      Appellants were among 45 opposition figures sentenced to prison in 2024 for organising an unofficial primary
+      election.
+    source_name: Al Jazeera
+    published: "2026-02-23T04:59:44.000Z"
+  - entity: one-battle-after-another-triumphs-at-uk-2026-02-23
+    type: article
+    title: One Battle After Another triumphs at UK’s BAFTA film awards
+    url: https://www.aljazeera.com/news/2026/2/23/one-battle-after-another-triumphs-at-uks-bafta-film-awards
+    excerpt: The offbeat thriller has won six BAFTAs, including best film and best director for Paul Thomas Anderson.
+    source_name: Al Jazeera
+    published: "2026-02-23T04:47:22.000Z"
+  - entity: russia-ukraine-war-list-of-key-events-2026-02-23
+    type: article
+    title: "Russia-Ukraine war: List of key events, day 1,460"
+    url: https://www.aljazeera.com/news/2026/2/23/russia-ukraine-war-list-of-key-events-day-1460
+    excerpt: These are the key developments from day 1,460 of Russia’s war on Ukraine.
+    source_name: Al Jazeera
+    published: "2026-02-23T02:02:59.000Z"
+  - entity: ai-bots-tipping-blunder-hands-450-000-2026-02-23
+    type: article
+    title: AI bot's tipping blunder hands $450,000 memecoin pile to X sad story poster
+    url: >-
+      https://www.coindesk.com/markets/2026/02/23/ai-bot-s-tipping-blunder-hands-usd250-000-memecoin-pile-to-x-sad-story-poster
+    excerpt: >-
+      AI trading bot "Lobstar Wilde" accidentally sent a large coin stash to an X user in need of 4 SOL for medical
+      treatment.
+    source_name: CoinDesk
+    published: "2026-02-23T06:15:37.000Z"
+  - entity: 61-million-bitcoin-whale-liquidated-on-2026-02-23
+    type: article
+    title: $61 million bitcoin whale liquidated on HTX as sentiment back at 'extreme fear'
+    url: >-
+      https://www.coindesk.com/markets/2026/02/23/usd61-million-bitcoin-whale-liquidated-on-htx-as-sentiment-back-at-extreme-fear
+    excerpt: >-
+      The position was the largest single forced closure in 24 hours as bitcoin shed weekend gains and the fear index
+      returned to historic lows.
+    source_name: CoinDesk
+    published: "2026-02-23T06:15:20.000Z"
+  - entity: bitcoin-etfs-bleed-3-8-billion-in-histo-2026-02-23
+    type: article
+    title: Bitcoin ETFs bleed $3.8 billion in historic five-week outflow streak
+    url: https://www.coindesk.com/markets/2026/02/23/bitcoin-etfs-bleed-usd3-8-billion-in-historic-five-week-outflow-streak
+    excerpt: Outflows underscore persistent institutional wariness toward bitcoin after the early October crash.
+    source_name: CoinDesk
+    published: "2026-02-23T04:42:13.000Z"
+  - entity: bitcoin-slides-5-tumbling-below-65-0-2026-02-23
+    type: article
+    title: Bitcoin slides 5%,  tumbling below $65,000 as whale selling grows and recent buyers lock in losses
+    url: >-
+      https://www.coindesk.com/markets/2026/02/23/bitcoin-slides-4-to-usd65-000-as-whale-selling-grows-and-recent-buyers-lock-in-losses
+    excerpt: >-
+      On-chain data from Glassnode and CryptoQuant shows large holders dominating exchange inflows while short-term
+      investors continue to sell at a loss, pointing to a fragile base-building phase.
+    source_name: CoinDesk
+    published: "2026-02-23T01:49:11.000Z"
+  - entity: u-s-stock-futures-dollar-and-bitcoin-d-2026-02-23
+    type: article
+    title: U.S. stock futures, dollar and bitcoin drop as investors await clarity on Trump&#x2019;s latest tariff plans
+    url: >-
+      https://www.marketwatch.com/story/u-s-stock-futures-flat-as-investors-await-clarity-on-trumps-latest-tariff-plans-ae774ba0?mod=mw_rss_topstories
+    excerpt: >-
+      U.S. stock-index futures declined Sunday, as investors grappled with the implications of Friday&#x2019;s Supreme
+      Court ruling that overturned most of President Donald Trump&#x2019;s tariffs.
+    source_name: MarketWatch
+    published: "2026-02-23T04:02:00.000Z"
+  - entity: tariff-costs-and-refunds-take-the-spotli-2026-02-23
+    type: article
+    title: Tariff costs and refunds take the spotlight as Home Depot, TJX and other retailers report earnings this week
+    url: >-
+      https://www.marketwatch.com/story/tariffs-costs-and-refunds-take-the-spotlight-as-home-depot-tjx-and-other-retailers-report-earnings-this-week-7f2a144a?mod=mw_rss_topstories
+    excerpt: >-
+      The Supreme Court struck down most of the Trump administration&#x2019;s tariffs, but uncertainty remains for store
+      chains.
+    source_name: MarketWatch
+    published: "2026-02-23T01:57:00.000Z"
+  - entity: my-wife-x2019-s-credit-card-payment-is-2026-02-23
+    type: article
+    title: My wife&#x2019;s credit-card payment is three months overdue. As an authorized user, am I in trouble?
+    url: >-
+      https://www.marketwatch.com/story/my-wifes-credit-card-payment-is-three-months-overdue-as-an-authorized-user-am-i-in-trouble-9094513f?mod=mw_rss_topstories
+    excerpt: "&#x201c;All correspondence regarding the account was sent to my wife&#x2019;s email.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-23T00:26:00.000Z"
+  - entity: europe-set-for-another-record-lng-import-2026-02-23
+    type: article
+    title: Europe Set for Another Record LNG Import Month
+    url: https://oilprice.com/Latest-Energy-News/World-News/Europe-Set-for-Another-Record-LNG-Import-Month.html
+    excerpt: >-
+      Europe is on track to break its previous record for monthly LNG imports in February, with Kpler forecasting a
+      total of 14.20 million tons amid fast-depleting gas inventories. This amount would be an i
+    source_name: OilPrice.com
+    published: "2026-02-23T08:30:00.000Z"
+  - entity: eu-urges-trump-to-honor-trade-deal-2026-02-23
+    type: article
+    title: EU Urges Trump to Honor Trade Deal
+    url: https://oilprice.com/Latest-Energy-News/World-News/EU-Urges-Trump-to-Honor-Trade-Deal.html
+    excerpt: >-
+      The European Commission has called on President Trump to stick to a trade deal the two sealed last summer, which
+      features a commitment on the part of the EU to buy $250 billion worth of U.S. energy an
+    source_name: OilPrice.com
+    published: "2026-02-23T07:00:00.000Z"
+  - entity: oil-traders-may-be-pricing-iran-risk-too-2026-02-23
+    type: article
+    title: Oil Traders May Be Pricing Iran Risk Too Lightly
+    url: https://oilprice.com/Energy/Crude-Oil/Oil-Traders-May-Be-Pricing-Iran-Risk-Too-Lightly.html
+    excerpt: >-
+      Crude oil prices on Thursday settled at the highest in six months, with Brent crude topping $71 per barrel and WTI
+      over $66. However, this may be just the start of a much stronger rally—it all depends
+    source_name: OilPrice.com
+    published: "2026-02-23T00:00:00.000Z"
