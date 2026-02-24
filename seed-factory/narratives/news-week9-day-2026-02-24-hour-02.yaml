@@ -1,0 +1,290 @@
+seed:
+  name: news-week9-day-2026-02-24-hour-02
+  label: Daily News — 2026-02-24 02:00 (Week 9, 2026)
+  namespace: news.week9.day-2026-02-24
+  description: "Auto-gathered news: 13 stories, 2026-02-24 to 2026-02-24"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week9
+    extends: news
+  - namespace: news.week9.day-2026-02-24
+    extends: news.week9
+entities:
+  - id: chocolate-kept-in-anti-theft-boxes-as-re-2026-02-24
+    type: Event
+    name: Chocolate kept in anti-theft boxes as retailers warn it's being stolen to order
+    category: finance
+    description: Retailers and police forces tell the BBC that thieves are targeting chocolate and selling it on.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-24T00:07:42.000Z"
+      precision: day
+  - id: fedex-sues-for-trump-tariff-refund-2026-02-24
+    type: Event
+    name: FedEx sues for Trump tariff refund
+    category: finance
+    description: >-
+      The recent US Supreme Court ruling that President Trump overstepped his powers when he imposed global tariffs
+      paved the way for companies to seek a refund.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-24T01:18:27.000Z"
+      precision: day
+  - id: orbital-space-race-heats-up-in-arctic-no-2026-02-24
+    type: Event
+    name: Orbital space race heats up in Arctic north
+    category: finance
+    description: Europe lags far behind the US and China in orbital space launches, but new facilities are opening up.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-24T00:10:05.000Z"
+      precision: day
+  - id: mexican-drug-cartel-boss-el-mencho-tra-2026-02-24
+    type: Event
+    name: Mexican drug cartel boss ‘El Mencho’ tracked through romantic partner
+    category: geopolitics
+    description: >-
+      <p>Killing of Jalisco New Generation Cartel leader sparks wave of violence across western
+      Mexico</p><ul><li><p>Analysis: <a
+      href="https://www.theguardian.com/world/2026/feb/23/mexico-trump-cartel-boss-killing">Mexico faces uphill battle
+      to appease kingpin Trump</a></p></li><li><p><a href="https://ww
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-24T00:25:30.000Z"
+      precision: day
+  - id: progress-on-gender-equality-at-top-of-uk-2026-02-24
+    type: Event
+    name: Progress on gender equality at top of UK’s biggest firms ‘achingly slow’
+    category: finance
+    description: >-
+      <p>Average number of female FTSE 100 CEOs stalled at nine last year, the same number as 2024, review
+      says</p><p>Campaigners have bemoaned the “achingly slow” progress made on gender equality at the top of Britain’s
+      biggest businesses, as research showed blue-chip firms had missed key targets and the
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-24T00:01:54.000Z"
+      precision: day
+  - id: x2018-i-found-out-too-late-x2019-my-2026-02-24
+    type: Fact
+    name: >-
+      &#x2018;I found out too late&#x2019;: My stepmother cheated me out of $500K from my father&#x2019;s estate. What
+      can I do?
+    category: finance.markets
+    description: >-
+      &#x201c;Within a week or two after the deadline to contest the will expired, my stepmother sent me an email
+      stating she would not share anything.&#x201d;
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-24T00:59:00.000Z"
+      precision: day
+  - id: x2018-i-need-to-get-my-financial-ducks-2026-02-24
+    type: Event
+    name: >-
+      &#x2018;I need to get my financial ducks in a row&#x2019;: I&#x2019;m 80 with $1 million. How do I prevent my son
+      from being hit with inheritance tax?
+    category: finance.markets
+    description: "&#x201c;I have $650,000 in investments, $250,000 in life insurance and about $150,000 equity in my home.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-24T00:52:00.000Z"
+      precision: day
+  - id: x2018-i-spend-7-500-a-month-x2019-2026-02-24
+    type: Event
+    name: "&#x2018;I spend $7,500 a month&#x2019;: I&#x2019;m 47, earn $260K, and have $3 million. Can I retire at 50?"
+    category: finance.markets
+    description: "&#x201c;I own a home worth $520,000 and do not have a mortgage on it.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-24T00:44:00.000Z"
+      precision: day
+  - id: hims-hers-x2019-expansion-plans-x2-2026-02-24
+    type: Event
+    name: >-
+      Hims & Hers&#x2019; expansion plans &#x2014; as well as its Super Bowl ad &#x2014; have investors worried about
+      profits
+    category: finance.markets
+    description: >-
+      The wellness platform&#x2019;s results arrived amid heightened legal and regulatory scrutiny over its
+      weight-loss-drug business.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-24T00:44:00.000Z"
+      precision: day
+  - id: congress-must-enact-trump-x2019-s-tarif-2026-02-24
+    type: Event
+    name: Congress must enact Trump&#x2019;s tariffs now to steer the U.S. from a massive revenue cliff
+    category: finance.markets
+    description: Tariffs need to become law or the federal budget will take a hit. Lawmakers have less than 150 days to decide.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-24T00:42:00.000Z"
+      precision: day
+  - id: scientists-develop-accelerator-that-coul-2026-02-24
+    type: Claim
+    name: Scientists Develop Accelerator That Could Slash Nuclear Waste Lifespan by 99%
+    category: finance.energy
+    description: >-
+      For decades, nuclear energy has been regarded as the black sheep of the energy universe, thanks to drawbacks such
+      as high costs, risk of thermal runaway leading to catastrophic accidents as well as the hazardous by-products of
+      nuclear plants. Nuclear waste is notorious for the fact that it can remai
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-24T01:00:00.000Z"
+      precision: day
+  - id: u-s-energy-dominance-push-collides-with-2026-02-24
+    type: Decision
+    name: U.S. Energy Dominance Push Collides with EU Methane Rules
+    category: finance.energy
+    description: >-
+      Last week, U.S. Energy Secretary Chris Wright called on the International Energy Agency to stop fixating on
+      climate change and instead return to its original focus on energy security. The call came in the context of plans
+      by the U.S. federal government to significantly increase the amount of oil and
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-24T00:00:00.000Z"
+      precision: day
+  - id: a-meta-ai-security-researcher-said-an-op-2026-02-24
+    type: Event
+    name: A Meta AI security researcher said an OpenClaw agent ran amok on her inbox
+    category: technology.ai
+    description: >-
+      The viral X post from an AI security researcher reads like satire. But it's really a word of warning about what
+      can go wrong when handing tasks to an AI agent.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-24T00:57:14.000Z"
+      precision: day
+sources:
+  - entity: chocolate-kept-in-anti-theft-boxes-as-re-2026-02-24
+    type: article
+    title: Chocolate kept in anti-theft boxes as retailers warn it's being stolen to order
+    url: https://www.bbc.com/news/articles/ce3gqr7p0lqo
+    excerpt: Retailers and police forces tell the BBC that thieves are targeting chocolate and selling it on.
+    source_name: BBC Business
+    published: "2026-02-24T00:07:42.000Z"
+  - entity: fedex-sues-for-trump-tariff-refund-2026-02-24
+    type: article
+    title: FedEx sues for Trump tariff refund
+    url: https://www.bbc.com/news/articles/cly83r1njjro
+    excerpt: >-
+      The recent US Supreme Court ruling that President Trump overstepped his powers when he imposed global tariffs
+      paved the way for companies to seek a refund.
+    source_name: BBC Business
+    published: "2026-02-24T01:18:27.000Z"
+  - entity: orbital-space-race-heats-up-in-arctic-no-2026-02-24
+    type: article
+    title: Orbital space race heats up in Arctic north
+    url: https://www.bbc.com/news/articles/c4g0201rj8go
+    excerpt: Europe lags far behind the US and China in orbital space launches, but new facilities are opening up.
+    source_name: BBC Business
+    published: "2026-02-24T00:10:05.000Z"
+  - entity: mexican-drug-cartel-boss-el-mencho-tra-2026-02-24
+    type: article
+    title: Mexican drug cartel boss ‘El Mencho’ tracked through romantic partner
+    url: https://www.theguardian.com/world/2026/feb/23/el-mencho-mexican-drug-cartel-boss-killing-violence
+    excerpt: >-
+      <p>Killing of Jalisco New Generation Cartel leader sparks wave of violence across western
+      Mexico</p><ul><li><p>Analysis: <a href="https://www.theguardian.com/world/2026/feb/23/mexico-trump-cartel-boss
+    source_name: The Guardian
+    published: "2026-02-24T00:25:30.000Z"
+  - entity: progress-on-gender-equality-at-top-of-uk-2026-02-24
+    type: article
+    title: Progress on gender equality at top of UK’s biggest firms ‘achingly slow’
+    url: https://www.theguardian.com/business/2026/feb/24/progress-gender-equality-uk-biggest-firms-achingly-slow-ftse-100
+    excerpt: >-
+      <p>Average number of female FTSE 100 CEOs stalled at nine last year, the same number as 2024, review
+      says</p><p>Campaigners have bemoaned the “achingly slow” progress made on gender equality at the to
+    source_name: The Guardian
+    published: "2026-02-24T00:01:54.000Z"
+  - entity: x2018-i-found-out-too-late-x2019-my-2026-02-24
+    type: article
+    title: >-
+      &#x2018;I found out too late&#x2019;: My stepmother cheated me out of $500K from my father&#x2019;s estate. What
+      can I do?
+    url: >-
+      https://www.marketwatch.com/story/i-found-out-too-late-my-stepmother-cheated-me-out-of-500k-from-my-fathers-estate-what-can-i-do-97f387c6?mod=mw_rss_topstories
+    excerpt: >-
+      &#x201c;Within a week or two after the deadline to contest the will expired, my stepmother sent me an email
+      stating she would not share anything.&#x201d;
+    source_name: MarketWatch
+    published: "2026-02-24T00:59:00.000Z"
+  - entity: x2018-i-need-to-get-my-financial-ducks-2026-02-24
+    type: article
+    title: >-
+      &#x2018;I need to get my financial ducks in a row&#x2019;: I&#x2019;m 80 with $1 million. How do I prevent my son
+      from being hit with inheritance tax?
+    url: >-
+      https://www.marketwatch.com/story/i-need-to-get-my-financial-ducks-in-a-row-im-80-with-1-million-how-do-i-prevent-my-son-from-being-hit-with-inheritance-tax-27913be6?mod=mw_rss_topstories
+    excerpt: "&#x201c;I have $650,000 in investments, $250,000 in life insurance and about $150,000 equity in my home.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-24T00:52:00.000Z"
+  - entity: x2018-i-spend-7-500-a-month-x2019-2026-02-24
+    type: article
+    title: "&#x2018;I spend $7,500 a month&#x2019;: I&#x2019;m 47, earn $260K, and have $3 million. Can I retire at 50?"
+    url: >-
+      https://www.marketwatch.com/story/i-spend-7-500-a-month-im-47-earn-260k-and-have-3-million-can-i-retire-at-50-05afc0b5?mod=mw_rss_topstories
+    excerpt: "&#x201c;I own a home worth $520,000 and do not have a mortgage on it.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-24T00:44:00.000Z"
+  - entity: hims-hers-x2019-expansion-plans-x2-2026-02-24
+    type: article
+    title: >-
+      Hims & Hers&#x2019; expansion plans &#x2014; as well as its Super Bowl ad &#x2014; have investors worried about
+      profits
+    url: >-
+      https://www.marketwatch.com/story/hims-hers-expansion-plans-as-well-as-its-super-bowl-ad-have-investors-worried-about-profits-1e60d262?mod=mw_rss_topstories
+    excerpt: >-
+      The wellness platform&#x2019;s results arrived amid heightened legal and regulatory scrutiny over its
+      weight-loss-drug business.
+    source_name: MarketWatch
+    published: "2026-02-24T00:44:00.000Z"
+  - entity: congress-must-enact-trump-x2019-s-tarif-2026-02-24
+    type: article
+    title: Congress must enact Trump&#x2019;s tariffs now to steer the U.S. from a massive revenue cliff
+    url: >-
+      https://www.marketwatch.com/story/congress-must-enact-trumps-tariffs-now-to-steer-the-u-s-away-from-a-massive-revenue-cliff-c147c999?mod=mw_rss_topstories
+    excerpt: Tariffs need to become law or the federal budget will take a hit. Lawmakers have less than 150 days to decide.
+    source_name: MarketWatch
+    published: "2026-02-24T00:42:00.000Z"
+  - entity: scientists-develop-accelerator-that-coul-2026-02-24
+    type: article
+    title: Scientists Develop Accelerator That Could Slash Nuclear Waste Lifespan by 99%
+    url: >-
+      https://oilprice.com/Alternative-Energy/Nuclear-Power/Scientists-Develop-Accelerator-That-Could-Slash-Nuclear-Waste-Lifespan-by-99.html
+    excerpt: >-
+      For decades, nuclear energy has been regarded as the black sheep of the energy universe, thanks to drawbacks such
+      as high costs, risk of thermal runaway leading to catastrophic accidents as well as th
+    source_name: OilPrice.com
+    published: "2026-02-24T01:00:00.000Z"
+  - entity: u-s-energy-dominance-push-collides-with-2026-02-24
+    type: article
+    title: U.S. Energy Dominance Push Collides with EU Methane Rules
+    url: https://oilprice.com/Energy/Natural-Gas/US-Energy-Dominance-Push-Collides-with-EU-Methane-Rules.html
+    excerpt: >-
+      Last week, U.S. Energy Secretary Chris Wright called on the International Energy Agency to stop fixating on
+      climate change and instead return to its original focus on energy security. The call came in
+    source_name: OilPrice.com
+    published: "2026-02-24T00:00:00.000Z"
+  - entity: a-meta-ai-security-researcher-said-an-op-2026-02-24
+    type: article
+    title: A Meta AI security researcher said an OpenClaw agent ran amok on her inbox
+    url: https://techcrunch.com/2026/02/23/a-meta-ai-security-researcher-said-an-openclaw-agent-ran-amok-on-her-inbox/
+    excerpt: >-
+      The viral X post from an AI security researcher reads like satire. But it's really a word of warning about what
+      can go wrong when handing tasks to an AI agent.
+    source_name: TechCrunch
+    published: "2026-02-24T00:57:14.000Z"
