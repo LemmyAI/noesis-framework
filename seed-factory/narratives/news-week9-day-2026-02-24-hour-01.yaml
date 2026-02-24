@@ -1,0 +1,92 @@
+seed:
+  name: news-week9-day-2026-02-24-hour-01
+  label: Daily News — 2026-02-24 01:00 (Week 9, 2026)
+  namespace: news.week9.day-2026-02-24
+  description: "Auto-gathered news: 4 stories, 2026-02-24 to 2026-02-24"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week9
+    extends: news
+  - namespace: news.week9.day-2026-02-24
+    extends: news.week9
+entities:
+  - id: chocolate-kept-in-anti-theft-boxes-as-re-2026-02-24
+    type: Event
+    name: Chocolate kept in anti-theft boxes as retailers warn it's being stolen to order
+    category: finance
+    description: Retailers and police forces tell the BBC that thieves are targeting chocolate and selling it on.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-24T00:07:42.000Z"
+      precision: day
+  - id: orbital-space-race-heats-up-in-arctic-no-2026-02-24
+    type: Event
+    name: Orbital space race heats up in Arctic north
+    category: finance
+    description: Europe lags far behind the US and China in orbital space launches, but new facilities are opening up.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-24T00:10:05.000Z"
+      precision: day
+  - id: progress-on-gender-equality-at-top-of-uk-2026-02-24
+    type: Event
+    name: Progress on gender equality at top of UK’s biggest firms ‘achingly slow’
+    category: finance
+    description: >-
+      <p>Average number of female FTSE 100 CEOs stalled at nine last year, the same number as 2024, review
+      says</p><p>Campaigners have bemoaned the “achingly slow” progress made on gender equality at the top of Britain’s
+      biggest businesses, as research showed blue-chip firms had missed key targets and the
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-24T00:01:54.000Z"
+      precision: day
+  - id: u-s-energy-dominance-push-collides-with-2026-02-24
+    type: Decision
+    name: U.S. Energy Dominance Push Collides with EU Methane Rules
+    category: finance.energy
+    description: >-
+      Last week, U.S. Energy Secretary Chris Wright called on the International Energy Agency to stop fixating on
+      climate change and instead return to its original focus on energy security. The call came in the context of plans
+      by the U.S. federal government to significantly increase the amount of oil and
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-24T00:00:00.000Z"
+      precision: day
+sources:
+  - entity: chocolate-kept-in-anti-theft-boxes-as-re-2026-02-24
+    type: article
+    title: Chocolate kept in anti-theft boxes as retailers warn it's being stolen to order
+    url: https://www.bbc.com/news/articles/ce3gqr7p0lqo
+    excerpt: Retailers and police forces tell the BBC that thieves are targeting chocolate and selling it on.
+    source_name: BBC Business
+    published: "2026-02-24T00:07:42.000Z"
+  - entity: orbital-space-race-heats-up-in-arctic-no-2026-02-24
+    type: article
+    title: Orbital space race heats up in Arctic north
+    url: https://www.bbc.com/news/articles/c4g0201rj8go
+    excerpt: Europe lags far behind the US and China in orbital space launches, but new facilities are opening up.
+    source_name: BBC Business
+    published: "2026-02-24T00:10:05.000Z"
+  - entity: progress-on-gender-equality-at-top-of-uk-2026-02-24
+    type: article
+    title: Progress on gender equality at top of UK’s biggest firms ‘achingly slow’
+    url: https://www.theguardian.com/business/2026/feb/24/progress-gender-equality-uk-biggest-firms-achingly-slow-ftse-100
+    excerpt: >-
+      <p>Average number of female FTSE 100 CEOs stalled at nine last year, the same number as 2024, review
+      says</p><p>Campaigners have bemoaned the “achingly slow” progress made on gender equality at the to
+    source_name: The Guardian
+    published: "2026-02-24T00:01:54.000Z"
+  - entity: u-s-energy-dominance-push-collides-with-2026-02-24
+    type: article
+    title: U.S. Energy Dominance Push Collides with EU Methane Rules
+    url: https://oilprice.com/Energy/Natural-Gas/US-Energy-Dominance-Push-Collides-with-EU-Methane-Rules.html
+    excerpt: >-
+      Last week, U.S. Energy Secretary Chris Wright called on the International Energy Agency to stop fixating on
+      climate change and instead return to its original focus on energy security. The call came in
+    source_name: OilPrice.com
+    published: "2026-02-24T00:00:00.000Z"
