@@ -1,0 +1,386 @@
+seed:
+  name: news-week9-day-2026-02-25-hour-04
+  label: Daily News — 2026-02-25 04:00 (Week 9, 2026)
+  namespace: news.week9.day-2026-02-25
+  description: "Auto-gathered news: 19 stories, 2026-02-25 to 2026-02-25"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week9
+    extends: news
+  - namespace: news.week9.day-2026-02-25
+    extends: news.week9
+entities:
+  - id: energy-bills-to-fall-in-april-after-char-2026-02-25
+    type: Event
+    name: Energy bills to fall in April after charges shake-up
+    category: finance
+    description: Changes announced in the Budget mean domestic energy prices should fall sharply in April.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-25T00:04:55.000Z"
+      precision: day
+  - id: paramount-boosts-warner-bros-offer-to-ri-2026-02-25
+    type: Event
+    name: Paramount boosts Warner Bros offer to rival Netflix in takeover bid
+    category: finance
+    description: Warner Bros says the latest proposal could convince it to abandon the deal it struck with Netflix.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-25T00:01:02.000Z"
+      precision: day
+  - id: elusive-shein-boss-hails-chinese-roots-i-2026-02-25
+    type: Event
+    name: Elusive Shein boss hails Chinese roots in rare public appearance
+    category: finance
+    description: His speech follows years of the firm focusing away from China as it moved its headquarters to Singapore.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-25T03:18:11.000Z"
+      precision: day
+  - id: what-is-the-uks-new-travel-system-and-h-2026-02-25
+    type: Event
+    name: What is the UK's new travel system and how are dual nationals affected?
+    category: finance
+    description: >-
+      From 25 February, a new system will come into force which will affect many people, including British dual
+      nationals.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-25T00:05:49.000Z"
+      precision: day
+  - id: caribbean-leaders-call-for-de-escalatio-2026-02-25
+    type: Event
+    name: Caribbean leaders call for ‘de-escalation and dialogue’ amid US oil embargo on Cuba
+    category: geopolitics
+    description: >-
+      <p>Four-day Caricom summit dominated by debate about US interventions in the region as military strikes against
+      suspected drug boats continue</p><p>US interventions dominated speeches at a summit of 15 nations from the <a
+      href="https://www.theguardian.com/world/caribbean">Caribbean</a> and the Ameri
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-25T02:51:16.000Z"
+      precision: day
+  - id: lawmaker-ejected-during-trump-s-state-of-2026-02-25
+    type: Event
+    name: Lawmaker ejected during Trump’s State of the Union address
+    category: geopolitics
+    description: Democrat Al Green was ejected from US President Donald Trump’s State of the Union address over protest sign.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-25T03:01:37.000Z"
+      precision: day
+  - id: aid-groups-petition-israeli-supreme-cour-2026-02-25
+    type: Event
+    name: Aid groups petition Israeli Supreme Court as Gaza, West Bank work ban nears
+    category: geopolitics
+    description: >-
+      Israel has ordered 37 aid groups to halt operations in war-torn Gaza, as well as occupied West Bank and East
+      Jerusalem.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-25T02:15:14.000Z"
+      precision: day
+  - id: bolivia-revives-anti-drug-alliance-after-2026-02-25
+    type: Event
+    name: Bolivia revives anti-drug alliance after nearly 18-year break with US
+    category: geopolitics
+    description: Bolivian President Rodrigo Paz has moved to restore diplomatic ties with the US and cooperate with the DEA.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-25T01:46:23.000Z"
+      precision: day
+  - id: russia-ukraine-war-list-of-key-events-2026-02-25
+    type: Event
+    name: "Russia-Ukraine war: List of key events, day 1,462"
+    category: geopolitics
+    description: These are the key developments from day 1,462 of Russia&#039;s war on Ukraine.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-25T00:54:48.000Z"
+      precision: day
+  - id: suspect-four-victims-dead-after-stabbin-2026-02-25
+    type: Fact
+    name: Suspect, four victims dead after stabbing attack in US state of Washington
+    category: geopolitics
+    description: >-
+      A 32-year-old suspect stabbed four people to death before being shot by a sheriff’s deputy near Tacoma,
+      Washington.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-25T00:26:56.000Z"
+      precision: day
+  - id: us-department-of-justice-sues-ucla-over-2026-02-25
+    type: Event
+    name: US Department of Justice sues UCLA over anti-Semitism allegations
+    category: geopolitics
+    description: >-
+      Trump administration has sought to penalise pro-Palestine political activity and deport foreign-born student
+      activists.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-25T00:00:31.000Z"
+      precision: day
+  - id: cava-says-diners-are-doing-better-this-y-2026-02-25
+    type: Claim
+    name: Cava says diners are doing better this year &#x2014; and may be getting tired of chasing meal deals
+    category: finance.markets
+    description: >-
+      Cava issued an upbeat sales forecast for this year, as cautious customers shook off the effects of snowstorms and
+      last year&#x2019;s government shutdown to return to the Mediterranean fast-casual chain for bowls and salads.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-25T01:26:00.000Z"
+      precision: day
+  - id: workday-x2019-s-stock-dives-as-earnings-2026-02-25
+    type: Event
+    name: Workday&#x2019;s stock dives as earnings reveal the cost of competing in AI
+    category: finance.markets
+    description: Workday&#x2019;s margin outlook came up short of expectations as the company steps up AI investments.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-25T01:24:00.000Z"
+      precision: day
+  - id: could-stripe-x2018-salvage-x2019-pay-2026-02-25
+    type: Claim
+    name: Could Stripe &#x2018;salvage&#x2019; PayPal? What Wall Street has to say about the latest takeover talk.
+    category: finance.markets
+    description: PayPal has underinvested in its consumer business, an analyst says. But Stripe could still find value in it.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-25T00:13:00.000Z"
+      precision: day
+  - id: canada-s-oil-patch-swept-up-in-record-3-2026-02-25
+    type: Event
+    name: Canada’s Oil Patch Swept Up in Record $38B Consolidation Wave
+    category: finance.energy
+    description: >-
+      Previously, we reported that the U.S. Shale Patch has witnessed a big slump in corporate buyouts in recent years
+      as premium acreage depletes and volatile energy prices keep buyers on the sidelines. Following a record $192
+      billion in mergers and acquisitions announced in 2023 and $105 billion in 2024
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-25T01:00:00.000Z"
+      precision: day
+  - id: lamborghini-scraps-lanzador-as-ev-superc-2026-02-25
+    type: Event
+    name: Lamborghini Scraps Lanzador as EV Supercar Demand Fizzles
+    category: finance.energy
+    description: >-
+      Big legacy U.S. and European automakers are frantically dialing back their electric vehicle bets, scaling back
+      once-hyped roadmaps to full electrification as demand for these vehicles implodes. The latest automaker to reverse
+      course is not a mass-market sedan or SUV maker, but a luxury supercar bran
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-25T00:00:00.000Z"
+      precision: day
+  - id: india-8217-s-ai-boom-pushes-firms-to-tr-2026-02-25
+    type: Event
+    name: India&#8217;s AI boom pushes firms to trade near-term revenue for users
+    category: technology.ai
+    description: >-
+      ChatGPT and rivals are testing whether India's massive AI user boom can translate into paying customers as free
+      offers wind down.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-25T02:00:00.000Z"
+      precision: day
+  - id: nvidia-challenger-ai-chip-startup-matx-r-2026-02-25
+    type: Event
+    name: Nvidia challenger AI chip startup MatX raised $500M
+    category: technology.ai
+    description: The startup was founded by former Google TPU engineers in 2023.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-25T00:45:47.000Z"
+      precision: day
+  - id: boozy-chimps-fail-urine-test-confirm-ho-2026-02-25
+    type: Event
+    name: Boozy chimps fail urine test, confirm hotly debated theory
+    category: technology
+    description: Boozy chimps fail urine test, confirm hotly debated theory
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-25T00:05:05.000Z"
+      precision: day
+narratives:
+  - name: Energy Markets
+    steps:
+      - from: energy-bills-to-fall-in-april-after-char-2026-02-25
+        to: canada-s-oil-patch-swept-up-in-record-3-2026-02-25
+        type: causes
+sources:
+  - entity: energy-bills-to-fall-in-april-after-char-2026-02-25
+    type: article
+    title: Energy bills to fall in April after charges shake-up
+    url: https://www.bbc.com/news/articles/cx2lpl9lxw2o
+    excerpt: Changes announced in the Budget mean domestic energy prices should fall sharply in April.
+    source_name: BBC Business
+    published: "2026-02-25T00:04:55.000Z"
+  - entity: paramount-boosts-warner-bros-offer-to-ri-2026-02-25
+    type: article
+    title: Paramount boosts Warner Bros offer to rival Netflix in takeover bid
+    url: https://www.bbc.com/news/articles/c24dz0683dyo
+    excerpt: Warner Bros says the latest proposal could convince it to abandon the deal it struck with Netflix.
+    source_name: BBC Business
+    published: "2026-02-25T00:01:02.000Z"
+  - entity: elusive-shein-boss-hails-chinese-roots-i-2026-02-25
+    type: article
+    title: Elusive Shein boss hails Chinese roots in rare public appearance
+    url: https://www.bbc.com/news/articles/c39wdgy3gmvo
+    excerpt: His speech follows years of the firm focusing away from China as it moved its headquarters to Singapore.
+    source_name: BBC Business
+    published: "2026-02-25T03:18:11.000Z"
+  - entity: what-is-the-uks-new-travel-system-and-h-2026-02-25
+    type: article
+    title: What is the UK's new travel system and how are dual nationals affected?
+    url: https://www.bbc.com/news/articles/cy57p1v61d1o
+    excerpt: >-
+      From 25 February, a new system will come into force which will affect many people, including British dual
+      nationals.
+    source_name: BBC Business
+    published: "2026-02-25T00:05:49.000Z"
+  - entity: caribbean-leaders-call-for-de-escalatio-2026-02-25
+    type: article
+    title: Caribbean leaders call for ‘de-escalation and dialogue’ amid US oil embargo on Cuba
+    url: https://www.theguardian.com/world/2026/feb/25/caricom-summit-2026-caribbean-leaders-us-military-strikes
+    excerpt: >-
+      <p>Four-day Caricom summit dominated by debate about US interventions in the region as military strikes against
+      suspected drug boats continue</p><p>US interventions dominated speeches at a summit of 1
+    source_name: The Guardian
+    published: "2026-02-25T02:51:16.000Z"
+  - entity: lawmaker-ejected-during-trump-s-state-of-2026-02-25
+    type: article
+    title: Lawmaker ejected during Trump’s State of the Union address
+    url: https://www.aljazeera.com/video/newsfeed/2026/2/25/lawmaker-ejected-during-trumps-state-of-the-union-address
+    excerpt: Democrat Al Green was ejected from US President Donald Trump’s State of the Union address over protest sign.
+    source_name: Al Jazeera
+    published: "2026-02-25T03:01:37.000Z"
+  - entity: aid-groups-petition-israeli-supreme-cour-2026-02-25
+    type: article
+    title: Aid groups petition Israeli Supreme Court as Gaza, West Bank work ban nears
+    url: >-
+      https://www.aljazeera.com/news/2026/2/25/aid-groups-petition-israeli-supreme-court-as-gaza-west-bank-work-ban-nears
+    excerpt: >-
+      Israel has ordered 37 aid groups to halt operations in war-torn Gaza, as well as occupied West Bank and East
+      Jerusalem.
+    source_name: Al Jazeera
+    published: "2026-02-25T02:15:14.000Z"
+  - entity: bolivia-revives-anti-drug-alliance-after-2026-02-25
+    type: article
+    title: Bolivia revives anti-drug alliance after nearly 18-year break with US
+    url: https://www.aljazeera.com/news/2026/2/25/bolivia-revives-anti-drug-alliance-after-nearly-18-year-break-with-us
+    excerpt: Bolivian President Rodrigo Paz has moved to restore diplomatic ties with the US and cooperate with the DEA.
+    source_name: Al Jazeera
+    published: "2026-02-25T01:46:23.000Z"
+  - entity: russia-ukraine-war-list-of-key-events-2026-02-25
+    type: article
+    title: "Russia-Ukraine war: List of key events, day 1,462"
+    url: https://www.aljazeera.com/news/2026/2/25/russia-ukraine-war-list-of-key-events-day-1462
+    excerpt: These are the key developments from day 1,462 of Russia&#039;s war on Ukraine.
+    source_name: Al Jazeera
+    published: "2026-02-25T00:54:48.000Z"
+  - entity: suspect-four-victims-dead-after-stabbin-2026-02-25
+    type: article
+    title: Suspect, four victims dead after stabbing attack in US state of Washington
+    url: https://www.aljazeera.com/news/2026/2/25/suspect-four-victims-dead-after-stabbing-attack-in-us-state-of-washington
+    excerpt: >-
+      A 32-year-old suspect stabbed four people to death before being shot by a sheriff’s deputy near Tacoma,
+      Washington.
+    source_name: Al Jazeera
+    published: "2026-02-25T00:26:56.000Z"
+  - entity: us-department-of-justice-sues-ucla-over-2026-02-25
+    type: article
+    title: US Department of Justice sues UCLA over anti-Semitism allegations
+    url: https://www.aljazeera.com/news/2026/2/25/us-department-of-justice-sues-ucla-over-anti-semitism-allegations
+    excerpt: >-
+      Trump administration has sought to penalise pro-Palestine political activity and deport foreign-born student
+      activists.
+    source_name: Al Jazeera
+    published: "2026-02-25T00:00:31.000Z"
+  - entity: cava-says-diners-are-doing-better-this-y-2026-02-25
+    type: article
+    title: Cava says diners are doing better this year &#x2014; and may be getting tired of chasing meal deals
+    url: >-
+      https://www.marketwatch.com/story/cava-says-diners-are-doing-better-this-year-and-could-be-getting-tired-of-chasing-meal-deals-25d062fe?mod=mw_rss_topstories
+    excerpt: >-
+      Cava issued an upbeat sales forecast for this year, as cautious customers shook off the effects of snowstorms and
+      last year&#x2019;s government shutdown to return to the Mediterranean fast-casual chai
+    source_name: MarketWatch
+    published: "2026-02-25T01:26:00.000Z"
+  - entity: workday-x2019-s-stock-dives-as-earnings-2026-02-25
+    type: article
+    title: Workday&#x2019;s stock dives as earnings reveal the cost of competing in AI
+    url: >-
+      https://www.marketwatch.com/story/workdays-stock-dives-as-earnings-reveal-the-cost-of-competing-in-ai-3578985b?mod=mw_rss_topstories
+    excerpt: Workday&#x2019;s margin outlook came up short of expectations as the company steps up AI investments.
+    source_name: MarketWatch
+    published: "2026-02-25T01:24:00.000Z"
+  - entity: could-stripe-x2018-salvage-x2019-pay-2026-02-25
+    type: article
+    title: Could Stripe &#x2018;salvage&#x2019; PayPal? What Wall Street has to say about the latest takeover talk.
+    url: >-
+      https://www.marketwatch.com/story/could-stripe-salvage-paypal-what-wall-street-has-to-say-about-the-latest-takeover-talk-815c4e9a?mod=mw_rss_topstories
+    excerpt: PayPal has underinvested in its consumer business, an analyst says. But Stripe could still find value in it.
+    source_name: MarketWatch
+    published: "2026-02-25T00:13:00.000Z"
+  - entity: canada-s-oil-patch-swept-up-in-record-3-2026-02-25
+    type: article
+    title: Canada’s Oil Patch Swept Up in Record $38B Consolidation Wave
+    url: https://oilprice.com/Energy/Crude-Oil/Canadas-Oil-Patch-Swept-Up-in-Record-38B-Consolidation-Wave.html
+    excerpt: >-
+      Previously, we reported that the U.S. Shale Patch has witnessed a big slump in corporate buyouts in recent years
+      as premium acreage depletes and volatile energy prices keep buyers on the sidelines. Fo
+    source_name: OilPrice.com
+    published: "2026-02-25T01:00:00.000Z"
+  - entity: lamborghini-scraps-lanzador-as-ev-superc-2026-02-25
+    type: article
+    title: Lamborghini Scraps Lanzador as EV Supercar Demand Fizzles
+    url: https://oilprice.com/Energy/Energy-General/Lamborghini-Scraps-Lanzador-as-EV-Supercar-Demand-Fizzles.html
+    excerpt: >-
+      Big legacy U.S. and European automakers are frantically dialing back their electric vehicle bets, scaling back
+      once-hyped roadmaps to full electrification as demand for these vehicles implodes. The la
+    source_name: OilPrice.com
+    published: "2026-02-25T00:00:00.000Z"
+  - entity: india-8217-s-ai-boom-pushes-firms-to-tr-2026-02-25
+    type: article
+    title: India&#8217;s AI boom pushes firms to trade near-term revenue for users
+    url: https://techcrunch.com/2026/02/24/india-ai-boom-pushes-firms-to-trade-near-term-revenue-for-users/
+    excerpt: >-
+      ChatGPT and rivals are testing whether India's massive AI user boom can translate into paying customers as free
+      offers wind down.
+    source_name: TechCrunch
+    published: "2026-02-25T02:00:00.000Z"
+  - entity: nvidia-challenger-ai-chip-startup-matx-r-2026-02-25
+    type: article
+    title: Nvidia challenger AI chip startup MatX raised $500M
+    url: https://techcrunch.com/2026/02/24/nvidia-challenger-ai-chip-startup-matx-raised-500m/
+    excerpt: The startup was founded by former Google TPU engineers in 2023.
+    source_name: TechCrunch
+    published: "2026-02-25T00:45:47.000Z"
+  - entity: boozy-chimps-fail-urine-test-confirm-ho-2026-02-25
+    type: article
+    title: Boozy chimps fail urine test, confirm hotly debated theory
+    url: https://arstechnica.com/science/2026/02/boozy-chimps-fail-urine-test-confirm-hotly-debated-theory/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-02-25T00:05:05.000Z"
