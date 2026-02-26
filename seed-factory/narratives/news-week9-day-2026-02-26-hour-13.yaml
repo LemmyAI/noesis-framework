@@ -1,0 +1,1443 @@
+seed:
+  name: news-week9-day-2026-02-26-hour-13
+  label: Daily News — 2026-02-26 13:00 (Week 9, 2026)
+  namespace: news.week9.day-2026-02-26
+  description: "Auto-gathered news: 70 stories, 2026-02-26 to 2026-02-26"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week9
+    extends: news
+  - namespace: news.week9.day-2026-02-26
+    extends: news.week9
+entities:
+  - id: us-and-iran-begin-talks-seen-as-crucial-2026-02-26
+    type: Event
+    name: US and Iran begin talks seen as crucial to prevent conflict
+    category: geopolitics
+    description: >-
+      The indirect negotiations in Geneva are seen as a last-ditch effort, but the chances of a nuclear agreement are
+      unclear.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T10:39:58.000Z"
+      precision: day
+  - id: israeli-soldiers-shot-a-palestinian-boy-2026-02-26
+    type: Event
+    name: Israeli soldiers shot a Palestinian boy and stood around as he bled to death, video shows
+    category: geopolitics
+    description: Israeli forces blocked Palestinian ambulances while a 14-year-old lay bleeding for at least 45 minutes.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T06:01:11.000Z"
+      precision: day
+  - id: cuba-says-group-shot-on-us-registered-sp-2026-02-26
+    type: Claim
+    name: Cuba says group shot on US-registered speedboat planned 'armed infiltration'
+    category: geopolitics
+    description: The passengers were Cuban nationals living in the US, the Cuban government says.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T11:59:15.000Z"
+      precision: day
+  - id: shot-in-school-uniform-bbc-reveals-poli-2026-02-26
+    type: Event
+    name: "Shot in school uniform: BBC reveals police order led to Gen Z protest killings in Nepal"
+    category: geopolitics
+    description: New evidence reveals what happened when 19 people were shot dead in  Kathmandu last September.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T00:02:48.000Z"
+      precision: day
+  - id: nigeria-to-hold-inquest-into-death-of-ch-2026-02-26
+    type: Event
+    name: Nigeria to hold inquest into death of Chimamanda Ngozi Adichie's toddler
+    category: geopolitics
+    description: The internationally acclaimed writer has accused Nigerian hospital Euracare of negligence, which it denies.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T11:10:08.000Z"
+      precision: day
+  - id: orban-steps-up-oil-accusations-against-u-2026-02-26
+    type: Event
+    name: Orban steps up oil accusations against Ukraine after vetoing EU loan to Kyiv
+    category: geopolitics
+    description: >-
+      Hungary's prime minister accuses Ukraine of imposing an "oil blockade" after Kyiv says a critical pipeline was
+      closed following Russian strikes.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T11:52:08.000Z"
+      precision: day
+  - id: hong-kong-tycoon-jimmy-lai-wins-appeal-a-2026-02-26
+    type: Event
+    name: Hong Kong tycoon Jimmy Lai wins appeal against fraud conviction
+    category: geopolitics
+    description: The 78-year-old Lai, however, remains detained for a separate national security case.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T03:41:47.000Z"
+      precision: day
+  - id: north-korea-could-get-along-with-us-s-2026-02-26
+    type: Claim
+    name: North Korea could 'get along' with US, says Kim Jong Un
+    category: geopolitics
+    description: Kim said they could get along if the US accepts that Pyongyang's nuclear weapons are here to stay.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T05:25:54.000Z"
+      precision: day
+  - id: us-suitcase-murderer-deported-from-bal-2026-02-26
+    type: Event
+    name: US 'suitcase murderer' deported from Bali after 11 years in jail
+    category: geopolitics
+    description: The 33-year-old will still face federal charges in the US and is due to appear in court on Thursday.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T02:01:06.000Z"
+      precision: day
+  - id: nearly-a-million-16-24-year-olds-not-wor-2026-02-26
+    type: Event
+    name: Nearly a million 16-24 year-olds not working or in education
+    category: finance
+    description: People at the start of their careers are particularly affected by the UK's weak job market.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T12:10:25.000Z"
+      precision: day
+  - id: royal-mail-bosses-to-be-called-to-parlia-2026-02-26
+    type: Event
+    name: Royal Mail bosses to be called to Parliament over letter delivery failures
+    category: finance
+    description: It comes after hundreds of people contacted BBC Your Voice to express frustration over late deliveries.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T09:33:55.000Z"
+      precision: day
+  - id: ocado-to-axe-1-000-jobs-in-cost-cutting-2026-02-26
+    type: Event
+    name: Ocado to axe 1,000 jobs in cost-cutting drive
+    category: finance
+    description: >-
+      The technology and online grocery group is cutting about 5% of its global workforce, with two-thirds of the losses
+      in the UK.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T09:40:34.000Z"
+      precision: day
+  - id: aldi-shop-staff-to-receive-two-pay-rises-2026-02-26
+    type: Event
+    name: Aldi shop staff to receive two pay rises this year
+    category: finance
+    description: The German budget supermarket is a growing competitor among British supermarkets.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T00:02:16.000Z"
+      precision: day
+  - id: the-family-owned-soda-firm-that-still-us-2026-02-26
+    type: Event
+    name: The family-owned soda firm that still uses returnable glass bottles
+    category: finance
+    description: Soft drinks company Twig's Beverage has a loyal following for its old-fashioned approach.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T00:06:33.000Z"
+      precision: day
+  - id: two-women-arrested-in-uganda-for-alleged-2026-02-26
+    type: Claim
+    name: Two women arrested in Uganda for allegedly kissing in public could face life sentence
+    category: geopolitics
+    description: >-
+      <p>Wendy Faith and Alesi Diana Denise were taken into custody under laws that have outraged LGBTQ+ community and
+      rights activists</p><p>Two women have been arrested and detained in Uganda after allegedly kissing in public, an
+      act of “same-sex activity” which can lead to a life sentence in the east A
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T08:00:23.000Z"
+      precision: day
+  - id: a-devastating-force-how-recent-medite-2026-02-26
+    type: Event
+    name: "‘A devastating force’: how recent Mediterranean storms turned to tragedies"
+    category: geopolitics
+    description: >-
+      <p>Atmospheric machine-gun has fired storm after deadly storm at the region this year, leaving a trail of
+      widespread destruction</p><p>For Andrés Sánchez Barea, in Spain, it was the fear that arose when water started to
+      spurt from plug sockets. For Nelson Duarte, in Portugal, it was the helplessness
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T05:00:21.000Z"
+      precision: day
+  - id: cuba-says-it-killed-heavily-armed-exiles-2026-02-26
+    type: Fact
+    name: Cuba says it killed heavily armed exiles who attacked from US-registered speedboat
+    category: geopolitics
+    description: >-
+      <p>Rare clash off island’s coast took place amid US oil embargo and heightened tensions between two
+      countries</p><p>Cuban forces killed four exiles and wounded six others who sailed into its waters onboard a
+      Florida-registered speedboat and opened fire on a Cuban patrol, the country’s government sai
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T03:21:55.000Z"
+      precision: day
+  - id: world-economic-forum-ceo-quits-after-eps-2026-02-26
+    type: Event
+    name: World Economic Forum CEO quits after Epstein links examined – business live
+    category: finance
+    description: >-
+      <p>Rolling coverage of the latest economic and financial news</p><p><strong>Artificial intelligence is boosting
+      productivity in the euro zone but it is not yet causing a wave of layoffs due to greater automation of labour,
+      European Central Bank President Christine Lagarde has claimed.</strong></p><p
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T12:04:34.000Z"
+      precision: day
+  - id: ocado-to-cut-1-000-jobs-in-150m-cost-sa-2026-02-26
+    type: Event
+    name: Ocado to cut 1,000 jobs in £150m cost-saving drive
+    category: finance
+    description: >-
+      <p>Retail technology business to reduce about 5% of global workforce, with two-thirds of job losses affecting
+      UK</p><ul><li><p><a
+      href="https://www.theguardian.com/business/live/2026/feb/26/nvidia-blockbuster-results-ai-stock-markets-wall-street-ftse-news-updates">Business
+      live – latest updates</a><
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T08:29:30.000Z"
+      precision: day
+  - id: rolls-royce-profits-soar-40-amid-boomin-2026-02-26
+    type: Event
+    name: Rolls-Royce profits soar 40% amid booming demand for AI datacentre power
+    category: finance
+    description: >-
+      <p>Engine maker promises to give up to £9bn to shareholders over next three years as turnaround gathers
+      pace</p><p>Rolls-Royce’s profits soared by 40% last year as the engineering company’s turnaround gathered pace,
+      helped by booming demand for power from datacentres.</p><p>The company reported unde
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T09:43:51.000Z"
+      precision: day
+  - id: keen-bosses-strange-mistakes-and-a-loom-2026-02-26
+    type: Event
+    name: "Keen bosses, strange mistakes and a looming threat: workers on training AI to do their jobs"
+    category: finance
+    description: >-
+      <p>Some say the technology is devaluing their work, while others reckon it is not yet – and might never be – good
+      enough to replace them entirely</p><p>Workers grappling with the rapid growth of artificial intelligence have said
+      they feel “devalued” by the technology and warned of a downward traject
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T10:00:24.000Z"
+      precision: day
+  - id: wpp-to-sell-assets-and-cut-jobs-in-radic-2026-02-26
+    type: Event
+    name: WPP to sell assets and cut jobs in radical shake-up to counter AI threat
+    category: finance
+    description: >-
+      <p>Group aims to be ‘simpler, lower-cost, AI-enabled business’ and achieve £500m of annual savings by
+      2028</p><p>The beleaguered UK advertising group WPP has announced a radical restructure to counter the threat
+      posed by the growth of artificial intelligence, including plans to sell assets and job c
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T10:24:58.000Z"
+      precision: day
+  - id: magic-beneath-the-surface-pioneering-2026-02-26
+    type: Event
+    name: "‘Magic beneath the surface’: pioneering geothermal plant launched in Cornwall"
+    category: finance
+    description: >-
+      <p>A new mini power station and lithium extraction facility near Redruth are set to bolster green energy and
+      create jobs</p><p>Just outside the perimeter fence stand the hulking remains of grand stone engine houses, a
+      testament to Cornwall’s proud tin and copper mining history.</p><p>But inside is a
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T06:00:19.000Z"
+      precision: day
+  - id: netflix-or-paramount-who-would-be-the-b-2026-02-26
+    type: Event
+    name: "Netflix or Paramount: who would be the best new owner of Warner Bros?"
+    category: finance
+    description: >-
+      <p>The ongoing battle over who will own the iconic film studio is set to have a major impact on what we, the
+      viewers, get to watch in the future</p><p>It’s not unusual for a corporate merger to take months and months to
+      actually finalize, but even by those standards, the bidding for ownership of War
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T10:04:24.000Z"
+      precision: day
+  - id: workers-decry-whirlpool-s-job-cuts-amid-2026-02-26
+    type: Event
+    name: Workers decry Whirlpool’s job cuts amid offshoring, praise of Trump’s tariffs
+    category: finance
+    description: >-
+      <p>The US has lost factory jobs amid promises of a tariff-led renaissance</p><p>Workers at <a
+      href="https://www.theguardian.com/business/whirlpool-corporation">Whirlpool</a>, the US’s largest appliance
+      manufacturer and a champion of Donald Trump’s tariff policies, are criticizing the company for cut
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T11:00:39.000Z"
+      precision: day
+  - id: new-glp1-pill-helps-patients-lose-up-to-2026-02-26
+    type: Event
+    name: New GLP1 pill helps patients lose up to 8% of body weight, trial shows
+    category: finance
+    description: >-
+      <p>Daily orforglipron tablets led to greater weight loss than semaglutide tablets, offering potential oral
+      alternative to Wegovy and Mounjaro</p><p>A new daily pill could be a more effective GLP-1 tablet for weight loss,
+      according to a <a href="https://www.thelancet.com/journals/lancet/article/PIIS0
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T11:39:31.000Z"
+      precision: day
+  - id: cristiano-ronaldo-buys-25-percent-stake-2026-02-26
+    type: Event
+    name: Cristiano Ronaldo buys 25 percent stake in Spanish second-tier club Almeria
+    category: geopolitics
+    description: Almeria, relegated from La Liga in 2023-24, had been under the control of Saudi owners for more than six years.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T12:05:56.000Z"
+      precision: day
+  - id: south-africa-a-year-after-usaid-cuts-2026-02-26
+    type: Event
+    name: "South Africa: A year after USAID cuts"
+    category: geopolitics
+    description: Health workers and their patients are still reeling from the impact from last year.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T11:56:17.000Z"
+      precision: day
+  - id: greek-court-finds-4-guilty-in-major-2022-2026-02-26
+    type: Event
+    name: Greek court finds 4 guilty in major 2022 spyware scandal
+    category: geopolitics
+    description: Two Greeks and two Israelis found guilty of &#039;breaching the confidentiality of telephone communications&#039;.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T11:50:18.000Z"
+      precision: day
+  - id: the-royal-lodge-epstein-s-links-to-ex-p-2026-02-26
+    type: Event
+    name: "The Royal Lodge: Epstein’s links to ex-Prince Andrew’s financial meetings"
+    category: geopolitics
+    description: >-
+      Emails reveal how Andrew Mountbatten-Windsor&#039;s royal home was site of financial meetings on which Epstein
+      advised.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T11:38:13.000Z"
+      precision: day
+  - id: what-to-expect-when-the-clintons-are-que-2026-02-26
+    type: Event
+    name: What to expect when the Clintons are questioned on Epstein links
+    category: geopolitics
+    description: Former US Secretary of State Hillary Clinton and former President Bill Clinton are to testify over Epstein.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T11:30:55.000Z"
+      precision: day
+  - id: kenya-arrests-suspect-in-duping-men-to-f-2026-02-26
+    type: Event
+    name: Kenya arrests suspect in duping men to fight for Russia in Ukraine war
+    category: geopolitics
+    description: Arrest in Ethiopian border town follows Kenyan intelligence report of more than 1,000 citizens trafficked for war.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T11:26:15.000Z"
+      precision: day
+  - id: what-to-know-about-us-iran-nuclear-talks-2026-02-26
+    type: Event
+    name: What to know about US-Iran nuclear talks in Geneva
+    category: geopolitics
+    description: >-
+      Negotiators from Iran and the United States are holding a third round of indirect nuclear talks in Geneva,
+      Switzerland.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T11:07:42.000Z"
+      precision: day
+  - id: real-madrid-bans-club-member-over-nazi-s-2026-02-26
+    type: Decision
+    name: Real Madrid bans club member over Nazi salute during Benfica match
+    category: geopolitics
+    description: >-
+      Game already overshadowed by alleged racial abuse aimed at Vinicius Jr by Benfica&#039;s Gianluca Prestianni in
+      first leg.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T10:57:52.000Z"
+      precision: day
+  - id: mosques-attacked-children-racially-abus-2026-02-26
+    type: Event
+    name: Mosques attacked, children racially abused as hard right rises in UK
+    category: geopolitics
+    description: As hatred is increasingly normalised and assaults rise, ethnic minorities are becoming hypervigilant.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T10:32:17.000Z"
+      precision: day
+  - id: live-india-vs-zimbabwe-t20-world-cup-2026-02-26
+    type: Event
+    name: "LIVE: India vs Zimbabwe – T20 World Cup"
+    category: geopolitics
+    description: Follow our live build-up, toss, pitch report, playing 11, score, photo updates and text commentary stream.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T10:31:25.000Z"
+      precision: day
+  - id: bitcoins-bounce-fails-to-convince-optio-2026-02-26
+    type: Event
+    name: Bitcoin's bounce fails to convince options traders
+    category: finance.crypto
+    description: Your day-ahead look for Feb. 26, 2026
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T12:15:00.000Z"
+      precision: day
+  - id: bitcoin-stalls-below-70-000-while-dot-2026-02-26
+    type: Event
+    name: Bitcoin stalls below $70,000 while DOT, UNI lead altcoin surge
+    category: finance.crypto
+    description: BTC traded within a well-defined range as polkadot and uniswap rallied, cosmos slid.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T11:30:00.000Z"
+      precision: day
+  - id: three-companies-add-strategys-strc-to-t-2026-02-26
+    type: Event
+    name: Three companies add Strategy's STRC to treasury as shares return to par
+    category: finance.crypto
+    description: Strategy’s preferred equity trades back at $100 as corporate adoption expands at Strategy World 2026.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T10:48:23.000Z"
+      precision: day
+  - id: the-10-a-m-mystery-why-bitcoin-s-daily-2026-02-26
+    type: Event
+    name: "The 10 a.m. mystery: Why bitcoin’s daily ‘price slam’ suddenly vanished after a massive lawsuit"
+    category: finance.crypto
+    description: >-
+      Jane Street is a major authorized participant in spot bitcoin ETFs. That's not a conspiracy. But the mechanics of
+      what APs actually do at market open explain more than most people realize.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T10:02:12.000Z"
+      precision: day
+  - id: bitcoin-touches-70-000-before-fading-as-2026-02-26
+    type: Event
+    name: Bitcoin touches $70,000 before fading as altcoins lead the strongest bounce in weeks
+    category: finance.crypto
+    description: >-
+      Ether, solana, and cardano all outpaced bitcoin on the day, suggesting a rotation into higher-beta tokens as
+      forced selling from the February crash begins to clear.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T05:31:19.000Z"
+      precision: day
+  - id: uniswap-s-uni-jumps-15-as-governance-vo-2026-02-26
+    type: Event
+    name: Uniswap’s UNI jumps 15% as governance vote to expand fee switch gains momentum
+    category: finance.crypto
+    description: >-
+      A governance proposal would activate protocol fees across eight additional chains and automate fee collection on
+      all v3 pools, potentially adding an estimated $27 Million in annualized revenue.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T05:23:18.000Z"
+      precision: day
+  - id: tjx-q4-tops-expectations-as-profit-and-s-2026-02-26
+    type: Event
+    name: TJX Q4 tops expectations as profit and sales climb
+    category: finance
+    description: TJX Q4 tops expectations as profit and sales climb
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T12:25:37.000Z"
+      precision: day
+  - id: trump-brothers-backed-american-bitcoin-s-2026-02-26
+    type: Event
+    name: Trump brothers-backed American Bitcoin swings to quarterly loss amid crypto selloff
+    category: finance
+    description: Trump brothers-backed American Bitcoin swings to quarterly loss amid crypto selloff
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T12:21:44.000Z"
+      precision: day
+  - id: dow-jones-futures-waver-nvidia-holds-in-2026-02-26
+    type: Event
+    name: Dow Jones Futures Waver; Nvidia Holds In Buy Zone After Strong Earnings, Guidance
+    category: finance
+    description: Dow Jones Futures Waver; Nvidia Holds In Buy Zone After Strong Earnings, Guidance
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T12:12:31.000Z"
+      precision: day
+  - id: morning-bid-nvidias-damp-squib-2026-02-26
+    type: Event
+    name: "Morning Bid: Nvidia's damp squib"
+    category: finance
+    description: "Morning Bid: Nvidia's damp squib"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T12:11:52.000Z"
+      precision: day
+  - id: 3-magnificent-recession-proof-etfs-to-st-2026-02-26
+    type: Event
+    name: 3 Magnificent Recession-Proof ETFs to Stock Up On Right Now
+    category: finance
+    description: 3 Magnificent Recession-Proof ETFs to Stock Up On Right Now
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T12:20:00.000Z"
+      precision: day
+  - id: roth-401-k-catch-up-smart-move-or-wast-2026-02-26
+    type: Event
+    name: "Roth 401(k) Catch-Up: Smart Move Or Waste Of Time For Top Earners?"
+    category: finance
+    description: "Roth 401(k) Catch-Up: Smart Move Or Waste Of Time For Top Earners?"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T12:00:21.000Z"
+      precision: day
+  - id: 40-of-adults-worry-they-won-t-have-enou-2026-02-26
+    type: Event
+    name: >-
+      40% of adults worry they won’t have enough for retirement or fear they won't be able to retire. What you need to
+      know
+    category: finance
+    description: >-
+      40% of adults worry they won’t have enough for retirement or fear they won't be able to retire. What you need to
+      know
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T12:00:00.000Z"
+      precision: day
+  - id: inflation-is-caused-by-too-much-governm-2026-02-26
+    type: Event
+    name: >-
+      Inflation is caused by ‘too much government spending,’ affirms Elon Musk. Here’s what he likes for wealth
+      protection
+    category: finance
+    description: >-
+      Inflation is caused by ‘too much government spending,’ affirms Elon Musk. Here’s what he likes for wealth
+      protection
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T12:00:00.000Z"
+      precision: day
+  - id: why-strategist-tom-lee-believes-the-ai-a-2026-02-26
+    type: Event
+    name: Why strategist Tom Lee believes the AI and crypto selloffs are almost over
+    category: finance.markets
+    description: Fundstrat&#x2019;s Tom Lee says the tech and crypto selloff has gone just about as far as it&#x2019;s going to go.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T12:05:00.000Z"
+      precision: day
+  - id: rolls-royce-stock-has-outperformed-nvidi-2026-02-26
+    type: Event
+    name: Rolls-Royce stock has outperformed Nvidia&#x2019;s in the last three years &#x2014; and the gap is growing
+    category: finance.markets
+    description: >-
+      Chief executive Tufan Erginbilgic raised guidance for the size of the share buyback program, free cash flow and
+      underlying profits
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T11:08:00.000Z"
+      precision: day
+  - id: x2018-i-live-in-a-state-with-no-inheri-2026-02-26
+    type: Event
+    name: "&#x2018;I live in a state with no inheritance tax&#x2019;: Is it legal to deposit $150K cash into my bank account?"
+    category: finance.markets
+    description: "&#x201c;The money is not currently in a bank account and it is not part of an estate.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T10:30:00.000Z"
+      precision: day
+  - id: here-x2019-s-what-x2019-s-necessary-to-2026-02-26
+    type: Event
+    name: Here&#x2019;s what&#x2019;s necessary to return the incredibly concentrated U.S. stock market to normal levels
+    category: finance.markets
+    description: >-
+      D.E. Shaw, the renowned number-crunching hedge fund manager, calculated how long it would take for concentrated
+      U.S. stock markets to return to normal.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T10:22:00.000Z"
+      precision: day
+  - id: tennis-pro-tommy-paul-and-fiancee-paige-2026-02-26
+    type: Event
+    name: Tennis pro Tommy Paul and fiancee Paige Lorenze offer a peek inside new &#x2018;dream home&#x2019; in Connecticut
+    category: finance.markets
+    description: >-
+      The couple immersed themselves in their nearly-married life when they listed their own properties to buy a
+      Connecticut mansion, which they have been renovating since they closed on it.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T10:03:00.000Z"
+      precision: day
+  - id: how-one-firm-hit-by-ai-fears-is-answerin-2026-02-26
+    type: Event
+    name: "How one firm hit by AI fears is answering the pressure: stock buybacks and partnerships"
+    category: finance.markets
+    description: The London Stock Exchange Group unveiled a big stock buyback after in-line results for the year.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T09:49:00.000Z"
+      precision: day
+  - id: as-nuclear-talks-restart-in-geneva-iran-2026-02-26
+    type: Event
+    name: As nuclear talks restart in Geneva, Iran&#x2019;s &#x2018;oil on the water&#x2019; reaches record levels
+    category: finance.markets
+    description: >-
+      By the fourth quarter of 2026, Goldman Sachs believes the current geopolitical tension might have eased somewhat
+      and they forecast $60 by year-end
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T09:11:00.000Z"
+      precision: day
+  - id: why-nvidia-x2019-s-jensen-huang-thinks-2026-02-26
+    type: Event
+    name: Why Nvidia&#x2019;s Jensen Huang thinks the market got it wrong on software companies
+    category: finance.markets
+    description: >-
+      There&#x2019;s at least one executive in the artificial-intelligence space who doesn&#x2019;t think AI will
+      cannibalize software companies: Nvidia&#x2019;s Jensen Huang.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T08:59:00.000Z"
+      precision: day
+  - id: nutanix-x2019-s-stock-soars-as-amd-inve-2026-02-26
+    type: Event
+    name: Nutanix&#x2019;s stock soars as AMD investment creates a &#x2018;halo effect&#x2019;
+    category: finance.markets
+    description: >-
+      The company, which makes hyperconverged infrastructure including storage offerings, is partnering with AMD and
+      betting that AI customers want flexible ecosystems.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T03:39:00.000Z"
+      precision: day
+  - id: trade-desk-x2019-s-stock-slides-after-e-2026-02-26
+    type: Event
+    name: Trade Desk&#x2019;s stock slides after earnings, as growth slowdown unnerves Wall Street even further
+    category: finance.markets
+    description: The ad-tech provider said automotive and packaged-good clients are under pressure.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T02:01:00.000Z"
+      precision: day
+  - id: russia-to-tighten-budget-fiscal-rule-as-2026-02-26
+    type: Event
+    name: Russia to Tighten Budget Fiscal Rule as Oil and Gas Revenues Plunge
+    category: finance.energy
+    description: "The Russian government is considering lowering the oil price level above which it sends the proceeds to its wealth fund as the Kremlin’s oil and gas revenues are plummeting with widening discounts and key buyers like India pulling out of the spot market.\_\_\_ Under the so-called budget rule, Russia ha"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T12:30:00.000Z"
+      precision: day
+  - id: iran-rushes-to-ship-oil-ahead-of-possibl-2026-02-26
+    type: Event
+    name: Iran Rushes to Ship Oil Ahead of Possible U.S. Strike
+    category: finance.energy
+    description: "Iran has tripled the rate of loading tankers in recent days as Tehran rushes to get its oil out of the Gulf ahead of potential further escalation of the tensions with the United States, according to vessel-tracking data.\_ Crude oil exports from Iran’s key export hub on the Kharg Island soared to 20."
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T11:30:00.000Z"
+      precision: day
+  - id: trump-s-secret-weapon-in-the-rare-earth-2026-02-26
+    type: Event
+    name: Trump’s Secret Weapon in the Rare Earth War
+    category: finance.energy
+    description: >-
+      Long before trade wars and tariffs, China secured manufacturing dominance by controlling rare earths - a reality
+      so consequential that the United States and its allies are now pledging more than $8.5 billion just to claw back
+      some control of the supply chain. As global manufacturing expanded over th
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T11:00:00.000Z"
+      precision: day
+  - id: 5-billion-pipeline-deal-could-be-coming-2026-02-26
+    type: Claim
+    name: $5 Billion Pipeline Deal Could Be Coming to the Gulf Coast
+    category: finance.energy
+    description: >-
+      Texas-based EnCap Flatrock Midstream is considering a sale of gas pipeline operator Momentum Midstream in a deal
+      that could fetch $5 billion. According to a Bloomberg report citing unnamed sources, the venture capital firm is
+      currently talking with financial advisers to find a buyer. The sources not
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T10:00:00.000Z"
+      precision: day
+  - id: shell-weighs-24-billion-stake-sale-in-a-2026-02-26
+    type: Event
+    name: Shell Weighs $24 Billion Stake Sale in Australian LNG Project
+    category: finance.energy
+    description: >-
+      Shell is in talks with ADNOC and Midocean Energy on the potential sale of its minority stake in the Australian
+      North West Shelf LNG project, Bloomberg has reported, citing unnamed sources. The supermajor holds a 16.67% in the
+      project, which is worth some $24 billion. An earlier Bloomberg report said
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T08:45:00.000Z"
+      precision: day
+  - id: iran-restarts-gas-exports-to-iraq-as-ene-2026-02-26
+    type: Event
+    name: Iran Restarts Gas Exports to Iraq as Energy Pressures Mount
+    category: finance.energy
+    description: >-
+      Iran has restarted the exports of natural gas to its neighbor Iraq despite U.S. opposition to the exchange, which
+      last year led to the cancellation of these supplies. The daily rate of exports is 7 million cu m, Reuters
+      reported, citing a spokesman for Iraq’s electricity ministry. The spokesman also
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T07:44:03.000Z"
+      precision: day
+  - id: 5-european-oil-stocks-to-buy-as-iran-ris-2026-02-26
+    type: Event
+    name: 5 European Oil Stocks To Buy As Iran Risk Premium Boosts Oil Prices
+    category: finance.energy
+    description: >-
+      Geopolitical tensions between the U.S. and Iran have pushed oil prices to seven-month highs, as markets factor in
+      a sizable risk premium ahead of critical negotiations. Despite heavy sanctions by the West, Iran’s oil output has
+      recovered to near pre-sanctions levels thanks to the OPEC producer offer
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T01:00:00.000Z"
+      precision: day
+  - id: turkey-and-bp-reshape-the-balance-of-pow-2026-02-26
+    type: Event
+    name: Turkey and BP Reshape the Balance of Power in Northern Iraq
+    category: finance.energy
+    description: >-
+      The recent announcement that Turkey’s state-owned TPAO has signed a wide-ranging oil and gas cooperation agreement
+      with Great Britain’s BP marks a potentially significant shift in the strategic landscape of northern Iraq. The new
+      framework — covering field development, exploration, export capacity a
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T00:00:00.000Z"
+      precision: day
+  - id: salesforce-ceo-marc-benioff-this-isn-8-2026-02-26
+    type: Event
+    name: "Salesforce CEO Marc Benioff: This isn&#8217;t our first SaaSpocalypse"
+    category: technology.ai
+    description: >-
+      Salesforce reported a solid year-end earnings and then pulled out all the stops to ward off more talk of the death
+      of its business to AI.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T01:59:12.000Z"
+      precision: day
+  - id: gushwork-bets-on-ai-search-for-customer-2026-02-26
+    type: Event
+    name: Gushwork bets on AI search for customer leads — and early results are emerging
+    category: technology.ai
+    description: >-
+      Gushwork has raised $9 million in a seed round led by SIG and Lightspeed. The startup has seen early customer
+      traction from AI search tools like ChatGPT.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-26T00:00:00.000Z"
+      precision: day
+narratives:
+  - name: Ukraine Peace Process
+    steps:
+      - from: kenya-arrests-suspect-in-duping-men-to-f-2026-02-26
+        to: orban-steps-up-oil-accusations-against-u-2026-02-26
+        type: causes
+  - name: Mining & Resources
+    steps:
+      - from: magic-beneath-the-surface-pioneering-2026-02-26
+        to: trump-s-secret-weapon-in-the-rare-earth-2026-02-26
+        type: causes
+  - name: Crypto Markets
+    steps:
+      - from: bitcoin-touches-70-000-before-fading-as-2026-02-26
+        to: the-10-a-m-mystery-why-bitcoin-s-daily-2026-02-26
+        type: causes
+      - from: the-10-a-m-mystery-why-bitcoin-s-daily-2026-02-26
+        to: bitcoin-stalls-below-70-000-while-dot-2026-02-26
+        type: causes
+      - from: bitcoin-stalls-below-70-000-while-dot-2026-02-26
+        to: why-strategist-tom-lee-believes-the-ai-a-2026-02-26
+        type: causes
+      - from: why-strategist-tom-lee-believes-the-ai-a-2026-02-26
+        to: bitcoins-bounce-fails-to-convince-optio-2026-02-26
+        type: causes
+      - from: bitcoins-bounce-fails-to-convince-optio-2026-02-26
+        to: trump-brothers-backed-american-bitcoin-s-2026-02-26
+        type: causes
+  - name: Energy Markets
+    steps:
+      - from: 5-european-oil-stocks-to-buy-as-iran-ris-2026-02-26
+        to: iran-restarts-gas-exports-to-iraq-as-ene-2026-02-26
+        type: causes
+      - from: iran-restarts-gas-exports-to-iraq-as-ene-2026-02-26
+        to: iran-rushes-to-ship-oil-ahead-of-possibl-2026-02-26
+        type: causes
+      - from: iran-rushes-to-ship-oil-ahead-of-possibl-2026-02-26
+        to: russia-to-tighten-budget-fiscal-rule-as-2026-02-26
+        type: causes
+sources:
+  - entity: us-and-iran-begin-talks-seen-as-crucial-2026-02-26
+    type: article
+    title: US and Iran begin talks seen as crucial to prevent conflict
+    url: https://www.bbc.com/news/articles/cvg1vd95nl9o
+    excerpt: >-
+      The indirect negotiations in Geneva are seen as a last-ditch effort, but the chances of a nuclear agreement are
+      unclear.
+    source_name: BBC News
+    published: "2026-02-26T10:39:58.000Z"
+  - entity: israeli-soldiers-shot-a-palestinian-boy-2026-02-26
+    type: article
+    title: Israeli soldiers shot a Palestinian boy and stood around as he bled to death, video shows
+    url: https://www.bbc.com/news/articles/cpqwv9vvzx9o
+    excerpt: Israeli forces blocked Palestinian ambulances while a 14-year-old lay bleeding for at least 45 minutes.
+    source_name: BBC News
+    published: "2026-02-26T06:01:11.000Z"
+  - entity: cuba-says-group-shot-on-us-registered-sp-2026-02-26
+    type: article
+    title: Cuba says group shot on US-registered speedboat planned 'armed infiltration'
+    url: https://www.bbc.com/news/articles/c24drvj8yl2o
+    excerpt: The passengers were Cuban nationals living in the US, the Cuban government says.
+    source_name: BBC News
+    published: "2026-02-26T11:59:15.000Z"
+  - entity: shot-in-school-uniform-bbc-reveals-poli-2026-02-26
+    type: article
+    title: "Shot in school uniform: BBC reveals police order led to Gen Z protest killings in Nepal"
+    url: https://www.bbc.com/news/articles/c4g5qx357dzo
+    excerpt: New evidence reveals what happened when 19 people were shot dead in  Kathmandu last September.
+    source_name: BBC News
+    published: "2026-02-26T00:02:48.000Z"
+  - entity: nigeria-to-hold-inquest-into-death-of-ch-2026-02-26
+    type: article
+    title: Nigeria to hold inquest into death of Chimamanda Ngozi Adichie's toddler
+    url: https://www.bbc.com/news/articles/cwygr2nzdp9o
+    excerpt: The internationally acclaimed writer has accused Nigerian hospital Euracare of negligence, which it denies.
+    source_name: BBC News
+    published: "2026-02-26T11:10:08.000Z"
+  - entity: orban-steps-up-oil-accusations-against-u-2026-02-26
+    type: article
+    title: Orban steps up oil accusations against Ukraine after vetoing EU loan to Kyiv
+    url: https://www.bbc.com/news/articles/c5ykq0vqn5go
+    excerpt: >-
+      Hungary's prime minister accuses Ukraine of imposing an "oil blockade" after Kyiv says a critical pipeline was
+      closed following Russian strikes.
+    source_name: BBC News
+    published: "2026-02-26T11:52:08.000Z"
+  - entity: hong-kong-tycoon-jimmy-lai-wins-appeal-a-2026-02-26
+    type: article
+    title: Hong Kong tycoon Jimmy Lai wins appeal against fraud conviction
+    url: https://www.bbc.com/news/articles/c5ykq2ykd6zo
+    excerpt: The 78-year-old Lai, however, remains detained for a separate national security case.
+    source_name: BBC News
+    published: "2026-02-26T03:41:47.000Z"
+  - entity: north-korea-could-get-along-with-us-s-2026-02-26
+    type: article
+    title: North Korea could 'get along' with US, says Kim Jong Un
+    url: https://www.bbc.com/news/articles/c0q3747jvnwo
+    excerpt: Kim said they could get along if the US accepts that Pyongyang's nuclear weapons are here to stay.
+    source_name: BBC News
+    published: "2026-02-26T05:25:54.000Z"
+  - entity: us-suitcase-murderer-deported-from-bal-2026-02-26
+    type: article
+    title: US 'suitcase murderer' deported from Bali after 11 years in jail
+    url: https://www.bbc.com/news/articles/cdxg2r11g35o
+    excerpt: The 33-year-old will still face federal charges in the US and is due to appear in court on Thursday.
+    source_name: BBC News
+    published: "2026-02-26T02:01:06.000Z"
+  - entity: nearly-a-million-16-24-year-olds-not-wor-2026-02-26
+    type: article
+    title: Nearly a million 16-24 year-olds not working or in education
+    url: https://www.bbc.com/news/articles/c62gzl2yl24o
+    excerpt: People at the start of their careers are particularly affected by the UK's weak job market.
+    source_name: BBC Business
+    published: "2026-02-26T12:10:25.000Z"
+  - entity: royal-mail-bosses-to-be-called-to-parlia-2026-02-26
+    type: article
+    title: Royal Mail bosses to be called to Parliament over letter delivery failures
+    url: https://www.bbc.com/news/articles/c9dnx445w4do
+    excerpt: It comes after hundreds of people contacted BBC Your Voice to express frustration over late deliveries.
+    source_name: BBC Business
+    published: "2026-02-26T09:33:55.000Z"
+  - entity: ocado-to-axe-1-000-jobs-in-cost-cutting-2026-02-26
+    type: article
+    title: Ocado to axe 1,000 jobs in cost-cutting drive
+    url: https://www.bbc.com/news/articles/cn5gqpz0rk6o
+    excerpt: >-
+      The technology and online grocery group is cutting about 5% of its global workforce, with two-thirds of the losses
+      in the UK.
+    source_name: BBC Business
+    published: "2026-02-26T09:40:34.000Z"
+  - entity: aldi-shop-staff-to-receive-two-pay-rises-2026-02-26
+    type: article
+    title: Aldi shop staff to receive two pay rises this year
+    url: https://www.bbc.com/news/articles/cwygr3p3e8go
+    excerpt: The German budget supermarket is a growing competitor among British supermarkets.
+    source_name: BBC Business
+    published: "2026-02-26T00:02:16.000Z"
+  - entity: the-family-owned-soda-firm-that-still-us-2026-02-26
+    type: article
+    title: The family-owned soda firm that still uses returnable glass bottles
+    url: https://www.bbc.com/news/articles/cdjm289ye4mo
+    excerpt: Soft drinks company Twig's Beverage has a loyal following for its old-fashioned approach.
+    source_name: BBC Business
+    published: "2026-02-26T00:06:33.000Z"
+  - entity: two-women-arrested-in-uganda-for-alleged-2026-02-26
+    type: article
+    title: Two women arrested in Uganda for allegedly kissing in public could face life sentence
+    url: https://www.theguardian.com/global-development/2026/feb/26/women-arrested-uganda-kissing-public-lgbtq-laws
+    excerpt: >-
+      <p>Wendy Faith and Alesi Diana Denise were taken into custody under laws that have outraged LGBTQ+ community and
+      rights activists</p><p>Two women have been arrested and detained in Uganda after allege
+    source_name: The Guardian
+    published: "2026-02-26T08:00:23.000Z"
+  - entity: a-devastating-force-how-recent-medite-2026-02-26
+    type: article
+    title: "‘A devastating force’: how recent Mediterranean storms turned to tragedies"
+    url: https://www.theguardian.com/world/2026/feb/26/recent-mediterranean-storms-tragedies-spain-portugal-morocco
+    excerpt: >-
+      <p>Atmospheric machine-gun has fired storm after deadly storm at the region this year, leaving a trail of
+      widespread destruction</p><p>For Andrés Sánchez Barea, in Spain, it was the fear that arose wh
+    source_name: The Guardian
+    published: "2026-02-26T05:00:21.000Z"
+  - entity: cuba-says-it-killed-heavily-armed-exiles-2026-02-26
+    type: article
+    title: Cuba says it killed heavily armed exiles who attacked from US-registered speedboat
+    url: >-
+      https://www.theguardian.com/world/2026/feb/25/cuba-says-border-guards-killed-four-gunmen-on-us-registered-speedboat
+    excerpt: >-
+      <p>Rare clash off island’s coast took place amid US oil embargo and heightened tensions between two
+      countries</p><p>Cuban forces killed four exiles and wounded six others who sailed into its waters on
+    source_name: The Guardian
+    published: "2026-02-26T03:21:55.000Z"
+  - entity: world-economic-forum-ceo-quits-after-eps-2026-02-26
+    type: article
+    title: World Economic Forum CEO quits after Epstein links examined – business live
+    url: >-
+      https://www.theguardian.com/business/live/2026/feb/26/nvidia-blockbuster-results-ai-stock-markets-wall-street-ftse-news-updates
+    excerpt: >-
+      <p>Rolling coverage of the latest economic and financial news</p><p><strong>Artificial intelligence is boosting
+      productivity in the euro zone but it is not yet causing a wave of layoffs due to greater
+    source_name: The Guardian
+    published: "2026-02-26T12:04:34.000Z"
+  - entity: ocado-to-cut-1-000-jobs-in-150m-cost-sa-2026-02-26
+    type: article
+    title: Ocado to cut 1,000 jobs in £150m cost-saving drive
+    url: https://www.theguardian.com/business/2026/feb/26/ocado-to-cut-1000-jobs-in-150m-cost-cutting-drive
+    excerpt: >-
+      <p>Retail technology business to reduce about 5% of global workforce, with two-thirds of job losses affecting
+      UK</p><ul><li><p><a href="https://www.theguardian.com/business/live/2026/feb/26/nvidia-blo
+    source_name: The Guardian
+    published: "2026-02-26T08:29:30.000Z"
+  - entity: rolls-royce-profits-soar-40-amid-boomin-2026-02-26
+    type: article
+    title: Rolls-Royce profits soar 40% amid booming demand for AI datacentre power
+    url: >-
+      https://www.theguardian.com/business/2026/feb/26/rolls-royce-profits-soar-amid-booming-demand-for-ai-datacentre-power
+    excerpt: >-
+      <p>Engine maker promises to give up to £9bn to shareholders over next three years as turnaround gathers
+      pace</p><p>Rolls-Royce’s profits soared by 40% last year as the engineering company’s turnaround
+    source_name: The Guardian
+    published: "2026-02-26T09:43:51.000Z"
+  - entity: keen-bosses-strange-mistakes-and-a-loom-2026-02-26
+    type: article
+    title: "Keen bosses, strange mistakes and a looming threat: workers on training AI to do their jobs"
+    url: https://www.theguardian.com/technology/2026/feb/26/workers-training-ai-to-do-their-jobs
+    excerpt: >-
+      <p>Some say the technology is devaluing their work, while others reckon it is not yet – and might never be – good
+      enough to replace them entirely</p><p>Workers grappling with the rapid growth of artif
+    source_name: The Guardian
+    published: "2026-02-26T10:00:24.000Z"
+  - entity: wpp-to-sell-assets-and-cut-jobs-in-radic-2026-02-26
+    type: article
+    title: WPP to sell assets and cut jobs in radical shake-up to counter AI threat
+    url: https://www.theguardian.com/business/2026/feb/26/wpp-merge-ad-agencies-cut-jobs-ai-threat-advertising
+    excerpt: >-
+      <p>Group aims to be ‘simpler, lower-cost, AI-enabled business’ and achieve £500m of annual savings by
+      2028</p><p>The beleaguered UK advertising group WPP has announced a radical restructure to counter
+    source_name: The Guardian
+    published: "2026-02-26T10:24:58.000Z"
+  - entity: magic-beneath-the-surface-pioneering-2026-02-26
+    type: article
+    title: "‘Magic beneath the surface’: pioneering geothermal plant launched in Cornwall"
+    url: https://www.theguardian.com/environment/2026/feb/26/cornwall-new-geothermal-project-launches
+    excerpt: >-
+      <p>A new mini power station and lithium extraction facility near Redruth are set to bolster green energy and
+      create jobs</p><p>Just outside the perimeter fence stand the hulking remains of grand stone
+    source_name: The Guardian
+    published: "2026-02-26T06:00:19.000Z"
+  - entity: netflix-or-paramount-who-would-be-the-b-2026-02-26
+    type: article
+    title: "Netflix or Paramount: who would be the best new owner of Warner Bros?"
+    url: https://www.theguardian.com/film/2026/feb/26/netflix-paramount-best-new-owner-warner-bros
+    excerpt: >-
+      <p>The ongoing battle over who will own the iconic film studio is set to have a major impact on what we, the
+      viewers, get to watch in the future</p><p>It’s not unusual for a corporate merger to take m
+    source_name: The Guardian
+    published: "2026-02-26T10:04:24.000Z"
+  - entity: workers-decry-whirlpool-s-job-cuts-amid-2026-02-26
+    type: article
+    title: Workers decry Whirlpool’s job cuts amid offshoring, praise of Trump’s tariffs
+    url: https://www.theguardian.com/us-news/2026/feb/26/whirlpools-job-cuts-trumps-tariffs
+    excerpt: >-
+      <p>The US has lost factory jobs amid promises of a tariff-led renaissance</p><p>Workers at <a
+      href="https://www.theguardian.com/business/whirlpool-corporation">Whirlpool</a>, the US’s largest applianc
+    source_name: The Guardian
+    published: "2026-02-26T11:00:39.000Z"
+  - entity: new-glp1-pill-helps-patients-lose-up-to-2026-02-26
+    type: article
+    title: New GLP1 pill helps patients lose up to 8% of body weight, trial shows
+    url: https://www.theguardian.com/science/2026/feb/26/new-glp1-pill-patients-lose-weight-trial
+    excerpt: >-
+      <p>Daily orforglipron tablets led to greater weight loss than semaglutide tablets, offering potential oral
+      alternative to Wegovy and Mounjaro</p><p>A new daily pill could be a more effective GLP-1 tab
+    source_name: The Guardian
+    published: "2026-02-26T11:39:31.000Z"
+  - entity: cristiano-ronaldo-buys-25-percent-stake-2026-02-26
+    type: article
+    title: Cristiano Ronaldo buys 25 percent stake in Spanish second-tier club Almeria
+    url: >-
+      https://www.aljazeera.com/sports/2026/2/26/cristiano-ronaldo-buys-25-percent-stake-in-spanish-second-tier-club-almeria
+    excerpt: Almeria, relegated from La Liga in 2023-24, had been under the control of Saudi owners for more than six years.
+    source_name: Al Jazeera
+    published: "2026-02-26T12:05:56.000Z"
+  - entity: south-africa-a-year-after-usaid-cuts-2026-02-26
+    type: article
+    title: "South Africa: A year after USAID cuts"
+    url: https://www.aljazeera.com/video/africa-now/2026/2/26/south-africa-a-year-after-usaid-cuts
+    excerpt: Health workers and their patients are still reeling from the impact from last year.
+    source_name: Al Jazeera
+    published: "2026-02-26T11:56:17.000Z"
+  - entity: greek-court-finds-4-guilty-in-major-2022-2026-02-26
+    type: article
+    title: Greek court finds 4 guilty in major 2022 spyware scandal
+    url: https://www.aljazeera.com/news/2026/2/26/greek-court-finds-4-guilty-in-major-2022-spyware-scandal
+    excerpt: Two Greeks and two Israelis found guilty of &#039;breaching the confidentiality of telephone communications&#039;.
+    source_name: Al Jazeera
+    published: "2026-02-26T11:50:18.000Z"
+  - entity: the-royal-lodge-epstein-s-links-to-ex-p-2026-02-26
+    type: article
+    title: "The Royal Lodge: Epstein’s links to ex-Prince Andrew’s financial meetings"
+    url: https://www.aljazeera.com/news/2026/2/26/the-royal-lodge-epsteins-links-to-ex-prince-andrews-financial-meetings
+    excerpt: >-
+      Emails reveal how Andrew Mountbatten-Windsor&#039;s royal home was site of financial meetings on which Epstein
+      advised.
+    source_name: Al Jazeera
+    published: "2026-02-26T11:38:13.000Z"
+  - entity: what-to-expect-when-the-clintons-are-que-2026-02-26
+    type: article
+    title: What to expect when the Clintons are questioned on Epstein links
+    url: https://www.aljazeera.com/video/newsfeed/2026/2/26/what-to-expect-when-clintons-are-questioned-on-epstein-links
+    excerpt: Former US Secretary of State Hillary Clinton and former President Bill Clinton are to testify over Epstein.
+    source_name: Al Jazeera
+    published: "2026-02-26T11:30:55.000Z"
+  - entity: kenya-arrests-suspect-in-duping-men-to-f-2026-02-26
+    type: article
+    title: Kenya arrests suspect in duping men to fight for Russia in Ukraine war
+    url: https://www.aljazeera.com/news/2026/2/26/kenya-arrests-suspect-in-duping-men-to-fight-for-russia-in-ukraine-war
+    excerpt: Arrest in Ethiopian border town follows Kenyan intelligence report of more than 1,000 citizens trafficked for war.
+    source_name: Al Jazeera
+    published: "2026-02-26T11:26:15.000Z"
+  - entity: what-to-know-about-us-iran-nuclear-talks-2026-02-26
+    type: article
+    title: What to know about US-Iran nuclear talks in Geneva
+    url: https://www.aljazeera.com/video/newsfeed/2026/2/26/what-to-know-about-us-iran-nuclear-talks-in-geneva
+    excerpt: >-
+      Negotiators from Iran and the United States are holding a third round of indirect nuclear talks in Geneva,
+      Switzerland.
+    source_name: Al Jazeera
+    published: "2026-02-26T11:07:42.000Z"
+  - entity: real-madrid-bans-club-member-over-nazi-s-2026-02-26
+    type: article
+    title: Real Madrid bans club member over Nazi salute during Benfica match
+    url: https://www.aljazeera.com/sports/2026/2/26/real-madrid-ban-club-member-who-did-nazi-salute-during-benfica-match
+    excerpt: >-
+      Game already overshadowed by alleged racial abuse aimed at Vinicius Jr by Benfica&#039;s Gianluca Prestianni in
+      first leg.
+    source_name: Al Jazeera
+    published: "2026-02-26T10:57:52.000Z"
+  - entity: mosques-attacked-children-racially-abus-2026-02-26
+    type: article
+    title: Mosques attacked, children racially abused as hard right rises in UK
+    url: https://www.aljazeera.com/news/2026/2/26/mosques-attacked-children-racially-abused-as-hard-right-rises-in-uk
+    excerpt: As hatred is increasingly normalised and assaults rise, ethnic minorities are becoming hypervigilant.
+    source_name: Al Jazeera
+    published: "2026-02-26T10:32:17.000Z"
+  - entity: live-india-vs-zimbabwe-t20-world-cup-2026-02-26
+    type: article
+    title: "LIVE: India vs Zimbabwe – T20 World Cup"
+    url: >-
+      https://www.aljazeera.com/sports/liveblog/2026/2/26/live-india-vs-zimbabwe-t20-world-cup-commentary-stream-playing-11-score
+    excerpt: Follow our live build-up, toss, pitch report, playing 11, score, photo updates and text commentary stream.
+    source_name: Al Jazeera
+    published: "2026-02-26T10:31:25.000Z"
+  - entity: bitcoins-bounce-fails-to-convince-optio-2026-02-26
+    type: article
+    title: Bitcoin's bounce fails to convince options traders
+    url: https://www.coindesk.com/daybook-us/2026/02/26/bitcoin-s-bounce-fails-to-convince-options-traders
+    excerpt: Your day-ahead look for Feb. 26, 2026
+    source_name: CoinDesk
+    published: "2026-02-26T12:15:00.000Z"
+  - entity: bitcoin-stalls-below-70-000-while-dot-2026-02-26
+    type: article
+    title: Bitcoin stalls below $70,000 while DOT, UNI lead altcoin surge
+    url: https://www.coindesk.com/markets/2026/02/26/bitcoin-stalls-near-usd70-000-while-dot-uni-lead-altcoin-surge
+    excerpt: BTC traded within a well-defined range as polkadot and uniswap rallied, cosmos slid.
+    source_name: CoinDesk
+    published: "2026-02-26T11:30:00.000Z"
+  - entity: three-companies-add-strategys-strc-to-t-2026-02-26
+    type: article
+    title: Three companies add Strategy's STRC to treasury as shares return to par
+    url: >-
+      https://www.coindesk.com/markets/2026/02/26/three-companies-add-strategy-s-strc-to-treasury-as-shares-return-to-par
+    excerpt: Strategy’s preferred equity trades back at $100 as corporate adoption expands at Strategy World 2026.
+    source_name: CoinDesk
+    published: "2026-02-26T10:48:23.000Z"
+  - entity: the-10-a-m-mystery-why-bitcoin-s-daily-2026-02-26
+    type: article
+    title: "The 10 a.m. mystery: Why bitcoin’s daily ‘price slam’ suddenly vanished after a massive lawsuit"
+    url: >-
+      https://www.coindesk.com/markets/2026/02/26/why-crypto-x-thinks-jane-street-crashed-bitcoin-and-what-s-actually-behind-the-10-am-slam
+    excerpt: >-
+      Jane Street is a major authorized participant in spot bitcoin ETFs. That's not a conspiracy. But the mechanics of
+      what APs actually do at market open explain more than most people realize.
+    source_name: CoinDesk
+    published: "2026-02-26T10:02:12.000Z"
+  - entity: bitcoin-touches-70-000-before-fading-as-2026-02-26
+    type: article
+    title: Bitcoin touches $70,000 before fading as altcoins lead the strongest bounce in weeks
+    url: >-
+      https://www.coindesk.com/markets/2026/02/26/bitcoin-touches-usd70k-before-fading-as-altcoins-lead-the-strongest-bounce-in-weeks
+    excerpt: >-
+      Ether, solana, and cardano all outpaced bitcoin on the day, suggesting a rotation into higher-beta tokens as
+      forced selling from the February crash begins to clear.
+    source_name: CoinDesk
+    published: "2026-02-26T05:31:19.000Z"
+  - entity: uniswap-s-uni-jumps-15-as-governance-vo-2026-02-26
+    type: article
+    title: Uniswap’s UNI jumps 15% as governance vote to expand fee switch gains momentum
+    url: >-
+      https://www.coindesk.com/markets/2026/02/26/uniswap-s-uni-jumps-15-as-governance-vote-to-expand-fee-switch-gains-momentum
+    excerpt: >-
+      A governance proposal would activate protocol fees across eight additional chains and automate fee collection on
+      all v3 pools, potentially adding an estimated $27 Million in annualized revenue.
+    source_name: CoinDesk
+    published: "2026-02-26T05:23:18.000Z"
+  - entity: tjx-q4-tops-expectations-as-profit-and-s-2026-02-26
+    type: article
+    title: TJX Q4 tops expectations as profit and sales climb
+    url: https://finance.yahoo.com/news/tjx-q4-tops-expectations-profit-122537393.html
+    excerpt: ""
+    source_name: Just Style
+    published: "2026-02-26T12:25:37.000Z"
+  - entity: trump-brothers-backed-american-bitcoin-s-2026-02-26
+    type: article
+    title: Trump brothers-backed American Bitcoin swings to quarterly loss amid crypto selloff
+    url: https://finance.yahoo.com/news/trump-brothers-backed-american-bitcoin-122144114.html
+    excerpt: ""
+    source_name: Reuters
+    published: "2026-02-26T12:21:44.000Z"
+  - entity: dow-jones-futures-waver-nvidia-holds-in-2026-02-26
+    type: article
+    title: Dow Jones Futures Waver; Nvidia Holds In Buy Zone After Strong Earnings, Guidance
+    url: >-
+      https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-earnings-sp-500/?src=A00220&yptr=yahoo
+    excerpt: ""
+    source_name: Investor's Business Daily
+    published: "2026-02-26T12:12:31.000Z"
+  - entity: morning-bid-nvidias-damp-squib-2026-02-26
+    type: article
+    title: "Morning Bid: Nvidia's damp squib"
+    url: https://finance.yahoo.com/news/morning-bid-nvidias-damp-squib-120831791.html
+    excerpt: ""
+    source_name: Reuters
+    published: "2026-02-26T12:11:52.000Z"
+  - entity: 3-magnificent-recession-proof-etfs-to-st-2026-02-26
+    type: article
+    title: 3 Magnificent Recession-Proof ETFs to Stock Up On Right Now
+    url: https://finance.yahoo.com/news/3-magnificent-recession-proof-etfs-122000317.html
+    excerpt: ""
+    source_name: Motley Fool
+    published: "2026-02-26T12:20:00.000Z"
+  - entity: roth-401-k-catch-up-smart-move-or-wast-2026-02-26
+    type: article
+    title: "Roth 401(k) Catch-Up: Smart Move Or Waste Of Time For Top Earners?"
+    url: >-
+      https://www.investors.com/etfs-and-funds/personal-finance/roth-401k-catch-up-smart-move-or-waste-of-time-for-top-earners/?src=A00220&yptr=yahoo
+    excerpt: ""
+    source_name: Investor's Business Daily
+    published: "2026-02-26T12:00:21.000Z"
+  - entity: 40-of-adults-worry-they-won-t-have-enou-2026-02-26
+    type: article
+    title: >-
+      40% of adults worry they won’t have enough for retirement or fear they won't be able to retire. What you need to
+      know
+    url: https://finance.yahoo.com/news/40-adults-worry-won-t-120000322.html
+    excerpt: ""
+    source_name: Moneywise
+    published: "2026-02-26T12:00:00.000Z"
+  - entity: inflation-is-caused-by-too-much-governm-2026-02-26
+    type: article
+    title: >-
+      Inflation is caused by ‘too much government spending,’ affirms Elon Musk. Here’s what he likes for wealth
+      protection
+    url: https://finance.yahoo.com/news/inflation-caused-too-much-government-120000281.html
+    excerpt: ""
+    source_name: Moneywise
+    published: "2026-02-26T12:00:00.000Z"
+  - entity: why-strategist-tom-lee-believes-the-ai-a-2026-02-26
+    type: article
+    title: Why strategist Tom Lee believes the AI and crypto selloffs are almost over
+    url: >-
+      https://www.marketwatch.com/story/why-strategist-tom-lee-believes-the-ai-bloodbath-and-crypto-selloff-is-almost-over-0ccdbb49?mod=mw_rss_topstories
+    excerpt: Fundstrat&#x2019;s Tom Lee says the tech and crypto selloff has gone just about as far as it&#x2019;s going to go.
+    source_name: MarketWatch
+    published: "2026-02-26T12:05:00.000Z"
+  - entity: rolls-royce-stock-has-outperformed-nvidi-2026-02-26
+    type: article
+    title: Rolls-Royce stock has outperformed Nvidia&#x2019;s in the last three years &#x2014; and the gap is growing
+    url: >-
+      https://www.marketwatch.com/story/rolls-royce-stock-has-outperformed-nvidias-in-the-last-three-years-and-the-gap-is-growing-61464759?mod=mw_rss_topstories
+    excerpt: >-
+      Chief executive Tufan Erginbilgic raised guidance for the size of the share buyback program, free cash flow and
+      underlying profits
+    source_name: MarketWatch
+    published: "2026-02-26T11:08:00.000Z"
+  - entity: x2018-i-live-in-a-state-with-no-inheri-2026-02-26
+    type: article
+    title: "&#x2018;I live in a state with no inheritance tax&#x2019;: Is it legal to deposit $150K cash into my bank account?"
+    url: >-
+      https://www.marketwatch.com/story/i-live-in-a-state-with-no-inheritance-tax-is-it-legal-to-deposit-150k-cash-into-my-bank-account-d7987cfe?mod=mw_rss_topstories
+    excerpt: "&#x201c;The money is not currently in a bank account and it is not part of an estate.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-26T10:30:00.000Z"
+  - entity: here-x2019-s-what-x2019-s-necessary-to-2026-02-26
+    type: article
+    title: Here&#x2019;s what&#x2019;s necessary to return the incredibly concentrated U.S. stock market to normal levels
+    url: >-
+      https://www.marketwatch.com/story/heres-whats-necessary-to-return-the-incredibly-concentrated-u-s-stock-market-to-normal-levels-ca9ecc4c?mod=mw_rss_topstories
+    excerpt: >-
+      D.E. Shaw, the renowned number-crunching hedge fund manager, calculated how long it would take for concentrated
+      U.S. stock markets to return to normal.
+    source_name: MarketWatch
+    published: "2026-02-26T10:22:00.000Z"
+  - entity: tennis-pro-tommy-paul-and-fiancee-paige-2026-02-26
+    type: article
+    title: Tennis pro Tommy Paul and fiancee Paige Lorenze offer a peek inside new &#x2018;dream home&#x2019; in Connecticut
+    url: >-
+      https://www.marketwatch.com/story/tennis-pro-tommy-paul-and-fiancee-paige-lorenze-offer-a-peek-inside-new-dream-home-in-connecticut-fc540110?mod=mw_rss_topstories
+    excerpt: >-
+      The couple immersed themselves in their nearly-married life when they listed their own properties to buy a
+      Connecticut mansion, which they have been renovating since they closed on it.
+    source_name: MarketWatch
+    published: "2026-02-26T10:03:00.000Z"
+  - entity: how-one-firm-hit-by-ai-fears-is-answerin-2026-02-26
+    type: article
+    title: "How one firm hit by AI fears is answering the pressure: stock buybacks and partnerships"
+    url: >-
+      https://www.marketwatch.com/story/how-one-firm-hit-by-ai-fears-is-answering-the-pressure-stock-buybacks-and-partnerships-994af531?mod=mw_rss_topstories
+    excerpt: The London Stock Exchange Group unveiled a big stock buyback after in-line results for the year.
+    source_name: MarketWatch
+    published: "2026-02-26T09:49:00.000Z"
+  - entity: as-nuclear-talks-restart-in-geneva-iran-2026-02-26
+    type: article
+    title: As nuclear talks restart in Geneva, Iran&#x2019;s &#x2018;oil on the water&#x2019; reaches record levels
+    url: >-
+      https://www.marketwatch.com/story/as-nuclear-talks-restart-in-geneva-irans-oil-on-the-water-reaches-record-levels-100961cc?mod=mw_rss_topstories
+    excerpt: >-
+      By the fourth quarter of 2026, Goldman Sachs believes the current geopolitical tension might have eased somewhat
+      and they forecast $60 by year-end
+    source_name: MarketWatch
+    published: "2026-02-26T09:11:00.000Z"
+  - entity: why-nvidia-x2019-s-jensen-huang-thinks-2026-02-26
+    type: article
+    title: Why Nvidia&#x2019;s Jensen Huang thinks the market got it wrong on software companies
+    url: >-
+      https://www.marketwatch.com/story/why-nvidias-jensen-huang-thinks-the-market-got-it-wrong-on-software-companies-2552c757?mod=mw_rss_topstories
+    excerpt: >-
+      There&#x2019;s at least one executive in the artificial-intelligence space who doesn&#x2019;t think AI will
+      cannibalize software companies: Nvidia&#x2019;s Jensen Huang.
+    source_name: MarketWatch
+    published: "2026-02-26T08:59:00.000Z"
+  - entity: nutanix-x2019-s-stock-soars-as-amd-inve-2026-02-26
+    type: article
+    title: Nutanix&#x2019;s stock soars as AMD investment creates a &#x2018;halo effect&#x2019;
+    url: >-
+      https://www.marketwatch.com/story/this-stock-is-soaring-on-news-of-a-forthcoming-investment-by-amd-216f3ee1?mod=mw_rss_topstories
+    excerpt: >-
+      The company, which makes hyperconverged infrastructure including storage offerings, is partnering with AMD and
+      betting that AI customers want flexible ecosystems.
+    source_name: MarketWatch
+    published: "2026-02-26T03:39:00.000Z"
+  - entity: trade-desk-x2019-s-stock-slides-after-e-2026-02-26
+    type: article
+    title: Trade Desk&#x2019;s stock slides after earnings, as growth slowdown unnerves Wall Street even further
+    url: >-
+      https://www.marketwatch.com/story/trade-desks-stock-slides-as-growth-slowdown-unnerves-wall-street-even-further-9d99e55e?mod=mw_rss_topstories
+    excerpt: The ad-tech provider said automotive and packaged-good clients are under pressure.
+    source_name: MarketWatch
+    published: "2026-02-26T02:01:00.000Z"
+  - entity: russia-to-tighten-budget-fiscal-rule-as-2026-02-26
+    type: article
+    title: Russia to Tighten Budget Fiscal Rule as Oil and Gas Revenues Plunge
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/Russia-to-Tighten-Budget-Fiscal-Rule-as-Oil-and-Gas-Revenues-Plunge.html
+    excerpt: >-
+      The Russian government is considering lowering the oil price level above which it sends the proceeds to its wealth
+      fund as the Kremlin’s oil and gas revenues are plummeting with widening discounts and
+    source_name: OilPrice.com
+    published: "2026-02-26T12:30:00.000Z"
+  - entity: iran-rushes-to-ship-oil-ahead-of-possibl-2026-02-26
+    type: article
+    title: Iran Rushes to Ship Oil Ahead of Possible U.S. Strike
+    url: https://oilprice.com/Latest-Energy-News/World-News/Iran-Rushes-to-Ship-Oil-Ahead-of-Possible-US-Strike.html
+    excerpt: >-
+      Iran has tripled the rate of loading tankers in recent days as Tehran rushes to get its oil out of the Gulf ahead
+      of potential further escalation of the tensions with the United States, according to v
+    source_name: OilPrice.com
+    published: "2026-02-26T11:30:00.000Z"
+  - entity: trump-s-secret-weapon-in-the-rare-earth-2026-02-26
+    type: article
+    title: Trump’s Secret Weapon in the Rare Earth War
+    url: https://oilprice.com/Energy/Energy-General/Trumps-Secret-Weapon-in-the-Rare-Earth-War.html
+    excerpt: >-
+      Long before trade wars and tariffs, China secured manufacturing dominance by controlling rare earths - a reality
+      so consequential that the United States and its allies are now pledging more than $8.5 
+    source_name: OilPrice.com
+    published: "2026-02-26T11:00:00.000Z"
+  - entity: 5-billion-pipeline-deal-could-be-coming-2026-02-26
+    type: article
+    title: $5 Billion Pipeline Deal Could Be Coming to the Gulf Coast
+    url: https://oilprice.com/Latest-Energy-News/World-News/5-Billion-Pipeline-Deal-Could-Be-Coming-to-the-Gulf-Coast.html
+    excerpt: >-
+      Texas-based EnCap Flatrock Midstream is considering a sale of gas pipeline operator Momentum Midstream in a deal
+      that could fetch $5 billion. According to a Bloomberg report citing unnamed sources, th
+    source_name: OilPrice.com
+    published: "2026-02-26T10:00:00.000Z"
+  - entity: shell-weighs-24-billion-stake-sale-in-a-2026-02-26
+    type: article
+    title: Shell Weighs $24 Billion Stake Sale in Australian LNG Project
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/Shell-Weighs-24-Billion-Stake-Sale-in-Australian-LNG-Project.html
+    excerpt: >-
+      Shell is in talks with ADNOC and Midocean Energy on the potential sale of its minority stake in the Australian
+      North West Shelf LNG project, Bloomberg has reported, citing unnamed sources. The superma
+    source_name: OilPrice.com
+    published: "2026-02-26T08:45:00.000Z"
+  - entity: iran-restarts-gas-exports-to-iraq-as-ene-2026-02-26
+    type: article
+    title: Iran Restarts Gas Exports to Iraq as Energy Pressures Mount
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/Iran-Restarts-Gas-Exports-to-Iraq-as-Energy-Pressures-Mount.html
+    excerpt: >-
+      Iran has restarted the exports of natural gas to its neighbor Iraq despite U.S. opposition to the exchange, which
+      last year led to the cancellation of these supplies. The daily rate of exports is 7 mi
+    source_name: OilPrice.com
+    published: "2026-02-26T07:44:03.000Z"
+  - entity: 5-european-oil-stocks-to-buy-as-iran-ris-2026-02-26
+    type: article
+    title: 5 European Oil Stocks To Buy As Iran Risk Premium Boosts Oil Prices
+    url: https://oilprice.com/Energy/Crude-Oil/5-European-Oil-Stocks-To-Buy-As-Iran-Risk-Premium-Boosts-Oil-Prices.html
+    excerpt: >-
+      Geopolitical tensions between the U.S. and Iran have pushed oil prices to seven-month highs, as markets factor in
+      a sizable risk premium ahead of critical negotiations. Despite heavy sanctions by the 
+    source_name: OilPrice.com
+    published: "2026-02-26T01:00:00.000Z"
+  - entity: turkey-and-bp-reshape-the-balance-of-pow-2026-02-26
+    type: article
+    title: Turkey and BP Reshape the Balance of Power in Northern Iraq
+    url: >-
+      https://oilprice.com/Energy/Energy-General/Turkey-and-BPs-Kirkuk-Alliance-Signals-a-Major-Shift-in-Iraqs-EastWest-Balanc.html
+    excerpt: >-
+      The recent announcement that Turkey’s state-owned TPAO has signed a wide-ranging oil and gas cooperation agreement
+      with Great Britain’s BP marks a potentially significant shift in the strategic landsc
+    source_name: OilPrice.com
+    published: "2026-02-26T00:00:00.000Z"
+  - entity: salesforce-ceo-marc-benioff-this-isn-8-2026-02-26
+    type: article
+    title: "Salesforce CEO Marc Benioff: This isn&#8217;t our first SaaSpocalypse"
+    url: https://techcrunch.com/2026/02/25/salesforce-ceo-marc-benioff-this-isnt-our-first-saaspocalypse/
+    excerpt: >-
+      Salesforce reported a solid year-end earnings and then pulled out all the stops to ward off more talk of the death
+      of its business to AI.
+    source_name: TechCrunch
+    published: "2026-02-26T01:59:12.000Z"
+  - entity: gushwork-bets-on-ai-search-for-customer-2026-02-26
+    type: article
+    title: Gushwork bets on AI search for customer leads — and early results are emerging
+    url: https://techcrunch.com/2026/02/25/gushwork-bets-on-ai-search-for-customer-leads-and-early-results-are-emerging/
+    excerpt: >-
+      Gushwork has raised $9 million in a seed round led by SIG and Lightspeed. The startup has seen early customer
+      traction from AI search tools like ChatGPT.
+    source_name: TechCrunch
+    published: "2026-02-26T00:00:00.000Z"
