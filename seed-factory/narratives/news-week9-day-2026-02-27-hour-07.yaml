@@ -1,0 +1,713 @@
+seed:
+  name: news-week9-day-2026-02-27-hour-07
+  label: Daily News — 2026-02-27 07:00 (Week 9, 2026)
+  namespace: news.week9.day-2026-02-27
+  description: "Auto-gathered news: 34 stories, 2026-02-27 to 2026-02-27"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week9
+    extends: news
+  - namespace: news.week9.day-2026-02-27
+    extends: news.week9
+entities:
+  - id: hillary-clinton-tells-house-panel-she-h-2026-02-27
+    type: Claim
+    name: Hillary Clinton tells House panel she 'had no idea' of Epstein's crimes
+    category: geopolitics
+    description: >-
+      The ex-secretary of state called for President Trump to be questioned under oath about his past association with
+      the sex offender.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T00:57:28.000Z"
+      precision: day
+  - id: epstein-tried-to-buy-a-palace-in-morocco-2026-02-27
+    type: Event
+    name: Epstein tried to buy a palace in Morocco days before his arrest in 2019
+    category: geopolitics
+    description: The disgraced financier was in talks to buy luxury abode Bin Ennakhi - but the purchase was never completed.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T06:02:12.000Z"
+      precision: day
+  - id: netflix-drops-bid-for-warner-bros-clear-2026-02-27
+    type: Event
+    name: Netflix drops bid for Warner Bros, clearing way for Paramount takeover
+    category: geopolitics
+    description: Netflix's decision to back down from the bidding war clears the path for Paramount to win the takeover battle.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T04:32:38.000Z"
+      precision: day
+  - id: china-removes-nine-military-officials-ah-2026-02-27
+    type: Event
+    name: China removes nine military officials ahead of key political meeting
+    category: geopolitics
+    description: No official reason for the removal was given, but it comes ahead of the country's key Two Sessions meeting.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T04:29:01.000Z"
+      precision: day
+  - id: at-least-10-fbi-agents-who-worked-on-tru-2026-02-27
+    type: Event
+    name: At least 10 FBI agents who worked on Trump investigation fired
+    category: geopolitics
+    description: >-
+      The terminated FBI staffers all participated in a probe into Trump's handling of classified documents after his
+      first term.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T04:16:31.000Z"
+      precision: day
+  - id: anthropic-boss-rejects-pentagon-demand-t-2026-02-27
+    type: Event
+    name: Anthropic boss rejects Pentagon demand to drop AI safeguards
+    category: finance
+    description: Defense Secretary Pete Hegseth previously threatened to remove the firm from the department's supply chain.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T03:54:27.000Z"
+      precision: day
+  - id: jack-dorseys-block-cuts-thousands-of-jo-2026-02-27
+    type: Event
+    name: Jack Dorsey's Block cuts thousands of jobs as it embraces AI
+    category: finance
+    description: The Twitter co-founder says he believes the majority of firms will make similar changes "within the next year."
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T00:06:40.000Z"
+      precision: day
+  - id: why-you-cant-get-a-signal-at-festivals-2026-02-27
+    type: Event
+    name: Why you can't get a signal at festivals and sports matches
+    category: finance
+    description: Connecting up music and sports events to the internet is a massive undertaking.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T00:03:10.000Z"
+      precision: day
+  - id: netflix-declines-to-match-paramount-offe-2026-02-27
+    type: Event
+    name: Netflix declines to match Paramount offer for Warner Bros Discovery
+    category: finance
+    description: >-
+      <p>Company walks away from planned takeover as co-chiefs say deal ‘no longer financially
+      attractive’</p><ul><li><p><a
+      href="https://www.theguardian.com/news/2026/feb/17/sign-up-for-the-breaking-news-us-email-to-get-newsletter-alerts-direct-to-your-inbox?utm_medium=ACQUISITIONS_STANDFIRST&amp;utm_cam
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T00:04:51.000Z"
+      precision: day
+  - id: world-reacts-to-eruption-of-fighting-bet-2026-02-27
+    type: Event
+    name: World reacts to eruption of fighting between Pakistan, Afghanistan
+    category: geopolitics
+    description: Countries around the world are urging warring parties to show restraint.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T06:07:43.000Z"
+      precision: day
+  - id: israeli-attacks-on-police-sites-kill-fiv-2026-02-27
+    type: Event
+    name: Israeli attacks on police sites kill five in southern, central Gaza
+    category: geopolitics
+    description: >-
+      Hamas says latest attacks show Israel&#039;s &#039;blatant disregard for the efforts of mediators&#039; and
+      &#039;the Peace Council&#039;.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T05:49:08.000Z"
+      precision: day
+  - id: solidarity-with-palestinians-questioned-2026-02-27
+    type: Event
+    name: Solidarity with Palestinians questioned as Indonesian troops set for Gaza
+    category: geopolitics
+    description: >-
+      President Prabowo Subianto is trying to expand Indonesia&#039;s global standing, but Indonesians question his role
+      in Gaza.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T05:45:40.000Z"
+      precision: day
+  - id: canadian-pm-carney-heads-to-india-on-si-2026-02-27
+    type: Event
+    name: Canadian PM Carney heads to India on ‘significant’ trip to consolidate ties
+    category: geopolitics
+    description: >-
+      Carney&#039;s trip comes at a time when he&#039;s looking for new markets for Canadian exports to diversify from
+      the US.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T05:08:57.000Z"
+      precision: day
+  - id: in-gaza-when-money-is-scarce-every-cho-2026-02-27
+    type: Event
+    name: "In Gaza, when money is scarce, every choice counts: Bank, cash, or credit?"
+    category: geopolitics
+    description: Palestinians in the devastated enclave struggle to manage their daily lives amid shortage of cash caused by war.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T04:46:12.000Z"
+      precision: day
+  - id: russia-ukraine-war-list-of-key-events-2026-02-27
+    type: Event
+    name: "Russia-Ukraine war: List of key events, day 1,464"
+    category: geopolitics
+    description: These are the key developments from day 1,464 of Russia’s war on Ukraine.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T03:01:36.000Z"
+      precision: day
+  - id: pakistan-afghanistan-live-islamabad-say-2026-02-27
+    type: Claim
+    name: "Pakistan-Afghanistan live: Islamabad says ‘open war’; jets attack Kabul"
+    category: geopolitics
+    description: Pakistani and Afghan officials have both declared full military operations as border clashes intensify.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T02:10:43.000Z"
+      precision: day
+  - id: open-war-pakistan-says-patience-has-2026-02-27
+    type: Claim
+    name: "‘Open war’: Pakistan says ‘patience has run out’ as it bombs Afghanistan"
+    category: geopolitics
+    description: >-
+      Both sides say Pakistan has bombed targets in Kabul, Kandahar and Paktia in an escalation of recent tit-for-tat
+      attacks.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T01:44:15.000Z"
+      precision: day
+  - id: us-tax-agency-broke-privacy-law-approxi-2026-02-27
+    type: Claim
+    name: US tax agency broke privacy law ‘approximately 42,695 times’, judge says
+    category: geopolitics
+    description: >-
+      Federal judge rules that the Internal Revenue Service violated its code by giving immigration agency confidential
+      data.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T00:55:31.000Z"
+      precision: day
+  - id: polymarket-bettors-appear-to-have-inside-2026-02-27
+    type: Event
+    name: Polymarket bettors appear to have insider-traded on a market designed to catch insider traders
+    category: finance.crypto
+    description: >-
+      At least 12 wallets collectively made over $1 million betting on the outcome of ZachXBT's investigation before the
+      findings went public, with one trader turning a $0.14 average entry on shares into $411,000 in profit.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T05:43:17.000Z"
+      precision: day
+  - id: bitcoin-slides-friday-as-risk-off-mood-p-2026-02-27
+    type: Event
+    name: Bitcoin slides Friday as risk-off mood persists, but majors hold weekly gains
+    category: finance.crypto
+    description: >-
+      Analysts say the latest drop appears to be a leverage flush and positioning cleanup rather than a structural trend
+      reversal
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T05:05:29.000Z"
+      precision: day
+  - id: analysis-block-s-retreat-to-2019-scale-2026-02-27
+    type: Claim
+    name: "Analysis: Block’s retreat to 2019 scale could be a hint of deeper shifts in payments economics"
+    category: finance.crypto
+    description: >-
+      While Jack Dorsey cites AI-enabled productivity gains as the reason for Block's cuts, the deeper shift is in
+      payments plumbing: stablecoin settlement threatens to compress the fee stack that fintech acquirers have relied on
+      for years.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T04:44:55.000Z"
+      precision: day
+  - id: world-liberty-financial-ties-voting-powe-2026-02-27
+    type: Event
+    name: World Liberty Financial ties voting power to staking as USD1 supply tops $4.7 Billion
+    category: finance.crypto
+    description: >-
+      The proposal redirects stablecoin arbitrage from institutional market makers to large token holders and links
+      voting rights to capital commitment.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T04:43:19.000Z"
+      precision: day
+  - id: my-grandpa-retired-happily-at-70-with-7-2026-02-27
+    type: Event
+    name: My grandpa retired happily at 70 with $750K after working as a missionary. I know where most Americans go wrong.
+    category: finance.markets
+    description: "&#x201c;You could even retire at 55 with $500,000 and be perfectly fine. Am I right?&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T05:16:00.000Z"
+      precision: day
+  - id: trump-allies-david-and-larry-ellison-win-2026-02-27
+    type: Event
+    name: Trump allies David and Larry Ellison win battle for Warner Bros. Discovery after Netflix bows out
+    category: finance.markets
+    description: The streaming giant said countering Paramount&#x2019;s bid was &#x201c;no longer financially attractive.&#x201d;
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T04:08:00.000Z"
+      precision: day
+  - id: block-plans-to-lay-off-nearly-half-its-s-2026-02-27
+    type: Event
+    name: Block plans to lay off nearly half its staff in &#x2018;deliberate and bold&#x2019; embrace of AI
+    category: finance.markets
+    description: >-
+      Block&#x2019;s stock surges 20% as Wall Street rewards massive job cuts at the parent company of Square and the
+      Cash App.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T04:07:00.000Z"
+      precision: day
+  - id: yes-consumers-in-china-are-consuming-ag-2026-02-27
+    type: Event
+    name: Yes, consumers in China are consuming again. It&#x2019;s just not their No. 1 priority these days.
+    category: finance.markets
+    description: >-
+      Retail sales are still rising, but record household savings, stepped-up gold buying and reined-in income
+      expectations suggest the population of the world&#x2019;s second largest economy is now prioritizing security over
+      splurges &#x2014; with consequences for global brands and investors.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T02:00:00.000Z"
+      precision: day
+  - id: sweetgreen-x2019-s-disappointing-sales-2026-02-27
+    type: Event
+    name: Sweetgreen&#x2019;s disappointing sales offer a reality check for restaurants, after Cava&#x2019;s rally
+    category: finance.markets
+    description: >-
+      A day after Cava&#x2019;s upbeat sales forecast raised hopes for the restaurant industry, rival fast-casual chain
+      Sweetgreen is bringing them back to earth.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T01:33:00.000Z"
+      precision: day
+  - id: duolingo-is-making-some-changes-to-conte-2026-02-27
+    type: Event
+    name: Duolingo is making some changes to contend with the threat of AI. Its stock is sinking.
+    category: finance.markets
+    description: >-
+      Following a slowdown in user growth, the language-learning company is stepping up investment and changing how it
+      thinks about its tiers of service
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T01:33:00.000Z"
+      precision: day
+  - id: rocket-lab-x2019-s-stock-slides-as-yet-2026-02-27
+    type: Event
+    name: Rocket Lab&#x2019;s stock slides as yet another rocket delay overshadows &#x2018;record year&#x2019;
+    category: finance.markets
+    description: >-
+      The Neutron rocket was expected to have its debut last year. Now, it&#x2019;s projected to launch at the end of
+      2026.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T01:31:00.000Z"
+      precision: day
+  - id: dell-x2019-s-stock-soars-as-record-ear-2026-02-27
+    type: Event
+    name: Dell&#x2019;s stock soars, as record earnings signal the company is managing memory shortages well
+    category: finance.markets
+    description: The maker of servers and PCs is also boosting its dividend by 20%.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T01:31:00.000Z"
+      precision: day
+  - id: coreweave-x2019-s-stock-drops-as-losses-2026-02-27
+    type: Event
+    name: CoreWeave&#x2019;s stock drops as losses swell and interest expenses climb
+    category: finance.markets
+    description: >-
+      While AI demand remains high, CoreWeave&#x2019;s widening net loss in the fourth quarter is giving investors
+      pause.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T01:30:00.000Z"
+      precision: day
+  - id: india-s-solar-manufacturers-slapped-with-2026-02-27
+    type: Event
+    name: India’s Solar Manufacturers Slapped With 126% U.S. Tariff
+    category: finance.energy
+    description: >-
+      The U.S. Department of Commerce has imposed a 126% preliminary countervailing duty on Indian solar cells and
+      modules, effectively closing off the lucrative U.S. market and exacerbating overcapacity issues for India’s
+      burgeoning solar sector. The levies follow a complaint by the Alliance for American
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T01:00:00.000Z"
+      precision: day
+  - id: cloud-seeding-moves-from-fringe-science-2026-02-27
+    type: Event
+    name: Cloud Seeding Moves From Fringe Science to Water Strategy
+    category: finance.energy
+    description: >-
+      When the UAE experienced severe floods two years ago, many questioned the country’s practice of so-called cloud
+      seeding—the dispersion of certain chemicals in the air to basically squeeze more rain from clouds—as a possible
+      cause of the floods. Officially, that explanation was rejected, yet cloud-se
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T00:00:00.000Z"
+      precision: day
+  - id: trump-s-secret-weapon-in-the-rare-earth-2026-02-27
+    type: Event
+    name: Trump’s Secret Weapon in the Rare Earth War
+    category: finance.energy
+    description: >-
+      Long before trade wars and tariffs, China secured manufacturing dominance by controlling rare earths - a reality
+      so consequential that the United States and its allies are now pledging more than $8.5 billion just to claw back
+      some control of the supply chain. As global manufacturing expanded over th
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T00:00:00.000Z"
+      precision: day
+narratives:
+  - name: Israel-Palestine Conflict
+    steps:
+      - from: in-gaza-when-money-is-scarce-every-cho-2026-02-27
+        to: solidarity-with-palestinians-questioned-2026-02-27
+        type: causes
+      - from: solidarity-with-palestinians-questioned-2026-02-27
+        to: israeli-attacks-on-police-sites-kill-fiv-2026-02-27
+        type: causes
+  - name: Crypto Markets
+    steps:
+      - from: world-liberty-financial-ties-voting-powe-2026-02-27
+        to: analysis-block-s-retreat-to-2019-scale-2026-02-27
+        type: supports
+      - from: analysis-block-s-retreat-to-2019-scale-2026-02-27
+        to: bitcoin-slides-friday-as-risk-off-mood-p-2026-02-27
+        type: follows
+sources:
+  - entity: hillary-clinton-tells-house-panel-she-h-2026-02-27
+    type: article
+    title: Hillary Clinton tells House panel she 'had no idea' of Epstein's crimes
+    url: https://www.bbc.com/news/articles/cd6z3e1vdvzo
+    excerpt: >-
+      The ex-secretary of state called for President Trump to be questioned under oath about his past association with
+      the sex offender.
+    source_name: BBC News
+    published: "2026-02-27T00:57:28.000Z"
+  - entity: epstein-tried-to-buy-a-palace-in-morocco-2026-02-27
+    type: article
+    title: Epstein tried to buy a palace in Morocco days before his arrest in 2019
+    url: https://www.bbc.com/news/articles/c1w5848vq51o
+    excerpt: The disgraced financier was in talks to buy luxury abode Bin Ennakhi - but the purchase was never completed.
+    source_name: BBC News
+    published: "2026-02-27T06:02:12.000Z"
+  - entity: netflix-drops-bid-for-warner-bros-clear-2026-02-27
+    type: article
+    title: Netflix drops bid for Warner Bros, clearing way for Paramount takeover
+    url: https://www.bbc.com/news/articles/c5y6p5ypgmzo
+    excerpt: Netflix's decision to back down from the bidding war clears the path for Paramount to win the takeover battle.
+    source_name: BBC News
+    published: "2026-02-27T04:32:38.000Z"
+  - entity: china-removes-nine-military-officials-ah-2026-02-27
+    type: article
+    title: China removes nine military officials ahead of key political meeting
+    url: https://www.bbc.com/news/articles/c6270z0dr6no
+    excerpt: No official reason for the removal was given, but it comes ahead of the country's key Two Sessions meeting.
+    source_name: BBC News
+    published: "2026-02-27T04:29:01.000Z"
+  - entity: at-least-10-fbi-agents-who-worked-on-tru-2026-02-27
+    type: article
+    title: At least 10 FBI agents who worked on Trump investigation fired
+    url: https://www.bbc.com/news/articles/c4gq7vdld80o
+    excerpt: >-
+      The terminated FBI staffers all participated in a probe into Trump's handling of classified documents after his
+      first term.
+    source_name: BBC News
+    published: "2026-02-27T04:16:31.000Z"
+  - entity: anthropic-boss-rejects-pentagon-demand-t-2026-02-27
+    type: article
+    title: Anthropic boss rejects Pentagon demand to drop AI safeguards
+    url: https://www.bbc.com/news/articles/cvg3vlzzkqeo
+    excerpt: Defense Secretary Pete Hegseth previously threatened to remove the firm from the department's supply chain.
+    source_name: BBC Business
+    published: "2026-02-27T03:54:27.000Z"
+  - entity: jack-dorseys-block-cuts-thousands-of-jo-2026-02-27
+    type: article
+    title: Jack Dorsey's Block cuts thousands of jobs as it embraces AI
+    url: https://www.bbc.com/news/articles/cq570d12y9do
+    excerpt: The Twitter co-founder says he believes the majority of firms will make similar changes "within the next year."
+    source_name: BBC Business
+    published: "2026-02-27T00:06:40.000Z"
+  - entity: why-you-cant-get-a-signal-at-festivals-2026-02-27
+    type: article
+    title: Why you can't get a signal at festivals and sports matches
+    url: https://www.bbc.com/news/articles/c3rzq8d24y9o
+    excerpt: Connecting up music and sports events to the internet is a massive undertaking.
+    source_name: BBC Business
+    published: "2026-02-27T00:03:10.000Z"
+  - entity: netflix-declines-to-match-paramount-offe-2026-02-27
+    type: article
+    title: Netflix declines to match Paramount offer for Warner Bros Discovery
+    url: https://www.theguardian.com/media/2026/feb/26/netflix-paramount-warner-bros
+    excerpt: >-
+      <p>Company walks away from planned takeover as co-chiefs say deal ‘no longer financially
+      attractive’</p><ul><li><p><a href="https://www.theguardian.com/news/2026/feb/17/sign-up-for-the-breaking-news-u
+    source_name: The Guardian
+    published: "2026-02-27T00:04:51.000Z"
+  - entity: world-reacts-to-eruption-of-fighting-bet-2026-02-27
+    type: article
+    title: World reacts to eruption of fighting between Pakistan, Afghanistan
+    url: https://www.aljazeera.com/news/2026/2/27/world-reacts-to-eruption-of-fighting-between-pakistan-afghanistan
+    excerpt: Countries around the world are urging warring parties to show restraint.
+    source_name: Al Jazeera
+    published: "2026-02-27T06:07:43.000Z"
+  - entity: israeli-attacks-on-police-sites-kill-fiv-2026-02-27
+    type: article
+    title: Israeli attacks on police sites kill five in southern, central Gaza
+    url: https://www.aljazeera.com/news/2026/2/27/israeli-attacks-on-police-sites-kill-five-in-southern-central-gaza
+    excerpt: >-
+      Hamas says latest attacks show Israel&#039;s &#039;blatant disregard for the efforts of mediators&#039; and
+      &#039;the Peace Council&#039;.
+    source_name: Al Jazeera
+    published: "2026-02-27T05:49:08.000Z"
+  - entity: solidarity-with-palestinians-questioned-2026-02-27
+    type: article
+    title: Solidarity with Palestinians questioned as Indonesian troops set for Gaza
+    url: https://www.aljazeera.com/news/2026/2/27/solidarity-with-palestinians-questioned-as-indonesian-troops-set-for-gaza
+    excerpt: >-
+      President Prabowo Subianto is trying to expand Indonesia&#039;s global standing, but Indonesians question his role
+      in Gaza.
+    source_name: Al Jazeera
+    published: "2026-02-27T05:45:40.000Z"
+  - entity: canadian-pm-carney-heads-to-india-on-si-2026-02-27
+    type: article
+    title: Canadian PM Carney heads to India on ‘significant’ trip to consolidate ties
+    url: >-
+      https://www.aljazeera.com/economy/2026/2/27/canadian-pm-carney-heads-to-india-on-significant-trip-to-consolidate-ties
+    excerpt: >-
+      Carney&#039;s trip comes at a time when he&#039;s looking for new markets for Canadian exports to diversify from
+      the US.
+    source_name: Al Jazeera
+    published: "2026-02-27T05:08:57.000Z"
+  - entity: in-gaza-when-money-is-scarce-every-cho-2026-02-27
+    type: article
+    title: "In Gaza, when money is scarce, every choice counts: Bank, cash, or credit?"
+    url: https://www.aljazeera.com/economy/2026/2/27/when-money-is-scarce-every-choice-counts-bank-cash-or-credit
+    excerpt: Palestinians in the devastated enclave struggle to manage their daily lives amid shortage of cash caused by war.
+    source_name: Al Jazeera
+    published: "2026-02-27T04:46:12.000Z"
+  - entity: russia-ukraine-war-list-of-key-events-2026-02-27
+    type: article
+    title: "Russia-Ukraine war: List of key events, day 1,464"
+    url: https://www.aljazeera.com/news/2026/2/27/russia-ukraine-war-list-of-key-events-day-1464
+    excerpt: These are the key developments from day 1,464 of Russia’s war on Ukraine.
+    source_name: Al Jazeera
+    published: "2026-02-27T03:01:36.000Z"
+  - entity: pakistan-afghanistan-live-islamabad-say-2026-02-27
+    type: article
+    title: "Pakistan-Afghanistan live: Islamabad says ‘open war’; jets attack Kabul"
+    url: https://www.aljazeera.com/news/liveblog/2026/2/27/live-kabul-bombed-as-pakistan-declares-open-war-on-afghanistan
+    excerpt: Pakistani and Afghan officials have both declared full military operations as border clashes intensify.
+    source_name: Al Jazeera
+    published: "2026-02-27T02:10:43.000Z"
+  - entity: open-war-pakistan-says-patience-has-2026-02-27
+    type: article
+    title: "‘Open war’: Pakistan says ‘patience has run out’ as it bombs Afghanistan"
+    url: https://www.aljazeera.com/news/2026/2/27/pakistan-warplanes-bomb-kabul-as-clashes-with-afghanistan-intensify
+    excerpt: >-
+      Both sides say Pakistan has bombed targets in Kabul, Kandahar and Paktia in an escalation of recent tit-for-tat
+      attacks.
+    source_name: Al Jazeera
+    published: "2026-02-27T01:44:15.000Z"
+  - entity: us-tax-agency-broke-privacy-law-approxi-2026-02-27
+    type: article
+    title: US tax agency broke privacy law ‘approximately 42,695 times’, judge says
+    url: https://www.aljazeera.com/news/2026/2/27/us-tax-agency-broke-privacy-law-approximately-42695-times-judge-says
+    excerpt: >-
+      Federal judge rules that the Internal Revenue Service violated its code by giving immigration agency confidential
+      data.
+    source_name: Al Jazeera
+    published: "2026-02-27T00:55:31.000Z"
+  - entity: polymarket-bettors-appear-to-have-inside-2026-02-27
+    type: article
+    title: Polymarket bettors appear to have insider-traded on a market designed to catch insider traders
+    url: >-
+      https://www.coindesk.com/markets/2026/02/27/polymarket-bettors-appear-to-have-insider-traded-on-a-market-designed-to-catch-insider-traders
+    excerpt: >-
+      At least 12 wallets collectively made over $1 million betting on the outcome of ZachXBT's investigation before the
+      findings went public, with one trader turning a $0.14 average entry on shares into $4
+    source_name: CoinDesk
+    published: "2026-02-27T05:43:17.000Z"
+  - entity: bitcoin-slides-friday-as-risk-off-mood-p-2026-02-27
+    type: article
+    title: Bitcoin slides Friday as risk-off mood persists, but majors hold weekly gains
+    url: >-
+      https://www.coindesk.com/markets/2026/02/27/bitcoin-slides-friday-as-risk-off-mood-persists-but-majors-hold-weekly-gains
+    excerpt: >-
+      Analysts say the latest drop appears to be a leverage flush and positioning cleanup rather than a structural trend
+      reversal
+    source_name: CoinDesk
+    published: "2026-02-27T05:05:29.000Z"
+  - entity: analysis-block-s-retreat-to-2019-scale-2026-02-27
+    type: article
+    title: "Analysis: Block’s retreat to 2019 scale could be a hint of deeper shifts in payments economics"
+    url: >-
+      https://www.coindesk.com/markets/2026/02/27/analysis-block-s-retreat-to-2019-scale-underscores-how-stablecoins-are-pressuring-payment-margins
+    excerpt: >-
+      While Jack Dorsey cites AI-enabled productivity gains as the reason for Block's cuts, the deeper shift is in
+      payments plumbing: stablecoin settlement threatens to compress the fee stack that fintech a
+    source_name: CoinDesk
+    published: "2026-02-27T04:44:55.000Z"
+  - entity: world-liberty-financial-ties-voting-powe-2026-02-27
+    type: article
+    title: World Liberty Financial ties voting power to staking as USD1 supply tops $4.7 Billion
+    url: >-
+      https://www.coindesk.com/markets/2026/02/26/world-liberty-financial-ties-voting-power-to-staking-as-usd1-supply-tops-usd4-7-billion
+    excerpt: >-
+      The proposal redirects stablecoin arbitrage from institutional market makers to large token holders and links
+      voting rights to capital commitment.
+    source_name: CoinDesk
+    published: "2026-02-27T04:43:19.000Z"
+  - entity: my-grandpa-retired-happily-at-70-with-7-2026-02-27
+    type: article
+    title: My grandpa retired happily at 70 with $750K after working as a missionary. I know where most Americans go wrong.
+    url: >-
+      https://www.marketwatch.com/story/my-grandpa-retired-happy-at-70-with-750k-and-hes-doing-just-fine-i-know-where-most-americans-go-wrong-c5774943?mod=mw_rss_topstories
+    excerpt: "&#x201c;You could even retire at 55 with $500,000 and be perfectly fine. Am I right?&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-27T05:16:00.000Z"
+  - entity: trump-allies-david-and-larry-ellison-win-2026-02-27
+    type: article
+    title: Trump allies David and Larry Ellison win battle for Warner Bros. Discovery after Netflix bows out
+    url: >-
+      https://www.marketwatch.com/story/warner-bros-discovery-deems-paramounts-bid-superior-putting-netflix-in-the-hot-seat-a1fcea7c?mod=mw_rss_topstories
+    excerpt: The streaming giant said countering Paramount&#x2019;s bid was &#x201c;no longer financially attractive.&#x201d;
+    source_name: MarketWatch
+    published: "2026-02-27T04:08:00.000Z"
+  - entity: block-plans-to-lay-off-nearly-half-its-s-2026-02-27
+    type: article
+    title: Block plans to lay off nearly half its staff in &#x2018;deliberate and bold&#x2019; embrace of AI
+    url: >-
+      https://www.marketwatch.com/story/block-plans-to-lay-off-nearly-half-its-staff-in-deliberate-and-bold-embrace-of-ai-81e99247?mod=mw_rss_topstories
+    excerpt: >-
+      Block&#x2019;s stock surges 20% as Wall Street rewards massive job cuts at the parent company of Square and the
+      Cash App.
+    source_name: MarketWatch
+    published: "2026-02-27T04:07:00.000Z"
+  - entity: yes-consumers-in-china-are-consuming-ag-2026-02-27
+    type: article
+    title: Yes, consumers in China are consuming again. It&#x2019;s just not their No. 1 priority these days.
+    url: >-
+      https://www.marketwatch.com/story/yes-consumers-in-china-are-consuming-again-its-just-not-their-no-1-priority-these-days-598c2c02?mod=mw_rss_topstories
+    excerpt: >-
+      Retail sales are still rising, but record household savings, stepped-up gold buying and reined-in income
+      expectations suggest the population of the world&#x2019;s second largest economy is now priorit
+    source_name: MarketWatch
+    published: "2026-02-27T02:00:00.000Z"
+  - entity: sweetgreen-x2019-s-disappointing-sales-2026-02-27
+    type: article
+    title: Sweetgreen&#x2019;s disappointing sales offer a reality check for restaurants, after Cava&#x2019;s rally
+    url: >-
+      https://www.marketwatch.com/story/sweetgreens-disappointing-sales-offer-a-reality-check-for-restaurants-after-cavas-rally-1c2fe3d9?mod=mw_rss_topstories
+    excerpt: >-
+      A day after Cava&#x2019;s upbeat sales forecast raised hopes for the restaurant industry, rival fast-casual chain
+      Sweetgreen is bringing them back to earth.
+    source_name: MarketWatch
+    published: "2026-02-27T01:33:00.000Z"
+  - entity: duolingo-is-making-some-changes-to-conte-2026-02-27
+    type: article
+    title: Duolingo is making some changes to contend with the threat of AI. Its stock is sinking.
+    url: >-
+      https://www.marketwatch.com/story/duolingo-is-making-some-changes-to-contend-with-the-threat-of-ai-its-stock-is-sinking-32e75bc6?mod=mw_rss_topstories
+    excerpt: >-
+      Following a slowdown in user growth, the language-learning company is stepping up investment and changing how it
+      thinks about its tiers of service
+    source_name: MarketWatch
+    published: "2026-02-27T01:33:00.000Z"
+  - entity: rocket-lab-x2019-s-stock-slides-as-yet-2026-02-27
+    type: article
+    title: Rocket Lab&#x2019;s stock slides as yet another rocket delay overshadows &#x2018;record year&#x2019;
+    url: >-
+      https://www.marketwatch.com/story/rocket-labs-stock-slides-as-yet-another-rocket-delay-overshadows-record-year-5b9987ea?mod=mw_rss_topstories
+    excerpt: >-
+      The Neutron rocket was expected to have its debut last year. Now, it&#x2019;s projected to launch at the end of
+      2026.
+    source_name: MarketWatch
+    published: "2026-02-27T01:31:00.000Z"
+  - entity: dell-x2019-s-stock-soars-as-record-ear-2026-02-27
+    type: article
+    title: Dell&#x2019;s stock soars, as record earnings signal the company is managing memory shortages well
+    url: >-
+      https://www.marketwatch.com/story/dells-stock-soars-as-record-earnings-signal-the-company-is-managing-memory-shortages-well-41620e00?mod=mw_rss_topstories
+    excerpt: The maker of servers and PCs is also boosting its dividend by 20%.
+    source_name: MarketWatch
+    published: "2026-02-27T01:31:00.000Z"
+  - entity: coreweave-x2019-s-stock-drops-as-losses-2026-02-27
+    type: article
+    title: CoreWeave&#x2019;s stock drops as losses swell and interest expenses climb
+    url: >-
+      https://www.marketwatch.com/story/coreweaves-stock-drops-as-losses-swell-and-interest-expenses-climb-9a09e137?mod=mw_rss_topstories
+    excerpt: >-
+      While AI demand remains high, CoreWeave&#x2019;s widening net loss in the fourth quarter is giving investors
+      pause.
+    source_name: MarketWatch
+    published: "2026-02-27T01:30:00.000Z"
+  - entity: india-s-solar-manufacturers-slapped-with-2026-02-27
+    type: article
+    title: India’s Solar Manufacturers Slapped With 126% U.S. Tariff
+    url: https://oilprice.com/Alternative-Energy/Solar-Energy/Indias-Solar-Manufacturers-Slapped-With-126-US-Tariff.html
+    excerpt: >-
+      The U.S. Department of Commerce has imposed a 126% preliminary countervailing duty on Indian solar cells and
+      modules, effectively closing off the lucrative U.S. market and exacerbating overcapacity is
+    source_name: OilPrice.com
+    published: "2026-02-27T01:00:00.000Z"
+  - entity: cloud-seeding-moves-from-fringe-science-2026-02-27
+    type: article
+    title: Cloud Seeding Moves From Fringe Science to Water Strategy
+    url: https://oilprice.com/Energy/Energy-General/Cloud-Seeding-Moves-From-Fringe-Science-to-Water-Strategy.html
+    excerpt: >-
+      When the UAE experienced severe floods two years ago, many questioned the country’s practice of so-called cloud
+      seeding—the dispersion of certain chemicals in the air to basically squeeze more rain fr
+    source_name: OilPrice.com
+    published: "2026-02-27T00:00:00.000Z"
+  - entity: trump-s-secret-weapon-in-the-rare-earth-2026-02-27
+    type: article
+    title: Trump’s Secret Weapon in the Rare Earth War
+    url: https://oilprice.com/Energy/Energy-General/Trumps-Secret-Weapon-in-the-Rare-Earth-War.html
+    excerpt: >-
+      Long before trade wars and tariffs, China secured manufacturing dominance by controlling rare earths - a reality
+      so consequential that the United States and its allies are now pledging more than $8.5 
+    source_name: OilPrice.com
+    published: "2026-02-27T00:00:00.000Z"
