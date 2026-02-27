@@ -1,0 +1,1172 @@
+seed:
+  name: news-week9-day-2026-02-27-hour-12
+  label: Daily News — 2026-02-27 12:00 (Week 9, 2026)
+  namespace: news.week9.day-2026-02-27
+  description: "Auto-gathered news: 56 stories, 2026-02-27 to 2026-02-27"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week9
+    extends: news
+  - namespace: news.week9.day-2026-02-27
+    extends: news.week9
+entities:
+  - id: what-we-know-after-latest-escalation-in-2026-02-27
+    type: Event
+    name: What we know after latest escalation in Pakistan-Afghanistan tensions
+    category: geopolitics
+    description: >-
+      Bombings by Pakistan are the most significant development in tensions between the two neighbours - though the
+      physical impact remains unclear.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T10:50:46.000Z"
+      precision: day
+  - id: hillary-clinton-tells-house-panel-she-h-2026-02-27
+    type: Claim
+    name: Hillary Clinton tells House panel she 'had no idea' of Epstein's crimes
+    category: geopolitics
+    description: >-
+      The ex-secretary of state called for President Trump to be questioned under oath about his past association with
+      the sex offender.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T07:19:18.000Z"
+      precision: day
+  - id: why-trump-means-the-cuban-revolution-fac-2026-02-27
+    type: Event
+    name: Why Trump means the Cuban Revolution faces its biggest threat yet
+    category: geopolitics
+    description: Will a worsening internal crisis create the conditions for the Cuban Revolution to unravel from within?
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T06:00:38.000Z"
+      precision: day
+  - id: jack-dorseys-block-cuts-thousands-of-jo-2026-02-27
+    type: Event
+    name: Jack Dorsey's Block cuts thousands of jobs as it embraces AI
+    category: geopolitics
+    description: The Twitter co-founder says he believes the majority of firms will make similar changes "within the next year."
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T00:06:40.000Z"
+      precision: day
+  - id: paramount-set-for-111bn-warner-bros-tak-2026-02-27
+    type: Event
+    name: Paramount set for $111bn Warner Bros takeover after Netflix drops bid
+    category: geopolitics
+    description: Netflix's decision to back down from the bidding war clears the path for Paramount to win the takeover battle.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T04:32:38.000Z"
+      precision: day
+  - id: epstein-tried-to-buy-a-palace-in-morocco-2026-02-27
+    type: Event
+    name: Epstein tried to buy a palace in Morocco days before his arrest in 2019
+    category: geopolitics
+    description: The disgraced financier was in talks to buy luxury abode Bin Ennakhi - but the purchase was never completed.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T06:02:12.000Z"
+      precision: day
+  - id: at-least-55-ghanaians-killed-in-russia-u-2026-02-27
+    type: Fact
+    name: At least 55 Ghanaians killed in Russia-Ukraine war, minister says
+    category: geopolitics
+    description: This is the highest number of confirmed casualties from a single African country in the Ukraine-Russia war.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T10:56:45.000Z"
+      precision: day
+  - id: drone-jammed-near-french-aircraft-carrie-2026-02-27
+    type: Claim
+    name: Drone jammed near French aircraft carrier was probably Russian, says Sweden
+    category: geopolitics
+    description: >-
+      Sweden's defence minister says there is likely a "strong link" between the drone and a Russian naval vessel in the
+      area.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T10:34:36.000Z"
+      precision: day
+  - id: waitrose-to-suspend-mackerel-sales-due-t-2026-02-27
+    type: Event
+    name: Waitrose to suspend mackerel sales due to overfishing concerns
+    category: finance
+    description: The supermarket chain says it will stop sourcing fresh, chilled and frozen mackerel by 29 April.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T11:24:43.000Z"
+      precision: day
+  - id: dyson-settles-forced-labour-suit-in-land-2026-02-27
+    type: Event
+    name: Dyson settles forced labour suit in landmark UK case
+    category: finance
+    description: Migrant workers alleged they were subjected to abusive treatment in a Malaysian factory for Dyson.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T09:44:40.000Z"
+      precision: day
+  - id: i-was-on-instagram-all-day-woman-tel-2026-02-27
+    type: Claim
+    name: "'I was on Instagram all day' - woman tells landmark trial"
+    category: finance
+    description: >-
+      The young woman, who accuses Meta and Google of making addictive social media platforms, has been speaking in
+      court.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T09:57:43.000Z"
+      precision: day
+  - id: why-you-cant-get-a-signal-at-festivals-2026-02-27
+    type: Event
+    name: Why you can't get a signal at festivals and sports matches
+    category: finance
+    description: Connecting up music and sports events to the internet is a massive undertaking.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T00:03:10.000Z"
+      precision: day
+  - id: anthropic-boss-rejects-pentagon-demand-t-2026-02-27
+    type: Event
+    name: Anthropic boss rejects Pentagon demand to drop AI safeguards
+    category: finance
+    description: Defense Secretary Pete Hegseth previously threatened to remove the firm from the department's supply chain.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T10:57:28.000Z"
+      precision: day
+  - id: rising-anger-over-lop-sided-and-immor-2026-02-27
+    type: Event
+    name: Rising anger over ‘lop-sided’ and ‘immoral’ US health funding pacts with African countries
+    category: geopolitics
+    description: >-
+      <p>Zimbabwe refuses to sign agreement and Kenya faces a court case over data sharing as new aid deals come under
+      scrutiny</p><p>A series of bilateral health agreements being negotiated between African countries and the
+      administration of President Donald Trump have been labelled “clearly lop-sided” a
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T07:00:34.000Z"
+      precision: day
+  - id: more-exploitation-fewer-rights-argen-2026-02-27
+    type: Event
+    name: "‘More exploitation, fewer rights’: Argentina braces for sweeping overhaul of labor laws"
+    category: geopolitics
+    description: >-
+      <p>Javier Milei’s boosters say law will revive employment, but critics decry cuts to severance and longer working
+      hours</p><p><a href="https://www.theguardian.com/world/argentina">Argentina</a>’s senate is poised to approve a
+      sweeping overhaul of labour laws aimed at weakening trade unions and lower
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T09:00:37.000Z"
+      precision: day
+  - id: win-for-everyone-as-netflix-quits-warn-2026-02-27
+    type: Event
+    name: ‘Win for everyone’ as Netflix quits Warner Bros takeover battle, clearing way for Paramount – business live
+    category: finance
+    description: >-
+      <p>Netflix and Paramount’s shares are both sharply higher in pre-market trading, as Larry Ellison’s company clear
+      to buy Warner Bros, regulators permitting….</p><ul><li><p><a
+      href="https://www.theguardian.com/media/2026/feb/26/netflix-paramount-warner-bros">Netflix declines to match
+      Paramount offer 
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T11:13:03.000Z"
+      precision: day
+  - id: hornby-sells-slot-car-racing-brand-scale-2026-02-27
+    type: Event
+    name: Hornby sells slot car racing brand Scalextric for £20m
+    category: finance
+    description: >-
+      <p>Purbeck Capital Partners seals deal for business and property rights of toy with model railway maker</p><p>For
+      almost six decades <a
+      href="https://www.theguardian.com/business/2025/jan/08/sales-at-toymaker-hornby-up-7-after-bumper-black-friday-and-christmas">Hornby</a>
+      has watched Scalextric driv
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T09:01:11.000Z"
+      precision: day
+  - id: burger-king-cooks-up-ai-chatbot-to-spot-2026-02-27
+    type: Event
+    name: Burger King cooks up AI chatbot to spot if employees say ‘please’ and ‘thank you’
+    category: finance
+    description: >-
+      <p>OpenAI-powered assistant will help to ‘understand overall service patterns’, company says, as move sparks
+      backlash</p><p>From hospitality workers to retail employees, the exaggerated “customer service voice”, often
+      mocked in internet memes as wildly different from someone’s real voice, has long b
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T00:23:20.000Z"
+      precision: day
+  - id: switching-energy-deal-can-save-200-as-p-2026-02-27
+    type: Event
+    name: Switching energy deal can save £200 as price cap falls, say experts
+    category: finance
+    description: >-
+      <p>Households on a default dual-fuel tariff in Great Britain could cut costs by moving to a fixed
+      deal</p><p>Experts have told households whose energy bills are&nbsp;pegged to the price cap not to “rest on their
+      laurels” as they could save more than £200 a year on a fixed deal.</p><p>This week, Ofge
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T07:00:34.000Z"
+      precision: day
+  - id: trump-says-affordability-crisis-is-over-2026-02-27
+    type: Claim
+    name: Trump says affordability crisis is over. Voters and data disagree
+    category: finance
+    description: >-
+      <p>Despite claims, polls and economists say tariffs and structural pressures keep US households under
+      strain</p><p>The affordability crisis is over, <a href="https://www.theguardian.com/us-news/donaldtrump">Donald
+      Trump</a> <a href="https://www.theguardian.com/us-news/2026/feb/24/trump-state-of-unio
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T11:00:39.000Z"
+      precision: day
+  - id: f1-driver-doohan-says-armed-men-confront-2026-02-27
+    type: Claim
+    name: F1 driver Doohan says armed men confronted him in Miami after death threats
+    category: geopolitics
+    description: >-
+      Australia&#039;s Jack Doohan says received death threats before being dropped by F1 team Alpine, six races into
+      last season.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T11:22:24.000Z"
+      precision: day
+  - id: did-epstein-help-israel-push-for-a-secur-2026-02-27
+    type: Event
+    name: Did Epstein help Israel push for a security deal with Ivory Coast?
+    category: geopolitics
+    description: Latest Epstein files released in January reveal the extent of his relations with some prominent African leaders.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T11:07:04.000Z"
+      precision: day
+  - id: south-sudan-at-risk-of-return-to-full-s-2026-02-27
+    type: Claim
+    name: South Sudan at risk of ‘return to full-scale war’, UN warns
+    category: geopolitics
+    description: >-
+      UN report warns of &#039;escalating atrocity risks&#039; amid renewed fighting and widespread impunity over
+      abuses.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T10:30:01.000Z"
+      precision: day
+  - id: barcelona-vs-villarreal-la-liga-previ-2026-02-27
+    type: Event
+    name: "Barcelona vs Villarreal: La Liga – preview, team news, start, lineups"
+    category: geopolitics
+    description: "Win would provisionally take Barcelona four points ahead of Real Madrid who\_host Getafe on Monday night."
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T10:26:40.000Z"
+      precision: day
+  - id: hillary-clinton-comments-after-epstein-h-2026-02-27
+    type: Event
+    name: Hillary Clinton comments after Epstein hearing
+    category: geopolitics
+    description: Former US Secretary of State Hillary Clinton spoke to reporters after finishing her testimony on Epstein.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T10:10:37.000Z"
+      precision: day
+  - id: green-party-wins-uk-by-election-in-blow-2026-02-27
+    type: Event
+    name: Green Party wins UK by-election in blow to Labour, PM Starmer
+    category: geopolitics
+    description: >-
+      Progressive Greens win closely-watched election in one-time Labour stronghold, while right-wing Reform comes
+      second.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T09:56:09.000Z"
+      precision: day
+  - id: pakistan-bombs-kabul-why-are-afghanista-2026-02-27
+    type: Event
+    name: "Pakistan bombs Kabul: Why are Afghanistan and Pakistan fighting?"
+    category: geopolitics
+    description: Pakistani defence minister says Pakistan and Afghanistan are now at &#039;open war&#039;.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T09:22:06.000Z"
+      precision: day
+  - id: i-was-so-isolated-pro-palestine-activ-2026-02-27
+    type: Event
+    name: "‘I was so isolated’: Pro-Palestine activist attempted suicide in UK prison"
+    category: geopolitics
+    description: Recently bailed Palestine Action-linked activist Charlotte Head, 29, spent 18 months in pre-trial detention.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T08:57:33.000Z"
+      precision: day
+  - id: mass-graves-with-171-bodies-found-in-eas-2026-02-27
+    type: Fact
+    name: "Mass graves with 171 bodies found in eastern DR Congo: Report"
+    category: geopolitics
+    description: A local governor says authorities found two mass graves in the outskirts of the eastern city of Uvira.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T08:35:05.000Z"
+      precision: day
+  - id: a-dangerous-thing-s-africa-s-gang-rid-2026-02-27
+    type: Event
+    name: "‘A dangerous thing’: S Africa’s gang-ridden townships fear army deployment"
+    category: geopolitics
+    description: >-
+      Critics wary of President Cyril Ramaphosa&#039;s move to send military to tackle crime, drugs and gangs in three
+      provinces.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T08:04:18.000Z"
+      precision: day
+  - id: mara-and-block-jump-double-digits-in-pre-2026-02-27
+    type: Event
+    name: MARA and Block jump double digits in pre-market trading while CoreWeave sinks
+    category: finance.crypto
+    description: Mixed fourth quarter results highlight divergence between AI expansion plays and margin pressure.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T10:49:19.000Z"
+      precision: day
+  - id: germanys-allunity-issues-regulated-stab-2026-02-27
+    type: Event
+    name: Germany's AllUnity issues regulated stablecoin tied to safe haven Swiss franc
+    category: finance.crypto
+    description: The debut comes as major banks and analysts predict major appreciation in the Swiss currency.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T10:19:16.000Z"
+      precision: day
+  - id: u-s-spot-bitcoin-etfs-set-for-biggest-w-2026-02-27
+    type: Event
+    name: U.S. spot bitcoin ETFs set for biggest week in 6 after adding $1.1 billion in three days
+    category: finance.crypto
+    description: The inflows coincide with a rebound in the Coinbase Premium index, signaling renewed U.S. demand.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T10:05:04.000Z"
+      precision: day
+  - id: bitcoin-etf-holders-and-treasury-firms-s-2026-02-27
+    type: Claim
+    name: Bitcoin ETF holders and treasury firms stack protection against price crash below $60,000, Deribit says
+    category: finance.crypto
+    description: Market participants with long-term vision are buying downside protection.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T06:42:51.000Z"
+      precision: day
+  - id: polymarket-bettors-appear-to-have-inside-2026-02-27
+    type: Event
+    name: Polymarket bettors appear to have insider-traded on a market designed to catch insider traders
+    category: finance.crypto
+    description: >-
+      At least 12 wallets collectively made over $1 million betting on the outcome of ZachXBT's investigation before the
+      findings went public, with one trader turning a $0.14 average entry on shares into $411,000 in profit.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T05:43:17.000Z"
+      precision: day
+  - id: bitcoin-slides-friday-as-risk-off-mood-p-2026-02-27
+    type: Event
+    name: Bitcoin slides Friday as risk-off mood persists, but majors hold weekly gains
+    category: finance.crypto
+    description: >-
+      Analysts say the latest drop appears to be a leverage flush and positioning cleanup rather than a structural trend
+      reversal
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T05:05:29.000Z"
+      precision: day
+  - id: analysis-block-s-retreat-to-2019-scale-2026-02-27
+    type: Claim
+    name: "Analysis: Block’s retreat to 2019 scale could be a hint of deeper shifts in payments economics"
+    category: finance.crypto
+    description: >-
+      While Jack Dorsey cites AI-enabled productivity gains as the reason for Block's cuts, the deeper shift is in
+      payments plumbing: stablecoin settlement threatens to compress the fee stack that fintech acquirers have relied on
+      for years.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T04:44:55.000Z"
+      precision: day
+  - id: world-liberty-financial-ties-voting-powe-2026-02-27
+    type: Event
+    name: World Liberty Financial ties voting power to staking as USD1 supply tops $4.7 Billion
+    category: finance.crypto
+    description: >-
+      The proposal redirects stablecoin arbitrage from institutional market makers to large token holders and links
+      voting rights to capital commitment.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T04:43:19.000Z"
+      precision: day
+  - id: after-46-years-working-i-x2019-m-not-r-2026-02-27
+    type: Event
+    name: >-
+      After 46 years working, I&#x2019;m not retiring &#x2014; instead, I take a vacation every month. Is that a good
+      life in your 70s?
+    category: finance.markets
+    description: "&#x201c;I&#x2019;ve owned my own company for the last 15 years. It&#x2019;s worth $8.5 million.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T11:15:00.000Z"
+      precision: day
+  - id: will-the-bank-get-suspicious-if-i-deposi-2026-02-27
+    type: Event
+    name: Will the bank get suspicious if I deposit $150,000 in cash into my checking account?
+    category: finance.markets
+    description: "&#x201c;I live in a state with no inheritance tax. I assume I can make this deposit legally.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T10:45:00.000Z"
+      precision: day
+  - id: howard-marks-of-oaktree-makes-180-degree-2026-02-27
+    type: Event
+    name: >-
+      Howard Marks of Oaktree makes 180-degree turn on AI after Claude tutorial. Here&#x2019;s how he suggests investors
+      approach it.
+    category: finance.markets
+    description: >-
+      Legendary investor is still undecided about the AI bubble but the technology is revolutionary, he thinks. He
+      believes AI has the capacity to be a better investor than most.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T10:32:00.000Z"
+      precision: day
+  - id: x2018-my-sister-and-i-are-his-only-fam-2026-02-27
+    type: Event
+    name: >-
+      &#x2018;My sister and I are his only family&#x2019;: My brother is paranoid and forgot he sold his house. What can
+      I do?
+    category: finance.markets
+    description: In an email, his lawyer said, &#x201c;He&#x2019;s gone over the deep end.&#x201d;
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T10:15:00.000Z"
+      precision: day
+  - id: kiss-rocker-gene-simmons-lowers-price-of-2026-02-27
+    type: Event
+    name: KISS rocker Gene Simmons lowers price of Beverly Hills home to $12.5 million after months on the market
+    category: finance.markets
+    description: This is the second time KISS bassist Gene Simmons has cut the price of the luxury home.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T10:04:00.000Z"
+      precision: day
+  - id: my-grandpa-retired-happily-at-70-with-7-2026-02-27
+    type: Event
+    name: My grandpa retired happily at 70 with $750K after working as a missionary. I know where most Americans go wrong.
+    category: finance.markets
+    description: "&#x201c;You could even retire at 55 with $500,000 and be perfectly fine. Am I right?&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T05:16:00.000Z"
+      precision: day
+  - id: trump-allies-david-and-larry-ellison-win-2026-02-27
+    type: Event
+    name: Trump allies David and Larry Ellison win battle for Warner Bros. Discovery after Netflix bows out
+    category: finance.markets
+    description: The streaming giant said countering Paramount&#x2019;s bid was &#x201c;no longer financially attractive.&#x201d;
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T04:08:00.000Z"
+      precision: day
+  - id: block-plans-to-lay-off-nearly-half-its-s-2026-02-27
+    type: Event
+    name: Block plans to lay off nearly half its staff in &#x2018;deliberate and bold&#x2019; embrace of AI
+    category: finance.markets
+    description: >-
+      Block&#x2019;s stock surges 20% as Wall Street rewards massive job cuts at the parent company of Square and the
+      Cash App.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T04:07:00.000Z"
+      precision: day
+  - id: yes-consumers-in-china-are-consuming-ag-2026-02-27
+    type: Event
+    name: Yes, consumers in China are consuming again. It&#x2019;s just not their No. 1 priority these days.
+    category: finance.markets
+    description: >-
+      Retail sales are still rising, but record household savings, stepped-up gold buying and reined-in income
+      expectations suggest the population of the world&#x2019;s second largest economy is now prioritizing security over
+      splurges &#x2014; with consequences for global brands and investors.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T02:00:00.000Z"
+      precision: day
+  - id: sweetgreen-x2019-s-disappointing-sales-2026-02-27
+    type: Event
+    name: Sweetgreen&#x2019;s disappointing sales offer a reality check for restaurants, after Cava&#x2019;s rally
+    category: finance.markets
+    description: >-
+      A day after Cava&#x2019;s upbeat sales forecast raised hopes for the restaurant industry, rival fast-casual chain
+      Sweetgreen is bringing them back to earth.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T01:33:00.000Z"
+      precision: day
+  - id: india-plans-30-slash-in-thermal-coal-im-2026-02-27
+    type: Event
+    name: India Plans 30% Slash in Thermal Coal Imports This Year
+    category: finance.energy
+    description: >-
+      India seeks to slash imports of thermal coal used in its power sector by 30% this year as it wants to use more of
+      its domestic coal supply, industry and government sources have told Reuters. Last year, India’s power sector
+      burned almost 50 million tons of imported thermal coal. This year, the countr
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T11:30:00.000Z"
+      precision: day
+  - id: magnet-wars-how-the-u-s-plans-to-break-2026-02-27
+    type: Event
+    name: "Magnet Wars: How the U.S. Plans to Break China’s Grip on Rare Earths"
+    category: finance.energy
+    description: >-
+      The struggle for geopolitical supremacy is rapidly becoming a struggle over one critical resource - rare earth
+      magnets.They will determine whether the United States can build military equipment at scale, whether weapons can
+      be replaced as fast as they are used, and whether industry can keep pace wit
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T10:00:00.000Z"
+      precision: day
+  - id: alberta-budgets-for-three-years-of-defic-2026-02-27
+    type: Event
+    name: Alberta Budgets for Three Years of Deficit on Low Oil Prices
+    category: finance.energy
+    description: >-
+      Alberta will end fiscal 2025/26 with a deficit and will run a deficit for the next three fiscal years as well, the
+      province’s finance minister has said. The deficit for fiscal 2025/26 is calculated at C$4.1 billion ($3 billion),
+      set to swell to C$9.4 billion ($6.9 billion) next fiscal year and then 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T10:00:00.000Z"
+      precision: day
+  - id: venezuela-suspends-19-oil-production-con-2026-02-27
+    type: Event
+    name: Venezuela Suspends 19 Oil Production Contracts
+    category: finance.energy
+    description: >-
+      Venezuela’s government has suspended 19 production-sharing agreements with private oil companies, Reuters has
+      reported, citing unnamed sources. The deals are for projects in Lake Maracaibo, the Orinoco Belt, and several
+      mature fields. The companies operating under these production-sharing agreements
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T08:30:00.000Z"
+      precision: day
+  - id: oil-prices-set-for-weekly-decline-as-ris-2026-02-27
+    type: Event
+    name: Oil Prices Set for Weekly Decline as Risk Premium Eases
+    category: finance.energy
+    description: >-
+      Crude oil prices were on course for their first weekly decline in four weeks as the United States and Iran
+      signaled they were willing to continue negotiating instead of escalating to a hot war. At the time of writing,
+      Brent crude was trading at $71 per barrel, with West Texas Intermediate at $65.56 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T06:45:00.000Z"
+      precision: day
+  - id: india-s-solar-manufacturers-slapped-with-2026-02-27
+    type: Event
+    name: India’s Solar Manufacturers Slapped With 126% U.S. Tariff
+    category: finance.energy
+    description: >-
+      The U.S. Department of Commerce has imposed a 126% preliminary countervailing duty on Indian solar cells and
+      modules, effectively closing off the lucrative U.S. market and exacerbating overcapacity issues for India’s
+      burgeoning solar sector. The levies follow a complaint by the Alliance for American
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T01:00:00.000Z"
+      precision: day
+  - id: cloud-seeding-moves-from-fringe-science-2026-02-27
+    type: Event
+    name: Cloud Seeding Moves From Fringe Science to Water Strategy
+    category: finance.energy
+    description: >-
+      When the UAE experienced severe floods two years ago, many questioned the country’s practice of so-called cloud
+      seeding—the dispersion of certain chemicals in the air to basically squeeze more rain from clouds—as a possible
+      cause of the floods. Officially, that explanation was rejected, yet cloud-se
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T00:00:00.000Z"
+      precision: day
+  - id: trump-s-secret-weapon-in-the-rare-earth-2026-02-27
+    type: Event
+    name: Trump’s Secret Weapon in the Rare Earth War
+    category: finance.energy
+    description: >-
+      Long before trade wars and tariffs, China secured manufacturing dominance by controlling rare earths - a reality
+      so consequential that the United States and its allies are now pledging more than $8.5 billion just to claw back
+      some control of the supply chain. As global manufacturing expanded over th
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-27T00:00:00.000Z"
+      precision: day
+narratives:
+  - name: Crypto Markets
+    steps:
+      - from: world-liberty-financial-ties-voting-powe-2026-02-27
+        to: analysis-block-s-retreat-to-2019-scale-2026-02-27
+        type: supports
+      - from: analysis-block-s-retreat-to-2019-scale-2026-02-27
+        to: bitcoin-slides-friday-as-risk-off-mood-p-2026-02-27
+        type: follows
+      - from: bitcoin-slides-friday-as-risk-off-mood-p-2026-02-27
+        to: bitcoin-etf-holders-and-treasury-firms-s-2026-02-27
+        type: supports
+      - from: bitcoin-etf-holders-and-treasury-firms-s-2026-02-27
+        to: u-s-spot-bitcoin-etfs-set-for-biggest-w-2026-02-27
+        type: follows
+      - from: u-s-spot-bitcoin-etfs-set-for-biggest-w-2026-02-27
+        to: germanys-allunity-issues-regulated-stab-2026-02-27
+        type: causes
+  - name: Mining & Resources
+    steps:
+      - from: trump-s-secret-weapon-in-the-rare-earth-2026-02-27
+        to: magnet-wars-how-the-u-s-plans-to-break-2026-02-27
+        type: causes
+  - name: Energy Markets
+    steps:
+      - from: oil-prices-set-for-weekly-decline-as-ris-2026-02-27
+        to: alberta-budgets-for-three-years-of-defic-2026-02-27
+        type: causes
+sources:
+  - entity: what-we-know-after-latest-escalation-in-2026-02-27
+    type: article
+    title: What we know after latest escalation in Pakistan-Afghanistan tensions
+    url: https://www.bbc.com/news/articles/cj32zx48xvxo
+    excerpt: >-
+      Bombings by Pakistan are the most significant development in tensions between the two neighbours - though the
+      physical impact remains unclear.
+    source_name: BBC News
+    published: "2026-02-27T10:50:46.000Z"
+  - entity: hillary-clinton-tells-house-panel-she-h-2026-02-27
+    type: article
+    title: Hillary Clinton tells House panel she 'had no idea' of Epstein's crimes
+    url: https://www.bbc.com/news/articles/cd6z3e1vdvzo
+    excerpt: >-
+      The ex-secretary of state called for President Trump to be questioned under oath about his past association with
+      the sex offender.
+    source_name: BBC News
+    published: "2026-02-27T07:19:18.000Z"
+  - entity: why-trump-means-the-cuban-revolution-fac-2026-02-27
+    type: article
+    title: Why Trump means the Cuban Revolution faces its biggest threat yet
+    url: https://www.bbc.com/news/articles/c9q5wdeg4j8o
+    excerpt: Will a worsening internal crisis create the conditions for the Cuban Revolution to unravel from within?
+    source_name: BBC News
+    published: "2026-02-27T06:00:38.000Z"
+  - entity: jack-dorseys-block-cuts-thousands-of-jo-2026-02-27
+    type: article
+    title: Jack Dorsey's Block cuts thousands of jobs as it embraces AI
+    url: https://www.bbc.com/news/articles/cq570d12y9do
+    excerpt: The Twitter co-founder says he believes the majority of firms will make similar changes "within the next year."
+    source_name: BBC News
+    published: "2026-02-27T00:06:40.000Z"
+  - entity: paramount-set-for-111bn-warner-bros-tak-2026-02-27
+    type: article
+    title: Paramount set for $111bn Warner Bros takeover after Netflix drops bid
+    url: https://www.bbc.com/news/articles/c5y6p5ypgmzo
+    excerpt: Netflix's decision to back down from the bidding war clears the path for Paramount to win the takeover battle.
+    source_name: BBC News
+    published: "2026-02-27T04:32:38.000Z"
+  - entity: epstein-tried-to-buy-a-palace-in-morocco-2026-02-27
+    type: article
+    title: Epstein tried to buy a palace in Morocco days before his arrest in 2019
+    url: https://www.bbc.com/news/articles/c1w5848vq51o
+    excerpt: The disgraced financier was in talks to buy luxury abode Bin Ennakhi - but the purchase was never completed.
+    source_name: BBC News
+    published: "2026-02-27T06:02:12.000Z"
+  - entity: at-least-55-ghanaians-killed-in-russia-u-2026-02-27
+    type: article
+    title: At least 55 Ghanaians killed in Russia-Ukraine war, minister says
+    url: https://www.bbc.com/news/articles/cgl5gxg3zj9o
+    excerpt: This is the highest number of confirmed casualties from a single African country in the Ukraine-Russia war.
+    source_name: BBC News
+    published: "2026-02-27T10:56:45.000Z"
+  - entity: drone-jammed-near-french-aircraft-carrie-2026-02-27
+    type: article
+    title: Drone jammed near French aircraft carrier was probably Russian, says Sweden
+    url: https://www.bbc.com/news/articles/c1mj3e2nz8ko
+    excerpt: >-
+      Sweden's defence minister says there is likely a "strong link" between the drone and a Russian naval vessel in the
+      area.
+    source_name: BBC News
+    published: "2026-02-27T10:34:36.000Z"
+  - entity: waitrose-to-suspend-mackerel-sales-due-t-2026-02-27
+    type: article
+    title: Waitrose to suspend mackerel sales due to overfishing concerns
+    url: https://www.bbc.com/news/articles/cgl5gee07xzo
+    excerpt: The supermarket chain says it will stop sourcing fresh, chilled and frozen mackerel by 29 April.
+    source_name: BBC Business
+    published: "2026-02-27T11:24:43.000Z"
+  - entity: dyson-settles-forced-labour-suit-in-land-2026-02-27
+    type: article
+    title: Dyson settles forced labour suit in landmark UK case
+    url: https://www.bbc.com/news/articles/cddnry8dnl7o
+    excerpt: Migrant workers alleged they were subjected to abusive treatment in a Malaysian factory for Dyson.
+    source_name: BBC Business
+    published: "2026-02-27T09:44:40.000Z"
+  - entity: i-was-on-instagram-all-day-woman-tel-2026-02-27
+    type: article
+    title: "'I was on Instagram all day' - woman tells landmark trial"
+    url: https://www.bbc.com/news/articles/c89kdpjn7eqo
+    excerpt: >-
+      The young woman, who accuses Meta and Google of making addictive social media platforms, has been speaking in
+      court.
+    source_name: BBC Business
+    published: "2026-02-27T09:57:43.000Z"
+  - entity: why-you-cant-get-a-signal-at-festivals-2026-02-27
+    type: article
+    title: Why you can't get a signal at festivals and sports matches
+    url: https://www.bbc.com/news/articles/c3rzq8d24y9o
+    excerpt: Connecting up music and sports events to the internet is a massive undertaking.
+    source_name: BBC Business
+    published: "2026-02-27T00:03:10.000Z"
+  - entity: anthropic-boss-rejects-pentagon-demand-t-2026-02-27
+    type: article
+    title: Anthropic boss rejects Pentagon demand to drop AI safeguards
+    url: https://www.bbc.com/news/articles/cvg3vlzzkqeo
+    excerpt: Defense Secretary Pete Hegseth previously threatened to remove the firm from the department's supply chain.
+    source_name: BBC Business
+    published: "2026-02-27T10:57:28.000Z"
+  - entity: rising-anger-over-lop-sided-and-immor-2026-02-27
+    type: article
+    title: Rising anger over ‘lop-sided’ and ‘immoral’ US health funding pacts with African countries
+    url: >-
+      https://www.theguardian.com/global-development/2026/feb/27/rising-anger-over-lop-sided-immoral-us-health-funding-pacts-africa-countries
+    excerpt: >-
+      <p>Zimbabwe refuses to sign agreement and Kenya faces a court case over data sharing as new aid deals come under
+      scrutiny</p><p>A series of bilateral health agreements being negotiated between African
+    source_name: The Guardian
+    published: "2026-02-27T07:00:34.000Z"
+  - entity: more-exploitation-fewer-rights-argen-2026-02-27
+    type: article
+    title: "‘More exploitation, fewer rights’: Argentina braces for sweeping overhaul of labor laws"
+    url: https://www.theguardian.com/world/2026/feb/27/argentina-labor-law-overhaul
+    excerpt: >-
+      <p>Javier Milei’s boosters say law will revive employment, but critics decry cuts to severance and longer working
+      hours</p><p><a href="https://www.theguardian.com/world/argentina">Argentina</a>’s sena
+    source_name: The Guardian
+    published: "2026-02-27T09:00:37.000Z"
+  - entity: win-for-everyone-as-netflix-quits-warn-2026-02-27
+    type: article
+    title: ‘Win for everyone’ as Netflix quits Warner Bros takeover battle, clearing way for Paramount – business live
+    url: >-
+      https://www.theguardian.com/business/live/2026/feb/27/netflix-shares-jump-warner-bros-discovery-paramount-news-updates
+    excerpt: >-
+      <p>Netflix and Paramount’s shares are both sharply higher in pre-market trading, as Larry Ellison’s company clear
+      to buy Warner Bros, regulators permitting….</p><ul><li><p><a href="https://www.theguar
+    source_name: The Guardian
+    published: "2026-02-27T11:13:03.000Z"
+  - entity: hornby-sells-slot-car-racing-brand-scale-2026-02-27
+    type: article
+    title: Hornby sells slot car racing brand Scalextric for £20m
+    url: https://www.theguardian.com/business/2026/feb/27/hornby-sells-slot-car-racing-brand-scalextric
+    excerpt: >-
+      <p>Purbeck Capital Partners seals deal for business and property rights of toy with model railway maker</p><p>For
+      almost six decades <a href="https://www.theguardian.com/business/2025/jan/08/sales-at-
+    source_name: The Guardian
+    published: "2026-02-27T09:01:11.000Z"
+  - entity: burger-king-cooks-up-ai-chatbot-to-spot-2026-02-27
+    type: article
+    title: Burger King cooks up AI chatbot to spot if employees say ‘please’ and ‘thank you’
+    url: https://www.theguardian.com/us-news/2026/feb/26/burger-king-ai-chatbot-employees-please-thank-you
+    excerpt: >-
+      <p>OpenAI-powered assistant will help to ‘understand overall service patterns’, company says, as move sparks
+      backlash</p><p>From hospitality workers to retail employees, the exaggerated “customer serv
+    source_name: The Guardian
+    published: "2026-02-27T00:23:20.000Z"
+  - entity: switching-energy-deal-can-save-200-as-p-2026-02-27
+    type: article
+    title: Switching energy deal can save £200 as price cap falls, say experts
+    url: https://www.theguardian.com/money/2026/feb/27/switching-energy-deal-price-cap-tariff-great-britain
+    excerpt: >-
+      <p>Households on a default dual-fuel tariff in Great Britain could cut costs by moving to a fixed
+      deal</p><p>Experts have told households whose energy bills are&nbsp;pegged to the price cap not to “re
+    source_name: The Guardian
+    published: "2026-02-27T07:00:34.000Z"
+  - entity: trump-says-affordability-crisis-is-over-2026-02-27
+    type: article
+    title: Trump says affordability crisis is over. Voters and data disagree
+    url: https://www.theguardian.com/business/2026/feb/27/trump-state-union-inflation-prices-affordability
+    excerpt: >-
+      <p>Despite claims, polls and economists say tariffs and structural pressures keep US households under
+      strain</p><p>The affordability crisis is over, <a href="https://www.theguardian.com/us-news/donald
+    source_name: The Guardian
+    published: "2026-02-27T11:00:39.000Z"
+  - entity: f1-driver-doohan-says-armed-men-confront-2026-02-27
+    type: article
+    title: F1 driver Doohan says armed men confronted him in Miami after death threats
+    url: >-
+      https://www.aljazeera.com/sports/2026/2/27/f1-driver-doohan-says-armed-men-confronted-him-in-miami-after-death-threats
+    excerpt: >-
+      Australia&#039;s Jack Doohan says received death threats before being dropped by F1 team Alpine, six races into
+      last season.
+    source_name: Al Jazeera
+    published: "2026-02-27T11:22:24.000Z"
+  - entity: did-epstein-help-israel-push-for-a-secur-2026-02-27
+    type: article
+    title: Did Epstein help Israel push for a security deal with Ivory Coast?
+    url: https://www.aljazeera.com/news/2026/2/27/did-epstein-help-israel-push-for-a-security-deal-with-ivory-coast
+    excerpt: Latest Epstein files released in January reveal the extent of his relations with some prominent African leaders.
+    source_name: Al Jazeera
+    published: "2026-02-27T11:07:04.000Z"
+  - entity: south-sudan-at-risk-of-return-to-full-s-2026-02-27
+    type: article
+    title: South Sudan at risk of ‘return to full-scale war’, UN warns
+    url: https://www.aljazeera.com/news/2026/2/27/south-sudan-at-risk-of-return-to-full-scale-war-un-report-warns
+    excerpt: >-
+      UN report warns of &#039;escalating atrocity risks&#039; amid renewed fighting and widespread impunity over
+      abuses.
+    source_name: Al Jazeera
+    published: "2026-02-27T10:30:01.000Z"
+  - entity: barcelona-vs-villarreal-la-liga-previ-2026-02-27
+    type: article
+    title: "Barcelona vs Villarreal: La Liga – preview, team news, start, lineups"
+    url: https://www.aljazeera.com/sports/2026/2/27/barcelona-vs-villarreal-la-liga-preview-team-news-start-lineups
+    excerpt: "Win would provisionally take Barcelona four points ahead of Real Madrid who\_host Getafe on Monday night."
+    source_name: Al Jazeera
+    published: "2026-02-27T10:26:40.000Z"
+  - entity: hillary-clinton-comments-after-epstein-h-2026-02-27
+    type: article
+    title: Hillary Clinton comments after Epstein hearing
+    url: https://www.aljazeera.com/video/newsfeed/2026/2/27/hillary-clinton-comments-after-epstein-hearing
+    excerpt: Former US Secretary of State Hillary Clinton spoke to reporters after finishing her testimony on Epstein.
+    source_name: Al Jazeera
+    published: "2026-02-27T10:10:37.000Z"
+  - entity: green-party-wins-uk-by-election-in-blow-2026-02-27
+    type: article
+    title: Green Party wins UK by-election in blow to Labour, PM Starmer
+    url: https://www.aljazeera.com/news/2026/2/27/green-party-wins-uk-by-election-in-blow-to-labour-pm-starmer
+    excerpt: >-
+      Progressive Greens win closely-watched election in one-time Labour stronghold, while right-wing Reform comes
+      second.
+    source_name: Al Jazeera
+    published: "2026-02-27T09:56:09.000Z"
+  - entity: pakistan-bombs-kabul-why-are-afghanista-2026-02-27
+    type: article
+    title: "Pakistan bombs Kabul: Why are Afghanistan and Pakistan fighting?"
+    url: https://www.aljazeera.com/news/2026/2/27/pakistan-bombs-kabul-why-are-afghanistan-and-pakistan-fighting
+    excerpt: Pakistani defence minister says Pakistan and Afghanistan are now at &#039;open war&#039;.
+    source_name: Al Jazeera
+    published: "2026-02-27T09:22:06.000Z"
+  - entity: i-was-so-isolated-pro-palestine-activ-2026-02-27
+    type: article
+    title: "‘I was so isolated’: Pro-Palestine activist attempted suicide in UK prison"
+    url: https://www.aljazeera.com/news/2026/2/27/i-was-so-isolated-pro-palestine-activist-attempted-suicide-in-uk-prison
+    excerpt: Recently bailed Palestine Action-linked activist Charlotte Head, 29, spent 18 months in pre-trial detention.
+    source_name: Al Jazeera
+    published: "2026-02-27T08:57:33.000Z"
+  - entity: mass-graves-with-171-bodies-found-in-eas-2026-02-27
+    type: article
+    title: "Mass graves with 171 bodies found in eastern DR Congo: Report"
+    url: https://www.aljazeera.com/news/2026/2/27/mass-graves-with-171-bodies-found-in-eastern-dr-congo-report
+    excerpt: A local governor says authorities found two mass graves in the outskirts of the eastern city of Uvira.
+    source_name: Al Jazeera
+    published: "2026-02-27T08:35:05.000Z"
+  - entity: a-dangerous-thing-s-africa-s-gang-rid-2026-02-27
+    type: article
+    title: "‘A dangerous thing’: S Africa’s gang-ridden townships fear army deployment"
+    url: >-
+      https://www.aljazeera.com/features/2026/2/27/a-dangerous-thing-s-africas-gang-ridden-townships-fear-army-deployment
+    excerpt: >-
+      Critics wary of President Cyril Ramaphosa&#039;s move to send military to tackle crime, drugs and gangs in three
+      provinces.
+    source_name: Al Jazeera
+    published: "2026-02-27T08:04:18.000Z"
+  - entity: mara-and-block-jump-double-digits-in-pre-2026-02-27
+    type: article
+    title: MARA and Block jump double digits in pre-market trading while CoreWeave sinks
+    url: >-
+      https://www.coindesk.com/markets/2026/02/27/mara-and-block-jump-double-digits-in-pre-market-trading-while-coreweave-sinks
+    excerpt: Mixed fourth quarter results highlight divergence between AI expansion plays and margin pressure.
+    source_name: CoinDesk
+    published: "2026-02-27T10:49:19.000Z"
+  - entity: germanys-allunity-issues-regulated-stab-2026-02-27
+    type: article
+    title: Germany's AllUnity issues regulated stablecoin tied to safe haven Swiss franc
+    url: >-
+      https://www.coindesk.com/markets/2026/02/27/germany-s-allunity-launches-regulated-stablecoin-tied-to-safe-haven-swiss-franc
+    excerpt: The debut comes as major banks and analysts predict major appreciation in the Swiss currency.
+    source_name: CoinDesk
+    published: "2026-02-27T10:19:16.000Z"
+  - entity: u-s-spot-bitcoin-etfs-set-for-biggest-w-2026-02-27
+    type: article
+    title: U.S. spot bitcoin ETFs set for biggest week in 6 after adding $1.1 billion in three days
+    url: >-
+      https://www.coindesk.com/markets/2026/02/27/u-s-spot-bitcoin-etfs-set-for-biggest-week-in-6-after-adding-usd1-1-billion-in-three-days
+    excerpt: The inflows coincide with a rebound in the Coinbase Premium index, signaling renewed U.S. demand.
+    source_name: CoinDesk
+    published: "2026-02-27T10:05:04.000Z"
+  - entity: bitcoin-etf-holders-and-treasury-firms-s-2026-02-27
+    type: article
+    title: Bitcoin ETF holders and treasury firms stack protection against price crash below $60,000, Deribit says
+    url: >-
+      https://www.coindesk.com/markets/2026/02/27/bitcoin-etf-holders-and-treasury-firms-stack-protection-against-price-crash-below-usd60-000-deribit-says
+    excerpt: Market participants with long-term vision are buying downside protection.
+    source_name: CoinDesk
+    published: "2026-02-27T06:42:51.000Z"
+  - entity: polymarket-bettors-appear-to-have-inside-2026-02-27
+    type: article
+    title: Polymarket bettors appear to have insider-traded on a market designed to catch insider traders
+    url: >-
+      https://www.coindesk.com/markets/2026/02/27/polymarket-bettors-appear-to-have-insider-traded-on-a-market-designed-to-catch-insider-traders
+    excerpt: >-
+      At least 12 wallets collectively made over $1 million betting on the outcome of ZachXBT's investigation before the
+      findings went public, with one trader turning a $0.14 average entry on shares into $4
+    source_name: CoinDesk
+    published: "2026-02-27T05:43:17.000Z"
+  - entity: bitcoin-slides-friday-as-risk-off-mood-p-2026-02-27
+    type: article
+    title: Bitcoin slides Friday as risk-off mood persists, but majors hold weekly gains
+    url: >-
+      https://www.coindesk.com/markets/2026/02/27/bitcoin-slides-friday-as-risk-off-mood-persists-but-majors-hold-weekly-gains
+    excerpt: >-
+      Analysts say the latest drop appears to be a leverage flush and positioning cleanup rather than a structural trend
+      reversal
+    source_name: CoinDesk
+    published: "2026-02-27T05:05:29.000Z"
+  - entity: analysis-block-s-retreat-to-2019-scale-2026-02-27
+    type: article
+    title: "Analysis: Block’s retreat to 2019 scale could be a hint of deeper shifts in payments economics"
+    url: >-
+      https://www.coindesk.com/markets/2026/02/27/analysis-block-s-retreat-to-2019-scale-underscores-how-stablecoins-are-pressuring-payment-margins
+    excerpt: >-
+      While Jack Dorsey cites AI-enabled productivity gains as the reason for Block's cuts, the deeper shift is in
+      payments plumbing: stablecoin settlement threatens to compress the fee stack that fintech a
+    source_name: CoinDesk
+    published: "2026-02-27T04:44:55.000Z"
+  - entity: world-liberty-financial-ties-voting-powe-2026-02-27
+    type: article
+    title: World Liberty Financial ties voting power to staking as USD1 supply tops $4.7 Billion
+    url: >-
+      https://www.coindesk.com/markets/2026/02/26/world-liberty-financial-ties-voting-power-to-staking-as-usd1-supply-tops-usd4-7-billion
+    excerpt: >-
+      The proposal redirects stablecoin arbitrage from institutional market makers to large token holders and links
+      voting rights to capital commitment.
+    source_name: CoinDesk
+    published: "2026-02-27T04:43:19.000Z"
+  - entity: after-46-years-working-i-x2019-m-not-r-2026-02-27
+    type: article
+    title: >-
+      After 46 years working, I&#x2019;m not retiring &#x2014; instead, I take a vacation every month. Is that a good
+      life in your 70s?
+    url: >-
+      https://www.marketwatch.com/story/after-46-years-working-im-not-retiring-instead-i-take-a-vacation-every-month-is-that-a-good-life-in-your-70s-447f7c75?mod=mw_rss_topstories
+    excerpt: "&#x201c;I&#x2019;ve owned my own company for the last 15 years. It&#x2019;s worth $8.5 million.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-27T11:15:00.000Z"
+  - entity: will-the-bank-get-suspicious-if-i-deposi-2026-02-27
+    type: article
+    title: Will the bank get suspicious if I deposit $150,000 in cash into my checking account?
+    url: >-
+      https://www.marketwatch.com/story/i-live-in-a-state-with-no-inheritance-tax-is-it-legal-to-deposit-150k-cash-into-my-bank-account-d7987cfe?mod=mw_rss_topstories
+    excerpt: "&#x201c;I live in a state with no inheritance tax. I assume I can make this deposit legally.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-27T10:45:00.000Z"
+  - entity: howard-marks-of-oaktree-makes-180-degree-2026-02-27
+    type: article
+    title: >-
+      Howard Marks of Oaktree makes 180-degree turn on AI after Claude tutorial. Here&#x2019;s how he suggests investors
+      approach it.
+    url: >-
+      https://www.marketwatch.com/story/howard-marks-makes-180-degree-turn-on-ai-after-claude-tutorial-heres-how-he-suggests-investors-approach-it-c8658e7d?mod=mw_rss_topstories
+    excerpt: >-
+      Legendary investor is still undecided about the AI bubble but the technology is revolutionary, he thinks. He
+      believes AI has the capacity to be a better investor than most.
+    source_name: MarketWatch
+    published: "2026-02-27T10:32:00.000Z"
+  - entity: x2018-my-sister-and-i-are-his-only-fam-2026-02-27
+    type: article
+    title: >-
+      &#x2018;My sister and I are his only family&#x2019;: My brother is paranoid and forgot he sold his house. What can
+      I do?
+    url: >-
+      https://www.marketwatch.com/story/my-sister-and-i-are-his-only-family-my-brother-is-paranoid-and-forgot-he-sold-his-house-what-can-i-do-006a8d3a?mod=mw_rss_topstories
+    excerpt: In an email, his lawyer said, &#x201c;He&#x2019;s gone over the deep end.&#x201d;
+    source_name: MarketWatch
+    published: "2026-02-27T10:15:00.000Z"
+  - entity: kiss-rocker-gene-simmons-lowers-price-of-2026-02-27
+    type: article
+    title: KISS rocker Gene Simmons lowers price of Beverly Hills home to $12.5 million after months on the market
+    url: >-
+      https://www.marketwatch.com/story/kiss-rocker-gene-simmons-lowers-price-of-beverly-hills-home-to-12-5-million-after-months-on-the-market-68bed304?mod=mw_rss_topstories
+    excerpt: This is the second time KISS bassist Gene Simmons has cut the price of the luxury home.
+    source_name: MarketWatch
+    published: "2026-02-27T10:04:00.000Z"
+  - entity: my-grandpa-retired-happily-at-70-with-7-2026-02-27
+    type: article
+    title: My grandpa retired happily at 70 with $750K after working as a missionary. I know where most Americans go wrong.
+    url: >-
+      https://www.marketwatch.com/story/my-grandpa-retired-happy-at-70-with-750k-and-hes-doing-just-fine-i-know-where-most-americans-go-wrong-c5774943?mod=mw_rss_topstories
+    excerpt: "&#x201c;You could even retire at 55 with $500,000 and be perfectly fine. Am I right?&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-27T05:16:00.000Z"
+  - entity: trump-allies-david-and-larry-ellison-win-2026-02-27
+    type: article
+    title: Trump allies David and Larry Ellison win battle for Warner Bros. Discovery after Netflix bows out
+    url: >-
+      https://www.marketwatch.com/story/warner-bros-discovery-deems-paramounts-bid-superior-putting-netflix-in-the-hot-seat-a1fcea7c?mod=mw_rss_topstories
+    excerpt: The streaming giant said countering Paramount&#x2019;s bid was &#x201c;no longer financially attractive.&#x201d;
+    source_name: MarketWatch
+    published: "2026-02-27T04:08:00.000Z"
+  - entity: block-plans-to-lay-off-nearly-half-its-s-2026-02-27
+    type: article
+    title: Block plans to lay off nearly half its staff in &#x2018;deliberate and bold&#x2019; embrace of AI
+    url: >-
+      https://www.marketwatch.com/story/block-plans-to-lay-off-nearly-half-its-staff-in-deliberate-and-bold-embrace-of-ai-81e99247?mod=mw_rss_topstories
+    excerpt: >-
+      Block&#x2019;s stock surges 20% as Wall Street rewards massive job cuts at the parent company of Square and the
+      Cash App.
+    source_name: MarketWatch
+    published: "2026-02-27T04:07:00.000Z"
+  - entity: yes-consumers-in-china-are-consuming-ag-2026-02-27
+    type: article
+    title: Yes, consumers in China are consuming again. It&#x2019;s just not their No. 1 priority these days.
+    url: >-
+      https://www.marketwatch.com/story/yes-consumers-in-china-are-consuming-again-its-just-not-their-no-1-priority-these-days-598c2c02?mod=mw_rss_topstories
+    excerpt: >-
+      Retail sales are still rising, but record household savings, stepped-up gold buying and reined-in income
+      expectations suggest the population of the world&#x2019;s second largest economy is now priorit
+    source_name: MarketWatch
+    published: "2026-02-27T02:00:00.000Z"
+  - entity: sweetgreen-x2019-s-disappointing-sales-2026-02-27
+    type: article
+    title: Sweetgreen&#x2019;s disappointing sales offer a reality check for restaurants, after Cava&#x2019;s rally
+    url: >-
+      https://www.marketwatch.com/story/sweetgreens-disappointing-sales-offer-a-reality-check-for-restaurants-after-cavas-rally-1c2fe3d9?mod=mw_rss_topstories
+    excerpt: >-
+      A day after Cava&#x2019;s upbeat sales forecast raised hopes for the restaurant industry, rival fast-casual chain
+      Sweetgreen is bringing them back to earth.
+    source_name: MarketWatch
+    published: "2026-02-27T01:33:00.000Z"
+  - entity: india-plans-30-slash-in-thermal-coal-im-2026-02-27
+    type: article
+    title: India Plans 30% Slash in Thermal Coal Imports This Year
+    url: https://oilprice.com/Latest-Energy-News/World-News/India-Plans-30-Slash-in-Thermal-Coal-Imports-This-Year.html
+    excerpt: >-
+      India seeks to slash imports of thermal coal used in its power sector by 30% this year as it wants to use more of
+      its domestic coal supply, industry and government sources have told Reuters. Last year
+    source_name: OilPrice.com
+    published: "2026-02-27T11:30:00.000Z"
+  - entity: magnet-wars-how-the-u-s-plans-to-break-2026-02-27
+    type: article
+    title: "Magnet Wars: How the U.S. Plans to Break China’s Grip on Rare Earths"
+    url: https://oilprice.com/Energy/Energy-General/Magnet-Wars-How-the-US-Plans-to-Break-Chinas-Grip-on-Rare-Earths.html
+    excerpt: >-
+      The struggle for geopolitical supremacy is rapidly becoming a struggle over one critical resource - rare earth
+      magnets.They will determine whether the United States can build military equipment at sca
+    source_name: OilPrice.com
+    published: "2026-02-27T10:00:00.000Z"
+  - entity: alberta-budgets-for-three-years-of-defic-2026-02-27
+    type: article
+    title: Alberta Budgets for Three Years of Deficit on Low Oil Prices
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/Alberta-Budgets-for-Three-Years-of-Deficit-on-Low-Oil-Prices.html
+    excerpt: >-
+      Alberta will end fiscal 2025/26 with a deficit and will run a deficit for the next three fiscal years as well, the
+      province’s finance minister has said. The deficit for fiscal 2025/26 is calculated at
+    source_name: OilPrice.com
+    published: "2026-02-27T10:00:00.000Z"
+  - entity: venezuela-suspends-19-oil-production-con-2026-02-27
+    type: article
+    title: Venezuela Suspends 19 Oil Production Contracts
+    url: https://oilprice.com/Latest-Energy-News/World-News/Venezuela-Suspends-19-Oil-Production-Contracts.html
+    excerpt: >-
+      Venezuela’s government has suspended 19 production-sharing agreements with private oil companies, Reuters has
+      reported, citing unnamed sources. The deals are for projects in Lake Maracaibo, the Orinoc
+    source_name: OilPrice.com
+    published: "2026-02-27T08:30:00.000Z"
+  - entity: oil-prices-set-for-weekly-decline-as-ris-2026-02-27
+    type: article
+    title: Oil Prices Set for Weekly Decline as Risk Premium Eases
+    url: https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Set-for-Weekly-Decline-as-Risk-Premium-Eases.html
+    excerpt: >-
+      Crude oil prices were on course for their first weekly decline in four weeks as the United States and Iran
+      signaled they were willing to continue negotiating instead of escalating to a hot war. At the
+    source_name: OilPrice.com
+    published: "2026-02-27T06:45:00.000Z"
+  - entity: india-s-solar-manufacturers-slapped-with-2026-02-27
+    type: article
+    title: India’s Solar Manufacturers Slapped With 126% U.S. Tariff
+    url: https://oilprice.com/Alternative-Energy/Solar-Energy/Indias-Solar-Manufacturers-Slapped-With-126-US-Tariff.html
+    excerpt: >-
+      The U.S. Department of Commerce has imposed a 126% preliminary countervailing duty on Indian solar cells and
+      modules, effectively closing off the lucrative U.S. market and exacerbating overcapacity is
+    source_name: OilPrice.com
+    published: "2026-02-27T01:00:00.000Z"
+  - entity: cloud-seeding-moves-from-fringe-science-2026-02-27
+    type: article
+    title: Cloud Seeding Moves From Fringe Science to Water Strategy
+    url: https://oilprice.com/Energy/Energy-General/Cloud-Seeding-Moves-From-Fringe-Science-to-Water-Strategy.html
+    excerpt: >-
+      When the UAE experienced severe floods two years ago, many questioned the country’s practice of so-called cloud
+      seeding—the dispersion of certain chemicals in the air to basically squeeze more rain fr
+    source_name: OilPrice.com
+    published: "2026-02-27T00:00:00.000Z"
+  - entity: trump-s-secret-weapon-in-the-rare-earth-2026-02-27
+    type: article
+    title: Trump’s Secret Weapon in the Rare Earth War
+    url: https://oilprice.com/Energy/Energy-General/Trumps-Secret-Weapon-in-the-Rare-Earth-War.html
+    excerpt: >-
+      Long before trade wars and tariffs, China secured manufacturing dominance by controlling rare earths - a reality
+      so consequential that the United States and its allies are now pledging more than $8.5 
+    source_name: OilPrice.com
+    published: "2026-02-27T00:00:00.000Z"
