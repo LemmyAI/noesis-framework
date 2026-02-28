@@ -1,0 +1,1374 @@
+seed:
+  name: news-week9-day-2026-02-28-hour-17
+  label: Daily News — 2026-02-28 17:00 (Week 9, 2026)
+  namespace: news.week9.day-2026-02-28
+  description: "Auto-gathered news: 65 stories, 2026-02-28 to 2026-02-28"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week9
+    extends: news
+  - namespace: news.week9.day-2026-02-28
+    extends: news.week9
+entities:
+  - id: inside-iran-panic-as-strikes-hit-but-fo-2026-02-28
+    type: Event
+    name: Inside Iran, panic as strikes hit but for some it's a moment of relief
+    category: geopolitics
+    description: Iranians talk about what is happening inside the country, despite an almost total internet blackout.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T15:36:27.000Z"
+      precision: day
+  - id: iran-says-it-has-hit-us-base-in-bahrain-2026-02-28
+    type: Decision
+    name: Iran says it has hit US base in Bahrain, as it launches strikes across region
+    category: geopolitics
+    description: >-
+      Huge plumes of black smoke were seen rising from an area near the headquarters of the US Navy's Fifth Fleet in
+      Manama, Bahrain.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T13:35:44.000Z"
+      precision: day
+  - id: at-least-20-killed-after-military-plane-2026-02-28
+    type: Fact
+    name: At least 20 killed after military plane carrying banknotes crashes in Bolivia
+    category: geopolitics
+    description: Police fire tear gas to disperse crowds allegedly trying to take banknotes from the crash site.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T13:00:39.000Z"
+      precision: day
+  - id: bill-clinton-asked-about-hot-tub-photo-a-2026-02-28
+    type: Event
+    name: Bill Clinton asked about hot tub photo and testifies he knew 'nothing' of Epstein crimes
+    category: geopolitics
+    description: >-
+      The former president told the committee that he would never have flown on Epstein's plane if he "had any inkling
+      of what he was doing".
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T03:43:56.000Z"
+      precision: day
+  - id: a-delicate-balance-for-canada-and-a-w-2026-02-28
+    type: Event
+    name: A 'delicate' balance for Canada and a 'win-win' for Modi as Carney visits India
+    category: geopolitics
+    description: >-
+      The two countries are repairing a strained relationship as they also seek to reduce their trade reliance on the
+      US.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T00:03:55.000Z"
+      precision: day
+  - id: trump-orders-government-to-stop-using-an-2026-02-28
+    type: Decision
+    name: Trump orders government to stop using Anthropic in battle over AI use
+    category: geopolitics
+    description: >-
+      The move announced on social media comes after a standoff between Anthropic's boss and the US Department of
+      Defense.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T03:50:05.000Z"
+      precision: day
+  - id: doj-charges-30-more-people-in-minnesota-2026-02-28
+    type: Event
+    name: DOJ charges 30 more people in Minnesota anti-ICE church protest
+    category: geopolitics
+    description: Ex-CNN anchor Don Lemon was one of the original nine defendants arrested last month
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T02:17:20.000Z"
+      precision: day
+  - id: adventurism-has-had-its-day-speedboat-2026-02-28
+    type: Decision
+    name: "‘Adventurism has had its day’: speedboat shootout leaves Miami’s exiled Cubans bewildered"
+    category: geopolitics
+    description: >-
+      <p>Few clues as to how 10 heavily armed men intercepted on stolen speedboat came together from across Florida or
+      what they hoped to achieve </p><p>Foot traffic was slow outside the <a
+      href="https://www.miamiandbeaches.com/l/arts-and-culture/bay-of-pigs-brigade-2506-museum/52808">Bay of Pigs
+      Museum</
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T10:00:08.000Z"
+      precision: day
+  - id: at-least-20-killed-as-cash-laden-militar-2026-02-28
+    type: Fact
+    name: At least 20 killed as cash-laden military cargo plane crashes in Bolivia
+    category: geopolitics
+    description: >-
+      <p>Riot police use teargas to disperse people gathering around wreckage of plane loaded with money from central
+      bank</p><p>At least 20 people have died and dozens have been injured after a military cargo plane carrying
+      banknotes crashed while landing near Bolivia’s capital on Friday, damaging about 
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T03:05:37.000Z"
+      precision: day
+  - id: decision-to-allow-uk-exports-to-armenian-2026-02-28
+    type: Event
+    name: Decision to allow UK exports to Armenian firm under review over Russian links
+    category: finance
+    description: >-
+      <p>Cygnet Texkimp was approved to export machines to Rydena, but ministers examining deal after Guardian
+      highlighted founders’ links to Kremlin military supply chain</p><p>Ministers are reviewing a decision to allow a
+      British company to export hi-tech equipment to Armenia after the Guardian uncovere
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T13:00:12.000Z"
+      precision: day
+  - id: harrods-faces-legal-action-over-1-a-hea-2026-02-28
+    type: Event
+    name: Harrods faces legal action over £1-a-head dining charge not going to staff
+    category: finance
+    description: >-
+      <p>Case brought by 29 workers and backed by UVW union seen as test case that could lead to changes at other
+      restaurants</p><p>Harrods is facing legal action over its addition of a £1-a-head cover charge to diners’ bills
+      that does not go to workers, in a test case that could lead to changes at a stri
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T07:00:08.000Z"
+      precision: day
+  - id: square-mile-strikes-back-how-the-city-o-2026-02-28
+    type: Event
+    name: "Square Mile strikes back: how the City of London is fighting disinformation about crime"
+    category: finance
+    description: >-
+      <p>Panic about antisocial behaviour and theft has broken through from social media to boardrooms and diplomatic
+      circles</p><p>“Just visit London and you’ll see that it’s filled with crime,” the tech billionaire Elon Musk said
+      as he was beamed into Tommy Robinson’s <a href="https://www.theguardian.co
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T14:00:13.000Z"
+      precision: day
+  - id: trump-administration-warns-tariff-refund-2026-02-28
+    type: Claim
+    name: Trump administration warns tariff refund process ‘will take time’
+    category: finance
+    description: >-
+      <p>DoJ says it will not ask US supreme court to rehear tariffs case despite president’s complaint on Truth
+      Social</p><ul><li><p><a
+      href="https://www.theguardian.com/news/2026/feb/17/sign-up-for-the-breaking-news-us-email-to-get-newsletter-alerts-direct-to-your-inbox?utm_medium=ACQUISITIONS_STANDFIRS
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T05:56:32.000Z"
+      precision: day
+  - id: the-real-winners-of-trump-s-global-tarif-2026-02-28
+    type: Event
+    name: "The real winners of Trump’s global tariff war: law firms, hedge funds and AI"
+    category: finance
+    description: >-
+      <p>Businesses are vying for a refund, with nearly $175bn on the line, but customers are unlikely to benefit from
+      reversal</p><p>At 8am, two hours before the US <a
+      href="https://www.theguardian.com/us-news/us-supreme-court">supreme court</a> officially slapped down <a
+      href="https://www.theguardian.co
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T12:00:12.000Z"
+      precision: day
+  - id: a-temple-of-food-london-s-grande-dame-2026-02-28
+    type: Event
+    name: "‘A temple of food’: London’s grande dame Simpson’s in the Strand rises again"
+    category: finance
+    description: >-
+      <p>As the storied London dining room reopens on its bicentenary, restaurateur Jeremy King honours its heritage
+      while restoring a faded icon</p><p>Simpson’s in the Strand was the sort of London institution where nothing
+      changed without very good reason. Founded in 1828 as a coffee and chess club, the
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T14:00:14.000Z"
+      precision: day
+  - id: dirty-water-death-and-decline-the-insi-2026-02-28
+    type: Event
+    name: "Dirty water, death and decline: the inside story of a privatisation scandal"
+    category: finance
+    description: >-
+      <p>There is no end in sight to the pollution caused by a ‘broken’ system. Experts say it could even be getting
+      worse</p><p>Sarah Lambert took her usual morning swim for 40 minutes off Exmouth town beach before her volunteer
+      shift helping disabled people get access to the water.</p><p>A wheelchair us
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T10:51:46.000Z"
+      precision: day
+  - id: premium-bonds-odds-of-a-win-to-get-wors-2026-02-28
+    type: Event
+    name: "Premium bonds: odds of a win to get worse from April"
+    category: finance
+    description: >-
+      <p>Likelihood of winning to decrease after NS&amp;I cut the proportion of the total invested amount paid out in
+      prizes</p><p>There was some bad news this week for Britain’s 22 million-strong army of premium bond holders: the
+      odds of winning a prize are to get worse.</p><p>National Savings and Invest
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T07:00:10.000Z"
+      precision: day
+  - id: it-s-been-decreed-something-must-be-don-2026-02-28
+    type: Event
+    name: "It’s been decreed: something must be done about student loans in England"
+    category: finance
+    description: >-
+      <p>The education secretary wants a fairer system and the Tories have leapt in with their own plan – but why
+      now?</p><p>For anyone who attended university in England in the last 15 or so years, the idea of student loans
+      feeling like some sort of debt trap is hardly news. But three weeks ago, when <a 
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T15:00:14.000Z"
+      precision: day
+  - id: backpacks-schoolbooks-seen-amid-rubble-2026-02-28
+    type: Event
+    name: Backpacks, schoolbooks seen amid rubble of Iranian girls’ school
+    category: geopolitics
+    description: Rescuers dug through the rubble of a girls&#039; elementary school in Minab, Iran after a US-Israeli strike.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T15:55:28.000Z"
+      precision: day
+  - id: the-fantasy-of-an-easy-victory-in-the-wa-2026-02-28
+    type: Event
+    name: The fantasy of an easy victory in the war on Iran
+    category: geopolitics
+    description: The US and Israel declared regime change as their ultimate goal. That, however, would be difficult to achieve.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T15:50:15.000Z"
+      precision: day
+  - id: scenes-of-destruction-in-iran-after-us-i-2026-02-28
+    type: Event
+    name: Scenes of destruction in Iran after US-Israeli strikes
+    category: geopolitics
+    description: Footage from Tehran shows burned vehicles, wrecked buildings, towering plumes of smoke, and a massive crater.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T14:58:21.000Z"
+      precision: day
+  - id: inside-israel-s-normal-triumphalism-a-2026-02-28
+    type: Event
+    name: "Inside Israel’s ‘normal’: Triumphalism and calm mix after attack on Iran"
+    category: geopolitics
+    description: Israel has been on high alert since it launched a wave of joint attacks with the US against Iran.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T14:23:43.000Z"
+      precision: day
+  - id: over-50-killed-in-strike-on-girls-eleme-2026-02-28
+    type: Fact
+    name: Over 50 killed in strike on girls’ elementary school in Iran
+    category: geopolitics
+    description: Footage from Minab, Iran, shows the aftermath of an Israeli-US strike on a girls&#039; elementary school.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T14:16:14.000Z"
+      precision: day
+  - id: world-reacts-to-us-israel-attack-on-ira-2026-02-28
+    type: Event
+    name: World reacts to US, Israel attack on Iran, Tehran retaliation
+    category: geopolitics
+    description: >-
+      EU urges &#039;maximum restraint&#039;; mediator Oman warns US &#039;not to get sucked in&#039; further into
+      conflict.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T13:52:05.000Z"
+      precision: day
+  - id: arsenal-vs-chelsea-premier-league-pre-2026-02-28
+    type: Event
+    name: "Arsenal vs Chelsea: Premier League – preview, team news, start, lineups"
+    category: geopolitics
+    description: League leaders Arsenal desperate for a win over Chelsea to keep resurgent Manchester City at bay.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T13:44:53.000Z"
+      precision: day
+  - id: iranian-deputy-minister-of-foreign-affai-2026-02-28
+    type: Event
+    name: Iranian deputy minister of foreign Affairs condemns US-Israeli attacks
+    category: geopolitics
+    description: Iran’s deputy minister of foreign affairs condemned the US-Israeli strikes.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T13:35:03.000Z"
+      precision: day
+  - id: debris-from-intercepted-iranian-missile-2026-02-28
+    type: Event
+    name: Debris from intercepted Iranian missile lands in Hebron
+    category: geopolitics
+    description: Video shows debris from an intercepted Iranian missile that landed in Hebron in the occupied West Bank.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T13:30:29.000Z"
+      precision: day
+  - id: israel-strikes-two-schools-in-iran-kill-2026-02-28
+    type: Event
+    name: Israel strikes two schools in Iran, killing more than 50 people
+    category: geopolitics
+    description: >-
+      State media says Israeli attack on girls&#039; school in the city of Minab in the south of the country kills
+      dozens.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T13:06:29.000Z"
+      precision: day
+  - id: crypto-community-fear-of-iran-choking-oi-2026-02-28
+    type: Claim
+    name: Crypto community fear of Iran choking oil supply and crashing markets may be overblown
+    category: finance.crypto
+    description: A full closure of the strait is unlikely or impractical, some experts argue.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T15:36:54.000Z"
+      precision: day
+  - id: former-mt-gox-ceo-proposed-a-rewrite-of-2026-02-28
+    type: Event
+    name: >-
+      Former Mt. Gox CEO proposed a rewrite of bitcoin's code to recover $5 billion in stolen funds. Gets quickly
+      shutdown
+    category: finance.crypto
+    description: >-
+      Mark Karpelès submitted a pull request to Bitcoin Core that would redirect coins that have remained untouched
+      since 2011 to a recovery address controlled by the MtGox trustee, reigniting the oldest debate in Bitcoin.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T14:51:29.000Z"
+      precision: day
+  - id: suspected-insiders-make-over-1-2-millio-2026-02-28
+    type: Event
+    name: Suspected insiders make over $1.2 million on Polymarket by betting on U.S.'s Iran strike
+    category: finance.crypto
+    description: >-
+      The strikes caused bitcoin’s price to fall and oil futures on Hyperliquid to rise over the regional conflict’s
+      consequences.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T14:36:00.000Z"
+      precision: day
+  - id: xrp-tumbles-9-as-break-below-1-36-wipe-2026-02-28
+    type: Event
+    name: XRP tumbles 9% as break below $1.36 wipes out relief rally
+    category: finance.crypto
+    description: Traders are watching $1.30 as immediate support after heavy-volume selling confirmed a bearish shift.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T13:30:00.000Z"
+      precision: day
+  - id: bitcoins-five-month-slide-why-btc-is-s-2026-02-28
+    type: Event
+    name: "Bitcoin's five-month slide: why BTC is set for worst losing streak since 2018"
+    category: finance.crypto
+    description: >-
+      With BTC down nearly 50% from its peak, analysts are sparring over whether the slump marks early repricing or
+      signals more pain to come.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T13:00:00.000Z"
+      precision: day
+  - id: bitcoin-sets-up-potential-short-squeeze-2026-02-28
+    type: Event
+    name: Bitcoin sets up potential short squeeze as 'funding rate' plunges to three month low
+    category: finance.crypto
+    description: >-
+      Negative funding rates, rising open interest and liquidations point to crowded positioning and heightened
+      derivatives activity.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T11:00:00.000Z"
+      precision: day
+  - id: bitcoin-could-see-further-downside-risks-2026-02-28
+    type: Claim
+    name: Bitcoin could see further downside risks as Iran attacks U.S. bases across Middle East
+    category: finance.crypto
+    description: >-
+      Tehran launched waves of missiles and drones targeting Israel, U.S. bases, and Gulf allies, with explosions
+      reported in Dubai, Kuwait, and Bahrain.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T10:26:03.000Z"
+      precision: day
+  - id: oil-linked-futures-on-hyperliquid-surge-2026-02-28
+    type: Event
+    name: Oil-linked futures on Hyperliquid surge 5% after U.S.-Israel strike on Iran
+    category: finance.crypto
+    description: >-
+      Oil-linked futures on Hyperliquid’s HIP-3 surged after U.S. and Israeli strikes on Iran reignited fears of supply
+      shocks.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T10:15:55.000Z"
+      precision: day
+  - id: bitcoin-nears-63-000-as-u-s-and-israel-2026-02-28
+    type: Event
+    name: Bitcoin nears $63,000 as U.S. and Israel launch strikes on Iran
+    category: finance.crypto
+    description: >-
+      The drop extends a pattern where bitcoin sells off on geopolitical shocks before recovering, as the token's 24/7
+      liquidity makes it one of the few large assets traders can exit over the weekend.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T06:56:30.000Z"
+      precision: day
+  - id: bitcoin-slides-to-65-000-in-weekend-sel-2026-02-28
+    type: Event
+    name: Bitcoin slides to $65,000 in weekend sell-off, with solana, XRP, dogecoin down 6%
+    category: finance.crypto
+    description: >-
+      The pullback erased most of Wednesday's push toward $70,000 as hot producer-price data and a post-earnings Nvidia
+      decline dragged risk assets lower heading into the weekend.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T04:24:51.000Z"
+      precision: day
+  - id: trump-israel-launch-massive-attacks-o-2026-02-28
+    type: Event
+    name: Trump, Israel Launch 'Massive' Attacks On Iran; How Will Dow Jones Futures React?
+    category: finance
+    description: Trump, Israel Launch 'Massive' Attacks On Iran; How Will Dow Jones Futures React?
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T16:17:30.000Z"
+      precision: day
+  - id: boomers-waste-money-too-these-are-the-2026-02-28
+    type: Event
+    name: Boomers waste money, too. These are the spending traps tripping up the richest generation.
+    category: finance
+    description: Boomers waste money, too. These are the spending traps tripping up the richest generation.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T16:07:00.000Z"
+      precision: day
+  - id: tennant-company-tnc-a-bull-case-theor-2026-02-28
+    type: Event
+    name: "Tennant Company (TNC): A\_Bull\_Case Theory"
+    category: finance
+    description: "Tennant Company (TNC): A\_Bull\_Case Theory"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T16:01:20.000Z"
+      precision: day
+  - id: greg-abel-praises-warren-buffett-and-pro-2026-02-28
+    type: Event
+    name: Greg Abel praises Warren Buffett and promises Berkshire Hathaway won't retreat from investing
+    category: finance
+    description: Greg Abel praises Warren Buffett and promises Berkshire Hathaway won't retreat from investing
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T13:17:01.000Z"
+      precision: day
+  - id: ultrapar-participa-es-s-a-ugp-a-bul-2026-02-28
+    type: Event
+    name: "Ultrapar\_Participações\_S.A. (UGP): A\_Bull\_Case Theory"
+    category: finance
+    description: "Ultrapar\_Participações\_S.A. (UGP): A\_Bull\_Case Theory"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T16:00:06.000Z"
+      precision: day
+  - id: varonis-systems-inc-vrns-a-bull-cas-2026-02-28
+    type: Event
+    name: "Varonis Systems, Inc. (VRNS): A Bull Case Theory"
+    category: finance
+    description: "Varonis Systems, Inc. (VRNS): A Bull Case Theory"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T15:59:40.000Z"
+      precision: day
+  - id: use-this-etf-to-earn-dividends-from-berk-2026-02-28
+    type: Event
+    name: Use This ETF to Earn Dividends From Berkshire Hathaway
+    category: finance
+    description: Use This ETF to Earn Dividends From Berkshire Hathaway
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T16:05:00.000Z"
+      precision: day
+  - id: genedx-holdings-corp-wgs-a-bull-case-2026-02-28
+    type: Event
+    name: "GeneDx\_Holdings Corp. (WGS): A Bull Case Theory"
+    category: finance
+    description: "GeneDx\_Holdings Corp. (WGS): A Bull Case Theory"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T15:59:24.000Z"
+      precision: day
+  - id: q2-holdings-inc-qtwo-a-bull-case-th-2026-02-28
+    type: Event
+    name: "Q2 Holdings, Inc. (QTWO): A Bull Case Theory"
+    category: finance
+    description: "Q2 Holdings, Inc. (QTWO): A Bull Case Theory"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T15:59:09.000Z"
+      precision: day
+  - id: rambus-inc-rmbs-a-bull-case-theory-2026-02-28
+    type: Event
+    name: "Rambus Inc. (RMBS): A\_Bull\_Case Theory"
+    category: finance
+    description: "Rambus Inc. (RMBS): A\_Bull\_Case Theory"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T15:58:50.000Z"
+      precision: day
+  - id: need-a-side-hustle-to-support-your-retir-2026-02-28
+    type: Event
+    name: Need a side hustle to support your retirement dreams? Here&#x2019;s how to find work right now.
+    category: finance.markets
+    description: 7 tips for navigating this tricky job market.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T16:19:00.000Z"
+      precision: day
+  - id: my-grandpa-retired-happily-at-70-with-7-2026-02-28
+    type: Event
+    name: My grandpa retired happily at 70 with $750K after working as a missionary. I know where most Americans go wrong.
+    category: finance.markets
+    description: "&#x201c;You could even retire at 55 with $500,000 and be perfectly fine. Am I right?&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T16:06:00.000Z"
+      precision: day
+  - id: berkshire-hathaway-shrinks-cash-pile-in-2026-02-28
+    type: Event
+    name: >-
+      Berkshire Hathaway shrinks cash pile in Buffett&#x2019;s last act as CEO. Here&#x2019;s how successor Greg Abel is
+      now looking to spend.
+    category: finance.markets
+    description: >-
+      Company&#x2019;s cash hoard at end of 2025 &#x2014; which Abel noted was not a sign of an investment retreat
+      &#x2014; was down 2.1% from September to $373.3 billion.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T16:06:00.000Z"
+      precision: day
+  - id: her-accountant-went-to-prison-now-the-i-2026-02-28
+    type: Event
+    name: Her accountant went to prison. Now the IRS is coming after her for $328,000.
+    category: finance.markets
+    description: >-
+      She didn&#x2019;t intend to evade taxes when she hired the accountant in 1993, but she&#x2019;s still on the hook
+      for his actions.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T16:03:00.000Z"
+      precision: day
+  - id: stanley-druckenmiller-says-this-is-how-h-2026-02-28
+    type: Claim
+    name: Stanley Druckenmiller says this is how he&#x2019;d build a portfolio from scratch right now
+    category: finance.markets
+    description: >-
+      The legendary investor says he&#x2019;s been shifting his investment focus and AI is no longer playing a starring
+      role.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T15:38:00.000Z"
+      precision: day
+  - id: trump-calls-for-regime-change-after-u-s-2026-02-28
+    type: Event
+    name: >-
+      Trump calls for regime change after U.S.-Israel attack on Iran. Markets should brace for more than June&#x2019;s
+      brief military campaign.
+    category: finance.markets
+    description: >-
+      The next 24 to 48 hours of conflict will be crucial for markets after the U.S. and Israel launched military
+      strikes against Iran.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T15:36:00.000Z"
+      precision: day
+  - id: x2018-i-have-a-legal-and-a-moral-quest-2026-02-28
+    type: Event
+    name: >-
+      &#x2018;I have a legal and a moral question&#x2019;: My dad left when I was 9, reconnected with me in my 50s and
+      now needs money. What do I owe him?
+    category: finance.markets
+    description: >-
+      &#x201c;After the divorce was finalized, he and his partner moved out of state to a place where there would be no
+      child-support enforcement.&#x201d;
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T15:30:00.000Z"
+      precision: day
+  - id: this-could-be-nvidia-x2019-s-next-big-m-2026-02-28
+    type: Claim
+    name: This could be Nvidia&#x2019;s next big move, with the stock in search of a positive catalyst
+    category: finance.markets
+    description: >-
+      A report says Nvidia is planning a new chip platform that seeks to address evolving customer needs as the AI era
+      transitions more toward inference workloads.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T15:24:00.000Z"
+      precision: day
+  - id: after-46-years-working-i-x2019-m-not-r-2026-02-28
+    type: Event
+    name: >-
+      After 46 years working, I&#x2019;m not retiring &#x2014; instead, I take a vacation every month. Is that a good
+      life in your 70s?
+    category: finance.markets
+    description: "&#x201c;I&#x2019;ve owned my own company for the last 15 years. It&#x2019;s worth $8.5 million.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T15:05:00.000Z"
+      precision: day
+  - id: inside-north-america-s-first-fully-integ-2026-02-28
+    type: Event
+    name: Inside North America’s First Fully Integrated Rare Earth Facility
+    category: finance.energy
+    description: >-
+      For decades, the West has been sleepwalking into dependency. While we built the world’s most advanced fighter
+      jets, smartphones, and electric vehicles, we quietly surrendered the most important component of modern tech. Rare
+      earth elements. Today, China controls 95% of the world’s rare earth process
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T16:01:00.000Z"
+      precision: day
+  - id: can-rental-batteries-close-the-global-el-2026-02-28
+    type: Event
+    name: Can Rental Batteries Close the Global Electricity Gap?
+    category: finance.energy
+    description: >-
+      There are still many areas of the world where people do not have access to electricity, due to a lack of funding
+      for the necessary transmission infrastructure and several other challenges. Now, some countries are tackling the
+      issue by investing in programmes to support battery rental. By allowing th
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T16:00:00.000Z"
+      precision: day
+  - id: oil-markets-brace-for-impact-as-u-s-is-2026-02-28
+    type: Event
+    name: Oil Markets Brace for Impact as U.S., Israel Attack Iran
+    category: finance.energy
+    description: >-
+      1m ago 10:25am CST World’s Most Critical Oil Route Under Operational Freeze There is still no verified
+      confirmation of mines or a physical blockade in the Strait of Hormuz, but the operational impact is real. Markets
+      are now watching closely for signs of Iranian naval movements and whether the U.S. 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T14:21:00.000Z"
+      precision: day
+  - id: oil-markets-brace-for-volatility-as-u-s-2026-02-28
+    type: Event
+    name: Oil Markets Brace for Volatility As U.S.-Israel Launch Strikes Across Iran
+    category: finance.energy
+    description: >-
+      Global energy markets are set to see significant volatility following a United States-Israel coordinated wave of
+      military strikes across Iran early this morning. The attack, which targeted multiple cities including the capital
+      of Tehran, marks a huge escalation in a regional conflict that has simmer
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T07:17:00.000Z"
+      precision: day
+  - id: how-america-s-action-in-venezuela-guaran-2026-02-28
+    type: Event
+    name: How America’s Action in Venezuela Guaranteed Guyana’s Oil Future
+    category: finance.energy
+    description: >-
+      Once one of South America’s poorest countries, Guyana is now ranked among the world’s richest because of the vast
+      petroleum wealth contained in its territorial waters. A swath of major oil discoveries in the offshore Stabroek
+      Block by operator ExxonMobil, with partners Chevron and CNOOC, saw Guyana 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T00:00:00.000Z"
+      precision: day
+  - id: openai-s-sam-altman-announces-pentagon-d-2026-02-28
+    type: Decision
+    name: OpenAI’s Sam Altman announces Pentagon deal with ‘technical safeguards’
+    category: technology.ai
+    description: >-
+      OpenAI's CEO claims its new defense contract includes protections addressing the same issues that became a
+      flashpoint for Anthropic.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T16:17:36.000Z"
+      precision: day
+  - id: google-quantum-proofs-https-by-squeezing-2026-02-28
+    type: Event
+    name: Google quantum-proofs HTTPS by squeezing 2.5kB of data into 64-byte space
+    category: technology
+    description: Google quantum-proofs HTTPS by squeezing 2.5kB of data into 64-byte space
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T01:26:41.000Z"
+      precision: day
+  - id: the-air-forces-new-icbm-is-nearly-ready-2026-02-28
+    type: Event
+    name: The Air Force's new ICBM is nearly ready to fly, but there’s nowhere to put it
+    category: technology
+    description: The Air Force's new ICBM is nearly ready to fly, but there’s nowhere to put it
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T00:32:24.000Z"
+      precision: day
+narratives:
+  - name: Mining & Resources
+    steps:
+      - from: decision-to-allow-uk-exports-to-armenian-2026-02-28
+        to: inside-north-america-s-first-fully-integ-2026-02-28
+        type: causes
+  - name: Israel-Palestine Conflict
+    steps:
+      - from: oil-linked-futures-on-hyperliquid-surge-2026-02-28
+        to: debris-from-intercepted-iranian-missile-2026-02-28
+        type: causes
+      - from: debris-from-intercepted-iranian-missile-2026-02-28
+        to: iranian-deputy-minister-of-foreign-affai-2026-02-28
+        type: causes
+      - from: iranian-deputy-minister-of-foreign-affai-2026-02-28
+        to: scenes-of-destruction-in-iran-after-us-i-2026-02-28
+        type: causes
+      - from: scenes-of-destruction-in-iran-after-us-i-2026-02-28
+        to: backpacks-schoolbooks-seen-amid-rubble-2026-02-28
+        type: causes
+  - name: Crypto Markets
+    steps:
+      - from: bitcoin-slides-to-65-000-in-weekend-sel-2026-02-28
+        to: bitcoin-nears-63-000-as-u-s-and-israel-2026-02-28
+        type: causes
+      - from: bitcoin-nears-63-000-as-u-s-and-israel-2026-02-28
+        to: bitcoin-could-see-further-downside-risks-2026-02-28
+        type: supports
+      - from: bitcoin-could-see-further-downside-risks-2026-02-28
+        to: bitcoin-sets-up-potential-short-squeeze-2026-02-28
+        type: follows
+      - from: bitcoin-sets-up-potential-short-squeeze-2026-02-28
+        to: bitcoins-five-month-slide-why-btc-is-s-2026-02-28
+        type: causes
+      - from: bitcoins-five-month-slide-why-btc-is-s-2026-02-28
+        to: suspected-insiders-make-over-1-2-millio-2026-02-28
+        type: causes
+      - from: suspected-insiders-make-over-1-2-millio-2026-02-28
+        to: former-mt-gox-ceo-proposed-a-rewrite-of-2026-02-28
+        type: causes
+      - from: former-mt-gox-ceo-proposed-a-rewrite-of-2026-02-28
+        to: crypto-community-fear-of-iran-choking-oi-2026-02-28
+        type: supports
+sources:
+  - entity: inside-iran-panic-as-strikes-hit-but-fo-2026-02-28
+    type: article
+    title: Inside Iran, panic as strikes hit but for some it's a moment of relief
+    url: https://www.bbc.com/news/articles/c05v8jzjn40o
+    excerpt: Iranians talk about what is happening inside the country, despite an almost total internet blackout.
+    source_name: BBC News
+    published: "2026-02-28T15:36:27.000Z"
+  - entity: iran-says-it-has-hit-us-base-in-bahrain-2026-02-28
+    type: article
+    title: Iran says it has hit US base in Bahrain, as it launches strikes across region
+    url: https://www.bbc.com/news/articles/c204px4zddro
+    excerpt: >-
+      Huge plumes of black smoke were seen rising from an area near the headquarters of the US Navy's Fifth Fleet in
+      Manama, Bahrain.
+    source_name: BBC News
+    published: "2026-02-28T13:35:44.000Z"
+  - entity: at-least-20-killed-after-military-plane-2026-02-28
+    type: article
+    title: At least 20 killed after military plane carrying banknotes crashes in Bolivia
+    url: https://www.bbc.com/news/articles/c0rjpxxpp49o
+    excerpt: Police fire tear gas to disperse crowds allegedly trying to take banknotes from the crash site.
+    source_name: BBC News
+    published: "2026-02-28T13:00:39.000Z"
+  - entity: bill-clinton-asked-about-hot-tub-photo-a-2026-02-28
+    type: article
+    title: Bill Clinton asked about hot tub photo and testifies he knew 'nothing' of Epstein crimes
+    url: https://www.bbc.com/news/articles/cvg345qvld5o
+    excerpt: >-
+      The former president told the committee that he would never have flown on Epstein's plane if he "had any inkling
+      of what he was doing".
+    source_name: BBC News
+    published: "2026-02-28T03:43:56.000Z"
+  - entity: a-delicate-balance-for-canada-and-a-w-2026-02-28
+    type: article
+    title: A 'delicate' balance for Canada and a 'win-win' for Modi as Carney visits India
+    url: https://www.bbc.com/news/articles/c1l7q871gnro
+    excerpt: >-
+      The two countries are repairing a strained relationship as they also seek to reduce their trade reliance on the
+      US.
+    source_name: BBC News
+    published: "2026-02-28T00:03:55.000Z"
+  - entity: trump-orders-government-to-stop-using-an-2026-02-28
+    type: article
+    title: Trump orders government to stop using Anthropic in battle over AI use
+    url: https://www.bbc.com/news/articles/cn48jj3y8ezo
+    excerpt: >-
+      The move announced on social media comes after a standoff between Anthropic's boss and the US Department of
+      Defense.
+    source_name: BBC News
+    published: "2026-02-28T03:50:05.000Z"
+  - entity: doj-charges-30-more-people-in-minnesota-2026-02-28
+    type: article
+    title: DOJ charges 30 more people in Minnesota anti-ICE church protest
+    url: https://www.bbc.com/news/articles/cx2j0w1z3z1o
+    excerpt: Ex-CNN anchor Don Lemon was one of the original nine defendants arrested last month
+    source_name: BBC News
+    published: "2026-02-28T02:17:20.000Z"
+  - entity: adventurism-has-had-its-day-speedboat-2026-02-28
+    type: article
+    title: "‘Adventurism has had its day’: speedboat shootout leaves Miami’s exiled Cubans bewildered"
+    url: https://www.theguardian.com/world/2026/feb/28/miami-exiled-cubans-speedboat-shootout
+    excerpt: >-
+      <p>Few clues as to how 10 heavily armed men intercepted on stolen speedboat came together from across Florida or
+      what they hoped to achieve </p><p>Foot traffic was slow outside the <a href="https://ww
+    source_name: The Guardian
+    published: "2026-02-28T10:00:08.000Z"
+  - entity: at-least-20-killed-as-cash-laden-militar-2026-02-28
+    type: article
+    title: At least 20 killed as cash-laden military cargo plane crashes in Bolivia
+    url: >-
+      https://www.theguardian.com/world/2026/feb/28/at-least-15-killed-as-cash-laden-military-cargo-plane-crashes-in-bolivia
+    excerpt: >-
+      <p>Riot police use teargas to disperse people gathering around wreckage of plane loaded with money from central
+      bank</p><p>At least 20 people have died and dozens have been injured after a military ca
+    source_name: The Guardian
+    published: "2026-02-28T03:05:37.000Z"
+  - entity: decision-to-allow-uk-exports-to-armenian-2026-02-28
+    type: article
+    title: Decision to allow UK exports to Armenian firm under review over Russian links
+    url: >-
+      https://www.theguardian.com/politics/2026/feb/28/decision-allow-uk-exports-cygnet-texkimp-armenian-firm-review-russian-links
+    excerpt: >-
+      <p>Cygnet Texkimp was approved to export machines to Rydena, but ministers examining deal after Guardian
+      highlighted founders’ links to Kremlin military supply chain</p><p>Ministers are reviewing a de
+    source_name: The Guardian
+    published: "2026-02-28T13:00:12.000Z"
+  - entity: harrods-faces-legal-action-over-1-a-hea-2026-02-28
+    type: article
+    title: Harrods faces legal action over £1-a-head dining charge not going to staff
+    url: https://www.theguardian.com/business/2026/feb/28/harrods-dining-charge-workers-union-legal-action
+    excerpt: >-
+      <p>Case brought by 29 workers and backed by UVW union seen as test case that could lead to changes at other
+      restaurants</p><p>Harrods is facing legal action over its addition of a £1-a-head cover char
+    source_name: The Guardian
+    published: "2026-02-28T07:00:08.000Z"
+  - entity: square-mile-strikes-back-how-the-city-o-2026-02-28
+    type: article
+    title: "Square Mile strikes back: how the City of London is fighting disinformation about crime"
+    url: https://www.theguardian.com/business/2026/feb/28/city-of-london-fighting-disinformation-crime
+    excerpt: >-
+      <p>Panic about antisocial behaviour and theft has broken through from social media to boardrooms and diplomatic
+      circles</p><p>“Just visit London and you’ll see that it’s filled with crime,” the tech b
+    source_name: The Guardian
+    published: "2026-02-28T14:00:13.000Z"
+  - entity: trump-administration-warns-tariff-refund-2026-02-28
+    type: article
+    title: Trump administration warns tariff refund process ‘will take time’
+    url: https://www.theguardian.com/us-news/2026/feb/27/trump-tariff-refunds
+    excerpt: >-
+      <p>DoJ says it will not ask US supreme court to rehear tariffs case despite president’s complaint on Truth
+      Social</p><ul><li><p><a href="https://www.theguardian.com/news/2026/feb/17/sign-up-for-the-br
+    source_name: The Guardian
+    published: "2026-02-28T05:56:32.000Z"
+  - entity: the-real-winners-of-trump-s-global-tarif-2026-02-28
+    type: article
+    title: "The real winners of Trump’s global tariff war: law firms, hedge funds and AI"
+    url: https://www.theguardian.com/us-news/2026/feb/28/trump-tariffs-refunds-law-firms
+    excerpt: >-
+      <p>Businesses are vying for a refund, with nearly $175bn on the line, but customers are unlikely to benefit from
+      reversal</p><p>At 8am, two hours before the US <a href="https://www.theguardian.com/us-
+    source_name: The Guardian
+    published: "2026-02-28T12:00:12.000Z"
+  - entity: a-temple-of-food-london-s-grande-dame-2026-02-28
+    type: article
+    title: "‘A temple of food’: London’s grande dame Simpson’s in the Strand rises again"
+    url: >-
+      https://www.theguardian.com/uk-news/2026/feb/28/a-temple-of-food-london-grand-dame-simpsons-in-the-strand-rises-again
+    excerpt: >-
+      <p>As the storied London dining room reopens on its bicentenary, restaurateur Jeremy King honours its heritage
+      while restoring a faded icon</p><p>Simpson’s in the Strand was the sort of London institu
+    source_name: The Guardian
+    published: "2026-02-28T14:00:14.000Z"
+  - entity: dirty-water-death-and-decline-the-insi-2026-02-28
+    type: article
+    title: "Dirty water, death and decline: the inside story of a privatisation scandal"
+    url: >-
+      https://www.theguardian.com/news/ng-interactive/2026/feb/28/dirty-water-death-and-decline-the-inside-story-of-a-privatisation-scandal
+    excerpt: >-
+      <p>There is no end in sight to the pollution caused by a ‘broken’ system. Experts say it could even be getting
+      worse</p><p>Sarah Lambert took her usual morning swim for 40 minutes off Exmouth town bea
+    source_name: The Guardian
+    published: "2026-02-28T10:51:46.000Z"
+  - entity: premium-bonds-odds-of-a-win-to-get-wors-2026-02-28
+    type: article
+    title: "Premium bonds: odds of a win to get worse from April"
+    url: https://www.theguardian.com/money/2026/feb/28/premium-bonds-odds-win-worse-nsi-prizes
+    excerpt: >-
+      <p>Likelihood of winning to decrease after NS&amp;I cut the proportion of the total invested amount paid out in
+      prizes</p><p>There was some bad news this week for Britain’s 22 million-strong army of p
+    source_name: The Guardian
+    published: "2026-02-28T07:00:10.000Z"
+  - entity: it-s-been-decreed-something-must-be-don-2026-02-28
+    type: article
+    title: "It’s been decreed: something must be done about student loans in England"
+    url: >-
+      https://www.theguardian.com/money/2026/feb/28/its-been-decreed-something-must-be-done-about-student-loans-in-england
+    excerpt: >-
+      <p>The education secretary wants a fairer system and the Tories have leapt in with their own plan – but why
+      now?</p><p>For anyone who attended university in England in the last 15 or so years, the ide
+    source_name: The Guardian
+    published: "2026-02-28T15:00:14.000Z"
+  - entity: backpacks-schoolbooks-seen-amid-rubble-2026-02-28
+    type: article
+    title: Backpacks, schoolbooks seen amid rubble of Iranian girls’ school
+    url: https://www.aljazeera.com/video/newsfeed/2026/2/28/backpacks-schoolbooks-seen-amid-rubble-of-iranian-girls-school
+    excerpt: Rescuers dug through the rubble of a girls&#039; elementary school in Minab, Iran after a US-Israeli strike.
+    source_name: Al Jazeera
+    published: "2026-02-28T15:55:28.000Z"
+  - entity: the-fantasy-of-an-easy-victory-in-the-wa-2026-02-28
+    type: article
+    title: The fantasy of an easy victory in the war on Iran
+    url: https://www.aljazeera.com/opinions/2026/2/28/the-fantasy-of-an-easy-victory-in-the-war-on-iran
+    excerpt: The US and Israel declared regime change as their ultimate goal. That, however, would be difficult to achieve.
+    source_name: Al Jazeera
+    published: "2026-02-28T15:50:15.000Z"
+  - entity: scenes-of-destruction-in-iran-after-us-i-2026-02-28
+    type: article
+    title: Scenes of destruction in Iran after US-Israeli strikes
+    url: https://www.aljazeera.com/video/newsfeed/2026/2/28/scenes-of-destruction-in-iran-after-us-israeli-strikes
+    excerpt: Footage from Tehran shows burned vehicles, wrecked buildings, towering plumes of smoke, and a massive crater.
+    source_name: Al Jazeera
+    published: "2026-02-28T14:58:21.000Z"
+  - entity: inside-israel-s-normal-triumphalism-a-2026-02-28
+    type: article
+    title: "Inside Israel’s ‘normal’: Triumphalism and calm mix after attack on Iran"
+    url: https://www.aljazeera.com/news/2026/2/28/inside-israels-normal-triumphalism-and-calm-mix-after-attack-on-iran
+    excerpt: Israel has been on high alert since it launched a wave of joint attacks with the US against Iran.
+    source_name: Al Jazeera
+    published: "2026-02-28T14:23:43.000Z"
+  - entity: over-50-killed-in-strike-on-girls-eleme-2026-02-28
+    type: article
+    title: Over 50 killed in strike on girls’ elementary school in Iran
+    url: https://www.aljazeera.com/video/newsfeed/2026/2/28/over-50-killed-in-strike-on-girls-elementary-school-in-iran
+    excerpt: Footage from Minab, Iran, shows the aftermath of an Israeli-US strike on a girls&#039; elementary school.
+    source_name: Al Jazeera
+    published: "2026-02-28T14:16:14.000Z"
+  - entity: world-reacts-to-us-israel-attack-on-ira-2026-02-28
+    type: article
+    title: World reacts to US, Israel attack on Iran, Tehran retaliation
+    url: https://www.aljazeera.com/news/2026/2/28/world-reacts-to-us-israel-attack-on-iran-tehran-retaliation
+    excerpt: >-
+      EU urges &#039;maximum restraint&#039;; mediator Oman warns US &#039;not to get sucked in&#039; further into
+      conflict.
+    source_name: Al Jazeera
+    published: "2026-02-28T13:52:05.000Z"
+  - entity: arsenal-vs-chelsea-premier-league-pre-2026-02-28
+    type: article
+    title: "Arsenal vs Chelsea: Premier League – preview, team news, start, lineups"
+    url: https://www.aljazeera.com/sports/2026/2/28/arsenal-vs-chelsea-premier-league-preview-team-news-start-lineups
+    excerpt: League leaders Arsenal desperate for a win over Chelsea to keep resurgent Manchester City at bay.
+    source_name: Al Jazeera
+    published: "2026-02-28T13:44:53.000Z"
+  - entity: iranian-deputy-minister-of-foreign-affai-2026-02-28
+    type: article
+    title: Iranian deputy minister of foreign Affairs condemns US-Israeli attacks
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/2/28/iranian-deputy-minister-of-foreign-affairs-condemns-us-israeli-attacks
+    excerpt: Iran’s deputy minister of foreign affairs condemned the US-Israeli strikes.
+    source_name: Al Jazeera
+    published: "2026-02-28T13:35:03.000Z"
+  - entity: debris-from-intercepted-iranian-missile-2026-02-28
+    type: article
+    title: Debris from intercepted Iranian missile lands in Hebron
+    url: https://www.aljazeera.com/video/newsfeed/2026/2/28/debris-from-intercepted-iranian-missile-lands-in-hebron
+    excerpt: Video shows debris from an intercepted Iranian missile that landed in Hebron in the occupied West Bank.
+    source_name: Al Jazeera
+    published: "2026-02-28T13:30:29.000Z"
+  - entity: israel-strikes-two-schools-in-iran-kill-2026-02-28
+    type: article
+    title: Israel strikes two schools in Iran, killing more than 50 people
+    url: https://www.aljazeera.com/news/2026/2/28/israel-strikes-two-schools-in-iran-killing-more-than-50-people
+    excerpt: >-
+      State media says Israeli attack on girls&#039; school in the city of Minab in the south of the country kills
+      dozens.
+    source_name: Al Jazeera
+    published: "2026-02-28T13:06:29.000Z"
+  - entity: crypto-community-fear-of-iran-choking-oi-2026-02-28
+    type: article
+    title: Crypto community fear of Iran choking oil supply and crashing markets may be overblown
+    url: >-
+      https://www.coindesk.com/markets/2026/02/28/crypto-community-fears-iran-choking-oil-supply-and-crashing-markets-but-that-may-be-overblown
+    excerpt: A full closure of the strait is unlikely or impractical, some experts argue.
+    source_name: CoinDesk
+    published: "2026-02-28T15:36:54.000Z"
+  - entity: former-mt-gox-ceo-proposed-a-rewrite-of-2026-02-28
+    type: article
+    title: >-
+      Former Mt. Gox CEO proposed a rewrite of bitcoin's code to recover $5 billion in stolen funds. Gets quickly
+      shutdown
+    url: >-
+      https://www.coindesk.com/tech/2026/02/28/former-mt-gox-ceo-proposed-a-rewrite-of-bitcoin-s-code-to-recover-usd5-billion-in-stolen-funds-gets-quickly-shutdown
+    excerpt: >-
+      Mark Karpelès submitted a pull request to Bitcoin Core that would redirect coins that have remained untouched
+      since 2011 to a recovery address controlled by the MtGox trustee, reigniting the oldest de
+    source_name: CoinDesk
+    published: "2026-02-28T14:51:29.000Z"
+  - entity: suspected-insiders-make-over-1-2-millio-2026-02-28
+    type: article
+    title: Suspected insiders make over $1.2 million on Polymarket by betting on U.S.'s Iran strike
+    url: >-
+      https://www.coindesk.com/markets/2026/02/28/suspected-insiders-make-over-usd1-2-million-on-polymarket-ahead-of-u-s-strike-on-iran
+    excerpt: >-
+      The strikes caused bitcoin’s price to fall and oil futures on Hyperliquid to rise over the regional conflict’s
+      consequences.
+    source_name: CoinDesk
+    published: "2026-02-28T14:36:00.000Z"
+  - entity: xrp-tumbles-9-as-break-below-1-36-wipe-2026-02-28
+    type: article
+    title: XRP tumbles 9% as break below $1.36 wipes out relief rally
+    url: https://www.coindesk.com/markets/2026/02/28/xrp-tumbles-9-as-break-below-usd1-36-wipes-out-relief-rally
+    excerpt: Traders are watching $1.30 as immediate support after heavy-volume selling confirmed a bearish shift.
+    source_name: CoinDesk
+    published: "2026-02-28T13:30:00.000Z"
+  - entity: bitcoins-five-month-slide-why-btc-is-s-2026-02-28
+    type: article
+    title: "Bitcoin's five-month slide: why BTC is set for worst losing streak since 2018"
+    url: >-
+      https://www.coindesk.com/markets/2026/02/27/bitcoin-set-for-worst-5-month-streak-since-2018-as-usd3-8-billion-etf-outflows-mount
+    excerpt: >-
+      With BTC down nearly 50% from its peak, analysts are sparring over whether the slump marks early repricing or
+      signals more pain to come.
+    source_name: CoinDesk
+    published: "2026-02-28T13:00:00.000Z"
+  - entity: bitcoin-sets-up-potential-short-squeeze-2026-02-28
+    type: article
+    title: Bitcoin sets up potential short squeeze as 'funding rate' plunges to three month low
+    url: https://www.coindesk.com/markets/2026/02/28/bitcoin-sets-up-potential-short-squeeze-as-funding-plunges-to-6
+    excerpt: >-
+      Negative funding rates, rising open interest and liquidations point to crowded positioning and heightened
+      derivatives activity.
+    source_name: CoinDesk
+    published: "2026-02-28T11:00:00.000Z"
+  - entity: bitcoin-could-see-further-downside-risks-2026-02-28
+    type: article
+    title: Bitcoin could see further downside risks as Iran attacks U.S. bases across Middle East
+    url: >-
+      https://www.coindesk.com/markets/2026/02/28/bitcoin-could-see-further-downside-risks-as-iran-attacks-u-s-bases-across-middle-east
+    excerpt: >-
+      Tehran launched waves of missiles and drones targeting Israel, U.S. bases, and Gulf allies, with explosions
+      reported in Dubai, Kuwait, and Bahrain.
+    source_name: CoinDesk
+    published: "2026-02-28T10:26:03.000Z"
+  - entity: oil-linked-futures-on-hyperliquid-surge-2026-02-28
+    type: article
+    title: Oil-linked futures on Hyperliquid surge 5% after U.S.-Israel strike on Iran
+    url: >-
+      https://www.coindesk.com/markets/2026/02/28/oil-linked-futures-on-hyperliquid-surge-5-after-u-s-israel-strike-on-iran
+    excerpt: >-
+      Oil-linked futures on Hyperliquid’s HIP-3 surged after U.S. and Israeli strikes on Iran reignited fears of supply
+      shocks.
+    source_name: CoinDesk
+    published: "2026-02-28T10:15:55.000Z"
+  - entity: bitcoin-nears-63-000-as-u-s-and-israel-2026-02-28
+    type: article
+    title: Bitcoin nears $63,000 as U.S. and Israel launch strikes on Iran
+    url: >-
+      https://www.coindesk.com/markets/2026/02/28/bitcoin-slides-under-usd64-000-as-u-s-and-israel-launch-strikes-on-iran
+    excerpt: >-
+      The drop extends a pattern where bitcoin sells off on geopolitical shocks before recovering, as the token's 24/7
+      liquidity makes it one of the few large assets traders can exit over the weekend.
+    source_name: CoinDesk
+    published: "2026-02-28T06:56:30.000Z"
+  - entity: bitcoin-slides-to-65-000-in-weekend-sel-2026-02-28
+    type: article
+    title: Bitcoin slides to $65,000 in weekend sell-off, with solana, XRP, dogecoin down 6%
+    url: >-
+      https://www.coindesk.com/markets/2026/02/28/bitcoin-slides-to-usd65-000-in-weekend-sell-off-with-solana-xrp-dogecoin-down-6
+    excerpt: >-
+      The pullback erased most of Wednesday's push toward $70,000 as hot producer-price data and a post-earnings Nvidia
+      decline dragged risk assets lower heading into the weekend.
+    source_name: CoinDesk
+    published: "2026-02-28T04:24:51.000Z"
+  - entity: trump-israel-launch-massive-attacks-o-2026-02-28
+    type: article
+    title: Trump, Israel Launch 'Massive' Attacks On Iran; How Will Dow Jones Futures React?
+    url: >-
+      https://www.investors.com/market-trend/stock-market-today/trump-us-israel-massive-attacks-iran-dow-jones-futures-oil-prices/?src=A00220&yptr=yahoo
+    excerpt: ""
+    source_name: Investor's Business Daily
+    published: "2026-02-28T16:17:30.000Z"
+  - entity: boomers-waste-money-too-these-are-the-2026-02-28
+    type: article
+    title: Boomers waste money, too. These are the spending traps tripping up the richest generation.
+    url: https://finance.yahoo.com/news/boomers-waste-money-too-spending-172100617.html
+    excerpt: ""
+    source_name: MarketWatch
+    published: "2026-02-28T16:07:00.000Z"
+  - entity: tennant-company-tnc-a-bull-case-theor-2026-02-28
+    type: article
+    title: "Tennant Company (TNC): A\_Bull\_Case Theory"
+    url: https://finance.yahoo.com/news/tennant-company-tnc-bull-case-160120341.html
+    excerpt: ""
+    source_name: Insider Monkey
+    published: "2026-02-28T16:01:20.000Z"
+  - entity: greg-abel-praises-warren-buffett-and-pro-2026-02-28
+    type: article
+    title: Greg Abel praises Warren Buffett and promises Berkshire Hathaway won't retreat from investing
+    url: https://finance.yahoo.com/news/warren-buffetts-successor-greg-abel-131701152.html
+    excerpt: ""
+    source_name: Associated Press Finance
+    published: "2026-02-28T13:17:01.000Z"
+  - entity: ultrapar-participa-es-s-a-ugp-a-bul-2026-02-28
+    type: article
+    title: "Ultrapar\_Participações\_S.A. (UGP): A\_Bull\_Case Theory"
+    url: https://finance.yahoo.com/news/ultrapar-participa-es-ugp-bull-160006254.html
+    excerpt: ""
+    source_name: Insider Monkey
+    published: "2026-02-28T16:00:06.000Z"
+  - entity: varonis-systems-inc-vrns-a-bull-cas-2026-02-28
+    type: article
+    title: "Varonis Systems, Inc. (VRNS): A Bull Case Theory"
+    url: https://finance.yahoo.com/news/varonis-systems-inc-vrns-bull-155940500.html
+    excerpt: ""
+    source_name: Insider Monkey
+    published: "2026-02-28T15:59:40.000Z"
+  - entity: use-this-etf-to-earn-dividends-from-berk-2026-02-28
+    type: article
+    title: Use This ETF to Earn Dividends From Berkshire Hathaway
+    url: https://finance.yahoo.com/news/etf-earn-dividends-berkshire-hathaway-160500757.html
+    excerpt: ""
+    source_name: Motley Fool
+    published: "2026-02-28T16:05:00.000Z"
+  - entity: genedx-holdings-corp-wgs-a-bull-case-2026-02-28
+    type: article
+    title: "GeneDx\_Holdings Corp. (WGS): A Bull Case Theory"
+    url: https://finance.yahoo.com/news/genedx-holdings-corp-wgs-bull-155924166.html
+    excerpt: ""
+    source_name: Insider Monkey
+    published: "2026-02-28T15:59:24.000Z"
+  - entity: q2-holdings-inc-qtwo-a-bull-case-th-2026-02-28
+    type: article
+    title: "Q2 Holdings, Inc. (QTWO): A Bull Case Theory"
+    url: https://finance.yahoo.com/news/q2-holdings-inc-qtwo-bull-155909016.html
+    excerpt: ""
+    source_name: Insider Monkey
+    published: "2026-02-28T15:59:09.000Z"
+  - entity: rambus-inc-rmbs-a-bull-case-theory-2026-02-28
+    type: article
+    title: "Rambus Inc. (RMBS): A\_Bull\_Case Theory"
+    url: https://finance.yahoo.com/news/rambus-inc-rmbs-bull-case-155850551.html
+    excerpt: ""
+    source_name: Insider Monkey
+    published: "2026-02-28T15:58:50.000Z"
+  - entity: need-a-side-hustle-to-support-your-retir-2026-02-28
+    type: article
+    title: Need a side hustle to support your retirement dreams? Here&#x2019;s how to find work right now.
+    url: >-
+      https://www.marketwatch.com/story/need-a-side-hustle-to-support-your-retirement-dreams-heres-how-to-find-work-right-now-6438bea8?mod=mw_rss_topstories
+    excerpt: 7 tips for navigating this tricky job market.
+    source_name: MarketWatch
+    published: "2026-02-28T16:19:00.000Z"
+  - entity: my-grandpa-retired-happily-at-70-with-7-2026-02-28
+    type: article
+    title: My grandpa retired happily at 70 with $750K after working as a missionary. I know where most Americans go wrong.
+    url: >-
+      https://www.marketwatch.com/story/my-grandpa-retired-happy-at-70-with-750k-and-hes-doing-just-fine-i-know-where-most-americans-go-wrong-c5774943?mod=mw_rss_topstories
+    excerpt: "&#x201c;You could even retire at 55 with $500,000 and be perfectly fine. Am I right?&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-28T16:06:00.000Z"
+  - entity: berkshire-hathaway-shrinks-cash-pile-in-2026-02-28
+    type: article
+    title: >-
+      Berkshire Hathaway shrinks cash pile in Buffett&#x2019;s last act as CEO. Here&#x2019;s how successor Greg Abel is
+      now looking to spend.
+    url: >-
+      https://www.marketwatch.com/story/berkshire-hathaway-shrinks-cash-pile-in-buffetts-last-act-as-ceo-heres-how-successor-greg-abel-is-now-looking-to-spend-477eeaf3?mod=mw_rss_topstories
+    excerpt: >-
+      Company&#x2019;s cash hoard at end of 2025 &#x2014; which Abel noted was not a sign of an investment retreat
+      &#x2014; was down 2.1% from September to $373.3 billion.
+    source_name: MarketWatch
+    published: "2026-02-28T16:06:00.000Z"
+  - entity: her-accountant-went-to-prison-now-the-i-2026-02-28
+    type: article
+    title: Her accountant went to prison. Now the IRS is coming after her for $328,000.
+    url: >-
+      https://www.marketwatch.com/story/her-accountant-went-to-prison-now-the-irs-is-coming-after-her-for-328-000-56e9ba11?mod=mw_rss_topstories
+    excerpt: >-
+      She didn&#x2019;t intend to evade taxes when she hired the accountant in 1993, but she&#x2019;s still on the hook
+      for his actions.
+    source_name: MarketWatch
+    published: "2026-02-28T16:03:00.000Z"
+  - entity: stanley-druckenmiller-says-this-is-how-h-2026-02-28
+    type: article
+    title: Stanley Druckenmiller says this is how he&#x2019;d build a portfolio from scratch right now
+    url: >-
+      https://www.marketwatch.com/story/stanley-druckenmiller-says-this-is-how-hed-build-a-portfolio-from-scratch-right-now-98c23d33?mod=mw_rss_topstories
+    excerpt: >-
+      The legendary investor says he&#x2019;s been shifting his investment focus and AI is no longer playing a starring
+      role.
+    source_name: MarketWatch
+    published: "2026-02-28T15:38:00.000Z"
+  - entity: trump-calls-for-regime-change-after-u-s-2026-02-28
+    type: article
+    title: >-
+      Trump calls for regime change after U.S.-Israel attack on Iran. Markets should brace for more than June&#x2019;s
+      brief military campaign.
+    url: >-
+      https://www.marketwatch.com/story/trump-says-massive-strike-against-iran-underway-bitcoin-plunge-offers-a-glimpse-of-how-markets-could-react-25d9ed1c?mod=mw_rss_topstories
+    excerpt: >-
+      The next 24 to 48 hours of conflict will be crucial for markets after the U.S. and Israel launched military
+      strikes against Iran.
+    source_name: MarketWatch
+    published: "2026-02-28T15:36:00.000Z"
+  - entity: x2018-i-have-a-legal-and-a-moral-quest-2026-02-28
+    type: article
+    title: >-
+      &#x2018;I have a legal and a moral question&#x2019;: My dad left when I was 9, reconnected with me in my 50s and
+      now needs money. What do I owe him?
+    url: >-
+      https://www.marketwatch.com/story/i-have-a-legal-and-a-moral-question-my-dad-left-when-i-was-9-reconnected-with-me-in-my-50s-and-now-needs-money-what-do-i-owe-him-ca780520?mod=mw_rss_topstories
+    excerpt: >-
+      &#x201c;After the divorce was finalized, he and his partner moved out of state to a place where there would be no
+      child-support enforcement.&#x201d;
+    source_name: MarketWatch
+    published: "2026-02-28T15:30:00.000Z"
+  - entity: this-could-be-nvidia-x2019-s-next-big-m-2026-02-28
+    type: article
+    title: This could be Nvidia&#x2019;s next big move, with the stock in search of a positive catalyst
+    url: >-
+      https://www.marketwatch.com/story/this-could-be-nvidias-next-big-move-with-the-stock-in-search-of-a-positive-catalyst-11caa4ac?mod=mw_rss_topstories
+    excerpt: >-
+      A report says Nvidia is planning a new chip platform that seeks to address evolving customer needs as the AI era
+      transitions more toward inference workloads.
+    source_name: MarketWatch
+    published: "2026-02-28T15:24:00.000Z"
+  - entity: after-46-years-working-i-x2019-m-not-r-2026-02-28
+    type: article
+    title: >-
+      After 46 years working, I&#x2019;m not retiring &#x2014; instead, I take a vacation every month. Is that a good
+      life in your 70s?
+    url: >-
+      https://www.marketwatch.com/story/after-46-years-working-im-not-retiring-instead-i-take-a-vacation-every-month-is-that-a-good-life-in-your-70s-447f7c75?mod=mw_rss_topstories
+    excerpt: "&#x201c;I&#x2019;ve owned my own company for the last 15 years. It&#x2019;s worth $8.5 million.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-02-28T15:05:00.000Z"
+  - entity: inside-north-america-s-first-fully-integ-2026-02-28
+    type: article
+    title: Inside North America’s First Fully Integrated Rare Earth Facility
+    url: https://oilprice.com/Interviews/Inside-North-Americas-First-Fully-Integrated-Rare-Earth-Facility.html
+    excerpt: >-
+      For decades, the West has been sleepwalking into dependency. While we built the world’s most advanced fighter
+      jets, smartphones, and electric vehicles, we quietly surrendered the most important compon
+    source_name: OilPrice.com
+    published: "2026-02-28T16:01:00.000Z"
+  - entity: can-rental-batteries-close-the-global-el-2026-02-28
+    type: article
+    title: Can Rental Batteries Close the Global Electricity Gap?
+    url: https://oilprice.com/Energy/Energy-General/Can-Rental-Batteries-Close-the-Global-Electricity-Gap.html
+    excerpt: >-
+      There are still many areas of the world where people do not have access to electricity, due to a lack of funding
+      for the necessary transmission infrastructure and several other challenges. Now, some c
+    source_name: OilPrice.com
+    published: "2026-02-28T16:00:00.000Z"
+  - entity: oil-markets-brace-for-impact-as-u-s-is-2026-02-28
+    type: article
+    title: Oil Markets Brace for Impact as U.S., Israel Attack Iran
+    url: https://oilprice.com/Energy/Crude-Oil/Oil-Markets-Brace-for-Impact-as-US-Israel-Attack-Iran.html
+    excerpt: >-
+      1m ago 10:25am CST World’s Most Critical Oil Route Under Operational Freeze There is still no verified
+      confirmation of mines or a physical blockade in the Strait of Hormuz, but the operational impact 
+    source_name: OilPrice.com
+    published: "2026-02-28T14:21:00.000Z"
+  - entity: oil-markets-brace-for-volatility-as-u-s-2026-02-28
+    type: article
+    title: Oil Markets Brace for Volatility As U.S.-Israel Launch Strikes Across Iran
+    url: >-
+      https://oilprice.com/Energy/Crude-Oil/Oil-Markets-Brace-for-Volatility-As-US-Israel-Launch-Strikes-Across-Iran.html
+    excerpt: >-
+      Global energy markets are set to see significant volatility following a United States-Israel coordinated wave of
+      military strikes across Iran early this morning. The attack, which targeted multiple ci
+    source_name: OilPrice.com
+    published: "2026-02-28T07:17:00.000Z"
+  - entity: how-america-s-action-in-venezuela-guaran-2026-02-28
+    type: article
+    title: How America’s Action in Venezuela Guaranteed Guyana’s Oil Future
+    url: https://oilprice.com/Energy/Energy-General/How-Americas-Action-in-Venezuela-Guaranteed-Guyanas-Oil-Future.html
+    excerpt: >-
+      Once one of South America’s poorest countries, Guyana is now ranked among the world’s richest because of the vast
+      petroleum wealth contained in its territorial waters. A swath of major oil discoveries
+    source_name: OilPrice.com
+    published: "2026-02-28T00:00:00.000Z"
+  - entity: openai-s-sam-altman-announces-pentagon-d-2026-02-28
+    type: article
+    title: OpenAI’s Sam Altman announces Pentagon deal with ‘technical safeguards’
+    url: https://techcrunch.com/2026/02/28/openais-sam-altman-announces-pentagon-deal-with-technical-safeguards/
+    excerpt: >-
+      OpenAI's CEO claims its new defense contract includes protections addressing the same issues that became a
+      flashpoint for Anthropic.
+    source_name: TechCrunch
+    published: "2026-02-28T16:17:36.000Z"
+  - entity: google-quantum-proofs-https-by-squeezing-2026-02-28
+    type: article
+    title: Google quantum-proofs HTTPS by squeezing 2.5kB of data into 64-byte space
+    url: https://arstechnica.com/security/2026/02/google-is-using-clever-math-to-quantum-proof-https-certificates/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-02-28T01:26:41.000Z"
+  - entity: the-air-forces-new-icbm-is-nearly-ready-2026-02-28
+    type: article
+    title: The Air Force's new ICBM is nearly ready to fly, but there’s nowhere to put it
+    url: >-
+      https://arstechnica.com/space/2026/02/the-air-forces-new-icbm-is-nearly-ready-to-fly-but-theres-nowhere-to-put-them/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-02-28T00:32:24.000Z"
