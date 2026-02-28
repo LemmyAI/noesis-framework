@@ -1,0 +1,170 @@
+seed:
+  name: news-week9-day-2026-02-28-hour-02
+  label: Daily News — 2026-02-28 02:00 (Week 9, 2026)
+  namespace: news.week9.day-2026-02-28
+  description: "Auto-gathered news: 8 stories, 2026-02-28 to 2026-02-28"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week9
+    extends: news
+  - namespace: news.week9.day-2026-02-28
+    extends: news.week9
+entities:
+  - id: at-least-11-killed-after-military-cargo-2026-02-28
+    type: Fact
+    name: At least 11 killed after military cargo plane crashes in Bolivia
+    category: geopolitics
+    description: The Bolivia Air Force plane reportedly hit vehicles on a nearby motorway.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T01:20:02.000Z"
+      precision: day
+  - id: a-delicate-balance-for-canada-and-a-w-2026-02-28
+    type: Event
+    name: A 'delicate' balance for Canada and a 'win-win' for Modi as Carney visits India
+    category: geopolitics
+    description: >-
+      The two countries are repairing a strained relationship as they also seek to reduce their trade reliance on the
+      US.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T00:03:55.000Z"
+      precision: day
+  - id: trump-administration-charges-30-more-peo-2026-02-28
+    type: Event
+    name: Trump administration charges 30 more people for Minnesota church protest
+    category: geopolitics
+    description: >-
+      The expanded indictment targets protesters who rallied at Cities Church in St Paul against Trump&#039;s
+      immigration surge.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T01:06:22.000Z"
+      precision: day
+  - id: trump-iran-and-geopolitical-mind-games-2026-02-28
+    type: Event
+    name: Trump, Iran and geopolitical mind games
+    category: geopolitics
+    description: Incoherent messaging and inconsistent policy positions - Trump’s chaotic Iran gambit.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T00:30:16.000Z"
+      precision: day
+  - id: pakistan-afghanistan-live-calls-for-dia-2026-02-28
+    type: Fact
+    name: "Pakistan-Afghanistan live: Calls for dialogue amid deadly border clashes"
+    category: geopolitics
+    description: >-
+      Pakistan said it targeted Taliban forces in Afghanistan&#039;s Kabul, border regions; UN chief says civilians also
+      impacted.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T00:00:00.000Z"
+      precision: day
+  - id: my-brother-is-paranoid-alone-and-has-fo-2026-02-28
+    type: Event
+    name: My brother is paranoid, alone and has forgotten that he sold his house. How can we help?
+    category: finance.markets
+    description: His lawyer said, &#x201c;He&#x2019;s gone off the deep end.&#x201d;
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T00:00:00.000Z"
+      precision: day
+  - id: how-america-s-action-in-venezuela-guaran-2026-02-28
+    type: Event
+    name: How America’s Action in Venezuela Guaranteed Guyana’s Oil Future
+    category: finance.energy
+    description: >-
+      Once one of South America’s poorest countries, Guyana is now ranked among the world’s richest because of the vast
+      petroleum wealth contained in its territorial waters. A swath of major oil discoveries in the offshore Stabroek
+      Block by operator ExxonMobil, with partners Chevron and CNOOC, saw Guyana 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T00:00:00.000Z"
+      precision: day
+  - id: the-air-forces-new-icbm-is-nearly-ready-2026-02-28
+    type: Event
+    name: The Air Force's new ICBM is nearly ready to fly, but there’s nowhere to put it
+    category: technology
+    description: The Air Force's new ICBM is nearly ready to fly, but there’s nowhere to put it
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-02-28T00:32:24.000Z"
+      precision: day
+sources:
+  - entity: at-least-11-killed-after-military-cargo-2026-02-28
+    type: article
+    title: At least 11 killed after military cargo plane crashes in Bolivia
+    url: https://www.bbc.com/news/articles/c0rjpxxpp49o
+    excerpt: The Bolivia Air Force plane reportedly hit vehicles on a nearby motorway.
+    source_name: BBC News
+    published: "2026-02-28T01:20:02.000Z"
+  - entity: a-delicate-balance-for-canada-and-a-w-2026-02-28
+    type: article
+    title: A 'delicate' balance for Canada and a 'win-win' for Modi as Carney visits India
+    url: https://www.bbc.com/news/articles/c1l7q871gnro
+    excerpt: >-
+      The two countries are repairing a strained relationship as they also seek to reduce their trade reliance on the
+      US.
+    source_name: BBC News
+    published: "2026-02-28T00:03:55.000Z"
+  - entity: trump-administration-charges-30-more-peo-2026-02-28
+    type: article
+    title: Trump administration charges 30 more people for Minnesota church protest
+    url: https://www.aljazeera.com/news/2026/2/28/trump-administration-charges-30-more-people-for-minnesota-church-protest
+    excerpt: >-
+      The expanded indictment targets protesters who rallied at Cities Church in St Paul against Trump&#039;s
+      immigration surge.
+    source_name: Al Jazeera
+    published: "2026-02-28T01:06:22.000Z"
+  - entity: trump-iran-and-geopolitical-mind-games-2026-02-28
+    type: article
+    title: Trump, Iran and geopolitical mind games
+    url: https://www.aljazeera.com/video/the-listening-post/2026/2/28/trump-iran-and-geopolitical-mind-games
+    excerpt: Incoherent messaging and inconsistent policy positions - Trump’s chaotic Iran gambit.
+    source_name: Al Jazeera
+    published: "2026-02-28T00:30:16.000Z"
+  - entity: pakistan-afghanistan-live-calls-for-dia-2026-02-28
+    type: article
+    title: "Pakistan-Afghanistan live: Calls for dialogue amid deadly border clashes"
+    url: >-
+      https://www.aljazeera.com/news/liveblog/2026/2/28/pakistan-afghanistan-live-calls-for-dialogue-amid-deadly-border-clashes
+    excerpt: >-
+      Pakistan said it targeted Taliban forces in Afghanistan&#039;s Kabul, border regions; UN chief says civilians also
+      impacted.
+    source_name: Al Jazeera
+    published: "2026-02-28T00:00:00.000Z"
+  - entity: my-brother-is-paranoid-alone-and-has-fo-2026-02-28
+    type: article
+    title: My brother is paranoid, alone and has forgotten that he sold his house. How can we help?
+    url: >-
+      https://www.marketwatch.com/story/my-sister-and-i-are-his-only-family-my-brother-is-paranoid-and-forgot-he-sold-his-house-what-can-i-do-006a8d3a?mod=mw_rss_topstories
+    excerpt: His lawyer said, &#x201c;He&#x2019;s gone off the deep end.&#x201d;
+    source_name: MarketWatch
+    published: "2026-02-28T00:00:00.000Z"
+  - entity: how-america-s-action-in-venezuela-guaran-2026-02-28
+    type: article
+    title: How America’s Action in Venezuela Guaranteed Guyana’s Oil Future
+    url: https://oilprice.com/Energy/Energy-General/How-Americas-Action-in-Venezuela-Guaranteed-Guyanas-Oil-Future.html
+    excerpt: >-
+      Once one of South America’s poorest countries, Guyana is now ranked among the world’s richest because of the vast
+      petroleum wealth contained in its territorial waters. A swath of major oil discoveries
+    source_name: OilPrice.com
+    published: "2026-02-28T00:00:00.000Z"
+  - entity: the-air-forces-new-icbm-is-nearly-ready-2026-02-28
+    type: article
+    title: The Air Force's new ICBM is nearly ready to fly, but there’s nowhere to put it
+    url: >-
+      https://arstechnica.com/space/2026/02/the-air-forces-new-icbm-is-nearly-ready-to-fly-but-theres-nowhere-to-put-them/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-02-28T00:32:24.000Z"
