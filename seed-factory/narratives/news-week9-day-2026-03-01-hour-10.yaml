@@ -1,0 +1,536 @@
+seed:
+  name: news-week9-day-2026-03-01-hour-10
+  label: Daily News — 2026-03-01 10:00 (Week 9, 2026)
+  namespace: news.week9.day-2026-03-01
+  description: "Auto-gathered news: 25 stories, 2026-03-01 to 2026-03-01"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week9
+    extends: news
+  - namespace: news.week9.day-2026-03-01
+    extends: news.week9
+entities:
+  - id: ayatollah-khameneis-iron-grip-on-power-2026-03-01
+    type: Event
+    name: Ayatollah Khamenei's iron grip on power in Iran comes to an end
+    category: geopolitics
+    description: >-
+      Iranian state TV confirms the supreme leader has been killed on the first day of massive US and Israeli air
+      strikes on the country.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T01:47:42.000Z"
+      precision: day
+  - id: what-we-know-so-far-supreme-leader-kham-2026-03-01
+    type: Decision
+    name: "What we know so far: Supreme Leader Khamenei killed, as Iran launches retaliatory strikes"
+    category: geopolitics
+    description: >-
+      Iran responds by launching missiles and drones towards Israel and four Gulf Arab countries that host US military
+      bases.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T03:57:42.000Z"
+      precision: day
+  - id: iran-says-us-and-israel-strikes-hit-scho-2026-03-01
+    type: Claim
+    name: Iran says US and Israel strikes hit school killing 108
+    category: geopolitics
+    description: There is no confirmation by the US or Israel of the strike on the school located near elite military troops.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T02:34:04.000Z"
+      precision: day
+  - id: wellness-peptide-craze-why-people-are-i-2026-03-01
+    type: Event
+    name: "Wellness peptide craze: Why people are injecting drugs 'not for human consumption'"
+    category: geopolitics
+    description: >-
+      Growing numbers of people are injecting unregulated peptides for health reasons - but one expert says they are
+      "lab rats".
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T00:51:29.000Z"
+      precision: day
+  - id: why-is-whatsapps-privacy-policy-facing-2026-03-01
+    type: Event
+    name: Why is WhatsApp's privacy policy facing a legal challenge in India?
+    category: geopolitics
+    description: A 2021 policy update requires users to share data with Meta for ads purposes to continue using the app.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T00:21:43.000Z"
+      precision: day
+  - id: flights-in-and-out-of-middle-east-cancel-2026-03-01
+    type: Event
+    name: Flights in and out of Middle East cancelled and diverted after Iran strikes
+    category: finance
+    description: BA, Virgin Atlantic and Wizz Air are among major airlines to overhaul their schedules in light of the attacks.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T08:49:32.000Z"
+      precision: day
+  - id: a-firm-hiring-blind-staff-went-bust-bu-2026-03-01
+    type: Event
+    name: A firm hiring blind staff went bust - but its mission lives on
+    category: finance
+    description: >-
+      The business had been running for over 150 years before it collapsed, so one former employee took matters into her
+      own hands.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T02:39:22.000Z"
+      precision: day
+  - id: investment-in-ai-resistant-halo-compan-2026-03-01
+    type: Event
+    name: Investment in AI-resistant ‘Halo’ companies helps push UK and EU markets to record highs
+    category: finance
+    description: >-
+      <p>Investors are shifting toward physical assets that are partially insulated from disruption, says Goldman
+      Sachs</p><p>Investors have a new mantra as they prepare for AI to shake up the global economy – the Halo
+      trade.</p><p>Interest in Halo – short for “heavy assets, low obsolescence” - has risen 
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T07:00:36.000Z"
+      precision: day
+  - id: hundreds-of-thousands-of-travellers-stra-2026-03-01
+    type: Event
+    name: Hundreds of thousands of travellers stranded or diverted amid air space closures in Middle East
+    category: finance
+    description: >-
+      <p>Chaos as key transit hubs in Dubai, Abu Dhabi and Doha close, and more than 1,000 flights by major Middle
+      Eastern airlines cancelled</p><ul><li><p><a
+      href="https://www.theguardian.com/us-news/2026/feb/28/khamenei-likely-killed-us-israel-iran-strikes">Full report:
+      Iran state media confirms killing
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T04:24:36.000Z"
+      precision: day
+  - id: cleaning-superstore-warning-over-miss-2026-03-01
+    type: Event
+    name: "‘Cleaning Superstore’: warning over missed delivery text scam on WhatsApp"
+    category: finance
+    description: >-
+      <p>The text mimics a common fraud, but differs in that criminals appear to have hacked a genuine business
+      account</p><p>John the delivery driver has tried to drop off something at your home from a company called Cleaning
+      Superstore but you missed him, according to the message you have received via W
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T07:00:33.000Z"
+      precision: day
+  - id: us-israel-attacks-on-iran-day-2-khamen-2026-03-01
+    type: Fact
+    name: "US-Israel attacks on Iran, day 2: Khamenei is killed, Iran retaliates"
+    category: geopolitics
+    description: >-
+      Iran carries out retaliatory attacks as supreme leader is killed in US and Israeli attacks pushing the region on
+      edge.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T09:10:06.000Z"
+      precision: day
+  - id: more-blasts-rock-dubai-doha-and-manama-2026-03-01
+    type: Event
+    name: More blasts rock Dubai, Doha and Manama as Iran targets US assets in Gulf
+    category: geopolitics
+    description: >-
+      Iran&#039;s retaliatory attacks on US assets in the region continue for a second day as fears of a wider conflict
+      rise.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T08:44:52.000Z"
+      precision: day
+  - id: iran-begins-40-day-mourning-after-khamen-2026-03-01
+    type: Fact
+    name: Iran begins 40-day mourning after Khamenei killed in US-Israeli attack
+    category: geopolitics
+    description: >-
+      President Masoud Pezeshkian condemns killing of Iran&#039;s supreme leader as &#039;a great crime&#039;, according
+      to his office.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T08:33:17.000Z"
+      precision: day
+  - id: at-least-9-killed-in-pro-iran-protest-at-2026-03-01
+    type: Fact
+    name: At least 9 killed in pro-Iran protest at US consulate in Pakistan’s Karachi
+    category: geopolitics
+    description: >-
+      The protest erupted following assassination of Iran&#039;s Supreme Leader Ayatollah Ali Khamenei in joint
+      US-Israeli strikes.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T08:32:05.000Z"
+      precision: day
+  - id: thousands-in-iran-mourn-khamenei-s-killi-2026-03-01
+    type: Event
+    name: Thousands in Iran mourn Khamenei’s killing
+    category: geopolitics
+    description: Supreme leader killed in US-Israeli strikes; IRGC pledges fierce retaliation across the region.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T07:07:34.000Z"
+      precision: day
+  - id: despite-antiwar-maga-wing-trump-gets-re-2026-03-01
+    type: Event
+    name: Despite antiwar MAGA wing, Trump gets Republican support for Iran strikes
+    category: geopolitics
+    description: >-
+      Conservative opposition to war on Iran remains minimal as hawks heap praise on Trump for bombing, killing
+      Khamenei.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T06:24:43.000Z"
+      precision: day
+  - id: netanyahu-s-war-analysts-say-trump-s-ir-2026-03-01
+    type: Event
+    name: Netanyahu’s war? Analysts say Trump’s Iran strikes benefit Israel, not US
+    category: geopolitics
+    description: >-
+      War with Iran contradicts the US president&#039;s own criticism of regime change policies in the Middle East,
+      analysts say.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T02:14:32.000Z"
+      precision: day
+  - id: us-strikes-on-iran-lead-to-renewed-deman-2026-03-01
+    type: Event
+    name: US strikes on Iran lead to renewed demands for war powers legislation
+    category: geopolitics
+    description: Democratic lawmakers have largely condemned the strikes on Iran, emphasising the lack of congressional approval.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T01:48:20.000Z"
+      precision: day
+  - id: new-yorkers-protest-us-strikes-on-iran-2026-03-01
+    type: Event
+    name: New Yorkers protest US strikes on Iran
+    category: geopolitics
+    description: New Yorkers protested Saturday hours after US President Donald Trump ordered a wave of deadly strikes on Iran.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T00:33:46.000Z"
+      precision: day
+  - id: iranian-ambassador-to-un-calls-us-israel-2026-03-01
+    type: Event
+    name: Iranian Ambassador to UN calls US-Israeli attacks a ‘war crime’
+    category: geopolitics
+    description: >-
+      Iranian Ambassador to the United Nations, Amir-Saeid Iravani denounced US-Israeli military strikes across the
+      country.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T00:05:38.000Z"
+      precision: day
+  - id: ether-solana-xrp-surge-up-to-10-as-ma-2026-03-01
+    type: Event
+    name: Ether, solana, xrp surge up to 10% as majors recover Saturday's war-driven losses
+    category: finance.crypto
+    description: >-
+      Solana led major tokens with a 10.8% bounce, while ether reclaimed $2,000 and bitcoin climbed back above $66,800
+      ahead of traditional futures opens on Sunday.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T07:25:47.000Z"
+      precision: day
+  - id: polymarket-attracts-record-trading-worl-2026-03-01
+    type: Event
+    name: Polymarket attracts record trading 'world' volumes as U.S.-Iran bets top $529 million
+    category: finance.crypto
+    description: >-
+      A prediction market about military strikes on a sovereign nation now sits alongside presidential election bets as
+      one of the most-traded contracts the platform has ever hosted.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T04:19:51.000Z"
+      precision: day
+  - id: bitcoin-tops-68-000-after-iran-confirms-2026-03-01
+    type: Fact
+    name: Bitcoin tops $68,000 after Iran confirms leader killed in U.S., Israel airstrikes
+    category: finance.crypto
+    description: >-
+      The death of Iran's supreme leader opens the door to regime change, and markets are pricing in a shorter period of
+      tension.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T03:36:02.000Z"
+      precision: day
+  - id: here-x2019-s-how-much-you-could-pay-for-2026-03-01
+    type: Claim
+    name: Here&#x2019;s how much you could pay for a gallon of gas by May because of the attacks on Iran
+    category: finance.markets
+    description: >-
+      U.S.-Israel strikes against Iran will push up oil prices, as well as how much Americans pay for gasoline at the
+      pump: GasBuddy
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T09:04:00.000Z"
+      precision: day
+  - id: the-trap-anthropic-built-for-itself-2026-03-01
+    type: Event
+    name: The trap Anthropic built for itself
+    category: technology.ai
+    description: >-
+      Anthropic, OpenAI, Google DeepMind and others have long promised to govern themselves responsibly. Now, in the
+      absence of rules, there's not a lot to protect them.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T00:08:58.000Z"
+      precision: day
+narratives:
+  - name: Israel-Palestine Conflict
+    steps:
+      - from: thousands-in-iran-mourn-khamenei-s-killi-2026-03-01
+        to: at-least-9-killed-in-pro-iran-protest-at-2026-03-01
+        type: follows
+  - name: Crypto Markets
+    steps:
+      - from: bitcoin-tops-68-000-after-iran-confirms-2026-03-01
+        to: ether-solana-xrp-surge-up-to-10-as-ma-2026-03-01
+        type: causes
+sources:
+  - entity: ayatollah-khameneis-iron-grip-on-power-2026-03-01
+    type: article
+    title: Ayatollah Khamenei's iron grip on power in Iran comes to an end
+    url: https://www.bbc.com/news/articles/c3gdnpjvj4ko
+    excerpt: >-
+      Iranian state TV confirms the supreme leader has been killed on the first day of massive US and Israeli air
+      strikes on the country.
+    source_name: BBC News
+    published: "2026-03-01T01:47:42.000Z"
+  - entity: what-we-know-so-far-supreme-leader-kham-2026-03-01
+    type: article
+    title: "What we know so far: Supreme Leader Khamenei killed, as Iran launches retaliatory strikes"
+    url: https://www.bbc.com/news/articles/cx2dyz6p3weo
+    excerpt: >-
+      Iran responds by launching missiles and drones towards Israel and four Gulf Arab countries that host US military
+      bases.
+    source_name: BBC News
+    published: "2026-03-01T03:57:42.000Z"
+  - entity: iran-says-us-and-israel-strikes-hit-scho-2026-03-01
+    type: article
+    title: Iran says US and Israel strikes hit school killing 108
+    url: https://www.bbc.com/news/articles/c1l7rvqq51eo
+    excerpt: There is no confirmation by the US or Israel of the strike on the school located near elite military troops.
+    source_name: BBC News
+    published: "2026-03-01T02:34:04.000Z"
+  - entity: wellness-peptide-craze-why-people-are-i-2026-03-01
+    type: article
+    title: "Wellness peptide craze: Why people are injecting drugs 'not for human consumption'"
+    url: https://www.bbc.com/news/articles/cdr268m5pxro
+    excerpt: >-
+      Growing numbers of people are injecting unregulated peptides for health reasons - but one expert says they are
+      "lab rats".
+    source_name: BBC News
+    published: "2026-03-01T00:51:29.000Z"
+  - entity: why-is-whatsapps-privacy-policy-facing-2026-03-01
+    type: article
+    title: Why is WhatsApp's privacy policy facing a legal challenge in India?
+    url: https://www.bbc.com/news/articles/cp81wegj123o
+    excerpt: A 2021 policy update requires users to share data with Meta for ads purposes to continue using the app.
+    source_name: BBC News
+    published: "2026-03-01T00:21:43.000Z"
+  - entity: flights-in-and-out-of-middle-east-cancel-2026-03-01
+    type: article
+    title: Flights in and out of Middle East cancelled and diverted after Iran strikes
+    url: https://www.bbc.com/news/articles/c0rjpr575g9o
+    excerpt: BA, Virgin Atlantic and Wizz Air are among major airlines to overhaul their schedules in light of the attacks.
+    source_name: BBC Business
+    published: "2026-03-01T08:49:32.000Z"
+  - entity: a-firm-hiring-blind-staff-went-bust-bu-2026-03-01
+    type: article
+    title: A firm hiring blind staff went bust - but its mission lives on
+    url: https://www.bbc.com/news/articles/cpd8jpn0np1o
+    excerpt: >-
+      The business had been running for over 150 years before it collapsed, so one former employee took matters into her
+      own hands.
+    source_name: BBC Business
+    published: "2026-03-01T02:39:22.000Z"
+  - entity: investment-in-ai-resistant-halo-compan-2026-03-01
+    type: article
+    title: Investment in AI-resistant ‘Halo’ companies helps push UK and EU markets to record highs
+    url: >-
+      https://www.theguardian.com/business/2026/mar/01/investment-ai-resistant-halo-companies-uk-eu-markets-goldman-sachs
+    excerpt: >-
+      <p>Investors are shifting toward physical assets that are partially insulated from disruption, says Goldman
+      Sachs</p><p>Investors have a new mantra as they prepare for AI to shake up the global econom
+    source_name: The Guardian
+    published: "2026-03-01T07:00:36.000Z"
+  - entity: hundreds-of-thousands-of-travellers-stra-2026-03-01
+    type: article
+    title: Hundreds of thousands of travellers stranded or diverted amid air space closures in Middle East
+    url: >-
+      https://www.theguardian.com/us-news/2026/mar/01/hundreds-of-thousands-of-travellers-stranded-or-diverted-amid-air-space-closures-in-middle-east
+    excerpt: >-
+      <p>Chaos as key transit hubs in Dubai, Abu Dhabi and Doha close, and more than 1,000 flights by major Middle
+      Eastern airlines cancelled</p><ul><li><p><a href="https://www.theguardian.com/us-news/2026/
+    source_name: The Guardian
+    published: "2026-03-01T04:24:36.000Z"
+  - entity: cleaning-superstore-warning-over-miss-2026-03-01
+    type: article
+    title: "‘Cleaning Superstore’: warning over missed delivery text scam on WhatsApp"
+    url: https://www.theguardian.com/money/2026/mar/01/cleaning-superstore-the-missed-delivery-text-scam-whatsapp
+    excerpt: >-
+      <p>The text mimics a common fraud, but differs in that criminals appear to have hacked a genuine business
+      account</p><p>John the delivery driver has tried to drop off something at your home from a com
+    source_name: The Guardian
+    published: "2026-03-01T07:00:33.000Z"
+  - entity: us-israel-attacks-on-iran-day-2-khamen-2026-03-01
+    type: article
+    title: "US-Israel attacks on Iran, day 2: Khamenei is killed, Iran retaliates"
+    url: https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-day-2-khamenei-is-killed-iran-retaliates
+    excerpt: >-
+      Iran carries out retaliatory attacks as supreme leader is killed in US and Israeli attacks pushing the region on
+      edge.
+    source_name: Al Jazeera
+    published: "2026-03-01T09:10:06.000Z"
+  - entity: more-blasts-rock-dubai-doha-and-manama-2026-03-01
+    type: article
+    title: More blasts rock Dubai, Doha and Manama as Iran targets US assets in Gulf
+    url: https://www.aljazeera.com/news/2026/3/1/more-blasts-rock-dubai-doha-and-manama-as-iran-targets-us-assets-in-gulf
+    excerpt: >-
+      Iran&#039;s retaliatory attacks on US assets in the region continue for a second day as fears of a wider conflict
+      rise.
+    source_name: Al Jazeera
+    published: "2026-03-01T08:44:52.000Z"
+  - entity: iran-begins-40-day-mourning-after-khamen-2026-03-01
+    type: article
+    title: Iran begins 40-day mourning after Khamenei killed in US-Israeli attack
+    url: https://www.aljazeera.com/news/2026/3/1/iran-begins-40-day-mourning-after-khamenei-killed-in-us-israeli-attack
+    excerpt: >-
+      President Masoud Pezeshkian condemns killing of Iran&#039;s supreme leader as &#039;a great crime&#039;, according
+      to his office.
+    source_name: Al Jazeera
+    published: "2026-03-01T08:33:17.000Z"
+  - entity: at-least-9-killed-in-pro-iran-protest-at-2026-03-01
+    type: article
+    title: At least 9 killed in pro-Iran protest at US consulate in Pakistan’s Karachi
+    url: https://www.aljazeera.com/news/2026/3/1/at-least-9-killed-in-pro-iran-protest-at-us-consulate-in-pakistans-karachi
+    excerpt: >-
+      The protest erupted following assassination of Iran&#039;s Supreme Leader Ayatollah Ali Khamenei in joint
+      US-Israeli strikes.
+    source_name: Al Jazeera
+    published: "2026-03-01T08:32:05.000Z"
+  - entity: thousands-in-iran-mourn-khamenei-s-killi-2026-03-01
+    type: article
+    title: Thousands in Iran mourn Khamenei’s killing
+    url: https://www.aljazeera.com/gallery/2026/3/1/thousands-in-iran-mourn-khameneis-killing
+    excerpt: Supreme leader killed in US-Israeli strikes; IRGC pledges fierce retaliation across the region.
+    source_name: Al Jazeera
+    published: "2026-03-01T07:07:34.000Z"
+  - entity: despite-antiwar-maga-wing-trump-gets-re-2026-03-01
+    type: article
+    title: Despite antiwar MAGA wing, Trump gets Republican support for Iran strikes
+    url: https://www.aljazeera.com/news/2026/3/1/despite-antiwar-maga-wing-trump-gets-republican-support-for-iran-strikes
+    excerpt: >-
+      Conservative opposition to war on Iran remains minimal as hawks heap praise on Trump for bombing, killing
+      Khamenei.
+    source_name: Al Jazeera
+    published: "2026-03-01T06:24:43.000Z"
+  - entity: netanyahu-s-war-analysts-say-trump-s-ir-2026-03-01
+    type: article
+    title: Netanyahu’s war? Analysts say Trump’s Iran strikes benefit Israel, not US
+    url: https://www.aljazeera.com/news/2026/3/1/netanyahus-war-analysts-say-trumps-iran-strikes-benefit-israel-not-us
+    excerpt: >-
+      War with Iran contradicts the US president&#039;s own criticism of regime change policies in the Middle East,
+      analysts say.
+    source_name: Al Jazeera
+    published: "2026-03-01T02:14:32.000Z"
+  - entity: us-strikes-on-iran-lead-to-renewed-deman-2026-03-01
+    type: article
+    title: US strikes on Iran lead to renewed demands for war powers legislation
+    url: https://www.aljazeera.com/news/2026/3/1/us-strikes-on-iran-lead-to-renewed-demands-for-war-powers-legislation
+    excerpt: Democratic lawmakers have largely condemned the strikes on Iran, emphasising the lack of congressional approval.
+    source_name: Al Jazeera
+    published: "2026-03-01T01:48:20.000Z"
+  - entity: new-yorkers-protest-us-strikes-on-iran-2026-03-01
+    type: article
+    title: New Yorkers protest US strikes on Iran
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/1/new-yorkers-protest-us-strikes-on-iran
+    excerpt: New Yorkers protested Saturday hours after US President Donald Trump ordered a wave of deadly strikes on Iran.
+    source_name: Al Jazeera
+    published: "2026-03-01T00:33:46.000Z"
+  - entity: iranian-ambassador-to-un-calls-us-israel-2026-03-01
+    type: article
+    title: Iranian Ambassador to UN calls US-Israeli attacks a ‘war crime’
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/1/iranian-ambassador-to-un-calls-us-israeli-attacks-a-war
+    excerpt: >-
+      Iranian Ambassador to the United Nations, Amir-Saeid Iravani denounced US-Israeli military strikes across the
+      country.
+    source_name: Al Jazeera
+    published: "2026-03-01T00:05:38.000Z"
+  - entity: ether-solana-xrp-surge-up-to-10-as-ma-2026-03-01
+    type: article
+    title: Ether, solana, xrp surge up to 10% as majors recover Saturday's war-driven losses
+    url: >-
+      https://www.coindesk.com/markets/2026/03/01/ether-solana-xrp-surge-up-to-10-as-majors-recover-saturday-s-war-driven-losses
+    excerpt: >-
+      Solana led major tokens with a 10.8% bounce, while ether reclaimed $2,000 and bitcoin climbed back above $66,800
+      ahead of traditional futures opens on Sunday.
+    source_name: CoinDesk
+    published: "2026-03-01T07:25:47.000Z"
+  - entity: polymarket-attracts-record-trading-worl-2026-03-01
+    type: article
+    title: Polymarket attracts record trading 'world' volumes as U.S.-Iran bets top $529 million
+    url: >-
+      https://www.coindesk.com/markets/2026/03/01/polymarket-attracts-record-trading-world-volumes-as-u-s-iran-bets-top-usd529-million
+    excerpt: >-
+      A prediction market about military strikes on a sovereign nation now sits alongside presidential election bets as
+      one of the most-traded contracts the platform has ever hosted.
+    source_name: CoinDesk
+    published: "2026-03-01T04:19:51.000Z"
+  - entity: bitcoin-tops-68-000-after-iran-confirms-2026-03-01
+    type: article
+    title: Bitcoin tops $68,000 after Iran confirms leader killed in U.S., Israel airstrikes
+    url: >-
+      https://www.coindesk.com/markets/2026/03/01/bitcoin-tops-usd68-000-after-iran-confirms-leader-killed-in-u-s-israel-airstrikes
+    excerpt: >-
+      The death of Iran's supreme leader opens the door to regime change, and markets are pricing in a shorter period of
+      tension.
+    source_name: CoinDesk
+    published: "2026-03-01T03:36:02.000Z"
+  - entity: here-x2019-s-how-much-you-could-pay-for-2026-03-01
+    type: article
+    title: Here&#x2019;s how much you could pay for a gallon of gas by May because of the attacks on Iran
+    url: >-
+      https://www.marketwatch.com/story/heres-how-much-you-could-pay-for-a-gallon-of-gas-by-may-because-of-the-attacks-on-iran-e12e976f?mod=mw_rss_topstories
+    excerpt: >-
+      U.S.-Israel strikes against Iran will push up oil prices, as well as how much Americans pay for gasoline at the
+      pump: GasBuddy
+    source_name: MarketWatch
+    published: "2026-03-01T09:04:00.000Z"
+  - entity: the-trap-anthropic-built-for-itself-2026-03-01
+    type: article
+    title: The trap Anthropic built for itself
+    url: https://techcrunch.com/2026/02/28/the-trap-anthropic-built-for-itself/
+    excerpt: >-
+      Anthropic, OpenAI, Google DeepMind and others have long promised to govern themselves responsibly. Now, in the
+      absence of rules, there's not a lot to protect them.
+    source_name: TechCrunch
+    published: "2026-03-01T00:08:58.000Z"
