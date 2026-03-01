@@ -1,0 +1,114 @@
+seed:
+  name: news-week9-day-2026-03-01-hour-02
+  label: Daily News — 2026-03-01 02:00 (Week 9, 2026)
+  namespace: news.week9.day-2026-03-01
+  description: "Auto-gathered news: 5 stories, 2026-03-01 to 2026-03-01"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week9
+    extends: news
+  - namespace: news.week9.day-2026-03-01
+    extends: news.week9
+entities:
+  - id: why-is-whatsapps-privacy-policy-facing-2026-03-01
+    type: Event
+    name: Why is WhatsApp's privacy policy facing a legal challenge in India?
+    category: geopolitics
+    description: A 2021 policy update requires users to share data with Meta for ads purposes to continue using the app.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T00:21:43.000Z"
+      precision: day
+  - id: hundreds-of-thousands-of-travellers-stra-2026-03-01
+    type: Event
+    name: Hundreds of thousands of travellers stranded or diverted amid air space closures in Middle East
+    category: finance
+    description: >-
+      <p>Chaos as key transit hubs in Dubai, Abu Dhabi and Doha close, and more than 1,000 flights by major Middle
+      Eastern airlines cancelled</p><ul><li><p><a
+      href="https://www.theguardian.com/us-news/2026/feb/28/khamenei-likely-killed-us-israel-iran-strikes">Full report:
+      US president announces death of t
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T00:09:27.000Z"
+      precision: day
+  - id: new-yorkers-protest-us-strikes-on-iran-2026-03-01
+    type: Event
+    name: New Yorkers protest US strikes on Iran
+    category: geopolitics
+    description: New Yorkers protested Saturday hours after US President Donald Trump ordered a wave of deadly strikes on Iran.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T00:33:46.000Z"
+      precision: day
+  - id: iranian-ambassador-to-un-calls-us-israel-2026-03-01
+    type: Event
+    name: Iranian Ambassador to UN calls US-Israeli attacks a ‘war crime’
+    category: geopolitics
+    description: >-
+      Iranian Ambassador to the United Nations, Amir-Saeid Iravani denounced US-Israeli military strikes across the
+      country.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T00:05:38.000Z"
+      precision: day
+  - id: the-trap-anthropic-built-for-itself-2026-03-01
+    type: Event
+    name: The trap Anthropic built for itself
+    category: technology.ai
+    description: >-
+      Anthropic, OpenAI, Google DeepMind and others have long promised to govern themselves responsibly. Now, in the
+      absence of rules, there's not a lot to protect them.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-01T00:08:58.000Z"
+      precision: day
+sources:
+  - entity: why-is-whatsapps-privacy-policy-facing-2026-03-01
+    type: article
+    title: Why is WhatsApp's privacy policy facing a legal challenge in India?
+    url: https://www.bbc.com/news/articles/cp81wegj123o
+    excerpt: A 2021 policy update requires users to share data with Meta for ads purposes to continue using the app.
+    source_name: BBC News
+    published: "2026-03-01T00:21:43.000Z"
+  - entity: hundreds-of-thousands-of-travellers-stra-2026-03-01
+    type: article
+    title: Hundreds of thousands of travellers stranded or diverted amid air space closures in Middle East
+    url: >-
+      https://www.theguardian.com/us-news/2026/mar/01/hundreds-of-thousands-of-travellers-stranded-or-diverted-amid-air-space-closures-in-middle-east
+    excerpt: >-
+      <p>Chaos as key transit hubs in Dubai, Abu Dhabi and Doha close, and more than 1,000 flights by major Middle
+      Eastern airlines cancelled</p><ul><li><p><a href="https://www.theguardian.com/us-news/2026/
+    source_name: The Guardian
+    published: "2026-03-01T00:09:27.000Z"
+  - entity: new-yorkers-protest-us-strikes-on-iran-2026-03-01
+    type: article
+    title: New Yorkers protest US strikes on Iran
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/1/new-yorkers-protest-us-strikes-on-iran
+    excerpt: New Yorkers protested Saturday hours after US President Donald Trump ordered a wave of deadly strikes on Iran.
+    source_name: Al Jazeera
+    published: "2026-03-01T00:33:46.000Z"
+  - entity: iranian-ambassador-to-un-calls-us-israel-2026-03-01
+    type: article
+    title: Iranian Ambassador to UN calls US-Israeli attacks a ‘war crime’
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/1/iranian-ambassador-to-un-calls-us-israeli-attacks-a-war
+    excerpt: >-
+      Iranian Ambassador to the United Nations, Amir-Saeid Iravani denounced US-Israeli military strikes across the
+      country.
+    source_name: Al Jazeera
+    published: "2026-03-01T00:05:38.000Z"
+  - entity: the-trap-anthropic-built-for-itself-2026-03-01
+    type: article
+    title: The trap Anthropic built for itself
+    url: https://techcrunch.com/2026/02/28/the-trap-anthropic-built-for-itself/
+    excerpt: >-
+      Anthropic, OpenAI, Google DeepMind and others have long promised to govern themselves responsibly. Now, in the
+      absence of rules, there's not a lot to protect them.
+    source_name: TechCrunch
+    published: "2026-03-01T00:08:58.000Z"
