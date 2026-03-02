@@ -1,0 +1,277 @@
+seed:
+  name: news-week10-day-2026-03-02-hour-02
+  label: Daily News — 2026-03-02 02:00 (Week 10, 2026)
+  namespace: news.week10.day-2026-03-02
+  description: "Auto-gathered news: 13 stories, 2026-03-02 to 2026-03-02"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week10
+    extends: news
+  - namespace: news.week10.day-2026-03-02
+    extends: news.week10
+entities:
+  - id: oil-prices-jump-after-ships-attacked-nea-2026-03-02
+    type: Event
+    name: Oil prices jump after ships attacked near Strait of Hormuz
+    category: geopolitics
+    description: Experts have warned that a prolonged conflict could push global energy prices even higher.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:36:19.000Z"
+      precision: day
+  - id: kidnapping-of-foreigners-soars-in-africa-2026-03-02
+    type: Event
+    name: Kidnapping of foreigners soars in Africa's lawless Sahel region
+    category: geopolitics
+    description: >-
+      Growing insecurity in the Sahel made 2025 one of the worst years on record for the abduction of foreigners in
+      Africa.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:02:10.000Z"
+      precision: day
+  - id: fury-on-pakistan-streets-20-dead-after-2026-03-02
+    type: Fact
+    name: Fury on Pakistan streets, 20 dead, after US-Israel strike kills Khamenei
+    category: geopolitics
+    description: At least 20 people killed across Pakistan as demonstrations over strike on Tehran spiral into violence.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T01:02:36.000Z"
+      precision: day
+  - id: israel-bombs-beirut-after-hezbollah-laun-2026-03-02
+    type: Decision
+    name: Israel bombs Beirut after Hezbollah launches rocket attack
+    category: geopolitics
+    description: This is a breaking news story.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:58:41.000Z"
+      precision: day
+  - id: dramatic-moment-iran-s-retaliatory-missi-2026-03-02
+    type: Event
+    name: Dramatic moment Iran’s retaliatory missile barrage hits Israel
+    category: geopolitics
+    description: Israelis filmed the moment an Iranian missile broke through Israel’s air defence systems to strike a target.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:44:01.000Z"
+      precision: day
+  - id: uk-pm-starmer-says-us-can-use-uk-bases-f-2026-03-02
+    type: Claim
+    name: UK PM Starmer says US can use UK bases for ‘defensive strikes’ on Iran
+    category: geopolitics
+    description: >-
+      UK Prime Minister Keir Starmer says he’s accepted a request from the US to let his country’s military bases be
+      used.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:42:33.000Z"
+      precision: day
+  - id: iranian-ballistic-missile-strike-on-west-2026-03-02
+    type: Event
+    name: Iranian ballistic missile strike on West Jerusalem
+    category: geopolitics
+    description: Several people have been injured after an Iranian ballistic missile struck a road in West Jerusalem.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:21:16.000Z"
+      precision: day
+  - id: trump-says-likely-more-us-casualties-at-2026-03-02
+    type: Claim
+    name: Trump says likely more US casualties, attacks on Iran will continue
+    category: geopolitics
+    description: >-
+      President Donald Trump has ⁠warned combat ⁠operations against Iran will continue until ‘all objectives ‌are
+      achieved’.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:12:18.000Z"
+      precision: day
+  - id: baby-and-patients-evacuated-as-israel-at-2026-03-02
+    type: Event
+    name: Baby and patients evacuated as Israel attacks Tehran hospital
+    category: geopolitics
+    description: >-
+      A baby in an incubator was evacuated along with patients from the Gandhi Hospital in northern Tehran after
+      strikes.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:05:20.000Z"
+      precision: day
+  - id: hezbollah-promises-to-confront-us-israe-2026-03-02
+    type: Event
+    name: Hezbollah promises to confront US, Israel over Khamenei killing
+    category: geopolitics
+    description: >-
+      The Lebanese armed group has not taken action against Israel or US assets since the attacks on Iran began on
+      Saturday.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:03:31.000Z"
+      precision: day
+  - id: us-israel-attack-iran-live-trump-vows-2026-03-02
+    type: Event
+    name: "US, Israel attack Iran live: Trump vows to continue attacks, avenge troops"
+    category: geopolitics
+    description: >-
+      Trump says attacks on Iran will continue until all of his objectives are met, as Tehran keeps up raids on US
+      assets.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:00:00.000Z"
+      precision: day
+  - id: how-china-s-rare-earth-ban-backfired-int-2026-03-02
+    type: Event
+    name: How China’s Rare Earth Ban Backfired into a U.S. Tech Breakthrough
+    category: finance.energy
+    description: >-
+      In a typical Chinese rare earth processing plant, 200 workers move through a maze of massive chemical tanks,
+      risking life and limb to produce the materials that power everything from fighter jets and missile components to
+      cellphones. Hundreds of these facilities operate across China, and they give B
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T01:00:00.000Z"
+      precision: day
+  - id: china-s-oil-buying-spree-may-be-running-2026-03-02
+    type: Claim
+    name: China’s Oil Buying Spree May Be Running Out of Steam
+    category: finance.energy
+    description: >-
+      China&#039;s imports last year broke yet another record, despite talk of waning oil demand. Since the start of
+      this year, the world’s biggest oil importer has continued buying crude at elevated rates, but this may be about to
+      change as prices extend their rally. Brent crude has been hovering around 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:00:00.000Z"
+      precision: day
+narratives:
+  - name: Energy Markets
+    steps:
+      - from: china-s-oil-buying-spree-may-be-running-2026-03-02
+        to: oil-prices-jump-after-ships-attacked-nea-2026-03-02
+        type: follows
+sources:
+  - entity: oil-prices-jump-after-ships-attacked-nea-2026-03-02
+    type: article
+    title: Oil prices jump after ships attacked near Strait of Hormuz
+    url: https://www.bbc.com/news/articles/c75evve6l63o
+    excerpt: Experts have warned that a prolonged conflict could push global energy prices even higher.
+    source_name: BBC News
+    published: "2026-03-02T00:36:19.000Z"
+  - entity: kidnapping-of-foreigners-soars-in-africa-2026-03-02
+    type: article
+    title: Kidnapping of foreigners soars in Africa's lawless Sahel region
+    url: https://www.bbc.com/news/articles/c0lj18d5lx3o
+    excerpt: >-
+      Growing insecurity in the Sahel made 2025 one of the worst years on record for the abduction of foreigners in
+      Africa.
+    source_name: BBC News
+    published: "2026-03-02T00:02:10.000Z"
+  - entity: fury-on-pakistan-streets-20-dead-after-2026-03-02
+    type: article
+    title: Fury on Pakistan streets, 20 dead, after US-Israel strike kills Khamenei
+    url: https://www.aljazeera.com/news/2026/3/2/fury-on-pakistan-streets-20-dead-after-us-israel-strike-kills-khamenei
+    excerpt: At least 20 people killed across Pakistan as demonstrations over strike on Tehran spiral into violence.
+    source_name: Al Jazeera
+    published: "2026-03-02T01:02:36.000Z"
+  - entity: israel-bombs-beirut-after-hezbollah-laun-2026-03-02
+    type: article
+    title: Israel bombs Beirut after Hezbollah launches rocket attack
+    url: https://www.aljazeera.com/news/2026/3/2/israel-bombs-beirut-after-hezbollah-launches-rocket-attack
+    excerpt: This is a breaking news story.
+    source_name: Al Jazeera
+    published: "2026-03-02T00:58:41.000Z"
+  - entity: dramatic-moment-iran-s-retaliatory-missi-2026-03-02
+    type: article
+    title: Dramatic moment Iran’s retaliatory missile barrage hits Israel
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/2/dramatic-moment-irans-retaliatory-missile-barrage-hits-israel
+    excerpt: Israelis filmed the moment an Iranian missile broke through Israel’s air defence systems to strike a target.
+    source_name: Al Jazeera
+    published: "2026-03-02T00:44:01.000Z"
+  - entity: uk-pm-starmer-says-us-can-use-uk-bases-f-2026-03-02
+    type: article
+    title: UK PM Starmer says US can use UK bases for ‘defensive strikes’ on Iran
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/3/2/uk-pm-starmer-says-us-can-use-uk-bases-for-defensive-strikes-on-iran
+    excerpt: >-
+      UK Prime Minister Keir Starmer says he’s accepted a request from the US to let his country’s military bases be
+      used.
+    source_name: Al Jazeera
+    published: "2026-03-02T00:42:33.000Z"
+  - entity: iranian-ballistic-missile-strike-on-west-2026-03-02
+    type: article
+    title: Iranian ballistic missile strike on West Jerusalem
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/2/iranian-ballistic-missile-strike-on-west-jerusalem
+    excerpt: Several people have been injured after an Iranian ballistic missile struck a road in West Jerusalem.
+    source_name: Al Jazeera
+    published: "2026-03-02T00:21:16.000Z"
+  - entity: trump-says-likely-more-us-casualties-at-2026-03-02
+    type: article
+    title: Trump says likely more US casualties, attacks on Iran will continue
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/3/2/trump-says-likely-more-us-casualties-attacks-on-iran-will-continue
+    excerpt: >-
+      President Donald Trump has ⁠warned combat ⁠operations against Iran will continue until ‘all objectives ‌are
+      achieved’.
+    source_name: Al Jazeera
+    published: "2026-03-02T00:12:18.000Z"
+  - entity: baby-and-patients-evacuated-as-israel-at-2026-03-02
+    type: article
+    title: Baby and patients evacuated as Israel attacks Tehran hospital
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/2/baby-and-patients-evacuated-as-israel-attacks-tehran-hospital
+    excerpt: >-
+      A baby in an incubator was evacuated along with patients from the Gandhi Hospital in northern Tehran after
+      strikes.
+    source_name: Al Jazeera
+    published: "2026-03-02T00:05:20.000Z"
+  - entity: hezbollah-promises-to-confront-us-israe-2026-03-02
+    type: article
+    title: Hezbollah promises to confront US, Israel over Khamenei killing
+    url: https://www.aljazeera.com/news/2026/3/2/hezbollah-promises-to-confront-us-israel-over-khamenei-killing
+    excerpt: >-
+      The Lebanese armed group has not taken action against Israel or US assets since the attacks on Iran began on
+      Saturday.
+    source_name: Al Jazeera
+    published: "2026-03-02T00:03:31.000Z"
+  - entity: us-israel-attack-iran-live-trump-vows-2026-03-02
+    type: article
+    title: "US, Israel attack Iran live: Trump vows to continue attacks, avenge troops"
+    url: https://www.aljazeera.com/news/liveblog/2026/3/2/us-israel-attack-iran-live
+    excerpt: >-
+      Trump says attacks on Iran will continue until all of his objectives are met, as Tehran keeps up raids on US
+      assets.
+    source_name: Al Jazeera
+    published: "2026-03-02T00:00:00.000Z"
+  - entity: how-china-s-rare-earth-ban-backfired-int-2026-03-02
+    type: article
+    title: How China’s Rare Earth Ban Backfired into a U.S. Tech Breakthrough
+    url: https://oilprice.com/Energy/Energy-General/How-Chinas-Rare-Earth-Ban-Backfired-into-a-US-Tech-Breakthrough.html
+    excerpt: >-
+      In a typical Chinese rare earth processing plant, 200 workers move through a maze of massive chemical tanks,
+      risking life and limb to produce the materials that power everything from fighter jets and 
+    source_name: OilPrice.com
+    published: "2026-03-02T01:00:00.000Z"
+  - entity: china-s-oil-buying-spree-may-be-running-2026-03-02
+    type: article
+    title: China’s Oil Buying Spree May Be Running Out of Steam
+    url: https://oilprice.com/Energy/Energy-General/Chinas-Oil-Buying-Spree-May-Be-Running-Out-of-Steam.html
+    excerpt: >-
+      China&#039;s imports last year broke yet another record, despite talk of waning oil demand. Since the start of
+      this year, the world’s biggest oil importer has continued buying crude at elevated rates,
+    source_name: OilPrice.com
+    published: "2026-03-02T00:00:00.000Z"
