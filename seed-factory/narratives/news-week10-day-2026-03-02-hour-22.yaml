@@ -1,0 +1,1669 @@
+seed:
+  name: news-week10-day-2026-03-02-hour-22
+  label: Daily News — 2026-03-02 22:00 (Week 10, 2026)
+  namespace: news.week10.day-2026-03-02
+  description: "Auto-gathered news: 78 stories, 2026-03-02 to 2026-03-02"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week10
+    extends: news
+  - namespace: news.week10.day-2026-03-02
+    extends: news.week10
+entities:
+  - id: israel-strikes-lebanon-after-hezbollah-r-2026-03-02
+    type: Event
+    name: Israel strikes Lebanon after Hezbollah rocket fire as Iran conflict widens
+    category: geopolitics
+    description: >-
+      Lebanese officials say 52 people were killed by Israeli strikes, while there are no reports of casualties in
+      Israel.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T18:53:27.000Z"
+      precision: day
+  - id: they-hit-so-hard-the-house-was-shaking-2026-03-02
+    type: Event
+    name: "'They hit so hard the house was shaking': Iranians describe impact of US-Israel attacks"
+    category: geopolitics
+    description: >-
+      People in Iran tell the BBC they hear explosions day and night, as the US and Israel continue striking the country
+      for a third day.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:54:20.000Z"
+      precision: day
+  - id: france-to-boost-nuclear-arsenal-and-exte-2026-03-02
+    type: Event
+    name: France to boost nuclear arsenal and extend deterrence to European allies
+    category: geopolitics
+    description: >-
+      Emmanuel Macron said eight countries could enjoy protection from France's nuclear umbrella - but that Paris would
+      retain sole decision-making power.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T18:16:14.000Z"
+      precision: day
+  - id: india-and-canada-reset-ties-with-landma-2026-03-02
+    type: Event
+    name: India and Canada reset ties with 'landmark' nuclear energy deal
+    category: geopolitics
+    description: >-
+      A host of deals, including one to supply India with uranium, is unveiled as Mark Carney meets Narendra Modi in
+      Delhi.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T20:18:12.000Z"
+      precision: day
+  - id: at-least-169-people-killed-in-south-suda-2026-03-02
+    type: Fact
+    name: At least 169 people killed in South Sudan 'surprise' attack
+    category: geopolitics
+    description: Peacekeepers are sheltering about 1,000 civilians near their base and providing emergency care.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T16:11:52.000Z"
+      precision: day
+  - id: lost-rembrandt-painting-rediscovered-aft-2026-03-02
+    type: Event
+    name: Lost Rembrandt painting rediscovered after 65 years
+    category: geopolitics
+    description: The painting, created by the Dutch master in 1633, had disappeared after being sold  in 1961.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T16:54:40.000Z"
+      precision: day
+  - id: a-rap-star-might-just-beat-a-former-pm-2026-03-02
+    type: Claim
+    name: A rap star might just beat a former PM - what this says about Nepal's Gen Z election
+    category: geopolitics
+    description: Many hope the vote could bring change after protests last year, and shatter decades of political paralysis.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T06:34:28.000Z"
+      precision: day
+  - id: oil-and-gas-prices-jump-as-conflict-esca-2026-03-02
+    type: Event
+    name: Oil and gas prices jump as conflict escalates
+    category: geopolitics
+    description: Experts have warned that a prolonged conflict could push global energy prices even higher.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T21:23:55.000Z"
+      precision: day
+  - id: saturday-night-live-criticised-for-hurt-2026-03-02
+    type: Event
+    name: Saturday Night Live criticised for 'hurtful' Tourette's sketch
+    category: geopolitics
+    description: The condition is "not a joke", the Tourette Action charity says, as the Baftas fallout continues.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T16:43:24.000Z"
+      precision: day
+  - id: texas-authorities-identify-austin-bar-sh-2026-03-02
+    type: Event
+    name: Texas authorities identify Austin bar shooting victims
+    category: geopolitics
+    description: >-
+      Two victims and the suspected gunman were killed, and 14 more injured in the Sunday shooting that the FBI says
+      could have terrorism links.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T21:21:52.000Z"
+      precision: day
+  - id: will-petrol-and-diesel-prices-go-up-now-2026-03-02
+    type: Event
+    name: Will petrol and diesel prices go up now?
+    category: finance
+    description: If oil prices remain high for some time, the knock-on effects could affect the costs of fuel and food
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:44:51.000Z"
+      precision: day
+  - id: bars-close-and-hundreds-lose-jobs-as-us-2026-03-02
+    type: Event
+    name: Bars close and hundreds lose jobs as US firm buys Brewdog in £33m deal
+    category: finance
+    description: >-
+      Beverage and cannabis company Tilray acquires the brewery, the brand and 11 bars after Brewdog went into
+      administration.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T18:47:45.000Z"
+      precision: day
+  - id: limited-flights-leave-uae-but-disruption-2026-03-02
+    type: Event
+    name: Limited flights leave UAE but disruption continues amid Iran strikes
+    category: finance
+    description: The majority of flights to key Middle Eastern hubs have been cancelled for Monday as the conflict continues.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T20:22:54.000Z"
+      precision: day
+  - id: what-are-my-rights-if-my-flight-is-cance-2026-03-02
+    type: Event
+    name: What are my rights if my flight is cancelled or delayed?
+    category: finance
+    description: We look at the different circumstances that affect you if you're due a refund for cancelled or delayed flights.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T11:26:35.000Z"
+      precision: day
+  - id: deepfake-attack-many-people-could-have-2026-03-02
+    type: Claim
+    name: "Deepfake attack: 'Many people could have been cheated'"
+    category: finance
+    description: The boss of the Bombay Stock Exchange was recently targeted in what is a growing global problem.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T06:47:00.000Z"
+      precision: day
+  - id: gas-prices-soar-and-oil-jumps-as-iran-wa-2026-03-02
+    type: Event
+    name: Gas prices soar and oil jumps as Iran war pushes down global stock markets
+    category: finance
+    description: >-
+      <p>QatarEnergy says it has halted production of liquefied natural gas after attacks on Ras Laffan and Mesaieed
+      sites</p><ul><li><p><a
+      href="https://www.theguardian.com/business/nils-pratley-on-finance/2026/mar/02/gas-shock-oil-iran-war-qatari-lng-strait-of-hormuz">Nils
+      Pratley: A gas shock – not an 
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T18:09:55.000Z"
+      precision: day
+  - id: brewdog-bought-by-us-cannabis-and-drinks-2026-03-02
+    type: Event
+    name: BrewDog bought by US cannabis and drinks firm for £33m, costing nearly 500 jobs
+    category: finance
+    description: >-
+      <p>Many early-stage crowdfunders left empty-handed as Tilray acquires beer company’s UK and Irish
+      assets</p><ul><li><p><a
+      href="https://www.theguardian.com/business/live/2026/mar/02/oil-price-us-israel-iran-war-100-dollars-a-barrel-stock-markets-drop-travel-news-updates">Business
+      live – latest updat
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T17:34:14.000Z"
+      precision: day
+  - id: how-escalating-iran-conflict-is-driving-2026-03-02
+    type: Event
+    name: How escalating Iran conflict is driving up oil and gas prices – a visual guide
+    category: finance
+    description: >-
+      <p>A near-halt to shipping in strait of Hormuz and attacks on Middle East refineries are threatening supplies and
+      stoking inflation</p><ul><li><p><a
+      href="https://www.theguardian.com/business/nils-pratley-on-finance/2026/mar/02/gas-shock-oil-iran-war-qatari-lng-strait-of-hormuz">Nils
+      Pratley: A gas 
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T19:13:22.000Z"
+      precision: day
+  - id: paramount-and-hbo-max-to-become-one-str-2026-03-02
+    type: Claim
+    name: Paramount+ and HBO Max to become one streaming service, Ellison says
+    category: finance
+    description: >-
+      <p>Billionaire Paramount Skydance chief announces plan days after winning takeover battle for Warner Bros
+      Discovery</p><ul><li><p><a
+      href="https://www.theguardian.com/news/2026/feb/17/sign-up-for-the-breaking-news-us-email-to-get-newsletter-alerts-direct-to-your-inbox?utm_medium=ACQUISITIONS_STANDFI
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T19:31:50.000Z"
+      precision: day
+  - id: uk-house-prices-rise-in-february-as-chan-2026-03-02
+    type: Event
+    name: UK house prices rise in February as chancellor avoids ‘negative speculation’
+    category: finance
+    description: >-
+      <p>Rachel Reeves’s upcoming spring forecast has not led to slowdown, as property tax rumours did in
+      November</p><ul><li><p><a
+      href="https://www.theguardian.com/business/live/2026/mar/02/oil-price-us-israel-iran-war-100-dollars-a-barrel-stock-markets-drop-travel-news-updates">Business
+      live – latest u
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T15:17:51.000Z"
+      precision: day
+  - id: uk-competition-watchdog-investigates-hot-2026-03-02
+    type: Event
+    name: UK competition watchdog investigates hotel groups over alleged data sharing
+    category: finance
+    description: >-
+      <p>Regulator looks into claim Hilton, InterContinental Hotels and Marriott could be sharing
+      <em>‘</em>competitively sensitive’ information via analytics tool </p><ul><li><p><a
+      href="https://www.theguardian.com/business/live/2026/mar/02/oil-price-us-israel-iran-war-100-dollars-a-barrel-stock-markets-
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T15:33:33.000Z"
+      precision: day
+  - id: rolls-royce-boss-open-to-germany-joini-2026-03-02
+    type: Event
+    name: Rolls-Royce boss ‘open’ to Germany joining UK’s fighter jet project
+    category: finance
+    description: >-
+      <p>Tufan Erginbilgiç says decision is for the government but German participation remains a
+      possibility</p><ul><li><p><a
+      href="https://www.theguardian.com/business/live/2026/mar/02/oil-price-us-israel-iran-war-100-dollars-a-barrel-stock-markets-drop-travel-news-updates">Business
+      live – latest update
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T05:00:01.000Z"
+      precision: day
+  - id: most-senior-council-officers-in-england-2026-03-02
+    type: Event
+    name: Most senior council officers in England say building work hit by delays
+    category: finance
+    description: >-
+      <p>Funding uncertainty is main concern, despite Labour’s pledge to revitalise construction, survey
+      shows</p><ul><li><p><a
+      href="https://www.theguardian.com/business/live/2026/mar/02/oil-price-us-israel-iran-war-100-dollars-a-barrel-stock-markets-drop-travel-news-updates">Business
+      live – latest updat
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T06:00:02.000Z"
+      precision: day
+  - id: a-gas-shock-not-an-oil-shock-from-th-2026-03-02
+    type: Event
+    name: A gas shock – not an oil shock – from the Iran war looks more threatening | Nils Pratley
+    category: finance
+    description: >-
+      <p>Europe and Asia will take an economic hit if the supply of Qatari LNG is halted by the closure of the strait of
+      Hormuz</p><ul><li><p><a
+      href="https://www.theguardian.com/world/2026/mar/02/oil-prices-iran-war-strait-of-hormuz-shipping">Gas prices soar
+      and oil jumps as Iran war pushes down global s
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T20:15:23.000Z"
+      precision: day
+  - id: spain-refuses-to-let-us-use-bases-for-ir-2026-03-02
+    type: Event
+    name: Spain refuses to let US use bases for Iran attacks
+    category: geopolitics
+    description: Spanish Prime Minister Pedro Sanchez has condemned US and Israeli strikes on Iran.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T20:31:34.000Z"
+      precision: day
+  - id: us-israeli-strikes-hit-housing-hospital-2026-03-02
+    type: Event
+    name: US-Israeli strikes hit housing, hospitals, and more in Tehran
+    category: geopolitics
+    description: >-
+      The damage from US-Israeli strikes on Tehran is growing, with hits on housing, hospitals, police stations, and
+      more.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T20:22:34.000Z"
+      precision: day
+  - id: anti-war-candidates-pose-early-test-for-2026-03-02
+    type: Event
+    name: Anti-war candidates pose early test for US Democrats after attacks on Iran
+    category: geopolitics
+    description: >-
+      Nida Alla, Kat Abughazaleh among those seeking new aims for Dems in midterms, including abolishing ICE and ending
+      wars.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T20:02:03.000Z"
+      precision: day
+  - id: netanyahu-iran-would-threaten-all-of-h-2026-03-02
+    type: Event
+    name: "Netanyahu: Iran would ‘threaten all of humanity’ with nuclear weapon"
+    category: geopolitics
+    description: >-
+      Israeli Prime Minister Benjamin Netanyahu visited the Beit Shemesh site where an Iranian missile strike killed 9
+      people.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T19:35:54.000Z"
+      precision: day
+  - id: us-and-israeli-interests-may-soon-diverg-2026-03-02
+    type: Claim
+    name: US and Israeli interests may soon diverge on Iran
+    category: geopolitics
+    description: Trump and Netanyahu are in this war for very different reasons. And that will soon show.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T19:10:57.000Z"
+      precision: day
+  - id: trump-says-iran-war-projected-to-last-4-2026-03-02
+    type: Claim
+    name: Trump says Iran war projected to last 4 to 5 weeks, could go ‘far longer’
+    category: geopolitics
+    description: >-
+      In latest statement, Trump says US was &#039;very nearly under threat&#039; from Iran, drawing immediacy of
+      attacks into question.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T19:06:51.000Z"
+      precision: day
+  - id: why-qatarenergy-s-lng-production-halt-co-2026-03-02
+    type: Claim
+    name: Why QatarEnergy’s LNG production halt could shake up global gas markets
+    category: geopolitics
+    description: >-
+      Qatar supplies 20 percent of the world&#039;s LNG. If that&#039;s off the table, countries must scramble for the
+      remaining gas.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T18:39:11.000Z"
+      precision: day
+  - id: trump-this-was-the-best-chance-to-strik-2026-03-02
+    type: Event
+    name: "Trump: this was the best chance to strike Iran’s ‘sick and sinister regime’"
+    category: geopolitics
+    description: US President Donald Trump outlined the objectives of the US-Israeli attack on Iran.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T18:11:17.000Z"
+      precision: day
+  - id: france-to-increase-nuclear-warheads-len-2026-03-02
+    type: Event
+    name: France to increase nuclear warheads, lend nuclear aircraft to Europe allies
+    category: geopolitics
+    description: >-
+      Macron&#039;s &#039;advanced deterrence&#039; will be a nuclear-security relationship with key allies distinct
+      from NATO arrangements.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T17:59:01.000Z"
+      precision: day
+  - id: this-war-might-push-iran-to-a-bomb-fast-2026-03-02
+    type: Event
+    name: ‘This war might push Iran to a bomb faster.’
+    category: geopolitics
+    description: >-
+      Former US diplomat Henry Ensher warns future Iranian leadership may see a nuclear deterrent as a defensive
+      necessity.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T17:49:23.000Z"
+      precision: day
+  - id: bitcoin-s-5-spike-higher-monday-driven-2026-03-02
+    type: Claim
+    name: Bitcoin’s 5% spike higher Monday driven by short-covering, not fresh buying, says analyst
+    category: finance.crypto
+    description: >-
+      Market data show rising open interest and large liquidation clusters around $65,000 and above $70,000,
+      underscoring that the rally may be fragile without stronger spot demand
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T19:35:01.000Z"
+      precision: day
+  - id: vitalik-buterin-unveils-plan-to-curb-eth-2026-03-02
+    type: Event
+    name: Vitalik Buterin unveils plan to curb Ethereum block builder centralization
+    category: finance.crypto
+    description: >-
+      Another focus of his post is so-called “toxic MEV,” where traders exploit visibility into pending transactions to
+      front-run or “sandwich” users’ trades.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T18:45:17.000Z"
+      precision: day
+  - id: battle-for-bitcoins-soul-opens-as-first-2026-03-02
+    type: Event
+    name: Battle for Bitcoin's soul opens as first block supporting 'clean-up' proposal is mined
+    category: finance.crypto
+    description: >-
+      A Bitcoin block signaling the BIP-110 proposal has appeared onchain while critics push back by inscribing a large
+      image in protest.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T17:15:44.000Z"
+      precision: day
+  - id: weekend-warriors-how-hyperliquid-became-2026-03-02
+    type: Event
+    name: "Weekend warriors: How HyperLiquid became retail’s bear market playground"
+    category: finance.crypto
+    description: >-
+      While bitcoin and ether remain in bear markets, HYPE has climbed alongside gold as HyperLiquid’s derivatives
+      volume expands, weekend equity trading gains traction.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T17:04:42.000Z"
+      precision: day
+  - id: crypto-world-faces-growing-pressure-to-r-2026-03-02
+    type: Event
+    name: Crypto world faces growing pressure to relent on stablecoin rewards to win bigger prize
+    category: finance.crypto
+    description: >-
+      As much as crypto negotiators paint bank lobbyists' campaign against stablecoin yield as unfair, it landed a blow
+      that one dramatic move could end.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T16:45:11.000Z"
+      precision: day
+  - id: nasdaq-follows-cboe-joining-world-of-bi-2026-03-02
+    type: Event
+    name: Nasdaq follows Cboe joining world of 'binary bets' as prediction market craze hits Wall Street
+    category: finance.crypto
+    description: >-
+      The exchange has filed a proposal with the SEC to list yes-or-no bets on the Nasdaq-100 amid continued demand for
+      prediction markets.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T16:28:16.000Z"
+      precision: day
+  - id: bitcoin-surges-above-68-000-amid-muted-2026-03-02
+    type: Claim
+    name: Bitcoin surges above $68,000 amid muted stock market reaction to Iran war
+    category: finance.crypto
+    description: >-
+      At their worst levels, U.S. stock index futures had been down more than 2%, but equity markets are barely lower
+      one hour into Monday's trading session.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T15:32:22.000Z"
+      precision: day
+  - id: tom-lees-bitmine-boosts-ether-holdings-2026-03-02
+    type: Event
+    name: Tom Lee's Bitmine boosts ether holdings to 4.47 million tokens with  $98 million ETH purchase
+    category: finance.crypto
+    description: The ether treasury firm now has nearly $10 billion in assets and more than $6 billion of ETH staked.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T15:10:25.000Z"
+      precision: day
+  - id: eu-banks-euro-pegged-stablecoin-in-talk-2026-03-02
+    type: Event
+    name: EU banks’ euro-pegged stablecoin in talks with crypto exchanges to ensure liquidity
+    category: finance.crypto
+    description: >-
+      Qivalis is a group of 12 major EU banks developing a euro-pegged stablecoin they plan to debut in the second half
+      of the year.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T14:37:33.000Z"
+      precision: day
+  - id: coindesk-20-performance-update-near-pro-2026-03-02
+    type: Event
+    name: "CoinDesk 20 performance update: NEAR Protocol (NEAR) jumps 12.4% over weekend"
+    category: finance.crypto
+    description: Solana (SOL), up 2.1% from Friday, was also among the top performers.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T14:15:11.000Z"
+      precision: day
+  - id: analyst-report-unilever-plc-2026-03-02
+    type: Event
+    name: "Analyst Report: Unilever PLC"
+    category: finance
+    description: "Analyst Report: Unilever PLC"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T18:45:37.000Z"
+      precision: day
+  - id: here-is-the-x2018-worst-case-scenario-2026-03-02
+    type: Event
+    name: Here is the &#x2018;worst-case scenario&#x2019; for oil and the Strait of Hormuz
+    category: finance.markets
+    description: >-
+      Oil prices settled at their highest levels since June on Monday, as the conflict in the Middle East brings with it
+      an inherent risk to the world&#x2019;s available crude supplies.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T21:31:00.000Z"
+      precision: day
+  - id: bonds-log-biggest-selloff-in-9-months-as-2026-03-02
+    type: Event
+    name: Bonds log biggest selloff in 9 months as Iran conflict sparks unusual Treasury moves
+    category: finance.markets
+    description: Mortgage rates and more will be vulnerable to the surge in the 10-year Treasury yield.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T21:12:00.000Z"
+      precision: day
+  - id: iran-conflict-hits-a-market-that-x2019-2026-03-02
+    type: Event
+    name: Iran conflict hits a market that&#x2019;s more overvalued than during the 1973 oil shock
+    category: finance.markets
+    description: >-
+      Arab&#x2013;Israeli war in 1973 and the oil embargo that followed shows that stocks don&#x2019;t always rebound
+      quickly.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T20:43:00.000Z"
+      precision: day
+  - id: x2018-i-don-x2019-t-earn-enough-to-su-2026-03-02
+    type: Event
+    name: >-
+      &#x2018;I don&#x2019;t earn enough to support us and our baby&#x2019;: My unemployed husband lost $22,000 trading
+      sports cards. What now?
+    category: finance.markets
+    description: >-
+      &#x201c;I intervened, shut the business down and got him into therapy and support for gambling-type
+      behaviors.&#x201d;
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T20:09:00.000Z"
+      precision: day
+  - id: why-crowdstrike-x2019-s-stock-just-got-2026-03-02
+    type: Event
+    name: Why CrowdStrike&#x2019;s stock just got an upgrade ahead of earnings
+    category: finance.markets
+    description: >-
+      An analyst sees minimal risk to the company&#x2019;s guidance and thinks shares have been overly punished by a
+      broad selloff in the software sector.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T19:40:00.000Z"
+      precision: day
+  - id: hbo-max-and-paramount-will-become-one-s-2026-03-02
+    type: Event
+    name: HBO Max and Paramount+ will become one streaming service. What does that mean for you?
+    category: finance.markets
+    description: >-
+      HBO Max and Paramount+ collectively reach over 200 million subscribers worldwide, which is more than Disney+,
+      nearly on par with Amazon&#x2019;s Prime Video and just behind Netflix.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T19:04:00.000Z"
+      precision: day
+  - id: how-applied-optoelectronics-became-the-l-2026-03-02
+    type: Event
+    name: How Applied Optoelectronics became the latest viral AI stock
+    category: finance.markets
+    description: >-
+      Shares of the optical-networking provider have nearly tripled so far this year as AI players seek out
+      high-bandwidth, low-latency connectivity products.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T18:38:00.000Z"
+      precision: day
+  - id: prediction-market-traders-betting-agains-2026-03-02
+    type: Event
+    name: >-
+      Prediction-market traders betting against Iran&#x2019;s Khamenei got a messy reminder to always read the fine
+      print
+    category: finance.markets
+    description: >-
+      As tensions between the U.S. and Iran rose over the past few weeks, traders were using Kalshi and Polymarket to
+      bet on whether Iran&#x2019;s Supreme Leader Ali Khamenei would remain in power. But when news broke that Khamenei
+      was killed in U.S.-Israel strikes, these traders were left with more quest
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T18:24:00.000Z"
+      precision: day
+  - id: trump-leaves-door-open-for-extended-u-s-2026-03-02
+    type: Claim
+    name: Trump leaves door open for extended U.S. campaign against Iran. What that could mean for the economy.
+    category: finance.markets
+    description: >-
+      President Donald Trump said Monday the military operation against Iran could last four to five weeks &#x2014; or
+      longer.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T18:23:00.000Z"
+      precision: day
+  - id: palantir-lockheed-and-these-other-defen-2026-03-02
+    type: Event
+    name: Palantir, Lockheed and these other defense stocks are rising on heels of Iran conflict
+    category: finance.markets
+    description: >-
+      Defense spending is set to get &#x201c;more urgent and less controversial,&#x201d; an analyst notes, and numerous
+      stocks could benefit.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T18:17:00.000Z"
+      precision: day
+  - id: devon-coterra-deal-signals-investors-sti-2026-03-02
+    type: Event
+    name: Devon–Coterra Deal Signals Investors Still Rule the Shale Patch
+    category: finance.energy
+    description: >-
+      Last month’s announcement that Devon Energy and Coterra Energy are merging to create a $58-billion giant is the
+      latest mega-deal in the U.S. shale patch, signaling smaller public companies are seeking multi-basin, multi-year
+      increases in drilling opportunities. In early February, Devon Energy and Co
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T21:00:00.000Z"
+      precision: day
+  - id: u-s-gasoline-tops-3-as-iran-conflict-s-2026-03-02
+    type: Event
+    name: U.S. Gasoline Tops $3 as Iran Conflict Sends Fuel Prices Higher
+    category: finance.energy
+    description: >-
+      Average U.S. gasoline prices climbed above $3 per gallon on Monday for the first time since November, as
+      escalating conflict with Iran rippled through global energy markets and pushed crude and fuel prices sharply
+      higher. According to Reuters, retail gasoline crossed the $3 threshold as Brent crude 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T20:15:00.000Z"
+      precision: day
+  - id: the-high-stakes-futility-of-the-ai-race-2026-03-02
+    type: Event
+    name: The High Stakes Futility of the AI Race
+    category: finance.energy
+    description: >-
+      When it comes to the dangers of artificial intelligence (AI) and now artificial superintelligence (ASI) (sometimes
+      called artificial general intelligence), I feel as if we&#039;ve been transported onto the set of the 1983 film
+      "WarGames." In the film teenage hacker David Lightman stumbles onto the m
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T20:00:00.000Z"
+      precision: day
+  - id: how-many-hormuz-warnings-does-europe-nee-2026-03-02
+    type: Event
+    name: How Many Hormuz Warnings Does Europe Need?
+    category: finance.energy
+    description: >-
+      The Strait of Hormuz is back in the headlines. Again. Roughly a fifth of globally traded oil passes through that
+      narrow maritime corridor between Oman and Iran. And once more, geopolitical tensions in the Middle East have
+      turned this chokepoint into a pressure valve for the entire global economy. In
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T19:00:00.000Z"
+      precision: day
+  - id: chevron-declares-force-majeure-as-israel-2026-03-02
+    type: Event
+    name: Chevron Declares Force Majeure as Israel Shuts Leviathan Gas Field
+    category: finance.energy
+    description: >-
+      Chevron has declared force majeure at Israel’s Leviathan natural gas field after the government ordered a
+      temporary suspension of production on security grounds, marking the second time in less than a year that
+      hostilities with Iran have disrupted Eastern Mediterranean gas flows. Israel’s energy min
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T18:30:00.000Z"
+      precision: day
+  - id: china-s-rare-earth-dominance-and-the-str-2026-03-02
+    type: Event
+    name: China’s Rare Earth Dominance and the Strategic Failure of the West
+    category: finance.energy
+    description: >-
+      REalloys (NASDAQ: ALOY) and a small number of other North American companies are doing what the rest of the
+      Western world failed to do for three decades: They are breaking China’s "kill switch" on the U.S. defense supply
+      chain. While the U.S. defense sector has long been reliant on international pro
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T18:12:48.000Z"
+      precision: day
+  - id: iran-war-sends-oil-curve-into-crisis-mod-2026-03-02
+    type: Event
+    name: Iran War Sends Oil Curve Into Crisis Mode
+    category: finance.energy
+    description: >-
+      What has been happening in the Middle East when it comes to markets won’t affect only headlines but could reshape
+      the structure of the oil market from the physical barrel to the far end of the derivatives curve. As tensions
+      escalate, physical traders are going to have to rethink their physical route
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T18:00:00.000Z"
+      precision: day
+  - id: china-s-renewable-boom-masks-a-quiet-coa-2026-03-02
+    type: Event
+    name: China’s Renewable Boom Masks a Quiet Coal-to-Liquids Expansion
+    category: finance.energy
+    description: >-
+      China’s power sector is undergoing a visible transformation. Electricity demand rose by 5% between 2024 and 2025,
+      reaching 10,368 TWh, yet coal-fired generation declined by 113 TWh to 6,294 TWh in a year, reducing its share in
+      the power mix. The entire increment in electricity demand was absorbed by
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T17:00:00.000Z"
+      precision: day
+  - id: arctic-air-drives-natural-gas-volatility-2026-03-02
+    type: Event
+    name: Arctic Air Drives Natural Gas Volatility Across the Northeast
+    category: finance.energy
+    description: >-
+      Winter in the Mid-Atlantic region is certainly winding down, and March is always an unpredictable month. Early
+      next week, a fast-moving Alberta Clipper is forecast to bring yet another round of wintry weather to the region
+      before a spring warm-up arrives by mid-month. Marko Korosec, lead forecaster 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T16:00:00.000Z"
+      precision: day
+  - id: blackrock-eqt-to-acquire-aes-corp-in-2026-03-02
+    type: Event
+    name: BlackRock, EQT To Acquire AES Corp. in $33.4B Deal
+    category: finance.energy
+    description: >-
+      A consortium led by BlackRock’s Global Infrastructure Partners (GIP) and U.S. gas giant EQT Corp. (NYSE:EQT) have
+      agreed to acquire global power utility, AES Corp. (NYSE:AES), for $15 per share in cash, totaling an enterprise
+      value of approximately $33.4 billion. The deal, which includes major pensi
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T15:30:00.000Z"
+      precision: day
+  - id: users-are-ditching-chatgpt-for-claude-2026-03-02
+    type: Event
+    name: Users are ditching ChatGPT for Claude — here’s how to make the switch
+    category: technology.ai
+    description: >-
+      Following controversies surrounding ChatGPT, many users are ditching the AI chatbot for Claude instead. Here's how
+      to make the switch.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T18:42:11.000Z"
+      precision: day
+  - id: tech-workers-urge-dod-congress-to-withd-2026-03-02
+    type: Event
+    name: Tech workers urge DOD, Congress to withdraw Anthropic label as a supply-chain risk
+    category: technology.ai
+    description: >-
+      Tech workers have signed an open letter urging the Department of Defense to withdraw its designation of Anthropic
+      as a "supply chain risk" and instead to settle the matter quietly.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T17:18:34.000Z"
+      precision: day
+  - id: a-married-founder-duo-8217-s-company-1-2026-03-02
+    type: Fact
+    name: A married founder duo&#8217;s company, 14.ai, is replacing customer support teams at startups
+    category: technology.ai
+    description: 14.ai also launched a consumer brand to understand how much AI can handle customer support tasks.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T15:14:36.000Z"
+      precision: day
+  - id: anthropic-8217-s-claude-reports-widespr-2026-03-02
+    type: Event
+    name: Anthropic&#8217;s Claude reports widespread outage
+    category: technology.ai
+    description: >-
+      Anthropic's AI chatbot Claude experienced widespread service disruptions on Monday morning, with thousands of
+      users reporting issues accessing the bot.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:31:49.000Z"
+      precision: day
+  - id: charter-gets-fcc-permission-to-buy-cox-a-2026-03-02
+    type: Event
+    name: Charter gets FCC permission to buy Cox and become largest ISP in the US
+    category: technology
+    description: Charter gets FCC permission to buy Cox and become largest ISP in the US
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T18:19:03.000Z"
+      precision: day
+  - id: iowa-county-adopts-strict-zoning-rules-f-2026-03-02
+    type: Decision
+    name: Iowa county adopts strict zoning rules for data centers, but residents still worry
+    category: technology
+    description: Iowa county adopts strict zoning rules for data centers, but residents still worry
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T15:34:42.000Z"
+      precision: day
+  - id: 599-m4-ipad-air-is-a-lot-like-the-old-o-2026-03-02
+    type: Event
+    name: $599 M4 iPad Air is a lot like the old one, but with a substantial RAM boost
+    category: technology
+    description: $599 M4 iPad Air is a lot like the old one, but with a substantial RAM boost
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T15:06:00.000Z"
+      precision: day
+  - id: research-roundup-six-cool-science-stori-2026-03-02
+    type: Event
+    name: "Research roundup: Six cool science stories we almost missed"
+    category: technology
+    description: Doom, and AI discovers rules of an ancient game.]]>
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T14:45:05.000Z"
+      precision: day
+  - id: apples-new-iphone-17e-has-an-a19-chip-2026-03-02
+    type: Event
+    name: Apple's new iPhone 17e has an A19 chip, MagSafe, and 256GB of storage for $599
+    category: technology
+    description: Apple's new iPhone 17e has an A19 chip, MagSafe, and 256GB of storage for $599
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T14:34:52.000Z"
+      precision: day
+  - id: its-almost-a-station-wagon-the-2026-su-2026-03-02
+    type: Event
+    name: "It's almost a station wagon: The 2026 Subaru Trailseeker, driven"
+    category: technology
+    description: "It's almost a station wagon: The 2026 Subaru Trailseeker, driven"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T14:00:01.000Z"
+      precision: day
+  - id: former-nasa-chief-turned-ula-lobbyist-se-2026-03-02
+    type: Decision
+    name: Former NASA chief turned ULA lobbyist seeks law to limit SpaceX funding
+    category: technology
+    description: Former NASA chief turned ULA lobbyist seeks law to limit SpaceX funding
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:58:30.000Z"
+      precision: day
+  - id: trump-fccs-equal-time-crackdown-doesnt-2026-03-02
+    type: Event
+    name: Trump FCC's equal-time crackdown doesn't apply equally—or at all—to talk radio
+    category: technology
+    description: Trump FCC's equal-time crackdown doesn't apply equally—or at all—to talk radio
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:00:01.000Z"
+      precision: day
+  - id: amd-ryzen-ai-400-chips-will-bring-newer-2026-03-02
+    type: Event
+    name: AMD Ryzen AI 400 chips will bring newer CPUs, GPUs, and NPUs to AM5 desktops
+    category: technology
+    description: AMD Ryzen AI 400 chips will bring newer CPUs, GPUs, and NPUs to AM5 desktops
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T08:00:29.000Z"
+      precision: day
+narratives:
+  - name: Israel-Palestine Conflict
+    steps:
+      - from: israel-strikes-lebanon-after-hezbollah-r-2026-03-02
+        to: us-israeli-strikes-hit-housing-hospital-2026-03-02
+        type: causes
+      - from: us-israeli-strikes-hit-housing-hospital-2026-03-02
+        to: spain-refuses-to-let-us-use-bases-for-ir-2026-03-02
+        type: causes
+  - name: Mining & Resources
+    steps:
+      - from: china-s-rare-earth-dominance-and-the-str-2026-03-02
+        to: india-and-canada-reset-ties-with-landma-2026-03-02
+        type: causes
+  - name: Energy Markets
+    steps:
+      - from: will-petrol-and-diesel-prices-go-up-now-2026-03-02
+        to: arctic-air-drives-natural-gas-volatility-2026-03-02
+        type: causes
+      - from: arctic-air-drives-natural-gas-volatility-2026-03-02
+        to: gas-prices-soar-and-oil-jumps-as-iran-wa-2026-03-02
+        type: causes
+      - from: gas-prices-soar-and-oil-jumps-as-iran-wa-2026-03-02
+        to: chevron-declares-force-majeure-as-israel-2026-03-02
+        type: causes
+      - from: chevron-declares-force-majeure-as-israel-2026-03-02
+        to: u-s-gasoline-tops-3-as-iran-conflict-s-2026-03-02
+        type: causes
+      - from: u-s-gasoline-tops-3-as-iran-conflict-s-2026-03-02
+        to: oil-and-gas-prices-jump-as-conflict-esca-2026-03-02
+        type: causes
+      - from: oil-and-gas-prices-jump-as-conflict-esca-2026-03-02
+        to: here-is-the-x2018-worst-case-scenario-2026-03-02
+        type: causes
+  - name: Crypto Markets
+    steps:
+      - from: eu-banks-euro-pegged-stablecoin-in-talk-2026-03-02
+        to: bitcoin-surges-above-68-000-amid-muted-2026-03-02
+        type: supports
+      - from: bitcoin-surges-above-68-000-amid-muted-2026-03-02
+        to: crypto-world-faces-growing-pressure-to-r-2026-03-02
+        type: follows
+      - from: crypto-world-faces-growing-pressure-to-r-2026-03-02
+        to: weekend-warriors-how-hyperliquid-became-2026-03-02
+        type: causes
+      - from: weekend-warriors-how-hyperliquid-became-2026-03-02
+        to: battle-for-bitcoins-soul-opens-as-first-2026-03-02
+        type: causes
+      - from: battle-for-bitcoins-soul-opens-as-first-2026-03-02
+        to: vitalik-buterin-unveils-plan-to-curb-eth-2026-03-02
+        type: causes
+      - from: vitalik-buterin-unveils-plan-to-curb-eth-2026-03-02
+        to: bitcoin-s-5-spike-higher-monday-driven-2026-03-02
+        type: supports
+sources:
+  - entity: israel-strikes-lebanon-after-hezbollah-r-2026-03-02
+    type: article
+    title: Israel strikes Lebanon after Hezbollah rocket fire as Iran conflict widens
+    url: https://www.bbc.com/news/articles/c5y4v8g13wxo
+    excerpt: >-
+      Lebanese officials say 52 people were killed by Israeli strikes, while there are no reports of casualties in
+      Israel.
+    source_name: BBC News
+    published: "2026-03-02T18:53:27.000Z"
+  - entity: they-hit-so-hard-the-house-was-shaking-2026-03-02
+    type: article
+    title: "'They hit so hard the house was shaking': Iranians describe impact of US-Israel attacks"
+    url: https://www.bbc.com/news/articles/cx2jyv3jp01o
+    excerpt: >-
+      People in Iran tell the BBC they hear explosions day and night, as the US and Israel continue striking the country
+      for a third day.
+    source_name: BBC News
+    published: "2026-03-02T13:54:20.000Z"
+  - entity: france-to-boost-nuclear-arsenal-and-exte-2026-03-02
+    type: article
+    title: France to boost nuclear arsenal and extend deterrence to European allies
+    url: https://www.bbc.com/news/articles/cj4zlnezrl7o
+    excerpt: >-
+      Emmanuel Macron said eight countries could enjoy protection from France's nuclear umbrella - but that Paris would
+      retain sole decision-making power.
+    source_name: BBC News
+    published: "2026-03-02T18:16:14.000Z"
+  - entity: india-and-canada-reset-ties-with-landma-2026-03-02
+    type: article
+    title: India and Canada reset ties with 'landmark' nuclear energy deal
+    url: https://www.bbc.com/news/articles/cx24gl7jrgno
+    excerpt: >-
+      A host of deals, including one to supply India with uranium, is unveiled as Mark Carney meets Narendra Modi in
+      Delhi.
+    source_name: BBC News
+    published: "2026-03-02T20:18:12.000Z"
+  - entity: at-least-169-people-killed-in-south-suda-2026-03-02
+    type: article
+    title: At least 169 people killed in South Sudan 'surprise' attack
+    url: https://www.bbc.com/news/articles/c0mgkvy4wr8o
+    excerpt: Peacekeepers are sheltering about 1,000 civilians near their base and providing emergency care.
+    source_name: BBC News
+    published: "2026-03-02T16:11:52.000Z"
+  - entity: lost-rembrandt-painting-rediscovered-aft-2026-03-02
+    type: article
+    title: Lost Rembrandt painting rediscovered after 65 years
+    url: https://www.bbc.com/news/articles/c1kgln0yg3po
+    excerpt: The painting, created by the Dutch master in 1633, had disappeared after being sold  in 1961.
+    source_name: BBC News
+    published: "2026-03-02T16:54:40.000Z"
+  - entity: a-rap-star-might-just-beat-a-former-pm-2026-03-02
+    type: article
+    title: A rap star might just beat a former PM - what this says about Nepal's Gen Z election
+    url: https://www.bbc.com/news/articles/c8r137lkj5zo
+    excerpt: Many hope the vote could bring change after protests last year, and shatter decades of political paralysis.
+    source_name: BBC News
+    published: "2026-03-02T06:34:28.000Z"
+  - entity: oil-and-gas-prices-jump-as-conflict-esca-2026-03-02
+    type: article
+    title: Oil and gas prices jump as conflict escalates
+    url: https://www.bbc.com/news/articles/c75evve6l63o
+    excerpt: Experts have warned that a prolonged conflict could push global energy prices even higher.
+    source_name: BBC News
+    published: "2026-03-02T21:23:55.000Z"
+  - entity: saturday-night-live-criticised-for-hurt-2026-03-02
+    type: article
+    title: Saturday Night Live criticised for 'hurtful' Tourette's sketch
+    url: https://www.bbc.com/news/articles/c05v0ln6nq3o
+    excerpt: The condition is "not a joke", the Tourette Action charity says, as the Baftas fallout continues.
+    source_name: BBC News
+    published: "2026-03-02T16:43:24.000Z"
+  - entity: texas-authorities-identify-austin-bar-sh-2026-03-02
+    type: article
+    title: Texas authorities identify Austin bar shooting victims
+    url: https://www.bbc.com/news/articles/cgjznzgly0po
+    excerpt: >-
+      Two victims and the suspected gunman were killed, and 14 more injured in the Sunday shooting that the FBI says
+      could have terrorism links.
+    source_name: BBC News
+    published: "2026-03-02T21:21:52.000Z"
+  - entity: will-petrol-and-diesel-prices-go-up-now-2026-03-02
+    type: article
+    title: Will petrol and diesel prices go up now?
+    url: https://www.bbc.com/news/articles/c20zgjzz0e4o
+    excerpt: If oil prices remain high for some time, the knock-on effects could affect the costs of fuel and food
+    source_name: BBC Business
+    published: "2026-03-02T13:44:51.000Z"
+  - entity: bars-close-and-hundreds-lose-jobs-as-us-2026-03-02
+    type: article
+    title: Bars close and hundreds lose jobs as US firm buys Brewdog in £33m deal
+    url: https://www.bbc.com/news/articles/c05v0p1d0peo
+    excerpt: >-
+      Beverage and cannabis company Tilray acquires the brewery, the brand and 11 bars after Brewdog went into
+      administration.
+    source_name: BBC Business
+    published: "2026-03-02T18:47:45.000Z"
+  - entity: limited-flights-leave-uae-but-disruption-2026-03-02
+    type: article
+    title: Limited flights leave UAE but disruption continues amid Iran strikes
+    url: https://www.bbc.com/news/articles/c3v7ele1k4zo
+    excerpt: The majority of flights to key Middle Eastern hubs have been cancelled for Monday as the conflict continues.
+    source_name: BBC Business
+    published: "2026-03-02T20:22:54.000Z"
+  - entity: what-are-my-rights-if-my-flight-is-cance-2026-03-02
+    type: article
+    title: What are my rights if my flight is cancelled or delayed?
+    url: https://www.bbc.com/news/articles/c9qxnyengdjo
+    excerpt: We look at the different circumstances that affect you if you're due a refund for cancelled or delayed flights.
+    source_name: BBC Business
+    published: "2026-03-02T11:26:35.000Z"
+  - entity: deepfake-attack-many-people-could-have-2026-03-02
+    type: article
+    title: "Deepfake attack: 'Many people could have been cheated'"
+    url: https://www.bbc.com/news/articles/c0j59vydxj9o
+    excerpt: The boss of the Bombay Stock Exchange was recently targeted in what is a growing global problem.
+    source_name: BBC Business
+    published: "2026-03-02T06:47:00.000Z"
+  - entity: gas-prices-soar-and-oil-jumps-as-iran-wa-2026-03-02
+    type: article
+    title: Gas prices soar and oil jumps as Iran war pushes down global stock markets
+    url: https://www.theguardian.com/world/2026/mar/02/oil-prices-iran-war-strait-of-hormuz-shipping
+    excerpt: >-
+      <p>QatarEnergy says it has halted production of liquefied natural gas after attacks on Ras Laffan and Mesaieed
+      sites</p><ul><li><p><a href="https://www.theguardian.com/business/nils-pratley-on-finance
+    source_name: The Guardian
+    published: "2026-03-02T18:09:55.000Z"
+  - entity: brewdog-bought-by-us-cannabis-and-drinks-2026-03-02
+    type: article
+    title: BrewDog bought by US cannabis and drinks firm for £33m, costing nearly 500 jobs
+    url: https://www.theguardian.com/business/2026/mar/02/brewdog-us-cannabis-drinks-500-jobs
+    excerpt: >-
+      <p>Many early-stage crowdfunders left empty-handed as Tilray acquires beer company’s UK and Irish
+      assets</p><ul><li><p><a href="https://www.theguardian.com/business/live/2026/mar/02/oil-price-us-israe
+    source_name: The Guardian
+    published: "2026-03-02T17:34:14.000Z"
+  - entity: how-escalating-iran-conflict-is-driving-2026-03-02
+    type: article
+    title: How escalating Iran conflict is driving up oil and gas prices – a visual guide
+    url: https://www.theguardian.com/world/2026/mar/02/iran-strait-of-hormuz-oil-gas-visualized
+    excerpt: >-
+      <p>A near-halt to shipping in strait of Hormuz and attacks on Middle East refineries are threatening supplies and
+      stoking inflation</p><ul><li><p><a href="https://www.theguardian.com/business/nils-pra
+    source_name: The Guardian
+    published: "2026-03-02T19:13:22.000Z"
+  - entity: paramount-and-hbo-max-to-become-one-str-2026-03-02
+    type: article
+    title: Paramount+ and HBO Max to become one streaming service, Ellison says
+    url: https://www.theguardian.com/media/2026/mar/02/paramount-hbo-max-streaming-warner-bros
+    excerpt: >-
+      <p>Billionaire Paramount Skydance chief announces plan days after winning takeover battle for Warner Bros
+      Discovery</p><ul><li><p><a href="https://www.theguardian.com/news/2026/feb/17/sign-up-for-the-
+    source_name: The Guardian
+    published: "2026-03-02T19:31:50.000Z"
+  - entity: uk-house-prices-rise-in-february-as-chan-2026-03-02
+    type: article
+    title: UK house prices rise in February as chancellor avoids ‘negative speculation’
+    url: https://www.theguardian.com/business/2026/mar/02/uk-house-prices-rise-february-spring-forecast-rachel-reeves
+    excerpt: >-
+      <p>Rachel Reeves’s upcoming spring forecast has not led to slowdown, as property tax rumours did in
+      November</p><ul><li><p><a href="https://www.theguardian.com/business/live/2026/mar/02/oil-price-us-i
+    source_name: The Guardian
+    published: "2026-03-02T15:17:51.000Z"
+  - entity: uk-competition-watchdog-investigates-hot-2026-03-02
+    type: article
+    title: UK competition watchdog investigates hotel groups over alleged data sharing
+    url: >-
+      https://www.theguardian.com/business/2026/mar/02/uk-competition-watchdog-investigates-hilton-marriott-intercontinental-hotel-groups-alleged-data-sharing
+    excerpt: >-
+      <p>Regulator looks into claim Hilton, InterContinental Hotels and Marriott could be sharing
+      <em>‘</em>competitively sensitive’ information via analytics tool </p><ul><li><p><a href="https://www.thegua
+    source_name: The Guardian
+    published: "2026-03-02T15:33:33.000Z"
+  - entity: rolls-royce-boss-open-to-germany-joini-2026-03-02
+    type: article
+    title: Rolls-Royce boss ‘open’ to Germany joining UK’s fighter jet project
+    url: https://www.theguardian.com/business/2026/mar/02/rolls-royce-germany-uk-fighter-jet-tufan-erginbilgic
+    excerpt: >-
+      <p>Tufan Erginbilgiç says decision is for the government but German participation remains a
+      possibility</p><ul><li><p><a href="https://www.theguardian.com/business/live/2026/mar/02/oil-price-us-israel
+    source_name: The Guardian
+    published: "2026-03-02T05:00:01.000Z"
+  - entity: most-senior-council-officers-in-england-2026-03-02
+    type: article
+    title: Most senior council officers in England say building work hit by delays
+    url: https://www.theguardian.com/society/2026/mar/02/senior-council-officers-building-work-hit-by-delays
+    excerpt: >-
+      <p>Funding uncertainty is main concern, despite Labour’s pledge to revitalise construction, survey
+      shows</p><ul><li><p><a href="https://www.theguardian.com/business/live/2026/mar/02/oil-price-us-israe
+    source_name: The Guardian
+    published: "2026-03-02T06:00:02.000Z"
+  - entity: a-gas-shock-not-an-oil-shock-from-th-2026-03-02
+    type: article
+    title: A gas shock – not an oil shock – from the Iran war looks more threatening | Nils Pratley
+    url: >-
+      https://www.theguardian.com/business/nils-pratley-on-finance/2026/mar/02/gas-shock-oil-iran-war-qatari-lng-strait-of-hormuz
+    excerpt: >-
+      <p>Europe and Asia will take an economic hit if the supply of Qatari LNG is halted by the closure of the strait of
+      Hormuz</p><ul><li><p><a href="https://www.theguardian.com/world/2026/mar/02/oil-price
+    source_name: The Guardian
+    published: "2026-03-02T20:15:23.000Z"
+  - entity: spain-refuses-to-let-us-use-bases-for-ir-2026-03-02
+    type: article
+    title: Spain refuses to let US use bases for Iran attacks
+    url: https://www.aljazeera.com/news/2026/3/2/spain-refuses-to-let-us-use-bases-for-iran-attacks
+    excerpt: Spanish Prime Minister Pedro Sanchez has condemned US and Israeli strikes on Iran.
+    source_name: Al Jazeera
+    published: "2026-03-02T20:31:34.000Z"
+  - entity: us-israeli-strikes-hit-housing-hospital-2026-03-02
+    type: article
+    title: US-Israeli strikes hit housing, hospitals, and more in Tehran
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/2/us-israeli-strikes-hit-housing-hospitals-and-more-in-tehran
+    excerpt: >-
+      The damage from US-Israeli strikes on Tehran is growing, with hits on housing, hospitals, police stations, and
+      more.
+    source_name: Al Jazeera
+    published: "2026-03-02T20:22:34.000Z"
+  - entity: anti-war-candidates-pose-early-test-for-2026-03-02
+    type: article
+    title: Anti-war candidates pose early test for US Democrats after attacks on Iran
+    url: https://www.aljazeera.com/news/2026/3/2/anti-war-candidates-pose-early-test-for-us-democrats-after-attacks-on-iran
+    excerpt: >-
+      Nida Alla, Kat Abughazaleh among those seeking new aims for Dems in midterms, including abolishing ICE and ending
+      wars.
+    source_name: Al Jazeera
+    published: "2026-03-02T20:02:03.000Z"
+  - entity: netanyahu-iran-would-threaten-all-of-h-2026-03-02
+    type: article
+    title: "Netanyahu: Iran would ‘threaten all of humanity’ with nuclear weapon"
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/3/2/netanyahu-iran-would-threaten-all-of-humanity-with-nuclear-weapon
+    excerpt: >-
+      Israeli Prime Minister Benjamin Netanyahu visited the Beit Shemesh site where an Iranian missile strike killed 9
+      people.
+    source_name: Al Jazeera
+    published: "2026-03-02T19:35:54.000Z"
+  - entity: us-and-israeli-interests-may-soon-diverg-2026-03-02
+    type: article
+    title: US and Israeli interests may soon diverge on Iran
+    url: https://www.aljazeera.com/opinions/2026/3/2/us-and-israeli-interests-may-soon-diverge-on-iran
+    excerpt: Trump and Netanyahu are in this war for very different reasons. And that will soon show.
+    source_name: Al Jazeera
+    published: "2026-03-02T19:10:57.000Z"
+  - entity: trump-says-iran-war-projected-to-last-4-2026-03-02
+    type: article
+    title: Trump says Iran war projected to last 4 to 5 weeks, could go ‘far longer’
+    url: https://www.aljazeera.com/news/2026/3/2/trump-says-iran-war-projected-to-last-4-to-5-weeks-could-go-far-longer
+    excerpt: >-
+      In latest statement, Trump says US was &#039;very nearly under threat&#039; from Iran, drawing immediacy of
+      attacks into question.
+    source_name: Al Jazeera
+    published: "2026-03-02T19:06:51.000Z"
+  - entity: why-qatarenergy-s-lng-production-halt-co-2026-03-02
+    type: article
+    title: Why QatarEnergy’s LNG production halt could shake up global gas markets
+    url: https://www.aljazeera.com/economy/2026/3/2/why-qatarenergys-lng-production-halt-could-shake-up-global-gas-markets
+    excerpt: >-
+      Qatar supplies 20 percent of the world&#039;s LNG. If that&#039;s off the table, countries must scramble for the
+      remaining gas.
+    source_name: Al Jazeera
+    published: "2026-03-02T18:39:11.000Z"
+  - entity: trump-this-was-the-best-chance-to-strik-2026-03-02
+    type: article
+    title: "Trump: this was the best chance to strike Iran’s ‘sick and sinister regime’"
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/2/trump-this-was-the-best-chance-to-strike-irans-sick-and-sinister
+    excerpt: US President Donald Trump outlined the objectives of the US-Israeli attack on Iran.
+    source_name: Al Jazeera
+    published: "2026-03-02T18:11:17.000Z"
+  - entity: france-to-increase-nuclear-warheads-len-2026-03-02
+    type: article
+    title: France to increase nuclear warheads, lend nuclear aircraft to Europe allies
+    url: https://www.aljazeera.com/news/2026/3/2/france-to-increase-nuclear-warheads-lend-nuclear-aircraft-to-europe-allies
+    excerpt: >-
+      Macron&#039;s &#039;advanced deterrence&#039; will be a nuclear-security relationship with key allies distinct
+      from NATO arrangements.
+    source_name: Al Jazeera
+    published: "2026-03-02T17:59:01.000Z"
+  - entity: this-war-might-push-iran-to-a-bomb-fast-2026-03-02
+    type: article
+    title: ‘This war might push Iran to a bomb faster.’
+    url: https://www.aljazeera.com/video/quotable/2026/3/2/this-war-might-push-iran-to-a-bomb-faster
+    excerpt: >-
+      Former US diplomat Henry Ensher warns future Iranian leadership may see a nuclear deterrent as a defensive
+      necessity.
+    source_name: Al Jazeera
+    published: "2026-03-02T17:49:23.000Z"
+  - entity: bitcoin-s-5-spike-higher-monday-driven-2026-03-02
+    type: article
+    title: Bitcoin’s 5% spike higher Monday driven by short-covering, not fresh buying, says analyst
+    url: >-
+      https://www.coindesk.com/markets/2026/03/02/bitcoin-s-5-spike-higher-monday-driven-by-short-covering-not-fresh-buying-says-analyst
+    excerpt: >-
+      Market data show rising open interest and large liquidation clusters around $65,000 and above $70,000,
+      underscoring that the rally may be fragile without stronger spot demand
+    source_name: CoinDesk
+    published: "2026-03-02T19:35:01.000Z"
+  - entity: vitalik-buterin-unveils-plan-to-curb-eth-2026-03-02
+    type: article
+    title: Vitalik Buterin unveils plan to curb Ethereum block builder centralization
+    url: >-
+      https://www.coindesk.com/tech/2026/03/02/vitalik-buterin-unveils-plan-to-curb-ethereum-block-builder-centralization
+    excerpt: >-
+      Another focus of his post is so-called “toxic MEV,” where traders exploit visibility into pending transactions to
+      front-run or “sandwich” users’ trades.
+    source_name: CoinDesk
+    published: "2026-03-02T18:45:17.000Z"
+  - entity: battle-for-bitcoins-soul-opens-as-first-2026-03-02
+    type: article
+    title: Battle for Bitcoin's soul opens as first block supporting 'clean-up' proposal is mined
+    url: >-
+      https://www.coindesk.com/tech/2026/03/02/battle-for-bitcoin-s-soul-opens-as-first-block-supporting-clean-up-proposal-is-mined
+    excerpt: >-
+      A Bitcoin block signaling the BIP-110 proposal has appeared onchain while critics push back by inscribing a large
+      image in protest.
+    source_name: CoinDesk
+    published: "2026-03-02T17:15:44.000Z"
+  - entity: weekend-warriors-how-hyperliquid-became-2026-03-02
+    type: article
+    title: "Weekend warriors: How HyperLiquid became retail’s bear market playground"
+    url: >-
+      https://www.coindesk.com/business/2026/03/02/weekend-warriors-how-hyperliquid-became-retail-s-bear-market-playground
+    excerpt: >-
+      While bitcoin and ether remain in bear markets, HYPE has climbed alongside gold as HyperLiquid’s derivatives
+      volume expands, weekend equity trading gains traction.
+    source_name: CoinDesk
+    published: "2026-03-02T17:04:42.000Z"
+  - entity: crypto-world-faces-growing-pressure-to-r-2026-03-02
+    type: article
+    title: Crypto world faces growing pressure to relent on stablecoin rewards to win bigger prize
+    url: >-
+      https://www.coindesk.com/news-analysis/2026/03/02/crypto-world-faces-growing-pressure-to-relent-on-stablecoin-rewards-to-win-bigger-prize
+    excerpt: >-
+      As much as crypto negotiators paint bank lobbyists' campaign against stablecoin yield as unfair, it landed a blow
+      that one dramatic move could end.
+    source_name: CoinDesk
+    published: "2026-03-02T16:45:11.000Z"
+  - entity: nasdaq-follows-cboe-joining-world-of-bi-2026-03-02
+    type: article
+    title: Nasdaq follows Cboe joining world of 'binary bets' as prediction market craze hits Wall Street
+    url: >-
+      https://www.coindesk.com/markets/2026/03/02/nasdaq-follows-cboe-joining-world-of-binary-bets-as-prediction-market-craze-hits-wall-street
+    excerpt: >-
+      The exchange has filed a proposal with the SEC to list yes-or-no bets on the Nasdaq-100 amid continued demand for
+      prediction markets.
+    source_name: CoinDesk
+    published: "2026-03-02T16:28:16.000Z"
+  - entity: bitcoin-surges-above-68-000-amid-muted-2026-03-02
+    type: article
+    title: Bitcoin surges above $68,000 amid muted stock market reaction to Iran war
+    url: >-
+      https://www.coindesk.com/markets/2026/03/02/bitcoin-surges-above-usd68-000-amid-muted-stock-market-reaction-to-iran-war
+    excerpt: >-
+      At their worst levels, U.S. stock index futures had been down more than 2%, but equity markets are barely lower
+      one hour into Monday's trading session.
+    source_name: CoinDesk
+    published: "2026-03-02T15:32:22.000Z"
+  - entity: tom-lees-bitmine-boosts-ether-holdings-2026-03-02
+    type: article
+    title: Tom Lee's Bitmine boosts ether holdings to 4.47 million tokens with  $98 million ETH purchase
+    url: >-
+      https://www.coindesk.com/business/2026/03/02/bitmine-boosts-ether-holdings-to-4-47m-tokens-after-usd98m-eth-purchase
+    excerpt: The ether treasury firm now has nearly $10 billion in assets and more than $6 billion of ETH staked.
+    source_name: CoinDesk
+    published: "2026-03-02T15:10:25.000Z"
+  - entity: eu-banks-euro-pegged-stablecoin-in-talk-2026-03-02
+    type: article
+    title: EU banks’ euro-pegged stablecoin in talks with crypto exchanges to ensure liquidity
+    url: >-
+      https://www.coindesk.com/business/2026/03/02/eu-banks-euro-pegged-stablecoin-in-talks-with-crypto-exchanges-to-ensure-liquidity
+    excerpt: >-
+      Qivalis is a group of 12 major EU banks developing a euro-pegged stablecoin they plan to debut in the second half
+      of the year.
+    source_name: CoinDesk
+    published: "2026-03-02T14:37:33.000Z"
+  - entity: coindesk-20-performance-update-near-pro-2026-03-02
+    type: article
+    title: "CoinDesk 20 performance update: NEAR Protocol (NEAR) jumps 12.4% over weekend"
+    url: >-
+      https://www.coindesk.com/coindesk-indices/2026/03/02/coindesk-20-performance-update-near-protocol-near-jumps-12-4-over-weekend
+    excerpt: Solana (SOL), up 2.1% from Friday, was also among the top performers.
+    source_name: CoinDesk
+    published: "2026-03-02T14:15:11.000Z"
+  - entity: analyst-report-unilever-plc-2026-03-02
+    type: article
+    title: "Analyst Report: Unilever PLC"
+    url: >-
+      https://finance.yahoo.com/research/reports/ARGUS_3717_AnalystReport_1772477137000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei
+    excerpt: ""
+    source_name: Argus Research
+    published: "2026-03-02T18:45:37.000Z"
+  - entity: here-is-the-x2018-worst-case-scenario-2026-03-02
+    type: article
+    title: Here is the &#x2018;worst-case scenario&#x2019; for oil and the Strait of Hormuz
+    url: >-
+      https://www.marketwatch.com/story/here-is-the-worst-case-scenario-for-oil-and-the-strait-of-hormuz-d1aada30?mod=mw_rss_topstories
+    excerpt: >-
+      Oil prices settled at their highest levels since June on Monday, as the conflict in the Middle East brings with it
+      an inherent risk to the world&#x2019;s available crude supplies.
+    source_name: MarketWatch
+    published: "2026-03-02T21:31:00.000Z"
+  - entity: bonds-log-biggest-selloff-in-9-months-as-2026-03-02
+    type: article
+    title: Bonds log biggest selloff in 9 months as Iran conflict sparks unusual Treasury moves
+    url: >-
+      https://www.marketwatch.com/story/bonds-head-for-biggest-selloff-in-nine-months-as-iran-conflict-sparks-unusual-treasury-moves-c40aed49?mod=mw_rss_topstories
+    excerpt: Mortgage rates and more will be vulnerable to the surge in the 10-year Treasury yield.
+    source_name: MarketWatch
+    published: "2026-03-02T21:12:00.000Z"
+  - entity: iran-conflict-hits-a-market-that-x2019-2026-03-02
+    type: article
+    title: Iran conflict hits a market that&#x2019;s more overvalued than during the 1973 oil shock
+    url: >-
+      https://www.marketwatch.com/story/iran-conflict-hits-a-market-thats-more-overvalued-than-during-the-1973-oil-shock-f9035d9d?mod=mw_rss_topstories
+    excerpt: >-
+      Arab&#x2013;Israeli war in 1973 and the oil embargo that followed shows that stocks don&#x2019;t always rebound
+      quickly.
+    source_name: MarketWatch
+    published: "2026-03-02T20:43:00.000Z"
+  - entity: x2018-i-don-x2019-t-earn-enough-to-su-2026-03-02
+    type: article
+    title: >-
+      &#x2018;I don&#x2019;t earn enough to support us and our baby&#x2019;: My unemployed husband lost $22,000 trading
+      sports cards. What now?
+    url: >-
+      https://www.marketwatch.com/story/i-dont-earn-enough-to-support-us-and-our-baby-my-husband-is-unemployed-and-lost-22-000-trading-sports-cards-what-now-200c1438?mod=mw_rss_topstories
+    excerpt: >-
+      &#x201c;I intervened, shut the business down and got him into therapy and support for gambling-type
+      behaviors.&#x201d;
+    source_name: MarketWatch
+    published: "2026-03-02T20:09:00.000Z"
+  - entity: why-crowdstrike-x2019-s-stock-just-got-2026-03-02
+    type: article
+    title: Why CrowdStrike&#x2019;s stock just got an upgrade ahead of earnings
+    url: >-
+      https://www.marketwatch.com/story/why-crowdstrikes-stock-just-got-an-upgrade-ahead-of-earnings-1a7450be?mod=mw_rss_topstories
+    excerpt: >-
+      An analyst sees minimal risk to the company&#x2019;s guidance and thinks shares have been overly punished by a
+      broad selloff in the software sector.
+    source_name: MarketWatch
+    published: "2026-03-02T19:40:00.000Z"
+  - entity: hbo-max-and-paramount-will-become-one-s-2026-03-02
+    type: article
+    title: HBO Max and Paramount+ will become one streaming service. What does that mean for you?
+    url: >-
+      https://www.marketwatch.com/story/hbo-max-and-paramount-will-become-one-streaming-service-what-does-that-mean-for-you-79f99ca9?mod=mw_rss_topstories
+    excerpt: >-
+      HBO Max and Paramount+ collectively reach over 200 million subscribers worldwide, which is more than Disney+,
+      nearly on par with Amazon&#x2019;s Prime Video and just behind Netflix.
+    source_name: MarketWatch
+    published: "2026-03-02T19:04:00.000Z"
+  - entity: how-applied-optoelectronics-became-the-l-2026-03-02
+    type: article
+    title: How Applied Optoelectronics became the latest viral AI stock
+    url: >-
+      https://www.marketwatch.com/story/how-applied-optoelectronics-became-the-latest-viral-ai-stock-f644d345?mod=mw_rss_topstories
+    excerpt: >-
+      Shares of the optical-networking provider have nearly tripled so far this year as AI players seek out
+      high-bandwidth, low-latency connectivity products.
+    source_name: MarketWatch
+    published: "2026-03-02T18:38:00.000Z"
+  - entity: prediction-market-traders-betting-agains-2026-03-02
+    type: article
+    title: >-
+      Prediction-market traders betting against Iran&#x2019;s Khamenei got a messy reminder to always read the fine
+      print
+    url: >-
+      https://www.marketwatch.com/story/prediction-market-traders-betting-on-irans-khamenei-got-a-messy-reminder-to-always-read-the-fine-print-72a39382?mod=mw_rss_topstories
+    excerpt: >-
+      As tensions between the U.S. and Iran rose over the past few weeks, traders were using Kalshi and Polymarket to
+      bet on whether Iran&#x2019;s Supreme Leader Ali Khamenei would remain in power. But when
+    source_name: MarketWatch
+    published: "2026-03-02T18:24:00.000Z"
+  - entity: trump-leaves-door-open-for-extended-u-s-2026-03-02
+    type: article
+    title: Trump leaves door open for extended U.S. campaign against Iran. What that could mean for the economy.
+    url: >-
+      https://www.marketwatch.com/story/trump-leaves-door-open-for-extended-u-s-campaign-against-iran-e2d21f8f?mod=mw_rss_topstories
+    excerpt: >-
+      President Donald Trump said Monday the military operation against Iran could last four to five weeks &#x2014; or
+      longer.
+    source_name: MarketWatch
+    published: "2026-03-02T18:23:00.000Z"
+  - entity: palantir-lockheed-and-these-other-defen-2026-03-02
+    type: article
+    title: Palantir, Lockheed and these other defense stocks are rising on heels of Iran conflict
+    url: >-
+      https://www.marketwatch.com/story/palantir-lockheed-and-these-other-defense-stocks-are-rising-on-heels-of-iran-conflict-3832f763?mod=mw_rss_topstories
+    excerpt: >-
+      Defense spending is set to get &#x201c;more urgent and less controversial,&#x201d; an analyst notes, and numerous
+      stocks could benefit.
+    source_name: MarketWatch
+    published: "2026-03-02T18:17:00.000Z"
+  - entity: devon-coterra-deal-signals-investors-sti-2026-03-02
+    type: article
+    title: Devon–Coterra Deal Signals Investors Still Rule the Shale Patch
+    url: https://oilprice.com/Energy/Crude-Oil/DevonCoterra-Deal-Signals-Investors-Still-Rule-the-Shale-Patch.html
+    excerpt: >-
+      Last month’s announcement that Devon Energy and Coterra Energy are merging to create a $58-billion giant is the
+      latest mega-deal in the U.S. shale patch, signaling smaller public companies are seeking
+    source_name: OilPrice.com
+    published: "2026-03-02T21:00:00.000Z"
+  - entity: u-s-gasoline-tops-3-as-iran-conflict-s-2026-03-02
+    type: article
+    title: U.S. Gasoline Tops $3 as Iran Conflict Sends Fuel Prices Higher
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/US-Gasoline-Tops-3-as-Iran-Conflict-Sends-Fuel-Prices-Higher.html
+    excerpt: >-
+      Average U.S. gasoline prices climbed above $3 per gallon on Monday for the first time since November, as
+      escalating conflict with Iran rippled through global energy markets and pushed crude and fuel p
+    source_name: OilPrice.com
+    published: "2026-03-02T20:15:00.000Z"
+  - entity: the-high-stakes-futility-of-the-ai-race-2026-03-02
+    type: article
+    title: The High Stakes Futility of the AI Race
+    url: https://oilprice.com/Energy/Energy-General/The-High-Stakes-Futility-of-the-AI-Race.html
+    excerpt: >-
+      When it comes to the dangers of artificial intelligence (AI) and now artificial superintelligence (ASI) (sometimes
+      called artificial general intelligence), I feel as if we&#039;ve been transported ont
+    source_name: OilPrice.com
+    published: "2026-03-02T20:00:00.000Z"
+  - entity: how-many-hormuz-warnings-does-europe-nee-2026-03-02
+    type: article
+    title: How Many Hormuz Warnings Does Europe Need?
+    url: https://oilprice.com/Energy/Energy-General/How-Many-Hormuz-Warnings-Does-Europe-Need.html
+    excerpt: >-
+      The Strait of Hormuz is back in the headlines. Again. Roughly a fifth of globally traded oil passes through that
+      narrow maritime corridor between Oman and Iran. And once more, geopolitical tensions in
+    source_name: OilPrice.com
+    published: "2026-03-02T19:00:00.000Z"
+  - entity: chevron-declares-force-majeure-as-israel-2026-03-02
+    type: article
+    title: Chevron Declares Force Majeure as Israel Shuts Leviathan Gas Field
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/Chevron-Declares-Force-Majeure-as-Israel-Shuts-Leviathan-Gas-Field.html
+    excerpt: >-
+      Chevron has declared force majeure at Israel’s Leviathan natural gas field after the government ordered a
+      temporary suspension of production on security grounds, marking the second time in less than a
+    source_name: OilPrice.com
+    published: "2026-03-02T18:30:00.000Z"
+  - entity: china-s-rare-earth-dominance-and-the-str-2026-03-02
+    type: article
+    title: China’s Rare Earth Dominance and the Strategic Failure of the West
+    url: https://oilprice.com/Energy/Energy-General/Chinas-Rare-Earth-Dominance-and-the-Strategic-Failure-of-the-West.html
+    excerpt: >-
+      REalloys (NASDAQ: ALOY) and a small number of other North American companies are doing what the rest of the
+      Western world failed to do for three decades: They are breaking China’s "kill switch" on the
+    source_name: OilPrice.com
+    published: "2026-03-02T18:12:48.000Z"
+  - entity: iran-war-sends-oil-curve-into-crisis-mod-2026-03-02
+    type: article
+    title: Iran War Sends Oil Curve Into Crisis Mode
+    url: https://oilprice.com/Energy/Crude-Oil/Iran-War-Sends-Oil-Curve-Into-Crisis-Mode.html
+    excerpt: >-
+      What has been happening in the Middle East when it comes to markets won’t affect only headlines but could reshape
+      the structure of the oil market from the physical barrel to the far end of the derivat
+    source_name: OilPrice.com
+    published: "2026-03-02T18:00:00.000Z"
+  - entity: china-s-renewable-boom-masks-a-quiet-coa-2026-03-02
+    type: article
+    title: China’s Renewable Boom Masks a Quiet Coal-to-Liquids Expansion
+    url: https://oilprice.com/Energy/Coal/Chinas-Renewable-Boom-Masks-a-Quiet-Coal-to-Liquids-Expansion.html
+    excerpt: >-
+      China’s power sector is undergoing a visible transformation. Electricity demand rose by 5% between 2024 and 2025,
+      reaching 10,368 TWh, yet coal-fired generation declined by 113 TWh to 6,294 TWh in a y
+    source_name: OilPrice.com
+    published: "2026-03-02T17:00:00.000Z"
+  - entity: arctic-air-drives-natural-gas-volatility-2026-03-02
+    type: article
+    title: Arctic Air Drives Natural Gas Volatility Across the Northeast
+    url: https://oilprice.com/Energy/Natural-Gas/Arctic-Air-Drives-Natural-Gas-Volatility-Across-the-Northeast.html
+    excerpt: >-
+      Winter in the Mid-Atlantic region is certainly winding down, and March is always an unpredictable month. Early
+      next week, a fast-moving Alberta Clipper is forecast to bring yet another round of wintry
+    source_name: OilPrice.com
+    published: "2026-03-02T16:00:00.000Z"
+  - entity: blackrock-eqt-to-acquire-aes-corp-in-2026-03-02
+    type: article
+    title: BlackRock, EQT To Acquire AES Corp. in $33.4B Deal
+    url: https://oilprice.com/Latest-Energy-News/World-News/BlackRock-EQT-To-Acquire-AES-Corp-in-334B-Deal.html
+    excerpt: >-
+      A consortium led by BlackRock’s Global Infrastructure Partners (GIP) and U.S. gas giant EQT Corp. (NYSE:EQT) have
+      agreed to acquire global power utility, AES Corp. (NYSE:AES), for $15 per share in cas
+    source_name: OilPrice.com
+    published: "2026-03-02T15:30:00.000Z"
+  - entity: users-are-ditching-chatgpt-for-claude-2026-03-02
+    type: article
+    title: Users are ditching ChatGPT for Claude — here’s how to make the switch
+    url: https://techcrunch.com/2026/03/02/users-are-ditching-chatgpt-for-claude-heres-how-to-make-the-switch/
+    excerpt: >-
+      Following controversies surrounding ChatGPT, many users are ditching the AI chatbot for Claude instead. Here's how
+      to make the switch.
+    source_name: TechCrunch
+    published: "2026-03-02T18:42:11.000Z"
+  - entity: tech-workers-urge-dod-congress-to-withd-2026-03-02
+    type: article
+    title: Tech workers urge DOD, Congress to withdraw Anthropic label as a supply-chain risk
+    url: >-
+      https://techcrunch.com/2026/03/02/tech-workers-urge-dod-congress-to-withdraw-anthropic-label-as-a-supply-chain-risk/
+    excerpt: >-
+      Tech workers have signed an open letter urging the Department of Defense to withdraw its designation of Anthropic
+      as a "supply chain risk" and instead to settle the matter quietly.
+    source_name: TechCrunch
+    published: "2026-03-02T17:18:34.000Z"
+  - entity: a-married-founder-duo-8217-s-company-1-2026-03-02
+    type: article
+    title: A married founder duo&#8217;s company, 14.ai, is replacing customer support teams at startups
+    url: >-
+      https://techcrunch.com/2026/03/02/a-married-founder-duos-company-14-ai-is-replacing-customer-support-teams-at-startups/
+    excerpt: 14.ai also launched a consumer brand to understand how much AI can handle customer support tasks.
+    source_name: TechCrunch
+    published: "2026-03-02T15:14:36.000Z"
+  - entity: anthropic-8217-s-claude-reports-widespr-2026-03-02
+    type: article
+    title: Anthropic&#8217;s Claude reports widespread outage
+    url: https://techcrunch.com/2026/03/02/anthropics-claude-reports-widespread-outage/
+    excerpt: >-
+      Anthropic's AI chatbot Claude experienced widespread service disruptions on Monday morning, with thousands of
+      users reporting issues accessing the bot.
+    source_name: TechCrunch
+    published: "2026-03-02T13:31:49.000Z"
+  - entity: charter-gets-fcc-permission-to-buy-cox-a-2026-03-02
+    type: article
+    title: Charter gets FCC permission to buy Cox and become largest ISP in the US
+    url: >-
+      https://arstechnica.com/tech-policy/2026/03/fcc-lets-charter-buy-cox-says-no-reason-to-worry-about-higher-internet-prices/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-03-02T18:19:03.000Z"
+  - entity: iowa-county-adopts-strict-zoning-rules-f-2026-03-02
+    type: article
+    title: Iowa county adopts strict zoning rules for data centers, but residents still worry
+    url: >-
+      https://arstechnica.com/ai/2026/03/iowa-county-adopts-strict-zoning-rules-for-data-centers-but-residents-still-worry/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-03-02T15:34:42.000Z"
+  - entity: 599-m4-ipad-air-is-a-lot-like-the-old-o-2026-03-02
+    type: article
+    title: $599 M4 iPad Air is a lot like the old one, but with a substantial RAM boost
+    url: https://arstechnica.com/gadgets/2026/03/apple-keeps-the-ipad-air-fresh-with-m4-chip-upgrade-and-12gb-of-ram/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-03-02T15:06:00.000Z"
+  - entity: research-roundup-six-cool-science-stori-2026-03-02
+    type: article
+    title: "Research roundup: Six cool science stories we almost missed"
+    url: https://arstechnica.com/science/2026/03/research-roundup-six-cool-science-stories-we-almost-missed/
+    excerpt: Doom, and AI discovers rules of an ancient game.]]>
+    source_name: Ars Technica
+    published: "2026-03-02T14:45:05.000Z"
+  - entity: apples-new-iphone-17e-has-an-a19-chip-2026-03-02
+    type: article
+    title: Apple's new iPhone 17e has an A19 chip, MagSafe, and 256GB of storage for $599
+    url: >-
+      https://arstechnica.com/gadgets/2026/03/apples-new-iphone-17e-has-an-a19-chip-magsafe-and-256gb-of-storage-for-599/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-03-02T14:34:52.000Z"
+  - entity: its-almost-a-station-wagon-the-2026-su-2026-03-02
+    type: article
+    title: "It's almost a station wagon: The 2026 Subaru Trailseeker, driven"
+    url: https://arstechnica.com/cars/2026/03/2026-subaru-trailseeker-first-drive-the-most-quintessentially-subaru-ev-yet/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-03-02T14:00:01.000Z"
+  - entity: former-nasa-chief-turned-ula-lobbyist-se-2026-03-02
+    type: article
+    title: Former NASA chief turned ULA lobbyist seeks law to limit SpaceX funding
+    url: https://arstechnica.com/space/2026/03/former-nasa-chief-turned-ula-lobbyist-seeks-law-to-limit-spacex-funding/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-03-02T13:58:30.000Z"
+  - entity: trump-fccs-equal-time-crackdown-doesnt-2026-03-02
+    type: article
+    title: Trump FCC's equal-time crackdown doesn't apply equally—or at all—to talk radio
+    url: >-
+      https://arstechnica.com/tech-policy/2026/03/trump-fccs-equal-time-crackdown-doesnt-apply-equally-or-at-all-to-talk-radio/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-03-02T12:00:01.000Z"
+  - entity: amd-ryzen-ai-400-chips-will-bring-newer-2026-03-02
+    type: article
+    title: AMD Ryzen AI 400 chips will bring newer CPUs, GPUs, and NPUs to AM5 desktops
+    url: https://arstechnica.com/gadgets/2026/03/amd-ryzen-ai-400-cpus-will-bring-upgraded-graphics-to-socket-am5-desktops/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-03-02T08:00:29.000Z"
