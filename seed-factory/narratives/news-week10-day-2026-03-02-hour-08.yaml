@@ -1,0 +1,580 @@
+seed:
+  name: news-week10-day-2026-03-02-hour-08
+  label: Daily News — 2026-03-02 08:00 (Week 10, 2026)
+  namespace: news.week10.day-2026-03-02
+  description: "Auto-gathered news: 27 stories, 2026-03-02 to 2026-03-02"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week10
+    extends: news
+  - namespace: news.week10.day-2026-03-02
+    extends: news.week10
+entities:
+  - id: oil-prices-rise-after-ships-attacked-nea-2026-03-02
+    type: Event
+    name: Oil prices rise after ships attacked near Strait of Hormuz
+    category: geopolitics
+    description: Experts have warned that a prolonged conflict could push global energy prices even higher.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T06:53:43.000Z"
+      precision: day
+  - id: kidnapping-of-foreigners-soars-in-africa-2026-03-02
+    type: Event
+    name: Kidnapping of foreigners soars in Africa's lawless Sahel region
+    category: geopolitics
+    description: >-
+      Growing insecurity in the Sahel made 2025 one of the worst years on record for the abduction of foreigners in
+      Africa.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:02:10.000Z"
+      precision: day
+  - id: michael-b-jordan-upends-oscars-race-as-s-2026-03-02
+    type: Event
+    name: Michael B Jordan upends Oscars race as Sinners wins big at Actor Awards
+    category: geopolitics
+    description: The US star's best actor win for Sinners leaves the Oscars race too close to call.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T05:08:35.000Z"
+      precision: day
+  - id: deepfake-attack-many-people-could-have-2026-03-02
+    type: Claim
+    name: "Deepfake attack: 'Many people could have been cheated'"
+    category: finance
+    description: The boss of the Bombay Stock Exchange was recently targeted in what is a growing global problem.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T06:47:00.000Z"
+      precision: day
+  - id: oil-prices-rise-as-iran-war-threatens-sh-2026-03-02
+    type: Event
+    name: Oil prices rise as Iran war threatens shipping through strait of Hormuz
+    category: finance
+    description: >-
+      <p>Brent crude jumped by 13% during early trading and stock markets came under pressure as US-Israeli strikes on
+      Iran raised fears of disruption</p><p>Oil prices rose and stock markets came under pressure on Monday after
+      intense US-Israeli strikes on Iran prompted fears of significant global economi
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T02:23:56.000Z"
+      precision: day
+  - id: rolls-royce-boss-open-to-germany-joini-2026-03-02
+    type: Event
+    name: Rolls-Royce boss ‘open’ to Germany joining UK’s fighter jet project
+    category: finance
+    description: >-
+      <p>Tufan Erginbilgiç says decision is for the government but German participation remains a possibility</p><p>The
+      boss of Rolls-Royce has said he would welcome Germany helping to build Britain’s next-generation fighter jet,
+      arguing that it would bring in more business for the project.</p><p>The airc
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T05:00:01.000Z"
+      precision: day
+  - id: most-senior-council-officers-in-england-2026-03-02
+    type: Event
+    name: Most senior council officers in England say building work hit by delays
+    category: finance
+    description: >-
+      <p>Funding uncertainty is main concern, despite Labour’s pledge to revitalise construction, survey
+      shows</p><p>Almost two-thirds of senior council officers have said they are seeing construction projects delayed,
+      despite the key role of local authorities in creating the wave of new housing and infra
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T06:00:02.000Z"
+      precision: day
+  - id: blasts-shake-qatar-uae-kuwait-as-iran-2026-03-02
+    type: Event
+    name: Blasts shake Qatar, UAE, Kuwait as Iran’s retaliatory strikes continue
+    category: geopolitics
+    description: >-
+      Iran&#039;s retaliatory attacks on US assets in the region continue for a third day as fears of a prolonged
+      conflict rise.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T07:16:41.000Z"
+      precision: day
+  - id: iran-s-larijani-refutes-claims-tehran-pu-2026-03-02
+    type: Claim
+    name: Iran’s Larijani refutes claims Tehran pushed to resume US talks
+    category: geopolitics
+    description: The comments come after US media reported a diplomatic push following the killing of Iran&#039;s supreme leader.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T07:16:08.000Z"
+      precision: day
+  - id: analysis-khamenei-s-killing-leaves-iran-2026-03-02
+    type: Event
+    name: "Analysis: Khamenei’s killing leaves Iran’s ‘axis’ in disarray"
+    category: geopolitics
+    description: >-
+      While Tehran warns it will ‘burn everything’, its proxies face a choice between suicidal revenge and local
+      survival.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T05:38:15.000Z"
+      precision: day
+  - id: after-iran-s-salvo-hit-their-skylines-w-2026-03-02
+    type: Event
+    name: After Iran’s salvo hit their skylines, will Gulf states enter the war?
+    category: geopolitics
+    description: >-
+      Gulf states face an impossible choice after Iranian attacks: remain passive, or risk being seen as fighting with
+      Israel.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T05:36:56.000Z"
+      precision: day
+  - id: al-jazeera-reports-from-beirut-as-reside-2026-03-02
+    type: Event
+    name: Al Jazeera reports from Beirut as residents flee following Israeli strikes
+    category: geopolitics
+    description: >-
+      Tens of thousands of Lebanese civilians are leaving areas in Beirut following Israeli strikes and forced
+      displacement.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T03:55:18.000Z"
+      precision: day
+  - id: balen-shah-rapper-mayor-nepal-s-next-2026-03-02
+    type: Claim
+    name: "Balen Shah: Rapper, mayor, Nepal’s next prime minister?"
+    category: geopolitics
+    description: His sunglasses and songs are the rage, but the ex-Kathmandu mayor has his sights on Nepal&#039;s top job.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T03:17:01.000Z"
+      precision: day
+  - id: israel-bombs-beirut-after-hezbollah-fire-2026-03-02
+    type: Event
+    name: Israel bombs Beirut after Hezbollah fires rockets in Iran war retaliation
+    category: geopolitics
+    description: Israel has carried out heavy strikes in the southern suburbs of Lebanon’s capital Beirut.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T02:32:17.000Z"
+      precision: day
+  - id: netanyahu-vows-increasing-strikes-on-teh-2026-03-02
+    type: Event
+    name: Netanyahu vows increasing strikes on Tehran
+    category: geopolitics
+    description: Israel’s prime minister says strikes on Tehran will increase in the coming days, with US support.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T01:30:49.000Z"
+      precision: day
+  - id: poll-suggests-only-a-quarter-of-american-2026-03-02
+    type: Event
+    name: Poll suggests only a quarter of Americans support attacks on Iran
+    category: geopolitics
+    description: US lawmakers heap pressure on Trump following the first US soldier deaths after Khamenei&#039;s killing.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T01:20:02.000Z"
+      precision: day
+  - id: tehran-comes-under-attack-from-new-round-2026-03-02
+    type: Event
+    name: Tehran comes under attack from new round of Israeli strikes
+    category: geopolitics
+    description: >-
+      Videos show heavy bombardment of Tehran after Israel’s military said it had launched another wave of attacks on
+      Iran.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T01:17:18.000Z"
+      precision: day
+  - id: bitcoin-slips-below-66-000-u-s-stock-2026-03-02
+    type: Event
+    name: Bitcoin slips below $66,000, U.S. stock futures bleed as Iran hits Saudi oil refinery
+    category: finance.crypto
+    description: Iran has reportedly stepped up attacks against U.S. assets in the middle east.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T07:12:10.000Z"
+      precision: day
+  - id: over-9-billion-flees-bitcoin-and-ether-2026-03-02
+    type: Event
+    name: Over $9 billion flees bitcoin and ether ETFs in four months
+    category: finance.crypto
+    description: Record outflows indicate that institutional appetite for digital assets has collapsed.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T05:55:17.000Z"
+      precision: day
+  - id: bitcoin-cryptos-under-pressure-as-oil-s-2026-03-02
+    type: Event
+    name: Bitcoin, cryptos under pressure as oil spikes 6% and global markets price in U.S.-Iran conflict
+    category: finance.crypto
+    description: >-
+      Bitcoin fell back to $66,700 as traditional markets opened to their first chance to price the weekend's military
+      escalation, with oil surging to $77 and Asian equities dropping 1.4%.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T05:26:20.000Z"
+      precision: day
+  - id: hyperliquids-hype-token-jumps-5-as-ira-2026-03-02
+    type: Event
+    name: Hyperliquid's HYPE token jumps 5% as Iran war brings windfall revenue, JUP gains on supply freeze
+    category: finance.crypto
+    description: >-
+      Traders lean into supply compression stories in altcoins as Hyperliquid ramps up token burns and Jupiter freezes
+      new emissions, even as bitcoin churns between $60,000 and $69,000 with muted flow.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T04:34:10.000Z"
+      precision: day
+  - id: anthropic-x2019-s-claude-tops-app-store-2026-03-02
+    type: Event
+    name: Anthropic&#x2019;s Claude tops App Store charts as backlash builds against OpenAI&#x2019;s ChatGPT
+    category: finance.markets
+    description: OpenAI faces some user criticism over its new deal with the Department of Defense.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T01:32:00.000Z"
+      precision: day
+  - id: goldman-asian-and-european-lng-prices-c-2026-03-02
+    type: Claim
+    name: "Goldman: Asian and European LNG Prices Could Jump 130%"
+    category: finance.energy
+    description: "The escalating conflict in the Middle East is delaying LNG shipments via the Strait of Hormuz from key exporters in the region, putting severe upward pressure on spot LNG prices in Asia and the European natural gas market.\_ The key Strait of Hormuz, where a fifth of global oil and LNG flows pass, is"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T07:27:47.000Z"
+      precision: day
+  - id: analysts-see-100-oil-on-strait-of-hormu-2026-03-02
+    type: Event
+    name: Analysts See $100 Oil on Strait of Hormuz Disruption
+    category: finance.energy
+    description: "Following the escalation of the conflict in the Middle East, energy analysts and investment banks expect oil prices to surge this week to $90 with chances of hitting $100 per barrel if disruptions to traffic in the crucial Strait of Hormuz persist.\_ Early on Monday in Asian trade, oil prices had alr"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T06:22:08.000Z"
+      precision: day
+  - id: oil-prices-soar-amid-escalating-middle-e-2026-03-02
+    type: Event
+    name: Oil Prices Soar Amid Escalating Middle East Conflict
+    category: finance.energy
+    description: >-
+      Oil prices surged on Monday as the fallout from U.S. and Israeli military strikes on Iran rippled through global
+      energy markets, with tanker traffic through the Strait of Hormuz already heavily impacted and military strikes
+      continuing across the region. In early Asian trade, Brent futures broke the 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T01:58:00.000Z"
+      precision: day
+  - id: how-china-s-rare-earth-ban-backfired-int-2026-03-02
+    type: Event
+    name: How China’s Rare Earth Ban Backfired into a U.S. Tech Breakthrough
+    category: finance.energy
+    description: >-
+      In a typical Chinese rare earth processing plant, 200 workers move through a maze of massive chemical tanks,
+      risking life and limb to produce the materials that power everything from fighter jets and missile components to
+      cellphones. Hundreds of these facilities operate across China, and they give B
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T01:00:00.000Z"
+      precision: day
+  - id: china-s-oil-buying-spree-may-be-running-2026-03-02
+    type: Claim
+    name: China’s Oil Buying Spree May Be Running Out of Steam
+    category: finance.energy
+    description: >-
+      China&#039;s imports last year broke yet another record, despite talk of waning oil demand. Since the start of
+      this year, the world’s biggest oil importer has continued buying crude at elevated rates, but this may be about to
+      change as prices extend their rally. Brent crude has been hovering around 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:00:00.000Z"
+      precision: day
+narratives:
+  - name: Energy Markets
+    steps:
+      - from: china-s-oil-buying-spree-may-be-running-2026-03-02
+        to: oil-prices-soar-amid-escalating-middle-e-2026-03-02
+        type: follows
+      - from: oil-prices-soar-amid-escalating-middle-e-2026-03-02
+        to: oil-prices-rise-as-iran-war-threatens-sh-2026-03-02
+        type: causes
+      - from: oil-prices-rise-as-iran-war-threatens-sh-2026-03-02
+        to: analysts-see-100-oil-on-strait-of-hormu-2026-03-02
+        type: causes
+      - from: analysts-see-100-oil-on-strait-of-hormu-2026-03-02
+        to: oil-prices-rise-after-ships-attacked-nea-2026-03-02
+        type: causes
+      - from: oil-prices-rise-after-ships-attacked-nea-2026-03-02
+        to: goldman-asian-and-european-lng-prices-c-2026-03-02
+        type: supports
+  - name: Israel-Palestine Conflict
+    steps:
+      - from: tehran-comes-under-attack-from-new-round-2026-03-02
+        to: al-jazeera-reports-from-beirut-as-reside-2026-03-02
+        type: causes
+  - name: Crypto Markets
+    steps:
+      - from: hyperliquids-hype-token-jumps-5-as-ira-2026-03-02
+        to: bitcoin-cryptos-under-pressure-as-oil-s-2026-03-02
+        type: causes
+      - from: bitcoin-cryptos-under-pressure-as-oil-s-2026-03-02
+        to: over-9-billion-flees-bitcoin-and-ether-2026-03-02
+        type: causes
+      - from: over-9-billion-flees-bitcoin-and-ether-2026-03-02
+        to: bitcoin-slips-below-66-000-u-s-stock-2026-03-02
+        type: causes
+sources:
+  - entity: oil-prices-rise-after-ships-attacked-nea-2026-03-02
+    type: article
+    title: Oil prices rise after ships attacked near Strait of Hormuz
+    url: https://www.bbc.com/news/articles/c75evve6l63o
+    excerpt: Experts have warned that a prolonged conflict could push global energy prices even higher.
+    source_name: BBC News
+    published: "2026-03-02T06:53:43.000Z"
+  - entity: kidnapping-of-foreigners-soars-in-africa-2026-03-02
+    type: article
+    title: Kidnapping of foreigners soars in Africa's lawless Sahel region
+    url: https://www.bbc.com/news/articles/c0lj18d5lx3o
+    excerpt: >-
+      Growing insecurity in the Sahel made 2025 one of the worst years on record for the abduction of foreigners in
+      Africa.
+    source_name: BBC News
+    published: "2026-03-02T00:02:10.000Z"
+  - entity: michael-b-jordan-upends-oscars-race-as-s-2026-03-02
+    type: article
+    title: Michael B Jordan upends Oscars race as Sinners wins big at Actor Awards
+    url: https://www.bbc.com/news/articles/clyzklvk79yo
+    excerpt: The US star's best actor win for Sinners leaves the Oscars race too close to call.
+    source_name: BBC News
+    published: "2026-03-02T05:08:35.000Z"
+  - entity: deepfake-attack-many-people-could-have-2026-03-02
+    type: article
+    title: "Deepfake attack: 'Many people could have been cheated'"
+    url: https://www.bbc.com/news/articles/c0j59vydxj9o
+    excerpt: The boss of the Bombay Stock Exchange was recently targeted in what is a growing global problem.
+    source_name: BBC Business
+    published: "2026-03-02T06:47:00.000Z"
+  - entity: oil-prices-rise-as-iran-war-threatens-sh-2026-03-02
+    type: article
+    title: Oil prices rise as Iran war threatens shipping through strait of Hormuz
+    url: https://www.theguardian.com/world/2026/mar/02/oil-prices-iran-war-strait-of-hormuz-shipping
+    excerpt: >-
+      <p>Brent crude jumped by 13% during early trading and stock markets came under pressure as US-Israeli strikes on
+      Iran raised fears of disruption</p><p>Oil prices rose and stock markets came under pres
+    source_name: The Guardian
+    published: "2026-03-02T02:23:56.000Z"
+  - entity: rolls-royce-boss-open-to-germany-joini-2026-03-02
+    type: article
+    title: Rolls-Royce boss ‘open’ to Germany joining UK’s fighter jet project
+    url: https://www.theguardian.com/business/2026/mar/02/rolls-royce-germany-uk-fighter-jet-tufan-erginbilgic
+    excerpt: >-
+      <p>Tufan Erginbilgiç says decision is for the government but German participation remains a possibility</p><p>The
+      boss of Rolls-Royce has said he would welcome Germany helping to build Britain’s next-
+    source_name: The Guardian
+    published: "2026-03-02T05:00:01.000Z"
+  - entity: most-senior-council-officers-in-england-2026-03-02
+    type: article
+    title: Most senior council officers in England say building work hit by delays
+    url: https://www.theguardian.com/society/2026/mar/02/senior-council-officers-building-work-hit-by-delays
+    excerpt: >-
+      <p>Funding uncertainty is main concern, despite Labour’s pledge to revitalise construction, survey
+      shows</p><p>Almost two-thirds of senior council officers have said they are seeing construction proje
+    source_name: The Guardian
+    published: "2026-03-02T06:00:02.000Z"
+  - entity: blasts-shake-qatar-uae-kuwait-as-iran-2026-03-02
+    type: article
+    title: Blasts shake Qatar, UAE, Kuwait as Iran’s retaliatory strikes continue
+    url: https://www.aljazeera.com/news/2026/3/2/blasts-shake-qatar-uae-kuwait-as-irans-retaliatory-strikes-continue
+    excerpt: >-
+      Iran&#039;s retaliatory attacks on US assets in the region continue for a third day as fears of a prolonged
+      conflict rise.
+    source_name: Al Jazeera
+    published: "2026-03-02T07:16:41.000Z"
+  - entity: iran-s-larijani-refutes-claims-tehran-pu-2026-03-02
+    type: article
+    title: Iran’s Larijani refutes claims Tehran pushed to resume US talks
+    url: https://www.aljazeera.com/news/2026/3/2/irans-larijani-refutes-claims-tehran-pushed-to-resume-us-talks
+    excerpt: The comments come after US media reported a diplomatic push following the killing of Iran&#039;s supreme leader.
+    source_name: Al Jazeera
+    published: "2026-03-02T07:16:08.000Z"
+  - entity: analysis-khamenei-s-killing-leaves-iran-2026-03-02
+    type: article
+    title: "Analysis: Khamenei’s killing leaves Iran’s ‘axis’ in disarray"
+    url: https://www.aljazeera.com/features/2026/3/2/hold-analysis-khameneis-killing-leaves-irans-axis-in-disarray
+    excerpt: >-
+      While Tehran warns it will ‘burn everything’, its proxies face a choice between suicidal revenge and local
+      survival.
+    source_name: Al Jazeera
+    published: "2026-03-02T05:38:15.000Z"
+  - entity: after-iran-s-salvo-hit-their-skylines-w-2026-03-02
+    type: article
+    title: After Iran’s salvo hit their skylines, will Gulf states enter the war?
+    url: >-
+      https://www.aljazeera.com/features/2026/3/2/after-irans-salvo-hit-their-skylines-will-the-gulf-states-enter-the-war
+    excerpt: >-
+      Gulf states face an impossible choice after Iranian attacks: remain passive, or risk being seen as fighting with
+      Israel.
+    source_name: Al Jazeera
+    published: "2026-03-02T05:36:56.000Z"
+  - entity: al-jazeera-reports-from-beirut-as-reside-2026-03-02
+    type: article
+    title: Al Jazeera reports from Beirut as residents flee following Israeli strikes
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/3/2/al-jazeera-reports-from-beirut-as-residents-flee-following-israeli-strikes
+    excerpt: >-
+      Tens of thousands of Lebanese civilians are leaving areas in Beirut following Israeli strikes and forced
+      displacement.
+    source_name: Al Jazeera
+    published: "2026-03-02T03:55:18.000Z"
+  - entity: balen-shah-rapper-mayor-nepal-s-next-2026-03-02
+    type: article
+    title: "Balen Shah: Rapper, mayor, Nepal’s next prime minister?"
+    url: https://www.aljazeera.com/features/2026/3/2/balen-shah-rapper-mayor-nepals-next-prime-minister
+    excerpt: His sunglasses and songs are the rage, but the ex-Kathmandu mayor has his sights on Nepal&#039;s top job.
+    source_name: Al Jazeera
+    published: "2026-03-02T03:17:01.000Z"
+  - entity: israel-bombs-beirut-after-hezbollah-fire-2026-03-02
+    type: article
+    title: Israel bombs Beirut after Hezbollah fires rockets in Iran war retaliation
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/3/2/israel-bombs-beirut-after-hezbollah-fires-rockets-in-iran-war-retaliation
+    excerpt: Israel has carried out heavy strikes in the southern suburbs of Lebanon’s capital Beirut.
+    source_name: Al Jazeera
+    published: "2026-03-02T02:32:17.000Z"
+  - entity: netanyahu-vows-increasing-strikes-on-teh-2026-03-02
+    type: article
+    title: Netanyahu vows increasing strikes on Tehran
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/2/netanyahu-vows-increasing-strikes-on-tehran
+    excerpt: Israel’s prime minister says strikes on Tehran will increase in the coming days, with US support.
+    source_name: Al Jazeera
+    published: "2026-03-02T01:30:49.000Z"
+  - entity: poll-suggests-only-a-quarter-of-american-2026-03-02
+    type: article
+    title: Poll suggests only a quarter of Americans support attacks on Iran
+    url: https://www.aljazeera.com/news/2026/3/2/poll-suggests-only-a-quarter-of-americans-support-attacks-on-iran
+    excerpt: US lawmakers heap pressure on Trump following the first US soldier deaths after Khamenei&#039;s killing.
+    source_name: Al Jazeera
+    published: "2026-03-02T01:20:02.000Z"
+  - entity: tehran-comes-under-attack-from-new-round-2026-03-02
+    type: article
+    title: Tehran comes under attack from new round of Israeli strikes
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/2/tehran-comes-under-attack-from-new-round-of-israeli-strikes
+    excerpt: >-
+      Videos show heavy bombardment of Tehran after Israel’s military said it had launched another wave of attacks on
+      Iran.
+    source_name: Al Jazeera
+    published: "2026-03-02T01:17:18.000Z"
+  - entity: bitcoin-slips-below-66-000-u-s-stock-2026-03-02
+    type: article
+    title: Bitcoin slips below $66,000, U.S. stock futures bleed as Iran hits Saudi oil refinery
+    url: >-
+      https://www.coindesk.com/markets/2026/03/02/bitcoin-u-s-stock-futures-give-up-early-gains-as-iran-conflict-intensifies
+    excerpt: Iran has reportedly stepped up attacks against U.S. assets in the middle east.
+    source_name: CoinDesk
+    published: "2026-03-02T07:12:10.000Z"
+  - entity: over-9-billion-flees-bitcoin-and-ether-2026-03-02
+    type: article
+    title: Over $9 billion flees bitcoin and ether ETFs in four months
+    url: https://www.coindesk.com/markets/2026/03/02/over-usd9-billion-flees-bitcoin-and-ether-etfs-in-four-months
+    excerpt: Record outflows indicate that institutional appetite for digital assets has collapsed.
+    source_name: CoinDesk
+    published: "2026-03-02T05:55:17.000Z"
+  - entity: bitcoin-cryptos-under-pressure-as-oil-s-2026-03-02
+    type: article
+    title: Bitcoin, cryptos under pressure as oil spikes 6% and global markets price in U.S.-Iran conflict
+    url: >-
+      https://www.coindesk.com/markets/2026/03/02/bitcoin-cryptos-under-pressure-as-oil-spikes-6-and-global-markets-price-in-u-s-iran-conflict
+    excerpt: >-
+      Bitcoin fell back to $66,700 as traditional markets opened to their first chance to price the weekend's military
+      escalation, with oil surging to $77 and Asian equities dropping 1.4%.
+    source_name: CoinDesk
+    published: "2026-03-02T05:26:20.000Z"
+  - entity: hyperliquids-hype-token-jumps-5-as-ira-2026-03-02
+    type: article
+    title: Hyperliquid's HYPE token jumps 5% as Iran war brings windfall revenue, JUP gains on supply freeze
+    url: >-
+      https://www.coindesk.com/markets/2026/03/02/hype-jumps-5-as-token-burn-offsets-usd316-million-unlock-jup-gains-weekly-on-supply-freeze
+    excerpt: >-
+      Traders lean into supply compression stories in altcoins as Hyperliquid ramps up token burns and Jupiter freezes
+      new emissions, even as bitcoin churns between $60,000 and $69,000 with muted flow.
+    source_name: CoinDesk
+    published: "2026-03-02T04:34:10.000Z"
+  - entity: anthropic-x2019-s-claude-tops-app-store-2026-03-02
+    type: article
+    title: Anthropic&#x2019;s Claude tops App Store charts as backlash builds against OpenAI&#x2019;s ChatGPT
+    url: >-
+      https://www.marketwatch.com/story/anthropics-claude-tops-app-store-charts-as-backlash-builds-against-openais-chatgpt-3fdce792?mod=mw_rss_topstories
+    excerpt: OpenAI faces some user criticism over its new deal with the Department of Defense.
+    source_name: MarketWatch
+    published: "2026-03-02T01:32:00.000Z"
+  - entity: goldman-asian-and-european-lng-prices-c-2026-03-02
+    type: article
+    title: "Goldman: Asian and European LNG Prices Could Jump 130%"
+    url: https://oilprice.com/Latest-Energy-News/World-News/Goldman-Asian-and-European-LNG-Prices-Could-Jump-130.html
+    excerpt: >-
+      The escalating conflict in the Middle East is delaying LNG shipments via the Strait of Hormuz from key exporters
+      in the region, putting severe upward pressure on spot LNG prices in Asia and the Europe
+    source_name: OilPrice.com
+    published: "2026-03-02T07:27:47.000Z"
+  - entity: analysts-see-100-oil-on-strait-of-hormu-2026-03-02
+    type: article
+    title: Analysts See $100 Oil on Strait of Hormuz Disruption
+    url: https://oilprice.com/Latest-Energy-News/World-News/Analysts-See-100-Oil-on-Strait-of-Hormuz-Disruption.html
+    excerpt: >-
+      Following the escalation of the conflict in the Middle East, energy analysts and investment banks expect oil
+      prices to surge this week to $90 with chances of hitting $100 per barrel if disruptions to 
+    source_name: OilPrice.com
+    published: "2026-03-02T06:22:08.000Z"
+  - entity: oil-prices-soar-amid-escalating-middle-e-2026-03-02
+    type: article
+    title: Oil Prices Soar Amid Escalating Middle East Conflict
+    url: https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Soar-Amid-Escalating-Middle-East-Conflict.html
+    excerpt: >-
+      Oil prices surged on Monday as the fallout from U.S. and Israeli military strikes on Iran rippled through global
+      energy markets, with tanker traffic through the Strait of Hormuz already heavily impact
+    source_name: OilPrice.com
+    published: "2026-03-02T01:58:00.000Z"
+  - entity: how-china-s-rare-earth-ban-backfired-int-2026-03-02
+    type: article
+    title: How China’s Rare Earth Ban Backfired into a U.S. Tech Breakthrough
+    url: https://oilprice.com/Energy/Energy-General/How-Chinas-Rare-Earth-Ban-Backfired-into-a-US-Tech-Breakthrough.html
+    excerpt: >-
+      In a typical Chinese rare earth processing plant, 200 workers move through a maze of massive chemical tanks,
+      risking life and limb to produce the materials that power everything from fighter jets and 
+    source_name: OilPrice.com
+    published: "2026-03-02T01:00:00.000Z"
+  - entity: china-s-oil-buying-spree-may-be-running-2026-03-02
+    type: article
+    title: China’s Oil Buying Spree May Be Running Out of Steam
+    url: https://oilprice.com/Energy/Energy-General/Chinas-Oil-Buying-Spree-May-Be-Running-Out-of-Steam.html
+    excerpt: >-
+      China&#039;s imports last year broke yet another record, despite talk of waning oil demand. Since the start of
+      this year, the world’s biggest oil importer has continued buying crude at elevated rates,
+    source_name: OilPrice.com
+    published: "2026-03-02T00:00:00.000Z"
