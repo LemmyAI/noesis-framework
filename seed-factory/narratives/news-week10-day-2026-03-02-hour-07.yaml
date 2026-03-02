@@ -1,0 +1,253 @@
+seed:
+  name: news-week10-day-2026-03-02-hour-07
+  label: Daily News — 2026-03-02 07:00 (Week 10, 2026)
+  namespace: news.week10.day-2026-03-02
+  description: "Auto-gathered news: 11 stories, 2026-03-02 to 2026-03-02"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week10
+    extends: news
+  - namespace: news.week10.day-2026-03-02
+    extends: news.week10
+entities:
+  - id: oil-prices-rise-after-ships-attacked-nea-2026-03-02
+    type: Event
+    name: Oil prices rise after ships attacked near Strait of Hormuz
+    category: geopolitics
+    description: Experts have warned that a prolonged conflict could push global energy prices even higher.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T02:12:41.000Z"
+      precision: day
+  - id: kidnapping-of-foreigners-soars-in-africa-2026-03-02
+    type: Event
+    name: Kidnapping of foreigners soars in Africa's lawless Sahel region
+    category: geopolitics
+    description: >-
+      Growing insecurity in the Sahel made 2025 one of the worst years on record for the abduction of foreigners in
+      Africa.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:02:10.000Z"
+      precision: day
+  - id: michael-b-jordan-upends-oscars-race-as-s-2026-03-02
+    type: Event
+    name: Michael B Jordan upends Oscars race as Sinners wins big at Actor Awards
+    category: geopolitics
+    description: The US star's best actor win for Sinners leaves the Oscars race too close to call.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T05:08:35.000Z"
+      precision: day
+  - id: over-9-billion-flees-bitcoin-and-ether-2026-03-02
+    type: Event
+    name: Over $9 billion flees bitcoin and ether ETFs in four months
+    category: finance.crypto
+    description: Record outflows indicate that institutional appetite for digital assets has collapsed.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T05:55:17.000Z"
+      precision: day
+  - id: bitcoin-cryptos-under-pressure-as-oil-s-2026-03-02
+    type: Event
+    name: Bitcoin, cryptos under pressure as oil spikes 6% and global markets price in U.S.-Iran conflict
+    category: finance.crypto
+    description: >-
+      Bitcoin fell back to $66,700 as traditional markets opened to their first chance to price the weekend's military
+      escalation, with oil surging to $77 and Asian equities dropping 1.4%.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T05:26:20.000Z"
+      precision: day
+  - id: hyperliquids-hype-token-jumps-5-as-ira-2026-03-02
+    type: Event
+    name: Hyperliquid's HYPE token jumps 5% as Iran war brings windfall revenue, JUP gains on supply freeze
+    category: finance.crypto
+    description: >-
+      Traders lean into supply compression stories in altcoins as Hyperliquid ramps up token burns and Jupiter freezes
+      new emissions, even as bitcoin churns between $60,000 and $69,000 with muted flow.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T04:34:10.000Z"
+      precision: day
+  - id: anthropic-x2019-s-claude-tops-app-store-2026-03-02
+    type: Event
+    name: Anthropic&#x2019;s Claude tops App Store charts as backlash builds against OpenAI&#x2019;s ChatGPT
+    category: finance.markets
+    description: OpenAI faces some user criticism over its new deal with the Department of Defense.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T01:32:00.000Z"
+      precision: day
+  - id: analysts-see-100-oil-on-strait-of-hormu-2026-03-02
+    type: Event
+    name: Analysts See $100 Oil on Strait of Hormuz Disruption
+    category: finance.energy
+    description: "Following the escalation of the conflict in the Middle East, energy analysts and investment banks expect oil prices to surge this week to $90 with chances of hitting $100 per barrel if disruptions to traffic in the crucial Strait of Hormuz persist.\_ Early on Monday in Asian trade, oil prices had alr"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T06:22:08.000Z"
+      precision: day
+  - id: oil-prices-soar-amid-escalating-middle-e-2026-03-02
+    type: Event
+    name: Oil Prices Soar Amid Escalating Middle East Conflict
+    category: finance.energy
+    description: >-
+      Oil prices surged on Monday as the fallout from U.S. and Israeli military strikes on Iran rippled through global
+      energy markets, with tanker traffic through the Strait of Hormuz already heavily impacted and military strikes
+      continuing across the region. In early Asian trade, Brent futures broke the 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T01:58:00.000Z"
+      precision: day
+  - id: how-china-s-rare-earth-ban-backfired-int-2026-03-02
+    type: Event
+    name: How China’s Rare Earth Ban Backfired into a U.S. Tech Breakthrough
+    category: finance.energy
+    description: >-
+      In a typical Chinese rare earth processing plant, 200 workers move through a maze of massive chemical tanks,
+      risking life and limb to produce the materials that power everything from fighter jets and missile components to
+      cellphones. Hundreds of these facilities operate across China, and they give B
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T01:00:00.000Z"
+      precision: day
+  - id: china-s-oil-buying-spree-may-be-running-2026-03-02
+    type: Claim
+    name: China’s Oil Buying Spree May Be Running Out of Steam
+    category: finance.energy
+    description: >-
+      China&#039;s imports last year broke yet another record, despite talk of waning oil demand. Since the start of
+      this year, the world’s biggest oil importer has continued buying crude at elevated rates, but this may be about to
+      change as prices extend their rally. Brent crude has been hovering around 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:00:00.000Z"
+      precision: day
+narratives:
+  - name: Energy Markets
+    steps:
+      - from: china-s-oil-buying-spree-may-be-running-2026-03-02
+        to: oil-prices-soar-amid-escalating-middle-e-2026-03-02
+        type: follows
+      - from: oil-prices-soar-amid-escalating-middle-e-2026-03-02
+        to: oil-prices-rise-after-ships-attacked-nea-2026-03-02
+        type: causes
+      - from: oil-prices-rise-after-ships-attacked-nea-2026-03-02
+        to: analysts-see-100-oil-on-strait-of-hormu-2026-03-02
+        type: causes
+  - name: Crypto Markets
+    steps:
+      - from: hyperliquids-hype-token-jumps-5-as-ira-2026-03-02
+        to: bitcoin-cryptos-under-pressure-as-oil-s-2026-03-02
+        type: causes
+      - from: bitcoin-cryptos-under-pressure-as-oil-s-2026-03-02
+        to: over-9-billion-flees-bitcoin-and-ether-2026-03-02
+        type: causes
+sources:
+  - entity: oil-prices-rise-after-ships-attacked-nea-2026-03-02
+    type: article
+    title: Oil prices rise after ships attacked near Strait of Hormuz
+    url: https://www.bbc.com/news/articles/c75evve6l63o
+    excerpt: Experts have warned that a prolonged conflict could push global energy prices even higher.
+    source_name: BBC News
+    published: "2026-03-02T02:12:41.000Z"
+  - entity: kidnapping-of-foreigners-soars-in-africa-2026-03-02
+    type: article
+    title: Kidnapping of foreigners soars in Africa's lawless Sahel region
+    url: https://www.bbc.com/news/articles/c0lj18d5lx3o
+    excerpt: >-
+      Growing insecurity in the Sahel made 2025 one of the worst years on record for the abduction of foreigners in
+      Africa.
+    source_name: BBC News
+    published: "2026-03-02T00:02:10.000Z"
+  - entity: michael-b-jordan-upends-oscars-race-as-s-2026-03-02
+    type: article
+    title: Michael B Jordan upends Oscars race as Sinners wins big at Actor Awards
+    url: https://www.bbc.com/news/articles/clyzklvk79yo
+    excerpt: The US star's best actor win for Sinners leaves the Oscars race too close to call.
+    source_name: BBC News
+    published: "2026-03-02T05:08:35.000Z"
+  - entity: over-9-billion-flees-bitcoin-and-ether-2026-03-02
+    type: article
+    title: Over $9 billion flees bitcoin and ether ETFs in four months
+    url: https://www.coindesk.com/markets/2026/03/02/over-usd9-billion-flees-bitcoin-and-ether-etfs-in-four-months
+    excerpt: Record outflows indicate that institutional appetite for digital assets has collapsed.
+    source_name: CoinDesk
+    published: "2026-03-02T05:55:17.000Z"
+  - entity: bitcoin-cryptos-under-pressure-as-oil-s-2026-03-02
+    type: article
+    title: Bitcoin, cryptos under pressure as oil spikes 6% and global markets price in U.S.-Iran conflict
+    url: >-
+      https://www.coindesk.com/markets/2026/03/02/bitcoin-cryptos-under-pressure-as-oil-spikes-6-and-global-markets-price-in-u-s-iran-conflict
+    excerpt: >-
+      Bitcoin fell back to $66,700 as traditional markets opened to their first chance to price the weekend's military
+      escalation, with oil surging to $77 and Asian equities dropping 1.4%.
+    source_name: CoinDesk
+    published: "2026-03-02T05:26:20.000Z"
+  - entity: hyperliquids-hype-token-jumps-5-as-ira-2026-03-02
+    type: article
+    title: Hyperliquid's HYPE token jumps 5% as Iran war brings windfall revenue, JUP gains on supply freeze
+    url: >-
+      https://www.coindesk.com/markets/2026/03/02/hype-jumps-5-as-token-burn-offsets-usd316-million-unlock-jup-gains-weekly-on-supply-freeze
+    excerpt: >-
+      Traders lean into supply compression stories in altcoins as Hyperliquid ramps up token burns and Jupiter freezes
+      new emissions, even as bitcoin churns between $60,000 and $69,000 with muted flow.
+    source_name: CoinDesk
+    published: "2026-03-02T04:34:10.000Z"
+  - entity: anthropic-x2019-s-claude-tops-app-store-2026-03-02
+    type: article
+    title: Anthropic&#x2019;s Claude tops App Store charts as backlash builds against OpenAI&#x2019;s ChatGPT
+    url: >-
+      https://www.marketwatch.com/story/anthropics-claude-tops-app-store-charts-as-backlash-builds-against-openais-chatgpt-3fdce792?mod=mw_rss_topstories
+    excerpt: OpenAI faces some user criticism over its new deal with the Department of Defense.
+    source_name: MarketWatch
+    published: "2026-03-02T01:32:00.000Z"
+  - entity: analysts-see-100-oil-on-strait-of-hormu-2026-03-02
+    type: article
+    title: Analysts See $100 Oil on Strait of Hormuz Disruption
+    url: https://oilprice.com/Latest-Energy-News/World-News/Analysts-See-100-Oil-on-Strait-of-Hormuz-Disruption.html
+    excerpt: >-
+      Following the escalation of the conflict in the Middle East, energy analysts and investment banks expect oil
+      prices to surge this week to $90 with chances of hitting $100 per barrel if disruptions to 
+    source_name: OilPrice.com
+    published: "2026-03-02T06:22:08.000Z"
+  - entity: oil-prices-soar-amid-escalating-middle-e-2026-03-02
+    type: article
+    title: Oil Prices Soar Amid Escalating Middle East Conflict
+    url: https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Soar-Amid-Escalating-Middle-East-Conflict.html
+    excerpt: >-
+      Oil prices surged on Monday as the fallout from U.S. and Israeli military strikes on Iran rippled through global
+      energy markets, with tanker traffic through the Strait of Hormuz already heavily impact
+    source_name: OilPrice.com
+    published: "2026-03-02T01:58:00.000Z"
+  - entity: how-china-s-rare-earth-ban-backfired-int-2026-03-02
+    type: article
+    title: How China’s Rare Earth Ban Backfired into a U.S. Tech Breakthrough
+    url: https://oilprice.com/Energy/Energy-General/How-Chinas-Rare-Earth-Ban-Backfired-into-a-US-Tech-Breakthrough.html
+    excerpt: >-
+      In a typical Chinese rare earth processing plant, 200 workers move through a maze of massive chemical tanks,
+      risking life and limb to produce the materials that power everything from fighter jets and 
+    source_name: OilPrice.com
+    published: "2026-03-02T01:00:00.000Z"
+  - entity: china-s-oil-buying-spree-may-be-running-2026-03-02
+    type: article
+    title: China’s Oil Buying Spree May Be Running Out of Steam
+    url: https://oilprice.com/Energy/Energy-General/Chinas-Oil-Buying-Spree-May-Be-Running-Out-of-Steam.html
+    excerpt: >-
+      China&#039;s imports last year broke yet another record, despite talk of waning oil demand. Since the start of
+      this year, the world’s biggest oil importer has continued buying crude at elevated rates,
+    source_name: OilPrice.com
+    published: "2026-03-02T00:00:00.000Z"
