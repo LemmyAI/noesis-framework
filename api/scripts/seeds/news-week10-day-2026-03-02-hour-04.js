@@ -1,0 +1,85 @@
+/**
+ * NOESIS Seed: Daily News — 2026-03-02 04:00 (Week 10, 2026)
+ * Namespace: news.week10.day-2026-03-02
+ * Built by seed-factory on 2026-03-02
+ * Auto-gathered news: 16 stories, 2026-03-02 to 2026-03-02
+ * Entities: 16 | Relations: 2 | Sources: 16
+ * Narratives: Energy Markets
+ */
+module.exports = async function seed_news_week10_day_2026_03_02_hour_04(client) {
+  console.log('  \u2192 Seeding: news-week10-day-2026-03-02-hour-04');
+
+  // === NAMESPACE ===
+  await client.query(`
+    INSERT INTO namespace_configs (namespace, extends, config) VALUES
+    ('news', 'default', '{}'::jsonb)
+    ON CONFLICT (namespace) DO NOTHING
+  `);
+  await client.query(`
+    INSERT INTO namespace_configs (namespace, extends, config) VALUES
+    ('news.week10', 'news', '{}'::jsonb)
+    ON CONFLICT (namespace) DO NOTHING
+  `);
+  await client.query(`
+    INSERT INTO namespace_configs (namespace, extends, config) VALUES
+    ('news.week10.day-2026-03-02', 'news.week10', '{}'::jsonb)
+    ON CONFLICT (namespace) DO NOTHING
+  `);
+
+  // === ENTITIES ===
+  await client.query(`
+    INSERT INTO entities (id, namespace, type, name, key, metadata, temporal, credibility) VALUES
+    ('oil-prices-rise-after-ships-attacked-nea-2026-03-02', 'news.week10.day-2026-03-02', 'Event', 'Oil prices rise after ships attacked near Strait of Hormuz', NULL, '{"category":"geopolitics","description":"Experts have warned that a prolonged conflict could push global energy prices even higher."}'::jsonb, '{"timestamp":"2026-03-02T02:12:41.000Z","precision":"day"}'::jsonb, '{"confidence":"verified","sources_count":1}'::jsonb),
+    ('kidnapping-of-foreigners-soars-in-africa-2026-03-02', 'news.week10.day-2026-03-02', 'Event', 'Kidnapping of foreigners soars in Africa''s lawless Sahel region', NULL, '{"category":"geopolitics","description":"Growing insecurity in the Sahel made 2025 one of the worst years on record for the abduction of foreigners in Africa."}'::jsonb, '{"timestamp":"2026-03-02T00:02:10.000Z","precision":"day"}'::jsonb, '{"confidence":"verified","sources_count":1}'::jsonb),
+    ('balen-shah-rapper-mayor-nepal-s-next-2026-03-02', 'news.week10.day-2026-03-02', 'Claim', 'Balen Shah: Rapper, mayor, Nepal’s next prime minister?', NULL, '{"category":"geopolitics","description":"His sunglasses and songs are the rage, but the ex-Kathmandu mayor has his sights on Nepal''s top job."}'::jsonb, '{"timestamp":"2026-03-02T03:17:01.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('israel-bombs-beirut-after-hezbollah-fire-2026-03-02', 'news.week10.day-2026-03-02', 'Event', 'Israel bombs Beirut after Hezbollah fires rockets in Iran war retaliation', NULL, '{"category":"geopolitics","description":"Israel has carried out heavy strikes in the southern suburbs of Lebanon’s capital Beirut."}'::jsonb, '{"timestamp":"2026-03-02T02:32:17.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('netanyahu-vows-increasing-strikes-on-teh-2026-03-02', 'news.week10.day-2026-03-02', 'Event', 'Netanyahu vows increasing strikes on Tehran', NULL, '{"category":"geopolitics","description":"Israel’s prime minister says strikes on Tehran will increase in the coming days, with US support."}'::jsonb, '{"timestamp":"2026-03-02T01:30:49.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('poll-suggests-only-a-quarter-of-american-2026-03-02', 'news.week10.day-2026-03-02', 'Event', 'Poll suggests only a quarter of Americans support attacks on Iran', NULL, '{"category":"geopolitics","description":"US lawmakers heap pressure on Trump following the first US soldier deaths after Khamenei''s killing."}'::jsonb, '{"timestamp":"2026-03-02T01:20:02.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('tehran-comes-under-attack-from-new-round-2026-03-02', 'news.week10.day-2026-03-02', 'Event', 'Tehran comes under attack from new round of Israeli strikes', NULL, '{"category":"geopolitics","description":"Videos show heavy bombardment of Tehran after Israel’s military said it had launched another wave of attacks on Iran."}'::jsonb, '{"timestamp":"2026-03-02T01:17:18.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('iraqi-police-disperse-pro-iran-protester-2026-03-02', 'news.week10.day-2026-03-02', 'Event', 'Iraqi police disperse pro-Iran protesters near US embassy', NULL, '{"category":"geopolitics","description":"Iraqi riot police fired warning shots and tear gas to disperse pro-Iran protesters near the US embassy in Baghdad."}'::jsonb, '{"timestamp":"2026-03-02T01:14:26.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('fury-on-pakistan-streets-20-dead-after-2026-03-02', 'news.week10.day-2026-03-02', 'Fact', 'Fury on Pakistan streets, 20 dead, after US-Israel strike kills Khamenei', NULL, '{"category":"geopolitics","description":"At least 20 people killed across Pakistan as demonstrations over strike on Tehran spiral into violence."}'::jsonb, '{"timestamp":"2026-03-02T01:02:36.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('israel-bombs-beirut-after-hezbollah-laun-2026-03-02', 'news.week10.day-2026-03-02', 'Decision', 'Israel bombs Beirut after Hezbollah launches rocket attack', NULL, '{"category":"geopolitics","description":"Hezbollah says its attack is in response to the killing of Iran''s Khamenei and ''in defence of Lebanon and its people''."}'::jsonb, '{"timestamp":"2026-03-02T00:58:41.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('dramatic-moment-iran-s-retaliatory-missi-2026-03-02', 'news.week10.day-2026-03-02', 'Event', 'Dramatic moment Iran’s retaliatory missile barrage hits Israel', NULL, '{"category":"geopolitics","description":"Israelis filmed the moment an Iranian missile broke through Israel’s air defence systems to strike a target."}'::jsonb, '{"timestamp":"2026-03-02T00:44:01.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('uk-pm-starmer-says-us-can-use-uk-bases-f-2026-03-02', 'news.week10.day-2026-03-02', 'Claim', 'UK PM Starmer says US can use UK bases for ‘defensive strikes’ on Iran', NULL, '{"category":"geopolitics","description":"UK Prime Minister Keir Starmer says he’s accepted a request from the US to let his country’s military bases be used."}'::jsonb, '{"timestamp":"2026-03-02T00:42:33.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('anthropic-x2019-s-claude-tops-app-store-2026-03-02', 'news.week10.day-2026-03-02', 'Event', 'Anthropic&#x2019;s Claude tops App Store charts as backlash builds against OpenAI&#x2019;s ChatGPT', NULL, '{"category":"finance.markets","description":"OpenAI faces some user criticism over its new deal with the Department of Defense."}'::jsonb, '{"timestamp":"2026-03-02T01:32:00.000Z","precision":"day"}'::jsonb, '{"confidence":"high","sources_count":1}'::jsonb),
+    ('oil-prices-soar-amid-escalating-middle-e-2026-03-02', 'news.week10.day-2026-03-02', 'Event', 'Oil Prices Soar Amid Escalating Middle East Conflict', NULL, '{"category":"finance.energy","description":"Oil prices surged on Monday as the fallout from U.S. and Israeli military strikes on Iran rippled through global energy markets, with tanker traffic through the Strait of Hormuz already heavily impacted and military strikes continuing across the region. In early Asian trade, Brent futures broke the "}'::jsonb, '{"timestamp":"2026-03-02T01:58:35.000Z","precision":"day"}'::jsonb, '{"confidence":"medium","sources_count":1}'::jsonb),
+    ('how-china-s-rare-earth-ban-backfired-int-2026-03-02', 'news.week10.day-2026-03-02', 'Event', 'How China’s Rare Earth Ban Backfired into a U.S. Tech Breakthrough', NULL, '{"category":"finance.energy","description":"In a typical Chinese rare earth processing plant, 200 workers move through a maze of massive chemical tanks, risking life and limb to produce the materials that power everything from fighter jets and missile components to cellphones. Hundreds of these facilities operate across China, and they give B"}'::jsonb, '{"timestamp":"2026-03-02T01:00:00.000Z","precision":"day"}'::jsonb, '{"confidence":"medium","sources_count":1}'::jsonb),
+    ('china-s-oil-buying-spree-may-be-running-2026-03-02', 'news.week10.day-2026-03-02', 'Claim', 'China’s Oil Buying Spree May Be Running Out of Steam', NULL, '{"category":"finance.energy","description":"China''s imports last year broke yet another record, despite talk of waning oil demand. Since the start of this year, the world’s biggest oil importer has continued buying crude at elevated rates, but this may be about to change as prices extend their rally. Brent crude has been hovering around "}'::jsonb, '{"timestamp":"2026-03-02T00:00:00.000Z","precision":"day"}'::jsonb, '{"confidence":"medium","sources_count":1}'::jsonb)
+    ON CONFLICT (id, version_number) DO NOTHING
+  `);
+  console.log('    Entities: 16');
+
+  // === RELATIONS ===
+  await client.query(`
+    INSERT INTO relations (from_entity, to_entity, type, narrative_sequence, context, metadata) VALUES
+    ('china-s-oil-buying-spree-may-be-running-2026-03-02', 'oil-prices-soar-amid-escalating-middle-e-2026-03-02', 'follows', 1, 'Energy Markets', '{}'::jsonb),
+    ('oil-prices-soar-amid-escalating-middle-e-2026-03-02', 'oil-prices-rise-after-ships-attacked-nea-2026-03-02', 'causes', 2, 'Energy Markets', '{}'::jsonb)
+    ON CONFLICT DO NOTHING
+  `);
+  console.log('    Relations: 2');
+
+  // === DATALAYER ===
+  await client.query(`
+    INSERT INTO datalayer (entity_id, source_type, title, url, excerpt, source_name, published_at) VALUES
+    ('oil-prices-rise-after-ships-attacked-nea-2026-03-02', 'article', 'Oil prices rise after ships attacked near Strait of Hormuz', 'https://www.bbc.com/news/articles/c75evve6l63o', 'Experts have warned that a prolonged conflict could push global energy prices even higher.', 'BBC News', '2026-03-02T02:12:41.000Z'),
+    ('kidnapping-of-foreigners-soars-in-africa-2026-03-02', 'article', 'Kidnapping of foreigners soars in Africa''s lawless Sahel region', 'https://www.bbc.com/news/articles/c0lj18d5lx3o', 'Growing insecurity in the Sahel made 2025 one of the worst years on record for the abduction of foreigners in Africa.', 'BBC News', '2026-03-02T00:02:10.000Z'),
+    ('balen-shah-rapper-mayor-nepal-s-next-2026-03-02', 'article', 'Balen Shah: Rapper, mayor, Nepal’s next prime minister?', 'https://www.aljazeera.com/features/2026/3/2/balen-shah-rapper-mayor-nepals-next-prime-minister', 'His sunglasses and songs are the rage, but the ex-Kathmandu mayor has his sights on Nepal''s top job.', 'Al Jazeera', '2026-03-02T03:17:01.000Z'),
+    ('israel-bombs-beirut-after-hezbollah-fire-2026-03-02', 'article', 'Israel bombs Beirut after Hezbollah fires rockets in Iran war retaliation', 'https://www.aljazeera.com/video/newsfeed/2026/3/2/israel-bombs-beirut-after-hezbollah-fires-rockets-in-iran-war-retaliation', 'Israel has carried out heavy strikes in the southern suburbs of Lebanon’s capital Beirut.', 'Al Jazeera', '2026-03-02T02:32:17.000Z'),
+    ('netanyahu-vows-increasing-strikes-on-teh-2026-03-02', 'article', 'Netanyahu vows increasing strikes on Tehran', 'https://www.aljazeera.com/video/newsfeed/2026/3/2/netanyahu-vows-increasing-strikes-on-tehran', 'Israel’s prime minister says strikes on Tehran will increase in the coming days, with US support.', 'Al Jazeera', '2026-03-02T01:30:49.000Z'),
+    ('poll-suggests-only-a-quarter-of-american-2026-03-02', 'article', 'Poll suggests only a quarter of Americans support attacks on Iran', 'https://www.aljazeera.com/news/2026/3/2/poll-suggests-only-a-quarter-of-americans-support-attacks-on-iran', 'US lawmakers heap pressure on Trump following the first US soldier deaths after Khamenei''s killing.', 'Al Jazeera', '2026-03-02T01:20:02.000Z'),
+    ('tehran-comes-under-attack-from-new-round-2026-03-02', 'article', 'Tehran comes under attack from new round of Israeli strikes', 'https://www.aljazeera.com/video/newsfeed/2026/3/2/tehran-comes-under-attack-from-new-round-of-israeli-strikes', 'Videos show heavy bombardment of Tehran after Israel’s military said it had launched another wave of attacks on Iran.', 'Al Jazeera', '2026-03-02T01:17:18.000Z'),
+    ('iraqi-police-disperse-pro-iran-protester-2026-03-02', 'article', 'Iraqi police disperse pro-Iran protesters near US embassy', 'https://www.aljazeera.com/video/newsfeed/2026/3/2/raqi-police-disperse-pro-iran-protesters-near-us-embassy', 'Iraqi riot police fired warning shots and tear gas to disperse pro-Iran protesters near the US embassy in Baghdad.', 'Al Jazeera', '2026-03-02T01:14:26.000Z'),
+    ('fury-on-pakistan-streets-20-dead-after-2026-03-02', 'article', 'Fury on Pakistan streets, 20 dead, after US-Israel strike kills Khamenei', 'https://www.aljazeera.com/news/2026/3/2/fury-on-pakistan-streets-20-dead-after-us-israel-strike-kills-khamenei', 'At least 20 people killed across Pakistan as demonstrations over strike on Tehran spiral into violence.', 'Al Jazeera', '2026-03-02T01:02:36.000Z'),
+    ('israel-bombs-beirut-after-hezbollah-laun-2026-03-02', 'article', 'Israel bombs Beirut after Hezbollah launches rocket attack', 'https://www.aljazeera.com/news/2026/3/2/israel-bombs-beirut-after-hezbollah-launches-rocket-attack', 'Hezbollah says its attack is in response to the killing of Iran''s Khamenei and ''in defence of Lebanon and its people''.', 'Al Jazeera', '2026-03-02T00:58:41.000Z'),
+    ('dramatic-moment-iran-s-retaliatory-missi-2026-03-02', 'article', 'Dramatic moment Iran’s retaliatory missile barrage hits Israel', 'https://www.aljazeera.com/video/newsfeed/2026/3/2/dramatic-moment-irans-retaliatory-missile-barrage-hits-israel', 'Israelis filmed the moment an Iranian missile broke through Israel’s air defence systems to strike a target.', 'Al Jazeera', '2026-03-02T00:44:01.000Z'),
+    ('uk-pm-starmer-says-us-can-use-uk-bases-f-2026-03-02', 'article', 'UK PM Starmer says US can use UK bases for ‘defensive strikes’ on Iran', 'https://www.aljazeera.com/video/newsfeed/2026/3/2/uk-pm-starmer-says-us-can-use-uk-bases-for-defensive-strikes-on-iran', 'UK Prime Minister Keir Starmer says he’s accepted a request from the US to let his country’s military bases be used.', 'Al Jazeera', '2026-03-02T00:42:33.000Z'),
+    ('anthropic-x2019-s-claude-tops-app-store-2026-03-02', 'article', 'Anthropic&#x2019;s Claude tops App Store charts as backlash builds against OpenAI&#x2019;s ChatGPT', 'https://www.marketwatch.com/story/anthropics-claude-tops-app-store-charts-as-backlash-builds-against-openais-chatgpt-3fdce792?mod=mw_rss_topstories', 'OpenAI faces some user criticism over its new deal with the Department of Defense.', 'MarketWatch', '2026-03-02T01:32:00.000Z'),
+    ('oil-prices-soar-amid-escalating-middle-e-2026-03-02', 'article', 'Oil Prices Soar Amid Escalating Middle East Conflict', 'https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Soar-Amid-Escalating-Middle-East-Conflict.html', 'Oil prices surged on Monday as the fallout from U.S. and Israeli military strikes on Iran rippled through global energy markets, with tanker traffic through the Strait of Hormuz already heavily impact', 'OilPrice.com', '2026-03-02T01:58:35.000Z'),
+    ('how-china-s-rare-earth-ban-backfired-int-2026-03-02', 'article', 'How China’s Rare Earth Ban Backfired into a U.S. Tech Breakthrough', 'https://oilprice.com/Energy/Energy-General/How-Chinas-Rare-Earth-Ban-Backfired-into-a-US-Tech-Breakthrough.html', 'In a typical Chinese rare earth processing plant, 200 workers move through a maze of massive chemical tanks, risking life and limb to produce the materials that power everything from fighter jets and ', 'OilPrice.com', '2026-03-02T01:00:00.000Z'),
+    ('china-s-oil-buying-spree-may-be-running-2026-03-02', 'article', 'China’s Oil Buying Spree May Be Running Out of Steam', 'https://oilprice.com/Energy/Energy-General/Chinas-Oil-Buying-Spree-May-Be-Running-Out-of-Steam.html', 'China''s imports last year broke yet another record, despite talk of waning oil demand. Since the start of this year, the world’s biggest oil importer has continued buying crude at elevated rates,', 'OilPrice.com', '2026-03-02T00:00:00.000Z')
+    ON CONFLICT DO NOTHING
+  `);
+  console.log('    Sources: 16');
+
+  console.log('  \u2713 news-week10-day-2026-03-02-hour-04: 16 entities, 2 relations, 16 sources');
+};
