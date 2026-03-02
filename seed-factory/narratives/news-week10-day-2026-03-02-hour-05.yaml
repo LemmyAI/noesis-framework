@@ -1,0 +1,334 @@
+seed:
+  name: news-week10-day-2026-03-02-hour-05
+  label: Daily News — 2026-03-02 05:00 (Week 10, 2026)
+  namespace: news.week10.day-2026-03-02
+  description: "Auto-gathered news: 16 stories, 2026-03-02 to 2026-03-02"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week10
+    extends: news
+  - namespace: news.week10.day-2026-03-02
+    extends: news.week10
+entities:
+  - id: oil-prices-rise-after-ships-attacked-nea-2026-03-02
+    type: Event
+    name: Oil prices rise after ships attacked near Strait of Hormuz
+    category: geopolitics
+    description: Experts have warned that a prolonged conflict could push global energy prices even higher.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T02:12:41.000Z"
+      precision: day
+  - id: kidnapping-of-foreigners-soars-in-africa-2026-03-02
+    type: Event
+    name: Kidnapping of foreigners soars in Africa's lawless Sahel region
+    category: geopolitics
+    description: >-
+      Growing insecurity in the Sahel made 2025 one of the worst years on record for the abduction of foreigners in
+      Africa.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:02:10.000Z"
+      precision: day
+  - id: al-jazeera-reports-from-beirut-as-reside-2026-03-02
+    type: Event
+    name: Al Jazeera reports from Beirut as residents flee following Israeli strikes
+    category: geopolitics
+    description: >-
+      Tens of thousands of Lebanese civilians are leaving areas in Beirut following Israeli strikes and forced
+      displacement.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T03:55:18.000Z"
+      precision: day
+  - id: balen-shah-rapper-mayor-nepal-s-next-2026-03-02
+    type: Claim
+    name: "Balen Shah: Rapper, mayor, Nepal’s next prime minister?"
+    category: geopolitics
+    description: His sunglasses and songs are the rage, but the ex-Kathmandu mayor has his sights on Nepal&#039;s top job.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T03:17:01.000Z"
+      precision: day
+  - id: israel-bombs-beirut-after-hezbollah-fire-2026-03-02
+    type: Event
+    name: Israel bombs Beirut after Hezbollah fires rockets in Iran war retaliation
+    category: geopolitics
+    description: Israel has carried out heavy strikes in the southern suburbs of Lebanon’s capital Beirut.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T02:32:17.000Z"
+      precision: day
+  - id: netanyahu-vows-increasing-strikes-on-teh-2026-03-02
+    type: Event
+    name: Netanyahu vows increasing strikes on Tehran
+    category: geopolitics
+    description: Israel’s prime minister says strikes on Tehran will increase in the coming days, with US support.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T01:30:49.000Z"
+      precision: day
+  - id: poll-suggests-only-a-quarter-of-american-2026-03-02
+    type: Event
+    name: Poll suggests only a quarter of Americans support attacks on Iran
+    category: geopolitics
+    description: US lawmakers heap pressure on Trump following the first US soldier deaths after Khamenei&#039;s killing.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T01:20:02.000Z"
+      precision: day
+  - id: tehran-comes-under-attack-from-new-round-2026-03-02
+    type: Event
+    name: Tehran comes under attack from new round of Israeli strikes
+    category: geopolitics
+    description: >-
+      Videos show heavy bombardment of Tehran after Israel’s military said it had launched another wave of attacks on
+      Iran.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T01:17:18.000Z"
+      precision: day
+  - id: iraqi-police-disperse-pro-iran-protester-2026-03-02
+    type: Event
+    name: Iraqi police disperse pro-Iran protesters near US embassy
+    category: geopolitics
+    description: Iraqi riot police fired warning shots and tear gas to disperse pro-Iran protesters near the US embassy in Baghdad.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T01:14:26.000Z"
+      precision: day
+  - id: fury-on-pakistan-streets-20-dead-after-2026-03-02
+    type: Fact
+    name: Fury on Pakistan streets, 20 dead, after US-Israel strike kills Khamenei
+    category: geopolitics
+    description: At least 20 people killed across Pakistan as demonstrations over strike on Tehran spiral into violence.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T01:02:36.000Z"
+      precision: day
+  - id: israel-bombs-beirut-after-hezbollah-laun-2026-03-02
+    type: Decision
+    name: Israel bombs Beirut after Hezbollah launches rocket attack
+    category: geopolitics
+    description: >-
+      Hezbollah says its attack is in response to the killing of Iran&#039;s Khamenei and &#039;in defence of Lebanon
+      and its people&#039;.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:58:41.000Z"
+      precision: day
+  - id: dramatic-moment-iran-s-retaliatory-missi-2026-03-02
+    type: Event
+    name: Dramatic moment Iran’s retaliatory missile barrage hits Israel
+    category: geopolitics
+    description: Israelis filmed the moment an Iranian missile broke through Israel’s air defence systems to strike a target.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:44:01.000Z"
+      precision: day
+  - id: anthropic-x2019-s-claude-tops-app-store-2026-03-02
+    type: Event
+    name: Anthropic&#x2019;s Claude tops App Store charts as backlash builds against OpenAI&#x2019;s ChatGPT
+    category: finance.markets
+    description: OpenAI faces some user criticism over its new deal with the Department of Defense.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T01:32:00.000Z"
+      precision: day
+  - id: oil-prices-soar-amid-escalating-middle-e-2026-03-02
+    type: Event
+    name: Oil Prices Soar Amid Escalating Middle East Conflict
+    category: finance.energy
+    description: >-
+      Oil prices surged on Monday as the fallout from U.S. and Israeli military strikes on Iran rippled through global
+      energy markets, with tanker traffic through the Strait of Hormuz already heavily impacted and military strikes
+      continuing across the region. In early Asian trade, Brent futures broke the 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T01:58:35.000Z"
+      precision: day
+  - id: how-china-s-rare-earth-ban-backfired-int-2026-03-02
+    type: Event
+    name: How China’s Rare Earth Ban Backfired into a U.S. Tech Breakthrough
+    category: finance.energy
+    description: >-
+      In a typical Chinese rare earth processing plant, 200 workers move through a maze of massive chemical tanks,
+      risking life and limb to produce the materials that power everything from fighter jets and missile components to
+      cellphones. Hundreds of these facilities operate across China, and they give B
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T01:00:00.000Z"
+      precision: day
+  - id: china-s-oil-buying-spree-may-be-running-2026-03-02
+    type: Claim
+    name: China’s Oil Buying Spree May Be Running Out of Steam
+    category: finance.energy
+    description: >-
+      China&#039;s imports last year broke yet another record, despite talk of waning oil demand. Since the start of
+      this year, the world’s biggest oil importer has continued buying crude at elevated rates, but this may be about to
+      change as prices extend their rally. Brent crude has been hovering around 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:00:00.000Z"
+      precision: day
+narratives:
+  - name: Energy Markets
+    steps:
+      - from: china-s-oil-buying-spree-may-be-running-2026-03-02
+        to: oil-prices-soar-amid-escalating-middle-e-2026-03-02
+        type: follows
+      - from: oil-prices-soar-amid-escalating-middle-e-2026-03-02
+        to: oil-prices-rise-after-ships-attacked-nea-2026-03-02
+        type: causes
+  - name: Israel-Palestine Conflict
+    steps:
+      - from: tehran-comes-under-attack-from-new-round-2026-03-02
+        to: al-jazeera-reports-from-beirut-as-reside-2026-03-02
+        type: causes
+sources:
+  - entity: oil-prices-rise-after-ships-attacked-nea-2026-03-02
+    type: article
+    title: Oil prices rise after ships attacked near Strait of Hormuz
+    url: https://www.bbc.com/news/articles/c75evve6l63o
+    excerpt: Experts have warned that a prolonged conflict could push global energy prices even higher.
+    source_name: BBC News
+    published: "2026-03-02T02:12:41.000Z"
+  - entity: kidnapping-of-foreigners-soars-in-africa-2026-03-02
+    type: article
+    title: Kidnapping of foreigners soars in Africa's lawless Sahel region
+    url: https://www.bbc.com/news/articles/c0lj18d5lx3o
+    excerpt: >-
+      Growing insecurity in the Sahel made 2025 one of the worst years on record for the abduction of foreigners in
+      Africa.
+    source_name: BBC News
+    published: "2026-03-02T00:02:10.000Z"
+  - entity: al-jazeera-reports-from-beirut-as-reside-2026-03-02
+    type: article
+    title: Al Jazeera reports from Beirut as residents flee following Israeli strikes
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/3/2/al-jazeera-reports-from-beirut-as-residents-flee-following-israeli-strikes
+    excerpt: >-
+      Tens of thousands of Lebanese civilians are leaving areas in Beirut following Israeli strikes and forced
+      displacement.
+    source_name: Al Jazeera
+    published: "2026-03-02T03:55:18.000Z"
+  - entity: balen-shah-rapper-mayor-nepal-s-next-2026-03-02
+    type: article
+    title: "Balen Shah: Rapper, mayor, Nepal’s next prime minister?"
+    url: https://www.aljazeera.com/features/2026/3/2/balen-shah-rapper-mayor-nepals-next-prime-minister
+    excerpt: His sunglasses and songs are the rage, but the ex-Kathmandu mayor has his sights on Nepal&#039;s top job.
+    source_name: Al Jazeera
+    published: "2026-03-02T03:17:01.000Z"
+  - entity: israel-bombs-beirut-after-hezbollah-fire-2026-03-02
+    type: article
+    title: Israel bombs Beirut after Hezbollah fires rockets in Iran war retaliation
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/3/2/israel-bombs-beirut-after-hezbollah-fires-rockets-in-iran-war-retaliation
+    excerpt: Israel has carried out heavy strikes in the southern suburbs of Lebanon’s capital Beirut.
+    source_name: Al Jazeera
+    published: "2026-03-02T02:32:17.000Z"
+  - entity: netanyahu-vows-increasing-strikes-on-teh-2026-03-02
+    type: article
+    title: Netanyahu vows increasing strikes on Tehran
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/2/netanyahu-vows-increasing-strikes-on-tehran
+    excerpt: Israel’s prime minister says strikes on Tehran will increase in the coming days, with US support.
+    source_name: Al Jazeera
+    published: "2026-03-02T01:30:49.000Z"
+  - entity: poll-suggests-only-a-quarter-of-american-2026-03-02
+    type: article
+    title: Poll suggests only a quarter of Americans support attacks on Iran
+    url: https://www.aljazeera.com/news/2026/3/2/poll-suggests-only-a-quarter-of-americans-support-attacks-on-iran
+    excerpt: US lawmakers heap pressure on Trump following the first US soldier deaths after Khamenei&#039;s killing.
+    source_name: Al Jazeera
+    published: "2026-03-02T01:20:02.000Z"
+  - entity: tehran-comes-under-attack-from-new-round-2026-03-02
+    type: article
+    title: Tehran comes under attack from new round of Israeli strikes
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/2/tehran-comes-under-attack-from-new-round-of-israeli-strikes
+    excerpt: >-
+      Videos show heavy bombardment of Tehran after Israel’s military said it had launched another wave of attacks on
+      Iran.
+    source_name: Al Jazeera
+    published: "2026-03-02T01:17:18.000Z"
+  - entity: iraqi-police-disperse-pro-iran-protester-2026-03-02
+    type: article
+    title: Iraqi police disperse pro-Iran protesters near US embassy
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/2/raqi-police-disperse-pro-iran-protesters-near-us-embassy
+    excerpt: Iraqi riot police fired warning shots and tear gas to disperse pro-Iran protesters near the US embassy in Baghdad.
+    source_name: Al Jazeera
+    published: "2026-03-02T01:14:26.000Z"
+  - entity: fury-on-pakistan-streets-20-dead-after-2026-03-02
+    type: article
+    title: Fury on Pakistan streets, 20 dead, after US-Israel strike kills Khamenei
+    url: https://www.aljazeera.com/news/2026/3/2/fury-on-pakistan-streets-20-dead-after-us-israel-strike-kills-khamenei
+    excerpt: At least 20 people killed across Pakistan as demonstrations over strike on Tehran spiral into violence.
+    source_name: Al Jazeera
+    published: "2026-03-02T01:02:36.000Z"
+  - entity: israel-bombs-beirut-after-hezbollah-laun-2026-03-02
+    type: article
+    title: Israel bombs Beirut after Hezbollah launches rocket attack
+    url: https://www.aljazeera.com/news/2026/3/2/israel-bombs-beirut-after-hezbollah-launches-rocket-attack
+    excerpt: >-
+      Hezbollah says its attack is in response to the killing of Iran&#039;s Khamenei and &#039;in defence of Lebanon
+      and its people&#039;.
+    source_name: Al Jazeera
+    published: "2026-03-02T00:58:41.000Z"
+  - entity: dramatic-moment-iran-s-retaliatory-missi-2026-03-02
+    type: article
+    title: Dramatic moment Iran’s retaliatory missile barrage hits Israel
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/2/dramatic-moment-irans-retaliatory-missile-barrage-hits-israel
+    excerpt: Israelis filmed the moment an Iranian missile broke through Israel’s air defence systems to strike a target.
+    source_name: Al Jazeera
+    published: "2026-03-02T00:44:01.000Z"
+  - entity: anthropic-x2019-s-claude-tops-app-store-2026-03-02
+    type: article
+    title: Anthropic&#x2019;s Claude tops App Store charts as backlash builds against OpenAI&#x2019;s ChatGPT
+    url: >-
+      https://www.marketwatch.com/story/anthropics-claude-tops-app-store-charts-as-backlash-builds-against-openais-chatgpt-3fdce792?mod=mw_rss_topstories
+    excerpt: OpenAI faces some user criticism over its new deal with the Department of Defense.
+    source_name: MarketWatch
+    published: "2026-03-02T01:32:00.000Z"
+  - entity: oil-prices-soar-amid-escalating-middle-e-2026-03-02
+    type: article
+    title: Oil Prices Soar Amid Escalating Middle East Conflict
+    url: https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Soar-Amid-Escalating-Middle-East-Conflict.html
+    excerpt: >-
+      Oil prices surged on Monday as the fallout from U.S. and Israeli military strikes on Iran rippled through global
+      energy markets, with tanker traffic through the Strait of Hormuz already heavily impact
+    source_name: OilPrice.com
+    published: "2026-03-02T01:58:35.000Z"
+  - entity: how-china-s-rare-earth-ban-backfired-int-2026-03-02
+    type: article
+    title: How China’s Rare Earth Ban Backfired into a U.S. Tech Breakthrough
+    url: https://oilprice.com/Energy/Energy-General/How-Chinas-Rare-Earth-Ban-Backfired-into-a-US-Tech-Breakthrough.html
+    excerpt: >-
+      In a typical Chinese rare earth processing plant, 200 workers move through a maze of massive chemical tanks,
+      risking life and limb to produce the materials that power everything from fighter jets and 
+    source_name: OilPrice.com
+    published: "2026-03-02T01:00:00.000Z"
+  - entity: china-s-oil-buying-spree-may-be-running-2026-03-02
+    type: article
+    title: China’s Oil Buying Spree May Be Running Out of Steam
+    url: https://oilprice.com/Energy/Energy-General/Chinas-Oil-Buying-Spree-May-Be-Running-Out-of-Steam.html
+    excerpt: >-
+      China&#039;s imports last year broke yet another record, despite talk of waning oil demand. Since the start of
+      this year, the world’s biggest oil importer has continued buying crude at elevated rates,
+    source_name: OilPrice.com
+    published: "2026-03-02T00:00:00.000Z"
