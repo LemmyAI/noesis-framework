@@ -1,0 +1,142 @@
+seed:
+  name: news-week10-day-2026-03-02-hour-01
+  label: Daily News — 2026-03-02 01:00 (Week 10, 2026)
+  namespace: news.week10.day-2026-03-02
+  description: "Auto-gathered news: 6 stories, 2026-03-02 to 2026-03-02"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week10
+    extends: news
+  - namespace: news.week10.day-2026-03-02
+    extends: news.week10
+entities:
+  - id: kidnapping-of-foreigners-soars-in-africa-2026-03-02
+    type: Event
+    name: Kidnapping of foreigners soars in Africa's lawless Sahel region
+    category: geopolitics
+    description: >-
+      Growing insecurity in the Sahel made 2025 one of the worst years on record for the abduction of foreigners in
+      Africa.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:02:10.000Z"
+      precision: day
+  - id: trump-says-likely-more-us-casualties-at-2026-03-02
+    type: Claim
+    name: Trump says likely more US casualties, attacks on Iran will continue
+    category: geopolitics
+    description: >-
+      President Donald Trump has ⁠warned combat ⁠operations against Iran will continue until ‘all objectives ‌are
+      achieved’.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:12:18.000Z"
+      precision: day
+  - id: baby-and-patients-evacuated-as-israel-at-2026-03-02
+    type: Event
+    name: Baby and patients evacuated as Israel attacks Tehran hospital
+    category: geopolitics
+    description: >-
+      A baby in an incubator was evacuated along with patients from the Gandhi Hospital in northern Tehran after
+      strikes.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:05:20.000Z"
+      precision: day
+  - id: hezbollah-promises-to-confront-us-israe-2026-03-02
+    type: Event
+    name: Hezbollah promises to confront US, Israel over Khamenei killing
+    category: geopolitics
+    description: >-
+      The Lebanese armed group has not taken action against Israel or US assets since the attacks on Iran began on
+      Saturday.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:03:31.000Z"
+      precision: day
+  - id: us-israel-attack-iran-live-trump-vows-2026-03-02
+    type: Event
+    name: "US, Israel attack Iran live: Trump vows to avenge 3 American soldiers"
+    category: geopolitics
+    description: >-
+      Trump says attacks on Iran will continue until all of his objectives are met, as Tehran keeps up raids on US
+      assets.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:00:00.000Z"
+      precision: day
+  - id: china-s-oil-buying-spree-may-be-running-2026-03-02
+    type: Claim
+    name: China’s Oil Buying Spree May Be Running Out of Steam
+    category: finance.energy
+    description: >-
+      China&#039;s imports last year broke yet another record, despite talk of waning oil demand. Since the start of
+      this year, the world’s biggest oil importer has continued buying crude at elevated rates, but this may be about to
+      change as prices extend their rally. Brent crude has been hovering around 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:00:00.000Z"
+      precision: day
+sources:
+  - entity: kidnapping-of-foreigners-soars-in-africa-2026-03-02
+    type: article
+    title: Kidnapping of foreigners soars in Africa's lawless Sahel region
+    url: https://www.bbc.com/news/articles/c0lj18d5lx3o
+    excerpt: >-
+      Growing insecurity in the Sahel made 2025 one of the worst years on record for the abduction of foreigners in
+      Africa.
+    source_name: BBC News
+    published: "2026-03-02T00:02:10.000Z"
+  - entity: trump-says-likely-more-us-casualties-at-2026-03-02
+    type: article
+    title: Trump says likely more US casualties, attacks on Iran will continue
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/3/2/trump-says-likely-more-us-casualties-attacks-on-iran-will-continue
+    excerpt: >-
+      President Donald Trump has ⁠warned combat ⁠operations against Iran will continue until ‘all objectives ‌are
+      achieved’.
+    source_name: Al Jazeera
+    published: "2026-03-02T00:12:18.000Z"
+  - entity: baby-and-patients-evacuated-as-israel-at-2026-03-02
+    type: article
+    title: Baby and patients evacuated as Israel attacks Tehran hospital
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/2/baby-and-patients-evacuated-as-israel-attacks-tehran-hospital
+    excerpt: >-
+      A baby in an incubator was evacuated along with patients from the Gandhi Hospital in northern Tehran after
+      strikes.
+    source_name: Al Jazeera
+    published: "2026-03-02T00:05:20.000Z"
+  - entity: hezbollah-promises-to-confront-us-israe-2026-03-02
+    type: article
+    title: Hezbollah promises to confront US, Israel over Khamenei killing
+    url: https://www.aljazeera.com/news/2026/3/2/hezbollah-promises-to-confront-us-israel-over-khamenei-killing
+    excerpt: >-
+      The Lebanese armed group has not taken action against Israel or US assets since the attacks on Iran began on
+      Saturday.
+    source_name: Al Jazeera
+    published: "2026-03-02T00:03:31.000Z"
+  - entity: us-israel-attack-iran-live-trump-vows-2026-03-02
+    type: article
+    title: "US, Israel attack Iran live: Trump vows to avenge 3 American soldiers"
+    url: https://www.aljazeera.com/news/liveblog/2026/3/2/us-israel-attack-iran-live
+    excerpt: >-
+      Trump says attacks on Iran will continue until all of his objectives are met, as Tehran keeps up raids on US
+      assets.
+    source_name: Al Jazeera
+    published: "2026-03-02T00:00:00.000Z"
+  - entity: china-s-oil-buying-spree-may-be-running-2026-03-02
+    type: article
+    title: China’s Oil Buying Spree May Be Running Out of Steam
+    url: https://oilprice.com/Energy/Energy-General/Chinas-Oil-Buying-Spree-May-Be-Running-Out-of-Steam.html
+    excerpt: >-
+      China&#039;s imports last year broke yet another record, despite talk of waning oil demand. Since the start of
+      this year, the world’s biggest oil importer has continued buying crude at elevated rates,
+    source_name: OilPrice.com
+    published: "2026-03-02T00:00:00.000Z"
