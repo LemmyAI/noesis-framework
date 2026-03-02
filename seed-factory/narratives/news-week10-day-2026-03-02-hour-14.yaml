@@ -1,0 +1,1351 @@
+seed:
+  name: news-week10-day-2026-03-02-hour-14
+  label: Daily News — 2026-03-02 14:00 (Week 10, 2026)
+  namespace: news.week10.day-2026-03-02
+  description: "Auto-gathered news: 66 stories, 2026-03-02 to 2026-03-02"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week10
+    extends: news
+  - namespace: news.week10.day-2026-03-02
+    extends: news.week10
+entities:
+  - id: oil-prices-jump-and-shares-fall-as-confl-2026-03-02
+    type: Event
+    name: Oil prices jump and shares fall as conflict escalates
+    category: geopolitics
+    description: Experts have warned that a prolonged conflict could push global energy prices even higher.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:51:40.000Z"
+      precision: day
+  - id: kidnapping-of-foreigners-soars-in-africa-2026-03-02
+    type: Event
+    name: Kidnapping of foreigners soars in Africa's lawless Sahel region
+    category: geopolitics
+    description: >-
+      Growing insecurity in the Sahel made 2025 one of the worst years on record for the abduction of foreigners in
+      Africa.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T00:02:10.000Z"
+      precision: day
+  - id: michael-b-jordan-upends-oscars-race-as-s-2026-03-02
+    type: Event
+    name: Michael B Jordan upends Oscars race as Sinners wins big at Actor Awards
+    category: geopolitics
+    description: The US star's best actor win for Sinners leaves the Oscars race too close to call.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T05:08:35.000Z"
+      precision: day
+  - id: deadly-texas-bar-shooting-potentially-a-2026-03-02
+    type: Fact
+    name: Deadly Texas bar shooting 'potentially act of terrorism', FBI says
+    category: geopolitics
+    description: >-
+      Two people were killed and 14 injured, with the suspected gunman, identified by some media outlets, also shot
+      dead.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:17:46.000Z"
+      precision: day
+  - id: will-petrol-and-diesel-prices-go-up-now-2026-03-02
+    type: Event
+    name: Will petrol and diesel prices go up now?
+    category: finance
+    description: If oil prices remain high for some time, the knock-on effects could affect the costs of fuel and food
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:27:49.000Z"
+      precision: day
+  - id: thousands-more-flights-cancelled-as-iran-2026-03-02
+    type: Event
+    name: Thousands more flights cancelled as Iran strikes continue
+    category: finance
+    description: The majority of flights to key Middle Eastern hubs have been cancelled for Monday as the conflict continues.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:30:16.000Z"
+      precision: day
+  - id: what-are-my-rights-if-my-flight-is-cance-2026-03-02
+    type: Event
+    name: What are my rights if my flight is cancelled or delayed?
+    category: finance
+    description: We look at the different circumstances that affect you if you're due a refund for cancelled or delayed flights.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T11:26:35.000Z"
+      precision: day
+  - id: deepfake-attack-many-people-could-have-2026-03-02
+    type: Claim
+    name: "Deepfake attack: 'Many people could have been cheated'"
+    category: finance
+    description: The boss of the Bombay Stock Exchange was recently targeted in what is a growing global problem.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T06:47:00.000Z"
+      precision: day
+  - id: brewdog-closes-all-bars-for-a-day-as-it-2026-03-02
+    type: Event
+    name: Brewdog closes all bars for a day as it looks to complete sale
+    category: finance
+    description: The company brought in consultants AlixPartners last month, after failing to make a profit in recent years.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T07:04:32.000Z"
+      precision: day
+  - id: oil-could-be-driven-over-100-a-barrel-b-2026-03-02
+    type: Claim
+    name: Oil could be driven over $100 a barrel by Iran conflict, analysts warn, as FTSE 100 falls 1% – business live
+    category: finance
+    description: >-
+      <p>US-Israel war with Iran hits shares in travel companies, and the pound, although oil producers and weapons
+      makers are rallying</p><ul><li><p><a
+      href="https://www.theguardian.com/world/2026/mar/02/oil-prices-iran-war-strait-of-hormuz-shipping">Oil prices rise
+      as Iran war threatens shipping through
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:15:41.000Z"
+      precision: day
+  - id: uk-competition-watchdog-investigates-hot-2026-03-02
+    type: Event
+    name: UK competition watchdog investigates hotel groups over alleged data sharing
+    category: finance
+    description: >-
+      <p>Regulator looks into claim Hilton, InterContinental Hotels and Marriott could be sharing
+      <em>‘</em>competitively sensitive’ information via analytics tool </p><ul><li><p><a
+      href="https://www.theguardian.com/business/live/2026/mar/02/oil-price-us-israel-iran-war-100-dollars-a-barrel-stock-markets-
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T09:47:41.000Z"
+      precision: day
+  - id: uk-house-prices-rise-in-february-as-chan-2026-03-02
+    type: Event
+    name: UK house prices rise in February as chancellor avoids ‘negative speculation’
+    category: finance
+    description: >-
+      <p>Rachel Reeves’s upcoming spring forecast has not led to slowdown, as property tax rumours did in
+      November</p><ul><li><p><a
+      href="https://www.theguardian.com/business/live/2026/mar/02/oil-price-us-israel-iran-war-100-dollars-a-barrel-stock-markets-drop-travel-news-updates">Business
+      live – latest u
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:21:12.000Z"
+      precision: day
+  - id: rolls-royce-boss-open-to-germany-joini-2026-03-02
+    type: Event
+    name: Rolls-Royce boss ‘open’ to Germany joining UK’s fighter jet project
+    category: finance
+    description: >-
+      <p>Tufan Erginbilgiç says decision is for the government but German participation remains a
+      possibility</p><ul><li><p><a
+      href="https://www.theguardian.com/business/live/2026/mar/02/oil-price-us-israel-iran-war-100-dollars-a-barrel-stock-markets-drop-travel-news-updates">Business
+      live – latest update
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T05:00:01.000Z"
+      precision: day
+  - id: most-senior-council-officers-in-england-2026-03-02
+    type: Event
+    name: Most senior council officers in England say building work hit by delays
+    category: finance
+    description: >-
+      <p>Funding uncertainty is main concern, despite Labour’s pledge to revitalise construction, survey
+      shows</p><ul><li><p><a
+      href="https://www.theguardian.com/business/live/2026/mar/02/oil-price-us-israel-iran-war-100-dollars-a-barrel-stock-markets-drop-travel-news-updates">Business
+      live – latest updat
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T06:00:02.000Z"
+      precision: day
+  - id: middle-east-crisis-pushes-up-oil-prices-2026-03-02
+    type: Claim
+    name: Middle East crisis pushes up oil prices – and could drive inflation rises too
+    category: finance
+    description: >-
+      <p>Effects of extended conflict between US and Iran could also lead to higher interest rates and hit economic
+      growth</p><ul><li><p><a
+      href="https://www.theguardian.com/business/live/2026/mar/02/oil-price-us-israel-iran-war-100-dollars-a-barrel-stock-markets-drop-travel-news-updates">Business
+      live – 
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:02:32.000Z"
+      precision: day
+  - id: israel-intensifies-war-on-lebanon-after-2026-03-02
+    type: Event
+    name: Israel intensifies war on Lebanon after Hezbollah attack
+    category: geopolitics
+    description: Israel&#039;s response to Hezbollah attack kills at least 31 people and leads to mass displacement in Lebanon.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:53:21.000Z"
+      precision: day
+  - id: nearly-170-people-killed-in-attack-in-so-2026-03-02
+    type: Fact
+    name: Nearly 170 people killed in attack in South Sudan’s Ruweng, officials say
+    category: geopolitics
+    description: >-
+      Separately, MSF says 26 humanitarian workers are missing following recent violence in South Sudan&#039;s Jonglei
+      state.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:39:22.000Z"
+      precision: day
+  - id: israel-has-been-provoking-hezbollah-to-2026-03-02
+    type: Event
+    name: ‘Israel has been provoking Hezbollah to react for a while’
+    category: geopolitics
+    description: ‘Israel has been provoking Hezbollah to react for a while’
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:32:33.000Z"
+      precision: day
+  - id: barcelona-vs-atletico-madrid-copa-del-2026-03-02
+    type: Event
+    name: "Barcelona vs Atletico Madrid – Copa del Rey semifinal: Time, team news"
+    category: geopolitics
+    description: >-
+      Barcelona face gargantuan task of trying to overturn a 4-0 defeat in the second leg of the semifinal tie at Camp
+      Nou.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:26:45.000Z"
+      precision: day
+  - id: why-has-the-uae-closed-its-stock-exchang-2026-03-02
+    type: Event
+    name: Why has the UAE closed its stock exchanges?
+    category: geopolitics
+    description: Authorities have shut main exchanges in Abu Dhabi and Dubai amid ongoing fallout of US-Israeli attacks on Iran.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:19:39.000Z"
+      precision: day
+  - id: what-s-happening-in-lebanon-as-iran-war-2026-03-02
+    type: Event
+    name: What’s happening in Lebanon as Iran war spills over
+    category: geopolitics
+    description: Zeina Khodr breaks down what&#039;s been happening in Lebanon as the Iran conflict spills over.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:10:30.000Z"
+      precision: day
+  - id: thousands-of-passengers-stranded-as-midd-2026-03-02
+    type: Event
+    name: Thousands of passengers stranded as Middle East airspace shuts
+    category: geopolitics
+    description: Thousands of flights were cancelled after airspace shut down across much of the Middle East.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:06:04.000Z"
+      precision: day
+  - id: nigerians-mourn-killing-of-iran-s-ayatol-2026-03-02
+    type: Event
+    name: Nigerians mourn killing of Iran’s Ayatollah Ali Khamenei
+    category: geopolitics
+    description: >-
+      Members of Nigeria’s Shia Muslim community are mourning Iran’s Supreme Leader Ayatollah Ali Khamenei who was
+      killed.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:02:16.000Z"
+      precision: day
+  - id: ukraine-to-help-down-iran-s-drones-how-2026-03-02
+    type: Event
+    name: "Ukraine to help down Iran’s drones: How Russia’s war rewrote the playbook"
+    category: geopolitics
+    description: >-
+      Europe&#039;s biggest conflict since World War II has changed the nature of warfare, including today&#039;s Middle
+      East crisis.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T11:51:47.000Z"
+      precision: day
+  - id: lebanese-pm-bans-hezbollah-s-military-ac-2026-03-02
+    type: Decision
+    name: Lebanese PM bans Hezbollah’s military activities after attack on Israel
+    category: geopolitics
+    description: Nawaf Salam says all Hezbollah activities are &#039;illegal&#039; after the group launched attacks on Israel.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T11:36:11.000Z"
+      precision: day
+  - id: strategy-purchased-more-than-200-millio-2026-03-02
+    type: Event
+    name: Strategy purchased more than $200 million in bitcoin last week
+    category: finance.crypto
+    description: >-
+      The latest purchase, funded through common and preferred stock sales, lifted total holdings to 720,737 coins
+      valued at more than $47 billion.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:26:18.000Z"
+      precision: day
+  - id: south-korea-investigates-seed-phrase-lea-2026-03-02
+    type: Event
+    name: South Korea investigates seed phrase leak in photo leading to $4.8 million crypto theft from tax authority
+    category: finance.crypto
+    description: The National Tax Service said it had intended to provide a vivid shot of the seizure by sharing a photo.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:05:37.000Z"
+      precision: day
+  - id: anthony-pompliano-s-procap-financial-buy-2026-03-02
+    type: Event
+    name: Anthony Pompliano’s ProCap Financial buys 450 bitcoin, steps up share buybacks
+    category: finance.crypto
+    description: >-
+      The acquisition makes ProCap the 19th largest publicly traded holder of bitcoin, while lowering the company’s
+      average cost basis per coin.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:02:53.000Z"
+      precision: day
+  - id: battered-bitcoin-could-find-solace-in-wa-2026-03-02
+    type: Claim
+    name: Battered bitcoin could find solace in war-led 'debasement' trade
+    category: finance.crypto
+    description: Your day-ahead look for March 2, 2026
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:13:59.000Z"
+      precision: day
+  - id: bitcoin-outperforms-equities-in-risk-off-2026-03-02
+    type: Event
+    name: Bitcoin outperforms equities in risk-off session as Iran conflict enters third day
+    category: finance.crypto
+    description: >-
+      Bitcoin rebounded to $66,500 after weekend strikes on Iran triggered $300 million in liquidations. Oil jumped,
+      equities slid and select DeFi tokens outperformed.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T11:30:00.000Z"
+      precision: day
+  - id: u-s-equity-futures-fall-in-pre-market-t-2026-03-02
+    type: Event
+    name: U.S. equity futures fall in pre-market trading as oil, gold retreat from highs
+    category: finance.crypto
+    description: >-
+      Oil and gold pulled back after surging on the breakout of hostilities in Iran, while equities and crypto stocks
+      face pressure.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T10:50:41.000Z"
+      precision: day
+  - id: hong-kong-links-up-with-shanghai-trade-a-2026-03-02
+    type: Event
+    name: Hong Kong links up with Shanghai trade authorities to put cargo data on blockchain
+    category: finance.crypto
+    description: >-
+      HKMA teams up with mainland regulators to develop a cross-border platform linking cargo data and electronic bills
+      of lading, aiming to cut trade finance friction and plug Chinese supply chains into global markets
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T09:45:00.000Z"
+      precision: day
+  - id: riot-platforms-core-scientific-earnings-2026-03-02
+    type: Event
+    name: "Riot Platforms, Core Scientific earnings, U.S. jobs report: Crypto Week Ahead"
+    category: finance.crypto
+    description: Your look at what's coming in the week starting March 2.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T09:18:45.000Z"
+      precision: day
+  - id: bitcoin-slips-below-66-000-u-s-stock-2026-03-02
+    type: Event
+    name: Bitcoin slips below $66,000, U.S. stock futures bleed as Iran hits Saudi oil refinery
+    category: finance.crypto
+    description: Iran has reportedly stepped up attacks against U.S. assets in the middle east.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T07:12:10.000Z"
+      precision: day
+  - id: over-9-billion-flees-bitcoin-and-ether-2026-03-02
+    type: Event
+    name: Over $9 billion flees bitcoin and ether ETFs in four months
+    category: finance.crypto
+    description: Record outflows indicate that institutional appetite for digital assets has collapsed.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T05:55:17.000Z"
+      precision: day
+  - id: ftse-100-live-index-falls-1-as-airline-2026-03-02
+    type: Event
+    name: "FTSE 100 Live: Index falls 1% as airlines, banks lead falls in Iran war reaction"
+    category: finance
+    description: "FTSE 100 Live: Index falls 1% as airlines, banks lead falls in Iran war reaction"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:24:00.000Z"
+      precision: day
+  - id: teslas-china-ev-rivals-hit-by-lunar-new-2026-03-02
+    type: Event
+    name: Tesla's China EV Rivals Hit By Lunar New Year Holidays, But Nio Stands Out
+    category: finance
+    description: Tesla's China EV Rivals Hit By Lunar New Year Holidays, But Nio Stands Out
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:09:40.000Z"
+      precision: day
+  - id: stock-market-today-dow-tumbles-500-poin-2026-03-02
+    type: Event
+    name: "Stock Market Today: Dow Tumbles 500 Points On U.S.-Iran Attacks; Shares Of Nvidia, Tesla Sell Off (Live Coverage)"
+    category: finance
+    description: "Stock Market Today: Dow Tumbles 500 Points On U.S.-Iran Attacks; Shares Of Nvidia, Tesla Sell Off (Live Coverage)"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:01:31.000Z"
+      precision: day
+  - id: 4-ways-the-one-big-beautiful-bill-act-co-2026-03-02
+    type: Claim
+    name: 4 ways the One Big Beautiful Bill Act could lower your taxes
+    category: finance
+    description: 4 ways the One Big Beautiful Bill Act could lower your taxes
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:00:13.000Z"
+      precision: day
+  - id: technical-assessment-bullish-in-the-int-2026-03-02
+    type: Event
+    name: "Technical Assessment: Bullish in the Intermediate-Term"
+    category: finance
+    description: "Technical Assessment: Bullish in the Intermediate-Term"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:27:49.000Z"
+      precision: day
+  - id: arcellx-president-sells-10m-worth-of-sh-2026-03-02
+    type: Event
+    name: Arcellx President Sells $10M Worth of Shares After Acquisition Announcement
+    category: finance
+    description: Arcellx President Sells $10M Worth of Shares After Acquisition Announcement
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:20:05.000Z"
+      precision: day
+  - id: a-44-year-old-nurse-paid-off-nearly-1m-2026-03-02
+    type: Event
+    name: A 44-year-old nurse paid off nearly $1M in debt in under 3 years. Here’s how she did it
+    category: finance
+    description: A 44-year-old nurse paid off nearly $1M in debt in under 3 years. Here’s how she did it
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:00:00.000Z"
+      precision: day
+  - id: factbox-escalating-tensions-turn-spotlig-2026-03-02
+    type: Event
+    name: Factbox-Escalating tensions turn spotlight on Big Tech's AI investments in Middle East
+    category: finance
+    description: Factbox-Escalating tensions turn spotlight on Big Tech's AI investments in Middle East
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:52:26.000Z"
+      precision: day
+  - id: ai-stocks-hit-reset-why-optical-plays-a-2026-03-02
+    type: Event
+    name: AI Stocks Hit Reset. Why Optical Plays Are Hot. Citrini Ignites Doomsday Flap.
+    category: finance
+    description: AI Stocks Hit Reset. Why Optical Plays Are Hot. Citrini Ignites Doomsday Flap.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:46:20.000Z"
+      precision: day
+  - id: here-x2019-s-what-x2019-s-worth-stream-2026-03-02
+    type: Event
+    name: Here&#x2019;s what&#x2019;s worth streaming in March 2026 on Netflix, Hulu, HBO Max and more
+    category: finance.markets
+    description: >-
+      Shows like HBO&#x2019;s &#x2018;DTF St. Louis&#x2019; and &#x2018;Rooster,&#x2019; Paramount&#x2019;s &#x2018;The
+      Madison&#x2019; and Netflix&#x2019;s &#x2018;Peaky Blinders&#x2019; movie jump out of the gate as Emmy season gets
+      underway
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:15:00.000Z"
+      precision: day
+  - id: x2018-i-don-x2019-t-earn-enough-to-su-2026-03-02
+    type: Event
+    name: >-
+      &#x2018;I don&#x2019;t earn enough to support us and our baby&#x2019;: My husband is unemployed and lost $22,000
+      trading sports cards. What now?
+    category: finance.markets
+    description: >-
+      &#x201c;I intervened, shut the business down and got him into therapy and support for gambling-type
+      behaviors.&#x201d;
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:11:00.000Z"
+      precision: day
+  - id: the-economy-looks-great-on-paper-x2014-2026-03-02
+    type: Event
+    name: The economy looks great on paper &#x2014; but this split in consumer mood spells trouble
+    category: finance.markets
+    description: Recession is more likely when consumers are gloomy about the economy and their own finances.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:10:00.000Z"
+      precision: day
+  - id: x2018-i-dread-the-snow-x2019-my-hea-2026-03-02
+    type: Event
+    name: >-
+      &#x2018;I dread the snow&#x2019;: My heating and air conditioning always breaks down. Do I spend $15,000 on a new
+      one?
+    category: finance.markets
+    description: >-
+      &#x201c;Is there a formula or method for figuring out when replacement becomes more cost-effective than ongoing
+      repairs?&#x201d;
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:56:00.000Z"
+      precision: day
+  - id: why-big-tech-x2019-s-slide-is-the-best-2026-03-02
+    type: Event
+    name: Why Big Tech&#x2019;s slide is the best thing to happen to your portfolio
+    category: finance.markets
+    description: Megacap tech stocks are becoming more realistically valued and still offer solid growth.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:55:00.000Z"
+      precision: day
+  - id: conflict-in-the-middle-east-won-x2019-t-2026-03-02
+    type: Claim
+    name: >-
+      Conflict in the Middle East won&#x2019;t stop market&#x2019;s rotation away from U.S. tech stocks but accelerate
+      it, says BCA strategist
+    category: finance.markets
+    description: BCA Research reiterate their conviction in energy and oil services companies, while adding a shipping tanker ETF
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:51:00.000Z"
+      precision: day
+  - id: cruise-stocks-drop-as-there-x2019-s-mo-2026-03-02
+    type: Event
+    name: Cruise stocks drop, as there&#x2019;s more than just the Iran conflict to worry about
+    category: finance.markets
+    description: Norwegian&#x2019;s sales miss and downbeat booking and profit outlooks spark concern about demand for cruises.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:51:00.000Z"
+      precision: day
+  - id: here-x2019-s-how-far-oil-is-away-from-d-2026-03-02
+    type: Fact
+    name: Here&#x2019;s how far oil is away from dragging stocks into a bear market, according to Morgan Stanley
+    category: finance.markets
+    description: History shows market can recover quite quickly from geopolitical shocks
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T11:38:00.000Z"
+      precision: day
+  - id: what-it-would-take-for-oil-to-reach-120-2026-03-02
+    type: Fact
+    name: What it would take for oil to reach $120 per barrel, according to JPMorgan
+    category: finance.markets
+    description: The question is how high could oil prices go in the case of a sustained conflict.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T10:55:00.000Z"
+      precision: day
+  - id: gasoil-is-spiking-more-than-crude-what-2026-03-02
+    type: Event
+    name: Gasoil is spiking more than crude. What it is and why prices are soaring amid Iran conflict.
+    category: finance.markets
+    description: >-
+      The workhorse of the fuel world was climbing on Monday, with a strike on a major Saudi Arabia refinery getting the
+      blame.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T10:31:00.000Z"
+      precision: day
+  - id: drone-strike-halts-saudi-arabia-039-s-l-2026-03-02
+    type: Event
+    name: Drone Strike Halts Saudi Arabia&#039;s Largest Oil Refinery
+    category: finance.energy
+    description: >-
+      Saudi Arabia shut its largest domestic oil refinery on Monday after a drone strike, as a widening cycle of attacks
+      across the Middle East forced precautionary shutdowns at key oil and gas facilities from Iraqi Kurdistan to
+      offshore Israel, tightening regional supply and sending crude prices sharply 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T13:30:00.000Z"
+      precision: day
+  - id: pakistan-reroutes-oil-supply-as-strait-o-2026-03-02
+    type: Event
+    name: Pakistan Reroutes Oil Supply as Strait of Hormuz Crisis Escalates
+    category: finance.energy
+    description: "Pakistan could seek to be included in Saudi Arabia’s preferred buyers of crude exported from the Red Sea amid the major disruption to tanker traffic in the Strait of Hormuz, sources told Pakistani outlet The News.\_\_ The escalating conflict in Iran and Tehran’s retaliatory strikes on landmarks and ai"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:30:00.000Z"
+      precision: day
+  - id: how-china-s-rare-earth-ban-backfired-int-2026-03-02
+    type: Event
+    name: How China’s Rare Earth Ban Backfired into a U.S. Tech Breakthrough
+    category: finance.energy
+    description: >-
+      In a typical Chinese rare earth processing plant, 200 workers move through a maze of massive chemical tanks,
+      risking life and limb to produce the materials that power everything from fighter jets and missile components to
+      cellphones. Hundreds of these facilities operate across China, and they give B
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T11:55:00.000Z"
+      precision: day
+  - id: how-the-iran-conflict-could-trigger-a-wi-2026-03-02
+    type: Claim
+    name: How the Iran Conflict Could Trigger a Wider Economic Shock
+    category: finance.energy
+    description: >-
+      Cellphone footage showing tongues of flame and thick, black smoke billowing from a ship in the Strait of Hormuz is
+      an ominous image underlining fears of disruption to global oil supplies amid the US and Israeli conflict with
+      Iran. The straits are a vital global trade route for oil and liquefied natu
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T11:54:29.000Z"
+      precision: day
+  - id: fire-disrupts-operations-at-ecuador-s-bi-2026-03-02
+    type: Event
+    name: Fire Disrupts Operations at Ecuador’s Biggest Refinery
+    category: finance.energy
+    description: "The largest refinery in Ecuador was forced to suspend operations after a fire erupted in the pumps at one of the units of the 110,000 barrel-per-day Esmeraldas refinery, Ecuador’s state firm Petroecuador said in a statement.\_ On Sunday, a fire broke out at the charging pumps at the SEVIA unit at Esm"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T11:35:34.000Z"
+      precision: day
+  - id: diesel-jumps-17-outpacing-crude-oil-af-2026-03-02
+    type: Event
+    name: Diesel Jumps 17%, Outpacing Crude Oil After Weekend Conflict
+    category: finance.energy
+    description: "The price of key petroleum fuels soared on Monday as markets opened after the Iran conflict escalated over the weekend, with the jump in diesel futures prices outpacing the surge in crude prices as supply from the Middle East is in disarray.\_\_\_ Gasoil, or diesel, faces the most acute risk to near-te"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T10:38:54.000Z"
+      precision: day
+  - id: india-mulls-return-to-russian-oil-as-ira-2026-03-02
+    type: Event
+    name: India Mulls Return to Russian Oil as Iran War Halts Middle East Flows
+    category: finance.energy
+    description: "India is considering returning to buying Russian crude amassed in floating storage in Asia as the war in Iran and Tehran’s retaliatory strikes in the region have severely disrupted oil flows from the Middle East.\_\_\_ The state-held refiners of India, the world’s third-largest oil importer, and Indian"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T09:39:22.000Z"
+      precision: day
+  - id: ukrainian-drones-strike-major-russian-oi-2026-03-02
+    type: Event
+    name: Ukrainian Drones Strike Major Russian Oil Export Hub on Black Sea
+    category: finance.energy
+    description: "Ukrainian drones hit an oil terminal at the Russian port of Novorossiysk, setting the depot on fire, according to a report by Russian outlet Astra.\_ Ukrainian outlet Exilenova Plus reported on Telegram that port infrastructure in Novorossiysk is on fire.\_\_ An analysis by Astra from videos posted by "
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T08:07:29.000Z"
+      precision: day
+  - id: goldman-asian-and-european-lng-prices-c-2026-03-02
+    type: Claim
+    name: "Goldman: Asian and European LNG Prices Could Jump 130%"
+    category: finance.energy
+    description: "The escalating conflict in the Middle East is delaying LNG shipments via the Strait of Hormuz from key exporters in the region, putting severe upward pressure on spot LNG prices in Asia and the European natural gas market.\_ The key Strait of Hormuz, where a fifth of global oil and LNG flows pass, is"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T07:27:47.000Z"
+      precision: day
+  - id: analysts-see-100-oil-on-strait-of-hormu-2026-03-02
+    type: Event
+    name: Analysts See $100 Oil on Strait of Hormuz Disruption
+    category: finance.energy
+    description: "Following the escalation of the conflict in the Middle East, energy analysts and investment banks expect oil prices to surge this week to $90 with chances of hitting $100 per barrel if disruptions to traffic in the crucial Strait of Hormuz persist.\_ Early on Monday in Asian trade, oil prices had alr"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T06:22:08.000Z"
+      precision: day
+  - id: trump-fccs-equal-time-crackdown-doesnt-2026-03-02
+    type: Event
+    name: Trump FCC's equal-time crackdown doesn't apply equally—or at all—to talk radio
+    category: technology
+    description: Trump FCC's equal-time crackdown doesn't apply equally—or at all—to talk radio
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T12:00:01.000Z"
+      precision: day
+  - id: amd-will-bring-its-ryzen-ai-processors-2026-03-02
+    type: Event
+    name: AMD will bring its "Ryzen AI" processors to standard desktop PCs for the first time
+    category: technology
+    description: AMD will bring its "Ryzen AI" processors to standard desktop PCs for the first time
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-02T08:00:29.000Z"
+      precision: day
+narratives:
+  - name: Energy Markets
+    steps:
+      - from: analysts-see-100-oil-on-strait-of-hormu-2026-03-02
+        to: goldman-asian-and-european-lng-prices-c-2026-03-02
+        type: supports
+      - from: goldman-asian-and-european-lng-prices-c-2026-03-02
+        to: diesel-jumps-17-outpacing-crude-oil-af-2026-03-02
+        type: follows
+      - from: diesel-jumps-17-outpacing-crude-oil-af-2026-03-02
+        to: what-it-would-take-for-oil-to-reach-120-2026-03-02
+        type: follows
+      - from: what-it-would-take-for-oil-to-reach-120-2026-03-02
+        to: oil-prices-jump-and-shares-fall-as-confl-2026-03-02
+        type: causes
+      - from: oil-prices-jump-and-shares-fall-as-confl-2026-03-02
+        to: middle-east-crisis-pushes-up-oil-prices-2026-03-02
+        type: supports
+      - from: middle-east-crisis-pushes-up-oil-prices-2026-03-02
+        to: oil-could-be-driven-over-100-a-barrel-b-2026-03-02
+        type: follows
+      - from: oil-could-be-driven-over-100-a-barrel-b-2026-03-02
+        to: will-petrol-and-diesel-prices-go-up-now-2026-03-02
+        type: follows
+  - name: Crypto Markets
+    steps:
+      - from: over-9-billion-flees-bitcoin-and-ether-2026-03-02
+        to: bitcoin-slips-below-66-000-u-s-stock-2026-03-02
+        type: causes
+      - from: bitcoin-slips-below-66-000-u-s-stock-2026-03-02
+        to: riot-platforms-core-scientific-earnings-2026-03-02
+        type: causes
+      - from: riot-platforms-core-scientific-earnings-2026-03-02
+        to: u-s-equity-futures-fall-in-pre-market-t-2026-03-02
+        type: causes
+      - from: u-s-equity-futures-fall-in-pre-market-t-2026-03-02
+        to: bitcoin-outperforms-equities-in-risk-off-2026-03-02
+        type: causes
+      - from: bitcoin-outperforms-equities-in-risk-off-2026-03-02
+        to: battered-bitcoin-could-find-solace-in-wa-2026-03-02
+        type: supports
+      - from: battered-bitcoin-could-find-solace-in-wa-2026-03-02
+        to: anthony-pompliano-s-procap-financial-buy-2026-03-02
+        type: follows
+      - from: anthony-pompliano-s-procap-financial-buy-2026-03-02
+        to: south-korea-investigates-seed-phrase-lea-2026-03-02
+        type: causes
+      - from: south-korea-investigates-seed-phrase-lea-2026-03-02
+        to: strategy-purchased-more-than-200-millio-2026-03-02
+        type: causes
+sources:
+  - entity: oil-prices-jump-and-shares-fall-as-confl-2026-03-02
+    type: article
+    title: Oil prices jump and shares fall as conflict escalates
+    url: https://www.bbc.com/news/articles/c75evve6l63o
+    excerpt: Experts have warned that a prolonged conflict could push global energy prices even higher.
+    source_name: BBC News
+    published: "2026-03-02T12:51:40.000Z"
+  - entity: kidnapping-of-foreigners-soars-in-africa-2026-03-02
+    type: article
+    title: Kidnapping of foreigners soars in Africa's lawless Sahel region
+    url: https://www.bbc.com/news/articles/c0lj18d5lx3o
+    excerpt: >-
+      Growing insecurity in the Sahel made 2025 one of the worst years on record for the abduction of foreigners in
+      Africa.
+    source_name: BBC News
+    published: "2026-03-02T00:02:10.000Z"
+  - entity: michael-b-jordan-upends-oscars-race-as-s-2026-03-02
+    type: article
+    title: Michael B Jordan upends Oscars race as Sinners wins big at Actor Awards
+    url: https://www.bbc.com/news/articles/clyzklvk79yo
+    excerpt: The US star's best actor win for Sinners leaves the Oscars race too close to call.
+    source_name: BBC News
+    published: "2026-03-02T05:08:35.000Z"
+  - entity: deadly-texas-bar-shooting-potentially-a-2026-03-02
+    type: article
+    title: Deadly Texas bar shooting 'potentially act of terrorism', FBI says
+    url: https://www.bbc.com/news/articles/cgjznzgly0po
+    excerpt: >-
+      Two people were killed and 14 injured, with the suspected gunman, identified by some media outlets, also shot
+      dead.
+    source_name: BBC News
+    published: "2026-03-02T13:17:46.000Z"
+  - entity: will-petrol-and-diesel-prices-go-up-now-2026-03-02
+    type: article
+    title: Will petrol and diesel prices go up now?
+    url: https://www.bbc.com/news/articles/c20zgjzz0e4o
+    excerpt: If oil prices remain high for some time, the knock-on effects could affect the costs of fuel and food
+    source_name: BBC Business
+    published: "2026-03-02T13:27:49.000Z"
+  - entity: thousands-more-flights-cancelled-as-iran-2026-03-02
+    type: article
+    title: Thousands more flights cancelled as Iran strikes continue
+    url: https://www.bbc.com/news/articles/c3v7ele1k4zo
+    excerpt: The majority of flights to key Middle Eastern hubs have been cancelled for Monday as the conflict continues.
+    source_name: BBC Business
+    published: "2026-03-02T13:30:16.000Z"
+  - entity: what-are-my-rights-if-my-flight-is-cance-2026-03-02
+    type: article
+    title: What are my rights if my flight is cancelled or delayed?
+    url: https://www.bbc.com/news/articles/c9qxnyengdjo
+    excerpt: We look at the different circumstances that affect you if you're due a refund for cancelled or delayed flights.
+    source_name: BBC Business
+    published: "2026-03-02T11:26:35.000Z"
+  - entity: deepfake-attack-many-people-could-have-2026-03-02
+    type: article
+    title: "Deepfake attack: 'Many people could have been cheated'"
+    url: https://www.bbc.com/news/articles/c0j59vydxj9o
+    excerpt: The boss of the Bombay Stock Exchange was recently targeted in what is a growing global problem.
+    source_name: BBC Business
+    published: "2026-03-02T06:47:00.000Z"
+  - entity: brewdog-closes-all-bars-for-a-day-as-it-2026-03-02
+    type: article
+    title: Brewdog closes all bars for a day as it looks to complete sale
+    url: https://www.bbc.com/news/articles/c04319pzeg5o
+    excerpt: The company brought in consultants AlixPartners last month, after failing to make a profit in recent years.
+    source_name: BBC Business
+    published: "2026-03-02T07:04:32.000Z"
+  - entity: oil-could-be-driven-over-100-a-barrel-b-2026-03-02
+    type: article
+    title: Oil could be driven over $100 a barrel by Iran conflict, analysts warn, as FTSE 100 falls 1% – business live
+    url: >-
+      https://www.theguardian.com/business/live/2026/mar/02/oil-price-us-israel-iran-war-100-dollars-a-barrel-stock-markets-drop-travel-news-updates
+    excerpt: >-
+      <p>US-Israel war with Iran hits shares in travel companies, and the pound, although oil producers and weapons
+      makers are rallying</p><ul><li><p><a href="https://www.theguardian.com/world/2026/mar/02/o
+    source_name: The Guardian
+    published: "2026-03-02T13:15:41.000Z"
+  - entity: uk-competition-watchdog-investigates-hot-2026-03-02
+    type: article
+    title: UK competition watchdog investigates hotel groups over alleged data sharing
+    url: >-
+      https://www.theguardian.com/business/2026/mar/02/uk-competition-watchdog-investigates-hilton-marriott-intercontinental-hotel-groups-alleged-data-sharing
+    excerpt: >-
+      <p>Regulator looks into claim Hilton, InterContinental Hotels and Marriott could be sharing
+      <em>‘</em>competitively sensitive’ information via analytics tool </p><ul><li><p><a href="https://www.thegua
+    source_name: The Guardian
+    published: "2026-03-02T09:47:41.000Z"
+  - entity: uk-house-prices-rise-in-february-as-chan-2026-03-02
+    type: article
+    title: UK house prices rise in February as chancellor avoids ‘negative speculation’
+    url: https://www.theguardian.com/business/2026/mar/02/uk-house-prices-rise-february-spring-forecast-rachel-reeves
+    excerpt: >-
+      <p>Rachel Reeves’s upcoming spring forecast has not led to slowdown, as property tax rumours did in
+      November</p><ul><li><p><a href="https://www.theguardian.com/business/live/2026/mar/02/oil-price-us-i
+    source_name: The Guardian
+    published: "2026-03-02T12:21:12.000Z"
+  - entity: rolls-royce-boss-open-to-germany-joini-2026-03-02
+    type: article
+    title: Rolls-Royce boss ‘open’ to Germany joining UK’s fighter jet project
+    url: https://www.theguardian.com/business/2026/mar/02/rolls-royce-germany-uk-fighter-jet-tufan-erginbilgic
+    excerpt: >-
+      <p>Tufan Erginbilgiç says decision is for the government but German participation remains a
+      possibility</p><ul><li><p><a href="https://www.theguardian.com/business/live/2026/mar/02/oil-price-us-israel
+    source_name: The Guardian
+    published: "2026-03-02T05:00:01.000Z"
+  - entity: most-senior-council-officers-in-england-2026-03-02
+    type: article
+    title: Most senior council officers in England say building work hit by delays
+    url: https://www.theguardian.com/society/2026/mar/02/senior-council-officers-building-work-hit-by-delays
+    excerpt: >-
+      <p>Funding uncertainty is main concern, despite Labour’s pledge to revitalise construction, survey
+      shows</p><ul><li><p><a href="https://www.theguardian.com/business/live/2026/mar/02/oil-price-us-israe
+    source_name: The Guardian
+    published: "2026-03-02T06:00:02.000Z"
+  - entity: middle-east-crisis-pushes-up-oil-prices-2026-03-02
+    type: article
+    title: Middle East crisis pushes up oil prices – and could drive inflation rises too
+    url: >-
+      https://www.theguardian.com/business/2026/mar/02/middle-east-crisis-oil-prices-inflation-us-iran-interest-rates-growth
+    excerpt: >-
+      <p>Effects of extended conflict between US and Iran could also lead to higher interest rates and hit economic
+      growth</p><ul><li><p><a href="https://www.theguardian.com/business/live/2026/mar/02/oil-pr
+    source_name: The Guardian
+    published: "2026-03-02T13:02:32.000Z"
+  - entity: israel-intensifies-war-on-lebanon-after-2026-03-02
+    type: article
+    title: Israel intensifies war on Lebanon after Hezbollah attack
+    url: https://www.aljazeera.com/features/2026/3/2/israel-intensifies-war-on-lebanon-after-hezbollah-attack
+    excerpt: Israel&#039;s response to Hezbollah attack kills at least 31 people and leads to mass displacement in Lebanon.
+    source_name: Al Jazeera
+    published: "2026-03-02T12:53:21.000Z"
+  - entity: nearly-170-people-killed-in-attack-in-so-2026-03-02
+    type: article
+    title: Nearly 170 people killed in attack in South Sudan’s Ruweng, officials say
+    url: https://www.aljazeera.com/news/2026/3/2/nearly-170-people-killed-in-attack-in-south-sudans-ruweng-officials-says
+    excerpt: >-
+      Separately, MSF says 26 humanitarian workers are missing following recent violence in South Sudan&#039;s Jonglei
+      state.
+    source_name: Al Jazeera
+    published: "2026-03-02T12:39:22.000Z"
+  - entity: israel-has-been-provoking-hezbollah-to-2026-03-02
+    type: article
+    title: ‘Israel has been provoking Hezbollah to react for a while’
+    url: https://www.aljazeera.com/video/quotable/2026/3/2/israel-has-been-provoking-hezbollah-to-react-for-a
+    excerpt: ‘Israel has been provoking Hezbollah to react for a while’
+    source_name: Al Jazeera
+    published: "2026-03-02T12:32:33.000Z"
+  - entity: barcelona-vs-atletico-madrid-copa-del-2026-03-02
+    type: article
+    title: "Barcelona vs Atletico Madrid – Copa del Rey semifinal: Time, team news"
+    url: >-
+      https://www.aljazeera.com/sports/2026/3/2/barcelona-vs-atletico-madrid-copa-del-rey-semifinal-preview-time-team-news
+    excerpt: >-
+      Barcelona face gargantuan task of trying to overturn a 4-0 defeat in the second leg of the semifinal tie at Camp
+      Nou.
+    source_name: Al Jazeera
+    published: "2026-03-02T12:26:45.000Z"
+  - entity: why-has-the-uae-closed-its-stock-exchang-2026-03-02
+    type: article
+    title: Why has the UAE closed its stock exchanges?
+    url: https://www.aljazeera.com/economy/2026/3/2/why-has-the-uae-closed-its-stock-exchanges
+    excerpt: Authorities have shut main exchanges in Abu Dhabi and Dubai amid ongoing fallout of US-Israeli attacks on Iran.
+    source_name: Al Jazeera
+    published: "2026-03-02T12:19:39.000Z"
+  - entity: what-s-happening-in-lebanon-as-iran-war-2026-03-02
+    type: article
+    title: What’s happening in Lebanon as Iran war spills over
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/2/whats-happening-in-lebanon-as-iran-war-spills-over
+    excerpt: Zeina Khodr breaks down what&#039;s been happening in Lebanon as the Iran conflict spills over.
+    source_name: Al Jazeera
+    published: "2026-03-02T12:10:30.000Z"
+  - entity: thousands-of-passengers-stranded-as-midd-2026-03-02
+    type: article
+    title: Thousands of passengers stranded as Middle East airspace shuts
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/2/thousands-of-passengers-stranded-as-middle-east-airspace-shuts
+    excerpt: Thousands of flights were cancelled after airspace shut down across much of the Middle East.
+    source_name: Al Jazeera
+    published: "2026-03-02T12:06:04.000Z"
+  - entity: nigerians-mourn-killing-of-iran-s-ayatol-2026-03-02
+    type: article
+    title: Nigerians mourn killing of Iran’s Ayatollah Ali Khamenei
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/2/nigerians-mourn-killing-of-irans-ayatollah-ali-khamenei
+    excerpt: >-
+      Members of Nigeria’s Shia Muslim community are mourning Iran’s Supreme Leader Ayatollah Ali Khamenei who was
+      killed.
+    source_name: Al Jazeera
+    published: "2026-03-02T12:02:16.000Z"
+  - entity: ukraine-to-help-down-iran-s-drones-how-2026-03-02
+    type: article
+    title: "Ukraine to help down Iran’s drones: How Russia’s war rewrote the playbook"
+    url: https://www.aljazeera.com/news/2026/3/2/ukraine-to-help-down-irans-drones-how-russias-war-rewrites-the-playbook
+    excerpt: >-
+      Europe&#039;s biggest conflict since World War II has changed the nature of warfare, including today&#039;s Middle
+      East crisis.
+    source_name: Al Jazeera
+    published: "2026-03-02T11:51:47.000Z"
+  - entity: lebanese-pm-bans-hezbollah-s-military-ac-2026-03-02
+    type: article
+    title: Lebanese PM bans Hezbollah’s military activities after attack on Israel
+    url: https://www.aljazeera.com/news/2026/3/2/lebanese-pm-nawaf-salam-announces-ban-on-hezbollah-military-activities
+    excerpt: Nawaf Salam says all Hezbollah activities are &#039;illegal&#039; after the group launched attacks on Israel.
+    source_name: Al Jazeera
+    published: "2026-03-02T11:36:11.000Z"
+  - entity: strategy-purchased-more-than-200-millio-2026-03-02
+    type: article
+    title: Strategy purchased more than $200 million in bitcoin last week
+    url: https://www.coindesk.com/markets/2026/03/02/strategy-purchased-more-than-usd200-million-in-bitcoin-last-week
+    excerpt: >-
+      The latest purchase, funded through common and preferred stock sales, lifted total holdings to 720,737 coins
+      valued at more than $47 billion.
+    source_name: CoinDesk
+    published: "2026-03-02T13:26:18.000Z"
+  - entity: south-korea-investigates-seed-phrase-lea-2026-03-02
+    type: article
+    title: South Korea investigates seed phrase leak in photo leading to $4.8 million crypto theft from tax authority
+    url: >-
+      https://www.coindesk.com/business/2026/03/02/south-korea-investigates-seed-phrase-leak-in-photo-leading-to-usd4-8-million-crypto-theft-from-tax-authority
+    excerpt: The National Tax Service said it had intended to provide a vivid shot of the seizure by sharing a photo.
+    source_name: CoinDesk
+    published: "2026-03-02T13:05:37.000Z"
+  - entity: anthony-pompliano-s-procap-financial-buy-2026-03-02
+    type: article
+    title: Anthony Pompliano’s ProCap Financial buys 450 bitcoin, steps up share buybacks
+    url: >-
+      https://www.coindesk.com/markets/2026/03/02/anthony-pompliano-s-procap-financial-buys-450-bitcoin-steps-up-share-buybacks
+    excerpt: >-
+      The acquisition makes ProCap the 19th largest publicly traded holder of bitcoin, while lowering the company’s
+      average cost basis per coin.
+    source_name: CoinDesk
+    published: "2026-03-02T13:02:53.000Z"
+  - entity: battered-bitcoin-could-find-solace-in-wa-2026-03-02
+    type: article
+    title: Battered bitcoin could find solace in war-led 'debasement' trade
+    url: https://www.coindesk.com/daybook-us/2026/03/02/battered-bitcoin-could-find-solace-in-war-led-debasement-trade
+    excerpt: Your day-ahead look for March 2, 2026
+    source_name: CoinDesk
+    published: "2026-03-02T12:13:59.000Z"
+  - entity: bitcoin-outperforms-equities-in-risk-off-2026-03-02
+    type: article
+    title: Bitcoin outperforms equities in risk-off session as Iran conflict enters third day
+    url: >-
+      https://www.coindesk.com/markets/2026/03/02/bitcoin-outperforms-equities-in-risk-off-session-as-iran-conflict-enters-third-day
+    excerpt: >-
+      Bitcoin rebounded to $66,500 after weekend strikes on Iran triggered $300 million in liquidations. Oil jumped,
+      equities slid and select DeFi tokens outperformed.
+    source_name: CoinDesk
+    published: "2026-03-02T11:30:00.000Z"
+  - entity: u-s-equity-futures-fall-in-pre-market-t-2026-03-02
+    type: article
+    title: U.S. equity futures fall in pre-market trading as oil, gold retreat from highs
+    url: >-
+      https://www.coindesk.com/markets/2026/03/02/u-s-equity-futures-fall-in-pre-market-trading-as-oil-gold-retreat-from-highs
+    excerpt: >-
+      Oil and gold pulled back after surging on the breakout of hostilities in Iran, while equities and crypto stocks
+      face pressure.
+    source_name: CoinDesk
+    published: "2026-03-02T10:50:41.000Z"
+  - entity: hong-kong-links-up-with-shanghai-trade-a-2026-03-02
+    type: article
+    title: Hong Kong links up with Shanghai trade authorities to put cargo data on blockchain
+    url: >-
+      https://www.coindesk.com/tech/2026/03/02/hong-kong-links-up-with-shanghai-trade-authorities-to-put-cargo-data-on-blockchain
+    excerpt: >-
+      HKMA teams up with mainland regulators to develop a cross-border platform linking cargo data and electronic bills
+      of lading, aiming to cut trade finance friction and plug Chinese supply chains into gl
+    source_name: CoinDesk
+    published: "2026-03-02T09:45:00.000Z"
+  - entity: riot-platforms-core-scientific-earnings-2026-03-02
+    type: article
+    title: "Riot Platforms, Core Scientific earnings, U.S. jobs report: Crypto Week Ahead"
+    url: >-
+      https://www.coindesk.com/markets/2026/03/02/riot-platforms-core-scientific-earnings-u-s-jobs-report-crypto-week-ahead
+    excerpt: Your look at what's coming in the week starting March 2.
+    source_name: CoinDesk
+    published: "2026-03-02T09:18:45.000Z"
+  - entity: bitcoin-slips-below-66-000-u-s-stock-2026-03-02
+    type: article
+    title: Bitcoin slips below $66,000, U.S. stock futures bleed as Iran hits Saudi oil refinery
+    url: >-
+      https://www.coindesk.com/markets/2026/03/02/bitcoin-u-s-stock-futures-give-up-early-gains-as-iran-conflict-intensifies
+    excerpt: Iran has reportedly stepped up attacks against U.S. assets in the middle east.
+    source_name: CoinDesk
+    published: "2026-03-02T07:12:10.000Z"
+  - entity: over-9-billion-flees-bitcoin-and-ether-2026-03-02
+    type: article
+    title: Over $9 billion flees bitcoin and ether ETFs in four months
+    url: https://www.coindesk.com/markets/2026/03/02/over-usd9-billion-flees-bitcoin-and-ether-etfs-in-four-months
+    excerpt: Record outflows indicate that institutional appetite for digital assets has collapsed.
+    source_name: CoinDesk
+    published: "2026-03-02T05:55:17.000Z"
+  - entity: ftse-100-live-index-falls-1-as-airline-2026-03-02
+    type: article
+    title: "FTSE 100 Live: Index falls 1% as airlines, banks lead falls in Iran war reaction"
+    url: https://finance.yahoo.com/news/ftse-100-live-stocks-sell-071500501.html
+    excerpt: ""
+    source_name: Proactive
+    published: "2026-03-02T13:24:00.000Z"
+  - entity: teslas-china-ev-rivals-hit-by-lunar-new-2026-03-02
+    type: article
+    title: Tesla's China EV Rivals Hit By Lunar New Year Holidays, But Nio Stands Out
+    url: >-
+      https://www.investors.com/news/teslas-china-ev-rivals-byd-xpeng-xiaomi-lunar-new-year-nio-strong/?src=A00220&yptr=yahoo
+    excerpt: ""
+    source_name: Investor's Business Daily
+    published: "2026-03-02T13:09:40.000Z"
+  - entity: stock-market-today-dow-tumbles-500-poin-2026-03-02
+    type: article
+    title: "Stock Market Today: Dow Tumbles 500 Points On U.S.-Iran Attacks; Shares Of Nvidia, Tesla Sell Off (Live Coverage)"
+    url: >-
+      https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-attacks-nvidia-tesla/?src=A00220&yptr=yahoo
+    excerpt: ""
+    source_name: Investor's Business Daily
+    published: "2026-03-02T13:01:31.000Z"
+  - entity: 4-ways-the-one-big-beautiful-bill-act-co-2026-03-02
+    type: article
+    title: 4 ways the One Big Beautiful Bill Act could lower your taxes
+    url: >-
+      https://finance.yahoo.com/personal-finance/taxes/article/4-ways-the-one-big-beautiful-bill-act-could-lower-your-taxes-130013262.html
+    excerpt: ""
+    source_name: Yahoo Personal Finance
+    published: "2026-03-02T13:00:13.000Z"
+  - entity: technical-assessment-bullish-in-the-int-2026-03-02
+    type: article
+    title: "Technical Assessment: Bullish in the Intermediate-Term"
+    url: >-
+      https://finance.yahoo.com/research/reports/ARGUS_46295_TechnicalAnalysis_1772454469000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei
+    excerpt: ""
+    source_name: Argus Research
+    published: "2026-03-02T12:27:49.000Z"
+  - entity: arcellx-president-sells-10m-worth-of-sh-2026-03-02
+    type: article
+    title: Arcellx President Sells $10M Worth of Shares After Acquisition Announcement
+    url: https://finance.yahoo.com/news/arcellx-president-sells-10m-worth-132005685.html
+    excerpt: ""
+    source_name: Motley Fool
+    published: "2026-03-02T13:20:05.000Z"
+  - entity: a-44-year-old-nurse-paid-off-nearly-1m-2026-03-02
+    type: article
+    title: A 44-year-old nurse paid off nearly $1M in debt in under 3 years. Here’s how she did it
+    url: https://finance.yahoo.com/news/44-old-nurse-paid-off-130000118.html
+    excerpt: ""
+    source_name: Moneywise
+    published: "2026-03-02T13:00:00.000Z"
+  - entity: factbox-escalating-tensions-turn-spotlig-2026-03-02
+    type: article
+    title: Factbox-Escalating tensions turn spotlight on Big Tech's AI investments in Middle East
+    url: https://finance.yahoo.com/news/factbox-escalating-tensions-turn-spotlight-125226206.html
+    excerpt: ""
+    source_name: Reuters
+    published: "2026-03-02T12:52:26.000Z"
+  - entity: ai-stocks-hit-reset-why-optical-plays-a-2026-03-02
+    type: article
+    title: AI Stocks Hit Reset. Why Optical Plays Are Hot. Citrini Ignites Doomsday Flap.
+    url: >-
+      https://www.investors.com/news/technology/ai-stocks-artificial-intelligence-stocks-2026-ai-bubble-ai-disruption-march2/?src=A00220&yptr=yahoo
+    excerpt: ""
+    source_name: Investor's Business Daily
+    published: "2026-03-02T12:46:20.000Z"
+  - entity: here-x2019-s-what-x2019-s-worth-stream-2026-03-02
+    type: article
+    title: Here&#x2019;s what&#x2019;s worth streaming in March 2026 on Netflix, Hulu, HBO Max and more
+    url: >-
+      https://www.marketwatch.com/story/heres-whats-worth-streaming-in-march-2026-on-netflix-hulu-hbo-max-and-more-83f5b64d?mod=mw_rss_topstories
+    excerpt: >-
+      Shows like HBO&#x2019;s &#x2018;DTF St. Louis&#x2019; and &#x2018;Rooster,&#x2019; Paramount&#x2019;s &#x2018;The
+      Madison&#x2019; and Netflix&#x2019;s &#x2018;Peaky Blinders&#x2019; movie jump out of 
+    source_name: MarketWatch
+    published: "2026-03-02T13:15:00.000Z"
+  - entity: x2018-i-don-x2019-t-earn-enough-to-su-2026-03-02
+    type: article
+    title: >-
+      &#x2018;I don&#x2019;t earn enough to support us and our baby&#x2019;: My husband is unemployed and lost $22,000
+      trading sports cards. What now?
+    url: >-
+      https://www.marketwatch.com/story/i-dont-earn-enough-to-support-us-and-our-baby-my-husband-is-unemployed-and-lost-22-000-trading-sports-cards-what-now-200c1438?mod=mw_rss_topstories
+    excerpt: >-
+      &#x201c;I intervened, shut the business down and got him into therapy and support for gambling-type
+      behaviors.&#x201d;
+    source_name: MarketWatch
+    published: "2026-03-02T13:11:00.000Z"
+  - entity: the-economy-looks-great-on-paper-x2014-2026-03-02
+    type: article
+    title: The economy looks great on paper &#x2014; but this split in consumer mood spells trouble
+    url: >-
+      https://www.marketwatch.com/story/the-economy-looks-great-on-paper-but-this-split-in-consumer-mood-spells-trouble-89ad2a6e?mod=mw_rss_topstories
+    excerpt: Recession is more likely when consumers are gloomy about the economy and their own finances.
+    source_name: MarketWatch
+    published: "2026-03-02T13:10:00.000Z"
+  - entity: x2018-i-dread-the-snow-x2019-my-hea-2026-03-02
+    type: article
+    title: >-
+      &#x2018;I dread the snow&#x2019;: My heating and air conditioning always breaks down. Do I spend $15,000 on a new
+      one?
+    url: >-
+      https://www.marketwatch.com/story/i-dread-the-snow-my-heating-and-air-conditioning-always-breaks-down-do-i-spend-15k-on-a-new-one-e4cbf07e?mod=mw_rss_topstories
+    excerpt: >-
+      &#x201c;Is there a formula or method for figuring out when replacement becomes more cost-effective than ongoing
+      repairs?&#x201d;
+    source_name: MarketWatch
+    published: "2026-03-02T12:56:00.000Z"
+  - entity: why-big-tech-x2019-s-slide-is-the-best-2026-03-02
+    type: article
+    title: Why Big Tech&#x2019;s slide is the best thing to happen to your portfolio
+    url: >-
+      https://www.marketwatch.com/story/why-big-techs-slide-is-the-best-thing-to-happen-to-your-portfolio-17a33766?mod=mw_rss_topstories
+    excerpt: Megacap tech stocks are becoming more realistically valued and still offer solid growth.
+    source_name: MarketWatch
+    published: "2026-03-02T12:55:00.000Z"
+  - entity: conflict-in-the-middle-east-won-x2019-t-2026-03-02
+    type: article
+    title: >-
+      Conflict in the Middle East won&#x2019;t stop market&#x2019;s rotation away from U.S. tech stocks but accelerate
+      it, says BCA strategist
+    url: >-
+      https://www.marketwatch.com/story/conflict-in-the-middle-east-wont-stop-markets-rotation-away-from-u-s-tech-stocks-but-accelerate-it-says-bca-strategist-bd0bedd8?mod=mw_rss_topstories
+    excerpt: BCA Research reiterate their conviction in energy and oil services companies, while adding a shipping tanker ETF
+    source_name: MarketWatch
+    published: "2026-03-02T12:51:00.000Z"
+  - entity: cruise-stocks-drop-as-there-x2019-s-mo-2026-03-02
+    type: article
+    title: Cruise stocks drop, as there&#x2019;s more than just the Iran conflict to worry about
+    url: >-
+      https://www.marketwatch.com/story/cruise-stocks-drop-as-theres-more-the-just-the-iran-conflict-to-worry-about-808189e4?mod=mw_rss_topstories
+    excerpt: Norwegian&#x2019;s sales miss and downbeat booking and profit outlooks spark concern about demand for cruises.
+    source_name: MarketWatch
+    published: "2026-03-02T12:51:00.000Z"
+  - entity: here-x2019-s-how-far-oil-is-away-from-d-2026-03-02
+    type: article
+    title: Here&#x2019;s how far oil is away from dragging stocks into a bear market, according to Morgan Stanley
+    url: >-
+      https://www.marketwatch.com/story/heres-how-far-oil-is-away-from-dragging-stocks-into-a-bear-market-according-to-morgan-stanley-b8e1932b?mod=mw_rss_topstories
+    excerpt: History shows market can recover quite quickly from geopolitical shocks
+    source_name: MarketWatch
+    published: "2026-03-02T11:38:00.000Z"
+  - entity: what-it-would-take-for-oil-to-reach-120-2026-03-02
+    type: article
+    title: What it would take for oil to reach $120 per barrel, according to JPMorgan
+    url: >-
+      https://www.marketwatch.com/story/heres-the-path-to-oil-hitting-120-per-barrel-according-to-jpmorgan-71792b31?mod=mw_rss_topstories
+    excerpt: The question is how high could oil prices go in the case of a sustained conflict.
+    source_name: MarketWatch
+    published: "2026-03-02T10:55:00.000Z"
+  - entity: gasoil-is-spiking-more-than-crude-what-2026-03-02
+    type: article
+    title: Gasoil is spiking more than crude. What it is and why prices are soaring amid Iran conflict.
+    url: >-
+      https://www.marketwatch.com/story/gasoil-is-spiking-more-than-crude-what-it-is-and-why-prices-are-soaring-amid-iran-conflict-af45ca50?mod=mw_rss_topstories
+    excerpt: >-
+      The workhorse of the fuel world was climbing on Monday, with a strike on a major Saudi Arabia refinery getting the
+      blame.
+    source_name: MarketWatch
+    published: "2026-03-02T10:31:00.000Z"
+  - entity: drone-strike-halts-saudi-arabia-039-s-l-2026-03-02
+    type: article
+    title: Drone Strike Halts Saudi Arabia&#039;s Largest Oil Refinery
+    url: https://oilprice.com/Latest-Energy-News/World-News/Drone-Strike-Halts-Saudi-Arabias-Largest-Oil-Refinery.html
+    excerpt: >-
+      Saudi Arabia shut its largest domestic oil refinery on Monday after a drone strike, as a widening cycle of attacks
+      across the Middle East forced precautionary shutdowns at key oil and gas facilities f
+    source_name: OilPrice.com
+    published: "2026-03-02T13:30:00.000Z"
+  - entity: pakistan-reroutes-oil-supply-as-strait-o-2026-03-02
+    type: article
+    title: Pakistan Reroutes Oil Supply as Strait of Hormuz Crisis Escalates
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/Pakistan-Reroutes-Oil-Supply-as-Strait-of-Hormuz-Crisis-Escalates.html
+    excerpt: >-
+      Pakistan could seek to be included in Saudi Arabia’s preferred buyers of crude exported from the Red Sea amid the
+      major disruption to tanker traffic in the Strait of Hormuz, sources told Pakistani out
+    source_name: OilPrice.com
+    published: "2026-03-02T12:30:00.000Z"
+  - entity: how-china-s-rare-earth-ban-backfired-int-2026-03-02
+    type: article
+    title: How China’s Rare Earth Ban Backfired into a U.S. Tech Breakthrough
+    url: https://oilprice.com/Energy/Energy-General/How-Chinas-Rare-Earth-Ban-Backfired-into-a-US-Tech-Breakthrough.html
+    excerpt: >-
+      In a typical Chinese rare earth processing plant, 200 workers move through a maze of massive chemical tanks,
+      risking life and limb to produce the materials that power everything from fighter jets and 
+    source_name: OilPrice.com
+    published: "2026-03-02T11:55:00.000Z"
+  - entity: how-the-iran-conflict-could-trigger-a-wi-2026-03-02
+    type: article
+    title: How the Iran Conflict Could Trigger a Wider Economic Shock
+    url: https://oilprice.com/Energy/Energy-General/How-the-Iran-Conflict-Could-Trigger-a-Wider-Economic-Shock.html
+    excerpt: >-
+      Cellphone footage showing tongues of flame and thick, black smoke billowing from a ship in the Strait of Hormuz is
+      an ominous image underlining fears of disruption to global oil supplies amid the US a
+    source_name: OilPrice.com
+    published: "2026-03-02T11:54:29.000Z"
+  - entity: fire-disrupts-operations-at-ecuador-s-bi-2026-03-02
+    type: article
+    title: Fire Disrupts Operations at Ecuador’s Biggest Refinery
+    url: https://oilprice.com/Latest-Energy-News/World-News/Fire-Disrupts-Operations-at-Ecuadors-Biggest-Refinery.html
+    excerpt: >-
+      The largest refinery in Ecuador was forced to suspend operations after a fire erupted in the pumps at one of the
+      units of the 110,000 barrel-per-day Esmeraldas refinery, Ecuador’s state firm Petroecua
+    source_name: OilPrice.com
+    published: "2026-03-02T11:35:34.000Z"
+  - entity: diesel-jumps-17-outpacing-crude-oil-af-2026-03-02
+    type: article
+    title: Diesel Jumps 17%, Outpacing Crude Oil After Weekend Conflict
+    url: https://oilprice.com/Latest-Energy-News/World-News/Diesel-Jumps-17-Outpacing-Crude-Oil-After-Weekend-Conflict.html
+    excerpt: >-
+      The price of key petroleum fuels soared on Monday as markets opened after the Iran conflict escalated over the
+      weekend, with the jump in diesel futures prices outpacing the surge in crude prices as su
+    source_name: OilPrice.com
+    published: "2026-03-02T10:38:54.000Z"
+  - entity: india-mulls-return-to-russian-oil-as-ira-2026-03-02
+    type: article
+    title: India Mulls Return to Russian Oil as Iran War Halts Middle East Flows
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/India-Mulls-Return-to-Russian-Oil-as-Iran-War-Halts-Middle-East-Flows.html
+    excerpt: >-
+      India is considering returning to buying Russian crude amassed in floating storage in Asia as the war in Iran and
+      Tehran’s retaliatory strikes in the region have severely disrupted oil flows from the 
+    source_name: OilPrice.com
+    published: "2026-03-02T09:39:22.000Z"
+  - entity: ukrainian-drones-strike-major-russian-oi-2026-03-02
+    type: article
+    title: Ukrainian Drones Strike Major Russian Oil Export Hub on Black Sea
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/Ukrainian-Drones-Strike-Major-Russian-Oil-Export-Hub-on-Black-Sea.html
+    excerpt: "Ukrainian drones hit an oil terminal at the Russian port of Novorossiysk, setting the depot on fire, according to a report by Russian outlet Astra.\_ Ukrainian outlet Exilenova Plus reported on Telegra"
+    source_name: OilPrice.com
+    published: "2026-03-02T08:07:29.000Z"
+  - entity: goldman-asian-and-european-lng-prices-c-2026-03-02
+    type: article
+    title: "Goldman: Asian and European LNG Prices Could Jump 130%"
+    url: https://oilprice.com/Latest-Energy-News/World-News/Goldman-Asian-and-European-LNG-Prices-Could-Jump-130.html
+    excerpt: >-
+      The escalating conflict in the Middle East is delaying LNG shipments via the Strait of Hormuz from key exporters
+      in the region, putting severe upward pressure on spot LNG prices in Asia and the Europe
+    source_name: OilPrice.com
+    published: "2026-03-02T07:27:47.000Z"
+  - entity: analysts-see-100-oil-on-strait-of-hormu-2026-03-02
+    type: article
+    title: Analysts See $100 Oil on Strait of Hormuz Disruption
+    url: https://oilprice.com/Latest-Energy-News/World-News/Analysts-See-100-Oil-on-Strait-of-Hormuz-Disruption.html
+    excerpt: >-
+      Following the escalation of the conflict in the Middle East, energy analysts and investment banks expect oil
+      prices to surge this week to $90 with chances of hitting $100 per barrel if disruptions to 
+    source_name: OilPrice.com
+    published: "2026-03-02T06:22:08.000Z"
+  - entity: trump-fccs-equal-time-crackdown-doesnt-2026-03-02
+    type: article
+    title: Trump FCC's equal-time crackdown doesn't apply equally—or at all—to talk radio
+    url: >-
+      https://arstechnica.com/tech-policy/2026/03/trump-fccs-equal-time-crackdown-doesnt-apply-equally-or-at-all-to-talk-radio/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-03-02T12:00:01.000Z"
+  - entity: amd-will-bring-its-ryzen-ai-processors-2026-03-02
+    type: article
+    title: AMD will bring its "Ryzen AI" processors to standard desktop PCs for the first time
+    url: https://arstechnica.com/gadgets/2026/03/amd-ryzen-ai-400-cpus-will-bring-upgraded-graphics-to-socket-am5-desktops/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-03-02T08:00:29.000Z"
