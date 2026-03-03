@@ -1,0 +1,282 @@
+seed:
+  name: news-week10-day-2026-03-03-hour-02
+  label: Daily News — 2026-03-03 02:00 (Week 10, 2026)
+  namespace: news.week10.day-2026-03-03
+  description: "Auto-gathered news: 13 stories, 2026-03-03 to 2026-03-03"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week10
+    extends: news
+  - namespace: news.week10.day-2026-03-03
+    extends: news.week10
+entities:
+  - id: ive-given-up-on-hospitality-the-15-0-2026-03-03
+    type: Event
+    name: "'I've given up on hospitality. The £15,000 pay isn't worth the stress'"
+    category: finance
+    description: >-
+      People in their 20s and 30s tell the BBC how they feel about their finances ahead of the chancellor's Spring
+      Statement.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T00:10:14.000Z"
+      precision: day
+  - id: melania-trump-chairs-un-meeting-on-child-2026-03-03
+    type: Event
+    name: Melania Trump chairs UN meeting on children days after Iran school strike
+    category: geopolitics
+    description: US First Lady Melania Trump has presided over a UN Security Council meeting focusing on children in conflict.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T00:45:37.000Z"
+      precision: day
+  - id: un-chief-calls-for-way-out-of-iran-war-2026-03-03
+    type: Event
+    name: UN chief calls for ‘way out’ of Iran war
+    category: geopolitics
+    description: ‘What is needed now in the region more than anything, is a way out.’
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T00:34:41.000Z"
+      precision: day
+  - id: us-s-rubio-tries-to-justify-attacks-on-i-2026-03-03
+    type: Event
+    name: US’s Rubio tries to justify attacks on Iran as driven by self-defence
+    category: geopolitics
+    description: >-
+      Marco Rubio has tried to justify the coordinated attacks with Israel on Iran since Saturday as driven by
+      self-defence.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T00:13:57.000Z"
+      precision: day
+  - id: us-urges-citizens-to-immediately-leave-o-2026-03-03
+    type: Claim
+    name: US urges citizens to immediately leave over a dozen Middle East countries
+    category: geopolitics
+    description: The latest advisory includes Egypt, Israel, Saudi Arabia and Qatar, according to a State Department official.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T00:07:30.000Z"
+      precision: day
+  - id: iran-live-news-israel-bombs-tehran-bei-2026-03-03
+    type: Event
+    name: "Iran live news: Israel bombs Tehran, Beirut; Strait of Hormuz ‘closed’"
+    category: geopolitics
+    description: Iran strikes energy infrastructure across the Gulf as IRGC announces closure of Strait of Hormuz.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T00:00:00.000Z"
+      precision: day
+  - id: u-s-senate-housing-bill-includes-cbdc-b-2026-03-03
+    type: Event
+    name: U.S. Senate housing bill includes CBDC ban
+    category: finance.crypto
+    description: >-
+      The Senate Banking Committee's bipartisan "ROAD to Housing Act" includes a provision banning the Fed from issuing
+      a CBDC before 2031.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T00:04:04.000Z"
+      precision: day
+  - id: sofi-x2019-s-stock-rises-as-ceo-anthony-2026-03-03
+    type: Event
+    name: SoFi&#x2019;s stock rises as CEO Anthony Noto reacts to recent selloff with a $1 million purchase
+    category: finance.markets
+    description: Noto, who already owns a SoFi stake worth about $215 million on paper, has been known to buy the dip before.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T01:28:00.000Z"
+      precision: day
+  - id: apple-launches-new-iphone-and-ipad-air-a-2026-03-03
+    type: Decision
+    name: Apple launches new iPhone and iPad Air as it gears up for a major AI push
+    category: finance.markets
+    description: >-
+      The company is boosting the storage capacity of its devices, a move thought to be a prelude to expected Siri
+      enhancements later this year.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T00:16:00.000Z"
+      precision: day
+  - id: x2018-i-don-x2019-t-earn-enough-to-su-2026-03-03
+    type: Event
+    name: >-
+      &#x2018;I don&#x2019;t earn enough to support us and our baby&#x2019;: My unemployed husband lost $22,000 trading
+      sports cards. What now?
+    category: finance.markets
+    description: >-
+      &#x201c;I intervened, shut the business down and got him into therapy and support for gambling-type
+      behaviors.&#x201d;
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T00:00:00.000Z"
+      precision: day
+  - id: qatar-s-lng-blackout-just-broke-the-glob-2026-03-03
+    type: Event
+    name: Qatar’s LNG Blackout Just Broke the Global Gas Market
+    category: finance.energy
+    description: >-
+      It’s not hyperbole to call what transpired today in Qatar a seismic event for global energy markets. On March 2,
+      QatarEnergy — the state-owned energy giant responsible for all of the country’s liquefied natural gas exports —
+      announced a complete halt to LNG production after Iranian drone strikes hit
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T01:00:00.000Z"
+      precision: day
+  - id: qatar-s-latest-lng-mega-award-signals-a-2026-03-03
+    type: Event
+    name: Qatar’s Latest LNG Mega-award Signals a Full Strategic Turn to the West
+    category: finance.energy
+    description: >-
+      From the moment that Russia invaded Ukraine on 24 February 2022, liquefied natural gas (LNG) became the key global
+      emergency energy source. Unlike pipelined energy that requires time-consuming infrastructure build-out and
+      contract negotiations before it can be moved anywhere, LNG can be bought in th
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T00:00:00.000Z"
+      precision: day
+  - id: chatgpt-uninstalls-surged-by-295-after-2026-03-03
+    type: Event
+    name: ChatGPT uninstalls surged by 295% after DoD deal
+    category: technology.ai
+    description: Many consumers ditched ChatGPT's app after news of its DoD deal went live, while Claude's downloads grew.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T00:03:37.000Z"
+      precision: day
+narratives:
+  - name: Energy Markets
+    steps:
+      - from: qatar-s-latest-lng-mega-award-signals-a-2026-03-03
+        to: qatar-s-lng-blackout-just-broke-the-glob-2026-03-03
+        type: causes
+sources:
+  - entity: ive-given-up-on-hospitality-the-15-0-2026-03-03
+    type: article
+    title: "'I've given up on hospitality. The £15,000 pay isn't worth the stress'"
+    url: https://www.bbc.com/news/articles/c20lz7rkqv4o
+    excerpt: >-
+      People in their 20s and 30s tell the BBC how they feel about their finances ahead of the chancellor's Spring
+      Statement.
+    source_name: BBC Business
+    published: "2026-03-03T00:10:14.000Z"
+  - entity: melania-trump-chairs-un-meeting-on-child-2026-03-03
+    type: article
+    title: Melania Trump chairs UN meeting on children days after Iran school strike
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/3/3/melania-trump-chairs-un-meeting-on-children-days-after-iran-school-strike
+    excerpt: US First Lady Melania Trump has presided over a UN Security Council meeting focusing on children in conflict.
+    source_name: Al Jazeera
+    published: "2026-03-03T00:45:37.000Z"
+  - entity: un-chief-calls-for-way-out-of-iran-war-2026-03-03
+    type: article
+    title: UN chief calls for ‘way out’ of Iran war
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/3/un-chief-calls-for-way-out-of-iran-war
+    excerpt: ‘What is needed now in the region more than anything, is a way out.’
+    source_name: Al Jazeera
+    published: "2026-03-03T00:34:41.000Z"
+  - entity: us-s-rubio-tries-to-justify-attacks-on-i-2026-03-03
+    type: article
+    title: US’s Rubio tries to justify attacks on Iran as driven by self-defence
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/3/3/uss-rubio-tries-to-justify-attacks-on-iran-as-driven-by-self-defence
+    excerpt: >-
+      Marco Rubio has tried to justify the coordinated attacks with Israel on Iran since Saturday as driven by
+      self-defence.
+    source_name: Al Jazeera
+    published: "2026-03-03T00:13:57.000Z"
+  - entity: us-urges-citizens-to-immediately-leave-o-2026-03-03
+    type: article
+    title: US urges citizens to immediately leave over a dozen Middle East countries
+    url: https://www.aljazeera.com/news/2026/3/3/us-urges-citizens-to-immediately-leave-over-a-dozen-middle-east-countries
+    excerpt: The latest advisory includes Egypt, Israel, Saudi Arabia and Qatar, according to a State Department official.
+    source_name: Al Jazeera
+    published: "2026-03-03T00:07:30.000Z"
+  - entity: iran-live-news-israel-bombs-tehran-bei-2026-03-03
+    type: article
+    title: "Iran live news: Israel bombs Tehran, Beirut; Strait of Hormuz ‘closed’"
+    url: >-
+      https://www.aljazeera.com/news/liveblog/2026/3/3/iran-live-news-israel-bombs-tehran-beirut-trump-says-war-to-last-4-weeks
+    excerpt: Iran strikes energy infrastructure across the Gulf as IRGC announces closure of Strait of Hormuz.
+    source_name: Al Jazeera
+    published: "2026-03-03T00:00:00.000Z"
+  - entity: u-s-senate-housing-bill-includes-cbdc-b-2026-03-03
+    type: article
+    title: U.S. Senate housing bill includes CBDC ban
+    url: https://www.coindesk.com/policy/2026/03/02/u-s-senate-housing-bill-includes-cbdc-ban
+    excerpt: >-
+      The Senate Banking Committee's bipartisan "ROAD to Housing Act" includes a provision banning the Fed from issuing
+      a CBDC before 2031.
+    source_name: CoinDesk
+    published: "2026-03-03T00:04:04.000Z"
+  - entity: sofi-x2019-s-stock-rises-as-ceo-anthony-2026-03-03
+    type: article
+    title: SoFi&#x2019;s stock rises as CEO Anthony Noto reacts to recent selloff with a $1 million purchase
+    url: >-
+      https://www.marketwatch.com/story/sofis-stock-rises-as-ceo-anthony-noto-reacts-to-recent-selloff-with-a-1-million-purchase-d03ba5b6?mod=mw_rss_topstories
+    excerpt: Noto, who already owns a SoFi stake worth about $215 million on paper, has been known to buy the dip before.
+    source_name: MarketWatch
+    published: "2026-03-03T01:28:00.000Z"
+  - entity: apple-launches-new-iphone-and-ipad-air-a-2026-03-03
+    type: article
+    title: Apple launches new iPhone and iPad Air as it gears up for a major AI push
+    url: >-
+      https://www.marketwatch.com/story/apple-launches-new-iphone-and-ipad-air-as-it-gears-up-for-a-major-ai-push-570b24ae?mod=mw_rss_topstories
+    excerpt: >-
+      The company is boosting the storage capacity of its devices, a move thought to be a prelude to expected Siri
+      enhancements later this year.
+    source_name: MarketWatch
+    published: "2026-03-03T00:16:00.000Z"
+  - entity: x2018-i-don-x2019-t-earn-enough-to-su-2026-03-03
+    type: article
+    title: >-
+      &#x2018;I don&#x2019;t earn enough to support us and our baby&#x2019;: My unemployed husband lost $22,000 trading
+      sports cards. What now?
+    url: >-
+      https://www.marketwatch.com/story/i-dont-earn-enough-to-support-us-and-our-baby-my-husband-is-unemployed-and-lost-22-000-trading-sports-cards-what-now-200c1438?mod=mw_rss_topstories
+    excerpt: >-
+      &#x201c;I intervened, shut the business down and got him into therapy and support for gambling-type
+      behaviors.&#x201d;
+    source_name: MarketWatch
+    published: "2026-03-03T00:00:00.000Z"
+  - entity: qatar-s-lng-blackout-just-broke-the-glob-2026-03-03
+    type: article
+    title: Qatar’s LNG Blackout Just Broke the Global Gas Market
+    url: https://oilprice.com/Energy/Natural-Gas/Qatars-LNG-Blackout-Just-Broke-the-Global-Gas-Market.html
+    excerpt: >-
+      It’s not hyperbole to call what transpired today in Qatar a seismic event for global energy markets. On March 2,
+      QatarEnergy — the state-owned energy giant responsible for all of the country’s liquefi
+    source_name: OilPrice.com
+    published: "2026-03-03T01:00:00.000Z"
+  - entity: qatar-s-latest-lng-mega-award-signals-a-2026-03-03
+    type: article
+    title: Qatar’s Latest LNG Mega-award Signals a Full Strategic Turn to the West
+    url: >-
+      https://oilprice.com/Energy/Natural-Gas/Qatars-Latest-LNG-Mega-award-Signals-a-Full-Strategic-Turn-to-the-West.html
+    excerpt: >-
+      From the moment that Russia invaded Ukraine on 24 February 2022, liquefied natural gas (LNG) became the key global
+      emergency energy source. Unlike pipelined energy that requires time-consuming infrast
+    source_name: OilPrice.com
+    published: "2026-03-03T00:00:00.000Z"
+  - entity: chatgpt-uninstalls-surged-by-295-after-2026-03-03
+    type: article
+    title: ChatGPT uninstalls surged by 295% after DoD deal
+    url: https://techcrunch.com/2026/03/02/chatgpt-uninstalls-surged-by-295-after-dod-deal/
+    excerpt: Many consumers ditched ChatGPT's app after news of its DoD deal went live, while Claude's downloads grew.
+    source_name: TechCrunch
+    published: "2026-03-03T00:03:37.000Z"
