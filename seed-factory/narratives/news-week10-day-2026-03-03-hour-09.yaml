@@ -1,0 +1,692 @@
+seed:
+  name: news-week10-day-2026-03-03-hour-09
+  label: Daily News — 2026-03-03 09:00 (Week 10, 2026)
+  namespace: news.week10.day-2026-03-03
+  description: "Auto-gathered news: 33 stories, 2026-03-03 to 2026-03-03"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week10
+    extends: news
+  - namespace: news.week10.day-2026-03-03
+    extends: news.week10
+entities:
+  - id: texas-authorities-identify-austin-bar-sh-2026-03-03
+    type: Event
+    name: Texas authorities identify Austin bar shooting victims
+    category: geopolitics
+    description: >-
+      Three victims and the suspected gunman were killed, and more were injured in the Sunday shooting that the FBI says
+      could have terrorism links.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T03:15:07.000Z"
+      precision: day
+  - id: oil-and-gas-prices-rise-on-new-iran-thre-2026-03-03
+    type: Event
+    name: Oil and gas prices rise on new Iran threat to Gulf shipping
+    category: finance
+    description: Iranian official threatens to "set fire" to any ships passing through the crucial Strait of Hormuz.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T08:26:09.000Z"
+      precision: day
+  - id: what-to-expect-from-the-spring-statement-2026-03-03
+    type: Event
+    name: What to expect from the Spring Statement
+    category: finance
+    description: >-
+      Chancellor Rachel Reeves will give an update on her plans for the UK economy when she gives a statement alongside
+      an economic forecast on 3 March.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T08:12:26.000Z"
+      precision: day
+  - id: ive-given-up-on-working-in-hospitality-2026-03-03
+    type: Event
+    name: "'I've given up on working in hospitality. The £15,000 pay isn't worth the stress'"
+    category: finance
+    description: >-
+      People in their 20s and 30s tell the BBC how they feel about their finances ahead of the chancellor's Spring
+      Statement.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T00:10:14.000Z"
+      precision: day
+  - id: amazon-says-drones-damaged-three-facilit-2026-03-03
+    type: Claim
+    name: Amazon says drones damaged three facilities in UAE and Bahrain
+    category: finance
+    description: The incidents highlight the vulnerability of key technology infrastructure during military conflicts.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T03:59:26.000Z"
+      precision: day
+  - id: know-when-to-fold-them-the-tech-inspire-2026-03-03
+    type: Event
+    name: "Know when to fold them: the tech inspired by origami"
+    category: finance
+    description: Origami techniques can add strength to structures without adding bulk.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T05:45:46.000Z"
+      precision: day
+  - id: spring-forecast-reeves-to-insist-she-ha-2026-03-03
+    type: Claim
+    name: >-
+      Spring forecast: Reeves to insist she has ‘right economic plan’; Markets drop again as Middle East crisis drives
+      up oil and gas prices – live updates
+    category: finance
+    description: >-
+      <p>Rolling coverage of the latest economic and financial news, including the UK’s spring forecast</p><ul><li><p><a
+      href="https://www.theguardian.com/uk-news/2026/mar/03/rachel-reeves-middle-east-obr-spring-forecast">Rachel
+      Reeves’s plans could be hit by Middle East conflict, say economists</a></p></
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T08:11:01.000Z"
+      precision: day
+  - id: some-flights-depart-middle-east-amid-tra-2026-03-03
+    type: Claim
+    name: Some flights depart Middle East amid travel chaos as US urges its citizens to leave region
+    category: finance
+    description: >-
+      <p>Select departures organised as US state department warns Americans to leave on commercial flights ‘due to
+      safety risks’</p><ul><li><p><a
+      href="https://www.theguardian.com/world/live/2026/mar/03/us-israel-war-iran-live-updates-attacks-strikes-trump-netanyahu-lebanon-middle-east-latest-news">US-Isr
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T08:28:46.000Z"
+      precision: day
+  - id: is-the-us-arming-mexican-cartels-2026-03-03
+    type: Event
+    name: Is the US arming Mexican cartels?
+    category: geopolitics
+    description: Eighty percent of weapons seized from Mexican cartels come from the US, according to Mexico’s defence minister.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T08:09:31.000Z"
+      precision: day
+  - id: us-claims-destroyed-irgc-command-centre-2026-03-03
+    type: Claim
+    name: US claims destroyed IRGC command centre, more Israel attacks on Tehran
+    category: geopolitics
+    description: >-
+      The US Central Command (CENTCOM) says it destroyed air defence installations as well as missile and drone launch
+      sites.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T07:11:10.000Z"
+      precision: day
+  - id: real-madrid-defeated-by-getafe-to-fall-f-2026-03-03
+    type: Event
+    name: Real Madrid defeated by Getafe to fall four points behind Barca in La Liga
+    category: geopolitics
+    description: >-
+      Satriano&#039;s superb volley gives the visitors a 1-0 win at the Santiago Bernabeu as Real miss injured forward
+      Mbappe.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T06:58:36.000Z"
+      precision: day
+  - id: us-sanctions-rwandan-army-and-top-offici-2026-03-03
+    type: Event
+    name: US sanctions Rwandan army and top officials for supporting M23 in DRC
+    category: geopolitics
+    description: Kinshasa welcomed the sanctions while Kigali said the US move &#039;unjustly&#039; targets Rwanda.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T06:52:23.000Z"
+      precision: day
+  - id: how-russia-could-benefit-from-the-us-isr-2026-03-03
+    type: Claim
+    name: How Russia could benefit from the US-Israeli war on Iran
+    category: geopolitics
+    description: A protracted conflict in the Middle East could help Russia&#039;s war effort in Ukraine.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T06:27:32.000Z"
+      precision: day
+  - id: what-we-know-on-day-four-of-us-israeli-a-2026-03-03
+    type: Event
+    name: What we know on day four of US-Israeli attacks on Iran
+    category: geopolitics
+    description: Washington says &#039;harder hits&#039; are still to come, as Tehran retaliates by closing the Strait of Hormuz.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T06:27:08.000Z"
+      precision: day
+  - id: israel-strikes-lebanon-s-beirut-again-h-2026-03-03
+    type: Decision
+    name: Israel strikes Lebanon’s Beirut again; Hezbollah launches drones at Israel
+    category: geopolitics
+    description: The Israeli army says it is striking Hezbollah targets as its raids cause mass displacement in Lebanon.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T06:12:31.000Z"
+      precision: day
+  - id: asia-s-stock-markets-plunge-amid-us-isra-2026-03-03
+    type: Event
+    name: Asia’s stock markets plunge amid US-Israeli conflict with Iran
+    category: geopolitics
+    description: Asian stocks rack up steep losses after Wall Street shrugs off risks of  widening conflict.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T06:11:26.000Z"
+      precision: day
+  - id: nepal-s-gen-z-threw-out-old-parties-wil-2026-03-03
+    type: Event
+    name: Nepal’s Gen Z threw out old parties. Will it vote for them in key election?
+    category: geopolitics
+    description: >-
+      Last year&#039;s protests reflected popular disenchantment with established political parties, which are again
+      seeking power.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T05:29:05.000Z"
+      precision: day
+  - id: as-bombing-continues-israel-s-war-aim-i-2026-03-03
+    type: Event
+    name: "As bombing continues, Israel’s war aim in Iran becomes clear: Regime change"
+    category: geopolitics
+    description: Israel aims for regime change in Iran, but may not care as much about whether the transition is smooth.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T05:08:53.000Z"
+      precision: day
+  - id: bitcoin-supply-approaching-20-million-t-2026-03-03
+    type: Event
+    name: "Bitcoin supply approaching 20 million: The final million will take another 114 years to mine"
+    category: finance.crypto
+    description: >-
+      Out of a fixed maximum supply of 21 million coins, more than 95% of all bitcoin that will ever exist is now in
+      circulation.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T08:25:48.000Z"
+      precision: day
+  - id: bitcoin-climbs-as-btc-etfs-post-one-of-t-2026-03-03
+    type: Event
+    name: Bitcoin climbs as BTC ETFs post one of the quarter’s biggest inflow days amid Iran volatility
+    category: finance.crypto
+    description: >-
+      U.S. BTC ETFs added $458 million, suggesting institutional buyers are absorbing the weekend shock that briefly
+      sent BTC to $63,000.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T06:00:55.000Z"
+      precision: day
+  - id: near-token-jumps-17-after-confidential-2026-03-03
+    type: Event
+    name: NEAR token jumps 17% after ‘Confidential Intents’ launch, outpaces privacy tokens sector
+    category: finance.crypto
+    description: >-
+      Private execution layer aims to curb MEV and front-running as the token extends 40% weekly rally despite modest
+      onchain earnings.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T04:59:10.000Z"
+      precision: day
+  - id: u-s-senate-housing-bill-includes-cbdc-b-2026-03-03
+    type: Event
+    name: U.S. Senate housing bill includes CBDC ban
+    category: finance.crypto
+    description: >-
+      The Senate Banking Committee's bipartisan "ROAD to Housing Act" includes a provision banning the Fed from issuing
+      a CBDC before 2031.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T00:04:04.000Z"
+      precision: day
+  - id: facing-backlash-openai-x2019-s-sam-alt-2026-03-03
+    type: Claim
+    name: Facing backlash, OpenAI&#x2019;s Sam Altman says he made a &#x2018;sloppy&#x2019; mistake in Pentagon deal
+    category: finance.markets
+    description: >-
+      The OpenAI CEO admits he came off as &#x201c;opportunistic&#x201d; in how he announced the company&#x2019;s new
+      government deal and says he will amend the language to emphasize restrictions
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T04:28:00.000Z"
+      precision: day
+  - id: apple-launches-new-iphone-and-ipad-air-a-2026-03-03
+    type: Decision
+    name: Apple launches new iPhone and iPad Air as it gears up for a major AI push
+    category: finance.markets
+    description: >-
+      The company is boosting the storage capacity of its devices, a move thought to be a prelude to expected Siri
+      enhancements later this year.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T03:16:00.000Z"
+      precision: day
+  - id: mongodb-x2019-s-stock-sinks-after-earni-2026-03-03
+    type: Event
+    name: MongoDB&#x2019;s stock sinks after earnings, signaling more tough times for the software sector
+    category: finance.markets
+    description: A &#x201c;planned&#x201d; transition involving the exits of two sales leaders is also rattling investors.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T02:23:00.000Z"
+      precision: day
+  - id: sofi-x2019-s-stock-rises-as-ceo-anthony-2026-03-03
+    type: Event
+    name: SoFi&#x2019;s stock rises as CEO Anthony Noto reacts to recent selloff with a $1 million purchase
+    category: finance.markets
+    description: Noto, who already owns a SoFi stake worth about $215 million on paper, has been known to buy the dip before.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T01:28:00.000Z"
+      precision: day
+  - id: x2018-i-don-x2019-t-earn-enough-to-su-2026-03-03
+    type: Event
+    name: >-
+      &#x2018;I don&#x2019;t earn enough to support us and our baby&#x2019;: My unemployed husband lost $22,000 trading
+      sports cards. What now?
+    category: finance.markets
+    description: >-
+      &#x201c;I intervened, shut the business down and got him into therapy and support for gambling-type
+      behaviors.&#x201d;
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T00:00:00.000Z"
+      precision: day
+  - id: iran-war-pushes-middle-east-oil-tanker-r-2026-03-03
+    type: Event
+    name: Iran War Pushes Middle East Oil Tanker Rates to All-Time High
+    category: finance.energy
+    description: "The freight rate for a supertanker carrying crude oil on the key Middle East-to-China route hit a record high of more than $420,000 per day on Monday as the war in the Middle East disrupts the world’s busiest and most important shipping lane, the Strait of Hormuz.\_\_ The daily rate for hiring a very "
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T07:19:13.000Z"
+      precision: day
+  - id: white-house-prepares-plan-to-combat-oil-2026-03-03
+    type: Event
+    name: White House Prepares Plan to Combat Oil Price Spike
+    category: finance.energy
+    description: "The United States will unveil a phased plan to mitigate the spike in oil prices amid the ongoing conflict in Iran and the wider Middle East, U.S. Secretary of State Marco Rubio said late on Monday as oil prices jumped by 10% following the U.S.-Israel strikes on the Islamic Republic.\_ Oil jumped on M"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T06:37:19.000Z"
+      precision: day
+  - id: qatar-s-lng-blackout-just-broke-the-glob-2026-03-03
+    type: Event
+    name: Qatar’s LNG Blackout Just Broke the Global Gas Market
+    category: finance.energy
+    description: >-
+      It’s not hyperbole to call what transpired today in Qatar a seismic event for global energy markets. On March 2,
+      QatarEnergy — the state-owned energy giant responsible for all of the country’s liquefied natural gas exports —
+      announced a complete halt to LNG production after Iranian drone strikes hit
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T01:00:00.000Z"
+      precision: day
+  - id: qatar-s-latest-lng-mega-award-signals-a-2026-03-03
+    type: Event
+    name: Qatar’s Latest LNG Mega-award Signals a Full Strategic Turn to the West
+    category: finance.energy
+    description: >-
+      From the moment that Russia invaded Ukraine on 24 February 2022, liquefied natural gas (LNG) became the key global
+      emergency energy source. Unlike pipelined energy that requires time-consuming infrastructure build-out and
+      contract negotiations before it can be moved anywhere, LNG can be bought in th
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T00:00:00.000Z"
+      precision: day
+  - id: cursor-has-reportedly-surpassed-2b-in-a-2026-03-03
+    type: Event
+    name: Cursor has reportedly surpassed $2B in annualized revenue
+    category: technology.ai
+    description: >-
+      The four-year-old startup saw its revenue run rate double over the past three months, according to one Bloomberg
+      source.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T01:53:59.000Z"
+      precision: day
+  - id: chatgpt-uninstalls-surged-by-295-after-2026-03-03
+    type: Event
+    name: ChatGPT uninstalls surged by 295% after DoD deal
+    category: technology.ai
+    description: Many consumers ditched ChatGPT's app after news of its DoD deal went live, while Claude's downloads grew.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-03T00:03:37.000Z"
+      precision: day
+narratives:
+  - name: Crypto Markets
+    steps:
+      - from: bitcoin-climbs-as-btc-etfs-post-one-of-t-2026-03-03
+        to: bitcoin-supply-approaching-20-million-t-2026-03-03
+        type: causes
+  - name: Energy Markets
+    steps:
+      - from: qatar-s-latest-lng-mega-award-signals-a-2026-03-03
+        to: qatar-s-lng-blackout-just-broke-the-glob-2026-03-03
+        type: causes
+      - from: qatar-s-lng-blackout-just-broke-the-glob-2026-03-03
+        to: white-house-prepares-plan-to-combat-oil-2026-03-03
+        type: causes
+      - from: white-house-prepares-plan-to-combat-oil-2026-03-03
+        to: iran-war-pushes-middle-east-oil-tanker-r-2026-03-03
+        type: causes
+sources:
+  - entity: texas-authorities-identify-austin-bar-sh-2026-03-03
+    type: article
+    title: Texas authorities identify Austin bar shooting victims
+    url: https://www.bbc.com/news/articles/cgjznzgly0po
+    excerpt: >-
+      Three victims and the suspected gunman were killed, and more were injured in the Sunday shooting that the FBI says
+      could have terrorism links.
+    source_name: BBC News
+    published: "2026-03-03T03:15:07.000Z"
+  - entity: oil-and-gas-prices-rise-on-new-iran-thre-2026-03-03
+    type: article
+    title: Oil and gas prices rise on new Iran threat to Gulf shipping
+    url: https://www.bbc.com/news/articles/cr5lz0vgy52o
+    excerpt: Iranian official threatens to "set fire" to any ships passing through the crucial Strait of Hormuz.
+    source_name: BBC Business
+    published: "2026-03-03T08:26:09.000Z"
+  - entity: what-to-expect-from-the-spring-statement-2026-03-03
+    type: article
+    title: What to expect from the Spring Statement
+    url: https://www.bbc.com/news/articles/c5yv255914xo
+    excerpt: >-
+      Chancellor Rachel Reeves will give an update on her plans for the UK economy when she gives a statement alongside
+      an economic forecast on 3 March.
+    source_name: BBC Business
+    published: "2026-03-03T08:12:26.000Z"
+  - entity: ive-given-up-on-working-in-hospitality-2026-03-03
+    type: article
+    title: "'I've given up on working in hospitality. The £15,000 pay isn't worth the stress'"
+    url: https://www.bbc.com/news/articles/c20lz7rkqv4o
+    excerpt: >-
+      People in their 20s and 30s tell the BBC how they feel about their finances ahead of the chancellor's Spring
+      Statement.
+    source_name: BBC Business
+    published: "2026-03-03T00:10:14.000Z"
+  - entity: amazon-says-drones-damaged-three-facilit-2026-03-03
+    type: article
+    title: Amazon says drones damaged three facilities in UAE and Bahrain
+    url: https://www.bbc.com/news/articles/cgk28nj0lrjo
+    excerpt: The incidents highlight the vulnerability of key technology infrastructure during military conflicts.
+    source_name: BBC Business
+    published: "2026-03-03T03:59:26.000Z"
+  - entity: know-when-to-fold-them-the-tech-inspire-2026-03-03
+    type: article
+    title: "Know when to fold them: the tech inspired by origami"
+    url: https://www.bbc.com/news/articles/c9v0e4n8kw0o
+    excerpt: Origami techniques can add strength to structures without adding bulk.
+    source_name: BBC Business
+    published: "2026-03-03T05:45:46.000Z"
+  - entity: spring-forecast-reeves-to-insist-she-ha-2026-03-03
+    type: article
+    title: >-
+      Spring forecast: Reeves to insist she has ‘right economic plan’; Markets drop again as Middle East crisis drives
+      up oil and gas prices – live updates
+    url: >-
+      https://www.theguardian.com/business/live/2026/mar/03/spring-forecast-rachel-reeves-statement-economic-plan-obr-oil-gas-stock-markets-live-updates
+    excerpt: >-
+      <p>Rolling coverage of the latest economic and financial news, including the UK’s spring forecast</p><ul><li><p><a
+      href="https://www.theguardian.com/uk-news/2026/mar/03/rachel-reeves-middle-east-obr-s
+    source_name: The Guardian
+    published: "2026-03-03T08:11:01.000Z"
+  - entity: some-flights-depart-middle-east-amid-tra-2026-03-03
+    type: article
+    title: Some flights depart Middle East amid travel chaos as US urges its citizens to leave region
+    url: https://www.theguardian.com/world/2026/mar/03/flights-depart-middle-east-travel-chaos
+    excerpt: >-
+      <p>Select departures organised as US state department warns Americans to leave on commercial flights ‘due to
+      safety risks’</p><ul><li><p><a href="https://www.theguardian.com/world/live/2026/mar/03/us-
+    source_name: The Guardian
+    published: "2026-03-03T08:28:46.000Z"
+  - entity: is-the-us-arming-mexican-cartels-2026-03-03
+    type: article
+    title: Is the US arming Mexican cartels?
+    url: https://www.aljazeera.com/news/2026/3/3/is-the-us-arming-mexican-cartels
+    excerpt: Eighty percent of weapons seized from Mexican cartels come from the US, according to Mexico’s defence minister.
+    source_name: Al Jazeera
+    published: "2026-03-03T08:09:31.000Z"
+  - entity: us-claims-destroyed-irgc-command-centre-2026-03-03
+    type: article
+    title: US claims destroyed IRGC command centre, more Israel attacks on Tehran
+    url: https://www.aljazeera.com/news/2026/3/3/us-claims-destroyed-irgc-command-centre-more-israel-attacks-on-tehran
+    excerpt: >-
+      The US Central Command (CENTCOM) says it destroyed air defence installations as well as missile and drone launch
+      sites.
+    source_name: Al Jazeera
+    published: "2026-03-03T07:11:10.000Z"
+  - entity: real-madrid-defeated-by-getafe-to-fall-f-2026-03-03
+    type: article
+    title: Real Madrid defeated by Getafe to fall four points behind Barca in La Liga
+    url: >-
+      https://www.aljazeera.com/sports/2026/3/3/real-madrid-defeated-by-getafe-to-fall-four-points-behind-barca-in-la-liga
+    excerpt: >-
+      Satriano&#039;s superb volley gives the visitors a 1-0 win at the Santiago Bernabeu as Real miss injured forward
+      Mbappe.
+    source_name: Al Jazeera
+    published: "2026-03-03T06:58:36.000Z"
+  - entity: us-sanctions-rwandan-army-and-top-offici-2026-03-03
+    type: article
+    title: US sanctions Rwandan army and top officials for supporting M23 in DRC
+    url: https://www.aljazeera.com/news/2026/3/3/us-sanctions-rwandan-army-and-top-officials-for-supporting-m23-in-drc
+    excerpt: Kinshasa welcomed the sanctions while Kigali said the US move &#039;unjustly&#039; targets Rwanda.
+    source_name: Al Jazeera
+    published: "2026-03-03T06:52:23.000Z"
+  - entity: how-russia-could-benefit-from-the-us-isr-2026-03-03
+    type: article
+    title: How Russia could benefit from the US-Israeli war on Iran
+    url: https://www.aljazeera.com/opinions/2026/3/3/how-russia-could-benefit-from-the-us-israeli-war-on-iran
+    excerpt: A protracted conflict in the Middle East could help Russia&#039;s war effort in Ukraine.
+    source_name: Al Jazeera
+    published: "2026-03-03T06:27:32.000Z"
+  - entity: what-we-know-on-day-four-of-us-israeli-a-2026-03-03
+    type: article
+    title: What we know on day four of US-Israeli attacks on Iran
+    url: https://www.aljazeera.com/news/2026/3/3/what-we-know-on-day-four-of-us-israeli-attacks-on-iran
+    excerpt: Washington says &#039;harder hits&#039; are still to come, as Tehran retaliates by closing the Strait of Hormuz.
+    source_name: Al Jazeera
+    published: "2026-03-03T06:27:08.000Z"
+  - entity: israel-strikes-lebanon-s-beirut-again-h-2026-03-03
+    type: article
+    title: Israel strikes Lebanon’s Beirut again; Hezbollah launches drones at Israel
+    url: https://www.aljazeera.com/news/2026/3/3/israel-strikes-lebanons-beirut-again-hezbollah-launches-drones-at-israel
+    excerpt: The Israeli army says it is striking Hezbollah targets as its raids cause mass displacement in Lebanon.
+    source_name: Al Jazeera
+    published: "2026-03-03T06:12:31.000Z"
+  - entity: asia-s-stock-markets-plunge-amid-us-isra-2026-03-03
+    type: article
+    title: Asia’s stock markets plunge amid US-Israeli conflict with Iran
+    url: https://www.aljazeera.com/economy/2026/3/3/asias-stock-markets-plunge-amid-us-israeli-conflict-with-iran
+    excerpt: Asian stocks rack up steep losses after Wall Street shrugs off risks of  widening conflict.
+    source_name: Al Jazeera
+    published: "2026-03-03T06:11:26.000Z"
+  - entity: nepal-s-gen-z-threw-out-old-parties-wil-2026-03-03
+    type: article
+    title: Nepal’s Gen Z threw out old parties. Will it vote for them in key election?
+    url: https://www.aljazeera.com/news/2026/3/3/nepals-gen-z-threw-out-old-parties-will-it-vote-for-them-in-key-election
+    excerpt: >-
+      Last year&#039;s protests reflected popular disenchantment with established political parties, which are again
+      seeking power.
+    source_name: Al Jazeera
+    published: "2026-03-03T05:29:05.000Z"
+  - entity: as-bombing-continues-israel-s-war-aim-i-2026-03-03
+    type: article
+    title: "As bombing continues, Israel’s war aim in Iran becomes clear: Regime change"
+    url: https://www.aljazeera.com/news/2026/3/3/as-bombing-continues-israels-war-aim-in-iran-becomes-clear-regime-change
+    excerpt: Israel aims for regime change in Iran, but may not care as much about whether the transition is smooth.
+    source_name: Al Jazeera
+    published: "2026-03-03T05:08:53.000Z"
+  - entity: bitcoin-supply-approaching-20-million-t-2026-03-03
+    type: article
+    title: "Bitcoin supply approaching 20 million: The final million will take another 114 years to mine"
+    url: >-
+      https://www.coindesk.com/markets/2026/01/23/bitcoin-supply-approaching-20-million-the-final-million-will-take-another-114-years-to-mine
+    excerpt: >-
+      Out of a fixed maximum supply of 21 million coins, more than 95% of all bitcoin that will ever exist is now in
+      circulation.
+    source_name: CoinDesk
+    published: "2026-03-03T08:25:48.000Z"
+  - entity: bitcoin-climbs-as-btc-etfs-post-one-of-t-2026-03-03
+    type: article
+    title: Bitcoin climbs as BTC ETFs post one of the quarter’s biggest inflow days amid Iran volatility
+    url: >-
+      https://www.coindesk.com/markets/2026/03/03/bitcoin-climbs-as-btc-etfs-post-one-of-the-quarter-s-biggest-inflow-days-amid-iran-volatility
+    excerpt: >-
+      U.S. BTC ETFs added $458 million, suggesting institutional buyers are absorbing the weekend shock that briefly
+      sent BTC to $63,000.
+    source_name: CoinDesk
+    published: "2026-03-03T06:00:55.000Z"
+  - entity: near-token-jumps-17-after-confidential-2026-03-03
+    type: article
+    title: NEAR token jumps 17% after ‘Confidential Intents’ launch, outpaces privacy tokens sector
+    url: >-
+      https://www.coindesk.com/markets/2026/03/02/near-token-jumps-17-after-confidential-intents-launch-outpaces-privacy-tokens-sector
+    excerpt: >-
+      Private execution layer aims to curb MEV and front-running as the token extends 40% weekly rally despite modest
+      onchain earnings.
+    source_name: CoinDesk
+    published: "2026-03-03T04:59:10.000Z"
+  - entity: u-s-senate-housing-bill-includes-cbdc-b-2026-03-03
+    type: article
+    title: U.S. Senate housing bill includes CBDC ban
+    url: https://www.coindesk.com/policy/2026/03/02/u-s-senate-housing-bill-includes-cbdc-ban
+    excerpt: >-
+      The Senate Banking Committee's bipartisan "ROAD to Housing Act" includes a provision banning the Fed from issuing
+      a CBDC before 2031.
+    source_name: CoinDesk
+    published: "2026-03-03T00:04:04.000Z"
+  - entity: facing-backlash-openai-x2019-s-sam-alt-2026-03-03
+    type: article
+    title: Facing backlash, OpenAI&#x2019;s Sam Altman says he made a &#x2018;sloppy&#x2019; mistake in Pentagon deal
+    url: >-
+      https://www.marketwatch.com/story/facing-backlash-openais-sam-altman-says-he-made-a-sloppy-mistake-in-pentagon-deal-cf8f3ad9?mod=mw_rss_topstories
+    excerpt: >-
+      The OpenAI CEO admits he came off as &#x201c;opportunistic&#x201d; in how he announced the company&#x2019;s new
+      government deal and says he will amend the language to emphasize restrictions
+    source_name: MarketWatch
+    published: "2026-03-03T04:28:00.000Z"
+  - entity: apple-launches-new-iphone-and-ipad-air-a-2026-03-03
+    type: article
+    title: Apple launches new iPhone and iPad Air as it gears up for a major AI push
+    url: >-
+      https://www.marketwatch.com/story/apple-launches-new-iphone-and-ipad-air-as-it-gears-up-for-a-major-ai-push-570b24ae?mod=mw_rss_topstories
+    excerpt: >-
+      The company is boosting the storage capacity of its devices, a move thought to be a prelude to expected Siri
+      enhancements later this year.
+    source_name: MarketWatch
+    published: "2026-03-03T03:16:00.000Z"
+  - entity: mongodb-x2019-s-stock-sinks-after-earni-2026-03-03
+    type: article
+    title: MongoDB&#x2019;s stock sinks after earnings, signaling more tough times for the software sector
+    url: >-
+      https://www.marketwatch.com/story/mongodbs-stock-sinks-after-earnings-signaling-more-tough-times-for-the-software-sector-5dd37daa?mod=mw_rss_topstories
+    excerpt: A &#x201c;planned&#x201d; transition involving the exits of two sales leaders is also rattling investors.
+    source_name: MarketWatch
+    published: "2026-03-03T02:23:00.000Z"
+  - entity: sofi-x2019-s-stock-rises-as-ceo-anthony-2026-03-03
+    type: article
+    title: SoFi&#x2019;s stock rises as CEO Anthony Noto reacts to recent selloff with a $1 million purchase
+    url: >-
+      https://www.marketwatch.com/story/sofis-stock-rises-as-ceo-anthony-noto-reacts-to-recent-selloff-with-a-1-million-purchase-d03ba5b6?mod=mw_rss_topstories
+    excerpt: Noto, who already owns a SoFi stake worth about $215 million on paper, has been known to buy the dip before.
+    source_name: MarketWatch
+    published: "2026-03-03T01:28:00.000Z"
+  - entity: x2018-i-don-x2019-t-earn-enough-to-su-2026-03-03
+    type: article
+    title: >-
+      &#x2018;I don&#x2019;t earn enough to support us and our baby&#x2019;: My unemployed husband lost $22,000 trading
+      sports cards. What now?
+    url: >-
+      https://www.marketwatch.com/story/i-dont-earn-enough-to-support-us-and-our-baby-my-husband-is-unemployed-and-lost-22-000-trading-sports-cards-what-now-200c1438?mod=mw_rss_topstories
+    excerpt: >-
+      &#x201c;I intervened, shut the business down and got him into therapy and support for gambling-type
+      behaviors.&#x201d;
+    source_name: MarketWatch
+    published: "2026-03-03T00:00:00.000Z"
+  - entity: iran-war-pushes-middle-east-oil-tanker-r-2026-03-03
+    type: article
+    title: Iran War Pushes Middle East Oil Tanker Rates to All-Time High
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/Iran-War-Pushes-Middle-East-Oil-Tanker-Rates-to-All-Time-High.html
+    excerpt: >-
+      The freight rate for a supertanker carrying crude oil on the key Middle East-to-China route hit a record high of
+      more than $420,000 per day on Monday as the war in the Middle East disrupts the world’s
+    source_name: OilPrice.com
+    published: "2026-03-03T07:19:13.000Z"
+  - entity: white-house-prepares-plan-to-combat-oil-2026-03-03
+    type: article
+    title: White House Prepares Plan to Combat Oil Price Spike
+    url: https://oilprice.com/Latest-Energy-News/World-News/White-House-Prepares-Plan-to-Combat-Oil-Price-Spike.html
+    excerpt: >-
+      The United States will unveil a phased plan to mitigate the spike in oil prices amid the ongoing conflict in Iran
+      and the wider Middle East, U.S. Secretary of State Marco Rubio said late on Monday as 
+    source_name: OilPrice.com
+    published: "2026-03-03T06:37:19.000Z"
+  - entity: qatar-s-lng-blackout-just-broke-the-glob-2026-03-03
+    type: article
+    title: Qatar’s LNG Blackout Just Broke the Global Gas Market
+    url: https://oilprice.com/Energy/Natural-Gas/Qatars-LNG-Blackout-Just-Broke-the-Global-Gas-Market.html
+    excerpt: >-
+      It’s not hyperbole to call what transpired today in Qatar a seismic event for global energy markets. On March 2,
+      QatarEnergy — the state-owned energy giant responsible for all of the country’s liquefi
+    source_name: OilPrice.com
+    published: "2026-03-03T01:00:00.000Z"
+  - entity: qatar-s-latest-lng-mega-award-signals-a-2026-03-03
+    type: article
+    title: Qatar’s Latest LNG Mega-award Signals a Full Strategic Turn to the West
+    url: >-
+      https://oilprice.com/Energy/Natural-Gas/Qatars-Latest-LNG-Mega-award-Signals-a-Full-Strategic-Turn-to-the-West.html
+    excerpt: >-
+      From the moment that Russia invaded Ukraine on 24 February 2022, liquefied natural gas (LNG) became the key global
+      emergency energy source. Unlike pipelined energy that requires time-consuming infrast
+    source_name: OilPrice.com
+    published: "2026-03-03T00:00:00.000Z"
+  - entity: cursor-has-reportedly-surpassed-2b-in-a-2026-03-03
+    type: article
+    title: Cursor has reportedly surpassed $2B in annualized revenue
+    url: https://techcrunch.com/2026/03/02/cursor-has-reportedly-surpassed-2b-in-annualized-revenue/
+    excerpt: >-
+      The four-year-old startup saw its revenue run rate double over the past three months, according to one Bloomberg
+      source.
+    source_name: TechCrunch
+    published: "2026-03-03T01:53:59.000Z"
+  - entity: chatgpt-uninstalls-surged-by-295-after-2026-03-03
+    type: article
+    title: ChatGPT uninstalls surged by 295% after DoD deal
+    url: https://techcrunch.com/2026/03/02/chatgpt-uninstalls-surged-by-295-after-dod-deal/
+    excerpt: Many consumers ditched ChatGPT's app after news of its DoD deal went live, while Claude's downloads grew.
+    source_name: TechCrunch
+    published: "2026-03-03T00:03:37.000Z"
