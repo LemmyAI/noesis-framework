@@ -256,6 +256,7 @@
     if (view === 'graph') return viewGraph(parts[1]);
     if (view === 'key') return viewKey(decodeURIComponent(parts.slice(1).join('/')));
     if (view === 'about') return viewAbout();
+    if (view === 'dashboard') return viewDashboard(parts[1] || 'maga-casualties');
 
     $('#app').innerHTML = '<div class="empty-state">View not found</div>';
   }
@@ -323,6 +324,18 @@
     const childHasMore = childNarratives.length > CHILD_NAR_LIMIT;
 
     let html = '';
+
+    // DASHBOARD LINK (root only)
+    if (isRoot) {
+      html += `<div class="dash-link-card" onclick="window.location.hash='#/dashboard/maga-casualties'">
+        <div class="dash-link-icon">📊</div>
+        <div class="dash-link-content">
+          <div class="dash-link-title">MAGA vs Casualties Dashboard</div>
+          <div class="dash-link-desc">Trump approval ratings vs US military deaths in active conflicts</div>
+        </div>
+        <div class="dash-link-arrow">→</div>
+      </div>`;
+    }
 
     // SECTION 1: Narratives
     const hasOwn = ownNarratives.length > 0;
@@ -1023,6 +1036,157 @@ Layer 1: Core Ontology — universal types, configurable inference rules
 
       <a href="#/" class="about-enter">Enter the Explorer →</a>
     </div>`;
+  }
+
+
+  // === VIEW: DASHBOARD ===
+  function viewDashboard(dashboardId) {
+    setBreadcrumb([
+      { label: 'Home', href: '#/' },
+      { label: 'Dashboards', href: '#/dashboard' },
+      { label: 'MAGA vs Casualties', href: '#/dashboard/maga-casualties' },
+    ]);
+
+    // MAGA Enthusiasm Index: Trump Approval Rating (Gallup, Feb 2026: Gallup ceased polling)
+    // Latest polls show Trump approval around 47-49%
+    const magaData = [
+      { date: '2025-01', approval: 47, disapproval: 48, source: 'Gallup' },
+      { date: '2025-02', approval: 48, disapproval: 47, source: 'Gallup' },
+      { date: '2025-06', approval: 45, disapproval: 50, source: 'RCP Average' },
+      { date: '2025-12', approval: 44, disapproval: 51, source: 'RCP Average' },
+      { date: '2026-01', approval: 49, disapproval: 46, source: 'RCP Average' },
+      { date: '2026-02', approval: 52, disapproval: 44, source: 'RCP Average' }, // Post-Iran strike bump
+    ];
+
+    // US Military Casualties (Wikipedia data)
+    const casualties = [
+      { conflict: 'War in Afghanistan', years: '2001-2021', deaths: 2325, wounded: 20093, total: 22311 },
+      { conflict: 'Iraq War', years: '2003-2011', deaths: 4492, wounded: 32222, total: 36710 },
+      { conflict: '2026 Iran Conflict', years: '2026', deaths: 6, wounded: 18, total: 24 },
+      { conflict: '2026 Venezuela Intervention', years: '2026', deaths: 0, wounded: 7, total: 7 },
+      { conflict: 'Operation Inherent Resolve', years: '2014-2025', deaths: 120, wounded: 496, total: 616 },
+    ];
+
+    // Calculate total 2026 casualties
+    const total2026Deaths = casualties.filter(c => c.years.includes('2026')).reduce((sum, c) => sum + c.deaths, 0);
+    const total2026Wounded = casualties.filter(c => c.years.includes('2026')).reduce((sum, c) => sum + c.wounded, 0);
+
+    let html = `<div class="dashboard-page">
+      <h1>📊 MAGA Enthusiasm vs US Military Casualties</h1>
+      <p class="dashboard-subtitle">Tracking the correlation between Trump approval ratings and American military deaths in active conflicts</p>
+
+      <div class="dashboard-tabs">
+        <a href="#/dashboard/maga-casualties" class="dash-tab active">📈 Overview</a>
+        <a href="#/dashboard/approval-history" class="dash-tab">📅 Approval History</a>
+        <a href="#/dashboard/casualty-details" class="dash-tab">⚔️ Casualty Details</a>
+      </div>
+
+      <div class="dash-grid">
+        <div class="dash-card">
+          <div class="dash-card-title">🇺🇸 Trump Approval Rating</div>
+          <div class="dash-big-number">${magaData[magaData.length - 1].approval}%</div>
+          <div class="dash-card-subtitle">${magaData[magaData.length - 1].date} · ${magaData[magaData.length - 1].source}</div>
+          <div class="dash-trend up">+3 pts from Jan 2026</div>
+          <div class="dash-note">Post-Iran strike rally effect</div>
+        </div>
+
+        <div class="dash-card">
+          <div class="dash-card-title">⚔️ US Deaths (2026)</div>
+          <div class="dash-big-number warn">${total2026Deaths}</div>
+          <div class="dash-card-subtitle">Killed in Action</div>
+          <div class="dash-detail">+${total2026Wounded} wounded</div>
+        </div>
+
+        <div class="dash-card">
+          <div class="dash-card-title">Iran Conflict</div>
+          <div class="dash-number">${casualties.find(c => c.conflict.includes('Iran')).deaths}</div>
+          <div class="dash-card-subtitle">US combat deaths</div>
+          <div class="dash-detail">${casualties.find(c => c.conflict.includes('Iran')).wounded} wounded</div>
+        </div>
+
+        <div class="dash-card">
+          <div class="dash-card-title">Venezuela</div>
+          <div class="dash-number">${casualties.find(c => c.conflict.includes('Venezuela')).deaths}</div>
+          <div class="dash-card-subtitle">US combat deaths</div>
+          <div class="dash-detail">${casualties.find(c => c.conflict.includes('Venezuela')).wounded} wounded</div>
+        </div>
+      </div>
+
+      <div class="section-header"><span class="icon">📈</span>Trump Approval Trend</div>
+      <div class="chart-container">
+        <div class="simple-chart" id="approval-chart"></div>
+      </div>
+
+      <div class="section-header"><span class="icon">⚔️</span>Active Conflicts (2026)</div>
+      <div class="conflict-table">
+        <div class="conflict-row header">
+          <span>Conflict</span>
+          <span>Period</span>
+          <span>Deaths</span>
+          <span>Wounded</span>
+          <span>Total</span>
+        </div>
+${casualties.filter(c => c.years.includes('2026') || c.years.includes('2014')).map(c => `        <div class="conflict-row">
+          <span class="conflict-name">${c.conflict}</span>
+          <span>${c.years}</span>
+          <span class="${c.deaths > 0 ? 'deaths' : ''}">${c.deaths}</span>
+          <span>${c.wounded}</span>
+          <span>${c.total}</span>
+        </div>`).join('
+')}
+      </div>
+
+      <div class="section-header"><span class="icon">📊</span>Historical Context</div>
+      <div class="history-cards">
+        <div class="hist-card">
+          <div class="hist-title">Afghanistan (2001-2021)</div>
+          <div class="hist-deaths">2,325 deaths</div>
+          <div class="hist-context">Longest US war · Ended under Biden withdrawal</div>
+        </div>
+        <div class="hist-card">
+          <div class="hist-title">Iraq War (2003-2011)</div>
+          <div class="hist-deaths">4,492 deaths</div>
+          <div class="hist-context">Based on WMD claims · Major anti-war movement</div>
+        </div>
+        <div class="hist-card highlight">
+          <div class="hist-title">Iran Conflict (2026)</div>
+          <div class="hist-deaths">6 deaths</div>
+          <div class="hist-context">Trump-ordered strikes · Approval rallied +5pts</div>
+        </div>
+      </div>
+
+      <div class="dashboard-footer">
+        <p><strong>Sources:</strong> Gallup (ceased Feb 2026), RealClearPolitics, Wikipedia US Military Casualties</p>
+        <p><strong>Note:</strong> Gallup announced Feb 11, 2026 they would cease presidential approval polling after 88 years.</p>
+      </div>
+    </div>`;
+
+    .innerHTML = html;
+
+    // Draw simple chart
+    setTimeout(() => drawApprovalChart(magaData), 50);
+  }
+
+  function drawApprovalChart(data) {
+    const container = document.getElementById('approval-chart');
+    if (!container) return;
+
+    const maxApproval = Math.max(...data.map(d => d.approval));
+    const minApproval = Math.min(...data.map(d => d.approval));
+    const range = maxApproval - minApproval + 10;
+
+    let bars = '';
+    data.forEach((d, i) => {
+      const h = ((d.approval - minApproval + 5) / range) * 100;
+      const color = d.approval >= 50 ? '#4CAF50' : '#6BA3D6';
+      bars += `<div class="chart-bar" style="height:${h}%">
+        <div class="bar-fill" style="background:${color}"></div>
+        <div class="bar-label">${d.approval}%</div>
+        <div class="bar-date">${d.date.split('-')[1]}/${d.date.split('-')[0].slice(2)}</div>
+      </div>`;
+    });
+
+    container.innerHTML = `<div class="chart-bars">${bars}</div><div class="chart-legend">▲ Higher = Better Approval</div>`;
   }
 
   // === LEGEND ===
