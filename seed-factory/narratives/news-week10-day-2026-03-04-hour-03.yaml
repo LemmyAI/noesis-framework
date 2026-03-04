@@ -1,0 +1,374 @@
+seed:
+  name: news-week10-day-2026-03-04-hour-03
+  label: Daily News — 2026-03-04 03:00 (Week 10, 2026)
+  namespace: news.week10.day-2026-03-04
+  description: "Auto-gathered news: 18 stories, 2026-03-04 to 2026-03-04"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week10
+    extends: news
+  - namespace: news.week10.day-2026-03-04
+    extends: news.week10
+entities:
+  - id: six-us-soldiers-killed-in-iranian-strike-2026-03-04
+    type: Fact
+    name: Six US soldiers killed in Iranian strike on Kuwait base
+    category: geopolitics
+    description: The US defence secretary confirms a US military base was hit by Iran on Sunday.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-04T00:00:01.000Z"
+      precision: day
+  - id: asia-stocks-fall-for-third-day-oil-edge-2026-03-04
+    type: Event
+    name: Asia stocks fall for third day, oil edges up as markets track Iran war
+    category: finance
+    description: The conflict in the Middle East has rattled financial markets and global energy prices have soared.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-04T01:54:38.000Z"
+      precision: day
+  - id: use-our-tax-calculator-to-see-how-the-sp-2026-03-04
+    type: Event
+    name: Use our tax calculator to see how the Spring Statement affects you
+    category: finance
+    description: Wages are forecast to go up over the next five years but you could pay more tax because of frozen thresholds.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-04T00:01:44.000Z"
+      precision: day
+  - id: nepal-election-is-the-monarchy-still-a-2026-03-04
+    type: Event
+    name: "Nepal election: Is the monarchy still a force, two decades after ouster?"
+    category: geopolitics
+    description: >-
+      Ex-King Gyanendra Shah was removed from power 20 years ago. Will a Nepal in political flux give him another
+      chance?
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-04T01:56:31.000Z"
+      precision: day
+  - id: protests-in-venezuela-against-us-israeli-2026-03-04
+    type: Event
+    name: Protests in Venezuela against US-Israeli war on Iran
+    category: geopolitics
+    description: Protesters in Venezuela have rallied outside the Iranian Embassy to condemn the US-Israeli war on Iran.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-04T01:45:42.000Z"
+      precision: day
+  - id: oil-on-fire-war-impacts-global-energy-m-2026-03-04
+    type: Event
+    name: "Oil on Fire: War impacts global energy markets"
+    category: geopolitics
+    description: >-
+      Attacks on energy facilities, along with Iran blockading the Strait of Hormuz, are raising global oil and gas
+      prices.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-04T01:25:58.000Z"
+      precision: day
+  - id: uk-to-end-study-visas-for-myanmar-afgha-2026-03-04
+    type: Event
+    name: UK to end study visas for Myanmar, Afghanistan, Cameroon, Sudan students
+    category: geopolitics
+    description: The ban on students from the four countries comes amid a rise in anti-immigration sentiment in the UK.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-04T01:18:14.000Z"
+      precision: day
+  - id: rubio-claim-of-israeli-role-in-us-iran-a-2026-03-04
+    type: Event
+    name: Rubio claim of Israeli role in US Iran attack reverberates, despite denial
+    category: geopolitics
+    description: >-
+      Commentators across political spectrum, including MAGA base, seize on Rubio&#039;s words amid shifting war
+      justifications.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-04T00:18:27.000Z"
+      precision: day
+  - id: macron-warns-israel-against-lebanon-inva-2026-03-04
+    type: Claim
+    name: Macron warns Israel against Lebanon invasion
+    category: geopolitics
+    description: French President Emmanuel Macron has warned Israel against invading Lebanon.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-04T00:06:53.000Z"
+      precision: day
+  - id: iran-live-news-us-embassy-in-dubai-hit-2026-03-04
+    type: Event
+    name: "Iran live news: US embassy in Dubai hit; Israel pounds Tehran, Beirut"
+    category: geopolitics
+    description: >-
+      US and Israel continue to pound Iran and Lebanon, as Tehran&#039;s counterstrikes disrupt oil flows in the Middle
+      East.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-04T00:00:26.000Z"
+      precision: day
+  - id: my-rude-ungrateful-relative-gave-her-la-2026-03-04
+    type: Event
+    name: >-
+      My rude, ungrateful relative gave her lawyer power of attorney &#x2014; and has lived to regret it. Should I get
+      involved?
+    category: finance.markets
+    description: "&#x201c;A person who is used to controlling others does not like being controlled.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-04T01:30:00.000Z"
+      precision: day
+  - id: crowdstrike-gives-upbeat-earnings-outloo-2026-03-04
+    type: Event
+    name: CrowdStrike gives upbeat earnings outlook as AI raises the stakes around cyberthreats
+    category: finance.markets
+    description: >-
+      CrowdStrike&#x2019;s CEO cited &#x2018;elevated demand&#x2019; for the company&#x2019;s Falcon cybersecurity
+      platform in the AI era.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-04T01:22:00.000Z"
+      precision: day
+  - id: moderna-x2019-s-stock-rallies-8-as-dea-2026-03-04
+    type: Event
+    name: Moderna&#x2019;s stock rallies 8% as deal over a patent dispute clears vaccine pipeline
+    category: finance.markets
+    description: The deal would provide &#x2018;certainty&#x2019; for Moderna&#x2019;s vaccine portfolio.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-04T01:20:00.000Z"
+      precision: day
+  - id: ross-stores-touts-x2018-very-strong-st-2026-03-04
+    type: Event
+    name: Ross Stores touts &#x2018;very strong start&#x2019; for spring shopping, boosting case for a retail rebound
+    category: finance.markets
+    description: >-
+      Shares of Ross Stores jumped on Tuesday after the off-price clothing and home-goods chain said it expects sales
+      gains this year, following what management said was a solid start to the spring shopping season.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-04T01:18:00.000Z"
+      precision: day
+  - id: my-mother-will-live-in-her-second-husban-2026-03-04
+    type: Event
+    name: My mother will live in her second husband&#x2019;s house if he dies before her. Will his kids be hopping mad?
+    category: finance.markets
+    description: "&#x201c;She chose a lovely man whose family has a history of remarkable longevity.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-04T01:00:00.000Z"
+      precision: day
+  - id: iran-conflict-could-turn-canada-into-the-2026-03-04
+    type: Claim
+    name: Iran Conflict Could Turn Canada Into the Market’s Most Reliable Oil Supplier
+    category: finance.energy
+    description: >-
+      Oil prices surged for a second day running on Tuesday as global markets brace for a prolonged conflict in the
+      Middle East. On Monday, Iran’s Islamic Revolutionary Guard Corps (IRGC) officially declared the Strait of Hormuz
+      "closed," warning that any vessel attempting to pass will be attacked or "set
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-04T01:00:00.000Z"
+      precision: day
+  - id: iraqi-supply-loss-could-expose-the-real-2026-03-04
+    type: Claim
+    name: Iraqi Supply Loss Could Expose the Real Limits of OPEC Spare Capacity
+    category: finance.energy
+    description: >-
+      Iraq has already begun shutting in production as exports through the Strait of Hormuz become increasingly
+      constrained. Roughly 1.5 million barrels per day are reportedly offline, and officials have warned that figure
+      could approach 3 million bpd if disruptions persist. At 3 million bpd, this becomes
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-04T00:00:00.000Z"
+      precision: day
+  - id: why-ai-startups-are-selling-the-same-equ-2026-03-04
+    type: Event
+    name: Why AI startups are selling the same equity at two different prices
+    category: technology.ai
+    description: Some AI founders are using a novel valuation mechanism to manufacture unicorn status.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-04T00:31:25.000Z"
+      precision: day
+narratives:
+  - name: Energy Markets
+    steps:
+      - from: iraqi-supply-loss-could-expose-the-real-2026-03-04
+        to: iran-conflict-could-turn-canada-into-the-2026-03-04
+        type: follows
+      - from: iran-conflict-could-turn-canada-into-the-2026-03-04
+        to: asia-stocks-fall-for-third-day-oil-edge-2026-03-04
+        type: follows
+sources:
+  - entity: six-us-soldiers-killed-in-iranian-strike-2026-03-04
+    type: article
+    title: Six US soldiers killed in Iranian strike on Kuwait base
+    url: https://www.bbc.com/news/articles/c4gq33ynl07o
+    excerpt: The US defence secretary confirms a US military base was hit by Iran on Sunday.
+    source_name: BBC News
+    published: "2026-03-04T00:00:01.000Z"
+  - entity: asia-stocks-fall-for-third-day-oil-edge-2026-03-04
+    type: article
+    title: Asia stocks fall for third day, oil edges up as markets track Iran war
+    url: https://www.bbc.com/news/articles/cwy884ekn0jo
+    excerpt: The conflict in the Middle East has rattled financial markets and global energy prices have soared.
+    source_name: BBC Business
+    published: "2026-03-04T01:54:38.000Z"
+  - entity: use-our-tax-calculator-to-see-how-the-sp-2026-03-04
+    type: article
+    title: Use our tax calculator to see how the Spring Statement affects you
+    url: https://www.bbc.com/news/articles/c99k7djlklyo
+    excerpt: Wages are forecast to go up over the next five years but you could pay more tax because of frozen thresholds.
+    source_name: BBC Business
+    published: "2026-03-04T00:01:44.000Z"
+  - entity: nepal-election-is-the-monarchy-still-a-2026-03-04
+    type: article
+    title: "Nepal election: Is the monarchy still a force, two decades after ouster?"
+    url: https://www.aljazeera.com/features/2026/3/4/nepal-election-is-the-monarchy-still-a-force-two-decades-after-ouster
+    excerpt: >-
+      Ex-King Gyanendra Shah was removed from power 20 years ago. Will a Nepal in political flux give him another
+      chance?
+    source_name: Al Jazeera
+    published: "2026-03-04T01:56:31.000Z"
+  - entity: protests-in-venezuela-against-us-israeli-2026-03-04
+    type: article
+    title: Protests in Venezuela against US-Israeli war on Iran
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/4/protests-in-venezuela-against-us-israeli-war-on-iran
+    excerpt: Protesters in Venezuela have rallied outside the Iranian Embassy to condemn the US-Israeli war on Iran.
+    source_name: Al Jazeera
+    published: "2026-03-04T01:45:42.000Z"
+  - entity: oil-on-fire-war-impacts-global-energy-m-2026-03-04
+    type: article
+    title: "Oil on Fire: War impacts global energy markets"
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/4/oil-on-fire-war-impacts-global-energy-markets
+    excerpt: >-
+      Attacks on energy facilities, along with Iran blockading the Strait of Hormuz, are raising global oil and gas
+      prices.
+    source_name: Al Jazeera
+    published: "2026-03-04T01:25:58.000Z"
+  - entity: uk-to-end-study-visas-for-myanmar-afgha-2026-03-04
+    type: article
+    title: UK to end study visas for Myanmar, Afghanistan, Cameroon, Sudan students
+    url: https://www.aljazeera.com/news/2026/3/4/uk-to-end-study-visas-for-myanmar-afghanistan-cameroon-sudan-students
+    excerpt: The ban on students from the four countries comes amid a rise in anti-immigration sentiment in the UK.
+    source_name: Al Jazeera
+    published: "2026-03-04T01:18:14.000Z"
+  - entity: rubio-claim-of-israeli-role-in-us-iran-a-2026-03-04
+    type: article
+    title: Rubio claim of Israeli role in US Iran attack reverberates, despite denial
+    url: https://www.aljazeera.com/news/2026/3/4/rubio-claim-of-israeli-role-in-us-iran-attack-reverberates-despite-denial
+    excerpt: >-
+      Commentators across political spectrum, including MAGA base, seize on Rubio&#039;s words amid shifting war
+      justifications.
+    source_name: Al Jazeera
+    published: "2026-03-04T00:18:27.000Z"
+  - entity: macron-warns-israel-against-lebanon-inva-2026-03-04
+    type: article
+    title: Macron warns Israel against Lebanon invasion
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/4/macron-warns-israel-against-lebanon-invasion
+    excerpt: French President Emmanuel Macron has warned Israel against invading Lebanon.
+    source_name: Al Jazeera
+    published: "2026-03-04T00:06:53.000Z"
+  - entity: iran-live-news-us-embassy-in-dubai-hit-2026-03-04
+    type: article
+    title: "Iran live news: US embassy in Dubai hit; Israel pounds Tehran, Beirut"
+    url: >-
+      https://www.aljazeera.com/news/liveblog/2026/3/4/iran-live-news-us-embassy-in-dubai-hit-israel-pounds-tehran-beirut
+    excerpt: >-
+      US and Israel continue to pound Iran and Lebanon, as Tehran&#039;s counterstrikes disrupt oil flows in the Middle
+      East.
+    source_name: Al Jazeera
+    published: "2026-03-04T00:00:26.000Z"
+  - entity: my-rude-ungrateful-relative-gave-her-la-2026-03-04
+    type: article
+    title: >-
+      My rude, ungrateful relative gave her lawyer power of attorney &#x2014; and has lived to regret it. Should I get
+      involved?
+    url: >-
+      https://www.marketwatch.com/story/my-rude-ungrateful-relative-gave-her-lawyer-power-of-attorney-and-has-lived-to-regret-it-should-i-get-involved-5db8088d?mod=mw_rss_topstories
+    excerpt: "&#x201c;A person who is used to controlling others does not like being controlled.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-03-04T01:30:00.000Z"
+  - entity: crowdstrike-gives-upbeat-earnings-outloo-2026-03-04
+    type: article
+    title: CrowdStrike gives upbeat earnings outlook as AI raises the stakes around cyberthreats
+    url: >-
+      https://www.marketwatch.com/story/crowdstrike-gives-upbeat-earnings-outlook-as-ai-raises-the-stakes-around-cyberthreats-087a4b2e?mod=mw_rss_topstories
+    excerpt: >-
+      CrowdStrike&#x2019;s CEO cited &#x2018;elevated demand&#x2019; for the company&#x2019;s Falcon cybersecurity
+      platform in the AI era.
+    source_name: MarketWatch
+    published: "2026-03-04T01:22:00.000Z"
+  - entity: moderna-x2019-s-stock-rallies-8-as-dea-2026-03-04
+    type: article
+    title: Moderna&#x2019;s stock rallies 8% as deal over a patent dispute clears vaccine pipeline
+    url: >-
+      https://www.marketwatch.com/story/modernas-stock-rallies-more-than-10-as-deal-over-a-patent-dispute-clears-vaccine-pipeline-d34e6793?mod=mw_rss_topstories
+    excerpt: The deal would provide &#x2018;certainty&#x2019; for Moderna&#x2019;s vaccine portfolio.
+    source_name: MarketWatch
+    published: "2026-03-04T01:20:00.000Z"
+  - entity: ross-stores-touts-x2018-very-strong-st-2026-03-04
+    type: article
+    title: Ross Stores touts &#x2018;very strong start&#x2019; for spring shopping, boosting case for a retail rebound
+    url: >-
+      https://www.marketwatch.com/story/ross-stores-touts-very-strong-start-for-spring-shopping-boosting-case-for-a-retail-rebound-4d8f168b?mod=mw_rss_topstories
+    excerpt: >-
+      Shares of Ross Stores jumped on Tuesday after the off-price clothing and home-goods chain said it expects sales
+      gains this year, following what management said was a solid start to the spring shopping
+    source_name: MarketWatch
+    published: "2026-03-04T01:18:00.000Z"
+  - entity: my-mother-will-live-in-her-second-husban-2026-03-04
+    type: article
+    title: My mother will live in her second husband&#x2019;s house if he dies before her. Will his kids be hopping mad?
+    url: >-
+      https://www.marketwatch.com/story/his-children-might-resent-her-my-widowed-mother-has-a-life-estate-does-that-override-a-prenup-and-will-0e217484?mod=mw_rss_topstories
+    excerpt: "&#x201c;She chose a lovely man whose family has a history of remarkable longevity.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-03-04T01:00:00.000Z"
+  - entity: iran-conflict-could-turn-canada-into-the-2026-03-04
+    type: article
+    title: Iran Conflict Could Turn Canada Into the Market’s Most Reliable Oil Supplier
+    url: >-
+      https://oilprice.com/Energy/Energy-General/Iran-Conflict-Could-Turn-Canada-Into-the-Markets-Most-Reliable-Oil-Supplier.html
+    excerpt: >-
+      Oil prices surged for a second day running on Tuesday as global markets brace for a prolonged conflict in the
+      Middle East. On Monday, Iran’s Islamic Revolutionary Guard Corps (IRGC) officially declare
+    source_name: OilPrice.com
+    published: "2026-03-04T01:00:00.000Z"
+  - entity: iraqi-supply-loss-could-expose-the-real-2026-03-04
+    type: article
+    title: Iraqi Supply Loss Could Expose the Real Limits of OPEC Spare Capacity
+    url: https://oilprice.com/Energy/Crude-Oil/Iraqi-Supply-Loss-Could-Expose-the-Real-Limits-of-OPEC-Spare-Capacity.html
+    excerpt: >-
+      Iraq has already begun shutting in production as exports through the Strait of Hormuz become increasingly
+      constrained. Roughly 1.5 million barrels per day are reportedly offline, and officials have wa
+    source_name: OilPrice.com
+    published: "2026-03-04T00:00:00.000Z"
+  - entity: why-ai-startups-are-selling-the-same-equ-2026-03-04
+    type: article
+    title: Why AI startups are selling the same equity at two different prices
+    url: https://techcrunch.com/2026/03/03/why-ai-startups-are-selling-the-same-equity-at-two-different-prices/
+    excerpt: Some AI founders are using a novel valuation mechanism to manufacture unicorn status.
+    source_name: TechCrunch
+    published: "2026-03-04T00:31:25.000Z"
