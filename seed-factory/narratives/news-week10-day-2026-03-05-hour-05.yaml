@@ -1,0 +1,477 @@
+seed:
+  name: news-week10-day-2026-03-05-hour-05
+  label: Daily News — 2026-03-05 05:00 (Week 10, 2026)
+  namespace: news.week10.day-2026-03-05
+  description: "Auto-gathered news: 23 stories, 2026-03-05 to 2026-03-05"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week10
+    extends: news
+  - namespace: news.week10.day-2026-03-05
+    extends: news.week10
+entities:
+  - id: china-sets-lowest-economic-growth-target-2026-03-05
+    type: Event
+    name: China sets lowest economic growth target since 1991
+    category: geopolitics
+    description: It is also the first time the target has been lowered since it was cut to "around 5%" in 2023.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T03:10:52.000Z"
+      precision: day
+  - id: trade-court-orders-tariff-refunds-in-set-2026-03-05
+    type: Decision
+    name: Trade court orders tariff refunds in setback for Trump administration
+    category: geopolitics
+    description: >-
+      A trade court has cleared the way for businesses to receive refunds for tariffs that the Supreme Court struck down
+      last month.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T00:13:16.000Z"
+      precision: day
+  - id: pentagon-identifies-six-us-soldiers-kill-2026-03-05
+    type: Fact
+    name: Pentagon identifies six US soldiers killed in Iran conflict
+    category: geopolitics
+    description: >-
+      The US soldiers were killed after a drone evaded air defences to hit a command centre in Port Shuaiba, Kuwait, on
+      Sunday.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T01:42:40.000Z"
+      precision: day
+  - id: musk-tells-jury-people-read-too-much-i-2026-03-05
+    type: Claim
+    name: Musk tells jury 'people read too much' into his posts
+    category: finance
+    description: The billionaire is accused of misleading investors in the run-up to his 2022 Twitter purchase.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T02:55:34.000Z"
+      precision: day
+  - id: we-have-more-privacy-controls-yet-less-p-2026-03-05
+    type: Event
+    name: We have more privacy controls yet less privacy than ever
+    category: finance
+    description: Has online privacy become  "a luxury not a right" for us all in 2026?
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T00:04:26.000Z"
+      precision: day
+  - id: who-is-choosing-iran-s-next-supreme-lead-2026-03-05
+    type: Event
+    name: Who is choosing Iran’s next Supreme Leader?
+    category: geopolitics
+    description: >-
+      Iran’s Assembly of Experts is now tasked with choosing the next Supreme Leader. It elected Ayatollah Ali Khamenei
+      in 198
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T03:48:18.000Z"
+      precision: day
+  - id: iranian-rockets-intercepted-over-central-2026-03-05
+    type: Event
+    name: Iranian rockets intercepted over central Israel
+    category: geopolitics
+    description: Interceptors were seen lighting up the sky over central Israel as sirens blared in response to Iranian rockets.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T03:11:02.000Z"
+      precision: day
+  - id: iran-s-succession-question-rouhani-s-na-2026-03-05
+    type: Event
+    name: "Iran’s succession question: Rouhani’s name resurfaces amid leadership void"
+    category: geopolitics
+    description: >-
+      Rouhani&#039;s legacy of pragmatism and moderation gains renewed relevance amid Iran&#039;s sensitive leadership
+      transition phase.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T02:58:26.000Z"
+      precision: day
+  - id: demonstrators-across-iran-condemn-us-isr-2026-03-05
+    type: Event
+    name: Demonstrators across Iran condemn US-Israeli war
+    category: geopolitics
+    description: Iranian media shared footage from several cities showing demonstrators condemning the US-Israeli war.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T02:37:09.000Z"
+      precision: day
+  - id: senate-republicans-block-war-powers-reso-2026-03-05
+    type: Event
+    name: Senate Republicans block war powers resolution on Iran
+    category: geopolitics
+    description: >-
+      Senate Republicans, joined by a Democrat, voted down a war powers resolution on President Donald Trump&#039;s war
+      with Iran.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T02:32:27.000Z"
+      precision: day
+  - id: trump-had-a-good-feeling-iran-would-st-2026-03-05
+    type: Event
+    name: "Trump had a ‘good feeling’ Iran would strike the US: White House"
+    category: geopolitics
+    description: >-
+      White House Press Secretary Karoline Leavitt said US President Donald Trump had a “good feeling” Iran was about to
+      attac
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T02:15:43.000Z"
+      precision: day
+  - id: us-gov-t-committee-subpoenas-attorney-ge-2026-03-05
+    type: Event
+    name: US gov’t committee subpoenas Attorney General Pam Bondi over Epstein files
+    category: geopolitics
+    description: >-
+      House Oversight Committee votes to subpoena Bondi over Justice Department&#039;s handling of files in Epstein
+      investigation.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T02:12:19.000Z"
+      precision: day
+  - id: us-senator-helps-police-drag-anti-war-pr-2026-03-05
+    type: Event
+    name: US Senator helps police drag anti-war protester from meeting
+    category: geopolitics
+    description: US Senator Tim Sheehy joined police in forcefully ejecting anti-war protestor and former Marine Brian McGinnis.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T01:59:21.000Z"
+      precision: day
+  - id: israel-tightens-siege-on-gaza-amid-iran-2026-03-05
+    type: Event
+    name: Israel tightens siege on Gaza amid Iran war
+    category: geopolitics
+    description: Israel closes Gaza crossings amid war with Iran, raising fears of famine. Tareq Abu Azzoum explains.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T01:33:48.000Z"
+      precision: day
+  - id: cuba-hit-by-widespread-blackout-ecuador-2026-03-05
+    type: Event
+    name: Cuba hit by widespread blackout; Ecuador expels Havana’s ambassador, staff
+    category: geopolitics
+    description: Cuba&#039;s Ambassador to Ecuador Basilio Gutierrez and his diplomatic staff were given 48 hours to leave Quito.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T01:33:04.000Z"
+      precision: day
+  - id: the-most-expensive-state-for-in-home-car-2026-03-05
+    type: Claim
+    name: The most expensive state for in-home caregiving may surprise you &#x2014; and it costs almost $9,000 a month there
+    category: finance.markets
+    description: >-
+      The cost of care for an aging parent, whether in their own home or in a nursing facility, varies greatly depending
+      on where they live.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T03:45:00.000Z"
+      precision: day
+  - id: how-to-step-back-from-your-job-without-k-2026-03-05
+    type: Event
+    name: How to step back from your job without killing your career
+    category: finance.markets
+    description: >-
+      Many workers are looking to take a breather from their job or to scale back their high-stress career without
+      quitting altogether. It can be done.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T03:27:00.000Z"
+      precision: day
+  - id: prices-to-charter-large-oil-tankers-soar-2026-03-05
+    type: Event
+    name: Prices to charter large oil tankers soar as Strait of Hormuz traffic grinds to a halt
+    category: finance.markets
+    description: Charter rates nearly doubled in recent days and are up fivefold since the start of the year.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T02:04:00.000Z"
+      precision: day
+  - id: broadcom-says-ai-is-not-disrupting-its-s-2026-03-05
+    type: Claim
+    name: Broadcom says AI is not disrupting its software business, and its stock climbs
+    category: finance.markets
+    description: >-
+      The chip maker sees sales growth in its infrastructure software accelerating, showing that it&#x2019;s focused on
+      and investing in that business.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T01:19:00.000Z"
+      precision: day
+  - id: okta-x2019-s-stock-rises-as-momentum-in-2026-03-05
+    type: Event
+    name: Okta&#x2019;s stock rises as momentum in AI agents fuels an earnings beat
+    category: finance.markets
+    description: Okta beat earnings expectations for the latest quarter, but guidance for the current quarter was below forecasts.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T01:17:00.000Z"
+      precision: day
+  - id: stanchart-hikes-oil-price-forecast-to-7-2026-03-05
+    type: Claim
+    name: StanChart Hikes Oil Price Forecast To $74 Per Barrel Amid Iran Conflict
+    category: finance.energy
+    description: >-
+      Iran has launched a massive retaliatory campaign following joint U.S. and Israeli airstrikes, sending an
+      unprecedented barrage of more than 500 ballistic missiles and 2,000 drones across targets in Israel and several
+      Gulf states. A drone strike on a command center killed six U.S. service members in 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T01:00:00.000Z"
+      precision: day
+  - id: tanker-squeeze-adds-insult-to-oil-injury-2026-03-05
+    type: Event
+    name: Tanker Squeeze Adds Insult to Oil Injury amid Iran War
+    category: finance.energy
+    description: >-
+      Tanker rates are through the roof, movement through the Strait of Hormuz is severely reduced because of war cover
+      cancellations by insurers, and the combination of these developments has sent oil prices flying. Now, there’s a
+      third factor that would likely aggravate the situation further: there are 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T00:00:00.000Z"
+      precision: day
+  - id: jensen-huang-says-nvidia-is-pulling-back-2026-03-05
+    type: Claim
+    name: >-
+      Jensen Huang says Nvidia is pulling back from OpenAI and Anthropic, but his explanation raises more questions than
+      it answers
+    category: technology.ai
+    description: >-
+      Nvidia CEO Jensen Huang said Wednesday that his company's investments in OpenAI and Anthropic will likely be its
+      last — but his explanation may not tell the whole story.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T01:08:28.000Z"
+      precision: day
+narratives:
+  - name: Energy Markets
+    steps:
+      - from: tanker-squeeze-adds-insult-to-oil-injury-2026-03-05
+        to: stanchart-hikes-oil-price-forecast-to-7-2026-03-05
+        type: supports
+sources:
+  - entity: china-sets-lowest-economic-growth-target-2026-03-05
+    type: article
+    title: China sets lowest economic growth target since 1991
+    url: https://www.bbc.com/news/articles/cqxddwl93qjo
+    excerpt: It is also the first time the target has been lowered since it was cut to "around 5%" in 2023.
+    source_name: BBC News
+    published: "2026-03-05T03:10:52.000Z"
+  - entity: trade-court-orders-tariff-refunds-in-set-2026-03-05
+    type: article
+    title: Trade court orders tariff refunds in setback for Trump administration
+    url: https://www.bbc.com/news/articles/c1d66k5r1x4o
+    excerpt: >-
+      A trade court has cleared the way for businesses to receive refunds for tariffs that the Supreme Court struck down
+      last month.
+    source_name: BBC News
+    published: "2026-03-05T00:13:16.000Z"
+  - entity: pentagon-identifies-six-us-soldiers-kill-2026-03-05
+    type: article
+    title: Pentagon identifies six US soldiers killed in Iran conflict
+    url: https://www.bbc.com/news/articles/c4gq33ynl07o
+    excerpt: >-
+      The US soldiers were killed after a drone evaded air defences to hit a command centre in Port Shuaiba, Kuwait, on
+      Sunday.
+    source_name: BBC News
+    published: "2026-03-05T01:42:40.000Z"
+  - entity: musk-tells-jury-people-read-too-much-i-2026-03-05
+    type: article
+    title: Musk tells jury 'people read too much' into his posts
+    url: https://www.bbc.com/news/articles/c7433dz4ykwo
+    excerpt: The billionaire is accused of misleading investors in the run-up to his 2022 Twitter purchase.
+    source_name: BBC Business
+    published: "2026-03-05T02:55:34.000Z"
+  - entity: we-have-more-privacy-controls-yet-less-p-2026-03-05
+    type: article
+    title: We have more privacy controls yet less privacy than ever
+    url: https://www.bbc.com/news/articles/c4gj39zk1k0o
+    excerpt: Has online privacy become  "a luxury not a right" for us all in 2026?
+    source_name: BBC Business
+    published: "2026-03-05T00:04:26.000Z"
+  - entity: who-is-choosing-iran-s-next-supreme-lead-2026-03-05
+    type: article
+    title: Who is choosing Iran’s next Supreme Leader?
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/5/who-is-choosing-irans-next-supreme-leader
+    excerpt: >-
+      Iran’s Assembly of Experts is now tasked with choosing the next Supreme Leader. It elected Ayatollah Ali Khamenei
+      in 198
+    source_name: Al Jazeera
+    published: "2026-03-05T03:48:18.000Z"
+  - entity: iranian-rockets-intercepted-over-central-2026-03-05
+    type: article
+    title: Iranian rockets intercepted over central Israel
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/5/iranian-rockets-intercepted-over-central-israel
+    excerpt: Interceptors were seen lighting up the sky over central Israel as sirens blared in response to Iranian rockets.
+    source_name: Al Jazeera
+    published: "2026-03-05T03:11:02.000Z"
+  - entity: iran-s-succession-question-rouhani-s-na-2026-03-05
+    type: article
+    title: "Iran’s succession question: Rouhani’s name resurfaces amid leadership void"
+    url: >-
+      https://www.aljazeera.com/features/2026/3/5/irans-succession-question-rouhanis-name-resurfaces-amid-leadership-void
+    excerpt: >-
+      Rouhani&#039;s legacy of pragmatism and moderation gains renewed relevance amid Iran&#039;s sensitive leadership
+      transition phase.
+    source_name: Al Jazeera
+    published: "2026-03-05T02:58:26.000Z"
+  - entity: demonstrators-across-iran-condemn-us-isr-2026-03-05
+    type: article
+    title: Demonstrators across Iran condemn US-Israeli war
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/5/demonstrators-across-iran-condemn-us-israeli-war
+    excerpt: Iranian media shared footage from several cities showing demonstrators condemning the US-Israeli war.
+    source_name: Al Jazeera
+    published: "2026-03-05T02:37:09.000Z"
+  - entity: senate-republicans-block-war-powers-reso-2026-03-05
+    type: article
+    title: Senate Republicans block war powers resolution on Iran
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/5/senate-republicans-block-war-powers-resolution-on-iran
+    excerpt: >-
+      Senate Republicans, joined by a Democrat, voted down a war powers resolution on President Donald Trump&#039;s war
+      with Iran.
+    source_name: Al Jazeera
+    published: "2026-03-05T02:32:27.000Z"
+  - entity: trump-had-a-good-feeling-iran-would-st-2026-03-05
+    type: article
+    title: "Trump had a ‘good feeling’ Iran would strike the US: White House"
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/5/trump-had-a-good-feeling-iran-would-strike-the-us-white-house
+    excerpt: >-
+      White House Press Secretary Karoline Leavitt said US President Donald Trump had a “good feeling” Iran was about to
+      attac
+    source_name: Al Jazeera
+    published: "2026-03-05T02:15:43.000Z"
+  - entity: us-gov-t-committee-subpoenas-attorney-ge-2026-03-05
+    type: article
+    title: US gov’t committee subpoenas Attorney General Pam Bondi over Epstein files
+    url: https://www.aljazeera.com/news/2026/3/5/us-govt-committee-subpoenas-attorney-general-pam-bondi-over-epstein-files
+    excerpt: >-
+      House Oversight Committee votes to subpoena Bondi over Justice Department&#039;s handling of files in Epstein
+      investigation.
+    source_name: Al Jazeera
+    published: "2026-03-05T02:12:19.000Z"
+  - entity: us-senator-helps-police-drag-anti-war-pr-2026-03-05
+    type: article
+    title: US Senator helps police drag anti-war protester from meeting
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/5/us-senator-helps-police-drag-anti-war-protester-from-meeting
+    excerpt: US Senator Tim Sheehy joined police in forcefully ejecting anti-war protestor and former Marine Brian McGinnis.
+    source_name: Al Jazeera
+    published: "2026-03-05T01:59:21.000Z"
+  - entity: israel-tightens-siege-on-gaza-amid-iran-2026-03-05
+    type: article
+    title: Israel tightens siege on Gaza amid Iran war
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/5/israel-tightens-siege-on-gaza-amid-iran-war
+    excerpt: Israel closes Gaza crossings amid war with Iran, raising fears of famine. Tareq Abu Azzoum explains.
+    source_name: Al Jazeera
+    published: "2026-03-05T01:33:48.000Z"
+  - entity: cuba-hit-by-widespread-blackout-ecuador-2026-03-05
+    type: article
+    title: Cuba hit by widespread blackout; Ecuador expels Havana’s ambassador, staff
+    url: https://www.aljazeera.com/news/2026/3/5/cuba-hit-by-widespread-blackout-ecuador-expels-havanas-ambassador-staff
+    excerpt: Cuba&#039;s Ambassador to Ecuador Basilio Gutierrez and his diplomatic staff were given 48 hours to leave Quito.
+    source_name: Al Jazeera
+    published: "2026-03-05T01:33:04.000Z"
+  - entity: the-most-expensive-state-for-in-home-car-2026-03-05
+    type: article
+    title: The most expensive state for in-home caregiving may surprise you &#x2014; and it costs almost $9,000 a month there
+    url: >-
+      https://www.marketwatch.com/story/the-most-expensive-state-for-in-home-caregiving-may-surprise-you-and-it-costs-almost-9-000-a-month-there-1cdc19d1?mod=mw_rss_topstories
+    excerpt: >-
+      The cost of care for an aging parent, whether in their own home or in a nursing facility, varies greatly depending
+      on where they live.
+    source_name: MarketWatch
+    published: "2026-03-05T03:45:00.000Z"
+  - entity: how-to-step-back-from-your-job-without-k-2026-03-05
+    type: article
+    title: How to step back from your job without killing your career
+    url: >-
+      https://www.marketwatch.com/story/im-overworked-heres-how-to-step-back-from-your-job-without-killing-your-career-e1b478ce?mod=mw_rss_topstories
+    excerpt: >-
+      Many workers are looking to take a breather from their job or to scale back their high-stress career without
+      quitting altogether. It can be done.
+    source_name: MarketWatch
+    published: "2026-03-05T03:27:00.000Z"
+  - entity: prices-to-charter-large-oil-tankers-soar-2026-03-05
+    type: article
+    title: Prices to charter large oil tankers soar as Strait of Hormuz traffic grinds to a halt
+    url: >-
+      https://www.marketwatch.com/story/prices-to-charter-large-oil-tankers-soar-as-strait-of-hormuz-traffic-grinds-to-a-halt-7e5ffe66?mod=mw_rss_topstories
+    excerpt: Charter rates nearly doubled in recent days and are up fivefold since the start of the year.
+    source_name: MarketWatch
+    published: "2026-03-05T02:04:00.000Z"
+  - entity: broadcom-says-ai-is-not-disrupting-its-s-2026-03-05
+    type: article
+    title: Broadcom says AI is not disrupting its software business, and its stock climbs
+    url: >-
+      https://www.marketwatch.com/story/broadcoms-stock-climbs-after-it-says-ai-is-not-disrupting-its-software-business-09b06f3f?mod=mw_rss_topstories
+    excerpt: >-
+      The chip maker sees sales growth in its infrastructure software accelerating, showing that it&#x2019;s focused on
+      and investing in that business.
+    source_name: MarketWatch
+    published: "2026-03-05T01:19:00.000Z"
+  - entity: okta-x2019-s-stock-rises-as-momentum-in-2026-03-05
+    type: article
+    title: Okta&#x2019;s stock rises as momentum in AI agents fuels an earnings beat
+    url: >-
+      https://www.marketwatch.com/story/oktas-stock-rallies-as-momentum-in-ai-agents-fuels-an-earnings-beat-4b3983ec?mod=mw_rss_topstories
+    excerpt: Okta beat earnings expectations for the latest quarter, but guidance for the current quarter was below forecasts.
+    source_name: MarketWatch
+    published: "2026-03-05T01:17:00.000Z"
+  - entity: stanchart-hikes-oil-price-forecast-to-7-2026-03-05
+    type: article
+    title: StanChart Hikes Oil Price Forecast To $74 Per Barrel Amid Iran Conflict
+    url: >-
+      https://oilprice.com/Energy/Energy-General/StanChart-Hikes-Oil-Price-Forecast-To-74-Per-Barrel-Amid-Iran-Conflict.html
+    excerpt: >-
+      Iran has launched a massive retaliatory campaign following joint U.S. and Israeli airstrikes, sending an
+      unprecedented barrage of more than 500 ballistic missiles and 2,000 drones across targets in Is
+    source_name: OilPrice.com
+    published: "2026-03-05T01:00:00.000Z"
+  - entity: tanker-squeeze-adds-insult-to-oil-injury-2026-03-05
+    type: article
+    title: Tanker Squeeze Adds Insult to Oil Injury amid Iran War
+    url: https://oilprice.com/Energy/Energy-General/Tanker-Squeeze-Adds-Insult-to-Oil-Injury-amid-Iran-War.html
+    excerpt: >-
+      Tanker rates are through the roof, movement through the Strait of Hormuz is severely reduced because of war cover
+      cancellations by insurers, and the combination of these developments has sent oil pric
+    source_name: OilPrice.com
+    published: "2026-03-05T00:00:00.000Z"
+  - entity: jensen-huang-says-nvidia-is-pulling-back-2026-03-05
+    type: article
+    title: >-
+      Jensen Huang says Nvidia is pulling back from OpenAI and Anthropic, but his explanation raises more questions than
+      it answers
+    url: >-
+      https://techcrunch.com/2026/03/04/jensen-huang-says-nvidia-is-pulling-back-from-openai-and-anthropic-but-his-explanation-raises-more-questions-than-it-answers/
+    excerpt: >-
+      Nvidia CEO Jensen Huang said Wednesday that his company's investments in OpenAI and Anthropic will likely be its
+      last — but his explanation may not tell the whole story.
+    source_name: TechCrunch
+    published: "2026-03-05T01:08:28.000Z"
