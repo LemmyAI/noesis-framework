@@ -1,0 +1,211 @@
+seed:
+  name: news-week10-day-2026-03-05-hour-02
+  label: Daily News — 2026-03-05 02:00 (Week 10, 2026)
+  namespace: news.week10.day-2026-03-05
+  description: "Auto-gathered news: 9 stories, 2026-03-05 to 2026-03-05"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week10
+    extends: news
+  - namespace: news.week10.day-2026-03-05
+    extends: news.week10
+entities:
+  - id: trade-court-orders-tariff-refunds-in-set-2026-03-05
+    type: Decision
+    name: Trade court orders tariff refunds in setback for Trump administration
+    category: geopolitics
+    description: >-
+      A trade court has cleared the way for businesses to receive refunds for tariffs that the Supreme Court struck down
+      last month.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T00:13:16.000Z"
+      precision: day
+  - id: we-have-more-privacy-controls-yet-less-p-2026-03-05
+    type: Event
+    name: We have more privacy controls yet less privacy than ever
+    category: finance
+    description: Has online privacy become  "a luxury not a right" for us all in 2026?
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T00:04:26.000Z"
+      precision: day
+  - id: venezuela-s-president-vows-mining-reform-2026-03-05
+    type: Event
+    name: Venezuela’s president vows mining reform amid visit from US cabinet member
+    category: geopolitics
+    description: "US Interior Secretary Doug Burgum has met with Venezuela’s interim President Delcy Rodriguez\_in Caracas."
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T00:29:26.000Z"
+      precision: day
+  - id: iran-live-senate-fails-to-curb-trump-s-2026-03-05
+    type: Event
+    name: "Iran live: Senate fails to curb Trump’s war powers; Israel pounds Lebanon"
+    category: geopolitics
+    description: >-
+      US and Israel bombard Iran as Israeli forces hammer Lebanon and the widening conflict causes energy prices to
+      spike.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T00:00:00.000Z"
+      precision: day
+  - id: broadcom-says-ai-is-not-disrupting-its-s-2026-03-05
+    type: Claim
+    name: Broadcom says AI is not disrupting its software business, and its stock climbs
+    category: finance.markets
+    description: >-
+      The chip maker sees sales growth in its infrastructure software accelerating, showing that it&#x2019;s focused on
+      and investing in that business.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T01:19:00.000Z"
+      precision: day
+  - id: okta-x2019-s-stock-rises-as-momentum-in-2026-03-05
+    type: Event
+    name: Okta&#x2019;s stock rises as momentum in AI agents fuels an earnings beat
+    category: finance.markets
+    description: Okta beat earnings expectations for the latest quarter, but guidance for the current quarter was below forecasts.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T01:17:00.000Z"
+      precision: day
+  - id: stanchart-hikes-oil-price-forecast-to-7-2026-03-05
+    type: Claim
+    name: StanChart Hikes Oil Price Forecast To $74 Per Barrel Amid Iran Conflict
+    category: finance.energy
+    description: >-
+      Iran has launched a massive retaliatory campaign following joint U.S. and Israeli airstrikes, sending an
+      unprecedented barrage of more than 500 ballistic missiles and 2,000 drones across targets in Israel and several
+      Gulf states. A drone strike on a command center killed six U.S. service members in 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T01:00:00.000Z"
+      precision: day
+  - id: tanker-squeeze-adds-insult-to-oil-injury-2026-03-05
+    type: Event
+    name: Tanker Squeeze Adds Insult to Oil Injury amid Iran War
+    category: finance.energy
+    description: >-
+      Tanker rates are through the roof, movement through the Strait of Hormuz is severely reduced because of war cover
+      cancellations by insurers, and the combination of these developments has sent oil prices flying. Now, there’s a
+      third factor that would likely aggravate the situation further: there are 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T00:00:00.000Z"
+      precision: day
+  - id: jensen-huang-says-nvidia-is-pulling-back-2026-03-05
+    type: Claim
+    name: >-
+      Jensen Huang says Nvidia is pulling back from OpenAI and Anthropic, but his explanation raises more questions than
+      it answers
+    category: technology.ai
+    description: >-
+      Nvidia CEO Jensen Huang said Wednesday that his company's investments in OpenAI and Anthropic will likely be its
+      last — but his explanation may not tell the whole story.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-05T01:08:28.000Z"
+      precision: day
+narratives:
+  - name: Energy Markets
+    steps:
+      - from: iran-live-senate-fails-to-curb-trump-s-2026-03-05
+        to: tanker-squeeze-adds-insult-to-oil-injury-2026-03-05
+        type: causes
+      - from: tanker-squeeze-adds-insult-to-oil-injury-2026-03-05
+        to: stanchart-hikes-oil-price-forecast-to-7-2026-03-05
+        type: supports
+sources:
+  - entity: trade-court-orders-tariff-refunds-in-set-2026-03-05
+    type: article
+    title: Trade court orders tariff refunds in setback for Trump administration
+    url: https://www.bbc.com/news/articles/c1d66k5r1x4o
+    excerpt: >-
+      A trade court has cleared the way for businesses to receive refunds for tariffs that the Supreme Court struck down
+      last month.
+    source_name: BBC News
+    published: "2026-03-05T00:13:16.000Z"
+  - entity: we-have-more-privacy-controls-yet-less-p-2026-03-05
+    type: article
+    title: We have more privacy controls yet less privacy than ever
+    url: https://www.bbc.com/news/articles/c4gj39zk1k0o
+    excerpt: Has online privacy become  "a luxury not a right" for us all in 2026?
+    source_name: BBC Business
+    published: "2026-03-05T00:04:26.000Z"
+  - entity: venezuela-s-president-vows-mining-reform-2026-03-05
+    type: article
+    title: Venezuela’s president vows mining reform amid visit from US cabinet member
+    url: https://www.aljazeera.com/news/2026/3/5/venezuelas-president-vows-mining-reform-amid-visit-from-us-cabinet-member
+    excerpt: "US Interior Secretary Doug Burgum has met with Venezuela’s interim President Delcy Rodriguez\_in Caracas."
+    source_name: Al Jazeera
+    published: "2026-03-05T00:29:26.000Z"
+  - entity: iran-live-senate-fails-to-curb-trump-s-2026-03-05
+    type: article
+    title: "Iran live: Senate fails to curb Trump’s war powers; Israel pounds Lebanon"
+    url: >-
+      https://www.aljazeera.com/news/liveblog/2026/3/5/iran-live-us-senate-backs-trumps-attacks-on-tehran-israel-pounds-lebanon
+    excerpt: >-
+      US and Israel bombard Iran as Israeli forces hammer Lebanon and the widening conflict causes energy prices to
+      spike.
+    source_name: Al Jazeera
+    published: "2026-03-05T00:00:00.000Z"
+  - entity: broadcom-says-ai-is-not-disrupting-its-s-2026-03-05
+    type: article
+    title: Broadcom says AI is not disrupting its software business, and its stock climbs
+    url: >-
+      https://www.marketwatch.com/story/broadcoms-stock-climbs-after-it-says-ai-is-not-disrupting-its-software-business-09b06f3f?mod=mw_rss_topstories
+    excerpt: >-
+      The chip maker sees sales growth in its infrastructure software accelerating, showing that it&#x2019;s focused on
+      and investing in that business.
+    source_name: MarketWatch
+    published: "2026-03-05T01:19:00.000Z"
+  - entity: okta-x2019-s-stock-rises-as-momentum-in-2026-03-05
+    type: article
+    title: Okta&#x2019;s stock rises as momentum in AI agents fuels an earnings beat
+    url: >-
+      https://www.marketwatch.com/story/oktas-stock-rallies-as-momentum-in-ai-agents-fuels-an-earnings-beat-4b3983ec?mod=mw_rss_topstories
+    excerpt: Okta beat earnings expectations for the latest quarter, but guidance for the current quarter was below forecasts.
+    source_name: MarketWatch
+    published: "2026-03-05T01:17:00.000Z"
+  - entity: stanchart-hikes-oil-price-forecast-to-7-2026-03-05
+    type: article
+    title: StanChart Hikes Oil Price Forecast To $74 Per Barrel Amid Iran Conflict
+    url: >-
+      https://oilprice.com/Energy/Energy-General/StanChart-Hikes-Oil-Price-Forecast-To-74-Per-Barrel-Amid-Iran-Conflict.html
+    excerpt: >-
+      Iran has launched a massive retaliatory campaign following joint U.S. and Israeli airstrikes, sending an
+      unprecedented barrage of more than 500 ballistic missiles and 2,000 drones across targets in Is
+    source_name: OilPrice.com
+    published: "2026-03-05T01:00:00.000Z"
+  - entity: tanker-squeeze-adds-insult-to-oil-injury-2026-03-05
+    type: article
+    title: Tanker Squeeze Adds Insult to Oil Injury amid Iran War
+    url: https://oilprice.com/Energy/Energy-General/Tanker-Squeeze-Adds-Insult-to-Oil-Injury-amid-Iran-War.html
+    excerpt: >-
+      Tanker rates are through the roof, movement through the Strait of Hormuz is severely reduced because of war cover
+      cancellations by insurers, and the combination of these developments has sent oil pric
+    source_name: OilPrice.com
+    published: "2026-03-05T00:00:00.000Z"
+  - entity: jensen-huang-says-nvidia-is-pulling-back-2026-03-05
+    type: article
+    title: >-
+      Jensen Huang says Nvidia is pulling back from OpenAI and Anthropic, but his explanation raises more questions than
+      it answers
+    url: >-
+      https://techcrunch.com/2026/03/04/jensen-huang-says-nvidia-is-pulling-back-from-openai-and-anthropic-but-his-explanation-raises-more-questions-than-it-answers/
+    excerpt: >-
+      Nvidia CEO Jensen Huang said Wednesday that his company's investments in OpenAI and Anthropic will likely be its
+      last — but his explanation may not tell the whole story.
+    source_name: TechCrunch
+    published: "2026-03-05T01:08:28.000Z"
