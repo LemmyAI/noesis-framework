@@ -1,0 +1,349 @@
+seed:
+  name: news-week10-day-2026-03-06-hour-02
+  label: Daily News — 2026-03-06 02:00 (Week 10, 2026)
+  namespace: news.week10.day-2026-03-06
+  description: "Auto-gathered news: 17 stories, 2026-03-06 to 2026-03-06"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week10
+    extends: news
+  - namespace: news.week10.day-2026-03-06
+    extends: news.week10
+entities:
+  - id: britney-spears-arrested-in-california-on-2026-03-06
+    type: Event
+    name: Britney Spears arrested in California on suspicion of driving under the influence
+    category: geopolitics
+    description: The singer was arrested by the California Highway Patrol at around 21:30 PT (05:30 GMT) on Wednesday.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T00:51:38.000Z"
+      precision: day
+  - id: one-in-7-shops-in-uk-has-turned-cashless-2026-03-06
+    type: Event
+    name: One in 7 shops in UK has turned cashless in the past year, survey finds
+    category: finance
+    description: Some 14% of small High Street traders have gone card-only in the last year, a survey suggests.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T00:05:41.000Z"
+      precision: day
+  - id: five-ways-the-iran-war-could-affect-you-2026-03-06
+    type: Claim
+    name: Five ways the Iran war could affect you - in charts
+    category: finance
+    description: With fuel and gas prices having risen in recent days, here are some ways the conflict could affect households.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T00:05:31.000Z"
+      precision: day
+  - id: can-snacks-help-you-sleep-2026-03-06
+    type: Event
+    name: Can snacks help you sleep?
+    category: finance
+    description: Chocolates, bars, gummies and drinks promise to help you sleep, but is the science behind them sound?
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T00:05:51.000Z"
+      precision: day
+  - id: how-us-sinking-of-iranian-warship-blew-h-2026-03-06
+    type: Claim
+    name: How US sinking of Iranian warship blew hole in Modi’s ‘guardian’ claims
+    category: geopolitics
+    description: India sees itself a security provider in the Indian Ocean. On Wednesday, it couldn&#039;t save even its own guest.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T01:09:29.000Z"
+      precision: day
+  - id: who-is-ahmad-vahidi-the-irgc-s-new-comm-2026-03-06
+    type: Event
+    name: Who is Ahmad Vahidi, the IRGC’s new commander?
+    category: geopolitics
+    description: >-
+      Ahmad Vahidi takes command of Iran&#039;s Revolutionary Guards as the country battles a devastating US-Israeli
+      assault.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T01:00:38.000Z"
+      precision: day
+  - id: us-says-iran-missile-attacks-down-90-af-2026-03-06
+    type: Claim
+    name: US says Iran missile attacks down 90% after strikes from B-2 bombers
+    category: geopolitics
+    description: The US says B-2 bombers have dropped dozens of 2,000-pound bombs on buried Iranian ballistic missile launchers.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T00:39:14.000Z"
+      precision: day
+  - id: iran-live-trump-says-iran-being-demoli-2026-03-06
+    type: Claim
+    name: "Iran live: Trump says Iran being ‘demolished’ as Gulf attacks continue"
+    category: geopolitics
+    description: >-
+      Iran Foreign Minister Abbas Araghchi says &#039;no reason why we should negotiate&#039;, calls Washington
+      untrustworthy.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T00:00:00.000Z"
+      precision: day
+  - id: costco-x2019-s-stock-chart-sees-first-b-2026-03-06
+    type: Event
+    name: Costco&#x2019;s stock chart sees first bullish &#x2018;golden cross&#x2019; in 3 years as earnings are released
+    category: finance.markets
+    description: >-
+      A bullish &#x201c;golden cross&#x201d; pattern appears in Costco&#x2019;s stock chart for the first time in nearly
+      three years, on the same day the latest quarterly report is slated to be released.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T01:27:00.000Z"
+      precision: day
+  - id: this-gap-brand-continues-to-be-an-underp-2026-03-06
+    type: Event
+    name: This Gap brand continues to be an underperformer, and it is dragging the retailer&#x2019;s stock
+    category: finance.markets
+    description: The smallest of Gap&#x2019;s brands continues to be a flash point for investors.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T01:21:00.000Z"
+      precision: day
+  - id: marvell-x2019-s-stock-soars-as-robust-a-2026-03-06
+    type: Event
+    name: Marvell&#x2019;s stock soars as robust AI-driven demand drives an earnings beat
+    category: finance.markets
+    description: >-
+      Marvell&#x2019;s stock was up in after-hours trading on Thursday after an upbeat earnings report and full-year
+      guidance.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T01:19:00.000Z"
+      precision: day
+  - id: seven-reit-stocks-pass-a-strict-financia-2026-03-06
+    type: Event
+    name: Seven REIT stocks pass a strict financial screen, with dividends as high as 6.27%
+    category: finance.markets
+    description: >-
+      Bally&#x2019;s Casino in Blackhawk, Colo., is among the facilities owned by Gaming & Leisure Properties, which
+      passed a financial screen of real-estate investment trusts.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T00:41:00.000Z"
+      precision: day
+  - id: here-x2019-s-what-x2019-s-worth-stream-2026-03-06
+    type: Event
+    name: Here&#x2019;s what&#x2019;s worth streaming in March 2026 on Netflix, Hulu, HBO Max and more
+    category: finance.markets
+    description: >-
+      Shows like HBO&#x2019;s &#x2018;DTF St. Louis&#x2019; and &#x2018;Rooster,&#x2019; Paramount&#x2019;s &#x2018;The
+      Madison&#x2019; and Netflix&#x2019;s &#x2018;Peaky Blinders&#x2019; movie jump out of the gate as Emmy season gets
+      underway
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T00:30:00.000Z"
+      precision: day
+  - id: why-broadcom-x2019-s-earnings-report-ha-2026-03-06
+    type: Event
+    name: Why Broadcom&#x2019;s earnings report has Wall Street so upbeat on a bad day for chip stocks
+    category: finance.markets
+    description: >-
+      The chip maker said it has visibility into more than $100 billion in AI chip revenue in 2027, and some analysts
+      see even more upside.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T00:19:00.000Z"
+      precision: day
+  - id: how-quickly-can-qatar-restart-the-world-2026-03-06
+    type: Event
+    name: How Quickly Can Qatar Restart the World’s Largest LNG Export Hub?
+    category: finance.energy
+    description: "QatarEnergy declared force majeure on liquefied natural gas (LNG) exports on Wednesday, following disruptions at its Ras Laffan industrial city facilities caused by the Middle East conflict.\_ This legal declaration effectively releases the state-owned company from contractual delivery obligations du"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T01:00:00.000Z"
+      precision: day
+  - id: u-s-shale-won-t-replace-lost-middle-eas-2026-03-06
+    type: Event
+    name: U.S. Shale Won’t Replace Lost Middle East Oil
+    category: finance.energy
+    description: >-
+      The U.S. shale patch cannot and will not come to the rescue of a potentially catastrophic loss of crude supply
+      from the Middle East as the war in Iran set fire to the world’s most important oil-producing region. The
+      escalating war and the de facto closing of the Strait of Hormuz is threatening to ho
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T00:00:00.000Z"
+      precision: day
+  - id: anthropic-to-challenge-dod-8217-s-suppl-2026-03-06
+    type: Event
+    name: Anthropic to challenge DOD&#8217;s supply chain label in court
+    category: technology.ai
+    description: >-
+      Anthropic CEO Dario Amodei said he plans to challenge the Department of Defense's designation of the AI firm as a
+      supply chain risk. He claims most Anthropic customers are unaffected by the label.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T01:28:54.000Z"
+      precision: day
+sources:
+  - entity: britney-spears-arrested-in-california-on-2026-03-06
+    type: article
+    title: Britney Spears arrested in California on suspicion of driving under the influence
+    url: https://www.bbc.com/news/articles/c4gjjn41l7no
+    excerpt: The singer was arrested by the California Highway Patrol at around 21:30 PT (05:30 GMT) on Wednesday.
+    source_name: BBC News
+    published: "2026-03-06T00:51:38.000Z"
+  - entity: one-in-7-shops-in-uk-has-turned-cashless-2026-03-06
+    type: article
+    title: One in 7 shops in UK has turned cashless in the past year, survey finds
+    url: https://www.bbc.com/news/articles/cm211jnz568o
+    excerpt: Some 14% of small High Street traders have gone card-only in the last year, a survey suggests.
+    source_name: BBC Business
+    published: "2026-03-06T00:05:41.000Z"
+  - entity: five-ways-the-iran-war-could-affect-you-2026-03-06
+    type: article
+    title: Five ways the Iran war could affect you - in charts
+    url: https://www.bbc.com/news/articles/c4g5574pwreo
+    excerpt: With fuel and gas prices having risen in recent days, here are some ways the conflict could affect households.
+    source_name: BBC Business
+    published: "2026-03-06T00:05:31.000Z"
+  - entity: can-snacks-help-you-sleep-2026-03-06
+    type: article
+    title: Can snacks help you sleep?
+    url: https://www.bbc.com/news/articles/cd6znvjvw3wo
+    excerpt: Chocolates, bars, gummies and drinks promise to help you sleep, but is the science behind them sound?
+    source_name: BBC Business
+    published: "2026-03-06T00:05:51.000Z"
+  - entity: how-us-sinking-of-iranian-warship-blew-h-2026-03-06
+    type: article
+    title: How US sinking of Iranian warship blew hole in Modi’s ‘guardian’ claims
+    url: https://www.aljazeera.com/features/2026/3/6/how-us-sinking-of-iranian-warship-blew-hole-in-modis-guardian-claims
+    excerpt: India sees itself a security provider in the Indian Ocean. On Wednesday, it couldn&#039;t save even its own guest.
+    source_name: Al Jazeera
+    published: "2026-03-06T01:09:29.000Z"
+  - entity: who-is-ahmad-vahidi-the-irgc-s-new-comm-2026-03-06
+    type: article
+    title: Who is Ahmad Vahidi, the IRGC’s new commander?
+    url: https://www.aljazeera.com/news/2026/3/6/who-is-ahmad-vahidi-the-irgcs-new-commander
+    excerpt: >-
+      Ahmad Vahidi takes command of Iran&#039;s Revolutionary Guards as the country battles a devastating US-Israeli
+      assault.
+    source_name: Al Jazeera
+    published: "2026-03-06T01:00:38.000Z"
+  - entity: us-says-iran-missile-attacks-down-90-af-2026-03-06
+    type: article
+    title: US says Iran missile attacks down 90% after strikes from B-2 bombers
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/3/6/us-says-iran-missile-attacks-down-90-after-strikes-from-b-2-bombers
+    excerpt: The US says B-2 bombers have dropped dozens of 2,000-pound bombs on buried Iranian ballistic missile launchers.
+    source_name: Al Jazeera
+    published: "2026-03-06T00:39:14.000Z"
+  - entity: iran-live-trump-says-iran-being-demoli-2026-03-06
+    type: article
+    title: "Iran live: Trump says Iran being ‘demolished’ as Gulf attacks continue"
+    url: >-
+      https://www.aljazeera.com/news/liveblog/2026/3/6/iran-live-trump-says-iran-being-demolished-tehran-keeps-up-gulf-attacks
+    excerpt: >-
+      Iran Foreign Minister Abbas Araghchi says &#039;no reason why we should negotiate&#039;, calls Washington
+      untrustworthy.
+    source_name: Al Jazeera
+    published: "2026-03-06T00:00:00.000Z"
+  - entity: costco-x2019-s-stock-chart-sees-first-b-2026-03-06
+    type: article
+    title: Costco&#x2019;s stock chart sees first bullish &#x2018;golden cross&#x2019; in 3 years as earnings are released
+    url: >-
+      https://www.marketwatch.com/story/costcos-stock-chart-sees-a-bullish-golden-cross-just-before-earnings-are-released-1784c6f1?mod=mw_rss_topstories
+    excerpt: >-
+      A bullish &#x201c;golden cross&#x201d; pattern appears in Costco&#x2019;s stock chart for the first time in nearly
+      three years, on the same day the latest quarterly report is slated to be released.
+    source_name: MarketWatch
+    published: "2026-03-06T01:27:00.000Z"
+  - entity: this-gap-brand-continues-to-be-an-underp-2026-03-06
+    type: article
+    title: This Gap brand continues to be an underperformer, and it is dragging the retailer&#x2019;s stock
+    url: >-
+      https://www.marketwatch.com/story/this-gap-brand-continues-to-be-an-underperformer-and-it-is-dragging-the-retailers-stock-579397c9?mod=mw_rss_topstories
+    excerpt: The smallest of Gap&#x2019;s brands continues to be a flash point for investors.
+    source_name: MarketWatch
+    published: "2026-03-06T01:21:00.000Z"
+  - entity: marvell-x2019-s-stock-soars-as-robust-a-2026-03-06
+    type: article
+    title: Marvell&#x2019;s stock soars as robust AI-driven demand drives an earnings beat
+    url: >-
+      https://www.marketwatch.com/story/marvells-stock-soars-as-robust-ai-driven-demand-drives-an-earnings-beat-51574cc0?mod=mw_rss_topstories
+    excerpt: >-
+      Marvell&#x2019;s stock was up in after-hours trading on Thursday after an upbeat earnings report and full-year
+      guidance.
+    source_name: MarketWatch
+    published: "2026-03-06T01:19:00.000Z"
+  - entity: seven-reit-stocks-pass-a-strict-financia-2026-03-06
+    type: article
+    title: Seven REIT stocks pass a strict financial screen, with dividends as high as 6.27%
+    url: >-
+      https://www.marketwatch.com/story/seven-reit-stocks-pass-a-strict-financial-screen-with-dividends-as-high-as-6-27-fdd57ab8?mod=mw_rss_topstories
+    excerpt: >-
+      Bally&#x2019;s Casino in Blackhawk, Colo., is among the facilities owned by Gaming & Leisure Properties, which
+      passed a financial screen of real-estate investment trusts.
+    source_name: MarketWatch
+    published: "2026-03-06T00:41:00.000Z"
+  - entity: here-x2019-s-what-x2019-s-worth-stream-2026-03-06
+    type: article
+    title: Here&#x2019;s what&#x2019;s worth streaming in March 2026 on Netflix, Hulu, HBO Max and more
+    url: >-
+      https://www.marketwatch.com/story/heres-whats-worth-streaming-in-march-2026-on-netflix-hulu-hbo-max-and-more-83f5b64d?mod=mw_rss_topstories
+    excerpt: >-
+      Shows like HBO&#x2019;s &#x2018;DTF St. Louis&#x2019; and &#x2018;Rooster,&#x2019; Paramount&#x2019;s &#x2018;The
+      Madison&#x2019; and Netflix&#x2019;s &#x2018;Peaky Blinders&#x2019; movie jump out of 
+    source_name: MarketWatch
+    published: "2026-03-06T00:30:00.000Z"
+  - entity: why-broadcom-x2019-s-earnings-report-ha-2026-03-06
+    type: article
+    title: Why Broadcom&#x2019;s earnings report has Wall Street so upbeat on a bad day for chip stocks
+    url: >-
+      https://www.marketwatch.com/story/why-broadcoms-earnings-report-has-wall-street-so-upbeat-on-a-bad-day-for-chip-stocks-8ff9306e?mod=mw_rss_topstories
+    excerpt: >-
+      The chip maker said it has visibility into more than $100 billion in AI chip revenue in 2027, and some analysts
+      see even more upside.
+    source_name: MarketWatch
+    published: "2026-03-06T00:19:00.000Z"
+  - entity: how-quickly-can-qatar-restart-the-world-2026-03-06
+    type: article
+    title: How Quickly Can Qatar Restart the World’s Largest LNG Export Hub?
+    url: https://oilprice.com/Energy/Natural-Gas/How-Quickly-Can-Qatar-Restart-the-Worlds-Largest-LNG-Export-Hub.html
+    excerpt: "QatarEnergy declared force majeure on liquefied natural gas (LNG) exports on Wednesday, following disruptions at its Ras Laffan industrial city facilities caused by the Middle East conflict.\_ This leg"
+    source_name: OilPrice.com
+    published: "2026-03-06T01:00:00.000Z"
+  - entity: u-s-shale-won-t-replace-lost-middle-eas-2026-03-06
+    type: article
+    title: U.S. Shale Won’t Replace Lost Middle East Oil
+    url: https://oilprice.com/Energy/Crude-Oil/US-Shale-Wont-Replace-Lost-Middle-East-Oil.html
+    excerpt: >-
+      The U.S. shale patch cannot and will not come to the rescue of a potentially catastrophic loss of crude supply
+      from the Middle East as the war in Iran set fire to the world’s most important oil-produc
+    source_name: OilPrice.com
+    published: "2026-03-06T00:00:00.000Z"
+  - entity: anthropic-to-challenge-dod-8217-s-suppl-2026-03-06
+    type: article
+    title: Anthropic to challenge DOD&#8217;s supply chain label in court
+    url: https://techcrunch.com/2026/03/05/anthropic-to-challenge-dods-supply-chain-label-in-court/
+    excerpt: >-
+      Anthropic CEO Dario Amodei said he plans to challenge the Department of Defense's designation of the AI firm as a
+      supply chain risk. He claims most Anthropic customers are unaffected by the label.
+    source_name: TechCrunch
+    published: "2026-03-06T01:28:54.000Z"
