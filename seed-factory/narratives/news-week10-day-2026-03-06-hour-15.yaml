@@ -1,0 +1,1714 @@
+seed:
+  name: news-week10-day-2026-03-06-hour-15
+  label: Daily News — 2026-03-06 15:00 (Week 10, 2026)
+  namespace: news.week10.day-2026-03-06
+  description: "Auto-gathered news: 84 stories, 2026-03-06 to 2026-03-06"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week10
+    extends: news
+  - namespace: news.week10.day-2026-03-06
+    extends: news.week10
+entities:
+  - id: us-and-venezuela-agree-to-resume-diploma-2026-03-06
+    type: Event
+    name: US and Venezuela agree to resume diplomatic ties after Maduro capture
+    category: geopolitics
+    description: The US said the two sides would make joint efforts to promote stability after the US seized Maduro and his wife.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T04:23:12.000Z"
+      precision: day
+  - id: hungary-to-expel-ukrainian-bank-workers-2026-03-06
+    type: Event
+    name: Hungary to expel Ukrainian bank workers in row with Kyiv
+    category: geopolitics
+    description: >-
+      Hungary says the workers were detained on suspicion of money laundering as a fierce row between the two countries
+      escalates.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:42:28.000Z"
+      precision: day
+  - id: indonesia-to-ban-social-media-and-other-2026-03-06
+    type: Event
+    name: Indonesia to ban social media and other online platforms for under 16s
+    category: geopolitics
+    description: It is the latest country to curb young people's access to digital spaces to try and protect them from abuse.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T13:25:12.000Z"
+      precision: day
+  - id: israel-strikes-beirut-after-evacuation-w-2026-03-06
+    type: Event
+    name: Israel strikes Beirut after evacuation warning sparks panic
+    category: geopolitics
+    description: >-
+      Huge traffic jams form after the unprecedented warning for people to leave the Hezbollah stronghold, as Israel
+      steps up its strikes across Lebanon.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T04:08:48.000Z"
+      precision: day
+  - id: anthropic-vows-to-sue-pentagon-over-supp-2026-03-06
+    type: Event
+    name: Anthropic vows to sue Pentagon over supply chain risk label
+    category: geopolitics
+    description: The supply chain risk designation of the artificial intelligence firm is a first for a US company.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T02:46:30.000Z"
+      precision: day
+  - id: canadian-teen-died-from-drowning-after-d-2026-03-06
+    type: Event
+    name: Canadian teen died from drowning after dingo attack in Australia
+    category: geopolitics
+    description: The body of Piper James was found in January surrounded by dingoes on the island of K'Gari.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T01:47:32.000Z"
+      precision: day
+  - id: oil-price-jumps-after-qatar-warns-all-gu-2026-03-06
+    type: Claim
+    name: Oil price jumps after Qatar warns all Gulf production could stop within days
+    category: finance
+    description: Energy Minister Saad al-Kaabi says energy prices for everyone will rise if the Iran war continues.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:00:27.000Z"
+      precision: day
+  - id: five-ways-the-iran-war-could-affect-you-2026-03-06
+    type: Claim
+    name: Five ways the Iran war could affect you - in charts
+    category: finance
+    description: With fuel and gas prices having risen in recent days, here are some ways the conflict could affect households.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T00:05:31.000Z"
+      precision: day
+  - id: emirates-resumes-some-dubai-flights-wh-2026-03-06
+    type: Event
+    name: Emirates resumes some Dubai flights – what's the latest on travel to UK?
+    category: finance
+    description: >-
+      New flights to the UK from the Middle East follow days of widespread air travel disruption which had left Britons
+      stranded.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T13:22:12.000Z"
+      precision: day
+  - id: surge-in-jet-fuel-prices-could-push-up-a-2026-03-06
+    type: Claim
+    name: Surge in jet fuel prices could push up air fares, analysts warn
+    category: finance
+    description: Disruption to supplies from the Gulf due to the Middle East conflict has pushed the cost up by more than 80%.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T13:38:14.000Z"
+      precision: day
+  - id: flight-paths-squeezed-as-iran-conflict-c-2026-03-06
+    type: Event
+    name: Flight paths squeezed as Iran conflict closes more airspace
+    category: finance
+    description: A drone attack on Azerbaijan has narrowed choices for airlines scrambling to respond to disruption in the Gulf.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T13:30:08.000Z"
+      precision: day
+  - id: axel-springer-agrees-to-buy-telegraph-me-2026-03-06
+    type: Decision
+    name: Axel Springer agrees to buy Telegraph Media Group in £575m deal
+    category: finance
+    description: Last year the Daily Mail and General Trust proposed to buy the company in a £500m takeover.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:31:52.000Z"
+      precision: day
+  - id: price-of-first-class-stamps-to-rise-to-2026-03-06
+    type: Event
+    name: Price of first class stamps to rise to £1.80
+    category: finance
+    description: Royal Mail says the increase reflects the rise in delivery costs, but the move angers consumer groups.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T13:12:02.000Z"
+      precision: day
+  - id: lenders-lift-mortgage-rates-as-iran-war-2026-03-06
+    type: Event
+    name: Lenders lift mortgage rates as Iran war hits borrowing costs
+    category: finance
+    description: Nationwide, HSBC and Coventry Building Society are all putting some mortgage rates up.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T11:21:32.000Z"
+      precision: day
+  - id: us-economy-unexpectedly-sheds-92-000-job-2026-03-06
+    type: Event
+    name: US economy unexpectedly sheds 92,000 jobs in February
+    category: finance
+    description: The contraction came as a surprise with payrolls down in nearly every sector.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:15:25.000Z"
+      precision: day
+  - id: one-in-7-shops-in-uk-has-turned-cashless-2026-03-06
+    type: Event
+    name: One in 7 shops in UK has turned cashless in the past year, survey finds
+    category: finance
+    description: Some 14% of small High Street traders have gone card only in the last year, a survey suggests.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T00:05:41.000Z"
+      precision: day
+  - id: weight-loss-jab-could-be-made-for-3-a-m-2026-03-06
+    type: Claim
+    name: Weight-loss jab could be made for $3 a month, study finds
+    category: geopolitics
+    description: >-
+      <p>Cheap semaglutide, the drug in Ozempic and Wegovy, could help millions with diabetes and obesity in 160
+      countries</p><p>Weight-loss jabs such as Wegovy and Ozempic could be made for just $3 a month, according to new
+      analysis, potentially making the treatment available to millions in poorer countr
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T09:00:16.000Z"
+      precision: day
+  - id: iran-is-not-venezuela-despite-trump-s-h-2026-03-06
+    type: Event
+    name: Iran is not Venezuela, despite Trump’s hopes of repeating ‘regime capture’ strategy
+    category: geopolitics
+    description: >-
+      <p>Experts say US influence over South American neighbour will be hard to replicate in country with deep and
+      long-standing antipathy to the west</p><p>First, the CIA tracks the head of an oil-rich, US-baiting nation to a
+      heavily guarded compound at the heart of his country’s mountain-flanked capital
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:00:23.000Z"
+      precision: day
+  - id: us-and-venezuela-move-to-restore-diploma-2026-03-06
+    type: Event
+    name: US and Venezuela move to restore diplomatic ties two months after Maduro’s capture
+    category: geopolitics
+    description: >-
+      <p>Re-establishing diplomatic relations will support Venezuela’s economy, US state department claims, amid push
+      for minerals access</p><p>Venezuela and the US are restoring diplomatic ties, the two countries announced
+      Thursday, in a new sign of thawing relations after Washington ousted former presid
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T06:59:29.000Z"
+      precision: day
+  - id: brent-crude-hits-90-as-kuwait-starts-c-2026-03-06
+    type: Event
+    name: >-
+      Brent crude hits $90 as Kuwait ‘starts cutting oil production’; shock as US economy loses 92,000 jobs in February
+      – business live
+    category: finance
+    description: >-
+      <p>Huge miss in US jobs report suggests labor market weakening, as Middle East crisis drives oil price higher and
+      higher</p><ul><li><p><a
+      href="https://www.theguardian.com/world/live/2026/mar/06/iran-war-live-updates-us-temporarily-lets-india-buy-russian-oil-amid-energy-fears-israeli-military-launch
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:26:45.000Z"
+      precision: day
+  - id: telegraph-sold-for-575m-as-german-buyer-2026-03-06
+    type: Event
+    name: Telegraph sold for £575m as German buyer elbows out Daily Mail
+    category: finance
+    description: >-
+      <p>Axel Springer, owner of Bild and Die Welt, is understood to have agreed all-cash deal for one of UK’s oldest
+      newspapers</p><ul><li><p><a
+      href="https://www.theguardian.com/business/live/2026/mar/06/oil-biggest-weekly-gain-four-years-strait-of-hormuz-traffic-halt-stock-markets-dollar-imf-news-updat
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:05:03.000Z"
+      precision: day
+  - id: bp-s-new-boss-will-take-home-at-least-1-2026-03-06
+    type: Event
+    name: BP’s new boss will take home at least £11.7m this year, more than double her predecessor
+    category: finance
+    description: >-
+      <p>Meg O’Neill will be first woman to serve as CEO of 117-year-oil firm when joining from Woodside Energy in
+      April</p><p>The incoming chief executive of BP will take home at least £11.7m this year after joining the
+      embattled oil company from a rival, more than double the pay packet earned by her pre
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T13:27:55.000Z"
+      precision: day
+  - id: royal-mail-criticised-as-first-class-sta-2026-03-06
+    type: Event
+    name: Royal Mail criticised as first-class stamp price rises to £1.80 despite ‘failing service’
+    category: finance
+    description: >-
+      <p>Company attacked for ‘forcing people to dig deeper into their pockets’ as second-class stamps increase to
+      91p</p><ul><li><p><a
+      href="https://www.theguardian.com/business/live/2026/mar/06/oil-biggest-weekly-gain-four-years-strait-of-hormuz-traffic-halt-stock-markets-dollar-imf-news-updates">Busine
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:14:16.000Z"
+      precision: day
+  - id: rail-passengers-warned-over-six-day-east-2026-03-06
+    type: Event
+    name: Rail passengers warned over six-day Easter shutdown on west coast mainline
+    category: finance
+    description: >-
+      <p>Engineering work means there will be no mainline services between London Euston and Milton Keynes from 3-8
+      April</p><p>Rail passengers planning to travel over the Easter break face disrupted journeys owing to a six-day
+      shutdown on Britain’s biggest intercity line.</p><p>Engineering work means the
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T11:38:14.000Z"
+      precision: day
+  - id: geopolitical-uncertainties-amid-iran-w-2026-03-06
+    type: Claim
+    name: ‘Geopolitical uncertainties’ amid Iran war could slow fall in mortgage rates, says Halifax
+    category: finance
+    description: >-
+      <p>UK house price growth slowed in February as value of typical home rose 0.3% to £301,151</p><ul><li><p><a
+      href="https://www.theguardian.com/business/live/2026/mar/06/oil-biggest-weekly-gain-four-years-strait-of-hormuz-traffic-halt-stock-markets-dollar-imf-news-updates">Business
+      live – latest updat
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T08:19:37.000Z"
+      precision: day
+  - id: manchester-united-say-5-season-ticket-p-2026-03-06
+    type: Event
+    name: Manchester United say 5% season-ticket price increase needed to ‘return to top of game’
+    category: finance
+    description: >-
+      <ul><li><p>‘We want to keep investing in the team’</p></li><li><p>United fan group ‘disappointed’ with
+      decision</p></li></ul><p>Manchester United insist a 5% increase in ticket prices around Old Trafford next season
+      will help in their quest to “return to the top of domestic and European football”, b
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T13:11:38.000Z"
+      precision: day
+  - id: italy-wins-claim-over-name-of-spanish-re-2026-03-06
+    type: Event
+    name: Italy wins claim over name of Spanish restaurant chain The Mafia Sits at the Table
+    category: finance
+    description: >-
+      <p>After years of court action and complaints, trademark office in Spain rules name is counter to ‘public order
+      and morality’</p><p>A Spanish restaurant chain called The Mafia Sits at the Table may soon have to change its name
+      after the country’s patent and trademark office heeded objections from th
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:33:12.000Z"
+      precision: day
+  - id: betting-on-nuclear-war-what-are-predict-2026-03-06
+    type: Claim
+    name: "Betting on nuclear war: what are prediction markets and could they come to the UK?"
+    category: finance
+    description: >-
+      <p>The lowdown on Polymarket and Kalshi, the pitfalls and the odds on US-style exchanges taking off in
+      Britain</p><p>As ballistic missiles and kamikaze drones rained down on the Middle East, one of the world’s most
+      talked-about businesses was inviting wagers on whether nuclear Armageddon might be im
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T09:21:00.000Z"
+      precision: day
+  - id: fifa-afc-urged-to-protect-iran-women-fo-2026-03-06
+    type: Event
+    name: FIFA, AFC urged to protect Iran women footballers after ‘traitors’ threat
+    category: geopolitics
+    description: Iran state TV presenter has threatened women&#039;s national team for not singing anthem at opening AFC Cup match.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T13:44:33.000Z"
+      precision: day
+  - id: why-have-europe-australia-sent-military-2026-03-06
+    type: Event
+    name: Why have Europe, Australia sent military assets to the Middle East?
+    category: geopolitics
+    description: >-
+      France, Spain and Australia are among the countries to deploy military assets to the Middle East after Cyprus
+      attacks.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T13:38:05.000Z"
+      precision: day
+  - id: al-aqsa-compound-empty-as-israel-restric-2026-03-06
+    type: Event
+    name: Al-Aqsa compound empty as Israel restricts access to holy sites
+    category: geopolitics
+    description: Drone video showed the Al-Aqsa Mosque compound in occupied East Jerusalem empty on the third Friday in Ramadan.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:58:48.000Z"
+      precision: day
+  - id: kurdish-uprising-in-iran-unlikely-witho-2026-03-06
+    type: Event
+    name: ‘Kurdish uprising in Iran unlikely without US-Israeli protection’
+    category: geopolitics
+    description: >-
+      Yerevan Saeed says Iranian Kurdish forces would struggle without outside backing if they launched an uprising in
+      Iran.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:44:10.000Z"
+      precision: day
+  - id: iranian-kurd-fighters-ready-for-a-ground-2026-03-06
+    type: Event
+    name: Iranian Kurd fighters ready for a ground operation ‘if opportunity arises’
+    category: geopolitics
+    description: Iranian Kurd fighters ready for a ground operation ‘if opportunity arises&#039; after Iran attack
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:41:59.000Z"
+      precision: day
+  - id: messi-censured-for-meeting-and-applaudin-2026-03-06
+    type: Event
+    name: Messi censured for meeting and applauding Trump amid US attacks on Iran
+    category: geopolitics
+    description: Inter Miami and Messi were honoured at the White House, where Trump boasted the US military’s might.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:40:09.000Z"
+      precision: day
+  - id: moscow-sees-significant-rise-in-demand-f-2026-03-06
+    type: Event
+    name: Moscow sees significant rise in demand for Russian oil, gas amid Iran war
+    category: geopolitics
+    description: International Energy Agency warns against politically and economically wrong return to reliance on Russian energy.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:37:42.000Z"
+      precision: day
+  - id: we-know-shaheds-ukraine-touts-drone-e-2026-03-06
+    type: Event
+    name: "‘We know Shaheds’: Ukraine touts drone expertise in US-Israel war with Iran"
+    category: geopolitics
+    description: >-
+      Ukraine, which has years of experience in downing Russia&#039;s Iran-made drones, wants to assist the US and
+      Israel.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:35:15.000Z"
+      precision: day
+  - id: amid-iran-war-will-russia-exploit-ukrai-2026-03-06
+    type: Event
+    name: Amid Iran war, will Russia exploit Ukraine’s shortage of Patriot missiles?
+    category: geopolitics
+    description: >-
+      Zelenskyy says more US-made Patriot defence systems were used in three days of the Iran war than in Ukraine since
+      2022.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:07:27.000Z"
+      precision: day
+  - id: what-is-the-prsm-missile-that-the-us-use-2026-03-06
+    type: Event
+    name: What is the PrSM missile that the US used for the first time in Iran?
+    category: geopolitics
+    description: US CENTCOM said Precision Strike Missiles were used in Operation Epic Fury.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T11:58:33.000Z"
+      precision: day
+  - id: no-deal-with-iran-trump-demands-uncon-2026-03-06
+    type: Event
+    name: "'No deal with Iran': Trump demands unconditional surrender, sending oil surging, bitcoin and stocks lower"
+    category: finance.crypto
+    description: >-
+      The outlook for the Fed grew cloudier on Friday, as the employment market weakened appreciably even as inflation
+      could be worsening.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:34:58.000Z"
+      precision: day
+  - id: coindesk-20-performance-update-aave-dro-2026-03-06
+    type: Event
+    name: "CoinDesk 20 performance update: Aave drops 4.3% as all index constituents trade lower"
+    category: finance.crypto
+    description: Solana (SOL), down 3.1% since Thursday, joined Aave (AAVE) as an underperformer.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:18:17.000Z"
+      precision: day
+  - id: u-s-unexpectedly-lost-92-000-jobs-in-fe-2026-03-06
+    type: Event
+    name: U.S. unexpectedly lost 92,000 jobs in February, unemployment rate rose to 4.4%
+    category: finance.crypto
+    description: >-
+      Bitcoin remained under pressure even as the data likely puts back in play the chances of Fed rate cuts in the
+      first half of 2026.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T13:33:54.000Z"
+      precision: day
+  - id: kazakhstan-central-bank-to-invest-350-m-2026-03-06
+    type: Event
+    name: Kazakhstan central bank to invest $350 million worth of gold, forex reserves into digital assets
+    category: finance.crypto
+    description: The central bank plans to invest in crypto infrastructure firms, tech stocks and funds tied to digital assets.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T13:08:55.000Z"
+      precision: day
+  - id: bitcoin-hit-by-short-termism-as-rally-fa-2026-03-06
+    type: Event
+    name: Bitcoin hit by short-termism as rally fades ahead of U.S. jobs data
+    category: finance.crypto
+    description: Your day-ahead look for March 6, 2026
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:20:32.000Z"
+      precision: day
+  - id: strike-secures-new-york-bitlicense-open-2026-03-06
+    type: Event
+    name: Strike secures New York BitLicense, opening bitcoin financial services to state residents
+    category: finance.crypto
+    description: >-
+      NYDFS approval allows the Bitcoin payments company to offer trading, bill pay and custody products across New
+      York.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:05:38.000Z"
+      precision: day
+  - id: bitcoin-extends-decline-from-74-000-de-2026-03-06
+    type: Event
+    name: Bitcoin extends decline from $74,000, derivatives data point to cautious positioning
+    category: finance.crypto
+    description: >-
+      BTC traded just above $70,000 as Middle East tensions drove oil higher and traders reassessed inflation in advance
+      of the U.S. jobs report due later Friday.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T11:29:35.000Z"
+      precision: day
+  - id: bank-of-canada-country-s-largest-banks-2026-03-06
+    type: Event
+    name: Bank of Canada, country’s largest banks complete first tokenized bond trial
+    category: finance.crypto
+    description: >-
+      Project Samara will continue to test issuing, trading and settling bonds using digital Canadian dollars on a
+      distributed ledger.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T11:06:31.000Z"
+      precision: day
+  - id: bitcoin-drops-toward-70-000-ahead-of-u-2026-03-06
+    type: Event
+    name: Bitcoin drops toward $70,000 ahead of U.S. jobs data; oil price rises on Iran war
+    category: finance.crypto
+    description: Investors are turning more defensive as geopolitical tensions rise and key U.S. labor market data approaches.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T10:29:11.000Z"
+      precision: day
+  - id: dubai-crypto-regulator-says-kucoin-excha-2026-03-06
+    type: Claim
+    name: Dubai crypto regulator says KuCoin exchange is operating without proper license and must stop
+    category: finance.crypto
+    description: >-
+      The VARA alert comes just a couple of weeks after Austria's financial regulator prohibited the European arm of
+      KuCoin from conducting new business.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T09:32:08.000Z"
+      precision: day
+  - id: my-top-3-mega-cap-ai-stocks-to-buy-after-2026-03-06
+    type: Event
+    name: My Top 3 Mega-Cap AI Stocks to Buy After February's Tech Pullback
+    category: finance
+    description: My Top 3 Mega-Cap AI Stocks to Buy After February's Tech Pullback
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:30:00.000Z"
+      precision: day
+  - id: jensen-quality-growth-equity-decided-to-2026-03-06
+    type: Event
+    name: Jensen Quality Growth Equity Decided to Sell Accenture (ACN)
+    category: finance
+    description: Jensen Quality Growth Equity Decided to Sell Accenture (ACN)
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:24:02.000Z"
+      precision: day
+  - id: what-makes-motorola-solutions-msi-an-i-2026-03-06
+    type: Event
+    name: What Makes Motorola Solutions (MSI) an Investment Bet?
+    category: finance
+    description: What Makes Motorola Solutions (MSI) an Investment Bet?
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:18:48.000Z"
+      precision: day
+  - id: jensen-quality-growth-equity-bets-on-bro-2026-03-06
+    type: Event
+    name: Jensen Quality Growth Equity Bets on Broadcom (AVGO), the Core Supplier in the Global AI Build-Out
+    category: finance
+    description: Jensen Quality Growth Equity Bets on Broadcom (AVGO), the Core Supplier in the Global AI Build-Out
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:15:38.000Z"
+      precision: day
+  - id: analyst-report-metlife-inc-2026-03-06
+    type: Event
+    name: "Analyst Report: Metlife Inc"
+    category: finance
+    description: "Analyst Report: Metlife Inc"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:08:48.000Z"
+      precision: day
+  - id: day-one-biopharmaceuticals-skyrockets-on-2026-03-06
+    type: Event
+    name: Day One Biopharmaceuticals Skyrockets On Servier's $2.5 Billion Buyout
+    category: finance
+    description: Day One Biopharmaceuticals Skyrockets On Servier's $2.5 Billion Buyout
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:15:12.000Z"
+      precision: day
+  - id: these-are-the-5-best-stocks-to-buy-or-wa-2026-03-06
+    type: Event
+    name: These Are The 5 Best Stocks To Buy Or Watch Now
+    category: finance
+    description: These Are The 5 Best Stocks To Buy Or Watch Now
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:12:55.000Z"
+      precision: day
+  - id: stock-market-today-dow-dives-600-points-2026-03-06
+    type: Event
+    name: "Stock Market Today: Dow Dives 600 Points On Surging Oil, Surprise Jobs Report; Nvidia Slides (Live Coverage)"
+    category: finance
+    description: "Stock Market Today: Dow Dives 600 Points On Surging Oil, Surprise Jobs Report; Nvidia Slides (Live Coverage)"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:04:44.000Z"
+      precision: day
+  - id: jensen-quality-growth-equity-is-holding-2026-03-06
+    type: Event
+    name: Jensen Quality Growth Equity is Holding Marsh & McLennan (MRSH) with Conviction
+    category: finance
+    description: Jensen Quality Growth Equity is Holding Marsh & McLennan (MRSH) with Conviction
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:04:27.000Z"
+      precision: day
+  - id: the-x2018-everybody-loses-x2019-scen-2026-03-06
+    type: Event
+    name: "The &#x2018;everybody loses&#x2019; scenario: Why the Iran conflict is breaking this classic portfolio strategy"
+    category: finance.markets
+    description: Shifting correlations are a problem for investors. says Morgan Stanley.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:31:00.000Z"
+      precision: day
+  - id: x2018-when-he-doesn-x2019-t-get-money-2026-03-06
+    type: Event
+    name: >-
+      &#x2018;When he doesn&#x2019;t get money, he becomes angry&#x2019;: My brother has led a life of chaos and
+      financial ruin. What is my moral obligation
+    category: finance.markets
+    description: "&#x201c;Without clear distance and boundaries, he will pull me down with him.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:30:00.000Z"
+      precision: day
+  - id: robinhood-x2019-s-new-fund-provides-acc-2026-03-06
+    type: Event
+    name: >-
+      Robinhood&#x2019;s new fund provides access to private tech companies. Here&#x2019;s what to know before investing
+      in it.
+    category: finance.markets
+    description: The Robinhood Ventures Fund I was listed on the New York Stock Exchange Friday morning.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:30:00.000Z"
+      precision: day
+  - id: oil-hits-23-month-high-as-qatar-minister-2026-03-06
+    type: Claim
+    name: Oil hits 23-month high as Qatar minister warns prices could reach $150
+    category: finance.markets
+    description: >-
+      Oil futures were trading at their highest levels since the summer of 2024 on Friday as the Iran conflict entered a
+      seventh day, with no sign of it ending anytime soon.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:22:00.000Z"
+      precision: day
+  - id: how-one-bank-of-america-strategist-says-2026-03-06
+    type: Claim
+    name: How one Bank of America strategist says investors should trade the Iran conflict
+    category: finance.markets
+    description: Markets need an improvement in Trump&#x2019;s poll ratings, one strategist says.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:17:00.000Z"
+      precision: day
+  - id: disappointing-weight-loss-drug-trial-res-2026-03-06
+    type: Event
+    name: Disappointing weight-loss-drug trial results from Zealand Pharma send shares tumbling
+    category: finance.markets
+    description: Zealand Pharma obesity drug showed disappointing weight loss in a Phase 2 trial.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T13:52:00.000Z"
+      precision: day
+  - id: x2018-i-don-x2019-t-earn-enough-to-su-2026-03-06
+    type: Event
+    name: >-
+      &#x2018;I don&#x2019;t earn enough to support us and our baby&#x2019;: My unemployed husband lost $22,000 trading
+      sports cards. What now?
+    category: finance.markets
+    description: >-
+      &#x201c;I intervened, shut the business down and got him into therapy and support for gambling-type
+      behaviors.&#x201d;
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T13:04:00.000Z"
+      precision: day
+  - id: the-4-rule-is-done-x2014-5-signs-you-2026-03-06
+    type: Decision
+    name: The 4% rule is done &#x2014; 5 signs your $1 million retirement portfolio can survive the new withdrawal reality
+    category: finance.markets
+    description: Here&#x2019;s what financial planners know but many retirees discover too late.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:59:00.000Z"
+      precision: day
+  - id: tax-season-can-be-poison-for-couples-he-2026-03-06
+    type: Event
+    name: Tax season can be poison for couples. Here&#x2019;s how to keep the peace.
+    category: finance.markets
+    description: Blended families, income inequality and investing blunders are in the spotlight at tax time.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:58:00.000Z"
+      precision: day
+  - id: will-the-bank-get-suspicious-if-i-deposi-2026-03-06
+    type: Event
+    name: Will the bank get suspicious if I deposit $150,000 in cash into my checking account?
+    category: finance.markets
+    description: "&#x201c;I live in a state with no inheritance tax. I assume I can make this deposit legally.&#x201d;"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:55:00.000Z"
+      precision: day
+  - id: ranked-top-20-automakers-by-battery-met-2026-03-06
+    type: Event
+    name: "RANKED: Top 20 automakers by battery metals spending"
+    category: finance.mining
+    description: >-
+      Volkswagen overtakes Tesla to become the biggest spender on lithium, nickel, cobalt, manganese and graphite amid
+      recovering prices.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T02:13:53.000Z"
+      precision: day
+  - id: europe-s-gas-price-set-for-largest-weekl-2026-03-06
+    type: Event
+    name: Europe’s Gas Price Set for Largest Weekly Gain in Three Years
+    category: finance.energy
+    description: "Europe’s benchmark natural gas prices were on track early on Friday for a 50% weekly jump—the biggest one-week surge since the energy crisis in the summer of 2023, as the Middle East war has cut off 20% of global LNG supply.\_\_\_\_ The implied volatility in the\_Dutch TTF Natural Gas Futures, the benchm"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T14:30:00.000Z"
+      precision: day
+  - id: oil-prices-hit-90-as-middle-east-tensio-2026-03-06
+    type: Event
+    name: Oil Prices Hit $90 as Middle East Tensions Escalate
+    category: finance.energy
+    description: >-
+      Oil prices surged again on Friday, putting crude on track for its biggest weekly gain in years as disruptions to
+      Middle East supply and tanker traffic through the Strait of Hormuz rattle global energy markets. Brent crude was
+      trading above $88 per barrel in early trading, up more than 4% on the day,
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T13:19:00.000Z"
+      precision: day
+  - id: europe-bound-lng-cargoes-divert-to-asia-2026-03-06
+    type: Event
+    name: Europe-Bound LNG Cargoes Divert to Asia as War Upends Gas Market
+    category: finance.energy
+    description: "A growing number of LNG cargoes that were initially en route to Europe have sharply diverted in the Atlantic toward Asia via the Cape of Good Hope as Asian buyers are now winning the competition with Europe with about 20% of global LNG supply currently offline.\_ So far this week, three LNG tankers, "
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:18:00.000Z"
+      precision: day
+  - id: imf-oil-price-shock-tests-global-econom-2026-03-06
+    type: Event
+    name: "IMF: Oil Price Shock Tests Global Economic Resilience"
+    category: finance.energy
+    description: "The surge in oil and LNG prices as a result of the Middle East war is testing the resilience of the global economy once again, IMF Managing Director Kristalina Georgieva said on Friday.\_ “The world economy has been remarkably resilient. Shock after shock, and yet growth is at 3.3%,” Georgieva told B"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T11:11:56.000Z"
+      precision: day
+  - id: hsfo-prices-jump-40-as-war-chokes-key-s-2026-03-06
+    type: Event
+    name: HSFO Prices Jump 40% as War Chokes Key Singapore Bunkering Hub
+    category: finance.energy
+    description: "The price of fuel oil has surged this week as the stalled tanker traffic at the Strait of Hormuz is tightening supplies of the fuel in Asia, the key bunkering hub for fuel oil used in ships.\_ The Middle East is a major global supplier of fuel oil, especially of high-sulfur fuel oil (HSFO). But the I"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T10:46:00.000Z"
+      precision: day
+  - id: why-trump-wants-magnets-more-than-gold-2026-03-06
+    type: Event
+    name: Why Trump Wants Magnets More Than Gold
+    category: finance.energy
+    description: >-
+      Beginning in 2027, the Pentagon will prohibit the use of Chinese-origin rare earth magnet materials in U.S.
+      military platforms. That mandate cuts through the American defense industrial base, compelling manufacturers to
+      verify the origin of the rare earth metal inside their systems–all the way back 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T10:00:00.000Z"
+      precision: day
+  - id: daily-ship-traffic-in-strait-of-hormuz-p-2026-03-06
+    type: Event
+    name: Daily Ship Traffic in Strait of Hormuz Plummets From 138 to Just 2
+    category: finance.energy
+    description: >-
+      Vessel traffic through the Strait of Hormuz has dropped from an average of 138 ships a day to just two in the 24
+      hours to Thursday, the Joint Maritime Information Center has reported. The center noted that neither of the two
+      vessels that passed the strait were tankers. “This represents a near-total 
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T08:48:58.000Z"
+      precision: day
+  - id: qatar-leases-tankers-as-lng-market-hits-2026-03-06
+    type: Event
+    name: Qatar Leases Tankers as LNG Market Hits Crisis Mode
+    category: finance.energy
+    description: >-
+      Qatar has offered two LNG carriers for lease amid a vessel crunch in the liquefied natural gas market and soaring
+      daily rates, Bloomberg has reported, citing unnamed trading sources. The LNG carriers are off the west coast of
+      Africa, the report noted. Qatar’s offer follows a massive surge in LNG tan
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T07:30:00.000Z"
+      precision: day
+  - id: oil-prices-have-climbed-21-this-week-2026-03-06
+    type: Event
+    name: Oil Prices Have Climbed 21% This Week
+    category: finance.energy
+    description: >-
+      Crude oil prices were on course to end the week with gains of over 21% despite a Thursday dip following a signal
+      from the U.S. about intervention in the futures market to calm prices down. Brent crude was trading at $88.92 per
+      barrel at the time of writing and West Texas Intermediate was changing ha
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T06:45:00.000Z"
+      precision: day
+  - id: how-quickly-can-qatar-restart-the-world-2026-03-06
+    type: Event
+    name: How Quickly Can Qatar Restart the World’s Largest LNG Export Hub?
+    category: finance.energy
+    description: "QatarEnergy declared force majeure on liquefied natural gas (LNG) exports on Wednesday, following disruptions at its Ras Laffan industrial city facilities caused by the Middle East conflict.\_ This legal declaration effectively releases the state-owned company from contractual delivery obligations du"
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T01:00:00.000Z"
+      precision: day
+  - id: after-europe-whatsapp-will-let-rival-ai-2026-03-06
+    type: Event
+    name: After Europe, WhatsApp will let rival AI companies offer chatbots in Brazil
+    category: technology.ai
+    description: >-
+      Meta is now allowing rival AI companies to provide their chatbots on WhatsApp to Brazilian users for a fee, a day
+      after the company confirmed a similar decision for users in Europe.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T13:20:43.000Z"
+      precision: day
+  - id: anthropic-to-challenge-dod-8217-s-suppl-2026-03-06
+    type: Event
+    name: Anthropic to challenge DOD&#8217;s supply-chain label in court
+    category: technology.ai
+    description: >-
+      Anthropic CEO Dario Amodei said he plans to challenge the Department of Defense's designation of the AI firm as a
+      supply-chain risk. He claims most Anthropic customers are unaffected by the label.
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T01:28:54.000Z"
+      precision: day
+  - id: tech-industry-is-in-tariff-hell-even-if-2026-03-06
+    type: Event
+    name: Tech industry is in tariff hell, even if refunds are automated
+    category: technology
+    description: Tech industry is in tariff hell, even if refunds are automated
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:20:40.000Z"
+      precision: day
+  - id: ai-startup-sues-ex-ceo-saying-he-took-4-2026-03-06
+    type: Event
+    name: AI startup sues ex-CEO, saying he took 41GB of email and lied on résumé
+    category: technology
+    description: AI startup sues ex-CEO, saying he took 41GB of email and lied on résumé
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:10:07.000Z"
+      precision: day
+  - id: which-of-these-two-arcades-is-the-world-2026-03-06
+    type: Event
+    name: Which of these two arcades is the "world largest"—and does it matter?
+    category: technology
+    description: Which of these two arcades is the "world largest"—and does it matter?
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:00:02.000Z"
+      precision: day
+  - id: rocket-report-spacex-launch-prices-are-2026-03-06
+    type: Event
+    name: "Rocket Report: SpaceX launch prices are going up; Russia fixes broken launch pad"
+    category: technology
+    description: "Rocket Report: SpaceX launch prices are going up; Russia fixes broken launch pad"
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-06T12:00:02.000Z"
+      precision: day
+narratives:
+  - name: Ukraine Peace Process
+    steps:
+      - from: amid-iran-war-will-russia-exploit-ukrai-2026-03-06
+        to: we-know-shaheds-ukraine-touts-drone-e-2026-03-06
+        type: causes
+      - from: we-know-shaheds-ukraine-touts-drone-e-2026-03-06
+        to: hungary-to-expel-ukrainian-bank-workers-2026-03-06
+        type: causes
+  - name: Energy Markets
+    steps:
+      - from: how-quickly-can-qatar-restart-the-world-2026-03-06
+        to: oil-prices-have-climbed-21-this-week-2026-03-06
+        type: causes
+      - from: oil-prices-have-climbed-21-this-week-2026-03-06
+        to: qatar-leases-tankers-as-lng-market-hits-2026-03-06
+        type: causes
+      - from: qatar-leases-tankers-as-lng-market-hits-2026-03-06
+        to: imf-oil-price-shock-tests-global-econom-2026-03-06
+        type: causes
+      - from: imf-oil-price-shock-tests-global-econom-2026-03-06
+        to: oil-prices-hit-90-as-middle-east-tensio-2026-03-06
+        type: causes
+      - from: oil-prices-hit-90-as-middle-east-tensio-2026-03-06
+        to: oil-price-jumps-after-qatar-warns-all-gu-2026-03-06
+        type: supports
+      - from: oil-price-jumps-after-qatar-warns-all-gu-2026-03-06
+        to: brent-crude-hits-90-as-kuwait-starts-c-2026-03-06
+        type: follows
+      - from: brent-crude-hits-90-as-kuwait-starts-c-2026-03-06
+        to: europe-s-gas-price-set-for-largest-weekl-2026-03-06
+        type: causes
+  - name: Crypto Markets
+    steps:
+      - from: dubai-crypto-regulator-says-kucoin-excha-2026-03-06
+        to: bitcoin-drops-toward-70-000-ahead-of-u-2026-03-06
+        type: follows
+      - from: bitcoin-drops-toward-70-000-ahead-of-u-2026-03-06
+        to: bitcoin-extends-decline-from-74-000-de-2026-03-06
+        type: causes
+      - from: bitcoin-extends-decline-from-74-000-de-2026-03-06
+        to: strike-secures-new-york-bitlicense-open-2026-03-06
+        type: causes
+      - from: strike-secures-new-york-bitlicense-open-2026-03-06
+        to: bitcoin-hit-by-short-termism-as-rally-fa-2026-03-06
+        type: causes
+      - from: bitcoin-hit-by-short-termism-as-rally-fa-2026-03-06
+        to: kazakhstan-central-bank-to-invest-350-m-2026-03-06
+        type: causes
+      - from: kazakhstan-central-bank-to-invest-350-m-2026-03-06
+        to: u-s-unexpectedly-lost-92-000-jobs-in-fe-2026-03-06
+        type: causes
+      - from: u-s-unexpectedly-lost-92-000-jobs-in-fe-2026-03-06
+        to: no-deal-with-iran-trump-demands-uncon-2026-03-06
+        type: causes
+  - name: Mining & Resources
+    steps:
+      - from: ranked-top-20-automakers-by-battery-met-2026-03-06
+        to: why-trump-wants-magnets-more-than-gold-2026-03-06
+        type: causes
+sources:
+  - entity: us-and-venezuela-agree-to-resume-diploma-2026-03-06
+    type: article
+    title: US and Venezuela agree to resume diplomatic ties after Maduro capture
+    url: https://www.bbc.com/news/articles/cy9g1l5jx90o
+    excerpt: The US said the two sides would make joint efforts to promote stability after the US seized Maduro and his wife.
+    source_name: BBC News
+    published: "2026-03-06T04:23:12.000Z"
+  - entity: hungary-to-expel-ukrainian-bank-workers-2026-03-06
+    type: article
+    title: Hungary to expel Ukrainian bank workers in row with Kyiv
+    url: https://www.bbc.com/news/articles/cd03rj7n0nro
+    excerpt: >-
+      Hungary says the workers were detained on suspicion of money laundering as a fierce row between the two countries
+      escalates.
+    source_name: BBC News
+    published: "2026-03-06T12:42:28.000Z"
+  - entity: indonesia-to-ban-social-media-and-other-2026-03-06
+    type: article
+    title: Indonesia to ban social media and other online platforms for under 16s
+    url: https://www.bbc.com/news/articles/cvg50168ddgo
+    excerpt: It is the latest country to curb young people's access to digital spaces to try and protect them from abuse.
+    source_name: BBC News
+    published: "2026-03-06T13:25:12.000Z"
+  - entity: israel-strikes-beirut-after-evacuation-w-2026-03-06
+    type: article
+    title: Israel strikes Beirut after evacuation warning sparks panic
+    url: https://www.bbc.com/news/articles/cj32750e7j6o
+    excerpt: >-
+      Huge traffic jams form after the unprecedented warning for people to leave the Hezbollah stronghold, as Israel
+      steps up its strikes across Lebanon.
+    source_name: BBC News
+    published: "2026-03-06T04:08:48.000Z"
+  - entity: anthropic-vows-to-sue-pentagon-over-supp-2026-03-06
+    type: article
+    title: Anthropic vows to sue Pentagon over supply chain risk label
+    url: https://www.bbc.com/news/articles/cn5g3z3xe65o
+    excerpt: The supply chain risk designation of the artificial intelligence firm is a first for a US company.
+    source_name: BBC News
+    published: "2026-03-06T02:46:30.000Z"
+  - entity: canadian-teen-died-from-drowning-after-d-2026-03-06
+    type: article
+    title: Canadian teen died from drowning after dingo attack in Australia
+    url: https://www.bbc.com/news/articles/cde4599n8zpo
+    excerpt: The body of Piper James was found in January surrounded by dingoes on the island of K'Gari.
+    source_name: BBC News
+    published: "2026-03-06T01:47:32.000Z"
+  - entity: oil-price-jumps-after-qatar-warns-all-gu-2026-03-06
+    type: article
+    title: Oil price jumps after Qatar warns all Gulf production could stop within days
+    url: https://www.bbc.com/news/articles/cy031ylgepro
+    excerpt: Energy Minister Saad al-Kaabi says energy prices for everyone will rise if the Iran war continues.
+    source_name: BBC Business
+    published: "2026-03-06T14:00:27.000Z"
+  - entity: five-ways-the-iran-war-could-affect-you-2026-03-06
+    type: article
+    title: Five ways the Iran war could affect you - in charts
+    url: https://www.bbc.com/news/articles/c4g5574pwreo
+    excerpt: With fuel and gas prices having risen in recent days, here are some ways the conflict could affect households.
+    source_name: BBC Business
+    published: "2026-03-06T00:05:31.000Z"
+  - entity: emirates-resumes-some-dubai-flights-wh-2026-03-06
+    type: article
+    title: Emirates resumes some Dubai flights – what's the latest on travel to UK?
+    url: https://www.bbc.com/news/articles/c4ge52x4w37o
+    excerpt: >-
+      New flights to the UK from the Middle East follow days of widespread air travel disruption which had left Britons
+      stranded.
+    source_name: BBC Business
+    published: "2026-03-06T13:22:12.000Z"
+  - entity: surge-in-jet-fuel-prices-could-push-up-a-2026-03-06
+    type: article
+    title: Surge in jet fuel prices could push up air fares, analysts warn
+    url: https://www.bbc.com/news/articles/c14m57k8vgeo
+    excerpt: Disruption to supplies from the Gulf due to the Middle East conflict has pushed the cost up by more than 80%.
+    source_name: BBC Business
+    published: "2026-03-06T13:38:14.000Z"
+  - entity: flight-paths-squeezed-as-iran-conflict-c-2026-03-06
+    type: article
+    title: Flight paths squeezed as Iran conflict closes more airspace
+    url: https://www.bbc.com/news/articles/crrx1jgr4jjo
+    excerpt: A drone attack on Azerbaijan has narrowed choices for airlines scrambling to respond to disruption in the Gulf.
+    source_name: BBC Business
+    published: "2026-03-06T13:30:08.000Z"
+  - entity: axel-springer-agrees-to-buy-telegraph-me-2026-03-06
+    type: article
+    title: Axel Springer agrees to buy Telegraph Media Group in £575m deal
+    url: https://www.bbc.com/news/articles/cyv916d999no
+    excerpt: Last year the Daily Mail and General Trust proposed to buy the company in a £500m takeover.
+    source_name: BBC Business
+    published: "2026-03-06T14:31:52.000Z"
+  - entity: price-of-first-class-stamps-to-rise-to-2026-03-06
+    type: article
+    title: Price of first class stamps to rise to £1.80
+    url: https://www.bbc.com/news/articles/cvgv497gndno
+    excerpt: Royal Mail says the increase reflects the rise in delivery costs, but the move angers consumer groups.
+    source_name: BBC Business
+    published: "2026-03-06T13:12:02.000Z"
+  - entity: lenders-lift-mortgage-rates-as-iran-war-2026-03-06
+    type: article
+    title: Lenders lift mortgage rates as Iran war hits borrowing costs
+    url: https://www.bbc.com/news/articles/cly1jxdv439o
+    excerpt: Nationwide, HSBC and Coventry Building Society are all putting some mortgage rates up.
+    source_name: BBC Business
+    published: "2026-03-06T11:21:32.000Z"
+  - entity: us-economy-unexpectedly-sheds-92-000-job-2026-03-06
+    type: article
+    title: US economy unexpectedly sheds 92,000 jobs in February
+    url: https://www.bbc.com/news/articles/cjd98091g28o
+    excerpt: The contraction came as a surprise with payrolls down in nearly every sector.
+    source_name: BBC Business
+    published: "2026-03-06T14:15:25.000Z"
+  - entity: one-in-7-shops-in-uk-has-turned-cashless-2026-03-06
+    type: article
+    title: One in 7 shops in UK has turned cashless in the past year, survey finds
+    url: https://www.bbc.com/news/articles/cm211jnz568o
+    excerpt: Some 14% of small High Street traders have gone card only in the last year, a survey suggests.
+    source_name: BBC Business
+    published: "2026-03-06T00:05:41.000Z"
+  - entity: weight-loss-jab-could-be-made-for-3-a-m-2026-03-06
+    type: article
+    title: Weight-loss jab could be made for $3 a month, study finds
+    url: >-
+      https://www.theguardian.com/global-development/2026/mar/06/generic-drugs-weight-loss-semaglutide-ozempic-wegovy-diabetes-obesity-study
+    excerpt: >-
+      <p>Cheap semaglutide, the drug in Ozempic and Wegovy, could help millions with diabetes and obesity in 160
+      countries</p><p>Weight-loss jabs such as Wegovy and Ozempic could be made for just $3 a month
+    source_name: The Guardian
+    published: "2026-03-06T09:00:16.000Z"
+  - entity: iran-is-not-venezuela-despite-trump-s-h-2026-03-06
+    type: article
+    title: Iran is not Venezuela, despite Trump’s hopes of repeating ‘regime capture’ strategy
+    url: https://www.theguardian.com/world/2026/mar/06/iran-venezuela-trump-regime-capture
+    excerpt: >-
+      <p>Experts say US influence over South American neighbour will be hard to replicate in country with deep and
+      long-standing antipathy to the west</p><p>First, the CIA tracks the head of an oil-rich, US
+    source_name: The Guardian
+    published: "2026-03-06T14:00:23.000Z"
+  - entity: us-and-venezuela-move-to-restore-diploma-2026-03-06
+    type: article
+    title: US and Venezuela move to restore diplomatic ties two months after Maduro’s capture
+    url: https://www.theguardian.com/us-news/2026/mar/06/us-venezuela-diplomatic-ties-relations-delcy-rodriguez
+    excerpt: >-
+      <p>Re-establishing diplomatic relations will support Venezuela’s economy, US state department claims, amid push
+      for minerals access</p><p>Venezuela and the US are restoring diplomatic ties, the two co
+    source_name: The Guardian
+    published: "2026-03-06T06:59:29.000Z"
+  - entity: brent-crude-hits-90-as-kuwait-starts-c-2026-03-06
+    type: article
+    title: >-
+      Brent crude hits $90 as Kuwait ‘starts cutting oil production’; shock as US economy loses 92,000 jobs in February
+      – business live
+    url: >-
+      https://www.theguardian.com/business/live/2026/mar/06/oil-biggest-weekly-gain-four-years-strait-of-hormuz-traffic-halt-stock-markets-dollar-imf-news-updates
+    excerpt: >-
+      <p>Huge miss in US jobs report suggests labor market weakening, as Middle East crisis drives oil price higher and
+      higher</p><ul><li><p><a href="https://www.theguardian.com/world/live/2026/mar/06/iran-
+    source_name: The Guardian
+    published: "2026-03-06T14:26:45.000Z"
+  - entity: telegraph-sold-for-575m-as-german-buyer-2026-03-06
+    type: article
+    title: Telegraph sold for £575m as German buyer elbows out Daily Mail
+    url: https://www.theguardian.com/media/2026/mar/06/axel-springer-buy-telegraph-daily-mail-owner
+    excerpt: >-
+      <p>Axel Springer, owner of Bild and Die Welt, is understood to have agreed all-cash deal for one of UK’s oldest
+      newspapers</p><ul><li><p><a href="https://www.theguardian.com/business/live/2026/mar/06/
+    source_name: The Guardian
+    published: "2026-03-06T14:05:03.000Z"
+  - entity: bp-s-new-boss-will-take-home-at-least-1-2026-03-06
+    type: article
+    title: BP’s new boss will take home at least £11.7m this year, more than double her predecessor
+    url: https://www.theguardian.com/business/2026/mar/06/bp-new-boss-will-earn-more-than-double-predecessor
+    excerpt: >-
+      <p>Meg O’Neill will be first woman to serve as CEO of 117-year-oil firm when joining from Woodside Energy in
+      April</p><p>The incoming chief executive of BP will take home at least £11.7m this year aft
+    source_name: The Guardian
+    published: "2026-03-06T13:27:55.000Z"
+  - entity: royal-mail-criticised-as-first-class-sta-2026-03-06
+    type: article
+    title: Royal Mail criticised as first-class stamp price rises to £1.80 despite ‘failing service’
+    url: https://www.theguardian.com/business/2026/mar/06/royal-mail-criticised-raising-stamp-prices-failing-service
+    excerpt: >-
+      <p>Company attacked for ‘forcing people to dig deeper into their pockets’ as second-class stamps increase to
+      91p</p><ul><li><p><a href="https://www.theguardian.com/business/live/2026/mar/06/oil-bigges
+    source_name: The Guardian
+    published: "2026-03-06T14:14:16.000Z"
+  - entity: rail-passengers-warned-over-six-day-east-2026-03-06
+    type: article
+    title: Rail passengers warned over six-day Easter shutdown on west coast mainline
+    url: >-
+      https://www.theguardian.com/business/2026/mar/06/rail-passengers-warned-over-six-day-easter-shutdown-on-west-coast-mainline
+    excerpt: >-
+      <p>Engineering work means there will be no mainline services between London Euston and Milton Keynes from 3-8
+      April</p><p>Rail passengers planning to travel over the Easter break face disrupted journe
+    source_name: The Guardian
+    published: "2026-03-06T11:38:14.000Z"
+  - entity: geopolitical-uncertainties-amid-iran-w-2026-03-06
+    type: article
+    title: ‘Geopolitical uncertainties’ amid Iran war could slow fall in mortgage rates, says Halifax
+    url: >-
+      https://www.theguardian.com/business/2026/mar/06/geopolitical-uncertainties-amid-iran-war-could-slow-fall-in-mortgage-rates-says-halifax
+    excerpt: >-
+      <p>UK house price growth slowed in February as value of typical home rose 0.3% to £301,151</p><ul><li><p><a
+      href="https://www.theguardian.com/business/live/2026/mar/06/oil-biggest-weekly-gain-four-yea
+    source_name: The Guardian
+    published: "2026-03-06T08:19:37.000Z"
+  - entity: manchester-united-say-5-season-ticket-p-2026-03-06
+    type: article
+    title: Manchester United say 5% season-ticket price increase needed to ‘return to top of game’
+    url: >-
+      https://www.theguardian.com/football/2026/mar/06/manchester-united-say-5-season-ticket-price-increase-needed-to-return-to-top-of-game
+    excerpt: >-
+      <ul><li><p>‘We want to keep investing in the team’</p></li><li><p>United fan group ‘disappointed’ with
+      decision</p></li></ul><p>Manchester United insist a 5% increase in ticket prices around Old Traff
+    source_name: The Guardian
+    published: "2026-03-06T13:11:38.000Z"
+  - entity: italy-wins-claim-over-name-of-spanish-re-2026-03-06
+    type: article
+    title: Italy wins claim over name of Spanish restaurant chain The Mafia Sits at the Table
+    url: >-
+      https://www.theguardian.com/world/2026/mar/06/italy-wins-claim-name-spanish-restaurant-chain-the-mafia-sits-at-the-table
+    excerpt: >-
+      <p>After years of court action and complaints, trademark office in Spain rules name is counter to ‘public order
+      and morality’</p><p>A Spanish restaurant chain called The Mafia Sits at the Table may so
+    source_name: The Guardian
+    published: "2026-03-06T12:33:12.000Z"
+  - entity: betting-on-nuclear-war-what-are-predict-2026-03-06
+    type: article
+    title: "Betting on nuclear war: what are prediction markets and could they come to the UK?"
+    url: >-
+      https://www.theguardian.com/society/2026/mar/06/bylections-regime-change-how-gambing-on-any-event-fuelled-the-surge-in-prediction-markets
+    excerpt: >-
+      <p>The lowdown on Polymarket and Kalshi, the pitfalls and the odds on US-style exchanges taking off in
+      Britain</p><p>As ballistic missiles and kamikaze drones rained down on the Middle East, one of th
+    source_name: The Guardian
+    published: "2026-03-06T09:21:00.000Z"
+  - entity: fifa-afc-urged-to-protect-iran-women-fo-2026-03-06
+    type: article
+    title: FIFA, AFC urged to protect Iran women footballers after ‘traitors’ threat
+    url: https://www.aljazeera.com/sports/2026/3/6/fifpro-urge-afc-to-protect-iran-womens-team-after-traitors-state-tv-jibe
+    excerpt: Iran state TV presenter has threatened women&#039;s national team for not singing anthem at opening AFC Cup match.
+    source_name: Al Jazeera
+    published: "2026-03-06T13:44:33.000Z"
+  - entity: why-have-europe-australia-sent-military-2026-03-06
+    type: article
+    title: Why have Europe, Australia sent military assets to the Middle East?
+    url: https://www.aljazeera.com/news/2026/3/6/why-have-europe-australia-sent-military-assets-to-the-middle-east
+    excerpt: >-
+      France, Spain and Australia are among the countries to deploy military assets to the Middle East after Cyprus
+      attacks.
+    source_name: Al Jazeera
+    published: "2026-03-06T13:38:05.000Z"
+  - entity: al-aqsa-compound-empty-as-israel-restric-2026-03-06
+    type: article
+    title: Al-Aqsa compound empty as Israel restricts access to holy sites
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/6/al-aqsa-compound-empty-as-israel-restricts-access-to-holy-sites
+    excerpt: Drone video showed the Al-Aqsa Mosque compound in occupied East Jerusalem empty on the third Friday in Ramadan.
+    source_name: Al Jazeera
+    published: "2026-03-06T12:58:48.000Z"
+  - entity: kurdish-uprising-in-iran-unlikely-witho-2026-03-06
+    type: article
+    title: ‘Kurdish uprising in Iran unlikely without US-Israeli protection’
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/6/kurdish-uprising-in-iran-unlikely-without-us-israeli
+    excerpt: >-
+      Yerevan Saeed says Iranian Kurdish forces would struggle without outside backing if they launched an uprising in
+      Iran.
+    source_name: Al Jazeera
+    published: "2026-03-06T12:44:10.000Z"
+  - entity: iranian-kurd-fighters-ready-for-a-ground-2026-03-06
+    type: article
+    title: Iranian Kurd fighters ready for a ground operation ‘if opportunity arises’
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/3/6/iranian-kurd-fighters-ready-for-a-ground-operation-if-opportunity-arises
+    excerpt: Iranian Kurd fighters ready for a ground operation ‘if opportunity arises&#039; after Iran attack
+    source_name: Al Jazeera
+    published: "2026-03-06T12:41:59.000Z"
+  - entity: messi-censured-for-meeting-and-applaudin-2026-03-06
+    type: article
+    title: Messi censured for meeting and applauding Trump amid US attacks on Iran
+    url: https://www.aljazeera.com/sports/2026/3/6/messi-censured-for-meeting-and-applauding-trump-amid-us-attacks-on-iran
+    excerpt: Inter Miami and Messi were honoured at the White House, where Trump boasted the US military’s might.
+    source_name: Al Jazeera
+    published: "2026-03-06T12:40:09.000Z"
+  - entity: moscow-sees-significant-rise-in-demand-f-2026-03-06
+    type: article
+    title: Moscow sees significant rise in demand for Russian oil, gas amid Iran war
+    url: https://www.aljazeera.com/news/2026/3/6/moscow-sees-significant-rise-in-demand-for-russian-oil-gas-amid-iran-war
+    excerpt: International Energy Agency warns against politically and economically wrong return to reliance on Russian energy.
+    source_name: Al Jazeera
+    published: "2026-03-06T12:37:42.000Z"
+  - entity: we-know-shaheds-ukraine-touts-drone-e-2026-03-06
+    type: article
+    title: "‘We know Shaheds’: Ukraine touts drone expertise in US-Israel war with Iran"
+    url: https://www.aljazeera.com/news/2026/3/6/we-know-shaheds-ukraine-touts-drone-expertise-in-us-israel-war-with-iran
+    excerpt: >-
+      Ukraine, which has years of experience in downing Russia&#039;s Iran-made drones, wants to assist the US and
+      Israel.
+    source_name: Al Jazeera
+    published: "2026-03-06T12:35:15.000Z"
+  - entity: amid-iran-war-will-russia-exploit-ukrai-2026-03-06
+    type: article
+    title: Amid Iran war, will Russia exploit Ukraine’s shortage of Patriot missiles?
+    url: https://www.aljazeera.com/news/2026/3/6/amid-iran-war-will-russia-exploit-ukraines-shortage-of-patriot-missiles
+    excerpt: >-
+      Zelenskyy says more US-made Patriot defence systems were used in three days of the Iran war than in Ukraine since
+      2022.
+    source_name: Al Jazeera
+    published: "2026-03-06T12:07:27.000Z"
+  - entity: what-is-the-prsm-missile-that-the-us-use-2026-03-06
+    type: article
+    title: What is the PrSM missile that the US used for the first time in Iran?
+    url: https://www.aljazeera.com/news/2026/3/6/what-is-the-prsm-missile-that-the-us-used-for-the-first-time-in-iran
+    excerpt: US CENTCOM said Precision Strike Missiles were used in Operation Epic Fury.
+    source_name: Al Jazeera
+    published: "2026-03-06T11:58:33.000Z"
+  - entity: no-deal-with-iran-trump-demands-uncon-2026-03-06
+    type: article
+    title: "'No deal with Iran': Trump demands unconditional surrender, sending oil surging, bitcoin and stocks lower"
+    url: >-
+      https://www.coindesk.com/markets/2026/03/06/no-deal-with-iran-trump-demands-unconditional-surrender-sending-oil-surging-bitcoin-and-stocks-lower
+    excerpt: >-
+      The outlook for the Fed grew cloudier on Friday, as the employment market weakened appreciably even as inflation
+      could be worsening.
+    source_name: CoinDesk
+    published: "2026-03-06T14:34:58.000Z"
+  - entity: coindesk-20-performance-update-aave-dro-2026-03-06
+    type: article
+    title: "CoinDesk 20 performance update: Aave drops 4.3% as all index constituents trade lower"
+    url: >-
+      https://www.coindesk.com/coindesk-indices/2026/03/06/coindesk-20-performance-update-aave-drops-4-3-as-all-index-constituents-trade-lower
+    excerpt: Solana (SOL), down 3.1% since Thursday, joined Aave (AAVE) as an underperformer.
+    source_name: CoinDesk
+    published: "2026-03-06T14:18:17.000Z"
+  - entity: u-s-unexpectedly-lost-92-000-jobs-in-fe-2026-03-06
+    type: article
+    title: U.S. unexpectedly lost 92,000 jobs in February, unemployment rate rose to 4.4%
+    url: https://www.coindesk.com/markets/2026/03/06/u-s-lost-92-000-jobs-in-february-unemployment-rate-rose-to-4-2
+    excerpt: >-
+      Bitcoin remained under pressure even as the data likely puts back in play the chances of Fed rate cuts in the
+      first half of 2026.
+    source_name: CoinDesk
+    published: "2026-03-06T13:33:54.000Z"
+  - entity: kazakhstan-central-bank-to-invest-350-m-2026-03-06
+    type: article
+    title: Kazakhstan central bank to invest $350 million worth of gold, forex reserves into digital assets
+    url: >-
+      https://www.coindesk.com/business/2026/03/06/kazakhstan-central-bank-to-invest-usd350-million-worth-of-gold-forex-reserves-into-digital-assets
+    excerpt: The central bank plans to invest in crypto infrastructure firms, tech stocks and funds tied to digital assets.
+    source_name: CoinDesk
+    published: "2026-03-06T13:08:55.000Z"
+  - entity: bitcoin-hit-by-short-termism-as-rally-fa-2026-03-06
+    type: article
+    title: Bitcoin hit by short-termism as rally fades ahead of U.S. jobs data
+    url: https://www.coindesk.com/daybook-us/2026/03/06/bitcoin-hit-by-short-termism-as-rally-fades-ahead-of-u-s-jobs-data
+    excerpt: Your day-ahead look for March 6, 2026
+    source_name: CoinDesk
+    published: "2026-03-06T12:20:32.000Z"
+  - entity: strike-secures-new-york-bitlicense-open-2026-03-06
+    type: article
+    title: Strike secures New York BitLicense, opening bitcoin financial services to state residents
+    url: >-
+      https://www.coindesk.com/business/2026/03/06/strike-secures-new-york-bitlicense-opening-bitcoin-financial-services-to-state-residents
+    excerpt: >-
+      NYDFS approval allows the Bitcoin payments company to offer trading, bill pay and custody products across New
+      York.
+    source_name: CoinDesk
+    published: "2026-03-06T12:05:38.000Z"
+  - entity: bitcoin-extends-decline-from-74-000-de-2026-03-06
+    type: article
+    title: Bitcoin extends decline from $74,000, derivatives data point to cautious positioning
+    url: >-
+      https://www.coindesk.com/markets/2026/03/06/bitcoin-extends-decline-from-usd74-000-derivatives-data-point-to-cautious-positioning
+    excerpt: >-
+      BTC traded just above $70,000 as Middle East tensions drove oil higher and traders reassessed inflation in advance
+      of the U.S. jobs report due later Friday.
+    source_name: CoinDesk
+    published: "2026-03-06T11:29:35.000Z"
+  - entity: bank-of-canada-country-s-largest-banks-2026-03-06
+    type: article
+    title: Bank of Canada, country’s largest banks complete first tokenized bond trial
+    url: >-
+      https://www.coindesk.com/business/2026/03/06/bank-of-canada-country-s-largest-banks-complete-first-tokenized-bond-trial
+    excerpt: >-
+      Project Samara will continue to test issuing, trading and settling bonds using digital Canadian dollars on a
+      distributed ledger.
+    source_name: CoinDesk
+    published: "2026-03-06T11:06:31.000Z"
+  - entity: bitcoin-drops-toward-70-000-ahead-of-u-2026-03-06
+    type: article
+    title: Bitcoin drops toward $70,000 ahead of U.S. jobs data; oil price rises on Iran war
+    url: >-
+      https://www.coindesk.com/markets/2026/03/06/bitcoin-drops-toward-usd70-000-ahead-of-u-s-jobs-data-oil-price-rises-on-iran-war
+    excerpt: Investors are turning more defensive as geopolitical tensions rise and key U.S. labor market data approaches.
+    source_name: CoinDesk
+    published: "2026-03-06T10:29:11.000Z"
+  - entity: dubai-crypto-regulator-says-kucoin-excha-2026-03-06
+    type: article
+    title: Dubai crypto regulator says KuCoin exchange is operating without proper license and must stop
+    url: >-
+      https://www.coindesk.com/policy/2026/03/06/dubai-crypto-regulator-says-kucoin-exchange-is-operating-without-proper-license-and-must-stop
+    excerpt: >-
+      The VARA alert comes just a couple of weeks after Austria's financial regulator prohibited the European arm of
+      KuCoin from conducting new business.
+    source_name: CoinDesk
+    published: "2026-03-06T09:32:08.000Z"
+  - entity: my-top-3-mega-cap-ai-stocks-to-buy-after-2026-03-06
+    type: article
+    title: My Top 3 Mega-Cap AI Stocks to Buy After February's Tech Pullback
+    url: https://finance.yahoo.com/news/top-3-mega-cap-ai-143000694.html
+    excerpt: ""
+    source_name: Motley Fool
+    published: "2026-03-06T14:30:00.000Z"
+  - entity: jensen-quality-growth-equity-decided-to-2026-03-06
+    type: article
+    title: Jensen Quality Growth Equity Decided to Sell Accenture (ACN)
+    url: https://finance.yahoo.com/news/jensen-quality-growth-equity-decided-142402311.html
+    excerpt: ""
+    source_name: Insider Monkey
+    published: "2026-03-06T14:24:02.000Z"
+  - entity: what-makes-motorola-solutions-msi-an-i-2026-03-06
+    type: article
+    title: What Makes Motorola Solutions (MSI) an Investment Bet?
+    url: https://finance.yahoo.com/news/makes-motorola-solutions-msi-investment-141848416.html
+    excerpt: ""
+    source_name: Insider Monkey
+    published: "2026-03-06T14:18:48.000Z"
+  - entity: jensen-quality-growth-equity-bets-on-bro-2026-03-06
+    type: article
+    title: Jensen Quality Growth Equity Bets on Broadcom (AVGO), the Core Supplier in the Global AI Build-Out
+    url: https://finance.yahoo.com/news/jensen-quality-growth-equity-bets-141538189.html
+    excerpt: ""
+    source_name: Insider Monkey
+    published: "2026-03-06T14:15:38.000Z"
+  - entity: analyst-report-metlife-inc-2026-03-06
+    type: article
+    title: "Analyst Report: Metlife Inc"
+    url: >-
+      https://finance.yahoo.com/research/reports/ARGUS_3186_AnalystReport_1772798928000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei
+    excerpt: ""
+    source_name: Argus Research
+    published: "2026-03-06T12:08:48.000Z"
+  - entity: day-one-biopharmaceuticals-skyrockets-on-2026-03-06
+    type: article
+    title: Day One Biopharmaceuticals Skyrockets On Servier's $2.5 Billion Buyout
+    url: https://www.investors.com/news/technology/day-one-biopharmaceuticals-seriver-acquisition/?src=A00220&yptr=yahoo
+    excerpt: ""
+    source_name: Investor's Business Daily
+    published: "2026-03-06T14:15:12.000Z"
+  - entity: these-are-the-5-best-stocks-to-buy-or-wa-2026-03-06
+    type: article
+    title: These Are The 5 Best Stocks To Buy Or Watch Now
+    url: https://www.investors.com/research/best-stocks-to-buy-now/?src=A00220&yptr=yahoo
+    excerpt: ""
+    source_name: Investor's Business Daily
+    published: "2026-03-06T14:12:55.000Z"
+  - entity: stock-market-today-dow-dives-600-points-2026-03-06
+    type: article
+    title: "Stock Market Today: Dow Dives 600 Points On Surging Oil, Surprise Jobs Report; Nvidia Slides (Live Coverage)"
+    url: >-
+      https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-jobs-report/?src=A00220&yptr=yahoo
+    excerpt: ""
+    source_name: Investor's Business Daily
+    published: "2026-03-06T14:04:44.000Z"
+  - entity: jensen-quality-growth-equity-is-holding-2026-03-06
+    type: article
+    title: Jensen Quality Growth Equity is Holding Marsh & McLennan (MRSH) with Conviction
+    url: https://finance.yahoo.com/news/jensen-quality-growth-equity-holding-140427070.html
+    excerpt: ""
+    source_name: Insider Monkey
+    published: "2026-03-06T14:04:27.000Z"
+  - entity: the-x2018-everybody-loses-x2019-scen-2026-03-06
+    type: article
+    title: "The &#x2018;everybody loses&#x2019; scenario: Why the Iran conflict is breaking this classic portfolio strategy"
+    url: >-
+      https://www.marketwatch.com/story/the-everybody-loses-scenario-why-the-iran-conflict-is-breaking-this-classic-portfolio-strategy-b47c298d?mod=mw_rss_topstories
+    excerpt: Shifting correlations are a problem for investors. says Morgan Stanley.
+    source_name: MarketWatch
+    published: "2026-03-06T14:31:00.000Z"
+  - entity: x2018-when-he-doesn-x2019-t-get-money-2026-03-06
+    type: article
+    title: >-
+      &#x2018;When he doesn&#x2019;t get money, he becomes angry&#x2019;: My brother has led a life of chaos and
+      financial ruin. What is my moral obligation?
+    url: >-
+      https://www.marketwatch.com/story/when-he-doesnt-get-money-he-becomes-angry-my-brother-has-led-a-life-of-chaos-and-financial-ruin-what-is-my-moral-obligation-ac5efa9d?mod=mw_rss_topstories
+    excerpt: "&#x201c;Without clear distance and boundaries, he will pull me down with him.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-03-06T14:30:00.000Z"
+  - entity: robinhood-x2019-s-new-fund-provides-acc-2026-03-06
+    type: article
+    title: >-
+      Robinhood&#x2019;s new fund provides access to private tech companies. Here&#x2019;s what to know before investing
+      in it.
+    url: >-
+      https://www.marketwatch.com/story/robinhoods-new-fund-provides-access-to-private-tech-companies-heres-what-to-know-before-investing-in-it-571f5ac3?mod=mw_rss_topstories
+    excerpt: The Robinhood Ventures Fund I was listed on the New York Stock Exchange Friday morning.
+    source_name: MarketWatch
+    published: "2026-03-06T14:30:00.000Z"
+  - entity: oil-hits-23-month-high-as-qatar-minister-2026-03-06
+    type: article
+    title: Oil hits 23-month high as Qatar minister warns prices could reach $150
+    url: >-
+      https://www.marketwatch.com/story/oil-at-20-month-high-as-qatar-minister-warns-of-halt-to-energy-shipments-ffd3f8f9?mod=mw_rss_topstories
+    excerpt: >-
+      Oil futures were trading at their highest levels since the summer of 2024 on Friday as the Iran conflict entered a
+      seventh day, with no sign of it ending anytime soon.
+    source_name: MarketWatch
+    published: "2026-03-06T14:22:00.000Z"
+  - entity: how-one-bank-of-america-strategist-says-2026-03-06
+    type: article
+    title: How one Bank of America strategist says investors should trade the Iran conflict
+    url: >-
+      https://www.marketwatch.com/story/how-one-bank-of-america-strategist-says-investors-should-trade-the-iran-conflict-546f1f29?mod=mw_rss_topstories
+    excerpt: Markets need an improvement in Trump&#x2019;s poll ratings, one strategist says.
+    source_name: MarketWatch
+    published: "2026-03-06T14:17:00.000Z"
+  - entity: disappointing-weight-loss-drug-trial-res-2026-03-06
+    type: article
+    title: Disappointing weight-loss-drug trial results from Zealand Pharma send shares tumbling
+    url: >-
+      https://www.marketwatch.com/story/disappointing-weight-loss-trial-results-from-zealand-pharma-sends-shares-tumbling-655e7d2d?mod=mw_rss_topstories
+    excerpt: Zealand Pharma obesity drug showed disappointing weight loss in a Phase 2 trial.
+    source_name: MarketWatch
+    published: "2026-03-06T13:52:00.000Z"
+  - entity: x2018-i-don-x2019-t-earn-enough-to-su-2026-03-06
+    type: article
+    title: >-
+      &#x2018;I don&#x2019;t earn enough to support us and our baby&#x2019;: My unemployed husband lost $22,000 trading
+      sports cards. What now?
+    url: >-
+      https://www.marketwatch.com/story/i-dont-earn-enough-to-support-us-and-our-baby-my-husband-is-unemployed-and-lost-22-000-trading-sports-cards-what-now-200c1438?mod=mw_rss_topstories
+    excerpt: >-
+      &#x201c;I intervened, shut the business down and got him into therapy and support for gambling-type
+      behaviors.&#x201d;
+    source_name: MarketWatch
+    published: "2026-03-06T13:04:00.000Z"
+  - entity: the-4-rule-is-done-x2014-5-signs-you-2026-03-06
+    type: article
+    title: The 4% rule is done &#x2014; 5 signs your $1 million retirement portfolio can survive the new withdrawal reality
+    url: >-
+      https://www.marketwatch.com/story/the-4-rule-is-done-5-signs-your-1-million-retirement-portfolio-can-survive-the-new-withdrawal-reality-490c029a?mod=mw_rss_topstories
+    excerpt: Here&#x2019;s what financial planners know but many retirees discover too late.
+    source_name: MarketWatch
+    published: "2026-03-06T12:59:00.000Z"
+  - entity: tax-season-can-be-poison-for-couples-he-2026-03-06
+    type: article
+    title: Tax season can be poison for couples. Here&#x2019;s how to keep the peace.
+    url: >-
+      https://www.marketwatch.com/story/tax-season-can-be-poison-for-couples-heres-how-to-keep-the-peace-8c897584?mod=mw_rss_topstories
+    excerpt: Blended families, income inequality and investing blunders are in the spotlight at tax time.
+    source_name: MarketWatch
+    published: "2026-03-06T12:58:00.000Z"
+  - entity: will-the-bank-get-suspicious-if-i-deposi-2026-03-06
+    type: article
+    title: Will the bank get suspicious if I deposit $150,000 in cash into my checking account?
+    url: >-
+      https://www.marketwatch.com/story/i-live-in-a-state-with-no-inheritance-tax-is-it-legal-to-deposit-150k-cash-into-my-bank-account-d7987cfe?mod=mw_rss_topstories
+    excerpt: "&#x201c;I live in a state with no inheritance tax. I assume I can make this deposit legally.&#x201d;"
+    source_name: MarketWatch
+    published: "2026-03-06T12:55:00.000Z"
+  - entity: ranked-top-20-automakers-by-battery-met-2026-03-06
+    type: article
+    title: "RANKED: Top 20 automakers by battery metals spending"
+    url: https://www.mining.com/ranked-top-20-automakers-by-battery-metals-spending/
+    excerpt: >-
+      Volkswagen overtakes Tesla to become the biggest spender on lithium, nickel, cobalt, manganese and graphite amid
+      recovering prices.
+    source_name: Mining.com
+    published: "2026-03-06T02:13:53.000Z"
+  - entity: europe-s-gas-price-set-for-largest-weekl-2026-03-06
+    type: article
+    title: Europe’s Gas Price Set for Largest Weekly Gain in Three Years
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/Europes-Gas-Price-Set-for-Largest-Weekly-Gain-in-Three-Years.html
+    excerpt: >-
+      Europe’s benchmark natural gas prices were on track early on Friday for a 50% weekly jump—the biggest one-week
+      surge since the energy crisis in the summer of 2023, as the Middle East war has cut off 2
+    source_name: OilPrice.com
+    published: "2026-03-06T14:30:00.000Z"
+  - entity: oil-prices-hit-90-as-middle-east-tensio-2026-03-06
+    type: article
+    title: Oil Prices Hit $90 as Middle East Tensions Escalate
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Surge-Toward-90-as-Middle-East-Tensions-Escalate.html
+    excerpt: >-
+      Oil prices surged again on Friday, putting crude on track for its biggest weekly gain in years as disruptions to
+      Middle East supply and tanker traffic through the Strait of Hormuz rattle global energy
+    source_name: OilPrice.com
+    published: "2026-03-06T13:19:00.000Z"
+  - entity: europe-bound-lng-cargoes-divert-to-asia-2026-03-06
+    type: article
+    title: Europe-Bound LNG Cargoes Divert to Asia as War Upends Gas Market
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/Europe-Bound-LNG-Cargoes-Divert-to-Asia-as-War-Upends-Gas-Market.html
+    excerpt: >-
+      A growing number of LNG cargoes that were initially en route to Europe have sharply diverted in the Atlantic
+      toward Asia via the Cape of Good Hope as Asian buyers are now winning the competition with 
+    source_name: OilPrice.com
+    published: "2026-03-06T12:18:00.000Z"
+  - entity: imf-oil-price-shock-tests-global-econom-2026-03-06
+    type: article
+    title: "IMF: Oil Price Shock Tests Global Economic Resilience"
+    url: https://oilprice.com/Latest-Energy-News/World-News/IMF-Oil-Price-Shock-Tests-Global-Economic-Resilience.html
+    excerpt: "The surge in oil and LNG prices as a result of the Middle East war is testing the resilience of the global economy once again, IMF Managing Director Kristalina Georgieva said on Friday.\_ “The world ec"
+    source_name: OilPrice.com
+    published: "2026-03-06T11:11:56.000Z"
+  - entity: hsfo-prices-jump-40-as-war-chokes-key-s-2026-03-06
+    type: article
+    title: HSFO Prices Jump 40% as War Chokes Key Singapore Bunkering Hub
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/HSFO-Prices-Jump-40-as-War-Chokes-Key-Singapore-Bunkering-Hub.html
+    excerpt: "The price of fuel oil has surged this week as the stalled tanker traffic at the Strait of Hormuz is tightening supplies of the fuel in Asia, the key bunkering hub for fuel oil used in ships.\_ The Midd"
+    source_name: OilPrice.com
+    published: "2026-03-06T10:46:00.000Z"
+  - entity: why-trump-wants-magnets-more-than-gold-2026-03-06
+    type: article
+    title: Why Trump Wants Magnets More Than Gold
+    url: https://oilprice.com/Energy/Energy-General/Why-Trump-Wants-Magnets-More-Than-Gold.html
+    excerpt: >-
+      Beginning in 2027, the Pentagon will prohibit the use of Chinese-origin rare earth magnet materials in U.S.
+      military platforms. That mandate cuts through the American defense industrial base, compelli
+    source_name: OilPrice.com
+    published: "2026-03-06T10:00:00.000Z"
+  - entity: daily-ship-traffic-in-strait-of-hormuz-p-2026-03-06
+    type: article
+    title: Daily Ship Traffic in Strait of Hormuz Plummets From 138 to Just 2
+    url: >-
+      https://oilprice.com/Latest-Energy-News/World-News/Daily-Ship-Traffic-in-Strait-of-Hormuz-Plummets-From-138-to-Just-2.html
+    excerpt: >-
+      Vessel traffic through the Strait of Hormuz has dropped from an average of 138 ships a day to just two in the 24
+      hours to Thursday, the Joint Maritime Information Center has reported. The center noted
+    source_name: OilPrice.com
+    published: "2026-03-06T08:48:58.000Z"
+  - entity: qatar-leases-tankers-as-lng-market-hits-2026-03-06
+    type: article
+    title: Qatar Leases Tankers as LNG Market Hits Crisis Mode
+    url: https://oilprice.com/Latest-Energy-News/World-News/Qatar-Leases-Tankers-as-LNG-Market-Hits-Crisis-Mode.html
+    excerpt: >-
+      Qatar has offered two LNG carriers for lease amid a vessel crunch in the liquefied natural gas market and soaring
+      daily rates, Bloomberg has reported, citing unnamed trading sources. The LNG carriers 
+    source_name: OilPrice.com
+    published: "2026-03-06T07:30:00.000Z"
+  - entity: oil-prices-have-climbed-21-this-week-2026-03-06
+    type: article
+    title: Oil Prices Have Climbed 21% This Week
+    url: https://oilprice.com/Latest-Energy-News/World-News/Oil-Set-for-16-Weekly-Gain-on-Middle-East-Disruption.html
+    excerpt: >-
+      Crude oil prices were on course to end the week with gains of over 21% despite a Thursday dip following a signal
+      from the U.S. about intervention in the futures market to calm prices down. Brent crude
+    source_name: OilPrice.com
+    published: "2026-03-06T06:45:00.000Z"
+  - entity: how-quickly-can-qatar-restart-the-world-2026-03-06
+    type: article
+    title: How Quickly Can Qatar Restart the World’s Largest LNG Export Hub?
+    url: https://oilprice.com/Energy/Natural-Gas/How-Quickly-Can-Qatar-Restart-the-Worlds-Largest-LNG-Export-Hub.html
+    excerpt: "QatarEnergy declared force majeure on liquefied natural gas (LNG) exports on Wednesday, following disruptions at its Ras Laffan industrial city facilities caused by the Middle East conflict.\_ This leg"
+    source_name: OilPrice.com
+    published: "2026-03-06T01:00:00.000Z"
+  - entity: after-europe-whatsapp-will-let-rival-ai-2026-03-06
+    type: article
+    title: After Europe, WhatsApp will let rival AI companies offer chatbots in Brazil
+    url: https://techcrunch.com/2026/03/06/after-europe-whatsapp-will-let-rival-ai-companies-offer-chatbots-in-brazil/
+    excerpt: >-
+      Meta is now allowing rival AI companies to provide their chatbots on WhatsApp to Brazilian users for a fee, a day
+      after the company confirmed a similar decision for users in Europe.
+    source_name: TechCrunch
+    published: "2026-03-06T13:20:43.000Z"
+  - entity: anthropic-to-challenge-dod-8217-s-suppl-2026-03-06
+    type: article
+    title: Anthropic to challenge DOD&#8217;s supply-chain label in court
+    url: https://techcrunch.com/2026/03/05/anthropic-to-challenge-dods-supply-chain-label-in-court/
+    excerpt: >-
+      Anthropic CEO Dario Amodei said he plans to challenge the Department of Defense's designation of the AI firm as a
+      supply-chain risk. He claims most Anthropic customers are unaffected by the label.
+    source_name: TechCrunch
+    published: "2026-03-06T01:28:54.000Z"
+  - entity: tech-industry-is-in-tariff-hell-even-if-2026-03-06
+    type: article
+    title: Tech industry is in tariff hell, even if refunds are automated
+    url: https://arstechnica.com/tech-policy/2026/03/tech-industry-is-in-tariff-hell-even-if-refunds-are-automated/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-03-06T12:20:40.000Z"
+  - entity: ai-startup-sues-ex-ceo-saying-he-took-4-2026-03-06
+    type: article
+    title: AI startup sues ex-CEO, saying he took 41GB of email and lied on résumé
+    url: >-
+      https://arstechnica.com/tech-policy/2026/03/ai-startup-sues-ex-ceo-saying-he-took-41gb-of-email-and-lied-on-resume/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-03-06T12:10:07.000Z"
+  - entity: which-of-these-two-arcades-is-the-world-2026-03-06
+    type: article
+    title: Which of these two arcades is the "world largest"—and does it matter?
+    url: https://arstechnica.com/gaming/2026/03/which-of-these-two-arcades-is-the-world-largest-and-does-it-matter/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-03-06T12:00:02.000Z"
+  - entity: rocket-report-spacex-launch-prices-are-2026-03-06
+    type: article
+    title: "Rocket Report: SpaceX launch prices are going up; Russia fixes broken launch pad"
+    url: >-
+      https://arstechnica.com/space/2026/03/rocket-report-spacex-launch-prices-are-going-up-russia-fixes-broken-launch-pad/
+    excerpt: ""
+    source_name: Ars Technica
+    published: "2026-03-06T12:00:02.000Z"
