@@ -1,0 +1,398 @@
+seed:
+  name: news-week10-day-2026-03-07-hour-08
+  label: Daily News — 2026-03-07 08:00 (Week 10, 2026)
+  namespace: news.week10.day-2026-03-07
+  description: "Auto-gathered news: 19 stories, 2026-03-07 to 2026-03-07"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week10
+    extends: news
+  - namespace: news.week10.day-2026-03-07
+    extends: news.week10
+entities:
+  - id: trump-demands-unconditional-surrender-2026-03-07
+    type: Event
+    name: Trump demands 'unconditional surrender' from Iran as Putin speaks with Iran's president
+    category: geopolitics
+    description: >-
+      The president also calls on Tehran to pick new leaders who are "acceptable" to the White House after six days of
+      war.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T02:04:06.000Z"
+      precision: day
+  - id: armed-robots-take-to-the-battlefield-in-2026-03-07
+    type: Event
+    name: Armed robots take to the battlefield in Ukraine war
+    category: geopolitics
+    description: Ukraine has embarked on a programme to deploy armed robots on the battlefield against Russian forces.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T00:36:19.000Z"
+      precision: day
+  - id: weve-been-speaking-to-iranians-during-o-2026-03-07
+    type: Event
+    name: We've been speaking to Iranians during one week of war. Here's what they said
+    category: geopolitics
+    description: Ordinary Iranians reflect on seven days of conflict and where they see their country going next.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T06:00:32.000Z"
+      precision: day
+  - id: china-spent-years-building-ties-in-latin-2026-03-07
+    type: Event
+    name: China spent years building ties in Latin America. Can Trump make room for the US?
+    category: geopolitics
+    description: >-
+      US President Donald Trump will meet with ideologically-aligned Latin American leaders to try and counter China's
+      influence in the region.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T01:56:20.000Z"
+      precision: day
+  - id: swiss-to-vote-on-right-wing-push-to-slas-2026-03-07
+    type: Event
+    name: Swiss to vote on right-wing push to slash licence fee for public broadcaster
+    category: geopolitics
+    description: >-
+      The move is backed by the right-wing Swiss People's Party, which says the current fee is unjustified because of
+      the high cost of living.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T02:04:23.000Z"
+      precision: day
+  - id: emirates-resumes-some-dubai-flights-wh-2026-03-07
+    type: Event
+    name: Emirates resumes some Dubai flights – what's the latest on travel to UK?
+    category: finance
+    description: >-
+      New flights to the UK from the Middle East follow days of widespread air travel disruption which had left Britons
+      stranded.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T05:04:33.000Z"
+      precision: day
+  - id: tehran-pounded-in-week-two-of-us-israel-2026-03-07
+    type: Event
+    name: Tehran pounded in week two of US-Israel war, Iran targets Israel
+    category: geopolitics
+    description: Explosions shake Iran as US-Israel attacks intensify, marking eight days of conflict and retaliation from Iran.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T07:02:48.000Z"
+      precision: day
+  - id: indonesian-president-s-us-ties-questione-2026-03-07
+    type: Event
+    name: Indonesian president’s US ties questioned amid public anger over Iran war
+    category: geopolitics
+    description: >-
+      Calls at home for leader of the world&#039;s largest Muslim nation to distance from Washington amid US-Israel war
+      on Iran.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T06:33:03.000Z"
+      precision: day
+  - id: iranian-missiles-intercepted-over-saudi-2026-03-07
+    type: Event
+    name: Iranian missiles intercepted over Saudi, UAE, drones launched at Qatar
+    category: geopolitics
+    description: Qatar says it came under a wave of drone attacks, with 10 fired from Iran, nine intercepted.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T06:07:22.000Z"
+      precision: day
+  - id: iran-war-what-is-happening-on-day-eight-2026-03-07
+    type: Event
+    name: "Iran war: What is happening on day eight of US-Israel attacks?"
+    category: geopolitics
+    description: At least 1,332 people have been reported killed in US-Israeli attacks on Iran since launch of war last weekend.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T05:32:59.000Z"
+      precision: day
+  - id: pro-palestinian-activist-records-questio-2026-03-07
+    type: Event
+    name: Pro-Palestinian activist records questioning by German border police
+    category: geopolitics
+    description: >-
+      Pro-Palestinian German activist Yasemin Acar told Al Jazeera about what she says was harassment at a Berlin
+      airport.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T05:18:45.000Z"
+      precision: day
+  - id: caught-between-iran-and-saudi-arabia-ca-2026-03-07
+    type: Event
+    name: Caught between Iran and Saudi Arabia, can Pakistan stay neutral for long?
+    category: geopolitics
+    description: As Iran strikes Gulf targets, Pakistan navigates alliance with Riyadh while avoiding confrontation with Tehran.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T05:06:44.000Z"
+      precision: day
+  - id: why-yemen-s-houthis-are-staying-out-of-i-2026-03-07
+    type: Event
+    name: Why Yemen’s Houthis are staying out of Israel-US fight with Iran – for now
+    category: geopolitics
+    description: >-
+      Yemen&#039;s Houthi leadership cautious, fearing Israeli retaliation following past air strikes and leadership
+      losses.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T04:21:27.000Z"
+      precision: day
+  - id: anti-aircraft-fire-seen-in-eastern-leban-2026-03-07
+    type: Event
+    name: Anti-aircraft fire seen in eastern Lebanon amid Israeli incursion
+    category: geopolitics
+    description: >-
+      Apparent anti-aircraft fire was seen in the Bekaa Valley of eastern Lebanon amid reports of an attempted Israeli
+      attack.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T03:18:18.000Z"
+      precision: day
+  - id: massive-explosions-fires-from-us-israel-2026-03-07
+    type: Event
+    name: Massive explosions, fires from US-Israeli strikes on Tehran
+    category: geopolitics
+    description: >-
+      Massive explosions and fires were seen across Tehran as US-Israeli strikes pummelled targets in the Iranian
+      capital.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T03:02:32.000Z"
+      precision: day
+  - id: iranian-missiles-over-tel-aviv-prompt-si-2026-03-07
+    type: Decision
+    name: Iranian missiles over Tel Aviv prompt sirens, interceptor launches
+    category: geopolitics
+    description: >-
+      Witness videos captured Iranian projectiles soaring over Tel Aviv as sirens blared and Israeli interceptors
+      launched.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T01:11:04.000Z"
+      precision: day
+  - id: bitcoin-slips-below-68-000-heading-into-2026-03-07
+    type: Event
+    name: Bitcoin slips below $68,000 heading into the weekend as dollar posts steepest weekly gain in a year
+    category: finance.crypto
+    description: >-
+      Most majors gave back Friday's gains, with solana down 4%, ether falling 4.4%, and 43% of bitcoin's supply now
+      sitting at a loss according to Glassnode data.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T06:15:48.000Z"
+      precision: day
+  - id: bitcoin-could-crash-by-another-30-as-fo-2026-03-07
+    type: Claim
+    name: Bitcoin could crash by another 30% as four-year cycle gains strength, investment firm says
+    category: finance.crypto
+    description: Bitcoin is now firmly in a deep bear market and could fall another 30% in 2026, firm said.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T05:44:21.000Z"
+      precision: day
+  - id: falling-energy-per-capita-is-the-world-2026-03-07
+    type: Event
+    name: Falling Energy Per Capita Is the World&#039;s Biggest Problem
+    category: finance.energy
+    description: "A few years ago, I\_analyzed the growth\_of world energy consumption, breaking it down into (a) the growth in energy consumption needed to support the growth in world population, and (b) the growth in energy consumption available to support higher standards of living. This analysis covered the period "
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T00:00:00.000Z"
+      precision: day
+narratives:
+  - name: Israel-Palestine Conflict
+    steps:
+      - from: massive-explosions-fires-from-us-israel-2026-03-07
+        to: pro-palestinian-activist-records-questio-2026-03-07
+        type: causes
+  - name: Crypto Markets
+    steps:
+      - from: bitcoin-could-crash-by-another-30-as-fo-2026-03-07
+        to: bitcoin-slips-below-68-000-heading-into-2026-03-07
+        type: follows
+sources:
+  - entity: trump-demands-unconditional-surrender-2026-03-07
+    type: article
+    title: Trump demands 'unconditional surrender' from Iran as Putin speaks with Iran's president
+    url: https://www.bbc.com/news/articles/c5yq82k1wk8o
+    excerpt: >-
+      The president also calls on Tehran to pick new leaders who are "acceptable" to the White House after six days of
+      war.
+    source_name: BBC News
+    published: "2026-03-07T02:04:06.000Z"
+  - entity: armed-robots-take-to-the-battlefield-in-2026-03-07
+    type: article
+    title: Armed robots take to the battlefield in Ukraine war
+    url: https://www.bbc.com/news/articles/c62662gzlp8o
+    excerpt: Ukraine has embarked on a programme to deploy armed robots on the battlefield against Russian forces.
+    source_name: BBC News
+    published: "2026-03-07T00:36:19.000Z"
+  - entity: weve-been-speaking-to-iranians-during-o-2026-03-07
+    type: article
+    title: We've been speaking to Iranians during one week of war. Here's what they said
+    url: https://www.bbc.com/news/articles/c5y5lqygrn7o
+    excerpt: Ordinary Iranians reflect on seven days of conflict and where they see their country going next.
+    source_name: BBC News
+    published: "2026-03-07T06:00:32.000Z"
+  - entity: china-spent-years-building-ties-in-latin-2026-03-07
+    type: article
+    title: China spent years building ties in Latin America. Can Trump make room for the US?
+    url: https://www.bbc.com/news/articles/c5yvw0zwpd5o
+    excerpt: >-
+      US President Donald Trump will meet with ideologically-aligned Latin American leaders to try and counter China's
+      influence in the region.
+    source_name: BBC News
+    published: "2026-03-07T01:56:20.000Z"
+  - entity: swiss-to-vote-on-right-wing-push-to-slas-2026-03-07
+    type: article
+    title: Swiss to vote on right-wing push to slash licence fee for public broadcaster
+    url: https://www.bbc.com/news/articles/c4g55v24wrno
+    excerpt: >-
+      The move is backed by the right-wing Swiss People's Party, which says the current fee is unjustified because of
+      the high cost of living.
+    source_name: BBC News
+    published: "2026-03-07T02:04:23.000Z"
+  - entity: emirates-resumes-some-dubai-flights-wh-2026-03-07
+    type: article
+    title: Emirates resumes some Dubai flights – what's the latest on travel to UK?
+    url: https://www.bbc.com/news/articles/c4ge52x4w37o
+    excerpt: >-
+      New flights to the UK from the Middle East follow days of widespread air travel disruption which had left Britons
+      stranded.
+    source_name: BBC Business
+    published: "2026-03-07T05:04:33.000Z"
+  - entity: tehran-pounded-in-week-two-of-us-israel-2026-03-07
+    type: article
+    title: Tehran pounded in week two of US-Israel war, Iran targets Israel
+    url: https://www.aljazeera.com/news/2026/3/7/tehran-pounded-in-week-two-of-us-israel-war-iran-targets-israel
+    excerpt: Explosions shake Iran as US-Israel attacks intensify, marking eight days of conflict and retaliation from Iran.
+    source_name: Al Jazeera
+    published: "2026-03-07T07:02:48.000Z"
+  - entity: indonesian-president-s-us-ties-questione-2026-03-07
+    type: article
+    title: Indonesian president’s US ties questioned amid public anger over Iran war
+    url: >-
+      https://www.aljazeera.com/features/2026/3/7/indonesian-presidents-us-ties-questioned-amid-public-anger-over-iran-war
+    excerpt: >-
+      Calls at home for leader of the world&#039;s largest Muslim nation to distance from Washington amid US-Israel war
+      on Iran.
+    source_name: Al Jazeera
+    published: "2026-03-07T06:33:03.000Z"
+  - entity: iranian-missiles-intercepted-over-saudi-2026-03-07
+    type: article
+    title: Iranian missiles intercepted over Saudi, UAE, drones launched at Qatar
+    url: https://www.aljazeera.com/news/2026/3/7/iranian-missiles-intercepted-over-saudi-jordan-drones-launched-at-qatar
+    excerpt: Qatar says it came under a wave of drone attacks, with 10 fired from Iran, nine intercepted.
+    source_name: Al Jazeera
+    published: "2026-03-07T06:07:22.000Z"
+  - entity: iran-war-what-is-happening-on-day-eight-2026-03-07
+    type: article
+    title: "Iran war: What is happening on day eight of US-Israel attacks?"
+    url: https://www.aljazeera.com/news/2026/3/7/iran-war-what-is-happening-on-day-eight-of-us-israel-attacks
+    excerpt: At least 1,332 people have been reported killed in US-Israeli attacks on Iran since launch of war last weekend.
+    source_name: Al Jazeera
+    published: "2026-03-07T05:32:59.000Z"
+  - entity: pro-palestinian-activist-records-questio-2026-03-07
+    type: article
+    title: Pro-Palestinian activist records questioning by German border police
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/3/7/pro-palestinian-activist-records-questioning-by-german-border-police
+    excerpt: >-
+      Pro-Palestinian German activist Yasemin Acar told Al Jazeera about what she says was harassment at a Berlin
+      airport.
+    source_name: Al Jazeera
+    published: "2026-03-07T05:18:45.000Z"
+  - entity: caught-between-iran-and-saudi-arabia-ca-2026-03-07
+    type: article
+    title: Caught between Iran and Saudi Arabia, can Pakistan stay neutral for long?
+    url: https://www.aljazeera.com/news/2026/3/7/caught-between-iran-and-saudi-arabia-can-pakistan-stay-neutral-for-long
+    excerpt: As Iran strikes Gulf targets, Pakistan navigates alliance with Riyadh while avoiding confrontation with Tehran.
+    source_name: Al Jazeera
+    published: "2026-03-07T05:06:44.000Z"
+  - entity: why-yemen-s-houthis-are-staying-out-of-i-2026-03-07
+    type: article
+    title: Why Yemen’s Houthis are staying out of Israel-US fight with Iran – for now
+    url: https://www.aljazeera.com/news/2026/3/7/why-yemens-houthis-are-staying-out-of-israel-us-fight-with-iran-for-now
+    excerpt: >-
+      Yemen&#039;s Houthi leadership cautious, fearing Israeli retaliation following past air strikes and leadership
+      losses.
+    source_name: Al Jazeera
+    published: "2026-03-07T04:21:27.000Z"
+  - entity: anti-aircraft-fire-seen-in-eastern-leban-2026-03-07
+    type: article
+    title: Anti-aircraft fire seen in eastern Lebanon amid Israeli incursion
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/3/7/anti-aircraft-fire-seen-in-eastern-lebanon-amid-israeli-incursion
+    excerpt: >-
+      Apparent anti-aircraft fire was seen in the Bekaa Valley of eastern Lebanon amid reports of an attempted Israeli
+      attack.
+    source_name: Al Jazeera
+    published: "2026-03-07T03:18:18.000Z"
+  - entity: massive-explosions-fires-from-us-israel-2026-03-07
+    type: article
+    title: Massive explosions, fires from US-Israeli strikes on Tehran
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/7/massive-explosions-fires-from-us-israeli-strikes-on-tehran
+    excerpt: >-
+      Massive explosions and fires were seen across Tehran as US-Israeli strikes pummelled targets in the Iranian
+      capital.
+    source_name: Al Jazeera
+    published: "2026-03-07T03:02:32.000Z"
+  - entity: iranian-missiles-over-tel-aviv-prompt-si-2026-03-07
+    type: article
+    title: Iranian missiles over Tel Aviv prompt sirens, interceptor launches
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/3/7/iranian-missiles-over-tel-aviv-prompt-sirens-interceptor-launches
+    excerpt: >-
+      Witness videos captured Iranian projectiles soaring over Tel Aviv as sirens blared and Israeli interceptors
+      launched.
+    source_name: Al Jazeera
+    published: "2026-03-07T01:11:04.000Z"
+  - entity: bitcoin-slips-below-68-000-heading-into-2026-03-07
+    type: article
+    title: Bitcoin slips below $68,000 heading into the weekend as dollar posts steepest weekly gain in a year
+    url: >-
+      https://www.coindesk.com/markets/2026/03/07/bitcoin-slips-below-usd68-000-heading-into-the-weekend-as-dollar-posts-steepest-weekly-gain-in-a-year
+    excerpt: >-
+      Most majors gave back Friday's gains, with solana down 4%, ether falling 4.4%, and 43% of bitcoin's supply now
+      sitting at a loss according to Glassnode data.
+    source_name: CoinDesk
+    published: "2026-03-07T06:15:48.000Z"
+  - entity: bitcoin-could-crash-by-another-30-as-fo-2026-03-07
+    type: article
+    title: Bitcoin could crash by another 30% as four-year cycle gains strength, investment firm says
+    url: >-
+      https://www.coindesk.com/markets/2026/03/07/bitcoin-could-crash-another-30-as-four-year-cycle-gains-strength-investment-firm-says
+    excerpt: Bitcoin is now firmly in a deep bear market and could fall another 30% in 2026, firm said.
+    source_name: CoinDesk
+    published: "2026-03-07T05:44:21.000Z"
+  - entity: falling-energy-per-capita-is-the-world-2026-03-07
+    type: article
+    title: Falling Energy Per Capita Is the World&#039;s Biggest Problem
+    url: https://oilprice.com/Energy/Energy-General/Falling-Energy-Per-Capita-Is-the-Worlds-Biggest-Problem.html
+    excerpt: "A few years ago, I\_analyzed the growth\_of world energy consumption, breaking it down into (a) the growth in energy consumption needed to support the growth in world population, and (b) the growth in e"
+    source_name: OilPrice.com
+    published: "2026-03-07T00:00:00.000Z"
