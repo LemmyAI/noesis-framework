@@ -1,0 +1,310 @@
+seed:
+  name: news-week10-day-2026-03-07-hour-04
+  label: Daily News — 2026-03-07 04:00 (Week 10, 2026)
+  namespace: news.week10.day-2026-03-07
+  description: "Auto-gathered news: 15 stories, 2026-03-07 to 2026-03-07"
+namespace_chain:
+  - namespace: news
+    extends: default
+  - namespace: news.week10
+    extends: news
+  - namespace: news.week10.day-2026-03-07
+    extends: news.week10
+entities:
+  - id: trump-demands-unconditional-surrender-2026-03-07
+    type: Event
+    name: Trump demands 'unconditional surrender' from Iran as Putin speaks with Iran's president
+    category: geopolitics
+    description: >-
+      The president also calls on Tehran to pick new leaders who are "acceptable" to the White House after six days of
+      war.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T02:04:06.000Z"
+      precision: day
+  - id: armed-robots-take-to-the-battlefield-in-2026-03-07
+    type: Event
+    name: Armed robots take to the battlefield in Ukraine war
+    category: geopolitics
+    description: Ukraine has embarked on a programme to deploy armed robots on the battlefield against Russian forces.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T00:36:19.000Z"
+      precision: day
+  - id: swiss-to-vote-on-right-wing-push-to-slas-2026-03-07
+    type: Event
+    name: Swiss to vote on right-wing push to slash licence fee for public broadcaster
+    category: geopolitics
+    description: >-
+      The move is backed by the right-wing Swiss People's Party, which says the current fee is unjustified because of
+      the high cost of living.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T02:04:23.000Z"
+      precision: day
+  - id: china-spent-years-building-ties-in-latin-2026-03-07
+    type: Event
+    name: China spent years building ties in Latin America. Can Trump make room for the US?
+    category: geopolitics
+    description: >-
+      US President Donald Trump will meet with ideologically-aligned Latin American leaders to try and counter China's
+      influence in the region.
+    confidence: verified
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T01:56:20.000Z"
+      precision: day
+  - id: anti-aircraft-fire-seen-in-eastern-leban-2026-03-07
+    type: Event
+    name: Anti-aircraft fire seen in eastern Lebanon amid Israeli incursion
+    category: geopolitics
+    description: >-
+      Apparent anti-aircraft fire was seen in the Bekaa Valley of eastern Lebanon amid reports of an attempted Israeli
+      attack.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T03:18:18.000Z"
+      precision: day
+  - id: massive-explosions-fires-from-us-israel-2026-03-07
+    type: Event
+    name: Massive explosions, fires from US-Israeli strikes on Tehran
+    category: geopolitics
+    description: >-
+      Massive explosions and fires were seen across Tehran as US-Israeli strikes pummelled targets in the Iranian
+      capital.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T03:02:32.000Z"
+      precision: day
+  - id: iranian-missiles-over-tel-aviv-prompt-si-2026-03-07
+    type: Decision
+    name: Iranian missiles over Tel Aviv prompt sirens, interceptor launches
+    category: geopolitics
+    description: >-
+      Witness videos captured Iranian projectiles soaring over Tel Aviv as sirens blared and Israeli interceptors
+      launched.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T01:11:04.000Z"
+      precision: day
+  - id: iran-s-legal-case-for-striking-the-gulf-2026-03-07
+    type: Event
+    name: Iran’s legal case for striking the Gulf collapses under scrutiny
+    category: geopolitics
+    description: Claims of self-defence cannot justify missile attacks on neighbouring states that were not party to the conflict.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T01:08:43.000Z"
+      precision: day
+  - id: wake-up-before-it-s-too-late-oppose-the-2026-03-07
+    type: Event
+    name: "Wake up before it’s too late: Oppose the unjust, cruel war on Iran"
+    category: geopolitics
+    description: Silence in the face of US–Israeli aggression will destroy the international legal order and endanger global peace.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T01:07:49.000Z"
+      precision: day
+  - id: we-stand-with-israel-germany-s-friedr-2026-03-07
+    type: Event
+    name: "‘We stand with Israel’: Germany’s Friedrich Merz scolds protester"
+    category: geopolitics
+    description: “We stand with Israel.” German Chancellor Friedrich Merz scolded a pro-Palestinian protester at an election rally.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T01:06:28.000Z"
+      precision: day
+  - id: iran-s-strikes-on-the-gulf-burning-the-2026-03-07
+    type: Event
+    name: "Iran’s strikes on the Gulf: Burning the bridges of good neighbourliness"
+    category: geopolitics
+    description: The Gulf states didn&#039;t want this war, and they&#039;re the ones Iran needs to mediate an end to the conflict.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T01:05:37.000Z"
+      precision: day
+  - id: iran-war-is-latest-threat-to-a-global-ec-2026-03-07
+    type: Event
+    name: Iran war is latest threat to a global economy rattled by Trump
+    category: geopolitics
+    description: Rising energy prices threaten to stoke inflation and hobble economic growth in countries around the world.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T00:27:18.000Z"
+      precision: day
+  - id: cuba-announces-fifth-death-after-shootou-2026-03-07
+    type: Decision
+    name: Cuba announces fifth death after shootout with Florida-tagged speedboat
+    category: geopolitics
+    description: >-
+      The government in Havana has claimed that the 10 people on board speedboat planned to &#039;unleash
+      terrorism&#039; in Cuba.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T00:09:00.000Z"
+      precision: day
+  - id: iran-war-live-trump-says-no-deal-with-i-2026-03-07
+    type: Claim
+    name: "Iran war live: Trump says no deal with Iran until ‘unconditional surrender’"
+    category: geopolitics
+    description: >-
+      US-Israeli attacks on Iran continue as Israel&#039;s bombing of Lebanon kills at least 217 people, injures almost
+      800.
+    confidence: high
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T00:00:00.000Z"
+      precision: day
+  - id: falling-energy-per-capita-is-the-world-2026-03-07
+    type: Event
+    name: Falling Energy Per Capita Is the World&#039;s Biggest Problem
+    category: finance.energy
+    description: "A few years ago, I\_analyzed the growth\_of world energy consumption, breaking it down into (a) the growth in energy consumption needed to support the growth in world population, and (b) the growth in energy consumption available to support higher standards of living. This analysis covered the period "
+    confidence: medium
+    sources_count: 1
+    temporal:
+      start: "2026-03-07T00:00:00.000Z"
+      precision: day
+narratives:
+  - name: Israel-Palestine Conflict
+    steps:
+      - from: we-stand-with-israel-germany-s-friedr-2026-03-07
+        to: massive-explosions-fires-from-us-israel-2026-03-07
+        type: causes
+sources:
+  - entity: trump-demands-unconditional-surrender-2026-03-07
+    type: article
+    title: Trump demands 'unconditional surrender' from Iran as Putin speaks with Iran's president
+    url: https://www.bbc.com/news/articles/c5yq82k1wk8o
+    excerpt: >-
+      The president also calls on Tehran to pick new leaders who are "acceptable" to the White House after six days of
+      war.
+    source_name: BBC News
+    published: "2026-03-07T02:04:06.000Z"
+  - entity: armed-robots-take-to-the-battlefield-in-2026-03-07
+    type: article
+    title: Armed robots take to the battlefield in Ukraine war
+    url: https://www.bbc.com/news/articles/c62662gzlp8o
+    excerpt: Ukraine has embarked on a programme to deploy armed robots on the battlefield against Russian forces.
+    source_name: BBC News
+    published: "2026-03-07T00:36:19.000Z"
+  - entity: swiss-to-vote-on-right-wing-push-to-slas-2026-03-07
+    type: article
+    title: Swiss to vote on right-wing push to slash licence fee for public broadcaster
+    url: https://www.bbc.com/news/articles/c4g55v24wrno
+    excerpt: >-
+      The move is backed by the right-wing Swiss People's Party, which says the current fee is unjustified because of
+      the high cost of living.
+    source_name: BBC News
+    published: "2026-03-07T02:04:23.000Z"
+  - entity: china-spent-years-building-ties-in-latin-2026-03-07
+    type: article
+    title: China spent years building ties in Latin America. Can Trump make room for the US?
+    url: https://www.bbc.com/news/articles/c5yvw0zwpd5o
+    excerpt: >-
+      US President Donald Trump will meet with ideologically-aligned Latin American leaders to try and counter China's
+      influence in the region.
+    source_name: BBC News
+    published: "2026-03-07T01:56:20.000Z"
+  - entity: anti-aircraft-fire-seen-in-eastern-leban-2026-03-07
+    type: article
+    title: Anti-aircraft fire seen in eastern Lebanon amid Israeli incursion
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/3/7/anti-aircraft-fire-seen-in-eastern-lebanon-amid-israeli-incursion
+    excerpt: >-
+      Apparent anti-aircraft fire was seen in the Bekaa Valley of eastern Lebanon amid reports of an attempted Israeli
+      attack.
+    source_name: Al Jazeera
+    published: "2026-03-07T03:18:18.000Z"
+  - entity: massive-explosions-fires-from-us-israel-2026-03-07
+    type: article
+    title: Massive explosions, fires from US-Israeli strikes on Tehran
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/7/massive-explosions-fires-from-us-israeli-strikes-on-tehran
+    excerpt: >-
+      Massive explosions and fires were seen across Tehran as US-Israeli strikes pummelled targets in the Iranian
+      capital.
+    source_name: Al Jazeera
+    published: "2026-03-07T03:02:32.000Z"
+  - entity: iranian-missiles-over-tel-aviv-prompt-si-2026-03-07
+    type: article
+    title: Iranian missiles over Tel Aviv prompt sirens, interceptor launches
+    url: >-
+      https://www.aljazeera.com/video/newsfeed/2026/3/7/iranian-missiles-over-tel-aviv-prompt-sirens-interceptor-launches
+    excerpt: >-
+      Witness videos captured Iranian projectiles soaring over Tel Aviv as sirens blared and Israeli interceptors
+      launched.
+    source_name: Al Jazeera
+    published: "2026-03-07T01:11:04.000Z"
+  - entity: iran-s-legal-case-for-striking-the-gulf-2026-03-07
+    type: article
+    title: Iran’s legal case for striking the Gulf collapses under scrutiny
+    url: https://www.aljazeera.com/opinions/2026/3/7/irans-legal-case-for-striking-the-gulf-collapses-under-scrutiny
+    excerpt: Claims of self-defence cannot justify missile attacks on neighbouring states that were not party to the conflict.
+    source_name: Al Jazeera
+    published: "2026-03-07T01:08:43.000Z"
+  - entity: wake-up-before-it-s-too-late-oppose-the-2026-03-07
+    type: article
+    title: "Wake up before it’s too late: Oppose the unjust, cruel war on Iran"
+    url: https://www.aljazeera.com/opinions/2026/3/7/wake-up-before-its-too-late-oppose-the-unjust-cruel-war-on-iran
+    excerpt: Silence in the face of US–Israeli aggression will destroy the international legal order and endanger global peace.
+    source_name: Al Jazeera
+    published: "2026-03-07T01:07:49.000Z"
+  - entity: we-stand-with-israel-germany-s-friedr-2026-03-07
+    type: article
+    title: "‘We stand with Israel’: Germany’s Friedrich Merz scolds protester"
+    url: https://www.aljazeera.com/video/newsfeed/2026/3/7/we-stand-with-israel-germanys-friedrich-merz-scolds-protester
+    excerpt: “We stand with Israel.” German Chancellor Friedrich Merz scolded a pro-Palestinian protester at an election rally.
+    source_name: Al Jazeera
+    published: "2026-03-07T01:06:28.000Z"
+  - entity: iran-s-strikes-on-the-gulf-burning-the-2026-03-07
+    type: article
+    title: "Iran’s strikes on the Gulf: Burning the bridges of good neighbourliness"
+    url: https://www.aljazeera.com/opinions/2026/3/7/irans-strikes-on-the-gulf-burning-the-bridges-of-good-neighbourliness
+    excerpt: The Gulf states didn&#039;t want this war, and they&#039;re the ones Iran needs to mediate an end to the conflict.
+    source_name: Al Jazeera
+    published: "2026-03-07T01:05:37.000Z"
+  - entity: iran-war-is-latest-threat-to-a-global-ec-2026-03-07
+    type: article
+    title: Iran war is latest threat to a global economy rattled by Trump
+    url: https://www.aljazeera.com/economy/2026/3/7/iran-war-is-latest-threat-to-a-global-economy-rattled-by-trump
+    excerpt: Rising energy prices threaten to stoke inflation and hobble economic growth in countries around the world.
+    source_name: Al Jazeera
+    published: "2026-03-07T00:27:18.000Z"
+  - entity: cuba-announces-fifth-death-after-shootou-2026-03-07
+    type: article
+    title: Cuba announces fifth death after shootout with Florida-tagged speedboat
+    url: https://www.aljazeera.com/news/2026/3/7/cuba-announces-fifth-death-after-shootout-with-florida-tagged-speedboat
+    excerpt: >-
+      The government in Havana has claimed that the 10 people on board speedboat planned to &#039;unleash
+      terrorism&#039; in Cuba.
+    source_name: Al Jazeera
+    published: "2026-03-07T00:09:00.000Z"
+  - entity: iran-war-live-trump-says-no-deal-with-i-2026-03-07
+    type: article
+    title: "Iran war live: Trump says no deal with Iran until ‘unconditional surrender’"
+    url: >-
+      https://www.aljazeera.com/news/liveblog/2026/3/7/iran-war-live-trump-says-no-deal-with-iran-until-unconditional-surrender
+    excerpt: >-
+      US-Israeli attacks on Iran continue as Israel&#039;s bombing of Lebanon kills at least 217 people, injures almost
+      800.
+    source_name: Al Jazeera
+    published: "2026-03-07T00:00:00.000Z"
+  - entity: falling-energy-per-capita-is-the-world-2026-03-07
+    type: article
+    title: Falling Energy Per Capita Is the World&#039;s Biggest Problem
+    url: https://oilprice.com/Energy/Energy-General/Falling-Energy-Per-Capita-Is-the-Worlds-Biggest-Problem.html
+    excerpt: "A few years ago, I\_analyzed the growth\_of world energy consumption, breaking it down into (a) the growth in energy consumption needed to support the growth in world population, and (b) the growth in e"
+    source_name: OilPrice.com
+    published: "2026-03-07T00:00:00.000Z"
